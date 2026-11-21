@@ -1,0 +1,34 @@
+﻿{
+  "id": "GASTROINTESTINAL_DIS_GI_011",
+  "code": "REGURGITATION_AND_RUMINATION_OF_NEWBORN",
+  "name": "Regurgitation and rumination of newborn",
+  "module": "gastrointestinal",
+  "category": "disease",
+  "description": "A gastrointestinal condition known as Regurgitation and rumination of newborn.",
+  "complaints": [
+    {
+      "code": "REGURGITATION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "P92.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Regurgitation and rumination of newborn",
+  "evidence_ids": [
+    "EVID_REGURGITATION_AND_RUMINATION_OF_NEWBORN"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

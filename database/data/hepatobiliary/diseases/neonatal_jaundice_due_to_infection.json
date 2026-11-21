@@ -1,0 +1,94 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_004",
+    "code":  "NEONATAL_JAUNDICE_DUE_TO_INFECTION",
+    "name":  "Neonatal jaundice due to infection",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Neonatal jaundice, clinically known as neonatal hyperbilirubinemia and icterus neonatorum, is the yellowish discoloration of the white part of the eyes (sclerae) and skin in newborn infants caused by an elevated concentration of bilirubin in the blood (hyperbilirubinemia). It is one of the most frequently encountered medical conditions in the neonatal period, affecting approximately 60% of term and 80% preterm newborns within the first week of life.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "YELLOWISH_COLORATION_OF_SKIN_AND_SCLERA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POOR_FEEDING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "MATERNAL_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREMATURITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_NEWBORN_AGE",
+                          "text":  "TBD - clinician to author",
+                          "purpose":  "Determine onset time",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_DUE_TO_INFECTION_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_UNSPECIFIED",
+                              "distinguishing_feature":  "Unspecified neonatal jaundice is a default category when the specific cause has not been confirmed; a full workup is required to identify the aetiology."
+                          },
+                          {
+                              "disease_code":  "HAEMOLYTIC_DISEASE_OF_THE_NEWBORN",
+                              "distinguishing_feature":  "Haemolytic disease (ABO or Rh incompatibility) presents within 24 hours with rapidly rising bilirubin and positive direct Coombs test; the other neonatal jaundice subtypes do not show haemolysis on blood film."
+                          }
+                      ],
+    "age_relevance":  "neonatal",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0006579 | HP:0002719"
+                  ],
+    "snomed_code":  "1295287004",
+    "snomed_verified_name":  "Neonatal jaundice due to bruising",
+    "icd10_code":  "P58.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal jaundice due to infection",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_JAUNDICE_DUE_TO_INFECTION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "FUNNY_TURNS",
+    "complaint_name":  "Funny turns",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_FT_001",
+                          "text":  "Do you lose awareness, go blank, or have jerking movements?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FUNNY_TURN_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FT_002",
+                          "text":  "Do you have any warning or aura before the episodes?",
+                          "purpose":  "prodrome",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SEIZURE_AURA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FT_003",
+                          "text":  "How often do they happen and how long do they last?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FUNNY_TURN_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FT_004",
+                          "text":  "Is there confusion, tongue biting, or incontinence during or after?",
+                          "purpose":  "seizure_features",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_FIRST_SEIZURE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SEIZURE_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FT_005",
+                          "text":  "Is there palpitations, sweating, or a feeling of faintness?",
+                          "purpose":  "syncope",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "SYNCOPE_FEATURES",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

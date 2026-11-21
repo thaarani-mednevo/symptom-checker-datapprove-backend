@@ -1,0 +1,91 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_006",
+  "code": "ERBS_PARALYSIS_DUE_TO_BIRTH_INJURY",
+  "name": "Erb's paralysis due to birth injury",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Erb's palsy is a paralysis of the arm caused by injury to the upper group of the arm's main nerves, specifically the severing of the upper trunk C5–C6 nerves. These form part of the brachial plexus, comprising the ventral rami of spinal nerves C5–C8 and thoracic nerve T1.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "WAITERS_TIP_POSTURE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "ASYMMETRIC_MORO_REFLEX",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "ABSENT_BICEPS_REFLEX",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "GRASPING_REFLEX_INTACT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "MACROSOMIA",
+      "strength": "strong"
+    },
+    {
+      "code": "SHOULDER_DYSTOCIA",
+      "strength": "strong"
+    },
+    {
+      "code": "PROLONGED_SECOND_STAGE_OF_LABOR",
+      "strength": "moderate"
+    },
+    {
+      "code": "BREECH_PRESENTATION",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "P14.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Erb's paralysis due to birth injury",
+  "evidence_ids": [
+    "EVID_ERBS_PARALYSIS_DUE_TO_BIRTH_INJURY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

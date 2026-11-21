@@ -1,0 +1,67 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_002",
+  "code": "STIFFNESS_OF_RIGHT_SHOULDER_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of right shoulder, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Stiffness of the right shoulder, not elsewhere classified, refers to a persistent limitation of shoulder movement without a specific underlying diagnosis.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SHOULDER_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "OFTEN_UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PRIOR_SHOULDER_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.611",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of right shoulder, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_RIGHT_SHOULDER_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

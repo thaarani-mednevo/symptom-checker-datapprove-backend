@@ -1,0 +1,101 @@
+{
+  "complaint_code": "GENITAL_ITCHING",
+  "complaint_name": "Genital Itching",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_GITCH_001",
+      "text": "How long have you had genital itching, and is it constant or does it come and go?",
+      "purpose": "Characterise duration and pattern of genital itch to guide differential diagnosis",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 1 week, constant",
+        "Less than 1 week, intermittent",
+        "1–4 weeks, constant",
+        "1–4 weeks, intermittent",
+        "More than 4 weeks, persistent"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "GENITAL_ITCH_DURATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GITCH_002",
+      "text": "Is there any visible rash, redness, discharge, or sores in the affected area?",
+      "purpose": "Identify associated dermatological or infective findings that change management",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GENITAL_RASH_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "ASSOCIATED_VISIBLE_LESION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GITCH_003",
+      "text": "Have you had recent sexual contact that may have exposed you to an STI?",
+      "purpose": "STI exposure with genital itch requires STI screen for pubic lice, trichomoniasis, herpes, or other infections",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "STI_SEXUAL_RISK",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GITCH_004",
+      "text": "Is the itch worse at night and do close contacts have similar symptoms?",
+      "purpose": "Nocturnal itch with household spread strongly suggests scabies or pubic lice infestation",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(SCABIES_LICE_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "NOCTURNAL_ITCH_CONTACTS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GITCH_005",
+      "text": "Have you recently used new soaps, creams, condoms, or laundry products that may have caused irritation?",
+      "purpose": "Contact or irritant dermatitis is a common cause of genital itch",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(CONTACT_DERMATITIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "CONTACT_IRRITANT_CAUSE",
+      "yes_weight": -1,
+      "no_weight": 1
+    },
+    {
+      "code": "Q_CMP_GITCH_006",
+      "text": "Do you have poorly controlled diabetes or take immunosuppressant medications?",
+      "purpose": "Diabetes and immunosuppression predispose to candidal or other fungal genital infections causing itch",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GENITAL_CANDIDIASIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "IMMUNOCOMPROMISED_STATE",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GITCH_007",
+      "text": "Have you noticed persistent itch without any rash, or any white patches or colour changes on the skin?",
+      "purpose": "White plaques or persistent itch without rash may suggest lichen sclerosus or dermatosis requiring specialist assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "LICHEN_SCLEROSUS_FEATURES",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

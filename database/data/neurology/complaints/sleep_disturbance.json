@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_011",
+  "code": "SLEEP_DISTURBANCE",
+  "name": "Sleep disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "A sleep disorder, or somnipathy, is a medical disorder that disrupts an individual's sleep patterns and quality. This can cause serious health issues and affect physical, mental, and emotional well-being.",
+  "hpo_codes": [],
+  "snomed_code": "44186003",
+  "snomed_verified_name": "Dyssomnia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

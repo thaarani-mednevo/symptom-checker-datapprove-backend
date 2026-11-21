@@ -1,0 +1,108 @@
+{
+  "complaint_code": "CHEST_DISCOMFORT",
+  "complaint_name": "Chest discomfort",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "description": "Shared intake questions asked for every patient presenting with chest discomfort, before disease-specific questions are applied.",
+  "questions": [
+    {
+      "code": "Q_CMP_CHEST_001",
+      "text": "How would you describe the chest discomfort — is it pressure or heaviness, sharp stabbing, burning, or tightness?",
+      "purpose": "characterisation",
+      "answer_type": "multiple_choice",
+      "options": ["Pressure or heaviness", "Sharp or stabbing", "Burning", "Tightness", "Dull ache", "Other"],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "CHEST_DISCOMFORT_CHARACTER",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_CHEST_002",
+      "text": "When did the chest discomfort start, and has it been constant or coming and going?",
+      "purpose": "onset_and_pattern",
+      "answer_type": "free_text",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "CHEST_DISCOMFORT_ONSET",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_CHEST_003",
+      "text": "Does the discomfort spread to your left arm, jaw, neck, or back?",
+      "purpose": "radiation_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ISCHEMIC)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "RADIATION_ARM_JAW",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_CHEST_004",
+      "text": "Does the discomfort come on during physical exertion and go away with rest?",
+      "purpose": "exertional_pattern",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ISCHEMIC)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "EXERTIONAL_CHEST_PAIN",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_CHEST_005",
+      "text": "Is the pain worse when you lie flat and better when you lean forward?",
+      "purpose": "positional_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "POSITIONAL_CHEST_PAIN",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_CHEST_006",
+      "text": "Is the pain sharp and worse when you breathe in deeply or cough?",
+      "purpose": "pleuritic_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(PLEURITIC)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "PLEURITIC_PAIN",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_CHEST_007",
+      "text": "Are you having chest discomfort at rest right now that is new or severe?",
+      "purpose": "red_flag_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "REST_CHEST_PAIN",
+      "yes_weight": 5,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_CHEST_008",
+      "text": "Do you have any associated sweating, nausea, or vomiting?",
+      "purpose": "associated_symptoms",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ISCHEMIC)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 8,
+      "tests_symptom_code": "SWEATING_NAUSEA",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

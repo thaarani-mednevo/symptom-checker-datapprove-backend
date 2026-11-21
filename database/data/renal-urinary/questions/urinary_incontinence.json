@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "URINARY_INCONTINENCE",
+    "complaint_name":  "Urinary incontinence",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_INCONT_001",
+                          "text":  "Is it leakage with coughing, sneezing, or exercise (stress), or a strong urge you cannot control (urge)?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INCONTINENCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_INCONT_002",
+                          "text":  "How often does it happen and how much leaks?",
+                          "purpose":  "severity",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INCONTINENCE_SEVERITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_INCONT_003",
+                          "text":  "Is it affecting your daily activities or quality of life?",
+                          "purpose":  "impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INCONTINENCE_IMPACT",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_INCONT_004",
+                          "text":  "Have you had recent surgery, childbirth, or neurological problems?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "INCONTINENCE_CAUSE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

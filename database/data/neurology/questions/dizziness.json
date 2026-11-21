@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "DIZZINESS",
+    "complaint_name":  "Dizziness",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DIZ_001",
+                          "text":  "Is it a spinning sensation (vertigo), a feeling of near-fainting, or unsteadiness?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DIZZINESS_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DIZ_002",
+                          "text":  "Does it come on when you change position, especially sitting up or rolling in bed?",
+                          "purpose":  "positional",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BPPV",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DIZ_003",
+                          "text":  "Do you have hearing change, tinnitus, or ear fullness with the dizziness?",
+                          "purpose":  "vestibular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VESTIBULAR_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DIZ_004",
+                          "text":  "Do you have weakness, numbness, slurred speech, or visual change?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CNS_DIZZINESS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DIZ_005",
+                          "text":  "Does it come on standing up and go away with sitting or lying?",
+                          "purpose":  "orthostatic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "ORTHOSTATIC_HYPOTENSION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

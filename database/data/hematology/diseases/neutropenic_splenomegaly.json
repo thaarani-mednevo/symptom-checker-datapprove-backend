@@ -1,0 +1,111 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_010",
+    "code":  "NEUTROPENIC_SPLENOMEGALY",
+    "name":  "Neutropenic splenomegaly",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Neutropenic splenomegaly.",
+    "complaints":  [
+                       {
+                           "code":  "SPLENOMEGALY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECURRENT_INFECTIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MALIGNANCIES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "NON_INFECTIOUS_INFLAMMATORY_DISEASES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OTHERS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SPLENIC_RUPTURE_WITH_MASSIVE_INTERNAL_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Sudden severe left upper quadrant abdominal pain radiating to the left shoulder (Kehr\u0027s sign) accompanied by acute hemodynamic instability, dizziness, or signs of hemorrhagic shock in a patient with neutropenic splenomegaly."
+                      },
+                      {
+                          "code":  "RF_SEVERE_OVERWHELMING_SEPSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECURRENT_INFECTIONS",
+                          "condition":  "[LLM DRAFT] High fever, rigors, altered mental status, and profound hypotension in a severely neutropenic patient with an enlarged spleen, indicating potential septic shock."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_EXPERIENCING_A_FEVER_A",
+                          "text":  "[LLM DRAFT] Are you currently experiencing a fever along with sudden pain or a feeling of fullness in the upper left side of your abdomen?",
+                          "purpose":  "Screen for acute splenic enlargement and infection in neutropenia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEUTROPENIC_SPLENOMEGALY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_BLOOD_TESTS_RECENTLY_SHOWN_THAT_YOU",
+                          "text":  "[LLM DRAFT] Have blood tests recently shown that you have a very low white blood cell count (neutropenia)?",
+                          "purpose":  "Screen for underlying neutropenic state",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NEUTROPENIC_SPLENOMEGALY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with signs of portal hypertension rather than primary neutropenia-associated infections."
+                          },
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by pancytopenia with a hypocellular bone marrow rather than isolated or primary neutropenia with splenic enlargement."
+                          },
+                          {
+                              "disease_code":  "PORTAL_VEIN_THROMBOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Marked by abdominal pain and imaging evidence of venous obstruction rather than immune-mediated or hypersplenism-driven neutropenia."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191338000",
+    "snomed_verified_name":  "Primary splenic neutropenia",
+    "icd10_code":  "D73.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neutropenic splenomegaly",
+    "evidence_ids":  [
+                         "EVID_NEUTROPENIC_SPLENOMEGALY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

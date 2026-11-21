@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "RECTAL_PAIN",
+    "complaint_name":  "Rectal pain",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_RP_001",
+                          "text":  "Is the pain constant or related to bowel movements?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_PAIN_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RP_002",
+                          "text":  "Is there bleeding, discharge, or a lump?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RECTAL_PAIN_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RP_003",
+                          "text":  "Is there a fever?",
+                          "purpose":  "infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_013)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PERIANAL_INFECTION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_RP_004",
+                          "text":  "Is the pain severe and constant, preventing sitting?",
+                          "purpose":  "abscess",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_014)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PERIANAL_ABSCESS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

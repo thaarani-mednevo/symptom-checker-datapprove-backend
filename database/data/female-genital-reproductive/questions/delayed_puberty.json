@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DELAYED_PUBERTY",
+    "complaint_name":  "Delayed puberty",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DEL_001",
+                          "text":  "How old is the child and have any signs of puberty started?",
+                          "purpose":  "age",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DELAYED_PUBERTY_AGE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_002",
+                          "text":  "Is there a family history of late puberty?",
+                          "purpose":  "family",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONSTITUTIONAL_DELAY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_003",
+                          "text":  "Has the child had a serious illness, poor nutrition, or excessive exercise?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DELAYED_PUBERTY_CAUSE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_004",
+                          "text":  "In a girl, are there no breast buds by age 13, or in a boy, no testicular enlargement by age 14?",
+                          "purpose":  "definition",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DELAYED_PUBERTY_CONFIRMED",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

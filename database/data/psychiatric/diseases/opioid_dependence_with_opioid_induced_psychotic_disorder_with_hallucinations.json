@@ -1,0 +1,152 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_024",
+    "code":  "OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS",
+    "name":  "Opioid dependence with opioid-induced psychotic disorder with hallucinations",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Opioid use disorder (OUD) is a substance use disorder characterized by cravings for opioids, continued use despite physical or psychological deterioration, increased tolerance with use, and withdrawal symptoms after discontinuing opioids. Opioid withdrawal symptoms include nausea, muscle aches, diarrhea, trouble sleeping, agitation, and a low mood.",
+    "complaints":  [
+                       {
+                           "code":  "HALLUCINATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "STRONG_DESIRE_TO_USE_OPIOIDS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "INCREASED_TOLERANCE_TO_OPIOIDS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "FAILURE_TO_MEET_OBLIGATIONS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "TROUBLE_WITH_REDUCING_USE",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "WITHDRAWAL_SYNDROME_WITH_DISCONTINUATION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OPIOIDS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_AGITATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SEVERE_AGITATION",
+                          "condition":  "Patient reports severe agitation and inability to remain still."
+                      },
+                      {
+                          "code":  "RF_VIOLENT_HALLUCINATIONS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_VIOLENT_HALLUCINATIONS",
+                          "condition":  "Patient describes hallucinations involving violence toward self or others."
+                      },
+                      {
+                          "code":  "RF_SELF_HARM_IDEATION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_SELF_HARM_IDEATION",
+                          "condition":  "Patient expresses thoughts of self-harm or suicide."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HALLUCINATIONS",
+                          "text":  "Do you hear voices or see things that others do not while drinking?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_AGITATION",
+                          "text":  "Do you feel agitated or restless that is difficult to control?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUICIDE",
+                          "text":  "Have you had thoughts of harming yourself?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUBSTANCE_USE",
+                          "text":  "Do you use alcohol or drugs to cope with anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "231474000",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F11.251",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Opioid dependence with opioid-induced psychotic disorder with hallucinations",
+    "evidence_ids":  [
+                         "EVID_OPIOID_DEPENDENCE_WITH_OPIOID_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

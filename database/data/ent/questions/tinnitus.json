@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "TINNITUS",
+    "complaint_name":  "Tinnitus",
+    "module":  "ent",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_TIN_001",
+                          "text":  "Is the tinnitus in one ear or both?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TINNITUS_LATERALITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TIN_002",
+                          "text":  "Is it pulsing in time with your heartbeat?",
+                          "purpose":  "pulsatile",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PULSATING_TINNITUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_TIN_003",
+                          "text":  "Do you have hearing loss, dizziness, or balance problems?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TINNITUS_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TIN_004",
+                          "text":  "Have you been exposed to loud noise or taken ototoxic medications?",
+                          "purpose":  "exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OTOTOXIC_EXPOSURE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

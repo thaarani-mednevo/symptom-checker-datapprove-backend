@@ -1,0 +1,89 @@
+{
+  "complaint_code": "GENITAL_LUMP",
+  "complaint_name": "Genital Lump",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_GLUMP_001",
+      "text": "Where exactly is the lump located — on the penile shaft, foreskin, glans, or scrotum — and how long have you had it?",
+      "purpose": "Location and duration guide differential; scrotal lumps have different aetiologies from penile lesions",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Penile shaft or glans, less than 4 weeks",
+        "Penile shaft or glans, more than 4 weeks",
+        "Foreskin or prepuce",
+        "Scrotum, separate from the testis",
+        "Within the testis itself"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "GENITAL_LUMP_LOCATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GLUMP_002",
+      "text": "Is the lump hard, irregular, or fixed (non-mobile)?",
+      "purpose": "Hard fixed lesions on the penis or testis raise concern for malignancy and require urgent assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "GENITAL_LUMP_MALIGNANT_FEATURES",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GLUMP_003",
+      "text": "Are there multiple small lumps with a cauliflower-like or wart-like appearance?",
+      "purpose": "Genital warts (condylomata acuminata) from HPV are the most common genital lumps",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GENITAL_WARTS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "GENITAL_WARTS_APPEARANCE",
+      "yes_weight": -1,
+      "no_weight": 1
+    },
+    {
+      "code": "Q_CMP_GLUMP_004",
+      "text": "Has the lump grown rapidly, ulcerated, or bled?",
+      "purpose": "Rapidly growing or ulcerating penile lesions raise concern for penile carcinoma",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "PENILE_LESION_RED_FLAGS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GLUMP_005",
+      "text": "Have you had recent sexual contact that might put you at risk of an STI?",
+      "purpose": "STI exposure prompts screening for condyloma, molluscum, or other infectious causes of genital lumps",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "STI_SEXUAL_RISK",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GLUMP_006",
+      "text": "Are you circumcised, and do you have phimosis or difficulty retracting the foreskin?",
+      "purpose": "Phimosis is a risk factor for penile cancer; foreskin conditions may cause lumps",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "FORESKIN_STATUS",
+      "yes_weight": 1,
+      "no_weight": -1
+    }
+  ]
+}

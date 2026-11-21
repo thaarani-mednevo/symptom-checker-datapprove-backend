@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "STIFFNESS",
+    "complaint_name":  "Stiffness",
+    "module":  "musculoskeletal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_STIF_001",
+                          "text":  "Is the stiffness worse in the morning or after resting?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "STIFFNESS_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_STIF_002",
+                          "text":  "How long does the morning stiffness last — minutes or hours?",
+                          "purpose":  "duration",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MORNING_STIFFNESS_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_STIF_003",
+                          "text":  "Which joints or areas are stiff?",
+                          "purpose":  "location",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "STIFFNESS_LOCATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_STIF_004",
+                          "text":  "Does movement make the stiffness better or worse?",
+                          "purpose":  "response",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MOVEMENT_RESPONSE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

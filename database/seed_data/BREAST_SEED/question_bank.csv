@@ -1,0 +1,29 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_ARE_YOU_CURRENTLY_BREASTFEEDING_AND_EXPE,"[LLM DRAFT] Are you currently breastfeeding and experiencing a painful, swollen lump in your breast?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_FEVER_CHILLS_OR_PUS_DRAI,"[LLM DRAFT] Do you have a fever, chills, or pus draining from a painful area on your breast while breastfeeding?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_CURRENTLY_IN_YOUR_FIRST_TRIMESTE,"[LLM DRAFT] Are you currently in your first trimester of pregnancy and experiencing a painful, swollen lump in your breast?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_REDNESS_WARMTH_OR_PUS_DRAI,"[LLM DRAFT] Do you have redness, warmth, or pus draining from a painful area on your breast along with a fever?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_CURRENTLY_IN_YOUR_SECOND_TRIMEST,"[LLM DRAFT] Are you currently in your second trimester of pregnancy and experiencing a painful, swollen lump or redness in your breast?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_DEVELOPED_A_FEVER_CHILLS_OR_G,"[LLM DRAFT] Have you developed a fever, chills, or generally feel unwell along with breast pain during your pregnancy?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_CURRENTLY_BREASTFEEDING_OR_WITHI,[LLM DRAFT] Are you currently breastfeeding or within a few weeks of giving birth?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_PAINFUL_RED_SWOLLEN_LUMP,"[LLM DRAFT] Do you have a painful, red, swollen lump on your breast accompanied by fever or chills?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_PAINFUL_SWOLLEN_LUMP_OR_A,"[LLM DRAFT] Do you have a painful, swollen lump or area on your breast that feels hot or looks red?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_PUS_OR_UNUSUAL_DISCHARG,[LLM DRAFT] Have you noticed pus or unusual discharge draining from your nipple or the skin of your breast?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_HIGH_FEVER_OR_CHILLS_ALONG,[LLM DRAFT] Do you have a high fever or chills along with your breast pain and swelling?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_A_DOCTOR_RECENTLY_TELL_YOU_THAT_A_RO,[LLM DRAFT] Did a doctor recently tell you that a routine mammogram or breast biopsy found abnormal cells called lobular carcinoma in situ (LCIS)?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_A_NEW_BREAST_LUMP_THIC,"[LLM DRAFT] Have you noticed a new breast lump, thickening, or skin dimpling on either of your breasts?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOU_RECEIVE_PATHOLOGY_RESULTS_SHOWIN,[LLM DRAFT] Did you receive pathology results showing abnormal cells in both breasts?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_THICK_STICKY_DISCHARGE_FR,"[LLM DRAFT] Do you have a thick, sticky discharge from your right nipple that is dark green or black?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_SKIN_AROUND_YOUR_RIGHT_NIPPLE_RED,"[LLM DRAFT] Is the skin around your right nipple red, swollen, or unusually warm to the touch?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_RIGHT_NIPPLE_INVERTED_OR_PULLED,[LLM DRAFT] Is your right nipple inverted or pulled inward recently?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_A_FAST_GROWING_FIRM_P,"[LLM DRAFT] Have you noticed a fast-growing, firm, painless red or violet lump on the skin of your breast?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAS_A_DOCTOR_TOLD_YOU_THAT_A_SKIN_LESION,[LLM DRAFT] Has a doctor told you that a skin lesion on your breast has spread to your lymph nodes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y,"[LLM DRAFT] Do you feel a distinct, single lump in your left breast?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_LUMP_IN_YOUR_LEFT_BREAST_ACCOMPAN,"[LLM DRAFT] Is the lump in your left breast accompanied by sudden, severe pain or rapid skin changes like severe redness or swelling?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y_SOLITARY_CYST_OF_RIGHT_BREAST,"[LLM DRAFT] Do you feel a distinct, single lump in your right breast?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_LUMP_IN_YOUR_RIGHT_BREAST_ACCOMPA,"[LLM DRAFT] Is the lump in your right breast accompanied by sudden, severe pain or rapid skin changes?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y_SOLITARY_CYST_OF_UNSPECIFIED_BREAST,"[LLM DRAFT] Do you feel a distinct, single lump in your breast?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_BREAST_LUMP_SOFT_TO_FIRM_SMOOTH,"[LLM DRAFT] Is the breast lump soft to firm, smooth, and easily movable under the skin?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THE_BREAST_LUMP_APPEAR_OR_CHANGE_RAP,"[LLM DRAFT] Did the breast lump appear or change rapidly, or is it accompanied by skin dimpling or bloody nipple discharge?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_SEVERE_INJURY_WHERE_PART_O,"[LLM DRAFT] Do you have a severe injury where part of your chest wall, ribs, or back has been torn or cut off?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_WOUND_ON_YOUR_CHEST_ACTIVELY_BLEE,[LLM DRAFT] Is the wound on your chest actively bleeding heavily or is there exposed bone or tissue?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

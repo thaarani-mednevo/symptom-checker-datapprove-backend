@@ -1,0 +1,120 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_043",
+    "code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SHOULDER",
+    "name":  "Idiopathic gout, unspecified shoulder",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Idiopathic gout, unspecified shoulder.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_SHOULDER_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SWELLING_AND_ERYTHEMA_OF_SHOULDER_JOINT",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LIMITED_RANGE_OF_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER_AND_CHILLS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOUR_SHOULDER_PAIN_START_SUDDENLY_AN",
+                          "text":  "[LLM DRAFT] Did your shoulder pain start suddenly and feel very intense within the last 24 hours?",
+                          "purpose":  "sudden severe pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SHOULDER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_SHOULDER_SWOLLEN_RED_OR_WARM_T",
+                          "text":  "[LLM DRAFT] Is your shoulder swollen, red, or warm to the touch?",
+                          "purpose":  "inflammation signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SHOULDER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_TROUBLE_MOVING_YOUR_SHOULDER",
+                          "text":  "[LLM DRAFT] Do you have trouble moving your shoulder because of pain?",
+                          "purpose":  "range of motion limitation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SHOULDER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.019",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, unspecified shoulder",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_UNSPECIFIED_SHOULDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

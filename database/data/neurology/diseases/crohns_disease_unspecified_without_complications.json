@@ -1,0 +1,79 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_044",
+  "code": "CROHNS_DISEASE_UNSPECIFIED_WITHOUT_COMPLICATIONS",
+  "name": "Crohn's disease, unspecified, without complications",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Crohn's disease (CD) is a type of inflammatory bowel disease (IBD) that may affect any segment of the gastrointestinal tract. Symptoms often include abdominal pain, diarrhea, fever, abdominal distension, and weight loss.",
+  "complaints": [
+    {
+      "code": "BOWEL_DYSFUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ABDOMINAL_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIARRHEA_(MAY_BE_BLOODY)",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FEVER",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEIGHT_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNCERTAIN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K50.90",
+  "icd10_validated": true,
+  "icd10_official_description": "Crohn's disease, unspecified, without complications",
+  "evidence_ids": [
+    "EVID_CROHNS_DISEASE_UNSPECIFIED_WITHOUT_COMPLICATIONS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

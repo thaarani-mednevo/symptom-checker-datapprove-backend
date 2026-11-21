@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "MOUTH_ULCERS",
+    "complaint_name":  "Mouth ulcers",
+    "module":  "ent",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_MU_001",
+                          "text":  "How many ulcers are there and how long have they been present?",
+                          "purpose":  "history",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MOUTH_ULCER_HISTORY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_MU_002",
+                          "text":  "Are there ulcers on your genitals, or a rash on your skin?",
+                          "purpose":  "behcet_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MUCOCUTANEOUS_ULCERS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_MU_003",
+                          "text":  "Is there associated fever, fatigue, or weight loss?",
+                          "purpose":  "systemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SYSTEMIC_WITH_ULCERS",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_MU_004",
+                          "text":  "Have you started any new medication recently?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DRUG_MOUTH_ULCERS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

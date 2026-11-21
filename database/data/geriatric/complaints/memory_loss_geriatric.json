@@ -1,0 +1,17 @@
+{
+  "id": "GERIATRIC_COMP_GER_003",
+  "code": "MEMORY_LOSS_GERIATRIC",
+  "name": "Memory loss (geriatric context)",
+  "module": "geriatric",
+  "body_system": "geriatric",
+  "category": "complaint",
+  "description": "Memory loss in older adults refers to progressive difficulty with recall, learning new information, or retaining recent events. It ranges from mild age-associated memory impairment (benign) through mild cognitive impairment (MCI) to dementia. Alzheimer's disease accounts for 60–80% of dementia cases and characteristically affects episodic memory first. Vascular dementia, Lewy body dementia, and frontotemporal dementia are other major subtypes. Red flags for dementia include progressive memory decline affecting daily function, personality or behaviour change, language difficulties, and visuospatial problems. Reversible causes (hypothyroidism, B12 deficiency, depression, normal pressure hydrocephalus, medication effects) must be excluded in all new presentations.",
+  "hpo_codes": ["HP:0002354"],
+  "snomed_code": "386807006",
+  "snomed_verified_name": "Memory impairment",
+  "icd10_code": "R41.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Other amnesia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

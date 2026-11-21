@@ -1,0 +1,105 @@
+{
+  "module": "breast",
+  "red_flags": [
+    {
+      "code": "RF_SEPSIS_SIGNS_MASTITIS",
+      "name": "sepsis_signs_mastitis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RAPIDLY_SPREADING_CELLULITIS",
+      "name": "rapidly_spreading_cellulitis",
+      "action": "URGENT_CARE_SAME_DAY"
+    },
+    {
+      "code": "RF_SEPSIS_SECONDARY_TO_BREAST_ABSCESS_INFECTION",
+      "name": "Sepsis secondary to breast abscess infection",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RAPIDLY_PROGRESSIVE_CELLULITIS_WITH_SKIN_NECROSIS",
+      "name": "Rapidly progressive cellulitis with skin necrosis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPSIS_SYSTEMIC_TOXICITY",
+      "name": "SEPSIS_SYSTEMIC_TOXICITY",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_AXILLARY_COMPRESSION",
+      "name": "SEVERE_AXILLARY_COMPRESSION",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_SHOCK_PUERPERAL_MASTITIS",
+      "name": "septic_shock_puerperal_mastitis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPSIS_OR_RAPIDLY_PROGRESSIVE_SYSTEMIC_INFECTION_SECONDARY_TO_BREAST_ABSCESS",
+      "name": "Sepsis or rapidly progressive systemic infection secondary to breast abscess",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NECROTIZING_SOFT_TISSUE_INFECTION_OF_THE_BREAST",
+      "name": "Necrotizing soft tissue infection of the breast",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_MASTITIS",
+      "name": "Acute mastitis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BLOODY_NIPPLE_DISCHARGE",
+      "name": "Bloody nipple discharge",
+      "action": "URGENT_CARE_SAME_DAY"
+    },
+    {
+      "code": "RF_RAPIDLY_ENLARGING_BREAST_LUMP",
+      "name": "Rapidly enlarging breast lump",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NIPPLE_ULCERATION_OR_BLEEDING",
+      "name": "Nipple ulceration or bleeding",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_BREAST_ABSCESS",
+      "name": "Acute breast abscess",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BREAST_ABSCESS_DUE_TO_CYST_INFECTION",
+      "name": "Breast abscess due to cyst infection",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_AXILLARY_ABSCESS_SECONDARY_TO_CYST",
+      "name": "Axillary abscess secondary to cyst",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_INFECTION",
+      "name": "Acute_Infection",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_HEMORRHAGE",
+      "name": "Acute_Hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_EXPANDING_AXILLARY_HEMATOMA",
+      "name": "EXPANDING_AXILLARY_HEMATOMA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_BREAST_PAIN_WITH_RESPIRATORY_DISTRESS",
+      "name": "SEVERE_BREAST_PAIN_WITH_RESPIRATORY_DISTRESS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    }
+  ]
+}

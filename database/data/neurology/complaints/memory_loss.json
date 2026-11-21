@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_009",
+  "code": "MEMORY_LOSS",
+  "name": "Memory loss",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Amnesia is a deficit in memory caused by brain damage or brain diseases, but it can also be temporarily caused by the use of various sedative and hypnotic drugs. The memory can be either wholly or partially lost due to the extent of damage that is caused.",
+  "hpo_codes": [],
+  "snomed_code": "48167000",
+  "snomed_verified_name": "Amnesia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

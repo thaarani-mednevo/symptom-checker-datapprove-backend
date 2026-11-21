@@ -1,0 +1,45 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_SUDDEN_HEARING_LOSS,Have you experienced sudden hearing loss?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_SEVERE_HEADACHE,Do you have a severe headache that is new or worsening?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_VISION_CHANGES,Have you noticed any changes in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_TINNITUS_ONSET,Did the pulsatile tinnitus start suddenly or gradually?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_HEARING_LOSS,Do you also experience hearing loss in the left ear?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_NEUROLOGICAL_SYMPTOMS,"Have you had any recent headaches, dizziness, or weakness?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_BURSTING_SOUND,Is the sound in your left ear a steady hum or does it burst with each heartbeat?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_MEDICAL_HISTORY,"Do you have a history of hypertension, vascular disease, or coagulopathy?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_SUDDEN_ONSET,Did the pulsatile tinnitus start suddenly?,yes_no,RF_SUDDEN_ONSET,CONTINUE,clinician_approved
+Q_NEUROLOGICAL,Have you had any recent neurological symptoms such as weakness or speech difficulty?,yes_no,RF_NEUROLOGICAL_SYNDROME,CONTINUE,clinician_approved
+Q_BLOOD_PRESSURE,Do you have a history of high blood pressure or recent blood pressure spikes?,yes_no,RF_BLOOD_PRESSURE,CONTINUE,clinician_approved
+Q_PULSATING,"Is the tinnitus pulsatile, following your heartbeat?",yes_no,RF_PULSATING_TINNITUS,CONTINUE,clinician_approved
+Q_HEAD_TRAUMA,Have you had any head or neck injury in the past month?,yes_no,RF_HEAD_TRAUMA,CONTINUE,clinician_approved
+Q_OTOTOXIC,Are you currently taking any medications known to be ototoxic?,yes_no,RF_OTOTOXIC_MEDICATION,CONTINUE,clinician_approved
+Q_EAR_FULLNESS,"Do you have any ear fullness, pain, or discharge?",yes_no,RF_EAR_FULLNESS,CONTINUE_PATHWAY,clinician_approved
+Q_VERTIGO,Have you experienced any dizziness or vertigo along with the tinnitus?,yes_no,RF_TINNITUS_VERTIGO,CONTINUE_PATHWAY,clinician_approved
+Q_POSTAURICULAR_SWELLING,Do you have any swelling or redness directly behind your ear?,boolean,escalate_red_flag,continue,clinician_approved
+Q_TRISMUS,"Are you having difficulty opening your mouth fully, or does your voice sound muffled like you have a hot potato in your mouth?",boolean,escalate_red_flag,continue,clinician_approved
+Q_EYE_SWELLING,"Is there any swelling or redness around your eyes, or changes in your vision?",boolean,escalate_red_flag,continue,clinician_approved
+Q_IMMUNOCOMPROMISED,"Are you diabetic, or do you have any condition that weakens your immune system?",boolean,continue,continue,clinician_approved
+Q_SWALLOWING,Are you able to swallow liquids?,boolean,continue,escalate_red_flag,clinician_approved
+Q_DO_YOU_EXPERIENCE_FREQUENT_SNEEZING_ESP,"[LLM DRAFT] Do you experience frequent sneezing, especially in certain seasons or around pets?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_STUFFY_OR_RUNNY_NOSE_ACCOM,"[LLM DRAFT] Do you have a stuffy or runny nose accompanied by itchy, watery eyes?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_NASAL_SYMPTOMS_WORSE_OUTDOORS_D,[LLM DRAFT] Are your nasal symptoms worse outdoors during specific times of the year?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_PAINFUL_ROUND_OR_OVAL_SORES,"[LLM DRAFT] Do you have painful round or oval sores inside your mouth on your cheeks, lips, or tongue?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_MOUTH_SORES_LARGER_THAN_A_DIME,"[LLM DRAFT] Are your mouth sores larger than a dime, lasting longer than three weeks, or making it very difficult to swallow or drink fluids?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_ONGOING_OR_REPEATED_PUS_LIKE,[LLM DRAFT] Do you have ongoing or repeated pus-like discharge coming from your ear for several weeks or more?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_A_SIGNIFICANT_DECREASE,[LLM DRAFT] Have you noticed a significant decrease in your hearing in the affected ear?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_SEVERE_HEADACHE_DI,"[LLM DRAFT] Have you experienced severe headache, dizziness, or weakness in the muscles of your face along with your ear discharge?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SUDDEN_SHORTNESS_OF,[LLM DRAFT] Are you experiencing sudden shortness of breath or difficulty breathing while at rest?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_YOUR_LIPS_TONGUE_OR_F,"[LLM DRAFT] Have you noticed your lips, tongue, or fingertips turning a bluish color?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_UNUSUALLY_CONFUSED_DISORIEN,"[LLM DRAFT] Do you feel unusually confused, disoriented, or extremely drowsy?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HEAR_A_RHYTHMIC_WHOOSHING_OR_PULS,[LLM DRAFT] Do you hear a rhythmic whooshing or pulsing sound in your right ear that seems to match your heartbeat?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THIS_PULSING_SOUND_IN_YOUR_RIGHT_EAR,[LLM DRAFT] Did this pulsing sound in your right ear start suddenly after a head injury or neck trauma?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_HAVING_SEVERE_DIFFICULTY_BREATHI,[LLM DRAFT] Are you having severe difficulty breathing or trouble swallowing your own saliva?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_FEVER_ACCOMPANIED_BY_WHITE,[LLM DRAFT] Do you have a fever accompanied by white patches on your tonsils and swollen neck glands?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_SORE_THROAT_START_SUDDENLY_AFTE,[LLM DRAFT] Did your sore throat start suddenly after being exposed to someone else who was sick?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HEAR_A_CONSTANT_RINGING_BUZZING,"[LLM DRAFT] Do you hear a constant ringing, buzzing, or hissing sound in your ears that has no external source?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THIS_RINGING_OR_BUZZING_START_SUDDEN,[LLM DRAFT] Did this ringing or buzzing start suddenly after a head injury or a very loud noise?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_HAVING_SEVERE_DIFFICULTY_BREATHI_TONSILLITIS,[LLM DRAFT] Are you having severe difficulty breathing or trouble swallowing your own saliva?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_PAIN_WHEN_SWALLOWING_ALONG_W,[LLM DRAFT] Do you have pain when swallowing along with swollen tonsils?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_RECENTLY_NOTICED_SWOLLEN_TENDE,"[LLM DRAFT] Have you recently noticed swollen, tender lumps on either side of your neck?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_SUDDEN_FEVER_AND_BODY_ACHE,[LLM DRAFT] Do you have a sudden fever and body aches along with a cough or sore throat?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SEVERE_SHORTNESS_OF,[LLM DRAFT] Are you experiencing severe shortness of breath or difficulty breathing?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

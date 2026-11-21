@@ -1,0 +1,96 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_DERM_008",
+    "code":  "HERPES_ZOSTER",
+    "name":  "Herpes zoster",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Shingles, also known as herpes zoster or zona, is a viral disease characterized by a painful skin rash with blisters in a localized area. Typically the rash occurs in a single, wide mark either on the left or right side of the body or face.",
+    "complaints":  [
+                       {
+                           "code":  "BLISTERS",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DERMATOMAL_VESICULAR_RASH",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BURNING_TINGLING_PAIN",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE_OVER_50",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "IMMUNOCOMPROMISED",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "PRIOR_VARICELLA_INFECTION",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ZOSTER_OPHTHALMIC",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "DERMATOMAL_VESICULAR_RASH",
+                          "condition":  "Rash involves the eye, eyelid, or tip of the nose — risk of vision loss, needs same-day ophthalmology/medical review"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ZOSTER_EYE_INVOLVEMENT",
+                          "text":  "Is the rash near your eye, on your eyelid, or on the tip of your nose?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HERPES_ZOSTER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "4740000",
+    "snomed_verified_name":  "Herpes zoster",
+    "icd10_code":  "B02.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Zoster without complications",
+    "evidence_ids":  [
+                         "EVID_HERPES_ZOSTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

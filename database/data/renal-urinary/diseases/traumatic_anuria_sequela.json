@@ -1,0 +1,118 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_023",
+    "code":  "TRAUMATIC_ANURIA_SEQUELA",
+    "name":  "Traumatic anuria, sequela",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "A renal-urinary condition known as Traumatic anuria, sequela.",
+    "complaints":  [
+                       {
+                           "code":  "ANURIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "REDUCED_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "LEG_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PRIOR_SEVERE_RENAL_TRAUMA",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANURIA",
+                          "condition":  "No urine output following trauma"
+                      },
+                      {
+                          "code":  "RF_RU_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANURIA",
+                          "condition":  "Complete inability to pass urine"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_001",
+                          "text":  "Are you completely unable to pass any urine at all despite feeling the urge?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TRAUMATIC_ANURIA_SEQUELA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_002",
+                          "text":  "Did the inability to urinate start after an injury or trauma to the abdomen, pelvis, or back?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TRAUMATIC_ANURIA_SEQUELA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TRAUMATIC_ANURIA_SEQUELA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0100519"
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "T79.5XXS",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Traumatic anuria, sequela",
+    "evidence_ids":  [
+                         "EVID_TRAUMATIC_ANURIA_SEQUELA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

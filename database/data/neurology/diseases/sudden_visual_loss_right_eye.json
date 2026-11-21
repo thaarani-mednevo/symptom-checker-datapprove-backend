@@ -1,0 +1,56 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_062",
+  "code": "SUDDEN_VISUAL_LOSS_RIGHT_EYE",
+  "name": "Sudden visual loss, right eye",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Sudden, painless loss of vision in the right eye that occurs abruptly and is often accompanied by a curtain‑like shadow or complete blindness.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DECREASED_ABILITY_TO_SEE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNCORRECTED_REFRACTIVE_ERRORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CATARACTS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "GLAUCOMA",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "331921000119103",
+  "snomed_verified_name": "Sudden visual loss of right eye",
+  "icd10_code": "H53.131",
+  "icd10_validated": true,
+  "icd10_official_description": "Sudden visual loss, right eye",
+  "evidence_ids": [
+    "EVID_SUDDEN_VISUAL_LOSS_RIGHT_EYE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

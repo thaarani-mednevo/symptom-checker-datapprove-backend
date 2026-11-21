@@ -1,0 +1,17 @@
+{
+  "id": "GERIATRIC_COMP_GER_001",
+  "code": "FALLS",
+  "name": "Falls",
+  "module": "geriatric",
+  "body_system": "geriatric",
+  "category": "complaint",
+  "description": "Falls in the elderly are unintentional events causing a person to come to rest on the ground, floor, or another lower level. They are the leading cause of injury and injury-related death in adults over 65. Falls result from an interaction between intrinsic risk factors (gait and balance disorders, muscle weakness, visual impairment, orthostatic hypotension, cognitive impairment, polypharmacy) and extrinsic factors (environmental hazards, footwear). Assessment uses validated tools such as the Timed Up and Go (TUG) test. Recurrent falls indicate high fracture risk and require multifactorial geriatric assessment including medication review, vision assessment, home hazard evaluation, and falls prevention physiotherapy.",
+  "hpo_codes": ["HP:0002527"],
+  "snomed_code": "161898004",
+  "snomed_verified_name": "Falls",
+  "icd10_code": "R29.6",
+  "icd10_validated": true,
+  "icd10_official_description": "Repeated falls",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

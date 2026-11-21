@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_033",
+  "code": "DIZZINESS",
+  "name": "Dizziness",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Dizziness is an imprecise term that can refer to a sense of disorientation in space, vertigo, or lightheadedness. It can also refer to disequilibrium or a non-specific feeling, such as giddiness or foolishness.",
+  "hpo_codes": [],
+  "snomed_code": "404640003",
+  "snomed_verified_name": "Dizziness",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

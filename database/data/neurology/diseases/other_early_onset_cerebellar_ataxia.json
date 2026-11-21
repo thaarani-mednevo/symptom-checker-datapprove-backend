@@ -1,0 +1,82 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_083",
+  "code": "OTHER_EARLY_ONSET_CEREBELLAR_ATAXIA",
+  "name": "Other early-onset cerebellar ataxia",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Other early-onset cerebellar ataxia.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "GAIT_ATAXIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "LIMB_INCOORDINATION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "OCULOMOTOR_ABNORMALITIES",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G11.19",
+  "icd10_validated": true,
+  "icd10_official_description": "Other early-onset cerebellar ataxia",
+  "evidence_ids": [
+    "EVID_OTHER_EARLY_ONSET_CEREBELLAR_ATAXIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

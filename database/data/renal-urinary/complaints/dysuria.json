@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_001",
+  "code": "DYSURIA",
+  "name": "Dysuria",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Dysuria is a painful or otherwise uncomfortable sensation in the urethra associated with urination. It can be caused by various conditions, such as urinary tract infections.",
+  "hpo_codes": [],
+  "snomed_code": "49650001",
+  "snomed_verified_name": "Dysuria",
+  "icd10_code": "R30.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysuria",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

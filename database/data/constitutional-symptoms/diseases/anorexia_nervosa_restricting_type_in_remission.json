@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_030",
+    "code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION",
+    "name":  "Anorexia nervosa, restricting type, in remission",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Anorexia nervosa (AN), commonly referred to as anorexia, is an eating disorder characterized by predominant food restriction, body image disturbance, fear of gaining weight, and an overwhelming desire to be thin. These characteristics often mean individuals undergo severe malnutrition as a result of the disorder.",
+    "complaints":  [
+                       {
+                           "code":  "LOSS_OF_APPETITE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_GAINING_WEIGHT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRONG_DESIRE_TO_BE_THIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FOOD_RESTRICTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Heart rate drops below 40 bpm or systolic blood pressure drops below 90 mmHg"
+                      },
+                      {
+                          "code":  "RF_ACUTE_SUICIDAL_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Expressing active thoughts of self-harm or suicide"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_1",
+                          "text":  "Have you experienced a significant, unintentional drop in weight over the past month?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_2",
+                          "text":  "Do you currently engage in strict food restriction or fasting to control your weight?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_3",
+                          "text":  "Have you experienced thoughts of self-harm or severe depressive symptoms recently?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME",
+                              "distinguishing_feature":  "[LLM DRAFT] Persistent dangerously low body weight and ongoing severe restriction rather than weight restoration and symptom remission."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of recurrent binge eating or purging behaviors rather than purely restricting behaviors."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Diagnostic criteria lack sufficient detail to specifically categorize as restricting type or confirm current remission status."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "908849441000119106",
+    "snomed_verified_name":  "Anorexia nervosa, restricting type in remission",
+    "icd10_code":  "F50.014",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anorexia nervosa, restricting type, in remission",
+    "evidence_ids":  [
+                         "EVID_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

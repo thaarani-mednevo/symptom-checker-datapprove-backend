@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_025",
+    "code":  "PORTAL_VEIN_THROMBOSIS",
+    "name":  "Portal vein thrombosis",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Portal vein thrombosis (PVT) is a vascular disease of the liver that occurs when a blood clot occurs in the hepatic portal vein, which can lead to increased pressure in the portal vein system and reduced blood supply to the liver. The mortality rate is approximately 1 in 10.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_VARICEAL_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Acute massive gastrointestinal hemorrhage due to portal hypertension from portal vein thrombosis, manifesting as hematemesis or melena with hemodynamic instability."
+                      },
+                      {
+                          "code":  "RF_ACUTE_MESENTERIC_ISCHEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Extension of thrombosis into the mesenteric veins causing severe, disproportionate abdominal pain, peritonitis, and bowel infarction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SUDDEN_SEVERE_UPPE",
+                          "text":  "[LLM DRAFT] Have you experienced sudden, severe upper abdominal pain that started recently?",
+                          "purpose":  "Screens for acute portal vein thrombosis pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PORTAL_VEIN_THROMBOSIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_RAPID_AND_SIGNIFICANT",
+                          "text":  "[LLM DRAFT] Have you noticed a rapid and significant increase in the size of your abdomen or sudden swelling in your legs?",
+                          "purpose":  "Screens for ascites and fluid retention related to portal hypertension",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PORTAL_VEIN_THROMBOSIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_KNOWN_HISTORY_OF_LIVER_DIS",
+                          "text":  "[LLM DRAFT] Do you have a known history of liver disease, cirrhosis, or blood clotting disorders?",
+                          "purpose":  "Screens for underlying risk factors and thrombophilia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PORTAL_VEIN_THROMBOSIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute upper gastrointestinal hemorrhage such as hematemesis or melena, often as a direct complication of portal hypertension."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by persistent enlargement of the spleen resulting from long-standing venous outflow obstruction and portal hypertension."
+                          },
+                          {
+                              "disease_code":  "POLYCYTHEMIA_VERA",
+                              "distinguishing_feature":  "[LLM DRAFT] A myeloproliferative disorder that serves as a primary hypercoagulable risk factor leading to thrombosis in unusual sites like the portal venous system."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "17920008",
+    "snomed_verified_name":  "Portal vein thrombosis",
+    "icd10_code":  "I81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Portal vein thrombosis",
+    "evidence_ids":  [
+                         "EVID_PORTAL_VEIN_THROMBOSIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

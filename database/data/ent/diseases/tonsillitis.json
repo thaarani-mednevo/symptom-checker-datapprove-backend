@@ -1,0 +1,28 @@
+﻿{
+  "id": "ENT_DIS_ENT_019",
+  "code": "TONSILLITIS",
+  "name": "Tonsillitis",
+  "module": "ent",
+  "category": "disease",
+  "description": "Tonsillitis is inflammation of the tonsils in the upper part of the throat. It can be acute or chronic.",
+  "complaints": [],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "90176007",
+  "snomed_verified_name": "Tonsillitis",
+  "icd10_code": "J33.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Nasal polyp, unspecified",
+  "evidence_ids": [
+    "EVID_TONSILLITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,91 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_054",
+  "code": "COCHLEAR_OTOSCLEROSIS_BILATERAL",
+  "name": "Cochlear otosclerosis, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A progressive, bilateral sensorineural hearing loss due to abnormal bone remodeling in the cochlea.",
+  "complaints": [
+    {
+      "code": "HEARING_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HEARING_LOSS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "TINNITUS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "PARACUSIS_WILLISII",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "frequency": "rare",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FAMILY_HISTORY",
+      "strength": "strong"
+    },
+    {
+      "code": "FEMALE_SEX",
+      "strength": "moderate"
+    },
+    {
+      "code": "CAUCASIAN_ETHNICITY",
+      "strength": "moderate"
+    },
+    {
+      "code": "MEASLES_VIRUS_INFECTION",
+      "strength": "weak"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "1083451000119106",
+  "snomed_verified_name": "Bilateral cochlear otosclerosis",
+  "icd10_code": "H80.23",
+  "icd10_validated": true,
+  "icd10_official_description": "Cochlear otosclerosis, bilateral",
+  "evidence_ids": [
+    "EVID_COCHLEAR_OTOSCLEROSIS_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

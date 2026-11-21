@@ -1,0 +1,93 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_035",
+  "code": "TRANSIENT_NEONATAL_MYASTHENIA_GRAVIS",
+  "name": "Transient neonatal myasthenia gravis",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Transient neonatal myasthenia gravis, i.e., TNMG, and its more severe form, fetal acetylcholine receptor inactivation syndrome, is one of the various types of myasthenia gravis. MG is an autoimmune disease in which individuals form antibodies that circulate in their blood, enter tissues, bind to certain proteins in the neuromuscular junctions of skeletal muscles, and thereby reduce the number or ability of these skeletal muscles to contract when appropriately stimulated by acetylcholine.",
+  "complaints": [
+    {
+      "code": "MUSCLE_WEAKNESS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "VARYING_DEGREES_MUSCLE_WEAKNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DOUBLE_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DROOPING_EYELIDS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TROUBLE_TALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TROUBLE_WALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "AUTOIMMUNE_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_RESPIRATORY_DISTRESS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "MUSCLE_WEAKNESS",
+      "condition": "[LLM DRAFT] Respiratory distress or apnea in a newborn with generalized muscle weakness"
+    },
+    {
+      "code": "RF_BULBAR_WEAKNESS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "IMPAIRED_FUNCTION",
+      "condition": "[LLM DRAFT] Bulbar weakness causing feeding difficulty or aspiration risk"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "230683002",
+  "snomed_verified_name": "Transient neonatal myasthenia gravis",
+  "icd10_code": "P94.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Transient neonatal myasthenia gravis",
+  "evidence_ids": [
+    "EVID_TRANSIENT_NEONATAL_MYASTHENIA_GRAVIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

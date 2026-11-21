@@ -1,0 +1,176 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_019",
+    "code":  "CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS",
+    "name":  "Cannabis use, unspecified with psychotic disorder with hallucinations",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "A psychotic disorder presenting with hallucinations that occurs in the context of unspecified cannabis use.",
+    "complaints":  [
+                       {
+                           "code":  "HALLUCINATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DEPRESSION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DEPERSONALIZATION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RESTLESSNESS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INSOMNIA",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "VIVID_DREAMS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GASTROINTESTINAL_PROBLEMS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AND_DECREASED_APPETITE",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ADOLESCENCE_AND_HIGH_FREQUENCY_USE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "SEVERE_HALLUCINATIONS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "HALLUCINATIONS",
+                          "condition":  "Hallucinations are vivid, auditory, and command type, indicating high risk of harm."
+                      },
+                      {
+                          "code":  "VIGILANT_AGITATION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "AGITATION",
+                          "condition":  "Patient is agitated and threatening others."
+                      },
+                      {
+                          "code":  "SELF_HARM_RISK",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "SELF_HARM",
+                          "condition":  "History of self-harm or suicidal ideation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q1_SELF_HARM_HISTORY",
+                          "text":  "Have you ever attempted suicide or harmed yourself?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q2_HALLUCINATION_SEVERITY",
+                          "text":  "Are you experiencing any hallucinations that are vivid or command you to act?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q3_AGITATION_LEVEL",
+                          "text":  "Are you feeling agitated or aggressive towards others?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q4_CANNABIS_USAGE",
+                          "text":  "Do you currently use cannabis or have you used it in the past month?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+                      "HP:5200341"
+                  ],
+    "snomed_code":  "191524002",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F12.951",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cannabis use, unspecified with psychotic disorder with hallucinations",
+    "evidence_ids":  [
+                         "EVID_CANNABIS_USE_UNSPECIFIED_WITH_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

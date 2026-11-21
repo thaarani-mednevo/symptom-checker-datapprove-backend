@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_003",
+  "code": "PERIODIC_PARALYSIS",
+  "name": "Periodic paralysis",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Periodic paralysis is a group of rare genetic diseases that lead to weakness or paralysis from common triggers such as cold, heat, high carbohydrate meals, not eating, stress or excitement and physical activity of any kind. The underlying mechanism of these diseases are malfunctions in the ion channels in skeletal muscle cell membranes that allow electrically charged ions to leak in or out of the muscle cell, causing the cell to depolarize and become unable to move.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MUSCLE_WEAKNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "HYPOKALEMIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "MYOTONIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "POSITIVE_FAMILY_HISTORY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FAMILY_HISTORY_OF_PERIODIC_PARALYSIS",
+      "strength": "strong"
+    },
+    {
+      "code": "THYROTOXICOSIS",
+      "strength": "strong"
+    },
+    {
+      "code": "MUTATIONS_IN_CACNA1A_SCN4A_OR_KCNJ2_GENES",
+      "strength": "strong"
+    },
+    {
+      "code": "POTASSIUM_LEVEL_FLUCTUATIONS",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "198030008",
+  "snomed_verified_name": "Periodic paralysis",
+  "icd10_code": "G72.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Periodic paralysis",
+  "evidence_ids": [
+    "EVID_PERIODIC_PARALYSIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

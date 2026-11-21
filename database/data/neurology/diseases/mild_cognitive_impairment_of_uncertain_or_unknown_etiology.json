@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_035",
+  "code": "MILD_COGNITIVE_IMPAIRMENT_OF_UNCERTAIN_OR_UNKNOWN_ETIOLOGY",
+  "name": "Mild cognitive impairment of uncertain or unknown etiology",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Mild cognitive impairment of uncertain or unknown etiology is a subtle decline in memory or executive function that does not yet meet criteria for dementia and has no identified cause.",
+  "complaints": [
+    {
+      "code": "COGNITIVE_IMPAIRMENT",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PROBLEMS_WITH_LANGUAGE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DISORIENTATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MOOD_SWINGS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "POORLY_UNDERSTOOD",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G31.84",
+  "icd10_validated": true,
+  "icd10_official_description": "Mild cognitive impairment of uncertain or unknown etiology",
+  "evidence_ids": [
+    "EVID_MILD_COGNITIVE_IMPAIRMENT_OF_UNCERTAIN_OR_UNKNOWN_ETIOLOGY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

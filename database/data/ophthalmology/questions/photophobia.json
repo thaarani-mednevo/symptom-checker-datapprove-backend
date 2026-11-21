@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "PHOTOPHOBIA",
+    "complaint_name":  "Photophobia",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PH_001",
+                          "text":  "Is there a headache or neck stiffness with the light sensitivity?",
+                          "purpose":  "meningism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MENINGISM",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PH_002",
+                          "text":  "Is the eye red or painful?",
+                          "purpose":  "ocular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PAINFUL_PHOTOPHOBIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PH_003",
+                          "text":  "Do you have a rash or fever?",
+                          "purpose":  "infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INFECTION_WITH_PHOTOPHOBIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PH_004",
+                          "text":  "Is there a recent eye injury or contact lens use?",
+                          "purpose":  "trauma",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CORNEAL_INJURY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,60 @@
+{
+  "module": "dermatology",
+  "red_flags": [
+    {
+      "code": "RF_MUCOUS_SEVERE",
+      "name": "Mucosal involvement with systemic illness",
+      "action": "disease"
+    },
+    {
+      "code": "RF_BREATHING",
+      "name": "Difficulty breathing",
+      "action": "symptom"
+    },
+    {
+      "code": "RF_JAUNDICE",
+      "name": "Possible liver involvement",
+      "action": "symptom"
+    },
+    {
+      "code": "RF_RAPID_SYSTEMIC_DETERIORATION",
+      "name": "Rapid systemic deterioration",
+      "action": "symptom"
+    },
+    {
+      "code": "RF_SEVERE_MUCOSAL_DISEASE",
+      "name": "Severe mouth/eye/genital mucosal disease",
+      "action": "symptom"
+    },
+    {
+      "code": "RF_DRESS_ORGAN_INVOLVEMENT",
+      "name": "Signs of systemic organ involvement in DRESS syndrome",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_SUDDEN_PATCHY_HAIR_LOSS",
+      "name": "Sudden patchy hair loss with scalp inflammation",
+      "action": "dermatologist_referral"
+    },
+    {
+      "code": "RF_ZOSTER_OPHTHALMIC",
+      "name": "Herpes zoster ophthalmicus (rash near eye)",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_NAIL_SECONDARY_INFECTION",
+      "name": "Secondary bacterial infection around nail",
+      "action": "medical_review"
+    },
+    {
+      "code": "RF_SEVERE_PHOTOSENSITIVITY_REACTION",
+      "name": "Severe blistering photosensitivity reaction",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_RAPID_LUMP_CHANGE",
+      "name": "Rapidly growing, hard, or painful lump",
+      "action": "urgent_medical_review"
+    }
+  ]
+}

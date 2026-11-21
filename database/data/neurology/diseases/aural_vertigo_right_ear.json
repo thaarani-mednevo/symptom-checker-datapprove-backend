@@ -1,0 +1,115 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_106",
+  "code": "AURAL_VERTIGO_RIGHT_EAR",
+  "name": "Aural vertigo, right ear",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Aural vertigo, right ear.",
+  "complaints": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEELING_OF_SPINNING_OR_SWAYING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "VOMITING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIFFICULTY_WALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "BENIGN_PAROXYSMAL_POSITIONAL_VERTIGO_(BPPV)",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MÉNIÈRES_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "VESTIBULAR_NEURITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "STROKE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MULTIPLE_SCLEROSIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MIGRAINE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Acute right-sided aural vertigo accompanied by sudden onset paralysis suggesting an acute central ischemic event such as a brainstem or cerebellar stroke."
+    },
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "APHASIA",
+      "condition": "[LLM DRAFT] Aural vertigo accompanied by acute aphasia, indicating potential posterior circulation cerebrovascular accident (stroke) or transient ischemic attack."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H81.311",
+  "icd10_validated": true,
+  "icd10_official_description": "Aural vertigo, right ear",
+  "evidence_ids": [
+    "EVID_AURAL_VERTIGO_RIGHT_EAR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "DYSURIA",
+    "complaint_name":  "Dysuria",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DYS_001",
+                          "text":  "How long have you had burning or pain on urination?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSURIA_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_002",
+                          "text":  "Is there any discharge from the penis or vagina?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GENITAL_DISCHARGE_WITH_DYSURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_003",
+                          "text":  "Do you have fever, back pain, or flank pain?",
+                          "purpose":  "upper_uti",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UPPER_UTI_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_004",
+                          "text":  "Have you had unprotected sex recently?",
+                          "purpose":  "sti_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "STI_EXPOSURE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_005",
+                          "text":  "Are you passing urine more frequently or urgently?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FREQUENCY_URGENCY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,80 @@
+{
+  "module": "gastrointestinal",
+  "red_flags": [
+    {
+      "code": "RF_GI_001",
+      "name": "Hematemesis or melena with hemodynamic instability (dizziness, fainting, rapid heart rate)",
+      "action": "call_emergency_services"
+    },
+    {
+      "code": "RF_GI_002",
+      "name": "Large-volume or ongoing hematochezia with dizziness or fainting",
+      "action": "call_emergency_services"
+    },
+    {
+      "code": "RF_GI_003",
+      "name": "Bilious (green/yellow) vomiting in a neonate or infant",
+      "action": "call_emergency_services"
+    },
+    {
+      "code": "RF_GI_004",
+      "name": "Inability to keep any fluids down / signs of dehydration",
+      "action": "go_to_er_immediately"
+    },
+    {
+      "code": "RF_GI_005",
+      "name": "Progressive dysphagia (worsening, especially to solids) with unintentional weight loss",
+      "action": "urgent_specialist_referral"
+    },
+    {
+      "code": "RF_GI_006",
+      "name": "Sudden-onset dysphagia with slurred speech, facial droop, or limb weakness",
+      "action": "call_emergency_services"
+    },
+    {
+      "code": "RF_GI_007",
+      "name": "Severe, constant, worsening abdominal pain with a rigid or distended abdomen",
+      "action": "go_to_er_immediately"
+    },
+    {
+      "code": "RF_GI_008",
+      "name": "No passage of flatus or stool with abdominal distension and vomiting (suspected obstruction)",
+      "action": "go_to_er_immediately"
+    },
+    {
+      "code": "RF_GI_009",
+      "name": "New-onset dyspepsia/heartburn in a patient over 50, or with alarm features",
+      "action": "urgent_specialist_referral"
+    },
+    {
+      "code": "RF_GI_010",
+      "name": "Unintentional weight loss of more than 5% body weight over 3 months",
+      "action": "urgent_specialist_referral"
+    },
+    {
+      "code": "RF_GI_011",
+      "name": "Bloody diarrhea with high fever and systemic illness (looks unwell)",
+      "action": "go_to_er_immediately"
+    },
+    {
+      "code": "RF_GI_012",
+      "name": "Iron-deficiency anemia in an adult male or a postmenopausal woman without an obvious cause",
+      "action": "urgent_specialist_referral"
+    },
+    {
+      "code": "RF_GI_013",
+      "name": "Persistent vomiting for more than 24-48 hours, or vomiting with severe headache/stiff neck",
+      "action": "go_to_er_immediately"
+    },
+    {
+      "code": "RF_GI_014",
+      "name": "Family history of colorectal cancer or inflammatory bowel disease with new bowel symptoms",
+      "action": "urgent_specialist_referral"
+    },
+    {
+      "code": "RF_GI_015",
+      "name": "Rectal mass, non-healing rectal ulcer, or persistent rectal bleeding beyond 4-6 weeks",
+      "action": "urgent_specialist_referral"
+    }
+  ]
+}

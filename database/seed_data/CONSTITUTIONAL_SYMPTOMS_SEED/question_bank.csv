@@ -1,0 +1,91 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_Q_FEVER_1,"Have you had recent occupational or recreational contact with livestock such as sheep, goats, or cattle, especially during birthing season?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_Q_FEVER_2,Do you experience persistent shortness of breath or chest pain when breathing?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_Q_FEVER_3,Have you consumed unpasteurized dairy products recently?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TRENCH_FEVER_1,Have you experienced recurring or relapsing fevers lasting several days at a time?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TRENCH_FEVER_2,Have you recently lived in or spent time in conditions with louse infestation or crowded housing?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TRENCH_FEVER_3,"Do you have severe pain in your shins, often described as shin splints?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_SANDFLY_FEVER_1,"Have you recently traveled to a Mediterranean, Middle Eastern, or Central Asian region where sandflies are common?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_SANDFLY_FEVER_2,Did your sudden fever start with retro-orbital pain and severe myalgia?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_LASSA_FEVER_1,Have you traveled to West Africa within the past 3 weeks?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_LASSA_FEVER_2,"Have you been in direct contact with rodent droppings or urine, or lived in a household with a confirmed Lassa fever case?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_LASSA_FEVER_3,Are you experiencing sudden onset of high fever accompanied by a sore throat and retrosternal chest pain?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TYPHOID_FEVER_UNSPECIFIED_1,Have you traveled internationally to an area where typhoid fever is common within the past 60 days?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TYPHOID_FEVER_UNSPECIFIED_2,Did your fever start gradually and progressively worsen over several days?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_TYPHOID_FEVER_UNSPECIFIED_3,"Are you experiencing severe confusion, lethargy, or extreme drowsiness?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_A_1,Have you experienced a progressively worsening high fever over the past several days?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_A_2,Have you recently traveled to an area where paratyphoid fever is endemic?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_A_3,"Are you experiencing severe dizziness, confusion, or sudden severe abdominal pain?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_B_1,"Have you experienced a prolonged, step-wise rising fever over the past several days?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_B_2,"Have you recently traveled to an area where paratyphoid fever is endemic, or consumed food and water from potentially contaminated sources?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_B_3,"Are you experiencing severe dizziness, fainting, or signs of significant bleeding such as blood in your stool?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_C_1,Have you recently traveled to an area where paratyphoid fever is endemic?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_C_2,"Are you experiencing a persistent, high fever that has lasted for several days?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PARATYPHOID_FEVER_C_3,Have you developed severe abdominal tenderness or sudden sharp pain in your abdomen?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_MUSCLE_WEAKNESS_GENERALIZED_1,Did the muscle weakness start suddenly over hours or days rather than developing gradually over weeks or months?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_MUSCLE_WEAKNESS_GENERALIZED_2,"Are you experiencing any difficulty breathing, swallowing, or speaking clearly?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_MUSCLE_WEAKNESS_GENERALIZED_3,Do you notice that your weakness worsens significantly with repetitive physical activity and improves with rest?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION_1,Did the facial weakness develop suddenly?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION_2,Do you have difficulty swallowing or new slurring of speech?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE_1,Did the facial weakness develop suddenly after a known subarachnoid hemorrhage?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE_2,Are you experiencing difficulty swallowing or slurred speech along with the facial weakness?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE_1,Did the facial weakness develop suddenly following a confirmed or suspected stroke?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE_1,Did the facial weakness develop suddenly within the last few hours?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE_2,"Are you experiencing any difficulty with speech, slurring, or trouble swallowing?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE_3,Has this facial weakness persisted as a chronic symptom following a previous stroke or cerebrovascular event?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE_1,Did the facial weakness start suddenly within the last few hours?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE_2,Are you experiencing difficulty swallowing or slurred speech along with the facial weakness?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE_3,Has a healthcare provider previously diagnosed you with a stroke or cerebrovascular disease?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE_1,Did the facial weakness develop suddenly following a previously diagnosed intracranial hemorrhage?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE_2,"Are you experiencing any sudden difficulty with speech, swallowing, or weakness in your arm or leg on one side of your body?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_POSTVIRAL_FATIGUE_SYNDROME_1,Did your severe fatigue and body aches begin shortly after a confirmed or suspected viral infection?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_POSTVIRAL_FATIGUE_SYNDROME_2,Do you experience a profound and prolonged worsening of symptoms even after minor physical or mental exertion?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_SEQUELA_1,"Are you experiencing confusion, disorientation, or dizziness that prevents you from standing?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_SEQUELA_2,Did your symptoms begin shortly after exposure to high ambient temperatures or strenuous physical activity?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME_1,"Have you experienced a profound, unexplained fatigue lasting for at least 6 months that significantly reduces your ability to participate in pre-illness activities?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME_2,"Does physical or mental exertion consistently result in a severe, prolonged worsening of your symptoms, known as post-exertional malaise?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME_3,"Have you noticed any new, severe neurological signs such as sudden limb weakness, loss of vision, or acute confusion?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_1,"Are you experiencing any confusion, dizziness, or fainting?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_2,Have you been exposed to high environmental temperatures or strenuous physical activity recently?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_3,Are you experiencing persistent vomiting that prevents you from keeping fluids down?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_1,"Are you currently experiencing confusion, dizziness, or loss of consciousness?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_2,Did these symptoms recur after returning to a hot environment following a previous episode of heat fatigue?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_3,Have you been continuously exposed to high ambient temperatures or strenuous physical activity over the past 24 hours?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_1,Did your severe fatigue and body aches begin shortly after recovering from a known viral or bacterial infection?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_2,"Do you experience extreme, prolonged exhaustion lasting more than 24 hours after performing minor physical or mental activities?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_3,"Have you experienced any sudden, unexplained neurological changes such as paralysis or acute visual loss?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_1,"Are you experiencing severe dizziness, fainting, or chest pain along with your fatigue?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_2,Are you able to keep food and fluids down throughout the day?,yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_3,Did the extreme fatigue begin only after you became pregnant?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_1,Are you experiencing severe shortness of breath or chest pain along with your fatigue?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_2,"Have you noticed any signs of infection, such as fever, chills, or burning during urination?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_UNSPECIFIED_1,"Do you experience an intense fear of gaining weight, even though you are underweight?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_UNSPECIFIED_2,"Have you experienced significant, rapid weight loss recently?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_UNSPECIFIED_3,Have you had thoughts of self-harm or suicide due to distress about your body image or weight?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_1,"Have you intentionally restricted your food intake significantly over the past 3 months, leading to a body weight that is below minimally normal?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_2,"Do you experience an intense fear of gaining weight or becoming fat, even though your current weight is low?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_3,"Have you engaged in regular binge-eating or purging behaviors, such as self-induced vomiting or misuse of laxatives, over the past 3 months?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_1,"Do you severely restrict your food intake relative to requirements, leading to a significantly low body weight?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_2,"Do you experience an intense fear of gaining weight or becoming fat, persisting even though you are at a significantly low weight?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_3,Have you engaged in recurrent episodes of binge eating or purging behavior in the last three months?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE_1,"Do you experience dizziness, fainting, or chest pain when standing up?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE_2,"Have you significantly restricted your food intake over the past several months, leading to a markedly low body weight?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE_3,"Do you experience an intense fear of gaining weight or becoming fat, despite being at a significantly low weight?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME_1,"Have you experienced dizziness, fainting, or chest pain recently?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME_2,Have you severely restricted your food intake for at least three months while maintaining a significantly low body weight?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME_3,Do you experience an intense fear of gaining weight despite being at an extremely low body weight?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_UNSPECIFIED_1,"Do you intentionally restrict your food intake significantly, leading to a very low body weight for your age and height?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_UNSPECIFIED_2,"Do you experience an intense fear of gaining weight or becoming fat, even though you are underweight?",yes_no,CONTINUE_PATHWAY,ESCALATE,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_UNSPECIFIED_3,"Have you experienced fainting spells, severe dizziness, or chest pain recently?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_1,"Have you experienced a significant, unintentional drop in weight over the past month?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_2,Do you currently engage in strict food restriction or fasting to control your weight?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION_3,Have you experienced thoughts of self-harm or severe depressive symptoms recently?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_1,Do you experience recurrent episodes of eating unusually large amounts of food while feeling a loss of control?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_2,"Do you regularly engage in compensatory behaviors such as self-induced vomiting, misuse of laxatives, or excessive exercise?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_3,"Have you experienced dizziness, fainting, or severe weakness recently?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DEHYDRATION_OF_NEWBORN_1,Has the newborn had fewer than 6 wet diapers in the past 24 hours?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DEHYDRATION_OF_NEWBORN_2,Does the newborn have a sunken soft spot (fontanelle) on top of their head?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DEHYDRATION_OF_NEWBORN_3,Is the baby having difficulty latching or refusing to feed entirely?,yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HYPOVOLEMIA_1,"Have you experienced recent severe vomiting, diarrhea, or excessive sweating?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HYPOVOLEMIA_2,"Are you currently feeling dizzy, lightheaded, or confused when standing up?",yes_no,ESCALATE,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HYPOVOLEMIA_3,Have you noticed a significant decrease in your urine output or very dark-colored urine today?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified

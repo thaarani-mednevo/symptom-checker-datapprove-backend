@@ -1,0 +1,99 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_069",
+  "code": "CORTICAL_AGE_RELATED_CATARACT_BILATERAL",
+  "name": "Cortical age-related cataract, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Cortical age-related cataract, bilateral.",
+  "complaints": [
+    {
+      "code": "VISUAL_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "BLURRY_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIFFICULTIES_WITH_NIGHT_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SENSITIVITY_TO_LIGHT",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DECREASED_CONTRAST_AND_COLOR_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "VISUAL_DISTORTIONS_(HALOS)",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "AGING",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "TRAUMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "RADIATION_EXPOSURE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "GENETIC",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "347591000119101",
+  "snomed_verified_name": "Bilateral cortical age-related cataract eyes",
+  "icd10_code": "H25.013",
+  "icd10_validated": true,
+  "icd10_official_description": "Cortical age-related cataract, bilateral",
+  "evidence_ids": [
+    "EVID_CORTICAL_AGE_RELATED_CATARACT_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

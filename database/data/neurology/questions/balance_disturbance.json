@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "BALANCE_DISTURBANCE",
+    "complaint_name":  "Balance disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BAL_001",
+                          "text":  "Is it unsteadiness, dizziness, or a feeling of being off-balance?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BALANCE_DISTURBANCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BAL_002",
+                          "text":  "Is it worse in the dark, with eyes closed, or on uneven ground?",
+                          "purpose":  "sensory",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SENSORY_BALANCE_DISTURBANCE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BAL_003",
+                          "text":  "Is there vertigo, hearing loss, or tinnitus?",
+                          "purpose":  "vestibular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VESTIBULAR_BALANCE_DISTURBANCE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BAL_004",
+                          "text":  "Are there falls, slurred speech, or tremor?",
+                          "purpose":  "cerebellar",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CEREBELLAR_BALANCE_DISTURBANCE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BAL_005",
+                          "text":  "Is there weakness, numbness, or visual change?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "CNS_BALANCE_DISTURBANCE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

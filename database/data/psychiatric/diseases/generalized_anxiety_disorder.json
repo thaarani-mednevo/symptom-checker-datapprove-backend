@@ -1,0 +1,224 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_001",
+    "code":  "GENERALIZED_ANXIETY_DISORDER",
+    "name":  "Generalized anxiety disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Generalized anxiety disorder (GAD) is an anxiety disorder characterized by excessive, uncontrollable, and often irrational worry about events or activities. Worry often interferes with daily functioning.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PANIC_ATTACKS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EXCESSIVE_WORRY",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RESTLESSNESS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TROUBLE_SLEEPING",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DIFFICULTY_CONCENTRATING",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MUSCLE_TENSION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TREMBLING",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ANXIETY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHRONIC_STRESS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "BEHAVIORAL_INHIBITION_IN_CHILDHOOD",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "TRAUMATIC_EVENTS_OR_ADVERSE_CHILDHOOD_EXPERIENCES",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FEMALE_GENDER",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_WORRY",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_PANIC_ATTACKS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_PANIC",
+                          "condition":  "Patient experiences sudden, intense episodes of fear with physical symptoms."
+                      },
+                      {
+                          "code":  "RF_SUBSTANCE_USE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SUBSTANCE",
+                          "condition":  "Patient reports use of alcohol or drugs to cope with anxiety."
+                      },
+                      {
+                          "code":  "RF_PHYSIOLOGICAL_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_PHYSIOLOGICAL",
+                          "condition":  "Patient reports persistent muscle tension, headaches, or gastrointestinal issues."
+                      },
+                      {
+                          "code":  "RF_DEPRESSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_DEPRESSION",
+                          "condition":  "Patient reports low mood, loss of interest, or suicidal ideation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_WORRY_LEVEL",
+                          "text":  "Do you feel worried or anxious most days?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GENERALIZED_ANXIETY_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DURATION",
+                          "text":  "Has this anxiety persisted for more than 6 months?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GENERALIZED_ANXIETY_DISORDER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PHYSICAL_SYMPTOMS",
+                          "text":  "Do you experience chest pain, shortness of breath, or palpitations during anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "GENERALIZED_ANXIETY_DISORDER_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUICIDE",
+                          "text":  "Have you had thoughts of harming yourself?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "GENERALIZED_ANXIETY_DISORDER_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PANIC_DISORDER",
+                              "distinguishing_feature":  "Characterized by sudden, recurrent panic attacks with fear of future attacks."
+                          },
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "Persistent low mood, anhedonia, and possible psychomotor changes."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "21897009",
+    "snomed_verified_name":  "Generalized anxiety disorder",
+    "icd10_code":  "F41.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Generalized anxiety disorder",
+    "evidence_ids":  [
+                         "EVID_GENERALIZED_ANXIETY_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

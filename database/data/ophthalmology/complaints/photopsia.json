@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_009",
+  "code": "PHOTOPSIA",
+  "name": "Photopsia",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Photopsia is the presence of perceived flashes of light in the field of vision.",
+  "hpo_codes": [],
+  "snomed_code": "56170001",
+  "snomed_verified_name": "Photopsia",
+  "icd10_code": "H53.19",
+  "icd10_validated": true,
+  "icd10_official_description": "Other subjective visual disturbances",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

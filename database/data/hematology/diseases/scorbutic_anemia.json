@@ -1,0 +1,147 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_017",
+    "code":  "SCORBUTIC_ANEMIA",
+    "name":  "Scorbutic anemia",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Scorbutic anemia.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHANGES_TO_HAIR",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SORE_ARMS_AND_LEGS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "GUM_DISEASE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "EASY_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LACK_OF_VITAMIN_C",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Massive spontaneous hemorrhage, petechial hemorrhages leading to hemodynamic instability, or deep tissue bleeding due to severe vascular fragility from profound vitamin C deficiency."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_BLEEDING_GUMS_LOOSE_TEETH",
+                          "text":  "[LLM DRAFT] Do you have bleeding gums, loose teeth, or unexplained bruising or red spots on your skin?",
+                          "purpose":  "Screens for classic signs of scurvy bleeding symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SCORBUTIC_ANEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SEVERE_FATIGUE_JOI",
+                          "text":  "[LLM DRAFT] Have you experienced severe fatigue, joint pain, and weakness, especially in your legs?",
+                          "purpose":  "Screens for systemic scorbutic symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SCORBUTIC_ANEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_VERY_LIMITED_INTAKE_OF_FRES",
+                          "text":  "[LLM DRAFT] Have you had very limited intake of fresh fruits and vegetables, particularly citrus or vitamin C-rich foods, for several months?",
+                          "purpose":  "Screens for dietary deficiency history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SCORBUTIC_ANEMIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Broad category lacking the specific cutaneous and skeletal stigmata of vitamin C deficiency such as perifollicular hemorrhages and gum pathology."
+                          },
+                          {
+                              "disease_code":  "PROTEIN_DEFICIENCY_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with generalized malnutrition, edema, and kwashiorkor features rather than the specific hemorrhagic diathesis of scurvy."
+                          },
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by pancytopenia with bone marrow hypocellularity without the dietary history or connective tissue defects typical of ascorbic acid deficiency."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191161006",
+    "snomed_verified_name":  "Vitamin C deficiency anemia",
+    "icd10_code":  "D53.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Scorbutic anemia",
+    "evidence_ids":  [
+                         "EVID_SCORBUTIC_ANEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

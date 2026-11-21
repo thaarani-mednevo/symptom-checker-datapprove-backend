@@ -1,0 +1,14 @@
+﻿{
+  "complaint_code": "HEPATOMEGALY",
+  "complaint_name": "Hepatomegaly",
+  "module": "hepatobiliary",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_HEPATO_001", "text": "Was the enlarged liver found on clinical examination, blood tests, or imaging?", "purpose": "source", "answer_type": "multiple_choice", "options": ["Clinical examination", "Ultrasound or imaging", "Blood tests (raised LFTs)"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "HEPATOMEGALY_SOURCE", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_HEPATO_002", "text": "Do you have jaundice, right upper quadrant pain, or abdominal swelling?", "purpose": "associated_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(JAUNDICE)", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "HEPATOMEGALY_ASSOCIATED", "yes_weight": 2, "no_weight": 0 },
+    { "code": "Q_CMP_HEPATO_003", "text": "Have you had any unexplained weight loss, night sweats, or fatigue?", "purpose": "malignancy_screen", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(CANCER_RISK)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "WEIGHT_LOSS_WITH_HEPATOMEGALY", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_HEPATO_004", "text": "Do you have a history of heart failure, cancer, or haematological disease?", "purpose": "cause_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "SYSTEMIC_CAUSE_HEPATOMEGALY", "yes_weight": 2, "no_weight": 0 }
+  ]
+}

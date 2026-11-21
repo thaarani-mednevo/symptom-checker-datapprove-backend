@@ -1,0 +1,152 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_001",
+    "code":  "OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS",
+    "name":  "Other chronic allergic conjunctivitis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "A persistent, non‑infectious inflammation of the conjunctiva driven by allergic mechanisms, characterized by chronic itching, redness, and tearing.",
+    "complaints":  [
+                       {
+                           "code":  "WATERY_EYES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EYE_SWELLING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EYE_ITCHING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ITCHING_OF_THE_EYE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TEARING_EPIPHORA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "REDNESS_CONJUNCTIVAL_HYPEREMIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FOLLICULAR_REACTION_ON_CONJUNCTIVA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ATOPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "POLLENEXPOSURE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DUSTMITEEXPOSURE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISIONLOSSEMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss in one eye"
+                      },
+                      {
+                          "code":  "RF_EYEPAINEMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with redness"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_ITCHY_WATERY_EYES_THAT_GET",
+                          "text":  "[LLM DRAFT] Do you have itchy, watery eyes that get worse during certain seasons?",
+                          "purpose":  "seasonal allergic triggers",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_YOUR_EYES_BECOME_RED_AND_I",
+                          "text":  "[LLM DRAFT] Do you notice your eyes become red and itchy after being outdoors or near pollen?",
+                          "purpose":  "outdoor allergen exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_OR_SEVERE",
+                          "text":  "[LLM DRAFT] Do you have sudden vision loss or severe eye pain?",
+                          "purpose":  "urgent eye symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H10.45",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other chronic allergic conjunctivitis",
+    "evidence_ids":  [
+                         "EVID_OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

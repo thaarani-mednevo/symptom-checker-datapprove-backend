@@ -1,0 +1,90 @@
+{
+  "complaint_code": "GENITAL_RASH",
+  "complaint_name": "Genital Rash",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_GRASH_001",
+      "text": "How would you describe the genital rash — is it flat (macular), raised (papular), blistering, scaly, or weeping?",
+      "purpose": "Characterise morphology to narrow the differential between dermatological, STI, and infective causes",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Flat red patches (macular)",
+        "Raised red bumps (papular)",
+        "Blisters or vesicles",
+        "Scaly plaques",
+        "Weeping or crusted lesions",
+        "Mixed or unclear"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "GENITAL_RASH_MORPHOLOGY",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GRASH_002",
+      "text": "Have you had unprotected sexual contact or new sexual partners recently?",
+      "purpose": "STI risk assessment — rash with sexual exposure requires STI screen",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "STI_SEXUAL_RISK",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GRASH_003",
+      "text": "Is the rash also present on the palms of your hands, soles of your feet, or in your mouth?",
+      "purpose": "Widespread rash including palms and soles is a classic sign of secondary syphilis",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "SECONDARY_SYPHILIS_RASH",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GRASH_004",
+      "text": "Is the rash intensely itchy, particularly at night?",
+      "purpose": "Nocturnal itch suggests scabies, which frequently involves the genitalia in males",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(SCABIES_GENITAL_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "NOCTURNAL_GENITAL_ITCH",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GRASH_005",
+      "text": "Have you recently changed soaps, washing powders, lubricants, or latex products that contact the genital area?",
+      "purpose": "Contact dermatitis or irritant dermatitis is a common non-infectious cause of genital rash",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(CONTACT_DERMATITIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "CONTACT_IRRITANT_CAUSE",
+      "yes_weight": -1,
+      "no_weight": 1
+    },
+    {
+      "code": "Q_CMP_GRASH_006",
+      "text": "Do you have a known skin condition such as psoriasis or lichen planus elsewhere on your body?",
+      "purpose": "Pre-existing skin conditions can manifest on the genitalia and require specialist dermatology management",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GENITAL_DERMATOSIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "PRIOR_SKIN_CONDITION",
+      "yes_weight": -1,
+      "no_weight": 1
+    }
+  ]
+}

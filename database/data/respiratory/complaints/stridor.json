@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_009",
+  "code": "STRIDOR",
+  "name": "Stridor",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "Stridor is an extra-thoracic high-pitched breath sound resulting from turbulent air flow in the larynx or elsewhere in the upper respiratory tract. It is different from stertor, which is a snoring noise originating in the pharynx, and wheezing, which originates in the bronchi.",
+  "hpo_codes": [
+    "HP:0010307"
+  ],
+  "snomed_code": "70407001",
+  "snomed_verified_name": "Stridor",
+  "icd10_code": "R06.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Stridor",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

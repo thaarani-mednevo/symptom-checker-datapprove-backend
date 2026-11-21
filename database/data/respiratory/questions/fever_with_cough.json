@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "FEVER_WITH_COUGH",
+    "complaint_name":  "Fever with cough",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "no_weight":  0,
+                          "text":  "How high is the temperature and how long have you had it?",
+                          "purpose":  "fever_severity",
+                          "tests_symptom_code":  "FEVER_DEGREE",
+                          "yes_weight":  0,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_FEVCOUGH_001",
+                          "answer_type":  "free_text"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "no_weight":  0,
+                          "text":  "Are you bringing up coloured or discoloured sputum?",
+                          "purpose":  "productive_check",
+                          "tests_symptom_code":  "PRODUCTIVE_COUGH_WITH_FEVER",
+                          "yes_weight":  2,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_FEVCOUGH_002",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  -1,
+                          "text":  "Do you have chest pain when breathing in?",
+                          "purpose":  "pleurisy_check",
+                          "tests_symptom_code":  "PLEURITIC_PAIN_WITH_FEVER",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(PLEURITIC)",
+                          "code":  "Q_CMP_FEVCOUGH_003",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  4,
+                          "no_weight":  -1,
+                          "text":  "Are you breathless at rest or unable to speak in full sentences?",
+                          "purpose":  "severity_red_flag",
+                          "tests_symptom_code":  "SEVERE_PNEUMONIA_FEATURES",
+                          "yes_weight":  5,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "ESCALATE",
+                          "code":  "Q_CMP_FEVCOUGH_004",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

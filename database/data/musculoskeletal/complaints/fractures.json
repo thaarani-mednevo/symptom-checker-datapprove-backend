@@ -1,0 +1,17 @@
+{
+  "id": "MUSCULOSKELETAL_COMP_MSK_004",
+  "code": "FRACTURES",
+  "name": "Fractures",
+  "module": "musculoskeletal",
+  "body_system": "musculoskeletal",
+  "category": "complaint",
+  "description": "Fracture is the cracking or breaking into pieces of an object or material under the action of stress. The science of fracture is a field of study in physics, metallurgy and engineering.",
+  "hpo_codes": [],
+  "snomed_code": "263222005",
+  "snomed_verified_name": "Multiple pelvic fractures",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

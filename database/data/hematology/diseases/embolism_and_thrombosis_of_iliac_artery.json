@@ -1,0 +1,175 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_030",
+    "code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY",
+    "name":  "Embolism and thrombosis of iliac artery",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A sudden or progressive blockage of the iliac artery due to a blood clot or embolus, leading to ischemia of the lower extremities.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ENLARGED_VEINS_IN_THE_AFFECTED_LIMB",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECENT_SURGERY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ACTIVE_CANCER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFECTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFLAMMATORY_DISEASES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ANTIPHOSPHOLIPID_SYNDROME",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PERSONAL_HISTORY_OR_FAMILY_HISTORY_OF_VTE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INJURIES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LACK_OF_MOVEMENT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_LIMB_ISCHEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Sudden onset of severe pain, pallor, pulselessness, paresthesia, and paralysis in the affected lower extremity due to acute iliac artery occlusion."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SUDDEN_SEVERE_PAIN",
+                          "text":  "[LLM DRAFT] Are you experiencing sudden, severe pain, coldness, or numbness in one of your legs or feet?",
+                          "purpose":  "Screens for acute limb ischemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_A_COMPLETE_LACK_OF_PULSE_I",
+                          "text":  "[LLM DRAFT] Do you notice a complete lack of pulse in your groin or affected leg?",
+                          "purpose":  "Screens for absent arterial pulse",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_A_RECENT_ONSET_OF_PALE_OR_B",
+                          "text":  "[LLM DRAFT] Have you had a recent onset of pale or bluish skin discoloration in one of your lower limbs?",
+                          "purpose":  "Screens for acute vascular compromise",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute ischemia affecting a different arterial bed, such as the upper extremities or visceral vessels, rather than the lower limb and pelvic ischemia typical of iliac occlusion."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with signs of proximal major trunk obstruction, such as acute upper and lower extremity perfusion deficits or back pain, rather than isolated unilateral lower extremity ischemia."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents an unlocalized vascular occlusion lacking the specific anatomic localization to the iliac bifurcation that characterizes lower limb claudication, rest pain, or pulselessness."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "195335005",
+    "snomed_verified_name":  "Embolism and/or thrombosis of the common iliac artery",
+    "icd10_code":  "I74.5",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Embolism and thrombosis of iliac artery",
+    "evidence_ids":  [
+                         "EVID_EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

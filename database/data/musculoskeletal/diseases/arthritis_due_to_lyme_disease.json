@@ -1,0 +1,155 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_046",
+    "code":  "ARTHRITIS_DUE_TO_LYME_DISEASE",
+    "name":  "Arthritis due to Lyme disease",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Arthritis is a general medical term used to describe a disorder in which the smooth cartilagenous layer that lines a joint is lost, resulting in bone grinding on bone during joint movement. Symptoms generally include joint pain and stiffness.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JOINT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STIFFNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DECREASED_RANGE_OF_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SEX",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PREVIOUS_JOINT_INJURY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_A_LARGE",
+                          "text":  "[LLM DRAFT] Do you have swelling or pain in a large joint (like knee, ankle, or wrist) that has lasted more than a week?",
+                          "purpose":  "detect persistent large joint arthritis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ARTHRITIS_DUE_TO_LYME_DISEASE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_NOTICE_A_RED_EXPANDING_RASH_LI",
+                          "text":  "[LLM DRAFT] Did you notice a red, expanding rash (like a bull\u0027s-eye) on your skin in the past month?",
+                          "purpose":  "identify erythema migrans",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ARTHRITIS_DUE_TO_LYME_DISEASE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_BITTEN_BY_A_TICK_OR_VISITE",
+                          "text":  "[LLM DRAFT] Have you been bitten by a tick or visited a wooded area in the last 6 months?",
+                          "purpose":  "assess exposure risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ARTHRITIS_DUE_TO_LYME_DISEASE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "RHEUMATOID_ARTHRITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Symmetrical joint involvement with \u003e1 hour morning stiffness"
+                          },
+                          {
+                              "disease_code":  "GOUT_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Sudden intense pain with red hot joint, often first MTP"
+                          },
+                          {
+                              "disease_code":  "STAPHYLOCOCCAL_POLYARTHRITIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Acute onset with fever and purulent joint fluid"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A69.23",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Arthritis due to Lyme disease",
+    "evidence_ids":  [
+                         "EVID_ARTHRITIS_DUE_TO_LYME_DISEASE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

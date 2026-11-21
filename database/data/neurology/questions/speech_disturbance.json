@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "SPEECH_DISTURBANCE",
+    "complaint_name":  "Speech disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SD_001",
+                          "text":  "Is the problem with finding words, slurred speech, or understanding speech?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SPEECH_DISTURBANCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SD_002",
+                          "text":  "Did it start suddenly?",
+                          "purpose":  "sudden",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUDDEN_SPEECH_DISTURBANCE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SD_003",
+                          "text":  "Is there weakness, facial droop, or visual change?",
+                          "purpose":  "stroke",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "STROKE_WITH_SPEECH_DISTURBANCE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SD_004",
+                          "text":  "Has it been gradual?",
+                          "purpose":  "progressive",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PROGRESSIVE_SPEECH_DISTURBANCE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

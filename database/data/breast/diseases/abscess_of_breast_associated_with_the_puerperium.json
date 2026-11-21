@@ -1,0 +1,120 @@
+﻿{
+    "id":  "BREAST_DIS_CS_009",
+    "code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_THE_PUERPERIUM",
+    "name":  "Abscess of breast associated with the puerperium",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "An acute infection of breast tissue occurring during the postpartum period, presenting as a painful, localized collection of pus.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "AXILLARY_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BREAST_PAIN_AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BREASTFEEDING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NIPPLE_TRAUMA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "POOR_MILK_REMOVAL",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPTIC_SHOCK_PUERPERAL_MASTITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Signs of systemic toxicity or sepsis (e.g., high fever, tachycardia, hypotension, altered mental status) in the setting of severe breast pain and puerperal abscess."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_BREASTFEEDING_OR_WITHI",
+                          "text":  "[LLM DRAFT] Are you currently breastfeeding or within a few weeks of giving birth?",
+                          "purpose":  "screens for puerperal timing",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_THE_PUERPERIUM_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_PAINFUL_RED_SWOLLEN_LUMP",
+                          "text":  "[LLM DRAFT] Do you have a painful, red, swollen lump on your breast accompanied by fever or chills?",
+                          "purpose":  "screens for acute breast abscess symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_THE_PUERPERIUM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs during active breastfeeding rather than the broader postpartum/puerperal period without lactation focus."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] Involves the nipple and areolar complex specifically, often presenting with subareolar duct involvement and fistulae."
+                          },
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] A chronic, non-bacterial inflammatory condition featuring dilated ducts and nipple discharge, rather than an acute localized purulent collection."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O91.12",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abscess of breast associated with the puerperium",
+    "evidence_ids":  [
+                         "EVID_ABSCESS_OF_BREAST_ASSOCIATED_WITH_THE_PUERPERIUM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

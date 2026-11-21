@@ -1,0 +1,140 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_031",
+    "code":  "HYPERTENSIVE_RETINOPATHY_BILATERAL",
+    "name":  "Hypertensive retinopathy, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Hypertensive retinopathy is damage to the retina and retinal circulation due to high blood pressure.",
+    "complaints":  [
+                       {
+                           "code":  "BLURRED_VISION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ARTERIOLAR_NARROWING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ARTERIOVENOUS_NICKING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FLAME_SHAPED_HEMORRHAGES",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "COTTON_WOOL_SPOTS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PAPILLEDEMA",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CKD",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, profound vision loss in one or both eyes, suggestive of malignant hypertension or papilledema."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_LOSS_OF_VISION_IN_BOT",
+                          "text":  "[LLM DRAFT] Do you have sudden loss of vision in both eyes?",
+                          "purpose":  "acute vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPERTENSIVE_RETINOPATHY_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_SEE_FLASHING_LIGHTS_OR_FLOATERS_I",
+                          "text":  "[LLM DRAFT] Do you see flashing lights or floaters in both eyes?",
+                          "purpose":  "possible retinal detachment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPERTENSIVE_RETINOPATHY_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_HEADACHES_OR_DIZZINESS_ALONG",
+                          "text":  "[LLM DRAFT] Do you have headaches or dizziness along with vision changes?",
+                          "purpose":  "associated symptoms of hypertension",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPERTENSIVE_RETINOPATHY_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "345771000119101",
+    "snomed_verified_name":  "Bilateral hypertension with disorder of retinas",
+    "icd10_code":  "H35.033",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypertensive retinopathy, bilateral",
+    "evidence_ids":  [
+                         "EVID_HYPERTENSIVE_RETINOPATHY_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

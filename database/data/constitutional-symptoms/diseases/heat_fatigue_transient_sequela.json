@@ -1,0 +1,91 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_017",
+    "code":  "HEAT_FATIGUE_TRANSIENT_SEQUELA",
+    "name":  "Heat fatigue, transient, sequela",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Persistent fatigue and malaise following an episode of heat fatigue, typically resolving within days but may linger as a transient sequela.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Confusion, lethargy, or loss of consciousness following heat exposure"
+                      },
+                      {
+                          "code":  "RF_HIGH_BODY_TEMPERATURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Core body temperature exceeding 104°F (40°C)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_SEQUELA_1",
+                          "text":  "Are you experiencing confusion, disorientation, or dizziness that prevents you from standing?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_SEQUELA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_SEQUELA_2",
+                          "text":  "Did your symptoms begin shortly after exposure to high ambient temperatures or strenuous physical activity?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_SEQUELA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents during or immediately after acute heat exposure rather than as a delayed or chronic sequela."
+                          },
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by long-term, relapsing fatigue and post-exertional malaise independent of a history of heat exposure."
+                          },
+                          {
+                              "disease_code":  "HYPOVOLEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Manifests primarily with signs of acute intravascular volume depletion such as hypotension and tachycardia, which may occur without environmental heat exposure."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "T67.6XXS",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Heat fatigue, transient, sequela",
+    "evidence_ids":  [
+                         "EVID_HEAT_FATIGUE_TRANSIENT_SEQUELA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

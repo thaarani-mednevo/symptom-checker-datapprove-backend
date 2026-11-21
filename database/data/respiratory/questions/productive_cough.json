@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "PRODUCTIVE_COUGH",
+    "complaint_name":  "Productive cough",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "options":  [
+                                          "Clear or white",
+                                          "Yellow",
+                                          "Green or dark",
+                                          "Blood-stained",
+                                          "Brown or rusty"
+                                      ],
+                          "text":  "What colour is the sputum — clear, white, yellow, green, or blood-stained?",
+                          "purpose":  "character",
+                          "tests_symptom_code":  "SPUTUM_COLOUR",
+                          "yes_weight":  0,
+                          "no_weight":  0,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_PCOUGH_001",
+                          "answer_type":  "multiple_choice"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "options":  [
+                                          "Small amount (teaspoon)",
+                                          "Moderate (tablespoon)",
+                                          "Large volume (more than 2 tablespoons per day)"
+                                      ],
+                          "text":  "How much sputum do you produce each day — a teaspoon, tablespoon, or more?",
+                          "purpose":  "volume",
+                          "tests_symptom_code":  "SPUTUM_VOLUME",
+                          "yes_weight":  0,
+                          "no_weight":  0,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_PCOUGH_002",
+                          "answer_type":  "multiple_choice"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  -1,
+                          "text":  "Have you had recurrent chest infections requiring antibiotics over the past year?",
+                          "purpose":  "bronchiectasis_screen",
+                          "tests_symptom_code":  "RECURRENT_INFECTIONS",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(BRONCHIECTASIS)",
+                          "code":  "Q_CMP_PCOUGH_003",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  4,
+                          "no_weight":  -1,
+                          "text":  "Do you smoke or have a history of smoking?",
+                          "purpose":  "risk_factor",
+                          "tests_symptom_code":  "SMOKING_HISTORY",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(COPD)",
+                          "code":  "Q_CMP_PCOUGH_004",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

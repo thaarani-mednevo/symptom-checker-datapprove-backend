@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_017",
+  "code": "VISUAL_LOSS",
+  "name": "Visual loss",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Visual or vision impairment is the partial or total inability of visual perception. In the absence of treatment such as corrective eyewear, assistive devices, and medical treatment, visual impairment may cause the individual difficulties with normal daily tasks, including reading and walking.",
+  "hpo_codes": [],
+  "snomed_code": "397540003",
+  "snomed_verified_name": "Visual impairment",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

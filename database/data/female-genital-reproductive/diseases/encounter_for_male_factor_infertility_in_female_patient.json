@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_039",
+    "code":  "ENCOUNTER_FOR_MALE_FACTOR_INFERTILITY_IN_FEMALE_PATIENT",
+    "name":  "Encounter for male factor infertility in female patient",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Encounter for male factor infertility in female patient.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARTNER_FERTILITY_ASSESSED",
+                          "text":  "Has your partner had a fertility (semen) assessment?",
+                          "purpose":  "Confirm partner\u0027s diagnosis drives this encounter",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ENCOUNTER_FOR_MALE_FACTOR_INFERTILITY_IN_FEMALE_PATIENT_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "Z31.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Encounter for male factor infertility in female patient",
+    "evidence_ids":  [
+                         "EVID_ENCOUNTER_FOR_MALE_FACTOR_INFERTILITY_IN_FEMALE_PATIENT"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,15 @@
+﻿{
+  "complaint_code": "ASCITES",
+  "complaint_name": "Ascites",
+  "module": "hepatobiliary",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_ASCIT_001", "text": "How quickly has the abdominal swelling developed — over days or weeks?", "purpose": "onset", "answer_type": "multiple_choice", "options": ["Days", "1–2 weeks", "Weeks to months"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "ASCITES_ONSET", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_ASCIT_002", "text": "Do you have fever or abdominal pain along with the swelling?", "purpose": "sbp_check", "answer_type": "yes_no", "if_yes_action": "RED_FLAG(RF_SBP)", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "FEVER_WITH_ASCITES", "yes_weight": 4, "no_weight": -1 },
+    { "code": "Q_CMP_ASCIT_003", "text": "Have you vomited blood or passed very dark tarry stools?", "purpose": "variceal_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "VARICEAL_BLEEDING", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_ASCIT_004", "text": "Do you have known liver disease or cancer?", "purpose": "history_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "KNOWN_LIVER_DISEASE", "yes_weight": 2, "no_weight": 0 },
+    { "code": "Q_CMP_ASCIT_005", "text": "Have you become confused or had difficulty concentrating recently?", "purpose": "encephalopathy_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "HEPATIC_ENCEPHALOPATHY", "yes_weight": 5, "no_weight": -1 }
+  ]
+}

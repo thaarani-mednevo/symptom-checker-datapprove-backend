@@ -1,0 +1,64 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_001",
+  "code": "TYPE_1_DIABETES_MELLITUS_PRESYMPTOMATIC_STAGE_1",
+  "name": "Type 1 diabetes mellitus, presymptomatic, Stage 1",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Type 1 diabetes (T1D), or type 1 diabetes mellitus, is an autoimmune disease that occurs when the body's immune system destroys beta cells in the pancreas that produce the hormone insulin. Insulin is used by the body to store and convert blood sugar into energy.",
+  "complaints": [
+    {
+      "code": "NOCTURNAL_ENURESIS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FREQUENT_URINATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "INCREASED_THIRST",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEIGHT_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "BODY_DOES_NOT_PRODUCE_ENOUGH_INSULIN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "E10.A1",
+  "icd10_validated": true,
+  "icd10_official_description": "Type 1 diabetes mellitus, presymptomatic, Stage 1",
+  "evidence_ids": [
+    "EVID_TYPE_1_DIABETES_MELLITUS_PRESYMPTOMATIC_STAGE_1"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

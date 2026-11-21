@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "LYMPHADENOPATHY",
+    "complaint_name":  "Lymphadenopathy",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_LAD_001",
+                          "text":  "Where are the swollen glands — neck, armpit, groin, or elsewhere?",
+                          "purpose":  "location",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LYMPH_NODE_LOCATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LAD_002",
+                          "text":  "How long have they been enlarged and are they growing?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LYMPH_NODE_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LAD_003",
+                          "text":  "Are the nodes tender or painless?",
+                          "purpose":  "tenderness",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NODE_TENDERNESS",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LAD_004",
+                          "text":  "Do you have fever, night sweats, or weight loss?",
+                          "purpose":  "b_symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "B_SYMPTOMS_WITH_LAD",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LAD_005",
+                          "text":  "Are the nodes hard, fixed, or rubbery?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "SUSPICIOUS_NODES",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

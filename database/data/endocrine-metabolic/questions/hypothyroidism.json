@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "HYPOTHYROIDISM",
+    "complaint_name":  "Hypothyroidism",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_HYPO_001",
+                                       "Are you more tired than usual, feeling cold when others are comfortable, or gaining weight?",
+                                       "classical",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "HYPOTHYROID_CLASSICAL",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_HYPO_002",
+                          "text":  "Is your skin dry, hair thinning, or are you constipated?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOTHYROID_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HYPO_003",
+                          "text":  "Do you have a slow heart rate or feel your heart beating slowly?",
+                          "purpose":  "cardiac",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BRADYCARDIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HYPO_004",
+                          "text":  "Are you taking thyroid medication or have you had thyroid surgery or radioiodine?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "THYROID_TREATMENT_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HYPO_005",
+                          "text":  "Do you feel confused, drowsy, or unusually cold?",
+                          "purpose":  "myxoedema_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "MYXOEDEMA_COMA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,7 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description,icd10_needs_confirmation
+COMP_MSK_001,STIFFNESS,Stiffness,musculoskeletal,musculoskeletal,complaint,,271587009,M25.60,1.0,true,,,False
+COMP_MSK_002,IMPAIRED_FUNCTION,Impaired function,musculoskeletal,musculoskeletal,complaint,,82971005,R26.89,1.0,true,,,True
+COMP_MSK_003,POLYARTHRITIS,Polyarthritis,musculoskeletal,musculoskeletal,complaint,,416956002,M13.0,1.0,true,,,False
+COMP_MSK_004,FRACTURES,Fractures,musculoskeletal,musculoskeletal,complaint,,,,1.0,true,,,True
+COMP_MSK_005,MUSCLE_WEAKNESS,Muscle weakness,musculoskeletal,musculoskeletal,complaint,,26544005,M62.81,1.0,true,,,False
+COMP_MSK_006,ACUTE_MONOARTHRITIS,Acute monoarthritis,musculoskeletal,musculoskeletal,complaint,,699462004,M13.10,1.0,true,,,False

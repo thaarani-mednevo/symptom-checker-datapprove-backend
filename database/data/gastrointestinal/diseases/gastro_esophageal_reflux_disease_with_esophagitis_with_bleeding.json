@@ -1,0 +1,104 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_010",
+    "code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING",
+    "name":  "Gastro-esophageal reflux disease with esophagitis, with bleeding",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Gastroesophageal reflux disease (GERD) or gastro-oesophageal reflux disease (GORD) is a chronic upper gastrointestinal disease in which stomach content persistently and regularly flows up into the esophagus, resulting in symptoms and/or complications. Symptoms include dental corrosion, dysphagia, heartburn, odynophagia, regurgitation, non-cardiac chest pain, extraesophageal symptoms such as chronic cough, hoarseness, reflux-induced laryngitis, or asthma.",
+    "complaints":  [
+                       {
+                           "code":  "HEARTBURN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "TASTE_OF_ACID",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEARTBURN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BAD_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BREATHING_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INADEQUATE_CLOSURE_OF_THE_LOWER_ESOPHAGEAL_SPHINCTER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_001",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING",
+                          "condition":  "Any hematemesis or melena from esophagitis bleeding"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_001",
+                          "text":  "Are you currently vomiting blood, or have you noticed black, tarry stools?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_001)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K21.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gastro-esophageal reflux disease with esophagitis, with bleeding",
+    "evidence_ids":  [
+                         "EVID_GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

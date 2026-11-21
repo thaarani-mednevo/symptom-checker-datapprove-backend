@@ -1,0 +1,81 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_072",
+  "code": "DYSARTHRIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+  "name": "Dysarthria following nontraumatic subarachnoid hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Dysarthria is a speech sound disorder resulting from neurological injury of the motor component of the motor–speech system and is characterized by poor articulation of phonemes. Those affected lack sufficient control of the muscles used for speech to pronounce words clearly.",
+  "complaints": [
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SLURRED_SPEECH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEAK_EXECUTION_OF_ORAL_MUSCULAR_MOVEMENTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "CEREBRAL_VASOSPASM",
+      "strength": "strong"
+    },
+    {
+      "code": "LARGE_ANEURYSM_SIZE",
+      "strength": "moderate"
+    },
+    {
+      "code": "POOR_INITIAL_CLINICAL_GRADE_HUNT_AND_HESS_SCALE",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] New or worsening acute motor deficit indicating potential rebleeding, vasospasm, or expanding hematoma following nontraumatic subarachnoid hemorrhage."
+    },
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Acute onset of seizure activity indicating critical neurological destabilization or acute intracranial complication secondary to subarachnoid hemorrhage."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.022",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysarthria following nontraumatic subarachnoid hemorrhage",
+  "evidence_ids": [
+    "EVID_DYSARTHRIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

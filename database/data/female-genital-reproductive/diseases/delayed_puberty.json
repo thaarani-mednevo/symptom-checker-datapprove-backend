@@ -1,0 +1,81 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_048",
+    "code":  "DELAYED_PUBERTY",
+    "name":  "Delayed puberty",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Delayed puberty is when a person lacks or has incomplete development of specific sexual characteristics past the usual age of onset of puberty. The person may have no physical or hormonal signs that puberty has begun.",
+    "complaints":  [
+                       {
+                           "code":  "DELAYED_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_NO_PUBERTY_BY_13_15",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DELAYED_PUBERTY",
+                          "condition":  "No breast development by 13 or no menarche by 15"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BREAST_DEVELOPMENT_STARTED",
+                          "text":  "Has any breast development begun?",
+                          "purpose":  "Assess pubertal development",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DELAYED_PUBERTY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MENARCHE_OCCURRED",
+                          "text":  "Have your periods started yet (menarche)?",
+                          "purpose":  "Confirm menarche status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DELAYED_PUBERTY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOGONADOTROPIC_HYPOGONADISM",
+                              "distinguishing_feature":  "Delayed puberty is the clinical presentation (no pubertal signs by expected age); hypogonadotropic hypogonadism is a specific hormonal (low gonadotropin) cause of it"
+                          },
+                          {
+                              "disease_code":  "TURNER_SYNDROME",
+                              "distinguishing_feature":  "Turner syndrome is confirmed by karyotype (45,X) with characteristic features (short stature, webbed neck); delayed puberty alone has no such genetic confirmation"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "400003000",
+    "snomed_verified_name":  "Delayed puberty",
+    "icd10_code":  "E30.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Delayed puberty",
+    "evidence_ids":  [
+                         "EVID_DELAYED_PUBERTY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

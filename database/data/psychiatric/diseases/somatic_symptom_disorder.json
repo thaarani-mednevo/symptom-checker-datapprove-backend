@@ -1,0 +1,156 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_042",
+    "code":  "SOMATIC_SYMPTOM_DISORDER",
+    "name":  "Somatic symptom disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Somatic symptom disorder (SSD) is a mental disorder characterized by an excessive focus on physical symptoms—such as pain or shortness of breath—that cause significant distress or impairment. Individuals with SSD experience disproportionate thoughts, emotions, and behaviors related to their symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "SOMATIC_SYMPTOMS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "MULTIPLE_PHYSICAL_SYMPTOMS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXCESSIVE_THOUGHTS_ABOUT_SYMPTOMS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HIGH_ANXIETY_ABOUT_HEALTH",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXCESSIVE_TIME_SPENT_ON_SYMPTOMS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PERSISTENT_HEALTH_CONCERNS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ADVERSE_CHILDHOOD_EXPERIENCES",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "ANXIETY_OR_DEPRESSIVE_DISORDERS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "ALEXITHYMIA",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "GENETIC_AND_FAMILIAL_VULNERABILITY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CULTURAL_FACTORS_STIGMATIZING_PSYCHOLOGICAL_DISTRESS",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_UNEXPLAINED_WEIGHT_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_UNEXPLAINED_WEIGHT_LOSS",
+                          "condition":  "Unexplained weight loss \u003e5% in 6 months"
+                      },
+                      {
+                          "code":  "RF_UNEXPLAINED_FEVER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_UNEXPLAINED_FEVER",
+                          "condition":  "Unexplained fever \u003e38°C lasting \u003e2 weeks"
+                      },
+                      {
+                          "code":  "RF_NEUROLOGICAL_DEFICIT",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_NEUROLOGICAL_DEFICIT",
+                          "condition":  "New onset weakness, numbness, or vision changes"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_UNEXPLAINED_WEIGHT_LOSS",
+                          "text":  "Have you experienced unexplained weight loss of more than 5% in the past 6 months?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SOMATIC_SYMPTOM_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_UNEXPLAINED_FEVER",
+                          "text":  "Do you have any unexplained fever lasting more than 2 weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SOMATIC_SYMPTOM_DISORDER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_NEUROLOGICAL_DEFICIT",
+                          "text":  "Have you noticed any new neurological deficits such as weakness, numbness, or vision changes?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SOMATIC_SYMPTOM_DISORDER_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "723916001",
+    "snomed_verified_name":  "Bodily distress disorder",
+    "icd10_code":  "F45.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Undifferentiated somatoform disorder",
+    "evidence_ids":  [
+                         "EVID_SOMATIC_SYMPTOM_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

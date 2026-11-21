@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "HALLUCINATIONS",
+    "complaint_name":  "Hallucinations",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HALL_001",
+                          "text":  "Do you hear voices or see things that others do not?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HALLUCINATION_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HALL_002",
+                          "text":  "Do the voices tell you to harm yourself or others?",
+                          "purpose":  "command",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "COMMAND_HALLUCINATIONS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HALL_003",
+                          "text":  "Are you aware the voices or visions are not real?",
+                          "purpose":  "insight",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HALLUCINATION_INSIGHT",
+                          "yes_weight":  -1,
+                          "no_weight":  2
+                      },
+                      {
+                          "code":  "Q_CMP_HALL_004",
+                          "text":  "Have you been using alcohol or drugs recently?",
+                          "purpose":  "substance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SUBSTANCE_WITH_HALLUCINATIONS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,93 @@
+﻿{
+  "id": "GASTROINTESTINAL_DIS_GI_021",
+  "code": "CONSTIPATION_UNSPECIFIED",
+  "name": "Constipation, unspecified",
+  "module": "gastrointestinal",
+  "category": "disease",
+  "description": "Constipation is a bowel dysfunction that makes bowel movements infrequent or hard to pass. The stool is often hard and dry.",
+  "complaints": [
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INFREQUENT_OR_HARD_TO_PASS_BOWEL_MOVEMENTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ABDOMINAL_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "BLOATING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "SLOW_MOVEMENT_OF_STOOL_WITHIN_THE_COLON",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "IRRITABLE_BOWEL_SYNDROME",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CELIAC_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "NON_CELIAC_GLUTEN_SENSITIVITY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PELVIC_FLOOR_DISORDERS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [
+    {
+      "disease_code": "SLOW_TRANSIT_CONSTIPATION",
+      "distinguishing_feature": "Slow transit constipation is confirmed by prolonged colonic transit time on testing; unspecified constipation has not yet been characterized by such studies."
+    },
+    {
+      "disease_code": "OUTLET_DYSFUNCTION_CONSTIPATION",
+      "distinguishing_feature": "Outlet dysfunction constipation involves difficulty with rectal evacuation (straining, incomplete emptying) due to pelvic floor dysfunction, typically confirmed by anorectal manometry or defecography, rather than slow colonic transit."
+    },
+    {
+      "disease_code": "DRUG_INDUCED_CONSTIPATION",
+      "distinguishing_feature": "Drug-induced constipation has a clear temporal relationship to starting a constipating medication (e.g. opioids, iron, anticholinergics) and often improves on discontinuation."
+    }
+  ],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K59.00",
+  "icd10_validated": true,
+  "icd10_official_description": "Constipation, unspecified",
+  "evidence_ids": [
+    "EVID_CONSTIPATION_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

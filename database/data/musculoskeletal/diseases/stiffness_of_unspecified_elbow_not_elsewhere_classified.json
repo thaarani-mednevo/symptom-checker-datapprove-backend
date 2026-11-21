@@ -1,0 +1,85 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_007",
+  "code": "STIFFNESS_OF_UNSPECIFIED_ELBOW_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of unspecified elbow, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "A condition characterized by limited range of motion and stiffness in the elbow joint without a specific underlying cause.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "LIMITED_RANGE_OF_MOTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "JOINT_PAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    },
+    {
+      "code": "JOINT_SWELLING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "MUSCLE_WEAKNESS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_ELBOW",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Acute onset elbow pain, swelling, fever, and limited motion suggestive of septic arthritis"
+    },
+    {
+      "code": "RF_FRACTURE_ELBOW_STIFFNESS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "FRACTURES",
+      "condition": "[LLM DRAFT] Acute elbow pain, deformity, inability to move, and possible neurovascular compromise indicating fracture"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.629",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of unspecified elbow, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_UNSPECIFIED_ELBOW_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

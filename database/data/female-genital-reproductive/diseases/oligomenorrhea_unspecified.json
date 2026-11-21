@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_031",
+    "code":  "OLIGOMENORRHEA_UNSPECIFIED",
+    "name":  "Oligomenorrhea, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Oligomenorrhea is an abnormal bleeding pattern where menstrual bleeding occurs at intervals of greater than 35 days, with fewer than 9 periods in a year. The period may be light in flow, short in duration or occur at irregular intervals.",
+    "complaints":  [
+                       {
+                           "code":  "OLIGOMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Quantify cycle length",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OLIGOMENORRHEA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N91.5",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Oligomenorrhea, unspecified",
+    "evidence_ids":  [
+                         "EVID_OLIGOMENORRHEA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,146 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_015",
+    "code":  "BONE_METASTASES",
+    "name":  "Bone metastases",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Bone metastases occur when cancer cells from a primary tumour spread haematogenously to the skeleton. The most common primaries producing bone metastases are breast, prostate, lung, kidney, and thyroid cancers. The axial skeleton (spine, pelvis, ribs) and proximal long bones are most frequently affected. Metastases may be osteolytic (bone-destroying, e.g., lung, kidney, breast), osteoblastic (bone-forming, e.g., prostate), or mixed. Complications include bone pain, hypercalcaemia, pathological fractures, and malignant spinal cord compression — the last of which is an oncological emergency requiring same-day imaging and treatment.",
+    "complaints":  [
+                       {
+                           "code":  "BONE_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALISED_BONE_PAIN_WORSE_AT_NIGHT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "PATHOLOGICAL_FRACTURE",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "HYPERCALCAEMIA_SYMPTOMS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LIMB_WEAKNESS_SPINAL_CORD_COMPRESSION",
+                         "relationship":  "occasional",
+                         "frequency":  "rare",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "KNOWN_PRIMARY_BREAST_PROSTATE_LUNG_KIDNEY_THYROID",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "ADVANCED_STAGE_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MULTIPLE_MYELOMA",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_010",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BONE_PAIN",
+                          "condition":  "Back pain with progressive limb weakness, bladder/bowel dysfunction — suspected malignant spinal cord compression, emergency imaging required"
+                      },
+                      {
+                          "code":  "RED_ONC_011",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BONE_PAIN",
+                          "condition":  "Fracture following minimal or no trauma in known cancer patient — pathological fracture, urgent orthopaedic and oncology review"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_BM_001",
+                          "text":  "Do you have a known diagnosis of cancer?",
+                          "purpose":  "context_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BONE_METASTASES)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BONE_METASTASES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_ONC_BM_002",
+                          "text":  "Is the bone pain worse at night and not relieved by rest?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BONE_METASTASES)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BONE_METASTASES_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_BM_003",
+                          "text":  "Have you noticed any weakness, numbness, or difficulty walking associated with the back pain?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BONE_METASTASES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MULTIPLE_MYELOMA",
+                              "distinguishing_feature":  "Multiple myeloma causes diffuse osteolytic lesions, hypercalcaemia, anaemia, and renal failure. SPEP shows monoclonal band. Bone scan may be negative (no osteoblastic activity)."
+                          },
+                          {
+                              "disease_code":  "OSTEOPOROTIC_FRACTURE",
+                              "distinguishing_feature":  "Osteoporotic fractures occur in elderly patients without known malignancy. Bone metastases should be excluded by imaging in any patient with fracture and risk factors for cancer."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0006349"
+                  ],
+    "snomed_code":  "94222008",
+    "snomed_verified_name":  "Secondary malignant neoplasm of bone",
+    "icd10_code":  "C79.51",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Secondary malignant neoplasm of bone",
+    "evidence_ids":  [
+                         "EVD_ONC_015"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

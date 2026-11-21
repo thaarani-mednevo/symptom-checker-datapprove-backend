@@ -1,0 +1,111 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_003",
+    "code":  "STABLE_ISCHEMIC_HEART_DISEASE",
+    "name":  "Stable Ischemic Heart Disease",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Stable ischemic heart disease is a chronic condition characterized by reduced blood flow to the heart muscle due to atherosclerotic coronary artery disease, leading to exertional chest pain and other ischemic symptoms that are typically relieved by rest or nitroglycerin.",
+    "complaints":  [
+                       {
+                           "code":  "CHEST_DISCOMFORT",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual_with_exertion",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SEDENTARY_LIFESTYLE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_003",
+                          "text":  "Do you feel breathless when walking on flat ground?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "STABLE_ISCHEMIC_HEART_DISEASE_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_008",
+                          "text":  "Do you have chest discomfort or pressure, especially with exertion?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ISCHEMIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "STABLE_ISCHEMIC_HEART_DISEASE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ACUTE_CORONARY_SYNDROME",
+                              "distinguishing_feature":  "ACS presents with new worsening or rest symptoms; SIHD is stable and exertion-predictable."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001681"
+                  ],
+    "snomed_code":  "413838009",
+    "snomed_verified_name":  "Chronic ischemic heart disease",
+    "icd10_code":  "I25.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chronic ischemic heart disease, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_003"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

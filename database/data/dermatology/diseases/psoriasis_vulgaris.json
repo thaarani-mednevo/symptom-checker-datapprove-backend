@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_022",
+  "code": "PSORIASIS_VULGARIS",
+  "name": "Psoriasis vulgaris",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Psoriasis is a long-lasting, noncontagious autoimmune disease characterized by patches of abnormal skin. These areas are red, pink, or purple, dry, itchy, and scaly.",
+  "complaints": [
+    {
+      "code": "SKIN_PEELING",
+      "relationship": "occasional",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "200975007",
+  "snomed_verified_name": "Psoriasis vulgaris",
+  "icd10_code": "L40.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Psoriasis vulgaris",
+  "evidence_ids": [
+    "EVID_PSORIASIS_VULGARIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

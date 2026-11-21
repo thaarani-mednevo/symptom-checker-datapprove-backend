@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "TASTE_DISTURBANCE",
+    "complaint_name":  "Taste disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_TD_001",
+                          "text":  "Is it loss of taste, distortion, or a bad taste?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TASTE_DISTURBANCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TD_002",
+                          "text":  "Is there also a smell disturbance?",
+                          "purpose":  "associated_smell",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SMELL_WITH_TASTE_DISTURBANCE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TD_003",
+                          "text":  "Did it start after a medication change, infection, or head injury?",
+                          "purpose":  "cause",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TASTE_LOSS_CAUSE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TD_004",
+                          "text":  "Is it affecting one side or both sides of the tongue?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TASTE_DISTURBANCE_LATERALITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

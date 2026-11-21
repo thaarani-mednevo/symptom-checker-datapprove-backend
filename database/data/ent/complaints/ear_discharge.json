@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_003",
+  "code": "EAR_DISCHARGE",
+  "name": "Ear discharge",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by ear discharge.",
+  "hpo_codes": [],
+  "snomed_code": "300132001",
+  "snomed_verified_name": "Ear discharge",
+  "icd10_code": "H92.1",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

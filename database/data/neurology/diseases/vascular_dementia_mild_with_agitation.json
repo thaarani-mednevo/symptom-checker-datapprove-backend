@@ -1,0 +1,60 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_037",
+  "code": "VASCULAR_DEMENTIA_MILD_WITH_AGITATION",
+  "name": "Vascular dementia, mild, with agitation",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Vascular dementia is dementia caused by a series of strokes. Restricted blood flow due to strokes reduces oxygen and glucose delivery to the brain, causing cell injury and neurological deficits in the affected region.",
+  "complaints": [
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "COGNITIVE_IMPAIRMENTSHORT_TERM_MEMORY_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "HISTORY_OF_STROKE_OR_TRANSIENT_ISCHEMIC_ATTACK",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "DIABETES_MELLITUS",
+      "strength": "moderate"
+    },
+    {
+      "code": "HYPERLIPIDEMIA",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "F01.A11",
+  "icd10_validated": true,
+  "icd10_official_description": "Vascular dementia, mild, with agitation",
+  "evidence_ids": [
+    "EVID_VASCULAR_DEMENTIA_MILD_WITH_AGITATION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

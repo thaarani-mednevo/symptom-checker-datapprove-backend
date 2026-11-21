@@ -1,0 +1,108 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_019",
+    "code":  "NONINFECTIVE_NEONATAL_DIARRHEA",
+    "name":  "Noninfective neonatal diarrhea",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Noninfective neonatal diarrhea.",
+    "complaints":  [
+                       {
+                           "code":  "DIARRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_PAIN/CRAMPS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "VIRUSES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BACTERIA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PARASITES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "FUNGI",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DIARRHEA",
+                          "condition":  "Neonatal diarrhea with signs of dehydration"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NONINFECTIVE_NEONATAL_DIARRHEA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "P78.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Noninfective neonatal diarrhea",
+    "evidence_ids":  [
+                         "EVID_NONINFECTIVE_NEONATAL_DIARRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

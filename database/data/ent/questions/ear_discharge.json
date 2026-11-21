@@ -1,0 +1,61 @@
+﻿{
+  "complaint_code": "EAR_DISCHARGE",
+  "complaint_name": "Ear discharge",
+  "module": "ent",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_in_review",
+  "questions": [
+    {
+      "code": "Q_CMP_ED_001",
+      "text": "What colour is the discharge?",
+      "purpose": "character",
+      "answer_type": "multiple_choice",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "DISCHARGE_CHARACTER",
+      "yes_weight": 0,
+      "no_weight": 0,
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-20T04:14:01+00:00"
+    },
+    {
+      "code": "Q_CMP_ED_002",
+      "text": "How long has the discharge been present?",
+      "purpose": "duration",
+      "answer_type": "free_text",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "DISCHARGE_DURATION",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_ED_003",
+      "text": "Do you have ear pain along with the discharge?",
+      "purpose": "pain",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "PAIN_WITH_DISCHARGE",
+      "yes_weight": 2,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_ED_004",
+      "text": "Do you have fever, headache, or confusion?",
+      "purpose": "severe_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "SEVERE_OTITIS_FEATURES",
+      "yes_weight": 4,
+      "no_weight": -1
+    }
+  ]
+}

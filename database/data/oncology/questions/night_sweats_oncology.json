@@ -1,0 +1,90 @@
+{
+  "complaint_code": "NIGHT_SWEATS_ONCOLOGY",
+  "complaint_name": "Night Sweats (Oncology)",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_NSO_001",
+      "text": "How long have you been experiencing night sweats, and how severe are they — do they drench your clothes or bedding?",
+      "purpose": "Characterise duration and severity of night sweats; drenching sweats are a B-symptom of lymphoma",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 2 weeks, mild (damp)",
+        "Less than 2 weeks, drenching",
+        "2–8 weeks, mild",
+        "2–8 weeks, drenching",
+        "More than 8 weeks, mild",
+        "More than 8 weeks, drenching"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "NIGHT_SWEATS_SEVERITY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NSO_002",
+      "text": "Have you also experienced unexplained weight loss or persistent fever alongside the night sweats?",
+      "purpose": "Identify the classic B-symptom triad: fever, drenching night sweats, and weight loss pointing to lymphoma",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "B_SYMPTOM_TRIAD",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NSO_003",
+      "text": "Do you have any enlarged, painless lymph nodes in your neck, armpits, or groin?",
+      "purpose": "Lymphadenopathy with B-symptoms is a hallmark presentation of lymphoma",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(LYMPHOMA_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "ASSOCIATED_LYMPHADENOPATHY",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NSO_004",
+      "text": "Could there be a non-oncological cause such as menopause, tuberculosis, or current infection?",
+      "purpose": "Exclude common benign causes of night sweats before escalating oncology workup",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(DIFFERENTIAL_NIGHT_SWEATS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "ALTERNATIVE_CAUSE_NIGHT_SWEATS",
+      "yes_weight": -2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_NSO_005",
+      "text": "Have you noticed any new bone pain, particularly in the back, hips, or ribs?",
+      "purpose": "Bone pain may indicate bone marrow involvement or bony metastases",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "ASSOCIATED_BONE_PAIN",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NSO_006",
+      "text": "Have you experienced unusual fatigue, pallor, or repeated infections recently?",
+      "purpose": "Cytopaenia features suggesting bone marrow involvement from haematological malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "CYTOPAENIA_FEATURES",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

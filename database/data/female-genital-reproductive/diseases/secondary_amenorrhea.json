@@ -1,0 +1,72 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_027",
+    "code":  "SECONDARY_AMENORRHEA",
+    "name":  "Secondary amenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Amenorrhea or amenorrhoea is the absence of a menstrual period in a female organism which has reached reproductive age. Physiological states of amenorrhea are most commonly seen during pregnancy and lactation (breastfeeding).",
+    "complaints":  [
+                       {
+                           "code":  "AMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PREGNANCY_STATUS",
+                          "text":  "Are you currently pregnant, or could you be pregnant?",
+                          "purpose":  "Exclude pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_ECTOPIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SECONDARY_AMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Establish prior regular cycles then cessation",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SECONDARY_AMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "AMENORRHEA_UNSPECIFIED",
+                              "distinguishing_feature":  "Secondary amenorrhea specifically confirms a prior menstrual history before cessation"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "156036003",
+    "snomed_verified_name":  "Secondary amenorrhea",
+    "icd10_code":  "N91.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Secondary amenorrhea",
+    "evidence_ids":  [
+                         "EVID_SECONDARY_AMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

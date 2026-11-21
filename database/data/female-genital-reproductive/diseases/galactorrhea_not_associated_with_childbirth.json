@@ -1,0 +1,77 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_040",
+    "code":  "GALACTORRHEA_NOT_ASSOCIATED_WITH_CHILDBIRTH",
+    "name":  "Galactorrhea not associated with childbirth",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Galactorrhea not associated with childbirth.",
+    "complaints":  [
+                       {
+                           "code":  "GALACTORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GALACTORRHEA_VISUAL_FIELD",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "GALACTORRHEA",
+                          "condition":  "Galactorrhea with visual field defect or persistent headache suggesting pituitary macroadenoma"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEADACHE_VISUAL_CHANGE",
+                          "text":  "Have you had headaches or any change in vision?",
+                          "purpose":  "Screen for pituitary lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GALACTORRHEA_VISUAL_FIELD)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GALACTORRHEA_NOT_ASSOCIATED_WITH_CHILDBIRTH_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MENARCHE_OCCURRED",
+                          "text":  "Have your periods started yet (menarche)?",
+                          "purpose":  "Assess associated menstrual disturbance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GALACTORRHEA_NOT_ASSOCIATED_WITH_CHILDBIRTH_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NIPPLE_DISCHARGE",
+                              "distinguishing_feature":  "Galactorrhea is specifically milky bilateral discharge unrelated to childbirth; nipple discharge is a broader category covering any discharge type/color, often unilateral"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "78622004",
+    "snomed_verified_name":  "Galactorrhea not associated with childbirth",
+    "icd10_code":  "N64.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Galactorrhea not associated with childbirth",
+    "evidence_ids":  [
+                         "EVID_GALACTORRHEA_NOT_ASSOCIATED_WITH_CHILDBIRTH"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

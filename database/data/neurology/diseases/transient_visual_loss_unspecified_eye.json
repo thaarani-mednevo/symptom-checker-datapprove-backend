@@ -1,0 +1,60 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_061",
+  "code": "TRANSIENT_VISUAL_LOSS_UNSPECIFIED_EYE",
+  "name": "Transient visual loss, unspecified eye",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Transient visual loss, unspecified eye is a brief, temporary loss of vision in one eye that resolves spontaneously within minutes to hours.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "TEMPORARY_FLEETING_OF_VISION_IN_ONE_OR_BOTH_EYES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "CAROTID_ARTERY_STENOSIS",
+      "strength": "strong"
+    },
+    {
+      "code": "ATRIAL_FIBRILLATION",
+      "strength": "strong"
+    },
+    {
+      "code": "MIGRAINE",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H53.129",
+  "icd10_validated": true,
+  "icd10_official_description": "Transient visual loss, unspecified eye",
+  "evidence_ids": [
+    "EVID_TRANSIENT_VISUAL_LOSS_UNSPECIFIED_EYE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,118 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_006",
+    "code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT",
+    "name":  "Unspecified lump in the left breast, unspecified quadrant",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A palpable mass in the left breast of uncertain etiology, not localized to a specific quadrant.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BRCA_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DENSE_BREAST_TISSUE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HORMONE_REPLACEMENT_THERAPY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden severe pain, redness, swelling or skin changes around the lump indicating possible abscess"
+                      },
+                      {
+                          "code":  "RF_NIPPLE_DISCHARGE_OVER_LUMP",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Any nipple discharge or ulceration over the lump indicating possible malignancy or infection"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_NEW_LUMP_OR_MASS_IN_Y",
+                          "text":  "Have you noticed a new lump or mass in your left breast?",
+                          "purpose":  "Screen for presence of left breast lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_SKIN_OVER_THE_LUMP_IN_YOUR_LEFT_B",
+                          "text":  "Is the skin over the lump in your left breast dimpled, red, or puckered like an orange peel?",
+                          "purpose":  "Screen for inflammatory or advanced breast cancer signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_BLOODY_OR_UNUSUAL_D_UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT",
+                          "text":  "Have you noticed any bloody or unusual discharge from your left nipple?",
+                          "purpose":  "Screen for concerning nipple discharge associated with breast masses",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT",
+                              "distinguishing_feature":  "Lateralized to the contralateral breast rather than the left breast."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Located directly beneath the nipple-areolar complex rather than an unspecified quadrant."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS",
+                              "distinguishing_feature":  "Crosses across multiple defined breast quadrants rather than residing in a single or unspecified quadrant."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.20",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in the left breast, unspecified quadrant",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

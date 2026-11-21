@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "FREQUENCY",
+    "complaint_name":  "Frequency",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_FREQ_001",
+                          "text":  "How often do you pass urine during the day and at night?",
+                          "purpose":  "pattern",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FREQUENCY_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FREQ_002",
+                          "text":  "Is it accompanied by urgency, pain, or a feeling of incomplete emptying?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FREQUENCY_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FREQ_003",
+                          "text":  "Are you drinking more fluids than usual?",
+                          "purpose":  "intake",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INCREASED_FLUID_INTAKE",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_FREQ_004",
+                          "text":  "Is there blood in the urine?",
+                          "purpose":  "haematuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "HAEMATURIA_WITH_FREQUENCY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

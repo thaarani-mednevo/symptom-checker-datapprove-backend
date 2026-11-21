@@ -1,0 +1,132 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_006",
+    "code":  "OTHER_SPECIFIED_ANXIETY_DISORDERS",
+    "name":  "Other specified anxiety disorders",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Anxiety disorders are a group of mental disorders characterized by significant and uncontrollable feelings of anxiety and fear such that a person\u0027s social, occupational, and personal functions are significantly impaired. Anxiety may cause physical and cognitive symptoms, such as a sense of impending doom, restlessness, irritability, easy fatigue, difficulty concentrating, increased heart rate, chest pain, abdominal pain, and a variety of other symptoms that vary based on the individual.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EXCESSIVE_ANXIETY_AND_WORRY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CLINICALLY_SIGNIFICANT_DISTRESS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SOCIAL_OR_OCCUPATIONAL_IMPAIRMENT",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RESTLESSNESS_OR_FEELING_KEYED_UP",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SLEEP_DISTURBANCE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GENETIC_PREDISPOSITION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_TRAUMA",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHRONIC_STRESS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "BEHAVIORAL_INHIBITION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_OF_MENTAL_ILLNESS",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ANXIETY_FUNCTIONAL_COLLAPSE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Anxiety symptoms are severe enough to prevent daily functioning, or patient reports self-harm thoughts."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_OSAD_FUNCTIONAL_IMPACT",
+                          "text":  "Is your anxiety severe enough to interfere with work, relationships, or daily activities, even if it doesn\u0027t fit a specific pattern?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_ANXIETY_DISORDERS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUICIDE",
+                          "text":  "Have you had thoughts of harming yourself?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_ANXIETY_DISORDERS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F41.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified anxiety disorders",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_ANXIETY_DISORDERS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

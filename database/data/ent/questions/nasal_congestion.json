@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "NASAL_CONGESTION",
+    "complaint_name":  "Nasal congestion",
+    "module":  "ent",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_NC_001",
+                          "text":  "Is the congestion one-sided or both nostrils?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NASAL_LATERALITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NC_002",
+                          "text":  "How long has it lasted?",
+                          "purpose":  "duration",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NASAL_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NC_003",
+                          "text":  "Do you have facial pain, pressure, or reduced sense of smell?",
+                          "purpose":  "sinusitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SINUSITIS_FEATURES",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NC_004",
+                          "text":  "Is it triggered by allergens, pollen, or dust?",
+                          "purpose":  "allergy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ALLERGIC_RHINITIS",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,12 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_DERM_001,RASH,Rash,dermatology,dermatology,complaint,,271807003,R21,1.0,True,True,Rash and other nonspecific skin eruption
+COMP_DERM_002,SKIN_LESIONS,Skin lesions,dermatology,dermatology,complaint,,,R23.8,1.0,True,True,Other skin changes
+COMP_DERM_003,SKIN_LUMPS,Skin lumps,dermatology,dermatology,complaint,,,R22.9,1.0,True,True,"Localized swelling, mass and lump, unspecified"
+COMP_DERM_004,BLISTERS,Blisters,dermatology,dermatology,complaint,,339008,L99.8,1.0,True,True,Other disorders of skin and subcutaneous tissue in diseases classified elsewhere
+COMP_DERM_005,ITCHING,Itching,dermatology,dermatology,complaint,,418290006,L29.9,1.0,True,True,"Pruritus, unspecified"
+COMP_DERM_006,PHOTOSENSITIVITY,Photosensitivity,dermatology,dermatology,complaint,,90128006,L56.8,1.0,True,True,Other specified acute skin changes due to ultraviolet radiation
+COMP_DERM_007,LEG_ULCERS,Leg ulcers,dermatology,dermatology,complaint,,,L97.9,1.0,True,True,Non-pressure chronic ulcer of unspecified part of lower leg
+COMP_DERM_008,SKIN_DISCOLORATION,Skin discoloration,dermatology,dermatology,complaint,,,L81.9,1.0,True,True,"Disorder of pigmentation, unspecified"
+COMP_DERM_009,SKIN_PEELING,Skin peeling,dermatology,dermatology,complaint,,,R23.4,1.0,True,True,Changes in skin texture
+COMP_DERM_010,HAIR_LOSS,Hair loss,dermatology,dermatology,complaint,,,L65.9,1.0,True,True,"Nonscarring hair loss, unspecified"
+COMP_DERM_011,NAIL_ABNORMALITIES,Nail abnormalities,dermatology,dermatology,complaint,,,L60.9,1.0,True,True,"Nail disorder, unspecified"

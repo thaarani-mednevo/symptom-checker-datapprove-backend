@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_008",
+  "code": "NIGHT_SWEATS",
+  "name": "Night sweats",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "Night sweats or nocturnal hyperhydrosis is the repeated occurrence of excessive sweating during sleep. The person may or may not also perspire excessively while awake.",
+  "hpo_codes": [
+    "HP:0030166"
+  ],
+  "snomed_code": "42984000",
+  "snomed_verified_name": "Night sweats",
+  "icd10_code": "R61",
+  "icd10_validated": true,
+  "icd10_official_description": "Generalized hyperhidrosis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

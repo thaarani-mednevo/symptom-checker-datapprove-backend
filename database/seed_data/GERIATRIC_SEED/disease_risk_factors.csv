@@ -1,0 +1,5 @@
+disease_code,risk_factor_code,strength,source_status
+HISTORY_OF_FALLING,PREVIOUSFALLS,strong,ai_drafted_unverified
+HISTORY_OF_FALLING,AGE,strong,ai_drafted_unverified
+HISTORY_OF_FALLING,POLYPHARMACY,moderate,ai_drafted_unverified
+HISTORY_OF_FALLING,VISUALIMPAIRMENT,moderate,ai_drafted_unverified

@@ -1,0 +1,16 @@
+﻿{
+  "complaint_code": "RIGHT_UPPER_QUADRANT_PAIN",
+  "complaint_name": "Right upper quadrant pain",
+  "module": "hepatobiliary",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_RUQ_001", "text": "Is the pain constant or does it come in waves (colicky)?", "purpose": "pattern", "answer_type": "multiple_choice", "options": ["Constant", "Colicky (waves)", "Constant with colicky episodes"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "PAIN_PATTERN", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_RUQ_002", "text": "Does the pain radiate to your right shoulder or shoulder blade?", "purpose": "biliary_radiation", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(BILIARY)", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "BILIARY_RADIATION", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_RUQ_003", "text": "Do you have fever along with the pain?", "purpose": "infection_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(ACUTE_CHOLECYSTITIS)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "FEVER_WITH_RUQ", "yes_weight": 4, "no_weight": -1 },
+    { "code": "Q_CMP_RUQ_004", "text": "Have your eyes or skin turned yellow?", "purpose": "jaundice_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(CHOLESTATIC_JAUNDICE)", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "JAUNDICE_WITH_RUQ", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_RUQ_005", "text": "Is the pain severe right now and are you feeling very unwell, shaky, or rigoring?", "purpose": "sepsis_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "SEPSIS_FEATURES", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_RUQ_006", "text": "Is the pain related to eating fatty foods?", "purpose": "biliary_trigger", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(BILIARY_COLIC)", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "POSTPRANDIAL_RUQ", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

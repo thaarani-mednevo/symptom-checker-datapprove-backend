@@ -1,0 +1,94 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_052",
+  "code": "RADICULOPATHY_CERVICAL_REGION",
+  "name": "Radiculopathy, cervical region",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Radiculopathy, also commonly referred to as pinched nerve, refers to a set of conditions in which one or more nerves are affected and do not work properly. Radiculopathy can result in pain, weakness, altered sensation (paresthesia) or difficulty controlling specific muscles.",
+  "complaints": [
+    {
+      "code": "NUMBNESS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "SENSORY_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "TINGLING",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "NECK_PAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "RADIATING_ARM_PAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    },
+    {
+      "code": "PARESTHESIA_IN_UPPER_EXTREMITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "CERVICAL_MUSCLE_SPASM",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "OCCUPATIONAL_PHYSICAL_LOADING",
+      "strength": "moderate"
+    },
+    {
+      "code": "CERVICAL_SPINE_DEGENERATION",
+      "strength": "strong"
+    },
+    {
+      "code": "SMOKING",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M54.12",
+  "icd10_validated": true,
+  "icd10_official_description": "Radiculopathy, cervical region",
+  "evidence_ids": [
+    "EVID_RADICULOPATHY_CERVICAL_REGION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

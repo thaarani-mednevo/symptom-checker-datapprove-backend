@@ -1,0 +1,65 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_032",
+    "code":  "ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING",
+    "name":  "Ulcerative (chronic) proctitis with rectal bleeding",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Ulcerative (chronic) proctitis with rectal bleeding.",
+    "complaints":  [
+                       {
+                           "code":  "HEMATOCHEZIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMATOCHEZIA",
+                          "condition":  "Heavy or persistent rectal bleeding"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_002",
+                          "text":  "Have you noticed blood in your stool, and if so, is it a large amount or ongoing?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_002)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING",
+                              "distinguishing_feature":  "Proctitis is limited to the rectum on endoscopy; pancolitis involves inflammation extending through the entire colon — extent on colonoscopy is the distinguishing feature."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K51.211",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ulcerative (chronic) proctitis with rectal bleeding",
+    "evidence_ids":  [
+                         "EVID_ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

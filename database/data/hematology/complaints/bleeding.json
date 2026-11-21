@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_001",
+  "code": "BLEEDING",
+  "name": "Bleeding",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "Bleeding, hemorrhage, haemorrhage or blood loss, is blood escaping from the circulatory system from damaged blood vessels. Bleeding can occur internally, or externally either through a natural opening such as the mouth, nose, ear, urethra, genitalia or anus, or through a puncture in the skin.\nHypovolemia is a massive decrease in blood volume, and death by excessive loss of blood is referred to as exsanguination.",
+  "hpo_codes": [],
+  "snomed_code": "50960005",
+  "snomed_verified_name": "Hemorrhage",
+  "icd10_code": "R58",
+  "icd10_validated": true,
+  "icd10_official_description": "Hemorrhage, not elsewhere classified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

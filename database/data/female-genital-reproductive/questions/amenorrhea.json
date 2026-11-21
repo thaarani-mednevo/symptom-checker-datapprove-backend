@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "AMENORRHEA",
+    "complaint_name":  "Amenorrhea",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AMEN_001",
+                          "text":  "Is there any chance you could be pregnant?",
+                          "purpose":  "pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PREGNANCY_CHECK",
+                          "yes_weight":  -2,
+                          "no_weight":  3
+                      },
+                      {
+                          "code":  "Q_CMP_AMEN_002",
+                          "text":  "When was your last period and are your cycles usually regular?",
+                          "purpose":  "history",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MENSTRUAL_HISTORY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AMEN_003",
+                          "text":  "Have you had significant weight loss, stress, or intense exercise recently?",
+                          "purpose":  "functional",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOTHALAMIC_AMENORRHEA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AMEN_004",
+                          "text":  "Do you have excessive hair growth, acne, or hot flushes?",
+                          "purpose":  "endocrine",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ENDOCRINE_AMENORRHEA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

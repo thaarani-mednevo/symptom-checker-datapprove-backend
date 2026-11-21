@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_040",
+  "code": "PERSONAL_HISTORY_OF_TRAUMATIC_BRAIN_INJURY",
+  "name": "Personal history of traumatic brain injury",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A record indicating that the patient has previously sustained a traumatic brain injury, which may influence current neurological assessment.",
+  "complaints": [
+    {
+      "code": "PERSONALITY_CHANGE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HEADACHE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "COGNITIVE_IMPAIRMENT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "FATIGUE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    },
+    {
+      "code": "SLEEP_DISTURBANCE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "Z87.820",
+  "icd10_validated": true,
+  "icd10_official_description": "Personal history of traumatic brain injury",
+  "evidence_ids": [
+    "EVID_PERSONAL_HISTORY_OF_TRAUMATIC_BRAIN_INJURY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

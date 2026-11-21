@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_006",
+  "code": "SYNCOPE",
+  "name": "Syncope",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Syncope is a transient, self-limited loss of consciousness caused by a sudden reduction in cerebral perfusion, typically lasting seconds to a few minutes with spontaneous full recovery. It is clinically distinct from other causes of collapse (e.g., seizure, hypoglycaemia) in that it is brief, non-convulsive, and followed by prompt orientation. Common causes include vasovagal (reflex) syncope, cardiac arrhythmias, structural heart disease (e.g., aortic stenosis), and orthostatic hypotension. Syncope during exertion or associated with palpitations is a red flag requiring urgent cardiac evaluation.",
+  "hpo_codes": [
+    "HP:0001279"
+  ],
+  "snomed_code": "271594007",
+  "snomed_verified_name": "Syncope",
+  "icd10_code": "R55",
+  "icd10_validated": true,
+  "icd10_official_description": "Syncope and collapse",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

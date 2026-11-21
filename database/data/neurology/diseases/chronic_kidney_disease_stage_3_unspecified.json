@@ -1,0 +1,71 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_002",
+  "code": "CHRONIC_KIDNEY_DISEASE_STAGE_3_UNSPECIFIED",
+  "name": "Chronic kidney disease, stage 3 unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Chronic kidney disease (CKD) is a type of long-term kidney disease, defined by the sustained presence of abnormal kidney function and/or abnormal kidney structure. To meet the criteria for CKD, the abnormalities must be present for at least three months.",
+  "complaints": [
+    {
+      "code": "NOCTURNAL_ENURESIS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EARLY:_NONE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "DIABETES",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "HEART_FAILURE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "HIGH_BLOOD_PRESSURE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "GLOMERULONEPHRITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "POLYCYSTIC_KIDNEY_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N18.30",
+  "icd10_validated": true,
+  "icd10_official_description": "Chronic kidney disease, stage 3 unspecified",
+  "evidence_ids": [
+    "EVID_CHRONIC_KIDNEY_DISEASE_STAGE_3_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

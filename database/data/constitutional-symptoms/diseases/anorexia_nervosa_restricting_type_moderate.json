@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_026",
+    "code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE",
+    "name":  "Anorexia nervosa, restricting type, moderate",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Anorexia nervosa (AN), commonly referred to as anorexia, is an eating disorder characterized by predominant food restriction, body image disturbance, fear of gaining weight, and an overwhelming desire to be thin. These characteristics often mean individuals undergo severe malnutrition as a result of the disorder.",
+    "complaints":  [
+                       {
+                           "code":  "LOSS_OF_APPETITE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_GAINING_WEIGHT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRONG_DESIRE_TO_BE_THIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FOOD_RESTRICTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Heart rate persistently below 40 bpm, orthostatic hypotension, or syncope."
+                      },
+                      {
+                          "code":  "RF_SEVERE_ELECTROLYTE_IMBALANCE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Significant hypokalemia, hyponatremia, or hypophosphatemia indicating risk of refeeding syndrome or acute medical compromise."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_1",
+                          "text":  "Do you severely restrict your food intake relative to requirements, leading to a significantly low body weight?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_2",
+                          "text":  "Do you experience an intense fear of gaining weight or becoming fat, persisting even though you are at a significantly low weight?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_3",
+                          "text":  "Have you engaged in recurrent episodes of binge eating or purging behavior in the last three months?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of recurrent binge eating and purging behaviors rather than solely restricting intake."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE",
+                              "distinguishing_feature":  "[LLM DRAFT] Lower body mass index (BMI) reflecting a more severe degree of emaciation and physiological compromise."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION",
+                              "distinguishing_feature":  "[LLM DRAFT] Absence of core eating disorder criteria for a sustained period following a previous diagnosis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F50.011",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anorexia nervosa, restricting type, moderate",
+    "evidence_ids":  [
+                         "EVID_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

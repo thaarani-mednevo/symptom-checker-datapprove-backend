@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_001",
+  "code": "FEVER",
+  "name": "Fever",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "Fever or pyrexia in humans is a symptom of an anti-infection defense mechanism that appears with body temperature exceeding the normal range caused by an increase in the body's temperature set point in the hypothalamus. There is no single agreed-upon upper limit for normal temperature: sources use values ranging between 37.2 and 38.3 °C in humans.",
+  "hpo_codes": [],
+  "snomed_code": "386661006",
+  "snomed_verified_name": "Fever",
+  "icd10_code": "R50.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Fever, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

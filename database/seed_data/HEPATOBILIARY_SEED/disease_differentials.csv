@@ -1,0 +1,3 @@
+disease_code,differential_disease_code,distinguishing_feature,source_status
+ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES,ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES,Cirrhosis typically presents with longer history and more chronic stigmata.,
+ALCOHOLIC_HEPATITIS_WITH_ASCITES,ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITH_ASCITES,Cirrhosis presents with more advanced signs of portal hypertension.,

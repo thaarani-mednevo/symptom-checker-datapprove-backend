@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "MEMORY_LOSS_GERIATRIC",
+    "complaint_name":  "Memory loss (geriatric context)",
+    "module":  "geriatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_MEMLOSS_001",
+                          "text":  "Has the memory problem come on gradually over months to years?",
+                          "purpose":  "onset",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GRADUAL_MEMORY_LOSS",
+                          "yes_weight":  2,
+                          "no_weight":  "-2"
+                      },
+                      {
+                          "code":  "Q_CMP_MEMLOSS_002",
+                          "text":  "Is the person forgetting recent events (what happened today) more than remote events (childhood memories)?",
+                          "purpose":  "episodic_memory",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EPISODIC_MEMORY_LOSS",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_MEMLOSS_003",
+                          "text":  "Has the memory difficulty affected daily activities such as managing finances, cooking, or driving?",
+                          "purpose":  "functional_impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DEMENTIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FUNCTIONAL_IMPAIRMENT",
+                          "yes_weight":  4,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_MEMLOSS_004",
+                          "text":  "Have there been personality changes, mood changes, or changes in social behaviour?",
+                          "purpose":  "bpsd_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DEMENTIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "BEHAVIOURAL_CHANGE",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_MEMLOSS_005",
+                          "text":  "Has thyroid function and vitamin B12 been checked recently?",
+                          "purpose":  "reversible_causes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "REVERSIBLE_CAUSES_CHECKED",
+                          "yes_weight":  "-1",
+                          "no_weight":  2
+                      }
+                  ]
+}

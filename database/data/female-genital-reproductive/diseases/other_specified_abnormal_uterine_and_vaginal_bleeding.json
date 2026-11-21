@@ -1,0 +1,74 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_043",
+    "code":  "OTHER_SPECIFIED_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING",
+    "name":  "Other specified abnormal uterine and vaginal bleeding",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Other specified abnormal uterine and vaginal bleeding.",
+    "complaints":  [
+                       {
+                           "code":  "IRREGULAR_VAGINAL_BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUSPECTED_GYNAE_MALIGNANCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "IRREGULAR_VAGINAL_BLEEDING",
+                          "condition":  "Persistent irregular bleeding with unexplained weight loss or pelvic mass"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PAD_SOAK_RATE",
+                          "text":  "How many pads or tampons are you soaking through per hour at the heaviest point?",
+                          "purpose":  "Quantify bleeding severity",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "RED_FLAG(RF_HEMODYNAMIC_INSTABILITY)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_UNEXPLAINED_WEIGHT_LOSS",
+                          "text":  "Have you had unexplained weight loss recently?",
+                          "purpose":  "Screen for malignancy features",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_GYNAE_MALIGNANCY)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N93.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified abnormal uterine and vaginal bleeding",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_085",
+  "code": "ESSENTIAL_TREMOR",
+  "name": "Essential tremor",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Essential tremor (ET), also called benign tremor, familial tremor, and idiopathic tremor, is a medical condition characterized by involuntary rhythmic contractions and relaxations of certain muscle groups in one or more body parts of unknown cause. It is typically symmetrical, and affects the arms, hands, or fingers; but sometimes involves the head, vocal cords, or other body parts.",
+  "complaints": [
+    {
+      "code": "TREMOR",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_MOVEMENTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ACTION_TREMOR_OF_THE_HANDS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "VOICE_TREMOR",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "HEAD_TREMOR",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "WORSENED_TREMOR_WITH_STRESS_OR_CAFFEINE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "609558009",
+  "snomed_verified_name": "Essential tremor",
+  "icd10_code": "G25.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Essential tremor",
+  "evidence_ids": [
+    "EVID_ESSENTIAL_TREMOR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

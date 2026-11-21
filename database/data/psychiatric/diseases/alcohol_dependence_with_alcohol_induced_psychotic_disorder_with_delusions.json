@@ -1,0 +1,160 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_014",
+    "code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_DELUSIONS",
+    "name":  "Alcohol dependence with alcohol-induced psychotic disorder with delusions",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Alcohol dependence is a previous psychiatric diagnosis in which an individual is physically or psychologically dependent upon alcohol.",
+    "complaints":  [
+                       {
+                           "code":  "DELUSIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "AUDITORY_HALLUCINATIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PERSECUTORY_DELUSIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ALCOHOL_CRAVING",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "constant",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TREMOR",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ANXIETY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHRONIC_HEAVY_ALCOHOL_CONSUMPTION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ALCOHOL_USE_DISORDER",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "GENETIC_VULNERABILITY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CO_OCCURRING_PSYCHIATRIC_DISORDERS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_ALCOHOL_WITHDRAWAL_SYMPTOMS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SOCIOECONOMIC_STRESSORS",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_ONSET_HALLUCINATIONS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_HALLUCINATIONS",
+                          "condition":  "Patient reports sudden onset of hallucinations within 24 hours of heavy drinking"
+                      },
+                      {
+                          "code":  "RF_PARANOID_DELUSIONS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_DELUSIONS",
+                          "condition":  "Patient expresses persecutory delusions linked to alcohol consumption"
+                      },
+                      {
+                          "code":  "RF_AGITATION_AND_VIOLENCE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_AGITATION",
+                          "condition":  "Patient exhibits severe agitation or violent behavior during intoxication"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ALCOHOL_CONSUMPTION",
+                          "text":  "Have you consumed alcohol in the past 24 hours?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_DELUSIONS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HALLUCINATIONS",
+                          "text":  "Do you hear voices or see things that others do not while drinking?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_DELUSIONS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DELUSIONS",
+                          "text":  "Do you have any delusions or false beliefs?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_DELUSIONS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191474004",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F10.250",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alcohol dependence with alcohol-induced psychotic disorder with delusions",
+    "evidence_ids":  [
+                         "EVID_ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_DELUSIONS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

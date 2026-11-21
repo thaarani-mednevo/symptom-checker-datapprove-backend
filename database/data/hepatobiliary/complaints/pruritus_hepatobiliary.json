@@ -1,0 +1,17 @@
+{
+  "id": "HEPATOBILIARY_COMP_HB_004",
+  "code": "PRURITUS_HEPATOBILIARY",
+  "name": "Pruritus (hepatobiliary context)",
+  "module": "hepatobiliary",
+  "body_system": "hepatobiliary",
+  "category": "complaint",
+  "description": "Pruritus in a hepatobiliary context is generalised itching caused by accumulation of bile salts, bilirubin, or other pruritogenic substances in the skin due to impaired biliary excretion (cholestasis). It is a cardinal symptom of cholestatic liver disease, including primary biliary cholangitis, primary sclerosing cholangitis, intrahepatic cholestasis of pregnancy, and drug-induced cholestasis. Hepatobiliary pruritus is characteristically worse at night, may be most prominent on palms and soles, and is not associated with a primary skin rash. It must be distinguished from dermatological causes of itch by the absence of primary skin lesions and by abnormal liver biochemistry.",
+  "hpo_codes": ["HP:0000989"],
+  "snomed_code": "418290006",
+  "snomed_verified_name": "Itching",
+  "icd10_code": "R21",
+  "icd10_validated": true,
+  "icd10_official_description": "Rash and other nonspecific skin eruption",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

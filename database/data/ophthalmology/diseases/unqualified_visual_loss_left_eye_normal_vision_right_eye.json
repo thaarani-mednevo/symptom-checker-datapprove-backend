@@ -1,0 +1,126 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_033",
+    "code":  "UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE",
+    "name":  "Unqualified visual loss, left eye, normal vision right eye",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Unqualified visual loss in the left eye with normal vision in the right eye is a unilateral visual impairment presenting as sudden or gradual loss of sight in the left eye while the right eye remains unaffected.",
+    "complaints":  [
+                       {
+                           "code":  "VISION_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SUDDEN_PAINLESS_VISION_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "CENTRAL_VISION_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PHOTOPSIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FLOATERS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_PAINLESS_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, painless loss of vision in left eye with normal right eye"
+                      },
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RED_EYE",
+                          "condition":  "[LLM DRAFT] Sudden red eye with severe pain and vision loss in left eye (possible acute angle closure)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_SEE_CLEARLY_IN_YOUR_RIGHT_EYE_BUT",
+                          "text":  "[LLM DRAFT] Do you see clearly in your right eye but have trouble seeing in your left eye?",
+                          "purpose":  "Unilateral vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOUR_VISION_LOSS_IN_THE_LEFT_EYE_STA",
+                          "text":  "[LLM DRAFT] Did your vision loss in the left eye start suddenly?",
+                          "purpose":  "Sudden onset",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_VISION_IN_THE_RIGHT_EYE_NORMAL?",
+                          "text":  "[LLM DRAFT] Is your vision in the right eye normal?",
+                          "purpose":  "Confirm normal right eye",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H54.62",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unqualified visual loss, left eye, normal vision right eye",
+    "evidence_ids":  [
+                         "EVID_UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

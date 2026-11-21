@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_011",
+  "code": "NAIL_ABNORMALITIES",
+  "name": "Nail abnormalities",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by nail abnormalities.",
+  "hpo_codes": [],
+  "snomed_code": "764995008",
+  "snomed_verified_name": "Nail and tooth abnormalities, marginal palmoplantar keratoderma, oral hyperpigmentation syndrome",
+  "icd10_code": "L60.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Nail disorder, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

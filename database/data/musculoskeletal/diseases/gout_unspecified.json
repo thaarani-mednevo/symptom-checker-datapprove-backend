@@ -1,0 +1,123 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_038",
+    "code":  "GOUT_UNSPECIFIED",
+    "name":  "Gout, unspecified",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Gout is a form of inflammatory arthritis characterized by recurrent attacks of pain in a red, tender, hot, and swollen joint, caused by the deposition of needle-shaped crystals of the monosodium salt of uric acid. Pain typically comes on rapidly, reaching maximal intensity in less than 12 hours.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JOINT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "URIC_ACID",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IS_YOUR_BIG_TOE_SUDDENLY_VERY_PAINFUL_AN",
+                          "text":  "[LLM DRAFT] Is your big toe suddenly very painful and swollen?",
+                          "purpose":  "acute gout attack",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GOUT_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_FEVER_OR_CHILLS_ALONG_WITH",
+                          "text":  "[LLM DRAFT] Do you have a fever or chills along with the joint pain?",
+                          "purpose":  "possible infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GOUT_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_THE_PAIN_STARTED_WITHIN_THE_LAST_24",
+                          "text":  "[LLM DRAFT] Has the pain started within the last 24 hours?",
+                          "purpose":  "acute onset screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "GOUT_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ARTHRITIS_DUE_TO_LYME_DISEASE",
+                              "distinguishing_feature":  "[LLM DRAFT] Migratory arthritis with erythema migrans rash"
+                          },
+                          {
+                              "disease_code":  "RHEUMATOID_ARTHRITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Symmetrical joint swelling with \u003e1 hour morning stiffness"
+                          },
+                          {
+                              "disease_code":  "STAPHYLOCOCCAL_POLYARTHRITIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Purulent joint fluid and high fever"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gout, unspecified",
+    "evidence_ids":  [
+                         "EVID_GOUT_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

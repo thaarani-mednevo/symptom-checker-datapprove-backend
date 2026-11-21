@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_003",
+  "code": "FREQUENCY",
+  "name": "Frequency",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Frequency is the number of occurrences of a repeating event per unit of time. Frequency is an important parameter used in science and engineering to specify the rate of oscillatory and vibratory phenomena, such as mechanical vibrations, audio signals (sound), radio waves, and light.",
+  "hpo_codes": [],
+  "snomed_code": "260864003",
+  "snomed_verified_name": "Frequency",
+  "icd10_code": "R35.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Frequency of micturition",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

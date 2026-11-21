@@ -1,0 +1,67 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_038",
+    "code":  "RECTAL_PROLAPSE",
+    "name":  "Rectal prolapse",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A rectal prolapse occurs when walls of the rectum have prolapsed to such a degree that they protrude out of the anus and are visible outside the body. However, most researchers agree that there are 3 to 5 different types of rectal prolapse, depending on whether the prolapsed section is visible externally, and whether the full or only partial thickness of the rectal wall is involved.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECTAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_007",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "RECTAL_PROLAPSE",
+                          "condition":  "Irreducible or strangulated prolapse with severe pain"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_008",
+                          "text":  "Is your abdominal pain severe, constant, and getting worse, or does your belly feel hard/rigid?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_007)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_PROLAPSE_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "57773001",
+    "snomed_verified_name":  "Rectal prolapse",
+    "icd10_code":  "K62.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Rectal prolapse",
+    "evidence_ids":  [
+                         "EVID_RECTAL_PROLAPSE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

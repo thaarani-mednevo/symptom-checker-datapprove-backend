@@ -1,0 +1,126 @@
+﻿{
+    "id":  "BREAST_DIS_CS_008",
+    "code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION",
+    "name":  "Abscess of breast associated with lactation",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "An acute infection of the breast tissue that occurs during lactation, presenting as a painful, swollen area with possible purulent discharge.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "AXILLARY_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BREAST_PAIN_AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "POOR_LATCH",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NIPPLE_TRAUMA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OVERFULL_BREASTS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPSIS_SIGNS_MASTITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Presence of systemic toxicity, high fever, tachycardia, or signs of sepsis secondary to severe lactation-associated breast abscess."
+                      },
+                      {
+                          "code":  "RF_RAPIDLY_SPREADING_CELLULITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Rapidly spreading erythema, skin necrosis, or significant worsening of localized inflammation despite initial management of a breast abscess."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_BREASTFEEDING_AND_EXPE",
+                          "text":  "[LLM DRAFT] Are you currently breastfeeding and experiencing a painful, swollen lump in your breast?",
+                          "purpose":  "Screens for lactation-associated breast lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_FEVER_CHILLS_OR_PUS_DRAI",
+                          "text":  "[LLM DRAFT] Do you have a fever, chills, or pus draining from a painful area on your breast while breastfeeding?",
+                          "purpose":  "Screens for severe infection and abscess complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_THE_PUERPERIUM",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs specifically in the postpartum period independent of active breastfeeding status."
+                          },
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with non-purulent nipple discharge and ductal dilation rather than acute infectious inflammation."
+                          },
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_LEFT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by a smooth, fluid-filled mass without signs of acute inflammation, warmth, or fever."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "10745131000119107",
+    "snomed_verified_name":  "Breast abscess during lactation",
+    "icd10_code":  "O91.13",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abscess of breast associated with lactation",
+    "evidence_ids":  [
+                         "EVID_ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

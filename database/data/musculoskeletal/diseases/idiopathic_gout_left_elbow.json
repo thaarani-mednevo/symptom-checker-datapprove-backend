@@ -1,0 +1,132 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_045",
+    "code":  "IDIOPATHIC_GOUT_LEFT_ELBOW",
+    "name":  "Idiopathic gout, left elbow",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Idiopathic gout, left elbow.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_ELBOW_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SWELLING_AND_ERYTHEMA_OF_THE_ELBOW_JOINT",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LIMITED_RANGE_OF_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TOPHI_FORMATION_ON_THE_ELBOW",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERURICEMIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RENAL_IMPAIRMENT",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IS_YOUR_LEFT_ELBOW_SUDDENLY_VERY_PAINFUL",
+                          "text":  "[LLM DRAFT] Is your left elbow suddenly very painful and swollen?",
+                          "purpose":  "acute joint inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_ELBOW_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_HISTORY_OF_GOUT_ATTACKS_IN",
+                          "text":  "[LLM DRAFT] Do you have a history of gout attacks in other joints?",
+                          "purpose":  "gout history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_ELBOW_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_LEFT_ELBOW_RED_AND_WARM_TO_THE_T",
+                          "text":  "[LLM DRAFT] Is your left elbow red and warm to the touch?",
+                          "purpose":  "inflammatory signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_ELBOW_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.022",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, left elbow",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_LEFT_ELBOW"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

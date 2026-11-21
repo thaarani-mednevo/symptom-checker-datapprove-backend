@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_001",
+  "code": "VAGINAL_DISCHARGE",
+  "name": "Vaginal discharge",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Vaginal discharge is a mixture of liquid, cells, and bacteria that lubricate and protect the vagina. This mixture is constantly produced by the cells of the vagina and cervix, and it exits the body through the vaginal opening.",
+  "hpo_codes": [],
+  "snomed_code": "271939006",
+  "snomed_verified_name": "Vaginal discharge",
+  "icd10_code": "N89.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified noninflammatory disorders of vagina",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

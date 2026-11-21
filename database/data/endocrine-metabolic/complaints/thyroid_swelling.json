@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_001",
+  "code": "THYROID_SWELLING",
+  "name": "Thyroid swelling",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by thyroid swelling.",
+  "hpo_codes": [],
+  "snomed_code": "3716002",
+  "snomed_verified_name": "Goiter",
+  "icd10_code": "R22.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Localized swelling, mass and lump, neck",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

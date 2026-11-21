@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POLYCYTHEMIA",
+    "complaint_name":  "Polycythemia",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_POLY_001",
+                          "text":  "Do you have headaches, dizziness, or visual disturbances?",
+                          "purpose":  "hyperviscosity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPERVISCOSITY_SYMPTOMS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_002",
+                          "text":  "Do you itch after a warm bath or shower?",
+                          "purpose":  "aquagenic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "AQUAGENIC_PRURITUS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_003",
+                          "text":  "Do you have burning pain in the hands or feet?",
+                          "purpose":  "erythromelalgia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ERYTHROMELALGIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_004",
+                          "text":  "Is there a known history of polycythemia vera or genetic predisposition?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "POLYCYTHEMIA_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

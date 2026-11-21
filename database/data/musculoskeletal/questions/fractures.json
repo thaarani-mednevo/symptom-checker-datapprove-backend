@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "FRACTURES",
+    "complaint_name":  "Fractures",
+    "module":  "musculoskeletal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_FX_001",
+                          "text":  "How did the injury happen and when?",
+                          "purpose":  "mechanism",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FRACTURE_MECHANISM",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FX_002",
+                          "text":  "Is there obvious deformity, severe pain, or inability to bear weight?",
+                          "purpose":  "severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OBVIOUS_FRACTURE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FX_003",
+                          "text":  "Is there numbness, coldness, or discolouration beyond the injury?",
+                          "purpose":  "neurovascular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NEUROVASCULAR_COMPROMISE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FX_004",
+                          "text":  "Is the bone visible through the skin?",
+                          "purpose":  "open",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OPEN_FRACTURE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FX_005",
+                          "text":  "Did the fracture occur from minimal trauma (e.g. a fall from standing height)?",
+                          "purpose":  "fragility",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_FRAGILITY_FRACTURE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FRAGILITY_FRACTURE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

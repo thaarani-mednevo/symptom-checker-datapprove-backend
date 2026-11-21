@@ -1,0 +1,99 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_015",
+  "code": "SPINAL_STENOSIS_LUMBAR_REGION_WITHOUT_NEUROGENIC_CLAUDICATION",
+  "name": "Spinal stenosis, lumbar region without neurogenic claudication",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Spinal stenosis is an abnormal narrowing of the spinal canal or neural foramen that results in pressure on the spinal cord or nerve roots. Symptoms may include pain, numbness, or weakness in the arms or legs.",
+  "complaints": [
+    {
+      "code": "IMPAIRED_FUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "NUMBNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "OR_WEAKNESS_IN_THE_ARMS_OR_LEGS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "OSTEOARTHRITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "RHEUMATOID_ARTHRITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "SPINAL_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "TRAUMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PAGETS_DISEASE_OF_THE_BONE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "SCOLIOSIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "SPONDYLOLISTHESIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "ACHONDROPLASIA",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M48.061",
+  "icd10_validated": true,
+  "icd10_official_description": "Spinal stenosis, lumbar region without neurogenic claudication",
+  "evidence_ids": [
+    "EVID_SPINAL_STENOSIS_LUMBAR_REGION_WITHOUT_NEUROGENIC_CLAUDICATION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

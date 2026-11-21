@@ -1,0 +1,95 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_013",
+    "code":  "LATE_VOMITING_OF_PREGNANCY",
+    "name":  "Late vomiting of pregnancy",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Late vomiting of pregnancy.",
+    "complaints":  [
+                       {
+                           "code":  "VOMITING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VOMITING",
+                          "condition":  "Vomiting in pregnancy with inability to keep fluids down (suspect hyperemesis gravidarum)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LATE_VOMITING_OF_PREGNANCY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_019",
+                          "text":  "Are you currently pregnant?",
+                          "purpose":  "gather_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LATE_VOMITING_OF_PREGNANCY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VOMITING_OF_PREGNANCY_UNSPECIFIED",
+                              "distinguishing_feature":  "Late vomiting of pregnancy refers to onset in later pregnancy (after the typical first-trimester window), which itself should prompt considering other causes; unspecified vomiting of pregnancy has no documented timing."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O21.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Late vomiting of pregnancy",
+    "evidence_ids":  [
+                         "EVID_LATE_VOMITING_OF_PREGNANCY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

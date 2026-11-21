@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_002",
+  "code": "DYSPEPSIA",
+  "name": "Dyspepsia",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Indigestion, also known as dyspepsia or upset stomach, is a condition of impaired digestion. Symptoms may include upper abdominal fullness, heartburn, nausea, belching, flatulence or upper abdominal pain.",
+  "hpo_codes": [],
+  "snomed_code": "162031009",
+  "snomed_verified_name": "Indigestion",
+  "icd10_code": "K30",
+  "icd10_validated": true,
+  "icd10_official_description": "Functional dyspepsia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

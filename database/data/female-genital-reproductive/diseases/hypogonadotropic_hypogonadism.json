@@ -1,0 +1,77 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_049",
+    "code":  "HYPOGONADOTROPIC_HYPOGONADISM",
+    "name":  "Hypogonadotropic hypogonadism",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Hypogonadotropic hypogonadism (HH), is a disorder where the pituitary gland fails to produce the required levels of the hormones which are needed to stimulate the gonads to function normally. This usually means that the gonads produce unusually low levels of sex hormones, but it can also lead to other functional problems such as insufficient sperm in male HH.",
+    "complaints":  [
+                       {
+                           "code":  "DELAYED_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_NO_PUBERTY_BY_13_15",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "HYPOGONADOTROPIC_HYPOGONADISM",
+                          "condition":  "No breast development by 13 or no menarche by 15"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BREAST_DEVELOPMENT_STARTED",
+                          "text":  "Has any breast development begun?",
+                          "purpose":  "Assess pubertal development",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOGONADOTROPIC_HYPOGONADISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HEADACHE_VISUAL_CHANGE",
+                          "text":  "Have you had headaches or any change in vision?",
+                          "purpose":  "Screen for hypothalamic-pituitary lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GALACTORRHEA_VISUAL_FIELD)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOGONADOTROPIC_HYPOGONADISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "TURNER_SYNDROME",
+                              "distinguishing_feature":  "Hypogonadotropic hypogonadism shows low FSH/LH; Turner syndrome typically shows elevated FSH/LH (hypergonadotropic) with confirmed karyotype abnormality"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "33927004",
+    "snomed_verified_name":  "Hypogonadotropic hypogonadism",
+    "icd10_code":  "E23.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypopituitarism",
+    "evidence_ids":  [
+                         "EVID_HYPOGONADOTROPIC_HYPOGONADISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

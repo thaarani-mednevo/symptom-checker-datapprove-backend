@@ -1,0 +1,91 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_036",
+  "code": "POLYMYOSITIS_WITH_MYOPATHY",
+  "name": "Polymyositis with myopathy",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Polymyositis (PM) is a type of chronic inflammation of the muscles related to dermatomyositis and inclusion body myositis. Its name is derived from  poly- 'many',  myos- 'muscle' and  -itis 'inflammation'.",
+  "complaints": [
+    {
+      "code": "MUSCLE_WEAKNESS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SYMMETRICAL_PROXIMAL_MUSCLE_WEAKNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    },
+    {
+      "code": "ELEVATED_MUSCLE_ENZYMES_CK",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "MYALGIA_AND_MUSCLE_TENDERNESS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "DYSPHAGIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FEMALE_SEX",
+      "strength": "strong"
+    },
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "AUTOIMMUNE_PREDISPOSITION_HLA_DRB1_ALLELES",
+      "strength": "strong"
+    },
+    {
+      "code": "VIRAL_INFECTIONS",
+      "strength": "weak"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_ACUTE_RESPIRATORY_FAILURE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "MUSCLE_WEAKNESS",
+      "condition": "[LLM DRAFT] Severe respiratory muscle weakness leading to acute shortness of breath and hypoventilation."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M33.22",
+  "icd10_validated": true,
+  "icd10_official_description": "Polymyositis with myopathy",
+  "evidence_ids": [
+    "EVID_POLYMYOSITIS_WITH_MYOPATHY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

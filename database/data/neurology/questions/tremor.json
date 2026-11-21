@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "TREMOR",
+    "complaint_name":  "Tremor",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_TR_001",
+                          "text":  "Is the tremor worse at rest, on holding the hands out, or during movement?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TREMOR_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TR_002",
+                          "text":  "Is it in one hand, both hands, or the head?",
+                          "purpose":  "distribution",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TREMOR_DISTRIBUTION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TR_003",
+                          "text":  "Is there slowness, stiffness, or balance problems?",
+                          "purpose":  "parkinsonism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PARKINSONISM_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_TR_004",
+                          "text":  "Does alcohol improve it?",
+                          "purpose":  "alcohol",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ESSENTIAL_TREMOR",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_TR_005",
+                          "text":  "Did it start after starting a new medication?",
+                          "purpose":  "drug",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DRUG_TREMOR",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

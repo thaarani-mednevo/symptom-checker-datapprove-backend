@@ -1,0 +1,6 @@
+code,name,action,source_status
+TESTICULAR_TORSION_SUSPECTED,Suspected testicular torsion,emergency_er_now,clinician_not_approved
+TESTICULAR_MASS_SUSPECTED,Suspected testicular mass/malignancy,urgent_urology_referral_within_days,clinician_not_approved
+SEVERE_GENITOURINARY_INFECTION_SUSPECTED,Suspected epididymo-orchitis with systemic infection/sepsis,emergency_er_now,clinician_not_approved
+PRIAPISM_SUSPECTED,Suspected priapism (prolonged painful erection),emergency_er_now,clinician_not_approved
+FOURNIERS_GANGRENE_SUSPECTED,Suspected Fournier's gangrene (necrotizing genital infection),emergency_er_now,clinician_not_approved

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "BLOATING",
+    "complaint_name":  "Bloating",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BLO_001",
+                          "text":  "Is the bloating constant or related to meals?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLOATING_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLO_002",
+                          "text":  "Is there abdominal pain, change in bowel habit, or weight loss?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_010)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BLOATING_ALARM",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLO_003",
+                          "text":  "Are you female and over 50?",
+                          "purpose":  "ovarian_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_011)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OVARIAN_CANCER_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLO_004",
+                          "text":  "Is it related to dairy, wheat, or specific foods?",
+                          "purpose":  "intolerance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FOOD_INTOLERANCE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

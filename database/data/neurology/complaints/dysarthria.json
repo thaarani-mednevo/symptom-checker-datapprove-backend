@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_020",
+  "code": "DYSARTHRIA",
+  "name": "Dysarthria",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Dysarthria is a speech sound disorder resulting from neurological injury of the motor component of the motor–speech system and is characterized by poor articulation of phonemes. Those affected lack sufficient control of the muscles used for speech to pronounce words clearly.",
+  "hpo_codes": [],
+  "snomed_code": "8011004",
+  "snomed_verified_name": "Dysarthria",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_016",
+  "code": "HEARING_DISTURBANCE",
+  "name": "Hearing disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Hearing loss is either a partial inability to hear, or a total inability termed deafness. Hearing loss may be present at birth or acquired at any time afterwards.",
+  "hpo_codes": [],
+  "snomed_code": "15188001",
+  "snomed_verified_name": "Hearing loss",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

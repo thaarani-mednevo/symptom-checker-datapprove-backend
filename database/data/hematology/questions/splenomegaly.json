@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "SPLENOMEGALY",
+    "complaint_name":  "Splenomegaly",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SPLE_001",
+                          "text":  "Is there left upper quadrant fullness or early satiety?",
+                          "purpose":  "symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SPLENOMEGALY_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SPLE_002",
+                          "text":  "Do you have a known blood disorder, liver disease, or infection?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SPLENOMEGALY_CAUSE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SPLE_003",
+                          "text":  "Have you had fever, night sweats, or weight loss?",
+                          "purpose":  "systemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "B_SYMPTOMS_WITH_SPLENOMEGALY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SPLE_004",
+                          "text":  "Is there sudden severe left upper quadrant pain?",
+                          "purpose":  "infarction",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SPLENIC_INFARCTION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

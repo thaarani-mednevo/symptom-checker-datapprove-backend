@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_006",
+  "code": "NOCTURIA",
+  "name": "Nocturia",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Nocturia is defined by the International Continence Society (ICS) as \"the complaint that the individual has to wake at night one or more times for voiding \". The term is derived from Latin nox – \"night\", and Greek [τα] ούρα – \"urine\".",
+  "hpo_codes": [],
+  "snomed_code": "139394000",
+  "snomed_verified_name": "Nocturia",
+  "icd10_code": "R35.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Nocturia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,145 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_018",
+    "code":  "RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY",
+    "name":  "Renal failure following ectopic and molar pregnancy",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "Kidney failure, also known as renal failure or end-stage renal disease (ESRD), is a medical condition in which the kidneys can no longer adequately filter waste products from the blood, functioning at less than 15% of normal levels. Kidney failure is classified as either acute kidney failure, which develops rapidly and may resolve; and chronic kidney failure, which develops slowly and can often be irreversible.",
+    "complaints":  [
+                       {
+                           "code":  "OLIGURIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "REDUCED_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LEG_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "CONFUSION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INTERNAL_HAEMORRHAGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SEPSIS",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_012",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "OLIGURIA",
+                          "condition":  "Oliguria/anuria with confusion or severe oedema — acute kidney injury"
+                      },
+                      {
+                          "code":  "RF_RU_011",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "OLIGURIA",
+                          "condition":  "Oliguria in pregnancy context — rule out pre-eclampsia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_001",
+                          "text":  "Are you completely unable to pass any urine at all despite feeling the urge?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_012",
+                          "text":  "Are you currently pregnant, or did this symptom start during or after a pregnancy?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_021",
+                          "text":  "Do you have chronic high blood pressure or known kidney disease?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_HYPERTENSIVE_RENAL)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "RENAL_FAILURE_FOLLOWING_INCOMPLETE_SPONTANEOUS_ABORTION",
+                              "distinguishing_feature":  "Ectopic/molar pregnancy has a tubal or trophoblastic origin confirmed on ultrasound/hCG pattern; incomplete spontaneous abortion involves intrauterine retained products."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0000083 | HP:0004713"
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O08.4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Renal failure following ectopic and molar pregnancy",
+    "evidence_ids":  [
+                         "EVID_RENAL_FAILURE_FOLLOWING_ECTOPIC_AND_MOLAR_PREGNANCY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

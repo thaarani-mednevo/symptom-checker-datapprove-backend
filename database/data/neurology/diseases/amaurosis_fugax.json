@@ -1,0 +1,125 @@
+﻿{
+    "id":  "NEUROLOGY_DIS_CS_029",
+    "code":  "AMAUROSIS_FUGAX",
+    "name":  "Amaurosis fugax",
+    "module":  "neurology",
+    "category":  "disease",
+    "description":  "Amaurosis fugax is a painless temporary loss of vision in one or both eyes.",
+    "complaints":  [
+                       {
+                           "code":  "PAROXYSMAL_VISUAL_LOSS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "TEMPORARY_FLEETING_OF_VISION_IN_ONE_OR_BOTH_EYES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CAROTID_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ATRIAL_FIBRILLATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_STROKE_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PARALYSIS",
+                          "condition":  "[LLM DRAFT] When transient monocular blindness (amaurosis fugax) is accompanied by acute paralysis, suggesting an ongoing acute ischemic stroke or transient ischemic attack requiring immediate stroke team activation."
+                      },
+                      {
+                          "code":  "RF_PERMANENT_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISUAL_LOSS",
+                          "condition":  "[LLM DRAFT] When transient visual loss transitions into persistent or permanent monocular visual loss, indicating central retinal artery occlusion or severe retinal ischemia requiring urgent ophthalmological and vascular evaluation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_SUDDENLY_LOSE_VISION_IN_ONE_EYE",
+                          "text":  "[LLM DRAFT] Did you suddenly lose vision in one eye for a few seconds or minutes?",
+                          "purpose":  "transient monocular vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AMAUROSIS_FUGAX_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_SEE_A_DARK_CURTAIN_OR_SHADOW_OVE",
+                          "text":  "[LLM DRAFT] Did you see a dark curtain or shadow over one eye that went away on its own?",
+                          "purpose":  "transient visual field loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "AMAUROSIS_FUGAX_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_FEEL_WEAKNESS_OR_NUMBNESS_IN_ANY",
+                          "text":  "[LLM DRAFT] Did you feel weakness or numbness in any arm or leg at the same time?",
+                          "purpose":  "possible stroke symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "AMAUROSIS_FUGAX_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CENTRAL_RETINAL_ARTERY_OCCLUSION_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Permanent rather than transient monocular or binocular vision loss often associated with cherry-red spot on fundoscopic examination"
+                          },
+                          {
+                              "disease_code":  "OTHER_OPTIC_NEURITIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Subacute painful loss of vision with relative afferent pupillary defect rather than painless transient obscurations"
+                          },
+                          {
+                              "disease_code":  "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS",
+                              "distinguishing_feature":  "[LLM DRAFT] Visual symptoms typically present as a spreading fortification spectrum and are accompanied by headache and positive migrainous features"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "88032003",
+    "snomed_verified_name":  "Amaurosis fugax",
+    "icd10_code":  "G45.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Amaurosis fugax",
+    "evidence_ids":  [
+                         "EVID_AMAUROSIS_FUGAX"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

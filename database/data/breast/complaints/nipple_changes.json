@@ -1,0 +1,17 @@
+{
+  "id": "BREAST_COMP_BRE_004",
+  "code": "NIPPLE_CHANGES",
+  "name": "Nipple changes",
+  "module": "breast",
+  "body_system": "breast",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by nipple changes.",
+  "hpo_codes": [],
+  "snomed_code": "115941000119108",
+  "snomed_verified_name": "Breast symptom of change in nipple",
+  "icd10_code": "N64.59",
+  "icd10_validated": true,
+  "icd10_official_description": "Other signs and symptoms in breast",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

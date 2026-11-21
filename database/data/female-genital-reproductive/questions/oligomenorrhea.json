@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "OLIGOMENORRHEA",
+    "complaint_name":  "Oligomenorrhea",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_OLIG_001",
+                          "text":  "How often do your periods come — every 35 days, 6 weeks, 3 months?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OLIGOMENORRHEA_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_OLIG_002",
+                          "text":  "Do you have acne, excess hair, or weight gain?",
+                          "purpose":  "pcos",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PCOS_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_OLIG_003",
+                          "text":  "Are you underweight, exercising intensely, or stressed?",
+                          "purpose":  "functional",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOTHALAMIC_OLIGOMENORRHEA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_OLIG_004",
+                          "text":  "Could you be pregnant?",
+                          "purpose":  "pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PREGNANCY_CHECK",
+                          "yes_weight":  -2,
+                          "no_weight":  2
+                      }
+                  ]
+}

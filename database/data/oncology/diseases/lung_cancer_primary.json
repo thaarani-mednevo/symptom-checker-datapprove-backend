@@ -1,0 +1,193 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_011",
+    "code":  "LUNG_CANCER_PRIMARY",
+    "name":  "Primary lung cancer",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Primary lung cancer is the leading cause of cancer-related mortality worldwide. The two major histological categories are non-small cell lung cancer (NSCLC, ~85%) — including adenocarcinoma, squamous cell carcinoma, and large cell carcinoma — and small cell lung cancer (SCLC, ~15%). Most cases are attributable to tobacco smoking. Central tumours (squamous, SCLC) tend to present with cough, haemoptysis, and obstructive features. Peripheral tumours (adenocarcinoma) may be silent until advanced. Paraneoplastic syndromes (SIADH, Cushing, Lambert-Eaton) occur particularly with SCLC.",
+    "complaints":  [
+                       {
+                           "code":  "HAEMOPTYSIS_ONCOLOGY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS_ONCOLOGY",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "BONE_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PERSISTENT_COUGH",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HAEMOPTYSIS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DYSPNOEA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HOARSENESS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "PASSIVE_SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RADON_EXPOSURE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OCCUPATIONAL_ASBESTOS_OR_SILICA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "COPD",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_LUNG_CANCER",
+                             "strength":  "mild"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HAEMOPTYSIS_ONCOLOGY",
+                          "condition":  "Any haemoptysis in a patient over 40 with smoking history — urgent chest imaging and referral"
+                      },
+                      {
+                          "code":  "RED_ONC_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BONE_PAIN",
+                          "condition":  "New bone pain in a known or suspected lung cancer patient — urgent imaging for metastases"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_LC_001",
+                          "text":  "Have you coughed up any blood, even a small amount, in the past few weeks?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LUNG_CANCER_PRIMARY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_LC_002",
+                          "text":  "Have you smoked cigarettes for more than 10 years?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ELEVATED_CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LUNG_CANCER_PRIMARY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ONC_LC_003",
+                          "text":  "Have you had a persistent cough for more than 3 weeks that has not responded to treatment?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LUNG_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "LUNG_CANCER_PRIMARY_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PULMONARY_TUBERCULOSIS",
+                              "distinguishing_feature":  "TB presents with productive cough, night sweats, and weight loss in endemic populations; diagnosis confirmed by sputum AFB and culture. Lung cancer is more likely in older smokers without TB exposure."
+                          },
+                          {
+                              "disease_code":  "PNEUMONIA",
+                              "distinguishing_feature":  "Pneumonia causes acute fever and productive cough with consolidation on X-ray that resolves with antibiotics; lung cancer presents as a persistent mass that does not resolve."
+                          },
+                          {
+                              "disease_code":  "ASTHMA",
+                              "distinguishing_feature":  "Asthma is characterised by episodic wheeze and reversible airflow obstruction in younger patients; lung cancer has persistent, progressive symptoms and fixed radiological changes."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0100526"
+                  ],
+    "snomed_code":  "363358000",
+    "snomed_verified_name":  "Malignant tumor of lung",
+    "icd10_code":  "C34.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of unspecified part of unspecified bronchus and lung",
+    "evidence_ids":  [
+                         "EVD_ONC_011"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

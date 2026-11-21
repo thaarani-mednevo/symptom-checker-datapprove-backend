@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_010",
+  "code": "PERSONALITY_CHANGE",
+  "name": "Personality change",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Personality change refers to the different forms of change in various aspects of personality. An individual's personality may stay somewhat consistent throughout their life, though there is evidence that an individual's personality can change throughout their lifetime.",
+  "hpo_codes": [],
+  "snomed_code": "102943000",
+  "snomed_verified_name": "Personality change",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

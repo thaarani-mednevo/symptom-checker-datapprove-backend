@@ -1,0 +1,143 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_029",
+    "code":  "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL",
+    "name":  "Retinal detachment with retinal dialysis, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Retinal detachment is a condition where the retina pulls away from the tissue underneath it. It may start in a small area, but without quick treatment, it can spread across the entire retina, leading to serious vision loss and possibly blindness.",
+    "complaints":  [
+                       {
+                           "code":  "PHOTOPSIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "VISUAL_DISTORTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PHOTOPSIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FLOATERS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "VISUAL_FIELD_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RETINAL_DIALYSIS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HIGH_MYOPIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "LATTICE_DEGENERATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CATARACT_SURGERY",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, painless loss of vision in one or both eyes, possibly with a curtain‑like shadow"
+                      },
+                      {
+                          "code":  "RF_PHOTOPSIA_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PHOTOPSIA",
+                          "condition":  "[LLM DRAFT] Sudden onset of flashes of light, especially in peripheral vision, indicating possible retinal detachment"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_SEEN_SUDDEN_FLASHES_OF_LIGHT_IN",
+                          "text":  "[LLM DRAFT] Have you seen sudden flashes of light in your vision?",
+                          "purpose":  "detects photopsia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_SUDDEN_INCREASE_IN_FL",
+                          "text":  "[LLM DRAFT] Have you noticed a sudden increase in floaters?",
+                          "purpose":  "detects floaters",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_CURTAIN_OR_SHADOW_COVERING",
+                          "text":  "[LLM DRAFT] Do you feel a curtain or shadow covering part of your vision?",
+                          "purpose":  "detects visual field loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H33.043",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Retinal detachment with retinal dialysis, bilateral",
+    "evidence_ids":  [
+                         "EVID_RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

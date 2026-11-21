@@ -1,0 +1,64 @@
+﻿{
+  "id": "GASTROINTESTINAL_DIS_GI_024",
+  "code": "OUTLET_DYSFUNCTION_CONSTIPATION",
+  "name": "Outlet dysfunction constipation",
+  "module": "gastrointestinal",
+  "category": "disease",
+  "description": "A gastrointestinal condition known as Outlet dysfunction constipation.",
+  "complaints": [
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "CONSTIPATION",
+      "relationship": "wikidata_unverified",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "SLOW_MOVEMENT_OF_STOOL_WITHIN_THE_COLON",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "IRRITABLE_BOWEL_SYNDROME",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CELIAC_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "NON_CELIAC_GLUTEN_SENSITIVITY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PELVIC_FLOOR_DISORDERS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K59.02",
+  "icd10_validated": true,
+  "icd10_official_description": "Outlet dysfunction constipation",
+  "evidence_ids": [
+    "EVID_OUTLET_DYSFUNCTION_CONSTIPATION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

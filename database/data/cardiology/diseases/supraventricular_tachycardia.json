@@ -1,0 +1,117 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_005",
+    "code":  "SUPRAVENTRICULAR_TACHYCARDIA",
+    "name":  "Supraventricular Tachycardia",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Supraventricular tachycardia is a rapid heart rhythm originating above the ventricles, often causing palpitations, dizziness, and shortness of breath.",
+    "complaints":  [
+                       {
+                           "code":  "PALPITATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SUDDEN_RAPID_HEARTBEAT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CONGENITAL_HEART_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPITATIONS",
+                          "condition":  "Palpitations with syncope — urgent evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_009",
+                          "text":  "Do your heartbeats feel irregular, very fast, or fluttering?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ARRHYTHMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SUPRAVENTRICULAR_TACHYCARDIA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUPRAVENTRICULAR_TACHYCARDIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ATRIAL_FIBRILLATION",
+                              "distinguishing_feature":  "AFib is irregularly irregular; SVT is regular with abrupt onset/offset."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0004755"
+                  ],
+    "snomed_code":  "6456007",
+    "snomed_verified_name":  "Supraventricular tachycardia",
+    "icd10_code":  "I47.1",
+    "icd10_validated":  false,
+    "icd10_official_description":  null,
+    "evidence_ids":  [
+                         "EVD_CARD_005"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,34 @@
+﻿{
+  "module": "cardiology",
+  "version": "1.1",
+  "complaint_count": 9,
+  "disease_count": 15,
+  "complaints": [
+    "CHEST_DISCOMFORT",
+    "EDEMA",
+    "EXERTIONAL_DYSPNEA",
+    "ORTHOPNEA",
+    "PALPITATIONS",
+    "PND",
+    "PRESYNCOPE",
+    "SYNCOPE",
+    "UNILATERAL_LEG_SWELLING"
+  ],
+  "diseases": [
+    "ACUTE_CORONARY_SYNDROME",
+    "AORTIC_STENOSIS",
+    "ATRIAL_FIBRILLATION",
+    "BRADYARRHYTHMIA",
+    "CARDIOMYOPATHY",
+    "HEART_FAILURE",
+    "HYPERTENSIVE_HEART_DISEASE",
+    "MITRAL_REGURGITATION",
+    "MYOCARDITIS",
+    "PERICARDITIS",
+    "PULMONARY_EMBOLISM",
+    "PULMONARY_HYPERTENSION",
+    "STABLE_ISCHEMIC_HEART_DISEASE",
+    "SUPRAVENTRICULAR_TACHYCARDIA",
+    "VENTRICULAR_TACHYCARDIA"
+  ]
+}

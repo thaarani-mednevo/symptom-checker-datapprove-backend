@@ -1,0 +1,69 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_032",
+    "code":  "OTHER_MALE_INFERTILITY",
+    "name":  "Other male infertility",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Male infertility refers to a sexually mature male\u0027s inability to impregnate a fertile female. Male infertility can wholly or partially account for 40% of infertility among couples who are trying to have children.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARTNER_FERTILITY_ASSESSED",
+                          "text":  "Has your partner had a fertility (semen) assessment?",
+                          "purpose":  "Confirm male-factor work-up",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_MALE_INFERTILITY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_TRYING_TO_CONCEIVE_DURATION",
+                          "text":  "How many months have you been trying to conceive?",
+                          "purpose":  "Establish duration of subfertility",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_MALE_INFERTILITY_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N46.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other male infertility",
+    "evidence_ids":  [
+                         "EVID_OTHER_MALE_INFERTILITY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

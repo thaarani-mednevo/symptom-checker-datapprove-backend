@@ -1,0 +1,162 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_036",
+    "code":  "MANIC_EPISODE_UNSPECIFIED",
+    "name":  "Manic episode, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Mania is a psychiatric behavioral syndrome defined as a state of abnormally elevated mood with hyperactivity and risky behavior. During a manic episode, an individual will experience rapidly changing emotions and moods, highly influenced by surrounding stimuli.",
+    "complaints":  [
+                       {
+                           "code":  "ELEVATED_MOOD",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ELEVATED_MOOD",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "GRANDIOSITY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DECREASED_NEED_FOR_SLEEP",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PRESSURED_SPEECH",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FLIGHT_OF_IDEAS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "DISTRACTIBILITY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PSYCHOMOTOR_AGITATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "EXCESSIVE_INVOLVEMENT_IN_RISKY_ACTIVITIES",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_BIPOLAR_DISORDER",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_SUBSTANCE_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HIGH_STRESS_LIFE_EVENTS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SLEEP_DEPRIVATION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "EARLY_TRAUMA_OR_ADVERSITY",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SUICIDE_RISK",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_HOMICIDE_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_HOMICIDE_RISK",
+                          "condition":  "Patient expresses intent or desire to harm others."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MANIA_DURATION",
+                          "text":  "Has this elevated or irritable mood with increased energy lasted most of the day for at least a week, or led to hospitalization?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MANIC_EPISODE_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_BIPOLAR_MANIA_SAFETY_CHECK",
+                          "text":  "Have you had a sudden, severe drop in your need for sleep along with impulsive or risky behavior, or any current thoughts of harming yourself?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MANIC_EPISODE_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F30.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Manic episode, unspecified",
+    "evidence_ids":  [
+                         "EVID_MANIC_EPISODE_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

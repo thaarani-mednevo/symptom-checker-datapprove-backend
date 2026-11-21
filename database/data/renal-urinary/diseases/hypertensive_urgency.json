@@ -1,0 +1,136 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_012",
+    "code":  "HYPERTENSIVE_URGENCY",
+    "name":  "Hypertensive urgency",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "A hypertensive urgency is a clinical situation in which blood pressure is very high with minimal or no symptoms, and no signs or symptoms indicating acute organ damage. This contrasts with a hypertensive emergency where severely high blood pressure is accompanied by evidence of progressive organ or system damage.",
+    "complaints":  [
+                       {
+                           "code":  "URGENCY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHRONIC_HYPERTENSION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NON_COMPLIANCE_ANTIHYPERTENSIVE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CHRONIC_KIDNEY_DISEASE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "URGENCY",
+                          "condition":  "Urgency with BP ≥180/120 and headache/visual change/confusion"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_007",
+                          "text":  "Has your blood pressure been very high (≥180/120 mmHg), and do you have a headache, blurred vision, or confusion right now?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPERTENSIVE_URGENCY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_021",
+                          "text":  "Do you have chronic high blood pressure or known kidney disease?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_HYPERTENSIVE_RENAL)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPERTENSIVE_URGENCY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPERTENSIVE_URGENCY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0100735"
+                  ],
+    "snomed_code":  "723188008",
+    "snomed_verified_name":  "Renal insufficiency",
+    "icd10_code":  "I16.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypertensive urgency",
+    "evidence_ids":  [
+                         "EVID_HYPERTENSIVE_URGENCY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

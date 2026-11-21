@@ -1,0 +1,110 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_007",
+    "code":  "SARCOIDOSIS_UNSPECIFIED",
+    "name":  "Sarcoidosis, unspecified",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Sarcoidosis, also known as Besnier–Boeck–Schaumann disease, is a non-infectious granulomatous disease involving abnormal collections of inflammatory cells that form lumps known as granulomata. The disease usually begins in the lungs, skin, or lymph nodes.",
+    "complaints":  [
+                       {
+                           "code":  "DRY_EYES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "COUGH",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DYSPNEA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss, especially if painless or with eye pain/redness, indicating optic neuropathy or severe uveitis."
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with redness and photophobia, suggestive of acute uveitis or angle‑closure glaucoma."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_VISION_CHANGES_OR_EYE",
+                          "text":  "[LLM DRAFT] Do you have sudden vision changes or eye pain?",
+                          "purpose":  "eye involvement",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SARCOIDOSIS_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SHORTNESS_OF_BREATH_THAT_WOR",
+                          "text":  "[LLM DRAFT] Do you have shortness of breath that worsens when lying flat or during activity?",
+                          "purpose":  "pulmonary involvement",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SARCOIDOSIS_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_UNEXPLAINED_SKIN_BUMPS_OR_RA",
+                          "text":  "[LLM DRAFT] Do you have unexplained skin bumps or rashes that have appeared recently?",
+                          "purpose":  "skin manifestations",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SARCOIDOSIS_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D86.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Sarcoidosis, unspecified",
+    "evidence_ids":  [
+                         "EVID_SARCOIDOSIS_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

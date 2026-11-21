@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "ABNORMAL_MOVEMENTS",
+    "complaint_name":  "Abnormal movements",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AM_001",
+                          "text":  "Are the movements jerky (myoclonus), twisting (dystonia), flapping (chorea), or rhythmic (tremor)?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MOVEMENT_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AM_002",
+                          "text":  "Are they present at rest, on action, or both?",
+                          "purpose":  "trigger",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MOVEMENT_TRIGGER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AM_003",
+                          "text":  "Can you suppress them voluntarily?",
+                          "purpose":  "suppressibility",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MOVEMENT_SUPPRESSIBILITY",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_AM_004",
+                          "text":  "Is there slowness, stiffness, or balance problems?",
+                          "purpose":  "parkinsonism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PARKINSONISM_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AM_005",
+                          "text":  "Did they start after a new medication?",
+                          "purpose":  "drug",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DRUG_MOVEMENT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

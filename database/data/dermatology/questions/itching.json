@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "ITCHING",
+    "complaint_name":  "Itching",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_ITCH_001",
+                                       "Is the itch all over your body or in one area?",
+                                       "distribution",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "ITCH_DISTRIBUTION",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_ITCH_002",
+                          "text":  "Is it worse at night?",
+                          "purpose":  "nocturnal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NOCTURNAL_ITCH",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ITCH_003",
+                          "text":  "Is there a visible rash or skin lesion?",
+                          "purpose":  "lesion_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ITCH_WITH_LESION",
+                          "yes_weight":  1,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ITCH_004",
+                          "text":  "Do you have yellow skin or eyes, or dark urine?",
+                          "purpose":  "hepatobiliary_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CHOLESTASIS_ITCH",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ITCH_005",
+                          "text":  "Have you travelled or been in close contact with someone who has scabies?",
+                          "purpose":  "scabies_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "SCABIES_EXPOSURE",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

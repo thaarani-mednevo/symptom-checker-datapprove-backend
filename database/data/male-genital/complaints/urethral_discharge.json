@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_003",
+  "code": "URETHRAL_DISCHARGE",
+  "name": "Urethral discharge",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "The urethra is the tube that transports urine from the bladder to the urethral meatus of the penis or vulva in placental mammals. In males, it also transports semen through the penis during ejaculation.",
+  "hpo_codes": [],
+  "snomed_code": "9957009",
+  "snomed_verified_name": "Urethral discharge",
+  "icd10_code": "R36.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Urethral discharge, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

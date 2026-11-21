@@ -1,0 +1,100 @@
+﻿{
+    "id":  "ENT_DIS_ENT_013",
+    "code":  "ACUTE_TONSILLITIS",
+    "name":  "Acute tonsillitis",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Tonsillitis is inflammation of the tonsils in the upper part of the throat. It can be acute or chronic.",
+    "complaints":  [
+                       {
+                           "code":  "SORE_THROAT",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SEVERE_SORE_THROAT",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "TONSILLAR_EXUDATE",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HIGH_FEVER",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CERVICAL_LYMPHADENOPATHY",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "STREPTOCOCCAL_INFECTION",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "YOUNG_AGE",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PERITONSILLAR_ABSCESS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "TRISMUS",
+                          "condition":  "Inability to open mouth fully or muffled voice"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TRISMUS",
+                          "text":  "Are you having difficulty opening your mouth fully, or does your voice sound muffled like you have a hot potato in your mouth?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_TONSILLITIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "17741008",
+    "snomed_verified_name":  "Acute tonsillitis",
+    "icd10_code":  "J03.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute tonsillitis, unspecified",
+    "evidence_ids":  [
+                         "EVID_ACUTE_TONSILLITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,143 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_032",
+    "code":  "HYPOGLYCEMIA_LEVEL_3",
+    "name":  "Hypoglycemia level 3",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A severe hypoglycemic episode with neuroglycopenic symptoms requiring immediate medical intervention.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CLUMSINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIFFICULTY_TALKING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONFUSION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LOSS_OF_CONSCIOUSNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_OTHER_SYMPTOMS_RELATED_TO_HYPOGLYCEMIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GASTRIC_BYPASS_SURGERY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OVER_SECRETION_OF_INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOGLYCEMIA_LEVEL_3",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe level 3 hypoglycemia characterized by altered mental status, unresponsiveness, or inability to safely consume oral carbohydrates requiring parenteral rescue therapy."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_CONFUSED_UNABLE_TO_TH",
+                          "text":  "[LLM DRAFT] Are you currently confused, unable to think clearly, or experiencing a seizure?",
+                          "purpose":  "Screens for severe neurological impairment and altered mental status requiring urgent assistance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_3_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NEED_SOMEONE_ELSES_HELP_TO_TREAT",
+                          "text":  "[LLM DRAFT] Do you need someone else\u0027s help to treat your low blood sugar because you cannot do it yourself?",
+                          "purpose":  "Screens for severe functional dependency and inability to self-treat",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_3_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_FAINTED_OR_PASSED_OUT?",
+                          "text":  "[LLM DRAFT] Have you recently fainted or passed out?",
+                          "purpose":  "Screens for loss of consciousness due to profound low blood sugar",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_3_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_1",
+                              "distinguishing_feature":  "[LLM DRAFT] Milder blood glucose reduction characterized by self-treatable neuroglycopenic symptoms without severe cognitive impairment"
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_2",
+                              "distinguishing_feature":  "[LLM DRAFT] Clinically significant hypoglycemia defined by a glucose threshold below 54 mg/dL requiring prompt action but lacking the severe altered mental status of Level 3"
+                          },
+                          {
+                              "disease_code":  "DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA",
+                              "distinguishing_feature":  "[LLM DRAFT] Hypoglycemia precipitated by exogenous medications or substances where full preservation of consciousness distinguishes it from severe level 3 episodes involving coma or profound impairment"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E16.A3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypoglycemia level 3",
+    "evidence_ids":  [
+                         "EVID_HYPOGLYCEMIA_LEVEL_3"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,132 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_042",
+    "code":  "IDIOPATHIC_GOUT_LEFT_SHOULDER",
+    "name":  "Idiopathic gout, left shoulder",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Idiopathic gout, left shoulder.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_SHOULDER_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SWELLING_AND_ERYTHEMA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LIMITED_RANGE_OF_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TOPHI_FORMATION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERURICEMIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ALCOHOL_CONSUMPTION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOUR_LEFT_SHOULDER_PAIN_START_SUDDEN",
+                          "text":  "[LLM DRAFT] Did your left shoulder pain start suddenly and feel very intense?",
+                          "purpose":  "sudden severe pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_SHOULDER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_LEFT_SHOULDER_SWOLLEN_RED_OR_W",
+                          "text":  "[LLM DRAFT] Is your left shoulder swollen, red, or warm to touch?",
+                          "purpose":  "inflammation signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_SHOULDER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EVER_HAD_GOUT_ATTACKS_IN_OTHER",
+                          "text":  "[LLM DRAFT] Have you ever had gout attacks in other joints before?",
+                          "purpose":  "gout history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_LEFT_SHOULDER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.012",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, left shoulder",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_LEFT_SHOULDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

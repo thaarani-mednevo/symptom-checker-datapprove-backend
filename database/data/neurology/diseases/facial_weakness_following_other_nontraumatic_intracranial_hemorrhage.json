@@ -1,0 +1,77 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_094",
+  "code": "FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE",
+  "name": "Facial weakness following other nontraumatic intracranial hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Facial weakness is a medical sign associated with a variety of medical conditions.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INABILITY_TO_MOVE_THE_FACIAL_MUSCLES_ON_ONE_SIDE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CHANGE_IN_TASTE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAIN_AROUND_THE_EAR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS_ESCALATION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] New or worsening acute paralysis indicating potential extension of intracranial hemorrhage or mass effect."
+    },
+    {
+      "code": "RF_SEIZURE_ESCALATION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Acute onset of seizures following a nontraumatic intracranial hemorrhage signaling secondary neurological deterioration."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.292",
+  "icd10_validated": true,
+  "icd10_official_description": "Facial weakness following other nontraumatic intracranial hemorrhage",
+  "evidence_ids": [
+    "EVID_FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

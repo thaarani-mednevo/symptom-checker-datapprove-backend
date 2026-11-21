@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "SUICIDAL_THOUGHTS",
+    "complaint_name":  "Suicidal thoughts",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SUI_001",
+                          "text":  "Are you having thoughts of ending your life right now?",
+                          "purpose":  "active",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACTIVE_SUICIDAL_IDEATION",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SUI_002",
+                          "text":  "Have you thought about how you would do it (a plan)?",
+                          "purpose":  "plan",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUICIDE_PLAN",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SUI_003",
+                          "text":  "Have you taken any steps towards acting on these thoughts?",
+                          "purpose":  "intent",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUICIDE_INTENT",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SUI_004",
+                          "text":  "Do you have someone with you right now, or are you alone?",
+                          "purpose":  "safety_check",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SAFETY_ASSESSMENT",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

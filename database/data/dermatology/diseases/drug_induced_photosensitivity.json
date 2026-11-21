@@ -1,0 +1,84 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_DERM_016",
+    "code":  "DRUG_INDUCED_PHOTOSENSITIVITY",
+    "name":  "Drug-induced photosensitivity",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Light sensitivity or photosensitivity refers to a notable or increased reactivity to light. Apart from vision, human beings have many physiological and psychological responses to light.",
+    "complaints":  [
+                       {
+                           "code":  "PHOTOSENSITIVITY",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SUNBURN_LIKE_REACTION",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SUN_EXPOSED_AREA_RASH",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PHOTOSENSITIZING_MEDICATION",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "PROLONGED_SUN_EXPOSURE",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_PHOTOSENSITIVITY_REACTION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SUNBURN_LIKE_REACTION",
+                          "condition":  "Widespread blistering or skin peeling after sun exposure on a new medication"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PHOTOSENSITIVITY_SEVERITY",
+                          "text":  "Have you started a new medication recently, and does the rash appear only on skin exposed to sunlight?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_INDUCED_PHOTOSENSITIVITY_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "69047008",
+    "snomed_verified_name":  "Photosensitivity caused by drug",
+    "icd10_code":  "L56.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Drug phototoxic response",
+    "evidence_ids":  [
+                         "EVID_DRUG_INDUCED_PHOTOSENSITIVITY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

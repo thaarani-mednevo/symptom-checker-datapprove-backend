@@ -1,0 +1,8 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_HEM_001,BLEEDING,Bleeding,hematology,hematology,complaint,,50960005,R58,1.0,true,,
+COMP_HEM_002,LYMPHADENOPATHY,Lymphadenopathy,hematology,hematology,complaint,,30746006,R59.9,1.0,true,,
+COMP_HEM_003,SPLENOMEGALY,Splenomegaly,hematology,hematology,complaint,,16294009,R16.1,1.0,true,,
+COMP_HEM_004,POLYCYTHEMIA,Polycythemia,hematology,hematology,complaint,,127062003,D75.1,1.0,true,,
+COMP_HEM_005,RECURRENT_INFECTIONS,Recurrent infections,hematology,hematology,complaint,,,D84.9,1.0,true,,
+COMP_HEM_006,ANEMIA,Anemia,hematology,hematology,complaint,,,D64.9,1.0,true,,
+COMP_HEM_007,THROMBOSIS,Thrombosis,hematology,hematology,complaint,,439127006,I82.90,1.0,true,,

@@ -1,0 +1,145 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_028",
+    "code":  "OTHER_OPTIC_NEURITIS",
+    "name":  "Other optic neuritis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Optic neuritis (ON) is a debilitating condition that is defined as inflammation of cranial nerve II which results in disruption of the neurologic pathways that allow visual sensory information received by the retina to be able to be transmitted to the visual cortex of the brain. This disorder of the optic nerve may arise through various pathophysiologic mechanisms, such as through demyelination or inflammation, leading to partial or total loss of vision.",
+    "complaints":  [
+                       {
+                           "code":  "GLARE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "BLURRED_VISION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "VISION_LOSS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "VISUAL_DISTORTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOSS_OF_VISION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LOSS_OF_COLOUR_VISION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PAIN_WORSENING_ON_EYE_MOVEMENTS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AUTOIMMUNE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFECTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VACCINATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MEDICATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDENVISIONLOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, profound vision loss in one eye"
+                      },
+                      {
+                          "code":  "RF_SEVEREEYEPAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with movement, especially if vision loss present"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_SUDDENLY_LOSE_VISION_IN_ONE_EYE?",
+                          "text":  "[LLM DRAFT] Did you suddenly lose vision in one eye?",
+                          "purpose":  "sudden vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_OPTIC_NEURITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_WHEN_YOU_MOVE_YOUR_EYE?",
+                          "text":  "[LLM DRAFT] Do you feel pain when you move your eye?",
+                          "purpose":  "pain with eye movement",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_OPTIC_NEURITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_COLORS_LOOKING_LESS_BRIGHT",
+                          "text":  "[LLM DRAFT] Do you notice colors looking less bright or different?",
+                          "purpose":  "color vision changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_OPTIC_NEURITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H46.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other optic neuritis",
+    "evidence_ids":  [
+                         "EVID_OTHER_OPTIC_NEURITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

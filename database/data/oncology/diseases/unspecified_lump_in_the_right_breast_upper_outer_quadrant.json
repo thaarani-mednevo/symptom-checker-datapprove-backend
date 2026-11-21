@@ -1,0 +1,145 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_008",
+    "code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT",
+    "name":  "Unspecified lump in the right breast, upper outer quadrant",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A palpable, non-specific mass located in the upper outer quadrant of the right breast.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PALPABLE_MASS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SKIN_DIMPLING",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NIPPLE_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BREAST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BRCA_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HORMONE_REPLACEMENT_THERAPY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden severe pain, redness, swelling, and fever indicating possible abscess"
+                      },
+                      {
+                          "code":  "RF_BREAST_ULCERATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Rapidly enlarging lump with skin ulceration or peau d\u0027orange indicating possible advanced malignancy"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_SKIN_DIMPLING_PUCK_UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT",
+                          "text":  "Have you noticed any skin dimpling, puckering, or redness over the lump in your right breast?",
+                          "purpose":  "Check for inflammatory signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_LUMP_HARD_FIXED_IN_PLACE_OR_DOE",
+                          "text":  "Is the lump hard, fixed in place, or does it feel attached to the chest wall?",
+                          "purpose":  "Assess mass characteristics",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DID_YOU_FIRST_NOTICE_THIS_LUMP_APPEAR_SU",
+                          "text":  "Did you first notice this lump appear suddenly over the last few days?",
+                          "purpose":  "Determine symptom onset",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT_SYMPTOM_3",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS",
+                              "distinguishing_feature":  "Spans multiple quadrants of the right breast rather than being localized specifically to the upper outer quadrant."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT",
+                              "distinguishing_feature":  "Lacks specific localization within the right breast, requiring further imaging to determine if it is in the upper outer quadrant or elsewhere."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in the right breast, upper outer quadrant",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

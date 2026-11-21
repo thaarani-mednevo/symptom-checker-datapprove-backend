@@ -1,0 +1,125 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_010",
+    "code":  "ACUTE_BRONCHITIS",
+    "name":  "Acute Bronchitis",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "A respiratory condition known as Acute Bronchitis.",
+    "complaints":  [
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRODUCTIVE_COUGH",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "CHEST_TIGHTNESS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "FEVER_WITH_COUGH",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WHEEZE",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "LOW_GRADE_FEVER",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "MALAISE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECENT_VIRAL_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "COLD_WEATHER",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_006",
+                          "text":  "Do you have a fever along with your cough?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(INFECTIOUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_BRONCHITIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_002",
+                          "text":  "Do you wake up at night due to cough or breathing difficulty?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ASTHMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_BRONCHITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ASTHMA",
+                              "distinguishing_feature":  "Asthma features recurrent discrete episodes triggered by allergens/exercise with reversible airflow obstruction; acute bronchitis is entirely self-limiting with no episodic wheeze."
+                          },
+                          {
+                              "disease_code":  "PNEUMONIA",
+                              "distinguishing_feature":  "Pneumonia features focal consolidation on CXR, high fever \u003e38.5°C, and productive purulent sputum; acute bronchitis shows a clear CXR and milder systemic symptoms."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012387"
+                  ],
+    "snomed_code":  "10509002",
+    "snomed_verified_name":  "Acute bronchitis",
+    "icd10_code":  "J20.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute bronchitis, unspecified",
+    "evidence_ids":  [
+                         "EVD_RESP_010"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

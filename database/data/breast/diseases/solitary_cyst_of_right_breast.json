@@ -1,0 +1,137 @@
+﻿{
+    "id":  "BREAST_DIS_CS_005",
+    "code":  "SOLITARY_CYST_OF_RIGHT_BREAST",
+    "name":  "Solitary cyst of right breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A benign, fluid-filled cavity within the right breast tissue, often asymptomatic and discovered incidentally.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PALPABLE_LUMP",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BREAST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NIPPLE_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SKIN_DIMPLING",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HORMONALFLUCTUATIONS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FAMILYHISTORY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREAST_ABSCESS_DUE_TO_CYST_INFECTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Severe breast pain \u003e8/10 with fever \u003e38°C, redness, swelling indicating abscess"
+                      },
+                      {
+                          "code":  "RF_AXILLARY_ABSCESS_SECONDARY_TO_CYST",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "AXILLARY_LUMP",
+                          "condition":  "[LLM DRAFT] Rapidly enlarging axillary lump with warmth, erythema, fever \u003e38°C"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y_SOLITARY_CYST_OF_RIGHT_BREAST",
+                          "text":  "[LLM DRAFT] Do you feel a distinct, single lump in your right breast?",
+                          "purpose":  "screens for a solitary breast mass",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_RIGHT_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_LUMP_IN_YOUR_RIGHT_BREAST_ACCOMPA",
+                          "text":  "[LLM DRAFT] Is the lump in your right breast accompanied by sudden, severe pain or rapid skin changes?",
+                          "purpose":  "screens for urgent complications or red flag symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_RIGHT_BREAST_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_LEFT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents identically to a right breast cyst but is located in the contralateral breast."
+                          },
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with nipple discharge and ductal dilation rather than a discrete fluid-filled mass."
+                          },
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Typically asymptomatic and detected on biopsy or mammography rather than presenting as a palpable fluid-filled cyst."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N60.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Solitary cyst of right breast",
+    "evidence_ids":  [
+                         "EVID_SOLITARY_CYST_OF_RIGHT_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

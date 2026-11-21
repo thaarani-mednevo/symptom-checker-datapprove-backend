@@ -1,0 +1,85 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_023",
+  "code": "PSORIATIC_ARTHRITIS_MUTILANS",
+  "name": "Psoriatic arthritis mutilans",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "A musculoskeletal condition known as Psoriatic arthritis mutilans.",
+  "complaints": [
+    {
+      "code": "POLYARTHRITIS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DACTYLITIS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "OSTEOLYSIS_AND_DIGIT_SHORTENING_TELESCOPING_FINGERS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "severe"
+    },
+    {
+      "code": "ASYMMETRIC_PERIPHERAL_POLYARTHRITIS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "severe"
+    },
+    {
+      "code": "NAIL_PITTING_AND_ONYCHOLYSIS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PATHOLOGIC_FRACTURE_IN_MUTILANS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "FRACTURES",
+      "condition": "[LLM DRAFT] Sudden onset of severe pain, deformity, and complete loss of structural integrity in a severely osteolytic digit or limb due to severe bone resorption (arthritis mutilans)."
+    },
+    {
+      "code": "RF_ACUTE_SEVERE_MONOARTICULAR_FLARE_WITH_JOINT_SEPSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Sudden, excruciating pain, marked swelling, and erythema in a single joint with systemic fever, raising suspicion of septic arthritis superimposed on chronic mutilating arthropathy."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "10629311000119107",
+  "snomed_verified_name": "Psoriatic arthritis mutilans",
+  "icd10_code": "L40.52",
+  "icd10_validated": true,
+  "icd10_official_description": "Psoriatic arthritis mutilans",
+  "evidence_ids": [
+    "EVID_PSORIATIC_ARTHRITIS_MUTILANS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

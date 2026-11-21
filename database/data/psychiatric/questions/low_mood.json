@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "LOW_MOOD",
+    "complaint_name":  "Low mood",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_LM_001",
+                          "text":  "How long have you felt low and is it constant or does it fluctuate?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LOW_MOOD_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LM_002",
+                          "text":  "Have you lost interest or pleasure in activities you used to enjoy?",
+                          "purpose":  "anhedonia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANHEDONIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LM_003",
+                          "text":  "Have you had thoughts that you would be better off dead, or thoughts of harming yourself?",
+                          "purpose":  "suicide_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUICIDAL_IDEATION",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LM_004",
+                          "text":  "Do you feel hopeless, worthless, or excessively guilty?",
+                          "purpose":  "cognitive",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "COGNITIVE_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LM_005",
+                          "text":  "Is your sleep, appetite, or energy significantly affected?",
+                          "purpose":  "somatic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "SOMATIC_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

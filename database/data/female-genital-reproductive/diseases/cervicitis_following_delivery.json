@@ -1,0 +1,69 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_008",
+    "code":  "CERVICITIS_FOLLOWING_DELIVERY",
+    "name":  "Cervicitis following delivery",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Cervicitis is inflammation of the uterine cervix. Cervicitis in women has many features in common with urethritis in men and many cases are caused by sexually transmitted infections.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RECENT_DELIVERY",
+                          "text":  "Have you given birth in the last 6 weeks?",
+                          "purpose":  "Confirm postpartum timing",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CERVICITIS_FOLLOWING_DELIVERY_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_FEVER_PRESENT",
+                          "text":  "Do you currently have a fever or chills?",
+                          "purpose":  "Exclude puerperal sepsis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PID_SEPSIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CERVICITIS_FOLLOWING_DELIVERY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O86.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cervicitis following delivery",
+    "evidence_ids":  [
+                         "EVID_CERVICITIS_FOLLOWING_DELIVERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

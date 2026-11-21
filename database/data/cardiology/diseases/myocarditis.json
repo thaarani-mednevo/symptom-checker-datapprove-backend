@@ -1,0 +1,126 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_011",
+    "code":  "MYOCARDITIS",
+    "name":  "Myocarditis",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Myocarditis is inflammation of the cardiac muscle. Myocarditis can progress to inflammatory cardiomyopathy when there is associated ventricular remodeling and cardiac dysfunction due to chronic inflammation.",
+    "complaints":  [
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PALPITATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden_or_subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "RECENT_VIRAL_ILLNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "preceding_days_to_weeks",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECENT_VIRAL_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "YOUNG_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "AUTOIMMUNE_DISEASE",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SYNCOPE",
+                          "condition":  "Syncope during exertion — urgent cardiovascular evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_009",
+                          "text":  "Do your heartbeats feel irregular, very fast, or fluttering?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ARRHYTHMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MYOCARDITIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_008",
+                          "text":  "Do you have chest discomfort or pressure, especially with exertion?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ISCHEMIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MYOCARDITIS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PERICARDITIS",
+                              "distinguishing_feature":  "Pericarditis pain is positional/pleuritic; myocarditis pain is less positional and paired with arrhythmia/heart-failure signs."
+                          }
+                      ],
+    "age_relevance":  "young_adult_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012247"
+                  ],
+    "snomed_code":  "50920009",
+    "snomed_verified_name":  "Myocarditis",
+    "icd10_code":  "I40.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute myocarditis, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_011"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

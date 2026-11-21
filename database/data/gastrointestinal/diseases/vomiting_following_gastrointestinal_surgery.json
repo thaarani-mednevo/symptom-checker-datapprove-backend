@@ -1,0 +1,92 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_012",
+    "code":  "VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY",
+    "name":  "Vomiting following gastrointestinal surgery",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Vomiting is the forceful expulsion of the contents of one\u0027s stomach through the mouth and sometimes the nose. The vomited contents are known as vomit or vomitus.",
+    "complaints":  [
+                       {
+                           "code":  "VOMITING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HISTORY_OF_MIGRAINE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BETTER_ASA_PHYSICAL_STATUS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INTENSE_PREOPERATIVE_ANXIETY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CERTAIN_ETHNICITIES_OR_SURGERY_TYPES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DECREASED_PERIOPERATIVE_FLUIDS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CRYSTALLOID_VERSUS_COLLOID_ADMINISTRATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VOMITING",
+                          "condition":  "Persistent post-operative vomiting with dehydration or inability to tolerate fluids"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "11767005",
+    "snomed_verified_name":  "Bilious vomiting following gastrointestinal surgery",
+    "icd10_code":  "K91.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vomiting following gastrointestinal surgery",
+    "evidence_ids":  [
+                         "EVID_VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

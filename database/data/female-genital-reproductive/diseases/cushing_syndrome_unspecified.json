@@ -1,0 +1,62 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_056",
+    "code":  "CUSHING_SYNDROME_UNSPECIFIED",
+    "name":  "Cushing syndrome, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Cushing\u0027s syndrome is a collection of signs and symptoms due to prolonged exposure to glucocorticoids such as cortisol. Signs and symptoms may include high blood pressure, abdominal obesity but with thin arms and legs, reddish stretch marks, a round red face due to facial plethora, a fat lump between the shoulders, weak muscles, weak bones, acne, and fragile skin that heals poorly.",
+    "complaints":  [
+                       {
+                           "code":  "HIRSUTISM",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_CUSHINGOID_RAPID_ONSET",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "CUSHING_SYNDROME_UNSPECIFIED",
+                          "condition":  "Rapidly progressive Cushingoid features with new-onset hypertension"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_VOICE_CLITOROMEGALY_RAPID",
+                          "text":  "Has there been rapid deepening of the voice or rapid new hair growth over weeks?",
+                          "purpose":  "Screen for tempo of onset",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_RAPID_VIRILIZATION)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CUSHING_SYNDROME_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E24.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cushing\u0027s syndrome, unspecified",
+    "evidence_ids":  [
+                         "EVID_CUSHING_SYNDROME_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

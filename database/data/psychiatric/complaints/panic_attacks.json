@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_006",
+  "code": "PANIC_ATTACKS",
+  "name": "Panic attacks",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Panic attacks are sudden periods of intense fear and discomfort that may include palpitations, otherwise defined as a rapid, irregular heartbeat, sweating, chest pain or discomfort, shortness of breath, trembling, dizziness, numbness, confusion, or a sense of impending doom or loss of control. Typically, these symptoms are the worst within ten minutes of onset and can last for roughly 30 minutes, though they can vary anywhere from seconds to hours.",
+  "hpo_codes": [
+    "HP:0001637|HP:0000739"
+  ],
+  "snomed_code": "191722009",
+  "snomed_verified_name": "Agoraphobia with panic attacks",
+  "icd10_code": "F41.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Panic disorder [episodic paroxysmal anxiety]",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

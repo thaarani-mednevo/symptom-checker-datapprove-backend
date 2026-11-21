@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_002",
+  "code": "BLADDER_PAIN",
+  "name": "Bladder pain",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by bladder pain.",
+  "hpo_codes": [],
+  "snomed_code": "15803009",
+  "snomed_verified_name": "Urinary bladder pain",
+  "icd10_code": "R39.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other symptoms and signs involving the genitourinary system",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

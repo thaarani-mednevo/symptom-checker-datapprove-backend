@@ -1,0 +1,17 @@
+{
+  "id": "HEPATOBILIARY_COMP_HB_005",
+  "code": "HEPATOMEGALY",
+  "name": "Hepatomegaly",
+  "module": "hepatobiliary",
+  "body_system": "hepatobiliary",
+  "category": "complaint",
+  "description": "Hepatomegaly is enlargement of the liver beyond its normal size (span >12 cm on percussion or on ultrasound). It may be detected incidentally on imaging or by palpation of the liver edge below the right costal margin. Common causes include fatty liver disease (NAFLD/NASH), viral hepatitis, alcoholic liver disease, cardiac hepatomegaly (right heart failure), haematological malignancies (lymphoma, leukaemia), hepatic metastases, and storage disorders. Associated symptoms (jaundice, right upper quadrant pain, ascites, constitutional symptoms) guide the differential diagnosis. Tender hepatomegaly is associated with acute hepatitis or hepatic congestion; non-tender nodular hepatomegaly raises concern for malignancy.",
+  "hpo_codes": ["HP:0002240"],
+  "snomed_code": "80515008",
+  "snomed_verified_name": "Hepatomegaly",
+  "icd10_code": "R16.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Hepatomegaly, not elsewhere classified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

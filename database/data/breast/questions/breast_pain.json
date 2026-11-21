@@ -1,0 +1,73 @@
+﻿{
+  "complaint_code": "BREAST_PAIN",
+  "complaint_name": "Breast pain",
+  "module": "breast",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_in_review",
+  "questions": [
+    {
+      "code": "Q_CMP_BP_001",
+      "text": "Is the pain related to your menstrual cycle (worse before period, better after)?",
+      "purpose": "cyclical",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "CYCLICAL_BREAST_PAIN",
+      "yes_weight": 2,
+      "no_weight": -1,
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-20T13:51:30+00:00"
+    },
+    {
+      "code": "Q_CMP_BP_002",
+      "text": "Is the pain in one breast or both?",
+      "purpose": "laterality",
+      "answer_type": "multiple_choice",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "BREAST_PAIN_LATERALITY",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_BP_003",
+      "text": "Is there a lump associated with the pain?",
+      "purpose": "lump_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(BREAST_LUMP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "PAINFUL_LUMP",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BP_004",
+      "text": "Is there skin redness, warmth, or fever?",
+      "purpose": "infection_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "RED_FLAG(RF_BREAST_INFECTION)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "BREAST_INFECTION",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BP_005",
+      "text": "How severe is the pain on a scale of 1 to 10?",
+      "purpose": "severity",
+      "answer_type": "free_text",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "BREAST_PAIN_SEVERITY",
+      "yes_weight": 0,
+      "no_weight": 0
+    }
+  ]
+}

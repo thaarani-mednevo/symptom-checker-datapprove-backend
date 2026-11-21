@@ -1,0 +1,17 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR,RF_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden onset of severe pain, redness, warmth, fever indicating possible abscess",,clinician_not_approved
+UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR,RF_INFLAMMATORY_BREAST_CANCER,complaint,PALPABLE_MASS,"[LLM DRAFT] Rapidly enlarging lump with skin changes (redness, thickening, peau d'orange) and nipple retraction or ulceration",,clinician_not_approved
+UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR,RF_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Rapidly enlarging, erythematous, warm mass with fever",,clinician_not_approved
+UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR,RF_INFLAMMATORY_BREAST_CANCER,complaint,PALPABLE_MASS,[LLM DRAFT] Sudden severe pain with skin changes or bloody nipple discharge,,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS,RF_RAPIDLY_ENLARGING_MASS,complaint,PALPABLE_MASS,[LLM DRAFT] mass enlarges rapidly within days,,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS,RF_MASS_WITH_SKIN_ULCERATION,complaint,PALPABLE_MASS,[LLM DRAFT] skin ulceration or nipple retraction present,,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT,RF_ACUTE_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden severe pain, redness, swelling or skin changes around the lump indicating possible abscess",,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT,RF_NIPPLE_DISCHARGE_OVER_LUMP,complaint,PALPABLE_MASS,[LLM DRAFT] Any nipple discharge or ulceration over the lump indicating possible malignancy or infection,,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS,RF_ACUTE_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden severe pain, swelling, and redness around the palpable mass indicating possible abscess",,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS,RF_BLEEDING_ULCER,complaint,PALPABLE_MASS,[LLM DRAFT] Visible ulceration or bloody nipple discharge from the palpable mass,,clinician_not_approved
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT,RF_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden severe pain, redness, swelling, fever indicating abscess",,ai_drafted_unverified
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT,RF_INFLAMMATORY_BREAST_CANCER,complaint,PALPABLE_MASS,"[LLM DRAFT] Rapidly enlarging mass with erythema, warmth, systemic signs",,ai_drafted_unverified
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT,RF_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden severe pain, redness, swelling, and fever indicating possible abscess",,ai_drafted_unverified
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT,RF_BREAST_ULCERATION,complaint,PALPABLE_MASS,[LLM DRAFT] Rapidly enlarging lump with skin ulceration or peau d'orange indicating possible advanced malignancy,,ai_drafted_unverified
+UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST,RF_BREAST_ABSCESS,complaint,PALPABLE_MASS,"[LLM DRAFT] Sudden onset of severe pain, swelling, redness, and fever indicating possible abscess.",,ai_drafted_unverified
+UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST,RF_BREAST_CELLULITIS,complaint,PALPABLE_MASS,"[LLM DRAFT] Rapidly enlarging mass with surrounding erythema, warmth, and systemic signs of infection.",,ai_drafted_unverified

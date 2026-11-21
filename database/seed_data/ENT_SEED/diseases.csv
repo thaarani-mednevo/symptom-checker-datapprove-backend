@@ -1,0 +1,21 @@
+id,code,name,module,description,description_source,age_relevance,sex_relevance,acute_chronic,hpo_codes,snomed_code,icd10_code,version,evidence_id,snomed_needs_confirmation,icd10_validated,icd10_official_description,discovery_status
+DIS_HB_001,TINNITUS_BILATERAL,"Tinnitus, bilateral",ent,"A ent condition known as Tinnitus, bilateral.",generic_fallback,,,,,60862001,H93.13,1.0,EVID_TINNITUS_BILATERAL,true,,,icd10_keyword_match_unverified
+DIS_HB_002,TINNITUS_RIGHT_EAR,"Tinnitus, right ear",ent,"A ent condition known as Tinnitus, right ear.",generic_fallback,,,,,60862001,H93.11,1.0,EVID_TINNITUS_RIGHT_EAR,true,,,icd10_keyword_match_unverified
+DIS_HB_003,TINNITUS_LEFT_EAR,"Tinnitus, left ear",ent,"A ent condition known as Tinnitus, left ear.",generic_fallback,,,,,60862001,H93.12,1.0,EVID_TINNITUS_LEFT_EAR,true,,,icd10_keyword_match_unverified
+DIS_HB_004,TINNITUS_UNSPECIFIED_EAR,"Tinnitus, unspecified ear",ent,"A ent condition known as Tinnitus, unspecified ear.",generic_fallback,,,,,60862001,H93.19,1.0,EVID_TINNITUS_UNSPECIFIED_EAR,true,,,icd10_keyword_match_unverified
+DIS_HB_005,PULSATILE_TINNITUS_BILATERAL,"Pulsatile tinnitus, bilateral",ent,"A ent condition known as Pulsatile tinnitus, bilateral.",generic_fallback,,,,,60862001,H93.A3,1.0,EVID_PULSATILE_TINNITUS_BILATERAL,true,,,icd10_keyword_match_unverified
+DIS_HB_006,PULSATILE_TINNITUS_RIGHT_EAR,"Pulsatile tinnitus, right ear",ent,"A ent condition known as Pulsatile tinnitus, right ear.",generic_fallback,,,,,60862001,H93.A1,1.0,EVID_PULSATILE_TINNITUS_RIGHT_EAR,true,,,icd10_keyword_match_unverified
+DIS_HB_007,PULSATILE_TINNITUS_LEFT_EAR,"Pulsatile tinnitus, left ear",ent,"A ent condition known as Pulsatile tinnitus, left ear.",generic_fallback,,,,,60862001,H93.A2,1.0,EVID_PULSATILE_TINNITUS_LEFT_EAR,true,,,icd10_keyword_match_unverified
+DIS_HB_008,PULSATILE_TINNITUS_UNSPECIFIED_EAR,"Pulsatile tinnitus, unspecified ear",ent,"A ent condition known as Pulsatile tinnitus, unspecified ear.",generic_fallback,,,,,60862001,H93.A9,1.0,EVID_PULSATILE_TINNITUS_UNSPECIFIED_EAR,true,,,icd10_keyword_match_unverified
+DIS_ENT_009,ACUTE_OTITIS_MEDIA,Acute otitis media,ent,Pending description,,,,,,3110003,H66.90,1.0,EVID_ACUTE_OTITIS_MEDIA,,,,ai_drafted_unverified
+DIS_ENT_010,OTITIS_EXTERNA,Otitis externa,ent,Pending description,,,,,,3135009,H60.90,1.0,EVID_OTITIS_EXTERNA,,,,ai_drafted_unverified
+DIS_ENT_011,CHRONIC_SUPPURATIVE_OTITIS_MEDIA,Chronic suppurative otitis media,ent,Pending description,,,,,,38394007,H66.3X9,1.0,EVID_CHRONIC_SUPPURATIVE_OTITIS_MEDIA,,,,ai_drafted_unverified
+DIS_ENT_012,ACUTE_PHARYNGITIS,Acute pharyngitis,ent,Pending description,,,,,,363746003,J02.9,1.0,EVID_ACUTE_PHARYNGITIS,,,,ai_drafted_unverified
+DIS_ENT_013,ACUTE_TONSILLITIS,Acute tonsillitis,ent,Pending description,,,,,,17741008,J03.90,1.0,EVID_ACUTE_TONSILLITIS,,,,ai_drafted_unverified
+DIS_ENT_014,ALLERGIC_RHINITIS,Allergic rhinitis,ent,Pending description,,,,,,61582004,J30.9,1.0,EVID_ALLERGIC_RHINITIS,,,,ai_drafted_unverified
+DIS_ENT_015,ACUTE_SINUSITIS,Acute sinusitis,ent,Pending description,,,,,,36971009,J01.90,1.0,EVID_ACUTE_SINUSITIS,,,,ai_drafted_unverified
+DIS_ENT_016,VIRAL_UPPER_RESPIRATORY_INFECTION,Viral upper respiratory infection,ent,Pending description,,,,,,54150009,J06.9,1.0,EVID_VIRAL_UPPER_RESPIRATORY_INFECTION,,,,ai_drafted_unverified
+DIS_ENT_017,APHTHOUS_STOMATITIS,Aphthous stomatitis,ent,Pending description,,,,,,426965005,K12.0,1.0,EVID_APHTHOUS_STOMATITIS,,,,
+DIS_ENT_018,SORE_THROAT,Sore throat,ent,A sore throat,generic_fallback,,,,,25064002,J02.9,1.0,EVID_SORE_THROAT,,,,
+DIS_ENT_019,TONSILLITIS,Tonsillitis,ent,Inflammation of the tonsils.,generic_fallback,,,,,409961002,J33.9,1.0,EVID_TONSILLITIS,,,,
+DIS_ENT_020,HYPOXIA,Hypoxia,ent,Low oxygen levels in the body.,generic_fallback,,,,,56730005,D80.9,1.0,EVID_HYPOXIA,,,,

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "INTERMENSTRUAL_BLEEDING",
+    "complaint_name":  "Intermenstrual bleeding",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_IMB_001",
+                          "text":  "Is the bleeding between periods, after sex, or both?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IMB_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IMB_002",
+                          "text":  "Are you on the combined pill, missed any pills, or on HRT?",
+                          "purpose":  "hormonal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HORMONAL_IMB",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_IMB_003",
+                          "text":  "Is there associated discharge, pelvic pain, or postcoital bleeding?",
+                          "purpose":  "cervical",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTCOITAL_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CERVICAL_PATHOLOGY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_IMB_004",
+                          "text":  "Are you over 40?",
+                          "purpose":  "age",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "AGE_RELATED_IMB",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

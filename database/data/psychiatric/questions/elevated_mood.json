@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "ELEVATED_MOOD",
+    "complaint_name":  "Elevated mood",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_EM_001",
+                          "text":  "Do you feel unusually energetic, euphoric, or on top of the world?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ELEVATED_MOOD_CHARACTER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EM_002",
+                          "text":  "Are you sleeping much less than usual but still feel full of energy?",
+                          "purpose":  "sleep",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MANIA_SLEEP)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DECREASED_SLEEP_NEED",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_EM_003",
+                          "text":  "Are you making impulsive or risky decisions (spending, driving, sex)?",
+                          "purpose":  "risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RISKY_BEHAVIOUR_WITH_MANIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_EM_004",
+                          "text":  "Do you have racing thoughts, rapid speech, or inability to concentrate?",
+                          "purpose":  "cognitive",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MANIC_COGNITIVE_FEATURES",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

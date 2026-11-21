@@ -1,0 +1,193 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_009",
+    "code":  "TUBERCULOUS_PERIPHERAL_LYMPHADENOPATHY",
+    "name":  "Tuberculous peripheral lymphadenopathy",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Tuberculous peripheral lymphadenopathy.",
+    "complaints":  [
+                       {
+                           "code":  "LYMPHADENOPATHY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HARD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FIXED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RAPIDLY_GROWING_NODES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INDICATING_A_POSSIBLE_CANCER_OR_LYMPHOMA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NIGHT_SWEATS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RUNNY_NOSE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SORE_THROAT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AUTOIMMUNE_DISEASES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MALIGNANCIES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "HISTIOCYTOSES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "STORAGE_DISEASES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BENIGN_HYPERPLASIA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DRUG_REACTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUPPURATIVE_LYMPHADENITIS_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "LYMPHADENOPATHY",
+                          "condition":  "[LLM DRAFT] Rapidly enlarging, painful node with overlying erythema, warmth, fever, or systemic signs of infection"
+                      },
+                      {
+                          "code":  "RF_RUPTURED_NODE_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active bleeding from lymph node or draining sinus, especially with hemodynamic instability"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_ONE_OR_MORE_SWOLLEN_LYMPH_NO",
+                          "text":  "[LLM DRAFT] Do you have one or more swollen lymph nodes, particularly in your neck or armpits, that have lasted for several weeks or months without pain?",
+                          "purpose":  "Screen for chronic painless lymphadenopathy typical of tuberculosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TUBERCULOUS_PERIPHERAL_LYMPHADENOPATHY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_ONGOING_DRENCHING_N",
+                          "text":  "[LLM DRAFT] Have you experienced ongoing drenching night sweats, unexplained weight loss, or a persistent low-grade fever alongside swollen glands?",
+                          "purpose":  "Screen for systemic constitutional symptoms of tuberculosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TUBERCULOUS_PERIPHERAL_LYMPHADENOPATHY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_ANY_DRAINING_SORES_SKIN_BRE",
+                          "text":  "[LLM DRAFT] Do you have any draining sores, skin breakdown, or chronic open wounds over the swollen areas in your neck?",
+                          "purpose":  "Screen for scrofula and advanced tuberculous lymphadenopathy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TUBERCULOUS_PERIPHERAL_LYMPHADENOPATHY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with generalized fatigue and pallor rather than localized lymph node enlargement."
+                          },
+                          {
+                              "disease_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by dietary deficiency signs and generalized weakness instead of localized peripheral lymphadenopathy."
+                          },
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Features pancytopenia leading to bleeding and infections without characteristic regional lymph node enlargement."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A18.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Tuberculous peripheral lymphadenopathy",
+    "evidence_ids":  [
+                         "EVID_TUBERCULOUS_PERIPHERAL_LYMPHADENOPATHY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

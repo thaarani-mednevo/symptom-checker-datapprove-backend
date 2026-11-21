@@ -1,0 +1,186 @@
+﻿{
+    "id":  "GERIATRIC_DIS_GER_004",
+    "code":  "DELIRIUM",
+    "name":  "Delirium",
+    "module":  "geriatric",
+    "category":  "disease",
+    "description":  "Delirium is an acute neuropsychiatric syndrome characterised by disturbances in attention, awareness, and cognition that develop over a short period and fluctuate in severity. It affects up to 30% of hospitalised elderly patients and is associated with increased mortality, prolonged hospitalisation, and long-term cognitive decline. Three subtypes exist: hyperactive (agitation, combativeness), hypoactive (the most common and most missed — drowsiness, withdrawal), and mixed. The Confusion Assessment Method (CAM) is the standard diagnostic tool. Common precipitants include infections (UTI, pneumonia), metabolic disturbances, medications (anticholinergics, opioids, benzodiazepines), pain, constipation, urinary retention, and sensory deprivation. Treatment is non-pharmacological first; antipsychotics are used sparingly.",
+    "complaints":  [
+                       {
+                           "code":  "CONFUSION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FUNCTIONAL_DECLINE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_ONSET_CONFUSION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "FLUCTUATING_CONSCIOUSNESS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INATTENTION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AGITATION_OR_DROWSINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DISORIENTATION_TO_TIME_AND_PLACE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE_OVER_65",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PRE_EXISTING_DEMENTIA",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "ACUTE_ILLNESS_OR_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "POLYPHARMACY_ESPECIALLY_ANTICHOLINERGICS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DEHYDRATION_OR_ELECTROLYTE_DISTURBANCE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SENSORY_IMPAIRMENT_VISION_OR_HEARING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "URINARY_RETENTION_OR_CONSTIPATION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_GER_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "CONFUSION",
+                          "condition":  "Acute severe agitation with inability to cooperate or self-harm risk — urgent sedation assessment and safety review"
+                      },
+                      {
+                          "code":  "RED_GER_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "CONFUSION",
+                          "condition":  "New confusion with fever and neck stiffness — exclude meningitis or encephalitis, emergency pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GER_DEL_001",
+                          "text":  "Has there been a sudden change in this person\u0027s behaviour, awareness, or ability to focus over the past hours to days?",
+                          "purpose":  "delirium_screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DELIRIUM_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_DEL_002",
+                          "text":  "Does the confusion come and go — better at some times of day and worse at others?",
+                          "purpose":  "fluctuation_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DELIRIUM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_DEL_003",
+                          "text":  "Has the person started any new medications, or has a dose been changed recently?",
+                          "purpose":  "precipitant_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DELIRIUM_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_DEL_004",
+                          "text":  "Does the person have a fever, cough, painful urination, or other signs of infection?",
+                          "purpose":  "precipitant_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(INFECTIOUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DELIRIUM_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ALZHEIMERS_DEMENTIA",
+                              "distinguishing_feature":  "Dementia has insidious onset over months to years; delirium has acute onset over hours to days with fluctuating course. Delirium may be superimposed on dementia, which is a major risk factor."
+                          },
+                          {
+                              "disease_code":  "ACUTE_PSYCHOSIS",
+                              "distinguishing_feature":  "Functional psychosis (e.g., schizophrenia) lacks the fluctuating course, inattention, and clear organic precipitant of delirium. EEG shows diffuse slowing in delirium."
+                          },
+                          {
+                              "disease_code":  "NONCONVULSIVE_STATUS_EPILEPTICUS",
+                              "distinguishing_feature":  "NCSE can mimic hypoactive delirium; EEG is diagnostic and must be considered in patients with epilepsy or who fail to improve with delirium treatment."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0031258"
+                  ],
+    "snomed_code":  "2776000",
+    "snomed_verified_name":  "Delirium",
+    "icd10_code":  "F05",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Delirium due to known physiological condition",
+    "evidence_ids":  [
+                         "EVID_DELIRIUM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_006",
+  "code": "PRODUCTIVE_COUGH",
+  "name": "Productive cough",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "A cough is a sudden expulsion of air through the large breathing passages which can help clear them of fluids, irritants, foreign particles and microbes. As a protective reflex, coughing can be repetitive with the cough reflex following three phases: an inhalation, a forced exhalation against a closed glottis, and a violent release of air from the lungs following opening of the glottis, usually accompanied by a distinctive sound.",
+  "hpo_codes": [
+    "HP:0031245"
+  ],
+  "snomed_code": "28743005",
+  "snomed_verified_name": "Productive cough",
+  "icd10_code": "R09.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Abnormal sputum",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

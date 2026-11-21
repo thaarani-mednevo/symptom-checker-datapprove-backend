@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_013",
+  "code": "DIPLOPIA",
+  "name": "Diplopia",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Diplopia is the simultaneous perception of two images of a single object that may be displaced in relation to each other. Also called double vision, it is a loss of visual focus under regular conditions, and is often voluntary.",
+  "hpo_codes": [],
+  "snomed_code": "24982008",
+  "snomed_verified_name": "Diplopia",
+  "icd10_code": "H53.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Diplopia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

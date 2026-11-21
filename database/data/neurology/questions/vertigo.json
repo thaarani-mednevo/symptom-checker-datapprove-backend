@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "VERTIGO",
+    "complaint_name":  "Vertigo",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_VER_001",
+                          "text":  "Is the spinning sensation of yourself or the room, and how long do episodes last?",
+                          "purpose":  "character",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VERTIGO_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VER_002",
+                          "text":  "Do episodes last seconds, minutes, hours, or days?",
+                          "purpose":  "duration",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VERTIGO_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VER_003",
+                          "text":  "Is it triggered by head movement or rolling in bed?",
+                          "purpose":  "trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BPPV_TRIGGER",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VER_004",
+                          "text":  "Do you have hearing loss, tinnitus, or ear fullness?",
+                          "purpose":  "audiovestibular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "AUDIOVESTIBULAR_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VER_005",
+                          "text":  "Do you have headache, weakness, slurred speech, or visual symptoms?",
+                          "purpose":  "central",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "CENTRAL_VERTIGO",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

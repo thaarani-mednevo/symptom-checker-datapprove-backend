@@ -1,0 +1,119 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_008",
+    "code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS",
+    "name":  "Gastro-esophageal reflux disease without esophagitis",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Gastroesophageal reflux disease (GERD) or gastro-oesophageal reflux disease (GORD) is a chronic upper gastrointestinal disease in which stomach content persistently and regularly flows up into the esophagus, resulting in symptoms and/or complications. Symptoms include dental corrosion, dysphagia, heartburn, odynophagia, regurgitation, non-cardiac chest pain, extraesophageal symptoms such as chronic cough, hoarseness, reflux-induced laryngitis, or asthma.",
+    "complaints":  [
+                       {
+                           "code":  "HEARTBURN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "TASTE_OF_ACID",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEARTBURN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BAD_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BREATHING_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INADEQUATE_CLOSURE_OF_THE_LOWER_ESOPHAGEAL_SPHINCTER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_009",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEARTBURN",
+                          "condition":  "Heartburn with dysphagia, weight loss, or bleeding"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_010",
+                          "text":  "Are you over 50 years old and experiencing this indigestion/heartburn for the first time?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_009)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_004",
+                          "text":  "Is your swallowing difficulty getting worse over time, especially with solid foods?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_005)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "Distinguished only by endoscopic findings: esophagitis (visible mucosal breaks) is present in the latter, absent in the former, despite similar symptoms."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "266435005",
+    "snomed_verified_name":  "Gastroesophageal reflux disease without esophagitis",
+    "icd10_code":  "K21.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gastro-esophageal reflux disease without esophagitis",
+    "evidence_ids":  [
+                         "EVID_GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

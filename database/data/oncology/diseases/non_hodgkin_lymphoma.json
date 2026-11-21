@@ -1,0 +1,172 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_010",
+    "code":  "NON_HODGKIN_LYMPHOMA",
+    "name":  "Non-Hodgkin lymphoma",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Non-Hodgkin lymphoma (NHL) is a diverse group of blood cancers that includes any lymphoma except Hodgkin lymphoma. NHL arises from B-cells (most commonly), T-cells, or NK-cells at various stages of differentiation. It is the most common haematological malignancy in adults. Presentation varies widely from indolent disease (follicular lymphoma, years of slow progression) to aggressive disease (diffuse large B-cell lymphoma, rapid progression and systemic symptoms). Extranodal involvement (GI tract, CNS, skin, bone marrow) is more common in NHL than HL.",
+    "complaints":  [
+                       {
+                           "code":  "LYMPHADENOPATHY_ONCOLOGY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS_ONCOLOGY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAINLESS_LYMPHADENOPATHY",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "intermittent",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SPLENOMEGALY",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "IMMUNOSUPPRESSION_HIV_OR_TRANSPLANT",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AUTOIMMUNE_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HELICOBACTER_PYLORI_INFECTION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "PRIOR_CHEMOTHERAPY_OR_RADIOTHERAPY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "LYMPHADENOPATHY_ONCOLOGY",
+                          "condition":  "Rapidly enlarging lymph nodes with B-symptoms or extranodal involvement — urgent haematology referral"
+                      },
+                      {
+                          "code":  "RED_ONC_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "UNEXPLAINED_WEIGHT_LOSS",
+                          "condition":  "Significant weight loss with lymphadenopathy in an immunocompromised patient — urgent evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_NHL_001",
+                          "text":  "Have you noticed swollen lumps in multiple areas such as neck, armpits, and groin at the same time?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NON_HODGKIN_LYMPHOMA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ONC_NHL_002",
+                          "text":  "Do you have a history of HIV infection, organ transplant, or long-term immunosuppressive medication?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NON_HODGKIN_LYMPHOMA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ONC_NHL_003",
+                          "text":  "Are you experiencing persistent fatigue, unintentional weight loss, or recurrent fevers?",
+                          "purpose":  "b_symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA_B_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NON_HODGKIN_LYMPHOMA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HODGKIN_LYMPHOMA",
+                              "distinguishing_feature":  "HL shows contiguous nodal spread and Reed-Sternberg cells; NHL is often more widespread at presentation with extranodal involvement and no Reed-Sternberg cells."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_LYMPHOCYTIC_LEUKAEMIA",
+                              "distinguishing_feature":  "CLL presents with lymphocytosis on blood film and diffuse lymphadenopathy; NHL may have a normal white cell count with localised or extranodal disease."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+                      "HP:0012191"
+                  ],
+    "snomed_code":  "118600006",
+    "snomed_verified_name":  "Non-Hodgkin lymphoma",
+    "icd10_code":  "C85.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Non-Hodgkin lymphoma, unspecified, unspecified site",
+    "evidence_ids":  [
+                         "EVD_ONC_010"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

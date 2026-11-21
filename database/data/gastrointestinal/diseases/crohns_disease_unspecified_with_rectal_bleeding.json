@@ -1,0 +1,131 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_030",
+    "code":  "CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING",
+    "name":  "Crohn\u0027s disease, unspecified, with rectal bleeding",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Crohn\u0027s disease (CD) is a type of inflammatory bowel disease (IBD) that may affect any segment of the gastrointestinal tract. Symptoms often include abdominal pain, diarrhea, fever, abdominal distension, and weight loss.",
+    "complaints":  [
+                       {
+                           "code":  "HEMATOCHEZIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_PAIN",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ANTIBIOTIC",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "APPENDICITIS",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "TONSILLECTOMY",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "URBANITY",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "FIRST_DEGREE_RELATIVE",
+                             "strength":  "wikidata_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMATOCHEZIA",
+                          "condition":  "Ongoing or heavy rectal bleeding with dizziness/fainting"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_002",
+                          "text":  "Have you noticed blood in your stool, and if so, is it a large amount or ongoing?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_002)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_003",
+                          "text":  "Are you feeling dizzy, lightheaded, or have you fainted?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING",
+                              "distinguishing_feature":  "Crohn\u0027s disease can affect any part of the GI tract with skip lesions and transmural inflammation; ulcerative colitis is continuous, limited to the colon/rectum, and mucosal only — distinguished on endoscopy and biopsy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K50.911",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Crohn\u0027s disease, unspecified, with rectal bleeding",
+    "evidence_ids":  [
+                         "EVID_CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,93 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_HB_011",
+    "code":  "ERECTILE_DYSFUNCTION_FOLLOWING_SIMPLE_PROSTATECTOMY",
+    "name":  "Erectile dysfunction following simple prostatectomy",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Erectile dysfunction (ED), also referred to as impotence, is a form of sexual dysfunction in males characterized by the persistent or recurring inability to achieve or maintain a penile erection with sufficient rigidity and duration for satisfactory sexual activity. It is the most common sexual problem in males and can cause psychological distress due to its impact on self-image and sexual relationships.",
+    "complaints":  [
+                       {
+                           "code":  "ERECTILE_DYSFUNCTION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INABILITY_TO_GAIN_OR_MAINTAIN_AN_ERECTION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LOW_TESTOSTERONE_LEVELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ERECTILE_DYSFUNCTION",
+                          "condition":  "Erection (painful or painless) lasting longer than 4 hours, with or without sexual stimulation."
+                      },
+                      {
+                          "code":  "FOURNIERS_GANGRENE_SUSPECTED",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "GENITAL_RASH",
+                          "condition":  "Rapidly spreading perineal/genital pain, swelling, crepitus, or skin necrosis in a patient with recent pelvic/urologic surgery, diabetes, or immunosuppression."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ERECTION_DURATION_OVER_4H",
+                          "text":  "Has an erection lasted longer than 4 hours, with or without sexual stimulation?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PRIAPISM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ERECTILE_DYSFUNCTION_FOLLOWING_SIMPLE_PROSTATECTOMY_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ED_PROSTATECTOMY_HISTORY",
+                          "text":  "Has the patient had prostate surgery (radical or simple prostatectomy) in the past?",
+                          "purpose":  "risk_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ERECTILE_DYSFUNCTION_FOLLOWING_SIMPLE_PROSTATECTOMY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ERECTILE_DYSFUNCTION_FOLLOWING_URETHRAL_SURGERY",
+                              "distinguishing_feature":  "Erectile dysfunction following simple prostatectomy follows benign prostate tissue removal; following urethral surgery follows a urethral procedure, a distinct surgical site."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "367461000119104",
+    "snomed_verified_name":  "Erectile dysfunction following simple prostatectomy",
+    "icd10_code":  "N52.34",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Erectile dysfunction following simple prostatectomy",
+    "evidence_ids":  [
+                         "EVID_ERECTILE_DYSFUNCTION_FOLLOWING_SIMPLE_PROSTATECTOMY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

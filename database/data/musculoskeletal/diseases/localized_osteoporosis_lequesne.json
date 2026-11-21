@@ -1,0 +1,112 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_032",
+    "code":  "LOCALIZED_OSTEOPOROSIS_LEQUESNE",
+    "name":  "Localized osteoporosis [Lequesne]",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Localized osteoporosis Lequesne is a chronic, adult-onset bone density loss confined to a specific skeletal region, often presenting with pain and increased fracture risk.",
+    "complaints":  [
+                       {
+                           "code":  "FRACTURES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BONE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LOCALIZED_TENDERNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PATHOLOGICAL_FRACTURE_AT_SITE",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_FRACTURES",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] Acute pathological fracture resulting from severe localized bone demineralization causing sudden incapacitating pain, deformity, and loss of structural support."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_BREAK_A_BONE_AFTER_A_MINOR_FALL",
+                          "text":  "[LLM DRAFT] Did you break a bone after a minor fall or no injury?",
+                          "purpose":  "fragility fracture",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LOCALIZED_OSTEOPOROSIS_LEQUESNE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_SUDDEN_SHARP_PAIN_IN_A_SI",
+                          "text":  "[LLM DRAFT] Do you feel a sudden, sharp pain in a single bone that feels like a fracture?",
+                          "purpose":  "acute bone injury",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LOCALIZED_OSTEOPOROSIS_LEQUESNE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_A_BONE_THAT_FEELS_SOFTER_O",
+                          "text":  "[LLM DRAFT] Do you notice a bone that feels softer or has a visible depression?",
+                          "purpose":  "localized bone loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "LOCALIZED_OSTEOPOROSIS_LEQUESNE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "203435007",
+    "snomed_verified_name":  "Localized osteoporosis - Lequesne",
+    "icd10_code":  "M81.6",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Localized osteoporosis [Lequesne]",
+    "evidence_ids":  [
+                         "EVID_LOCALIZED_OSTEOPOROSIS_LEQUESNE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_027",
+  "code": "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+  "name": "Myalgic encephalomyelitis/chronic fatigue syndrome",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Myalgic encephalomyelitis​/​chronic fatigue syndrome (ME/CFS) is a disabling chronic illness. People with ME/CFS experience profound fatigue that does not go away with rest, as well as problems with sleep and memory or concentration.",
+  "complaints": [
+    {
+      "code": "DAYTIME_SOMNOLENCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "WORSENING_OF_SYMPTOMS_WITH_ACTIVITY",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "LONG_TERM_FATIGUE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SLEEP_PROBLEMS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "OTHERS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "52702003",
+  "snomed_verified_name": "Chronic fatigue syndrome",
+  "icd10_code": "G93.32",
+  "icd10_validated": true,
+  "icd10_official_description": "Myalgic encephalomyelitis/chronic fatigue syndrome",
+  "evidence_ids": [
+    "EVID_MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

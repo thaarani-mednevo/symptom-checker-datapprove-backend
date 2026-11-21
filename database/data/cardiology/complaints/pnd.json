@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_003",
+  "code": "PND",
+  "name": "Paroxysmal nocturnal dyspnea",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Paroxysmal nocturnal dyspnea (PND) is a sudden episode of severe breathlessness that wakes a patient from sleep, typically occurring 1–3 hours after lying down. It is caused by fluid redistribution from the lower limbs and splanchnic circulation into the pulmonary vasculature when the patient reclines, leading to acute pulmonary congestion. The patient typically has to sit upright or stand to relieve symptoms. PND is a hallmark feature of left-sided heart failure and distinguishes it from other causes of dyspnea.",
+  "hpo_codes": [
+    "HP:0025268"
+  ],
+  "snomed_code": "55442000",
+  "snomed_verified_name": "Paroxysmal nocturnal dyspnea",
+  "icd10_code": "R06.00",
+  "icd10_validated": true,
+  "icd10_official_description": "Dyspnea, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

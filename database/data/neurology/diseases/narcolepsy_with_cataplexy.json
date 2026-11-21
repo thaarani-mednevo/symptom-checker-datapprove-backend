@@ -1,0 +1,76 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_025",
+  "code": "NARCOLEPSY_WITH_CATAPLEXY",
+  "name": "Narcolepsy with cataplexy",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Narcolepsy is a chronic neurological disorder that impairs the ability to regulate sleep–wake cycles, and specifically impacts REM sleep. The symptoms of narcolepsy include excessive daytime sleepiness (EDS), sleep-related hallucinations, sleep paralysis, disturbed nocturnal sleep (DNS), and cataplexy.",
+  "complaints": [
+    {
+      "code": "DAYTIME_SOMNOLENCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EXCESSIVE_DAYTIME_SLEEPINESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "INVOLUNTARY_SLEEP_EPISODES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SUDDEN_LOSS_OF_MUSCLE_STRENGTH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SLEEP_RELATED_HALLUCINATIONS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "LOSS_OF_HYPOCRETIN_PRODUCING_NEURONS_IN_TYPE_1",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "OFTEN_UNCLEAR_IN_TYPE_2",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "193042000",
+  "snomed_verified_name": "Cataplexy and narcolepsy",
+  "icd10_code": "G47.411",
+  "icd10_validated": true,
+  "icd10_official_description": "Narcolepsy with cataplexy",
+  "evidence_ids": [
+    "EVID_NARCOLEPSY_WITH_CATAPLEXY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

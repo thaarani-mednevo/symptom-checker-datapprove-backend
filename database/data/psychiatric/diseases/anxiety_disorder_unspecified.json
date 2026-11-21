@@ -1,0 +1,179 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_002",
+    "code":  "ANXIETY_DISORDER_UNSPECIFIED",
+    "name":  "Anxiety disorder, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Anxiety disorders are a group of mental disorders characterized by significant and uncontrollable feelings of anxiety and fear such that a person\u0027s social, occupational, and personal functions are significantly impaired. Anxiety may cause physical and cognitive symptoms, such as a sense of impending doom, restlessness, irritability, easy fatigue, difficulty concentrating, increased heart rate, chest pain, abdominal pain, and a variety of other symptoms that vary based on the individual.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WORRYING",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FAST_HEART_RATE",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SHAKINESS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GENETIC",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ENVIRONMENTAL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AND_PSYCHOLOGICAL_FACTORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports hallucinations or delusions."
+                      },
+                      {
+                          "code":  "RF_PANIC_WITH_CARDIAC_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports chest pain or palpitations during panic attacks."
+                      },
+                      {
+                          "code":  "RF_SUBSTANCE_ABUSE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports heavy alcohol or drug use to cope with anxiety."
+                      },
+                      {
+                          "code":  "RF_MEDICAL_CONDITION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports symptoms suggestive of hyperthyroidism, cardiac arrhythmia, or other medical causes of anxiety."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_WORRIED_MOST_DAYS",
+                          "text":  "Do you feel worried or anxious most days?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PANIC_ATTACKS",
+                          "text":  "Have you experienced panic attacks in the past month?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SELF_HARM",
+                          "text":  "Have you ever harmed yourself intentionally?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PHYSICAL_SYMPTOMS",
+                          "text":  "Do you experience chest pain, shortness of breath, or palpitations during anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUBSTANCE_USE",
+                          "text":  "Do you use alcohol or drugs to cope with anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_5",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Widespread, chronic anxiety lasting \u003e6 months."
+                          },
+                          {
+                              "disease_code":  "PANIC_DISORDER",
+                              "distinguishing_feature":  "Recurrent, unexpected panic attacks with fear of future attacks."
+                          },
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "Persistent low mood, anhedonia, and loss of interest."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "197480006",
+    "snomed_verified_name":  "Anxiety disorder",
+    "icd10_code":  "F41.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anxiety disorder, unspecified",
+    "evidence_ids":  [
+                         "EVID_ANXIETY_DISORDER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_005",
+  "code": "PRESYNCOPE",
+  "name": "Presyncope",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Lightheadedness is a common and typically unpleasant sensation of dizziness or a feeling that one may faint. The sensation of lightheadedness can be short-lived, prolonged, or, rarely, recurring.",
+  "hpo_codes": [
+    "HP:0031637"
+  ],
+  "snomed_code": "427461000",
+  "snomed_verified_name": "Near syncope",
+  "icd10_code": "R55",
+  "icd10_validated": true,
+  "icd10_official_description": "Syncope and collapse",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

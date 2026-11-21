@@ -1,0 +1,159 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_014",
+    "code":  "PROSTATE_CANCER",
+    "name":  "Prostate cancer",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Prostate cancer is the most common cancer in men in Western countries and the second leading cause of male cancer deaths. It arises from the glandular epithelium of the prostate and is graded histologically by the Gleason score. Most early-stage prostate cancers are asymptomatic and detected via elevated PSA on screening. Locally advanced disease causes lower urinary tract symptoms (LUTS) indistinguishable from BPH. Metastatic disease (most commonly to bones) causes bone pain, pathological fractures, and spinal cord compression. Hormone-sensitive (castration-sensitive) disease is treated with androgen deprivation therapy.",
+    "complaints":  [
+                       {
+                           "code":  "BONE_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "HAEMATURIA_ONCOLOGY",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOWER_URINARY_TRACT_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "HAEMATURIA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BONE_PAIN_AXIAL",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE_OVER_50",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "AFRICAN_AMERICAN_ETHNICITY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_PROSTATE_CANCER",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BRCA2_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HIGH_FAT_DIET_AND_OBESITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_009",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BONE_PAIN",
+                          "condition":  "New axial bone pain (spine, pelvis, ribs) in an older male — urgent imaging and PSA to exclude metastatic prostate cancer"
+                      },
+                      {
+                          "code":  "RED_ONC_010",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BONE_PAIN",
+                          "condition":  "Back pain with bilateral leg weakness or urinary/bowel dysfunction — emergency imaging to exclude malignant spinal cord compression"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_PC_001",
+                          "text":  "Are you experiencing new aching pain in your back, hips, or pelvis that has persisted for more than 2 weeks?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BONE_METASTASES)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PROSTATE_CANCER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_PC_002",
+                          "text":  "Have you had difficulty starting urination, a weak stream, or needing to urinate more often at night?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PROSTATE_CANCER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ONC_PC_003",
+                          "text":  "Have you had a PSA blood test done and was it elevated?",
+                          "purpose":  "diagnostic_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PROSTATE_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PROSTATE_CANCER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "BENIGN_PROSTATIC_HYPERPLASIA",
+                              "distinguishing_feature":  "BPH causes obstructive LUTS with a smooth, enlarged prostate on DRE; prostate cancer may have a hard, irregular nodule. PSA and biopsy differentiate the two."
+                          },
+                          {
+                              "disease_code":  "BONE_METASTASES_OTHER_PRIMARY",
+                              "distinguishing_feature":  "Bone metastases from other cancers (lung, breast, kidney) must be excluded. PSA level, CT/bone scan, and biopsy of metastatic lesion confirm the primary."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0012125"
+                  ],
+    "snomed_code":  "399068003",
+    "snomed_verified_name":  "Malignant tumor of prostate",
+    "icd10_code":  "C61",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of prostate",
+    "evidence_ids":  [
+                         "EVD_ONC_014"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

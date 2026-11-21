@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_013",
+  "code": "BLADDER_DYSFUNCTION",
+  "name": "Bladder dysfunction",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Neurogenic bladder dysfunction, often called by the shortened term neurogenic bladder, was technically termed neurogenic lower urinary tract dysfunction by the International Continence Society. It refers to urinary bladder problems due to disease or injury of the central nervous system or peripheral nerves involved in the control of urination.",
+  "hpo_codes": [],
+  "snomed_code": "40492006",
+  "snomed_verified_name": "Dysfunction of urinary bladder",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

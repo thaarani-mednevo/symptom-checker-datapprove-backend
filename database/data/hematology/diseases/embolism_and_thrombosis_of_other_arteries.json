@@ -1,0 +1,85 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_031",
+    "code":  "EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES",
+    "name":  "Embolism and thrombosis of other arteries",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Embolism and thrombosis of other arteries.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ARTERIAL_OCCLUSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Sudden onset of severe pain, pallor, pulselessness, paresthesia, and paralysis in an affected limb indicating acute peripheral arterial ischemia."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_PALENES",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe pain, paleness, and coldness in one of your arms or legs?",
+                          "purpose":  "Screens for acute limb ischemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_SUDDEN_NUMBNESS_TINGLI",
+                          "text":  "[LLM DRAFT] Have you noticed sudden numbness, tingling, or weakness in one of your limbs?",
+                          "purpose":  "Screens for localized ischemic symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute lower limb ischemia, rest pain, or absent femoral/popliteal pulses rather than ischemia localized to visceral or upper extremity vascular beds."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with symptoms of acute aortic syndrome, such as tearing chest or back pain and upper-to-lower body blood pressure differentials, rather than peripheral or visceral arterial occlusion."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents an unspecified vascular site requiring further anatomical imaging to localize the occlusion compared to clearly specified arterial beds."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "I74.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Embolism and thrombosis of other arteries",
+    "evidence_ids":  [
+                         "EVID_EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,141 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_020",
+    "code":  "REFRACTORY_ANEMIA_UNSPECIFIED",
+    "name":  "Refractory anemia, unspecified",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Anemia is a blood disorder in which the blood has a reduced ability to carry oxygen. This can be due to a lower than normal number of red blood cells, a reduction in the amount of hemoglobin available for oxygen transport, or abnormalities in hemoglobin that impair its function.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PALE_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEELING_FAINT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BLOOD_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DECREASED_RED_BLOOD_CELL_PRODUCTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INCREASED_RED_BLOOD_CELL_BREAKDOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_THROMBOCYTOPENIC_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, uncontrolled bleeding (e.g., epistaxis, GI bleed, or menorrhagia) resulting from profound bone marrow failure and severe thrombocytopenia."
+                      },
+                      {
+                          "code":  "RF_FEBRILE_NEUTROPENIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECURRENT_INFECTIONS",
+                          "condition":  "[LLM DRAFT] High fever associated with severe neutropenia, indicating a high risk of overwhelming, life-threatening sepsis."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_TOLD_BY_A_DOCTOR_THAT_YOU",
+                          "text":  "[LLM DRAFT] Have you been told by a doctor that you have persistent anemia that has not improved with standard treatments like iron supplements?",
+                          "purpose":  "screens for treatment-resistant anemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "REFRACTORY_ANEMIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNUSUAL_BRUISING_F",
+                          "text":  "[LLM DRAFT] Have you experienced unusual bruising, frequent infections, or unexplained fevers along with severe fatigue?",
+                          "purpose":  "screens for advanced bone marrow failure or transformation to leukemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "REFRACTORY_ANEMIA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with pancytopenia and a markedly hypocellular bone marrow rather than isolated anemia with dysplastic features."
+                          },
+                          {
+                              "disease_code":  "FANCONI_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] An inherited bone marrow failure syndrome typically presenting in childhood with associated congenital physical anomalies and chromosomal breakage."
+                          },
+                          {
+                              "disease_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Responds to specific vitamin or mineral supplementation, unlike refractory anemia which persists despite standard therapy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D46.4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Refractory anemia, unspecified",
+    "evidence_ids":  [
+                         "EVID_REFRACTORY_ANEMIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

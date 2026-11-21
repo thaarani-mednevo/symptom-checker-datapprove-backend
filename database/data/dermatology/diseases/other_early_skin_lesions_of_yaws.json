@@ -1,0 +1,107 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_HB_002",
+    "code":  "OTHER_EARLY_SKIN_LESIONS_OF_YAWS",
+    "name":  "Other early skin lesions of yaws",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Yaws is a tropical infection of the skin, bones, and joints caused by the spirochete bacterium Treponema pallidum pertenue. The disease begins with a round, hard swelling of the skin, 2 to 5 cm in diameter.",
+    "complaints":  [
+                       {
+                           "code":  "SKIN_LESIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HARD_SWELLING_OF_THE_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild_moderate"
+                     },
+                     {
+                         "code":  "ULCER",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "possible",
+                         "onset_pattern":  "subacute",
+                         "severity":  "variable"
+                     },
+                     {
+                         "code":  "JOINT_AND_BONE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "supportive",
+                         "onset_pattern":  "later_or_complicated",
+                         "severity":  "moderate_severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "TREPONEMA_PALLIDUM_PERTENUE_SPREAD_BY_DIRECT_CONTACT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_EARLY_SKIN_LESIONS_OF_YAWS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_YAWS_EXPOSURE",
+                          "text":  "Have you lived in or recently travelled to an area where yaws occurs, or had close skin-to-skin contact with an affected person?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_EARLY_SKIN_LESIONS_OF_YAWS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_YAWS_BONE_JOINT",
+                          "text":  "Do you have bone or joint pain/swelling associated with the skin lesions?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_EARLY_SKIN_LESIONS_OF_YAWS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "all_sexes",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A66.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other early skin lesions of yaws",
+    "evidence_ids":  [
+                         "EVID_OTHER_EARLY_SKIN_LESIONS_OF_YAWS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

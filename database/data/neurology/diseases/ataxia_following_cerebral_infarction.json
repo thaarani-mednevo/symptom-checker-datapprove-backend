@@ -1,0 +1,147 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_081",
+  "code": "ATAXIA_FOLLOWING_CEREBRAL_INFARCTION",
+  "name": "Ataxia following cerebral infarction",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Ataxia is a neurological sign consisting of lack of voluntary coordination of muscle movements that can include gait abnormality, speech changes, and abnormalities in eye movements, that indicates dysfunction of parts of the nervous system that coordinate movement, such as the cerebellum.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "LACK_OF_COORDINATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SLURRED_SPEECH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TROUBLE_EATING_AND_SWALLOWING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DETERIORATION_OF_FINE_MOTOR_SKILLS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIFFICULTY_WALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "GAIT_ABNORMALITIES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "EYE_MOVEMENT_ABNORMALITIES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TREMORS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "HEART_PROBLEMS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "CEREBRAL_INFARCTION_LOCATION_IN_CEREBELLUM",
+      "strength": "strong"
+    },
+    {
+      "code": "CEREBRAL_INFARCTION_LOCATION_IN_BRAINSTEM",
+      "strength": "strong"
+    },
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "moderate"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_RECURRENT_STROKE_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of new or worsening paralysis following a cerebral infarction indicating potential stroke recurrence or extension."
+    },
+    {
+      "code": "RF_ACUTE_SEIZURE_ACTIVITY",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] New-onset or recurrent seizures following a cerebral infarction requiring urgent neurological evaluation and stabilization."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.393",
+  "icd10_validated": true,
+  "icd10_official_description": "Ataxia following cerebral infarction",
+  "evidence_ids": [
+    "EVID_ATAXIA_FOLLOWING_CEREBRAL_INFARCTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

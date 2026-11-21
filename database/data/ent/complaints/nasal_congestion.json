@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_005",
+  "code": "NASAL_CONGESTION",
+  "name": "Nasal congestion",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "Nasal congestion is the partial or complete blockage of nasal passages, leading to impaired nasal breathing, usually due to membranes lining the nose becoming swollen from inflammation of blood vessels, or an excess of mucus in the sinuses caused by illnesses like the common cold.",
+  "hpo_codes": [],
+  "snomed_code": "68235000",
+  "snomed_verified_name": "Nasal congestion",
+  "icd10_code": "R09.81",
+  "icd10_validated": true,
+  "icd10_official_description": "Nasal congestion",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "HEAVY_MENSTRUAL_BLEEDING",
+    "complaint_name":  "Heavy menstrual bleeding",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HMB_001",
+                          "text":  "Are you flooding, passing clots, or needing to change protection every hour?",
+                          "purpose":  "severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HEAVY_MENSTRUAL_BLEEDING_SEVERITY",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HMB_002",
+                          "text":  "Are you anaemic, tired, dizzy, or short of breath?",
+                          "purpose":  "anaemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANAEMIA_FROM_HMB",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HMB_003",
+                          "text":  "Are you on anticoagulants or have a bleeding disorder?",
+                          "purpose":  "coagulopathy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "COAGULOPATHY_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HMB_004",
+                          "text":  "Are your cycles regular, and are you over 40?",
+                          "purpose":  "structural",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "STRUCTURAL_CAUSE_RISK",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,133 @@
+﻿{
+    "id":  "NEUROLOGY_DIS_CS_012",
+    "code":  "ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM",
+    "name":  "Acute transverse myelitis in demyelinating disease of central nervous system",
+    "module":  "neurology",
+    "category":  "disease",
+    "description":  "A neurology condition known as Acute transverse myelitis in demyelinating disease of central nervous system.",
+    "complaints":  [
+                       {
+                           "code":  "PARALYSIS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "ABNORMAL_GAIT",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "BALANCE_DISTURBANCE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SENSORY_DISTURBANCE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "TINGLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WEAKNESS_OF_THE_LIMBS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNCERTAIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPID_PARALYSIS_PROGRESSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PARALYSIS",
+                          "condition":  "[LLM DRAFT] Rapidly progressive paralysis within 24 hours"
+                      },
+                      {
+                          "code":  "RF_ACUTE_URINARY_RETENTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLADDER_DYSFUNCTION",
+                          "condition":  "[LLM DRAFT] Acute urinary retention within 24 hours"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_WEAKNESS_OR_NUMBNESS",
+                          "text":  "[LLM DRAFT] Do you have sudden weakness or numbness in both arms or legs?",
+                          "purpose":  "spinal cord motor/sensory deficit",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_SUDDEN_LOSS_OF_SENSATION_B",
+                          "text":  "[LLM DRAFT] Do you feel a sudden loss of sensation below a certain level of your body?",
+                          "purpose":  "sensory level indicating spinal cord lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SEVERE_BACK_PAIN_TH",
+                          "text":  "[LLM DRAFT] Are you experiencing severe back pain that started suddenly?",
+                          "purpose":  "acute back pain suggestive of transverse myelitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MULTIPLE_SCLEROSIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Typically presents with disseminated central nervous system lesions in space and time rather than an isolated spinal cord syndrome."
+                          },
+                          {
+                              "disease_code":  "RADICULOPATHY_CERVICAL_REGION",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with dermatomal pain and radicular symptoms rather than a distinct spinal cord sensory level and bilateral motor deficits."
+                          },
+                          {
+                              "disease_code":  "OTHER_OPTIC_NEURITIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Involves isolated unilateral visual loss and afferent pupillary defect rather than acute transverse myelopathy symptoms."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G37.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute transverse myelitis in demyelinating disease of central nervous system",
+    "evidence_ids":  [
+                         "EVID_ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

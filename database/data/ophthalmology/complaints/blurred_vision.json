@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_010",
+  "code": "BLURRED_VISION",
+  "name": "Blurred vision",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Blurred vision is an ocular symptom where vision becomes less precise and there is added difficulty to resolve fine details.",
+  "hpo_codes": [],
+  "snomed_code": "111516008",
+  "snomed_verified_name": "Blurring of visual image",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

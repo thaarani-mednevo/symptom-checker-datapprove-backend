@@ -1,0 +1,101 @@
+{
+  "complaint_code": "FATIGUE",
+  "complaint_name": "Fatigue",
+  "module": "constitutional-symptoms",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_FAT_001",
+      "text": "How long have you been experiencing fatigue, and would you describe it as tiredness after exertion or persistent exhaustion even at rest?",
+      "purpose": "Characterise duration and pattern to distinguish physiological tiredness from pathological fatigue",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 2 weeks, related to exertion or poor sleep",
+        "2–6 weeks, persistent",
+        "More than 6 weeks, persistent despite adequate rest",
+        "More than 6 months, disabling",
+        "Sudden onset fatigue, severe"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "FATIGUE_DURATION_PATTERN",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_002",
+      "text": "Have you noticed pallor, breathlessness on mild exertion, or racing heartbeat — which could indicate anaemia?",
+      "purpose": "Features of anaemia require urgent full blood count",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ANAEMIA_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "ANAEMIA_FEATURES",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_003",
+      "text": "Do you have unexplained weight loss, night sweats, persistent fever, or new lumps alongside the fatigue?",
+      "purpose": "Constitutional symptoms with fatigue raise concern for malignancy or serious systemic disease",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "CONSTITUTIONAL_B_SYMPTOMS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_004",
+      "text": "Are you experiencing low mood, loss of interest in activities, sleep disturbance, or poor concentration?",
+      "purpose": "Depression and anxiety are the most common reversible causes of persistent fatigue",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(DEPRESSION_ANXIETY_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "PSYCHOLOGICAL_FATIGUE_CAUSES",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_005",
+      "text": "Do you have symptoms of hypothyroidism — weight gain, feeling cold, constipation, dry skin, or hair loss?",
+      "purpose": "Hypothyroidism is a common reversible endocrine cause of fatigue",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HYPOTHYROIDISM_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "HYPOTHYROIDISM_FEATURES",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_006",
+      "text": "Do you have known diabetes or symptoms of uncontrolled blood sugar — excessive thirst, frequent urination, blurred vision?",
+      "purpose": "Hyperglycaemia and diabetes are metabolic causes of persistent fatigue",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(DIABETES_FATIGUE_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "DIABETES_FATIGUE",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_FAT_007",
+      "text": "Has the fatigue been present for more than 6 months and significantly limits your daily activities despite rest?",
+      "purpose": "Disabling fatigue >6 months affecting function may meet criteria for chronic fatigue syndrome (CFS/ME) workup",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(CHRONIC_FATIGUE_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "CHRONIC_FATIGUE_FEATURES",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

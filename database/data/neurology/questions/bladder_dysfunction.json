@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "BLADDER_DYSFUNCTION",
+    "complaint_name":  "Bladder dysfunction",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BD_001",
+                          "text":  "Is it urgency, incontinence, retention, or frequency?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLADDER_DYSFUNCTION_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BD_002",
+                          "text":  "Did it come on suddenly with weakness or numbness in the legs?",
+                          "purpose":  "acute_neuro",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_NEURO_BLADDER",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BD_003",
+                          "text":  "Is there saddle anaesthesia (numbness in the groin area)?",
+                          "purpose":  "cauda_equina",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CAUDA_EQUINA_FEATURES",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BD_004",
+                          "text":  "Do you have a known neurological condition (MS, spinal cord injury, Parkinson\u0027s)?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NEURO_BLADDER_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

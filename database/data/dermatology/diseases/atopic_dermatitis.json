@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_009",
+  "code": "ATOPIC_DERMATITIS",
+  "name": "Atopic dermatitis",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Atopic dermatitis (AD), also known as atopic eczema, is chronic type of inflammation of the skin. Atopic dermatitis is also often called simply eczema, but \"eczema\" is also used to refer to dermatitis, the larger group of skin conditions.",
+  "complaints": [
+    {
+      "code": "ITCHING",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "24079001",
+  "snomed_verified_name": "Atopic dermatitis",
+  "icd10_code": "L20.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Atopic dermatitis, unspecified",
+  "evidence_ids": [
+    "EVID_ATOPIC_DERMATITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

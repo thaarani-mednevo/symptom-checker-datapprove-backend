@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "BLACKOUTS",
+    "complaint_name":  "Blackouts",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BLK_001",
+                          "text":  "Do you completely lose consciousness?",
+                          "purpose":  "confirm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLACKOUT_CONFIRMATION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLK_002",
+                          "text":  "Is there a trigger such as standing up, exertion, or emotional stress?",
+                          "purpose":  "trigger",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BLACKOUT_TRIGGER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLK_003",
+                          "text":  "Is there tongue biting, jerking, incontinence, or confusion afterwards?",
+                          "purpose":  "seizure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_FIRST_SEIZURE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SEIZURE_WITH_BLACKOUT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLK_004",
+                          "text":  "Are there palpitations, chest pain, or breathlessness before the blackout?",
+                          "purpose":  "cardiac",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CARDIAC_BLACKOUT",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLK_005",
+                          "text":  "Have you injured yourself during a blackout?",
+                          "purpose":  "injury",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_BLACKOUT_INJURY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "BLACKOUT_INJURY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

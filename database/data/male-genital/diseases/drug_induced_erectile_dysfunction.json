@@ -1,0 +1,127 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_HB_004",
+    "code":  "DRUG_INDUCED_ERECTILE_DYSFUNCTION",
+    "name":  "Drug-induced erectile dysfunction",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Drug-induced erectile dysfunction (ED) occurs when a medication impairs the physiological mechanisms required for penile erection — primarily by interfering with nitric oxide-mediated smooth muscle relaxation, altering hormone levels, or causing autonomic neuropathy. Common causative classes include antihypertensives (beta-blockers, thiazide diuretics), antidepressants (SSRIs, TCAs, MAOIs), antipsychotics, anti-androgens (spironolactone, finasteride), and opioids. The relationship is typically dose-dependent and reversible on drug withdrawal or substitution. A thorough medication review is a mandatory first step in evaluating ED.",
+    "complaints":  [
+                       {
+                           "code":  "ERECTILE_DYSFUNCTION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INABILITY_TO_ACHIEVE_OR_MAINTAIN_ERECTION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "REDUCED_LIBIDO",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild_to_moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "USE_OF_ANTIHYPERTENSIVES_BETA_BLOCKERS_THIAZIDES",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "USE_OF_SSRI_OR_TCA_ANTIDEPRESSANTS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "USE_OF_ANTIPSYCHOTICS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "USE_OF_ANTI_ANDROGENS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OPIOID_USE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ERECTILE_DYSFUNCTION",
+                          "condition":  "Erection (painful or painless) lasting longer than 4 hours, with or without sexual stimulation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ERECTION_DURATION_OVER_4H",
+                          "text":  "Has an erection lasted longer than 4 hours, with or without sexual stimulation?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PRIAPISM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_INDUCED_ERECTILE_DYSFUNCTION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ED_NEW_MEDICATION_ONSET",
+                          "text":  "Did the erectile difficulty begin shortly after starting a new medication?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRUG_INDUCED_ERECTILE_DYSFUNCTION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_ED_SITUATIONAL_PATTERN",
+                          "text":  "Does the erectile difficulty occur only in certain situations (for example, normal erections during sleep or masturbation but not with a partner)?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRUG_INDUCED_ERECTILE_DYSFUNCTION_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_MALE_ERECTILE_DYSFUNCTION",
+                              "distinguishing_feature":  "Drug-induced erectile dysfunction has a clear temporal link to starting or changing a medication (e.g., antihypertensives, SSRIs); other male erectile dysfunction has an identified non-drug cause (e.g., vascular, neurogenic, hormonal) that isn\u0027t medication."
+                          },
+                          {
+                              "disease_code":  "MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED",
+                              "distinguishing_feature":  "Drug-induced erectile dysfunction has a documented causative medication; unspecified erectile dysfunction is used when no cause, drug-related or otherwise, has been established."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N52.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Drug-induced erectile dysfunction",
+    "evidence_ids":  [
+                         "EVID_DRUG_INDUCED_ERECTILE_DYSFUNCTION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_001",
+  "code": "DYSPHAGIA",
+  "name": "Dysphagia",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Dysphagia is difficulty in swallowing. Although classified under \"symptoms and signs\" in ICD-10, in some contexts it is classified as a condition in its own right.",
+  "hpo_codes": [],
+  "snomed_code": "40739000",
+  "snomed_verified_name": "Dysphagia",
+  "icd10_code": "R13.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysphagia, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

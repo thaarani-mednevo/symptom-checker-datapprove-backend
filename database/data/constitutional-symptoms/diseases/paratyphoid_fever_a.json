@@ -1,0 +1,136 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_006",
+    "code":  "PARATYPHOID_FEVER_A",
+    "name":  "Paratyphoid fever A",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A systemic infection caused by Salmonella Paratyphi A, presenting with prolonged fever, abdominal pain, and gastrointestinal symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RASH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ABDOMINAL_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Sudden, severe, or worsening abdominal pain indicating potential intestinal perforation or hemorrhage."
+                      },
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Confusion, delirium, or lethargy associated with severe systemic infection (typhoid encephalopathy)."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_A_1",
+                          "text":  "Have you experienced a progressively worsening high fever over the past several days?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_A_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_A_2",
+                          "text":  "Have you recently traveled to an area where paratyphoid fever is endemic?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_A_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_A_3",
+                          "text":  "Are you experiencing severe dizziness, confusion, or sudden severe abdominal pain?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_A_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_B",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella enterica serotype Paratyphoid B (Schottmülleri), historically associated with more prominent gastroenteritis symptoms."
+                          },
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_C",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella enterica serotype Paratyphoid C, which is rare and frequently presents with septic shock or focal suppurative infections."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella typhi rather than Salmonella paratyphi A, traditionally presenting with a more severe clinical course and higher rates of classic complications like intestinal perforation."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "85904008",
+    "snomed_verified_name":  "Paratyphoid fever",
+    "icd10_code":  "A01.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Paratyphoid fever A",
+    "evidence_ids":  [
+                         "EVID_PARATYPHOID_FEVER_A"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

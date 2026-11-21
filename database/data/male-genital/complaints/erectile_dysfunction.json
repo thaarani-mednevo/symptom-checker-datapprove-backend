@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_008",
+  "code": "ERECTILE_DYSFUNCTION",
+  "name": "Erectile dysfunction",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "Erectile dysfunction (ED), also referred to as impotence, is a form of sexual dysfunction in males characterized by the persistent or recurring inability to achieve or maintain a penile erection with sufficient rigidity and duration for satisfactory sexual activity. It is the most common sexual problem in males and can cause psychological distress due to its impact on self-image and sexual relationships.",
+  "hpo_codes": [],
+  "snomed_code": "860914002",
+  "snomed_verified_name": "Erectile dysfunction",
+  "icd10_code": "N52.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Male erectile dysfunction, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

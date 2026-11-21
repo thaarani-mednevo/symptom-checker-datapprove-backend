@@ -1,0 +1,113 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_008",
+    "code":  "AORTIC_STENOSIS",
+    "name":  "Aortic Stenosis",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Aortic stenosis is the narrowing of the outlet of the main pumping chamber of the heart, the left ventricle (LV). If the narrowing is severe the extra work required from the left ventricle to pump the blood against the increased resistance of a small orifice may cause thickening of the heart muscle, followed by severe weakness of the heart.",
+    "complaints":  [
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual_with_exertion",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CONGENITAL_BICUSPID_VALVE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CALCIFIC_DEGENERATION",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SYNCOPE",
+                          "condition":  "Syncope during exertion — classic AS red flag, urgent evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_003",
+                          "text":  "Do you feel breathless when walking on flat ground?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AORTIC_STENOSIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "AORTIC_STENOSIS_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MITRAL_REGURGITATION",
+                              "distinguishing_feature":  "AS murmur is systolic ejection radiates to carotids; MR is holosystolic radiates to axilla."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001650"
+                  ],
+    "snomed_code":  "60573004",
+    "snomed_verified_name":  "Aortic valve stenosis",
+    "icd10_code":  "I35.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nonrheumatic aortic (valve) stenosis",
+    "evidence_ids":  [
+                         "EVD_CARD_008"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

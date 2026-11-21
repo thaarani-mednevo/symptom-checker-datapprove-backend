@@ -1,0 +1,141 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_019",
+    "code":  "ANEMIA_UNSPECIFIED",
+    "name":  "Anemia, unspecified",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Anemia is a blood disorder in which the blood has a reduced ability to carry oxygen. This can be due to a lower than normal number of red blood cells, a reduction in the amount of hemoglobin available for oxygen transport, or abnormalities in hemoglobin that impair its function.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PALE_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEELING_FAINT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BLOOD_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DECREASED_RED_BLOOD_CELL_PRODUCTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INCREASED_RED_BLOOD_CELL_BREAKDOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ANEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANEMIA",
+                          "condition":  "[LLM DRAFT] Severe symptomatic anemia with hemodynamic instability, chest pain, or acute shortness of breath at rest."
+                      },
+                      {
+                          "code":  "RF_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, uncontrolled hemorrhage or severe bleeding manifestations such as purpura fulminans or gastrointestinal bleeding leading to hemodynamic compromise."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FREQUENTLY_FEEL_UNUSUALLY_TIRED",
+                          "text":  "[LLM DRAFT] Do you frequently feel unusually tired, weak, or exhausted?",
+                          "purpose":  "screens for fatigue",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANEMIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SHORTNESS_OF_BREATH",
+                          "text":  "[LLM DRAFT] Are you experiencing shortness of breath with mild activity or chest pain?",
+                          "purpose":  "screens for severe hypoxia symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANEMIA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Pancytopenia with a markedly hypocellular bone marrow"
+                          },
+                          {
+                              "disease_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Specific dietary deficiencies or macro/microcytic indices responding to targeted supplementation"
+                          },
+                          {
+                              "disease_code":  "REFRACTORY_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Persistent anemia unresponsive to standard hematinic therapy requiring bone marrow evaluation"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D64.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anemia, unspecified",
+    "evidence_ids":  [
+                         "EVID_ANEMIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

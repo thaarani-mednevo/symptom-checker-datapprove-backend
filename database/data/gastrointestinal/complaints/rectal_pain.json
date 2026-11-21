@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_013",
+  "code": "RECTAL_PAIN",
+  "name": "Rectal pain",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Rectal pain is the symptom of pain in the area of the rectum. A number of different causes (68) have been documented.",
+  "hpo_codes": [],
+  "snomed_code": "77880009",
+  "snomed_verified_name": "Rectal pain",
+  "icd10_code": "K62.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified diseases of anus and rectum",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

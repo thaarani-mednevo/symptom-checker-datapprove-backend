@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_010",
+  "code": "FOAMY_URINE",
+  "name": "Foamy urine",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by foamy urine.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "R82.998",
+  "icd10_validated": true,
+  "icd10_official_description": "Other abnormal findings in urine",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

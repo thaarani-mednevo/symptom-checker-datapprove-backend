@@ -1,0 +1,118 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_008",
+    "code":  "NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED",
+    "name":  "Neonatal goiter, not elsewhere classified",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A thyroid enlargement in a newborn due to iodine deficiency or maternal thyroid disease, presenting with neck swelling and potential compressive symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "IODINE_DEFICIENCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AUTOIMMUNE_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CYANIDE_POISONING",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROID_SWELLING_RESPIRATORY_DISTRESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROID_SWELLING",
+                          "condition":  "[LLM DRAFT] Severe neonatal goiter causing tracheal compression, airway obstruction, stridor, or acute respiratory distress requiring immediate airway management."
+                      },
+                      {
+                          "code":  "RF_NEONATAL_THYROTOXIC_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Neonatal thyrotoxicosis presenting with severe tachycardia, heart failure, pyrexia, and irritability due to transplacental TSH receptor antibodies."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_A_VISIBLE_SW",
+                          "text":  "[LLM DRAFT] Does your newborn baby have a visible swelling or lump on the front of their neck?",
+                          "purpose":  "Screen for neck mass",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_DIFFICULTY_B",
+                          "text":  "[LLM DRAFT] Does your newborn baby have difficulty breathing or noisy breathing (stridor)?",
+                          "purpose":  "Screen for airway obstruction",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_DIFFICULTY_F",
+                          "text":  "[LLM DRAFT] Does your newborn baby have difficulty feeding, poor sucking, or extreme sleepiness?",
+                          "purpose":  "Screen for congenital hypothyroidism symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with impaired thyroid hormone synthesis (dyshormonogenesis) leading to elevated TSH and gland enlargement present at birth."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by an intrinsic enzymatic defect in thyroid hormone biosynthesis rather than maternal or exogenous factors."
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] History of maternal exposure to goitrogens (such as antithyroid drugs, iodides, or lithium) crossing the placenta."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "P72.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal goiter, not elsewhere classified",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

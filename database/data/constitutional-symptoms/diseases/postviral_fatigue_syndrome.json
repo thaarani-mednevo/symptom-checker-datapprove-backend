@@ -1,0 +1,119 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_016",
+    "code":  "POSTVIRAL_FATIGUE_SYNDROME",
+    "name":  "Postviral fatigue syndrome",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Myalgic encephalomyelitis​/​chronic fatigue syndrome (ME/CFS) is a disabling chronic illness. People with ME/CFS experience profound fatigue that does not go away with rest, as well as problems with sleep and memory or concentration.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WORSENING_OF_SYMPTOMS_WITH_ACTIVITY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LONG_TERM_FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SLEEP_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "OTHERS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_PROGRESSIVE_NEUROLOGICAL_DEFICITS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "New focal neurological signs, seizures, or acute confusion indicating potential alternative central nervous system pathology."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_POSTVIRAL_FATIGUE_SYNDROME_1",
+                          "text":  "Did your severe fatigue and body aches begin shortly after a confirmed or suspected viral infection?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POSTVIRAL_FATIGUE_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_POSTVIRAL_FATIGUE_SYNDROME_2",
+                          "text":  "Do you experience a profound and prolonged worsening of symptoms even after minor physical or mental exertion?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POSTVIRAL_FATIGUE_SYNDROME_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by multi-system symptoms lasting at least 6 months with defining post-exertional malaise, whereas postviral fatigue is often shorter-term or less strictly defined."
+                          },
+                          {
+                              "disease_code":  "OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES",
+                              "distinguishing_feature":  "[LLM DRAFT] Fatigue linked to non-viral infections or generalized post-infectious states rather than specifically documented preceding viral triggers."
+                          },
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Acute onset directly tied to environmental heat exposure and dehydration rather than an antecedent viral infection."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "51771007",
+    "snomed_verified_name":  "Postviral fatigue syndrome",
+    "icd10_code":  "G93.31",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Postviral fatigue syndrome",
+    "evidence_ids":  [
+                         "EVID_POSTVIRAL_FATIGUE_SYNDROME"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

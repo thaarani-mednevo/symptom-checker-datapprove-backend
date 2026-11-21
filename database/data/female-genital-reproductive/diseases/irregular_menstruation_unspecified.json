@@ -1,0 +1,80 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_044",
+    "code":  "IRREGULAR_MENSTRUATION_UNSPECIFIED",
+    "name":  "Irregular menstruation, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Irregular menstruation is a menstrual disorder whose manifestations include irregular cycle lengths as well as metrorrhagia. The possible causes of irregular menstruation may vary.",
+    "complaints":  [
+                       {
+                           "code":  "IRREGULAR_VAGINAL_BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHANGE_IN_THE_FLOW_OF_MENSTRUAL_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHANGE_IN_THE_DURATION_OF_PERIODS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHANGE_IN_MENSTRUAL_CYCLE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Quantify cycle irregularity",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IRREGULAR_MENSTRUATION_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N92.6",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Irregular menstruation, unspecified",
+    "evidence_ids":  [
+                         "EVID_IRREGULAR_MENSTRUATION_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

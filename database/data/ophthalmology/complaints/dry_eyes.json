@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_002",
+  "code": "DRY_EYES",
+  "name": "Dry eyes",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Dry eye disease (DED), also known as keratoconjunctivitis sicca, is the condition of having dry eyes. The term dry eye syndrome was formerly used, but is now avoided following advances that have established it as a distinct disease entity.",
+  "hpo_codes": [],
+  "snomed_code": "162290004",
+  "snomed_verified_name": "Dry eyes",
+  "icd10_code": "H04.129",
+  "icd10_validated": true,
+  "icd10_official_description": "Dry eye syndrome of unspecified lacrimal gland",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "ANXIETY",
+    "complaint_name":  "Anxiety",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ANX_001",
+                          "text":  "How long have you felt anxious and is it constant or episodic?",
+                          "purpose":  "pattern",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANXIETY_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ANX_002",
+                          "text":  "Do you have sudden episodes of intense fear with physical symptoms such as racing heart, sweating, or breathlessness?",
+                          "purpose":  "panic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PANIC_ATTACKS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ANX_003",
+                          "text":  "Is there a specific situation or trigger, or does it occur generally?",
+                          "purpose":  "trigger",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANXIETY_TRIGGER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ANX_004",
+                          "text":  "Is the anxiety affecting your daily life, work, or relationships?",
+                          "purpose":  "impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ANXIETY_IMPACT",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ANX_005",
+                          "text":  "Are you having thoughts of harming yourself?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "SUICIDE_WITH_ANXIETY",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

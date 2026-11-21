@@ -1,0 +1,117 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_IN_BOTH,"[LLM DRAFT] Do you have sudden, severe pain in both eyes?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_SEEING_HALOS_AROUND_LIGHTS_IN_BO,[LLM DRAFT] Are you seeing halos around lights in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_NAUSEA_OR_VOMITING_WITH_EYE,[LLM DRAFT] Do you feel nausea or vomiting with eye pain?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_PAIN_OR_SWELLING_NEAR_THE_IN,[LLM DRAFT] Do you have pain or swelling near the inner corner of your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_REDNESS_OR_DISCHARGE_COMING_FRO,[LLM DRAFT] Is there redness or discharge coming from your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_FEVER_OR_CHILLS?,[LLM DRAFT] Do you feel fever or chills?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_ITCHY_WATERY_EYES_IN_BOTH_E,"[LLM DRAFT] Do you have itchy, watery eyes in both eyes?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_RECENT_SORE_THROAT_OR_COUG,[LLM DRAFT] Do you have a recent sore throat or cough?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SEVERE_EYE_PAIN_OR_VISION_CH,[LLM DRAFT] Do you have severe eye pain or vision changes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_ANY_BLURRY_OR_HAZY_VISION,[LLM DRAFT] Do you notice any blurry or hazy vision in either eye since your cataract surgery?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_ANY_WAVY_OR_DISTORTED_LINES_I,[LLM DRAFT] Do you see any wavy or distorted lines in your vision (like looking through a screen or water)?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAS_YOUR_CENTRAL_VISION_THE_STRAIGHT‑AH,[LLM DRAFT] Has your central vision (the straight‑ahead part of your sight) become weaker or dimmer in either eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_DRY_GRITTY_SENSATION_IN_Y,"[LLM DRAFT] Do you feel a dry, gritty sensation in your right eye?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_BURNING_OR_STINGING_IN,[LLM DRAFT] Do you experience burning or stinging in your right eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_REDNESS_OR_SWELLING_AROUND,[LLM DRAFT] Do you notice redness or swelling around your right eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_OR_SEVERE_DISCOMFORT_WH,[LLM DRAFT] Do you feel pain or severe discomfort when looking at bright lights?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_HEADACHES_OR_EYE_STRAI,[LLM DRAFT] Do you experience headaches or eye strain when exposed to bright light?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_DIFFICULTY_SEEING_IN_BRIGHT,[LLM DRAFT] Do you have difficulty seeing in bright sunlight or indoor lighting?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_LOSS_OF_VISION_IN_BOT,[LLM DRAFT] Do you have sudden loss of vision in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_FLASHING_LIGHTS_OR_FLOATERS_I,[LLM DRAFT] Do you see flashing lights or floaters in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_HEADACHES_OR_DIZZINESS_ALONG,[LLM DRAFT] Do you have headaches or dizziness along with vision changes?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_GRITTY_OR_BURNING_SENSATIO,[LLM DRAFT] Do you feel a gritty or burning sensation in your right upper eyelid?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_ANY_OILY_DISCHARGE_OR_CRUS,[LLM DRAFT] Do you notice any oily discharge or crusting at the base of your right upper eyelid?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SEVERE_PAIN_OR_SUDDEN_VISION,[LLM DRAFT] Do you have severe pain or sudden vision loss in your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOU_NOTICE_VISUAL_CHANGES_SUCH_AS_F,"[LLM DRAFT] Did you notice visual changes, such as flashing lights or blind spots, before the headache began?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAS_THE_HEADACHE_PERSISTED_FOR_MORE_THAN,[LLM DRAFT] Has the headache persisted for more than 72 hours or returned repeatedly despite treatment?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_NAUSEA_OR_VOMITING,[LLM DRAFT] Are you experiencing nausea or vomiting that prevents you from keeping food or medication down?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_HAD_SUDDEN_PAINLESS_LOSS_OF_VI,"[LLM DRAFT] Have you had sudden, painless loss of vision in one eye?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_NUMBNESS_OR_TINGLING_IN_YOUR,[LLM DRAFT] Do you feel numbness or tingling in your arms or legs that comes and goes?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_UNEXPLAINED_WEAKNES,[LLM DRAFT] Have you experienced unexplained weakness that makes it hard to walk or lift objects?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_A_THICK_YELLOW_OR_GREEN_DISCHA,"[LLM DRAFT] Is there a thick, yellow or green discharge from the eye?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_SWELLING_OR_REDNESS_NEAR_THE_IN,[LLM DRAFT] Is there swelling or redness near the inner corner of the eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_DISCHARGE_CLEAR_OR_WATERY?,[LLM DRAFT] Is the discharge clear or watery?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_TROUBLE_READING_SMALL_PRINT,[LLM DRAFT] Do you have trouble reading small print or seeing fine details?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_STRAIGHT_LINES_APPEAR_WAVY_OR_DISTORT,[LLM DRAFT] Do straight lines appear wavy or distorted to you?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_ANY_SUDDEN_LOSS_OF_CENT,[LLM DRAFT] Have you noticed any sudden loss of central vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOU_NOTICE_SUDDEN_SEVERE_PAIN_IN_YO,"[LLM DRAFT] Did you notice sudden, severe pain in your left eye along with vision loss?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_REDNESS_OR_SWELLING_AROUND_YOUR,[LLM DRAFT] Is there redness or swelling around your left eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_FOREIGN_BODY_SENSATION_OR,[LLM DRAFT] Do you feel a foreign body sensation or irritation in your left eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_IN_YOUR_R,[LLM DRAFT] Do you have sudden vision loss in your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_REDNESS_OR_SWELLING_AROUND_YOUR_OCULAR_PAIN_RIGHT_EYE,[LLM DRAFT] Is there redness or swelling around your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_THE_PAIN_IN_YOUR_RIGHT_EYE_GET_WORS,[LLM DRAFT] Does the pain in your right eye get worse when you move your eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THE_EYE_PAIN_START_SUDDENLY_AND_FEEL,[LLM DRAFT] Did the eye pain start suddenly and feel very sharp?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_VISION_BLURRY_OR_DOES_IT_CHANGE,[LLM DRAFT] Is your vision blurry or does it change when you look at the eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_EYE_PAIN_MILD_AND_NOT_AFFECTING_Y,[LLM DRAFT] Is the eye pain mild and not affecting your vision?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_ITCHY_WATERY_EYES_THAT_GET,"[LLM DRAFT] Do you have itchy, watery eyes that get worse during certain seasons?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_YOUR_EYES_BECOME_RED_AND_I,[LLM DRAFT] Do you notice your eyes become red and itchy after being outdoors or near pollen?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_OR_SEVERE,[LLM DRAFT] Do you have sudden vision loss or severe eye pain?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_OR_DOUBLE,[LLM DRAFT] Do you have sudden vision loss or double vision in one eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_OR_TENDERNESS_WHEN_YOU,[LLM DRAFT] Do you feel pain or tenderness when you touch your scalp or temples?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_NEW_SEVERE_HEADACHE_THAT,"[LLM DRAFT] Do you have a new, severe headache that started in the last few weeks?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_SUDDEN_FLASHES_OF_LIGHT_IN_YO,[LLM DRAFT] Do you see sudden flashes of light in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_SUDDEN_SPOTS_OR_FLOATERS_I,[LLM DRAFT] Do you notice sudden spots or floaters in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_SUDDEN_LOSS_OF_VISION,[LLM DRAFT] Do you experience sudden loss of vision in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOU_SUDDENLY_LOSE_VISION_IN_ONE_EYE?,[LLM DRAFT] Did you suddenly lose vision in one eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_WHEN_YOU_MOVE_YOUR_EYE?,[LLM DRAFT] Do you feel pain when you move your eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_COLORS_LOOKING_LESS_BRIGHT,[LLM DRAFT] Do you notice colors looking less bright or different?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_CLEAR_WATERY_DISCHARGE_FR,"[LLM DRAFT] Do you have a clear, watery discharge from your eye?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_SORE_THROAT_OR_RUNNY_NOSE,[LLM DRAFT] Do you have a sore throat or runny nose along with your eye symptoms?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_FEVER_HIGHER_THAN_1004°F,[LLM DRAFT] Do you have a fever higher than 100.4°F (38°C)?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_ANY_LOSS_OF_PERIPHERAL,[LLM DRAFT] Have you noticed any loss of peripheral vision or blind spots?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_ANY_SUDDEN_CHANGES_IN_YOUR,[LLM DRAFT] Do you notice any sudden changes in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_SEEN_SUDDEN_FLASHES_OF_LIGHT_IN,[LLM DRAFT] Have you seen sudden flashes of light in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_A_SUDDEN_INCREASE_IN_FL,[LLM DRAFT] Have you noticed a sudden increase in floaters?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_A_CURTAIN_OR_SHADOW_COVERING,[LLM DRAFT] Do you feel a curtain or shadow covering part of your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_PAIN_OR_SWELLING_IN_BOTH_HAN,[LLM DRAFT] Do you have pain or swelling in both hands or wrists that lasts more than an hour each morning?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_SWELLING_OR_TENDERNESS_IN,[LLM DRAFT] Do you notice swelling or tenderness in multiple joints that feels worse after rest?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_FEVER_OF_38°C_1004°F_OR,[LLM DRAFT] Do you have a fever of 38°C (100.4°F) or higher?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_VISION_CHANGES_OR_EYE,[LLM DRAFT] Do you have sudden vision changes or eye pain?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SHORTNESS_OF_BREATH_THAT_WOR,[LLM DRAFT] Do you have shortness of breath that worsens when lying flat or during activity?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_UNEXPLAINED_SKIN_BUMPS_OR_RA,[LLM DRAFT] Do you have unexplained skin bumps or rashes that have appeared recently?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_IN_YOUR_EYE_THAT_GETS_W,[LLM DRAFT] Do you feel pain in your eye that gets worse when you look at bright lights?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_VISION_BLURRY_OR_DO_YOU_SEE_SPOT,[LLM DRAFT] Is your vision blurry or do you see spots in your eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_EYE_RED_OR_SWOLLEN?,[LLM DRAFT] Is your eye red or swollen?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_RASH_THAT_SPREADS_ACROSS_Y,[LLM DRAFT] Do you have a rash that spreads across your cheeks and nose?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_MOUTH_SORES_THAT_DONT_HEAL,[LLM DRAFT] Do you have mouth sores that don't heal after a week?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_JOINT_PAIN_THAT_LASTS_MORE_T,[LLM DRAFT] Do you have joint pain that lasts more than a week?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_BABY_HAVING_TROUBLE_BREATHING_OR,[LLM DRAFT] Is your baby having trouble breathing or coughing up mucus?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_YOUR_BABY_HAVE_TROUBLE_FEEDING_OR_S,[LLM DRAFT] Does your baby have trouble feeding or sucking?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_YOUR_BABY_HAVE_DROOPING_EYELIDS_OR,[LLM DRAFT] Does your baby have drooping eyelids or appear weak when you hold them up?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SUDDENLY_SEE_A_CURTAIN_OR_SHADOW,[LLM DRAFT] Do you suddenly see a curtain or shadow covering part of your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_SUDDEN_FLASHES_OF_LIGHT,[LLM DRAFT] Have you noticed sudden flashes of light in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_A_SUDDEN_INCREASE_I,[LLM DRAFT] Are you experiencing a sudden increase in floaters in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_CLEARLY_IN_YOUR_RIGHT_EYE_BUT,[LLM DRAFT] Do you see clearly in your right eye but have trouble seeing in your left eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_VISION_LOSS_IN_THE_LEFT_EYE_STA,[LLM DRAFT] Did your vision loss in the left eye start suddenly?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_VISION_IN_THE_RIGHT_EYE_NORMAL?,[LLM DRAFT] Is your vision in the right eye normal?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_VISION_SUDDENLY_GO_BLURRY_OR_DI,[LLM DRAFT] Did your vision suddenly go blurry or disappear in your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_OR_PRESSURE_IN_YOUR_RIG,[LLM DRAFT] Do you feel pain or pressure in your right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_VISION_IN_YOUR_LEFT_EYE_STILL_NO,[LLM DRAFT] Is your vision in your left eye still normal?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_CRUSTY_OR_GREASY_MATERIAL_AT,[LLM DRAFT] Do you have crusty or greasy material at the base of your eyelashes?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_ITCHING_OR_BURNING_IN_YOUR_R,[LLM DRAFT] Do you feel itching or burning in your right upper eyelid?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_OR_VISION,[LLM DRAFT] Do you have sudden severe pain or vision loss in the right eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_PAINLESS_LOSS_OF_VIS,"[LLM DRAFT] Do you have sudden, painless loss of vision in one eye?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_HALOS_OR_GLARE_AROUND_LIGHTS?,[LLM DRAFT] Do you see halos or glare around lights?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_DIFFICULTY_SEEING_AT_NIGHT?,[LLM DRAFT] Do you have difficulty seeing at night?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_HALOS_AROUND_LIGHTS?,[LLM DRAFT] Do you see halos around lights?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_A_SUDDEN_LOSS_OF_PERIPH,[LLM DRAFT] Have you noticed a sudden loss of peripheral vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_OR_PRESSURE_IN_YOUR_EYE,[LLM DRAFT] Do you feel pain or pressure in your eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_HEADACHES_THA,"[LLM DRAFT] Do you have sudden, severe headaches that feel worse in the morning?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_TEMPORARY_LOSS_OF_V,[LLM DRAFT] Have you experienced temporary loss of vision or flashing lights in your vision?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_NAUSEA_OR_VOMITING_WHEN_YOU,[LLM DRAFT] Do you feel nausea or vomiting when you have a headache?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SEVERE_PAIN_BEHIND_YOUR_EYES,[LLM DRAFT] Do you have severe pain behind your eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_REDNESS_IN_BOTH_EYES?,[LLM DRAFT] Is there redness in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_A_WHITE_OR_GRAY_SPOT_ON_TH,[LLM DRAFT] Do you notice a white or gray spot on the white part of your eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_INTENSE_ITCHING_IN_BOTH_EYES,[LLM DRAFT] Do you have intense itching in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THERE_A_THICK_STICKY_DISCHARGE_THAT,"[LLM DRAFT] Is there a thick, sticky discharge that makes it hard to open your eyes?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_OR_SENSITIVITY_TO_LIGHT,[LLM DRAFT] Do you feel pain or sensitivity to light in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_WATERY_DISCHARGE_FROM_YOUR,[LLM DRAFT] Do you have a watery discharge from your eye?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_REDNESS_IN_ONE_OR_BOTH_EYES?,[LLM DRAFT] Do you have redness in one or both eyes?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_SORE_THROAT_OR_COLD_SYMPTO,[LLM DRAFT] Do you have a sore throat or cold symptoms?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_LOSS_OF_VISION_IN_BOT_VITREOUS_HEMORRHAGE_BILATERAL,[LLM DRAFT] Do you have sudden loss of vision in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_SEE_A_LOT_OF_FLOATERS_IN_BOTH_EYE,[LLM DRAFT] Do you see a lot of floaters in both eyes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_PAIN_OR_REDNESS_IN_YOUR_EYES,[LLM DRAFT] Do you have pain or redness in your eyes?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_PAIN_BEHIND_YOUR_EYE?,[LLM DRAFT] Do you feel pain behind your eye?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_A_RASH_OR_BLISTERS_AROUND_YO,[LLM DRAFT] Do you have a rash or blisters around your eye or forehead?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAS_YOUR_VISION_SUDDENLY_BECOME_BLURRY_O,[LLM DRAFT] Has your vision suddenly become blurry or dim?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

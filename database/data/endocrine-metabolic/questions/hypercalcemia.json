@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "HYPERCALCEMIA",
+    "complaint_name":  "Hypercalcemia",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_HCA_001",
+                                       "Are you more thirsty than usual and passing more urine?",
+                                       "osmotic",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "HYPERCALCAEMIA_OSMOTIC",
+                                       2,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_HCA_002",
+                          "text":  "Do you have nausea, constipation, or abdominal pain?",
+                          "purpose":  "gi_symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPERCALCAEMIA_GI",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HCA_003",
+                          "text":  "Are you confused, drowsy, or have you had personality changes?",
+                          "purpose":  "neuro",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPERCALCAEMIA_NEURO",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HCA_004",
+                          "text":  "Do you have bone pain or a known cancer diagnosis?",
+                          "purpose":  "malignancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "HYPERCALCAEMIA_MALIGNANCY",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HCA_005",
+                          "text":  "Are you taking high-dose vitamin D, calcium supplements, or thiazide diuretics?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DRUG_HYPERCALCAEMIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

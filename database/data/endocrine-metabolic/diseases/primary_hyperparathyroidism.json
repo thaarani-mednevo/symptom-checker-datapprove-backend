@@ -1,0 +1,74 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_040",
+    "code":  "PRIMARY_HYPERPARATHYROIDISM",
+    "name":  "Primary hyperparathyroidism",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Primary hyperparathyroidism is a medical condition where the parathyroid gland produce excess amounts of parathyroid hormone (PTH). The symptoms of the condition relate to the resulting elevated serum calcium (hypercalcemia), which can cause digestive symptoms, kidney stones, psychiatric abnormalities, and bone disease.",
+    "complaints":  [
+                       {
+                           "code":  "HYPERCALCEMIA",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPERCALCEMIC_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERCALCEMIA",
+                          "condition":  "[LLM DRAFT] Severe hypercalcemia (typically calcium \u003e 14 mg/dL or with acute encephalopathy/cardiac instability) secondary to primary hyperparathyroidism requiring immediate life-saving medical intervention."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_EXPERIENCING_UNEXPLAINED_B",
+                          "text":  "[LLM DRAFT] Have you been experiencing unexplained bone pain, frequent muscle weakness, or persistent abdominal pain?",
+                          "purpose":  "Screens for common chronic symptoms of hyperparathyroidism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_HYPERPARATHYROIDISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_EXTREME_FATIGUE_FREQUE",
+                          "text":  "[LLM DRAFT] Have you noticed extreme fatigue, frequent confusion, or severe mental fog affecting your daily life?",
+                          "purpose":  "Screens for severe hypercalcemia symptoms requiring urgent evaluation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRIMARY_HYPERPARATHYROIDISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "36348003",
+    "snomed_verified_name":  "Primary hyperparathyroidism",
+    "icd10_code":  "E21.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Primary hyperparathyroidism",
+    "evidence_ids":  [
+                         "EVID_PRIMARY_HYPERPARATHYROIDISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

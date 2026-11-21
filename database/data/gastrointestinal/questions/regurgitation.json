@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "REGURGITATION",
+    "complaint_name":  "Regurgitation",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_REG_001",
+                          "text":  "Is it acid, food, or liquid that comes back up?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "REGURGITATION_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_REG_002",
+                          "text":  "Is it worse when lying down or bending over?",
+                          "purpose":  "postural",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POSTURAL_REGURGITATION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_REG_003",
+                          "text":  "Do you have heartburn?",
+                          "purpose":  "reflux",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "REGURGITATION_WITH_HEARTBURN",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_REG_004",
+                          "text":  "Is there weight loss, difficulty swallowing, or vomiting?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_012)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "REGURGITATION_ALARM",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

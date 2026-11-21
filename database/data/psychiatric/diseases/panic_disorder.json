@@ -1,0 +1,195 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_037",
+    "code":  "PANIC_DISORDER",
+    "name":  "Panic disorder [episodic paroxysmal anxiety]",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Panic disorder is characterized by recurrent, unexpected panic attacks accompanied by persistent worry about future attacks or changes in behavior.",
+    "complaints":  [
+                       {
+                           "code":  "PANIC_ATTACKS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RECURRENT_PANIC_ATTACKS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PALPITATIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TREMBLING_OR_SHAKING",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "FEAR_OF_DYING",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "AGORAPHOBIA",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "characteristic",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ANXIETY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_CHILDHOOD_TRAUMA",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "MAJOR_LIFE_STRESSORS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "TEMPERAMENT_PRONE_TO_NEUROTICISM",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SMOKING_OR_NICOTINE_DEPENDENCE",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PANIC_ATTACK_CHEST_PAIN",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "CHEST_PAIN",
+                          "condition":  "Sudden onset chest pain lasting less than 10 minutes during panic attack."
+                      },
+                      {
+                          "code":  "RF_PANIC_ATTACK_IMPENDING_DOOM",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "IMPENDING_DOOM",
+                          "condition":  "Intense feeling of impending doom during panic attack."
+                      },
+                      {
+                          "code":  "RF_PANIC_ATTACK_SUDDEN_ONSET",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SUDDEN_ONSET",
+                          "condition":  "Sudden onset of panic symptoms without obvious trigger."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PANIC_ATTACK_HISTORY",
+                          "text":  "Have you experienced sudden episodes of intense fear or anxiety that peak within minutes?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PANIC_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PANIC_ATTACK_PHYSICAL",
+                          "text":  "During these episodes, do you experience physical symptoms such as chest pain, shortness of breath, or dizziness?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PANIC_DISORDER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PANIC_ATTACK_WORRY",
+                          "text":  "Do you worry about having more panic attacks or their consequences?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PANIC_DISORDER_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PANIC_ATTACK_DURATION",
+                          "text":  "Do these episodes last for more than 10 minutes?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PANIC_DISORDER_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Worry is chronic and not limited to sudden panic attacks."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "371631005",
+    "snomed_verified_name":  "Panic disorder",
+    "icd10_code":  "F41.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Panic disorder [episodic paroxysmal anxiety]",
+    "evidence_ids":  [
+                         "EVID_PANIC_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

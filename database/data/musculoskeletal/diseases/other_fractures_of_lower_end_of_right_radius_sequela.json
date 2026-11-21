@@ -1,0 +1,112 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_028",
+    "code":  "OTHER_FRACTURES_OF_LOWER_END_OF_RIGHT_RADIUS_SEQUELA",
+    "name":  "Other fractures of lower end of right radius, sequela",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Sequela of a fracture of the lower end of the right radius presenting with chronic pain, deformity, or functional limitation.",
+    "complaints":  [
+                       {
+                           "code":  "FRACTURES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BRUISING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_SWELLING_OF_THE_WRIST",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SEVERE_PAIN_IN_YOUR_RIGHT_WR",
+                          "text":  "[LLM DRAFT] Do you have severe pain in your right wrist that limits your ability to move it?",
+                          "purpose":  "severe pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_RIGHT_RADIUS_SEQUELA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_SWELLING_OR_A_VISIBLE_DEFO",
+                          "text":  "[LLM DRAFT] Do you notice swelling or a visible deformity in your right wrist?",
+                          "purpose":  "swelling/deformity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_RIGHT_RADIUS_SEQUELA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_PERSISTENT_PAIN_IN_YOUR_RIGH",
+                          "text":  "[LLM DRAFT] Do you have persistent pain in your right wrist when you use it?",
+                          "purpose":  "chronic pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_RIGHT_RADIUS_SEQUELA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "S52.591S",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other fractures of lower end of right radius, sequela",
+    "evidence_ids":  [
+                         "EVID_OTHER_FRACTURES_OF_LOWER_END_OF_RIGHT_RADIUS_SEQUELA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,34 @@
+﻿{
+  "module": "respiratory",
+  "version": "1.1",
+  "complaint_count": 10,
+  "disease_count": 14,
+  "complaints": [
+    "CHEST_TIGHTNESS",
+    "COUGH",
+    "FEVER_WITH_COUGH",
+    "HEMOPTYSIS",
+    "NIGHT_SWEATS",
+    "PLEURITIC_CHEST_PAIN",
+    "PRODUCTIVE_COUGH",
+    "SHORTNESS_OF_BREATH",
+    "STRIDOR",
+    "WHEEZING"
+  ],
+  "diseases": [
+    "ACUTE_BRONCHITIS",
+    "ACUTE_RESPIRATORY_FAILURE",
+    "ASTHMA",
+    "BRONCHIECTASIS",
+    "COPD",
+    "CYSTIC_FIBROSIS",
+    "HYPERSENSITIVITY_PNEUMONITIS",
+    "INTERSTITIAL_LUNG_DISEASE",
+    "LUNG_CANCER",
+    "OBSTRUCTIVE_SLEEP_APNOEA",
+    "PLEURAL_EFFUSION",
+    "PNEUMONIA",
+    "PNEUMOTHORAX",
+    "PULMONARY_TUBERCULOSIS"
+  ]
+}

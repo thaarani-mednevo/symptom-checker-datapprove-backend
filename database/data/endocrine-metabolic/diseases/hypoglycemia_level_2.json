@@ -1,0 +1,131 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_031",
+    "code":  "HYPOGLYCEMIA_LEVEL_2",
+    "name":  "Hypoglycemia level 2",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A moderate drop in blood glucose requiring intervention but not life-threatening.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CLUMSINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIFFICULTY_TALKING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONFUSION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LOSS_OF_CONSCIOUSNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_OTHER_SYMPTOMS_RELATED_TO_HYPOGLYCEMIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GASTRIC_BYPASS_SURGERY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OVER_SECRETION_OF_INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_HYPOGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] When blood glucose drops to level 2 (\u003c54 mg/dL) and is accompanied by severe cognitive impairment, altered mental status, or inability to safely consume oral carbohydrates, requiring assistance from another person."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_FEELING_CONFUSED_DISORIENTED_O",
+                          "text":  "[LLM DRAFT] Are you feeling confused, disoriented, or having trouble speaking clearly right now?",
+                          "purpose":  "Screens for severe neuroglycopenic symptoms requiring urgent help",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_2_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SHAKINESS_SWEATING",
+                          "text":  "[LLM DRAFT] Are you experiencing shakiness, sweating, dizziness, or a fast heartbeat that improves after eating or drinking something sugary?",
+                          "purpose":  "Screens for classic autonomic symptoms of low blood sugar",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_2_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_1",
+                              "distinguishing_feature":  "[LLM DRAFT] Defined by a higher blood glucose threshold (70 mg/dL to \u003c54 mg/dL) with milder or absent neuroglycopenic symptoms compared to Level 2 (\u003c54 mg/dL)."
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_3",
+                              "distinguishing_feature":  "[LLM DRAFT] Defined as a severe clinical event characterized by altered mental and/or physical status requiring assistance, regardless of a specific blood glucose threshold."
+                          },
+                          {
+                              "disease_code":  "DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA",
+                              "distinguishing_feature":  "[LLM DRAFT] Identified by a clear temporal association with exogenous glucose-lowering medications or substances in a non-comatose patient."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E16.A2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypoglycemia level 2",
+    "evidence_ids":  [
+                         "EVID_HYPOGLYCEMIA_LEVEL_2"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

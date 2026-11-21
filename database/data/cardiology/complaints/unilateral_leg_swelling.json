@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_008",
+  "code": "UNILATERAL_LEG_SWELLING",
+  "name": "Unilateral leg swelling",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Unilateral leg swelling is asymmetric enlargement of one lower limb due to excess fluid accumulation in the tissues, most commonly caused by deep vein thrombosis (DVT), cellulitis, lymphoedema, or ruptured Baker's cyst. It differs from bilateral leg swelling (which suggests systemic causes such as heart failure, hypoalbuminaemia, or venous insufficiency) by its single-limb distribution. Acute unilateral leg swelling with associated breathlessness is a red flag for pulmonary embolism. Chronic unilateral swelling may indicate post-thrombotic syndrome or venous insufficiency.",
+  "hpo_codes": [
+    "HP:0009036"
+  ],
+  "snomed_code": "271809000",
+  "snomed_verified_name": "Peripheral edema",
+  "icd10_code": "R60.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Localized edema",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

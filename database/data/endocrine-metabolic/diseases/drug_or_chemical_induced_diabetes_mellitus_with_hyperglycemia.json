@@ -1,0 +1,117 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_027",
+    "code":  "DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+    "name":  "Drug or chemical induced diabetes mellitus with hyperglycemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Sudden onset of hyperglycemia due to exposure to certain drugs or chemicals that impair insulin secretion or action.",
+    "complaints":  [
+                       {
+                           "code":  "HYPERGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FREQUENT_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INCREASED_THIRST",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BODY_DOES_NOT_PRODUCE_ENOUGH_INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPERGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe drug-induced hyperglycemia presenting with acute confusion, lethargy, or signs of diabetic ketoacidosis such as Kussmaul breathing and fruity breath odor."
+                      },
+                      {
+                          "code":  "RF_HYPOGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe drug-induced hypoglycemia presenting with altered mental status, seizures, or loss of consciousness requiring immediate parenteral intervention."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_TAKING_ANY_PRESCRIPTIO",
+                          "text":  "[LLM DRAFT] Are you currently taking any prescription medications, steroids, or regular chemical treatments that were recently started or changed?",
+                          "purpose":  "Screens for medication or chemical exposure history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_VERY_HIGH_BLOOD_SUG",
+                          "text":  "[LLM DRAFT] Have you experienced very high blood sugar readings along with sudden severe confusion, extreme thirst, or rapid breathing after starting a new medication?",
+                          "purpose":  "Screens for severe hyperglycemia complications related to substances",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "TYPE_1_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by autoimmune destruction of pancreatic beta cells, typically presenting with absolute insulin deficiency and ketosis-proneness."
+                          },
+                          {
+                              "disease_code":  "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Driven by peripheral insulin resistance and progressive secretory defect, often associated with metabolic syndrome features rather than recent exposure to a diabetogenic medication."
+                          },
+                          {
+                              "disease_code":  "DIABETES_MELLITUS_DUE_TO_UNDERLYING_CONDITION_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Hyperglycemia directly caused by a distinct underlying systemic or endocrinological pathology (such as Cushing\u0027s syndrome or pancreatitis) rather than exogenous chemicals or drugs."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E09.65",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Drug or chemical induced diabetes mellitus with hyperglycemia",
+    "evidence_ids":  [
+                         "EVID_DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "ATAXIA",
+    "complaint_name":  "Ataxia",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ATA_001",
+                          "text":  "Is the unsteadiness worse in the dark or with eyes closed?",
+                          "purpose":  "sensory",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SENSORY_ATAXIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ATA_002",
+                          "text":  "Is there associated vertigo, nausea, or vomiting?",
+                          "purpose":  "vestibular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VESTIBULAR_ATAXIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ATA_003",
+                          "text":  "Is there slurred speech, tremor, or difficulty with fine movements?",
+                          "purpose":  "cerebellar",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CEREBELLAR_ATAXIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ATA_004",
+                          "text":  "Did it come on suddenly or has it been gradual?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ATAXIA_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ATA_005",
+                          "text":  "Is there headache, weakness, or visual disturbance?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "CNS_ATAXIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

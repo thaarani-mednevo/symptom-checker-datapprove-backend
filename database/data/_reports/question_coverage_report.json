@@ -1,0 +1,1109 @@
+{
+  "generated_at": "2026-09-23T09:11:46.416992+00:00",
+  "modules": [
+    {
+      "module": "neurology",
+      "seed_dir": "seed_data\\NEUROLOGY_SEED",
+      "found": true,
+      "disease_count": 110,
+      "zero_questions": [
+        {
+          "disease_code": "TYPE_1_DIABETES_MELLITUS_PRESYMPTOMATIC_STAGE_1",
+          "disease_name": "Type 1 diabetes mellitus, presymptomatic, Stage 1",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CHRONIC_KIDNEY_DISEASE_STAGE_3_UNSPECIFIED",
+          "disease_name": "Chronic kidney disease, stage 3 unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PERIODIC_PARALYSIS",
+          "disease_name": "Periodic paralysis",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TODDS_PARALYSIS_POSTEPILEPTIC",
+          "disease_name": "Todd's paralysis (postepileptic)",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "RECURRENT_ISOLATED_SLEEP_PARALYSIS",
+          "disease_name": "Recurrent isolated sleep paralysis",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "ERBS_PARALYSIS_DUE_TO_BIRTH_INJURY",
+          "disease_name": "Erb's paralysis due to birth injury",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "KLUMPKES_PARALYSIS_DUE_TO_BIRTH_INJURY",
+          "disease_name": "Klumpke's paralysis due to birth injury",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNSPECIFIED",
+          "disease_name": "Paralysis of vocal cords and larynx, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNILATERAL",
+          "disease_name": "Paralysis of vocal cords and larynx, unilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_BILATERAL",
+          "disease_name": "Paralysis of vocal cords and larynx, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TRANSIENT_NEONATAL_MYASTHENIA_GRAVIS",
+          "disease_name": "Transient neonatal myasthenia gravis",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_CEREBRAL_INFARCTION",
+          "disease_name": "Aphasia following cerebral infarction",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "Sudden_Onset_Aphasia",
+            "New_Onset_Seizure"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+          "disease_name": "Aphasia following nontraumatic subarachnoid hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "SEIZURES",
+            "PARALYSIS"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE",
+          "disease_name": "Aphasia following nontraumatic intracerebral hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Aphasia following other cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Aphasia following unspecified cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "APHASIA_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE",
+          "disease_name": "Aphasia following other nontraumatic intracranial hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "IRON_DEFICIENCY_ANEMIA_UNSPECIFIED",
+          "disease_name": "Iron deficiency anemia, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "POSTINFECTIOUS_HYPOTHYROIDISM",
+          "disease_name": "Postinfectious hypothyroidism",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+          "disease_name": "Type 2 diabetes mellitus with hyperglycemia",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "VITAMIN_B12_DEFICIENCY_ANEMIA_UNSPECIFIED",
+          "disease_name": "Vitamin B12 deficiency anemia, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OBSTRUCTIVE_SLEEP_APNEA_ADULT_PEDIATRIC",
+          "disease_name": "Obstructive sleep apnea (adult) (pediatric)",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "NARCOLEPSY_WITH_CATAPLEXY",
+          "disease_name": "Narcolepsy with cataplexy",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "IDIOPATHIC_HYPERSOMNIA_WITH_LONG_SLEEP_TIME",
+          "disease_name": "Idiopathic hypersomnia with long sleep time",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+          "disease_name": "Myalgic encephalomyelitis/chronic fatigue syndrome",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "HYPOTHYROIDISM_UNSPECIFIED",
+          "disease_name": "Hypothyroidism, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS",
+          "disease_name": "Migraine with aura, intractable, with status migrainosus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_OPTIC_NEURITIS",
+          "disease_name": "Other optic neuritis",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CENTRAL_RETINAL_ARTERY_OCCLUSION_BILATERAL",
+          "disease_name": "Central retinal artery occlusion, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "bilateral_crao_stroke",
+            "bilateral_crao_vision"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS",
+          "disease_name": "Parkinson's disease without dyskinesia, with fluctuations",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MULTIPLE_SCLEROSIS_UNSPECIFIED",
+          "disease_name": "Multiple sclerosis, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MILD_COGNITIVE_IMPAIRMENT_OF_UNCERTAIN_OR_UNKNOWN_ETIOLOGY",
+          "disease_name": "Mild cognitive impairment of uncertain or unknown etiology",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_ALZHEIMERS_DISEASE",
+          "disease_name": "Other Alzheimer's disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "VASCULAR_DEMENTIA_MILD_WITH_AGITATION",
+          "disease_name": "Vascular dementia, mild, with agitation",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MAJOR_DEPRESSIVE_DISORDER_RECURRENT_MILD",
+          "disease_name": "Major depressive disorder, recurrent, mild",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PERSONALITY_CHANGE_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION",
+          "disease_name": "Personality change due to known physiological condition",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "PERSONAL_HISTORY_OF_TRAUMATIC_BRAIN_INJURY",
+          "disease_name": "Personal history of traumatic brain injury",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "RHEUMATOID_ARTHRITIS_UNSPECIFIED",
+          "disease_name": "Rheumatoid arthritis, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "JUVENILE_ANKYLOSING_SPONDYLITIS",
+          "disease_name": "Juvenile ankylosing spondylitis",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MIXED_IRRITABLE_BOWEL_SYNDROME",
+          "disease_name": "Mixed irritable bowel syndrome",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CROHNS_DISEASE_UNSPECIFIED_WITHOUT_COMPLICATIONS",
+          "disease_name": "Crohn's disease, unspecified, without complications",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_ULCERATIVE_COLITIS_WITHOUT_COMPLICATIONS",
+          "disease_name": "Other ulcerative colitis without complications",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER",
+          "disease_name": "Other neuromuscular dysfunction of bladder",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER_UNSPECIFIED",
+          "disease_name": "Neuromuscular dysfunction of bladder, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "BENIGN_PROSTATIC_HYPERPLASIA_WITHOUT_LOWER_URINARY_TRACT_SYMPTOMS",
+          "disease_name": "Benign prostatic hyperplasia without lower urinary tract symptoms",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "Acute Urinary Retention"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "INTERSTITIAL_CYSTITIS_CHRONIC_WITHOUT_HEMATURIA",
+          "disease_name": "Interstitial cystitis (chronic) without hematuria",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OVERACTIVE_BLADDER",
+          "disease_name": "Overactive bladder",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB",
+          "disease_name": "Carpal tunnel syndrome, unspecified upper limb",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "RADICULOPATHY_CERVICAL_REGION",
+          "disease_name": "Radiculopathy, cervical region",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TYPE_1_DIABETES_MELLITUS_WITH_DIABETIC_NEUROPATHY_UNSPECIFIED",
+          "disease_name": "Type 1 diabetes mellitus with diabetic neuropathy, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "COCHLEAR_OTOSCLEROSIS_BILATERAL",
+          "disease_name": "Cochlear otosclerosis, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "UNSPECIFIED_CHOLESTEATOMA_BILATERAL",
+          "disease_name": "Unspecified cholesteatoma, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "UNSPECIFIED_VISUAL_LOSS",
+          "disease_name": "Unspecified visual loss",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TRANSIENT_VISUAL_LOSS_BILATERAL",
+          "disease_name": "Transient visual loss, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "SUDDEN_VISUAL_LOSS_BILATERAL",
+          "disease_name": "Sudden visual loss, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TRANSIENT_VISUAL_LOSS_RIGHT_EYE",
+          "disease_name": "Transient visual loss, right eye",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TRANSIENT_VISUAL_LOSS_LEFT_EYE",
+          "disease_name": "Transient visual loss, left eye",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TRANSIENT_VISUAL_LOSS_UNSPECIFIED_EYE",
+          "disease_name": "Transient visual loss, unspecified eye",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "SUDDEN_VISUAL_LOSS_RIGHT_EYE",
+          "disease_name": "Sudden visual loss, right eye",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "SUDDEN_VISUAL_LOSS_LEFT_EYE",
+          "disease_name": "Sudden visual loss, left eye",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TYPE_1_DIABETES_MELLITUS_WITH_STABLE_PROLIFERATIVE_DIABETIC_RETINOPATHY_BILATERAL",
+          "disease_name": "Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL",
+          "disease_name": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "UNSPECIFIED_VISUAL_DISTURBANCE",
+          "disease_name": "Unspecified visual disturbance",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL",
+          "disease_name": "Retinal detachment with retinal dialysis, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "UNSPECIFIED_OPEN_ANGLE_GLAUCOMA_STAGE_UNSPECIFIED",
+          "disease_name": "Unspecified open-angle glaucoma, stage unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CORTICAL_AGE_RELATED_CATARACT_BILATERAL",
+          "disease_name": "Cortical age-related cataract, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_NON_DIABETIC_PROLIFERATIVE_RETINOPATHY_BILATERAL",
+          "disease_name": "Other non-diabetic proliferative retinopathy, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_CEREBRAL_INFARCTION",
+          "disease_name": "Dysarthria following cerebral infarction",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SPEECH_DISTURBANCE"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+          "disease_name": "Dysarthria following nontraumatic subarachnoid hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE",
+          "disease_name": "Dysarthria following nontraumatic intracerebral hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Dysarthria following other cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "ACUTE_STROKE_PARALYSIS",
+            "ACUTE_STROKE_SPEECH"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Dysarthria following unspecified cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SPEECH_DISTURBANCE"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "DYSARTHRIA_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE",
+          "disease_name": "Dysarthria following other nontraumatic intracranial hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "FRIEDREICH_ATAXIA",
+          "disease_name": "Friedreich ataxia",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CONGENITAL_NONPROGRESSIVE_ATAXIA",
+          "disease_name": "Congenital nonprogressive ataxia",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "HEREDITARY_ATAXIA_UNSPECIFIED",
+          "disease_name": "Hereditary ataxia, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "LATE_ONSET_CEREBELLAR_ATAXIA",
+          "disease_name": "Late-onset cerebellar ataxia",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "ATAXIA_FOLLOWING_CEREBRAL_INFARCTION",
+          "disease_name": "Ataxia following cerebral infarction",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "recurrent_stroke_paralysis",
+            "acute_seizure_activity"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "EARLY_ONSET_CEREBELLAR_ATAXIA_UNSPECIFIED",
+          "disease_name": "Early-onset cerebellar ataxia, unspecified",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_EARLY_ONSET_CEREBELLAR_ATAXIA",
+          "disease_name": "Other early-onset cerebellar ataxia",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "ATAXIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+          "disease_name": "Ataxia following nontraumatic subarachnoid hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "red_flag_name",
+            "red_flag_name"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "ESSENTIAL_TREMOR",
+          "disease_name": "Essential tremor",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "DRUG_INDUCED_TREMOR",
+          "disease_name": "Drug-induced tremor",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "SERIOUS_DRUG_INDUCED_PARKINSONISM",
+            "SERIOUS_DRUG_INDUCED_NEUROLOGICAL_CRISIS"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_SPECIFIED_FORMS_OF_TREMOR",
+          "disease_name": "Other specified forms of tremor",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "MUSCLE_WEAKNESS_GENERALIZED",
+          "disease_name": "Muscle weakness (generalized)",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION",
+          "disease_name": "Facial weakness following cerebral infarction",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "recurrent_stroke_paralysis",
+            "acute_stroke_aphasia"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+          "disease_name": "Facial weakness following nontraumatic subarachnoid hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "Rebleeding_Signs",
+            "Neurological_Deterioration"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE",
+          "disease_name": "Facial weakness following nontraumatic intracerebral hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SPEECH_DISTURBANCE"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Facial weakness following other cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "aphasia"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE",
+          "disease_name": "Facial weakness following unspecified cerebrovascular disease",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE",
+          "disease_name": "Facial weakness following other nontraumatic intracranial hemorrhage",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "paralysis_escalation",
+            "seizure_escalation"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_SEIZURES",
+          "disease_name": "Other seizures",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "CONVERSION_DISORDER_WITH_SEIZURES_OR_CONVULSIONS",
+          "disease_name": "Conversion disorder with seizures or convulsions",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITH_STATUS_EPILEPTICUS",
+          "disease_name": "Epileptic seizures related to external causes, not intractable, with status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS",
+          "disease_name": "Epileptic seizures related to external causes, not intractable, without status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "red_flag_name",
+            "red_flag_name"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_SIMPLE_PARTIAL_SEIZURES_INTRACTABLE_WITH_STATUS_EPILEPTICUS",
+          "disease_name": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, with status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_SIMPLE_PARTIAL_SEIZURES_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS",
+          "disease_name": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, without status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_COMPLEX_PARTIAL_SEIZURES_INTRACTABLE_WITH_STATUS_EPILEPTICUS",
+          "disease_name": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, intractable, with status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_COMPLEX_PARTIAL_SEIZURES_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS",
+          "disease_name": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, intractable, without status epilepticus",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "EPIDEMIC_VERTIGO",
+          "disease_name": "Epidemic vertigo",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "SEIZURES"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "AURAL_VERTIGO_BILATERAL",
+          "disease_name": "Aural vertigo, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "PARALYSIS",
+            "aphasia"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "BENIGN_PAROXYSMAL_VERTIGO_BILATERAL",
+          "disease_name": "Benign paroxysmal vertigo, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "AURAL_VERTIGO_RIGHT_EAR",
+          "disease_name": "Aural vertigo, right ear",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "red_flag_name",
+            "red_flag_name"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "AURAL_VERTIGO_LEFT_EAR",
+          "disease_name": "Aural vertigo, left ear",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "ACUTE_STROKE_PRESENTATION",
+            "CENTRAL_VESTIBULAR_EMERGENCY"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "AURAL_VERTIGO_UNSPECIFIED_EAR",
+          "disease_name": "Aural vertigo, unspecified ear",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "red_flag_name",
+            "red_flag_name"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "OTHER_PERIPHERAL_VERTIGO_BILATERAL",
+          "disease_name": "Other peripheral vertigo, bilateral",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        },
+        {
+          "disease_code": "VERTIGO_OF_CENTRAL_ORIGIN",
+          "disease_name": "Vertigo of central origin",
+          "total_question_links": 0,
+          "approved_question_links": 0,
+          "has_red_flag": false,
+          "red_flags": [],
+          "complaints": []
+        }
+      ],
+      "draft_only": [
+        {
+          "disease_code": "ACUTE_TRANSVERSE_MYELITIS_IN_DEMYELINATING_DISEASE_OF_CENTRAL_NERVOUS_SYSTEM",
+          "disease_name": "Acute transverse myelitis in demyelinating disease of central nervous system",
+          "total_question_links": 3,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "Rapid Paralysis Progression",
+            "Acute Urinary Retention"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "AMYOTROPHIC_LATERAL_SCLEROSIS",
+          "disease_name": "Amyotrophic lateral sclerosis",
+          "total_question_links": 3,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "respiratory_failure",
+            "acute_airway_compromise"
+          ],
+          "complaints": []
+        },
+        {
+          "disease_code": "AMAUROSIS_FUGAX",
+          "disease_name": "Amaurosis fugax",
+          "total_question_links": 3,
+          "approved_question_links": 0,
+          "has_red_flag": true,
+          "red_flags": [
+            "stroke_symptoms",
+            "permanent_vision_loss"
+          ],
+          "complaints": []
+        }
+      ],
+      "thin_red_flag": [],
+      "thin_no_red_flag": [],
+      "broken_links": [],
+      "unused_questions": [],
+      "llm_suggestions": {}
+    }
+  ]
+}

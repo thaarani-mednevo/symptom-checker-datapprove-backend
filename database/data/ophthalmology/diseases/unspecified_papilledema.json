@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_037",
+    "code":  "UNSPECIFIED_PAPILLEDEMA",
+    "name":  "Unspecified papilledema",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Papilledema or papilloedema is optic disc swelling that is caused by increased intracranial pressure due to any cause. The swelling is usually bilateral and can occur over a period of hours to weeks.",
+    "complaints":  [
+                       {
+                           "code":  "VISUAL_DISTORTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "VISUAL_FIELD_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREGNANCY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "TETRACYCLINES",
+                             "strength":  "weak"
+                         },
+                         {
+                             "code":  "BRAIN_TUMOR",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, unilateral or bilateral vision loss within hours"
+                      },
+                      {
+                          "code":  "RF_DIPLOPIA_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DIPLOPIA",
+                          "condition":  "[LLM DRAFT] New onset diplopia suggestive of raised intracranial pressure"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_HEADACHES_THA",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe headaches that feel worse in the morning?",
+                          "purpose":  "headache severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_PAPILLEDEMA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_TEMPORARY_LOSS_OF_V",
+                          "text":  "[LLM DRAFT] Have you experienced temporary loss of vision or flashing lights in your vision?",
+                          "purpose":  "visual changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_PAPILLEDEMA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_NAUSEA_OR_VOMITING_WHEN_YOU",
+                          "text":  "[LLM DRAFT] Do you feel nausea or vomiting when you have a headache?",
+                          "purpose":  "associated symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_PAPILLEDEMA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H47.10",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified papilledema",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_PAPILLEDEMA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

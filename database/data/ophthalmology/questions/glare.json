@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "GLARE",
+    "complaint_name":  "Glare",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_GL_001",
+                          "text":  "Is glare worse at night, especially when driving?",
+                          "purpose":  "nocturnal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NIGHT_GLARE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_GL_002",
+                          "text":  "Is there associated blurred vision?",
+                          "purpose":  "blurred",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GLARE_WITH_BLUR",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_GL_003",
+                          "text":  "Are you over 60 or do you have diabetes?",
+                          "purpose":  "risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CATARACT_RISK",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_GL_004",
+                          "text":  "Is there pain or halos around lights?",
+                          "purpose":  "glaucoma",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "GLARE_WITH_HALOS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

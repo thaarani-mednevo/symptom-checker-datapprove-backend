@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_011",
+  "code": "CLOUDY_URINE",
+  "name": "Cloudy urine",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by cloudy urine.",
+  "hpo_codes": [],
+  "snomed_code": "7766007",
+  "snomed_verified_name": "Cloudy urine",
+  "icd10_code": "R82.90",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified abnormal findings in urine",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,90 @@
+{
+  "complaint_code": "DEHYDRATION",
+  "complaint_name": "Dehydration",
+  "module": "constitutional-symptoms",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_DEHY_001",
+      "text": "What is likely causing the dehydration — reduced fluid intake, vomiting, diarrhoea, excessive sweating, or another cause?",
+      "purpose": "Identify the cause of dehydration to direct management pathway",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Vomiting preventing oral intake",
+        "Diarrhoea — frequent loose stools",
+        "Both vomiting and diarrhoea",
+        "Reduced fluid intake (poor oral intake, fasting)",
+        "Excessive sweating (heat, fever, exercise)",
+        "Increased urination (diabetes, diuretics)"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "DEHYDRATION_CAUSE",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_DEHY_002",
+      "text": "Are you currently unable to tolerate any oral fluids — everything you drink comes back up?",
+      "purpose": "Inability to maintain oral hydration requires IV fluid assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "INABILITY_TO_TOLERATE_ORALS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_DEHY_003",
+      "text": "Do you have signs of severe dehydration — dizziness when standing, confusion, markedly reduced urine output, or sunken eyes?",
+      "purpose": "Signs of severe dehydration indicate haemodynamic compromise requiring urgent IV resuscitation",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "SEVERE_DEHYDRATION_SIGNS",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_DEHY_004",
+      "text": "Are you diabetic, and do you have excessive thirst, very high blood glucose readings, or fruity-smelling breath?",
+      "purpose": "Hyperglycaemia (DKA or HHS) is a metabolic cause of severe dehydration requiring urgent treatment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "DIABETIC_DEHYDRATION",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_DEHY_005",
+      "text": "Have you recently been in a very hot environment, done strenuous exercise, or are you in a heat wave?",
+      "purpose": "Heat-related dehydration may progress to heat exhaustion or heat stroke",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HEAT_RELATED_DEHYDRATION_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "HEAT_RELATED_DEHYDRATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_DEHY_006",
+      "text": "Are you currently pregnant?",
+      "purpose": "Dehydration in pregnancy (especially from hyperemesis gravidarum) requires specialist obstetric management",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(OBSTETRIC_DEHYDRATION_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "DEHYDRATION_IN_PREGNANCY",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

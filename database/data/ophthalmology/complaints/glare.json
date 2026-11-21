@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_008",
+  "code": "GLARE",
+  "name": "Glare",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Glare is a fiber metal laminate (FML) composed of several very thin layers of metal interspersed with layers of S-2 glass-fiber pre-preg, bonded together with a matrix such as epoxy. The uni-directional pre-preg layers may be aligned in different directions to suit predicted stress conditions.",
+  "hpo_codes": [],
+  "snomed_code": "64445006",
+  "snomed_verified_name": "Increased glare sensitivity",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

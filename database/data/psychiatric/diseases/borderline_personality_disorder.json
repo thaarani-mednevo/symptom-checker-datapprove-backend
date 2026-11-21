@@ -1,0 +1,183 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_039",
+    "code":  "BORDERLINE_PERSONALITY_DISORDER",
+    "name":  "Borderline personality disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Borderline personality disorder (BPD) is a personality disorder characterized by a pervasive, long-term pattern across several contexts of significant interpersonal relationship instability, extreme fear of abandonment, and intense emotional outbursts. People with BPD frequently exhibit self-harming behaviors and engage in risky activities, primarily caused by difficulties in regulating emotions.",
+    "complaints":  [
+                       {
+                           "code":  "SUICIDAL_THOUGHTS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SELF_HARM",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FRANTIC_EFFORTS_TO_AVOID_ABANDONMENT",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "UNSTABLE_AND_INTENSE_INTERPERSONAL_RELATIONSHIPS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "IDENTITY_DISTURBANCE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "IMPULSIVITY_IN_POTENTIALLY_SELF_DAMAGING_AREAS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "RECURRENT_SUICIDAL_BEHAVIORS_OR_SELF_MUTILATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "very_severe"
+                     },
+                     {
+                         "code":  "AFFECTIVE_INSTABILITY_DUE_TO_MARKED_REACTIVITY_OF_MOOD",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHRONIC_FEELINGS_OF_EMPTINESS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INAPPROPRIATE_INTENSE_ANGER_OR_DIFFICULTY_CONTROLLING_ANGER",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "adolescent_onset",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TRANSIENT_STRESS_RELATED_PARANOID_IDEATION_OR_SEVERE_DISSOCI",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHILDHOOD_TRAUMA_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_BPD",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "INVALIDATING_CHILDHOOD_ENVIRONMENT",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "NEUROLOGICAL_ABNORMALITIES",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SELF_HARM",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYM_SELF_HARM",
+                          "condition":  "History of self-harm or suicidal ideation"
+                      },
+                      {
+                          "code":  "RF_UNSTABLE_RELATIONSHIPS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYM_RELATIONSHIP_ISSUES",
+                          "condition":  "Rapidly shifting relationships from idealization to devaluation"
+                      },
+                      {
+                          "code":  "RF_IDENTITY_DISTURBANCE",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYM_IDENTITY_ISSUES",
+                          "condition":  "Marked instability in self-image or sense of self"
+                      },
+                      {
+                          "code":  "RF_IMPULSIVITY",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYM_IMPULSE_CONTROL",
+                          "condition":  "Reckless or impulsive behaviors (e.g., spending, sex, substance use)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BPD_IMPULSIVITY_MOOD",
+                          "text":  "Do you experience sudden, intense mood swings, fear of abandonment, or trouble controlling anger in relationships?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BORDERLINE_PERSONALITY_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_NSSH_CURRENT_CHECK",
+                          "text":  "Are you currently having any thoughts of hurting yourself, or has the urge to self-harm come back recently?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BORDERLINE_PERSONALITY_DISORDER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0012076"
+                  ],
+    "snomed_code":  "20010003",
+    "snomed_verified_name":  "Borderline personality disorder",
+    "icd10_code":  "F60.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Borderline personality disorder",
+    "evidence_ids":  [
+                         "EVID_BORDERLINE_PERSONALITY_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

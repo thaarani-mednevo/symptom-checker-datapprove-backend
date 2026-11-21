@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_003",
+  "code": "GENERALIZED_WEAKNESS",
+  "name": "Generalized weakness",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by generalized weakness.",
+  "hpo_codes": [],
+  "snomed_code": "1137501002",
+  "snomed_verified_name": "Generalized muscle weakness",
+  "icd10_code": "R53.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Weakness",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

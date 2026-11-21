@@ -1,0 +1,129 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_024",
+    "code":  "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+    "name":  "Type 2 diabetes mellitus with hyperglycemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Type 2 diabetes (T2D), formerly known as adult-onset diabetes, is a form of diabetes mellitus that is characterized by high blood sugar, insulin resistance, and relative lack of insulin. Common symptoms include increased thirst, frequent urination, fatigue and unexplained weight loss.",
+    "complaints":  [
+                       {
+                           "code":  "HYPERGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INCREASED_THIRST",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FREQUENT_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INCREASED_HUNGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "wikidata_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPERGLYCEMIC_HYPEROSMOLAR_STATE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe hyperglycemia with altered mental status, dehydration, or hyperosmolarity requiring immediate emergency resuscitation."
+                      },
+                      {
+                          "code":  "RF_DIABETIC_KETOACIDOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Hyperglycemia complicated by nausea, vomiting, abdominal pain, and acidosis requiring immediate emergency intervention."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_UNUSUALLY_EXTREME_THIRS",
+                          "text":  "[LLM DRAFT] Have you noticed unusually extreme thirst and frequent urination recently?",
+                          "purpose":  "screens for classic osmotic symptoms of hyperglycemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SUDDEN_CONFUSION_E",
+                          "text":  "[LLM DRAFT] Have you experienced sudden confusion, extreme drowsiness, or lethargy?",
+                          "purpose":  "screens for severe hyperglycemic crisis complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DIABETES_MELLITUS_DUE_TO_UNDERLYING_CONDITION_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Identifiable secondary endocrinopathy or systemic illness precipitating the hyperglycemia."
+                          },
+                          {
+                              "disease_code":  "DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Clear temporal association with the initiation of a culprit medication known to impair glucose tolerance."
+                          },
+                          {
+                              "disease_code":  "OTHER_SPECIFIED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of uncommon genetic defects or atypical pathophysiologic mechanisms not characteristic of standard type 2 diabetes."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "368051000119109",
+    "snomed_verified_name":  "Hyperglycemia due to type 2 diabetes mellitus",
+    "icd10_code":  "E11.65",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Type 2 diabetes mellitus with hyperglycemia",
+    "evidence_ids":  [
+                         "EVID_TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

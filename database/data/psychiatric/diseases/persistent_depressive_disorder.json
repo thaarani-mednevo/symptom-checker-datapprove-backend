@@ -1,0 +1,193 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_034",
+    "code":  "PERSISTENT_DEPRESSIVE_DISORDER",
+    "name":  "Persistent depressive disorder (dysthymia)",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Dysthymia, known as persistent depressive disorder (PDD) in the DSM-5-TR and dysthymic disorder in ICD-11, is a psychiatric condition marked by symptoms that are similar to those of major depressive disorder, but which persist for at least two years in adults and one year among children. The term was introduced by Robert Spitzer in the late 1970s as a replacement for the concept of \"depressive personality\".",
+    "complaints":  [
+                       {
+                           "code":  "LOW_MOOD",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DEPRESSED_MOOD",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHRONIC_FATIGUE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INSOMNIA_OR_HYPERSOMNIA",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LOW_SELF_ESTEEM",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POOR_CONCENTRATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEELINGS_OF_HOOPLESSNESS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_DEPRESSION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHRONIC_STRESSOR_EXPOSURE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "EARLY_LIFE_ADVERSITY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "NEUROTICISM_TEMPERAMENT",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_OTHER_MENTAL_DISORDERS",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_SUICIDE_IDEATION",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_SELF_HARM",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_SELF_HARM",
+                          "condition":  "Patient admits to self-harm behaviors."
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_PSYCHOSIS",
+                          "condition":  "Patient experiences hallucinations or delusions."
+                      },
+                      {
+                          "code":  "RF_SUBSTANCE_ABUSE",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "HISTORY_SUBSTANCE_ABUSE",
+                          "condition":  "History of substance abuse that may mimic depressive symptoms."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DEPRESSION_DURATION",
+                          "text":  "Have you been feeling sad or down for most of the day for at least two years?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PERSISTENT_DEPRESSIVE_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_FUNCTIONAL_IMPAIRMENT",
+                          "text":  "Has your worry about illness interfered with your daily activities?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PERSISTENT_DEPRESSIVE_DISORDER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SIDECAR_SYMPTOMS",
+                          "text":  "Do you also experience low energy, changes in appetite, or sleep disturbances?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PERSISTENT_DEPRESSIVE_DISORDER_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUICIDE_IDEATION",
+                          "text":  "Have you had thoughts of harming yourself or suicide?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUICIDE_IDEATION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PERSISTENT_DEPRESSIVE_DISORDER_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "Symptoms last less than two years and are more severe."
+                          },
+                          {
+                              "disease_code":  "BIPOLAR_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Presence of manic or hypomanic episodes."
+                          },
+                          {
+                              "disease_code":  "ANXIETY_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Primary symptoms are excessive worry and physical anxiety symptoms."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "1153575004",
+    "snomed_verified_name":  "Persistent depressive disorder",
+    "icd10_code":  "F34.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dysthymic disorder",
+    "evidence_ids":  [
+                         "EVID_PERSISTENT_DEPRESSIVE_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

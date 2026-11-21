@@ -1,0 +1,185 @@
+{
+  "module": "musculoskeletal",
+  "red_flags": [
+    {
+      "code": "RF_RESPIRATORY_FAILURE",
+      "name": "respiratory_failure",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_AIRWAY_COMPROMISE",
+      "name": "acute_airway_compromise",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_HYPOKALEMIA_WITH_PROFOUND_WEAKNESS",
+      "name": "Severe hypokalemia with profound weakness",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PATHOLOGICAL_FRACTURE_FROM_SEVERE_OSTEOMALACIA",
+      "name": "Pathological fracture from severe osteomalacia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SPINAL_CORD_COMPRESSION",
+      "name": "spinal_cord_compression",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PATHOLOGICAL_VERTEBRAL_FRACTURE",
+      "name": "pathological_vertebral_fracture",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SPINAL_FRACTURE_OR_CORD_COMPRESSION",
+      "name": "Spinal fracture or cord compression",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_SEPTIC_ARTHRITIS",
+      "name": "Acute septic arthritis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_FRACTURES",
+      "name": "FRACTURES",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_TENSION_PNEUMOTHORAX",
+      "name": "tension_pneumothorax",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_BULBAR_WEAKNESS_WITH_RESPIRATORY_COMPROMISE",
+      "name": "Acute bulbar weakness with respiratory compromise",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_SEVERE_WEAKNESS_WITH_SUSPECTED_SPINAL_CORD_COMPRESSION",
+      "name": "Acute severe weakness with suspected spinal cord compression",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SPINAL_CORD_COMPRESSION_FROM_VERTEBRAL_FRACTURE",
+      "name": "Spinal cord compression from vertebral fracture",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_HYPOKALEMIC_PARALYSIS",
+      "name": "Severe Hypokalemic Paralysis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PATHOLOGICAL_FRACTURE_CRISIS",
+      "name": "Pathological Fracture Crisis",
+      "action": "URGENT_CARE_SAME_DAY"
+    },
+    {
+      "code": "RF_SEPTIC_JOINT_DECOMPENSATION",
+      "name": "septic_joint_decompensation",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_JOINT_DESTRUCTION",
+      "name": "Septic arthritis joint destruction",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTICALLY_INFECTED_POLYARTHRITIS",
+      "name": "septically_infected_polyarthritis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_GIANT_CELL_ARTERITIS_WITH_VISUAL_LOSS",
+      "name": "Giant cell arteritis with visual loss",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_RESPIRATORY_FAILURE",
+      "name": "ACUTE_RESPIRATORY_FAILURE",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_PATHOLOGIC_FRACTURE_IN_MUTILANS",
+      "name": "Pathologic fracture in mutilans",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_SEVERE_MONOARTICULAR_FLARE_WITH_JOINT_SEPSIS",
+      "name": "Acute severe monoarticular flare with joint sepsis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_SHOCK",
+      "name": "Septic shock",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_JOINT_DESTRUCTION",
+      "name": "Acute joint destruction",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_MONOARTHRITIS_WITH_FEVER",
+      "name": "ACUTE_MONOARTHRITIS_WITH_FEVER",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_NEUROVASCULAR_COMPROMISE",
+      "name": "ACUTE_NEUROVASCULAR_COMPROMISE",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_ELBOW",
+      "name": "Septic_Arthritis_Elbow",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_FRACTURE_ELBOW_STIFFNESS",
+      "name": "Fracture_Elbow_Stiffness",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_STIFFNESS",
+      "name": "SEPTIC_ARTHRITIS_STIFFNESS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_JOINT_FRAGILE_STIFFNESS",
+      "name": "JOINT_FRAGILE_STIFFNESS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_SHOULDER",
+      "name": "Septic_Arthritis_Shoulder",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SHOULDER_FRACTURE_IMMEDIATE",
+      "name": "Shoulder_Fracture_Immediate",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_RESPIRATORY_FAILURE_DUE_TO_MYOPATHY",
+      "name": "Acute respiratory failure due to myopathy",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS",
+      "name": "Septic arthritis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RESPIRATORY_DISTRESS",
+      "name": "Respiratory Distress",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_BULBAR_WEAKNESS",
+      "name": "Bulbar Weakness",
+      "action": "CALL_EMERGENCY_SERVICES"
+    }
+  ]
+}

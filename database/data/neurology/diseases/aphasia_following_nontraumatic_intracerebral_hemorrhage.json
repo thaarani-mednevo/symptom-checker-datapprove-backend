@@ -1,0 +1,97 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_016",
+  "code": "APHASIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE",
+  "name": "Aphasia following nontraumatic intracerebral hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Aphasia, also known as dysphasia, is an impairment in a person's ability to comprehend or formulate language because of dysfunction in specific brain regions. The major causes are stroke and head trauma; prevalence is hard to determine, but aphasia due to stroke is estimated to be 0.1–0.4% in developed countries.",
+  "complaints": [
+    {
+      "code": "APHASIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EXPRESSIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "RECEPTIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "RIGHT_SIDED_HEMIPARESIS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "LEFT_HEMISPHERE_HEMORRHAGE_LOCATION",
+      "strength": "strong"
+    },
+    {
+      "code": "LARGE_HEMORRHAGE_VOLUME",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] New or worsening acute motor deficit indicating hemorrhage expansion or mass effect in a patient with recent nontraumatic intracerebral hemorrhage."
+    },
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Acute onset of seizure activity resulting from cortical irritation due to nontraumatic intracerebral hemorrhage."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.120",
+  "icd10_validated": true,
+  "icd10_official_description": "Aphasia following nontraumatic intracerebral hemorrhage",
+  "evidence_ids": [
+    "EVID_APHASIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

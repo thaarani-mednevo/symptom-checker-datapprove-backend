@@ -1,0 +1,88 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_038",
+  "code": "MAJOR_DEPRESSIVE_DISORDER_RECURRENT_MILD",
+  "name": "Major depressive disorder, recurrent, mild",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Major depressive disorder (MDD), also known as clinical depression, is a mental disorder characterized by at least two weeks of pervasive low mood, low self-esteem, and loss of interest or pleasure in normally enjoyable activities. Introduced by a group of US clinicians in the mid-1970s, the term was adopted by the American Psychiatric Association for this symptom cluster under mood disorders in the 1980 version of the Diagnostic and Statistical Manual of Mental Disorders (DSM-III), and has become widely used since.",
+  "complaints": [
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "LOW_MOOD",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "LOW_SELF_ESTEEM",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "LOSS_OF_INTEREST_IN_NORMALLY_ENJOYABLE_ACTIVITIES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "LOW_ENERGY",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAIN_WITHOUT_A_CLEAR_CAUSE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "CHRONIC_CONDITION",
+      "strength": "wikidata_unverified"
+    },
+    {
+      "code": "FAMILY_MEDICAL_HISTORY",
+      "strength": "wikidata_unverified"
+    },
+    {
+      "code": "SUBSTANCE_ABUSE",
+      "strength": "wikidata_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "16264621000119109",
+  "snomed_verified_name": "Recurrent mild major depressive disorder co-occurrent with anxiety",
+  "icd10_code": "F33.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Major depressive disorder, recurrent, mild",
+  "evidence_ids": [
+    "EVID_MAJOR_DEPRESSIVE_DISORDER_RECURRENT_MILD"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

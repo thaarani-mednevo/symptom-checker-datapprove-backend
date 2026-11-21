@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "HAIR_LOSS",
+    "complaint_name":  "Hair loss",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_HL_001",
+                                       "Is the hair loss patchy, diffuse thinning, or receding at the front?",
+                                       "pattern",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "HAIR_LOSS_PATTERN",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_HL_002",
+                          "text":  "How quickly has it happened — over days, weeks, or months?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HAIR_LOSS_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HL_003",
+                          "text":  "Is there scaling, redness, or scarring on the scalp?",
+                          "purpose":  "scalp_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SCALP_CHANGES",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HL_004",
+                          "text":  "Have you had recent severe illness, surgery, pregnancy, or major stress?",
+                          "purpose":  "telogen_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TELOGEN_TRIGGER",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HL_005",
+                          "text":  "Is there a family history of hair loss?",
+                          "purpose":  "family_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FAMILY_HAIR_LOSS",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ]
+}

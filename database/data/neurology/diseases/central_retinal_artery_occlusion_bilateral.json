@@ -1,0 +1,85 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_032",
+  "code": "CENTRAL_RETINAL_ARTERY_OCCLUSION_BILATERAL",
+  "name": "Central retinal artery occlusion, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Central retinal artery occlusion (CRAO) is a disease of the eye where the flow of blood through the central retinal artery is blocked (occluded). There are several different causes of this occlusion; the most common is carotid artery atherosclerosis.",
+  "complaints": [
+    {
+      "code": "PAROXYSMAL_VISUAL_LOSS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SUDDEN_PAINLESS_VISION_LOSS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "RELATIVE_AFFERENT_PUPILLARY_DEFECT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "CHERRY_RED_SPOT_ON_THE_MACULA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "PALE_RETINAL_WHITENING",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "SMOKING",
+      "strength": "wikidata_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_BILATERAL_CRAO_STROKE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Applies when bilateral central retinal artery occlusion presents concurrently with acute motor paralysis, indicating an emergency stroke protocol activation."
+    },
+    {
+      "code": "RF_BILATERAL_CRAO_VISION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "VISUAL_LOSS",
+      "condition": "[LLM DRAFT] Applies when acute bilateral central retinal artery occlusion leads to profound, sudden bilateral visual loss requiring immediate ophthalmic and stroke evaluation."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "347011000119102",
+  "snomed_verified_name": "Bilateral occlusion of central retinal arteries",
+  "icd10_code": "H34.13",
+  "icd10_validated": true,
+  "icd10_official_description": "Central retinal artery occlusion, bilateral",
+  "evidence_ids": [
+    "EVID_CENTRAL_RETINAL_ARTERY_OCCLUSION_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

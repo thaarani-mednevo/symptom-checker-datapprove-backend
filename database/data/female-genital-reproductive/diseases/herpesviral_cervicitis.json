@@ -1,0 +1,111 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_006",
+    "code":  "HERPESVIRAL_CERVICITIS",
+    "name":  "Herpesviral cervicitis",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Herpesviral cervicitis.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NONE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SMALL_BLISTERS_THAT_BREAK_OPEN_TO_FORM_PAINFUL_ULCERS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FLU_LIKE_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HERPES_SIMPLEX_VIRUS_(HSV_1",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "HSV_2)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PID_SEPSIS",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "HERPESVIRAL_CERVICITIS",
+                          "condition":  "Fever and severe pelvic pain suggestive of ascending infection"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RECENT_NEW_PARTNER_STI_RISK",
+                          "text":  "Have you had a new sexual partner or unprotected sex recently?",
+                          "purpose":  "Assess STI risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HERPESVIRAL_CERVICITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_FEVER_PRESENT",
+                          "text":  "Do you currently have a fever or chills?",
+                          "purpose":  "Screen for systemic symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PID_SEPSIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HERPESVIRAL_CERVICITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GONOCOCCAL_CERVICITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "Herpesviral cervicitis classically presents with painful vesicles/ulcers; gonococcal cervicitis presents with mucopurulent discharge without ulceration"
+                          },
+                          {
+                              "disease_code":  "CERVICITIS_FOLLOWING_DELIVERY",
+                              "distinguishing_feature":  "Postpartum timing distinguishes cervicitis following delivery from a primary STI-related cervicitis"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A60.03",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Herpesviral cervicitis",
+    "evidence_ids":  [
+                         "EVID_HERPESVIRAL_CERVICITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

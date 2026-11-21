@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "ABNORMAL_GAIT",
+    "complaint_name":  "Abnormal gait",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AG_001",
+                          "text":  "Is the gait shuffling, wide-based, limping, or unsteady?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GAIT_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AG_002",
+                          "text":  "Is there a history of falls?",
+                          "purpose":  "falls",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FALLS_WITH_GAIT",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AG_003",
+                          "text":  "Is there stiffness, slowness, or tremor?",
+                          "purpose":  "parkinsonism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PARKINSONISM_GAIT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AG_004",
+                          "text":  "Is there foot drop or weakness?",
+                          "purpose":  "neurological",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NEUROLOGICAL_GAIT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AG_005",
+                          "text":  "Is there pain in a joint or leg?",
+                          "purpose":  "musculoskeletal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "ANTALGIC_GAIT",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      }
+                  ]
+}

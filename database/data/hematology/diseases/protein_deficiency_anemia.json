@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_021",
+    "code":  "PROTEIN_DEFICIENCY_ANEMIA",
+    "name":  "Protein deficiency anemia",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Protein deficiency anemia.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_SYMPTOMATIC_ANEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANEMIA",
+                          "condition":  "[LLM DRAFT] Hemoglobin \u003c7 g/dL with tachycardia, hypotension, chest pain or syncope"
+                      },
+                      {
+                          "code":  "RF_ACUTE_MASSIVE_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Rapid drop in hemoglobin with signs of hypovolemic shock (tachycardia, hypotension, pallor)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FOLLOW_A_VERY_STRICT_OR_SEVERELY",
+                          "text":  "[LLM DRAFT] Do you follow a very strict or severely restricted diet with very little meat, fish, eggs, or dairy?",
+                          "purpose":  "Screens for dietary protein restriction",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PROTEIN_DEFICIENCY_ANEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_YOUR_SKIN_BECOMING_VERY",
+                          "text":  "[LLM DRAFT] Have you noticed your skin becoming very pale along with feeling unusually weak and fatigued?",
+                          "purpose":  "Screens for core anemia symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PROTEIN_DEFICIENCY_ANEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_NOTICEABLE_SWELLING",
+                          "text":  "[LLM DRAFT] Have you experienced noticeable swelling in your legs, ankles, or feet along with your fatigue?",
+                          "purpose":  "Screens for severe edema related to low protein levels",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PROTEIN_DEFICIENCY_ANEMIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Broad category requiring dietary history to differentiate specific macronutrient or micronutrient deficiencies."
+                          },
+                          {
+                              "disease_code":  "SCORBUTIC_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with vitamin C deficiency and characteristic signs such as petechiae, gingivitis, and perifollicular hemorrhage rather than pure protein malnutrition."
+                          },
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with pancytopenia resulting from bone marrow failure rather than nutritional inadequacy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "85746008",
+    "snomed_verified_name":  "Anemia due to protein deficiency",
+    "icd10_code":  "D53.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Protein deficiency anemia",
+    "evidence_ids":  [
+                         "EVID_PROTEIN_DEFICIENCY_ANEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

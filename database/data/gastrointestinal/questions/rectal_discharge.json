@@ -1,0 +1,46 @@
+﻿{
+    "complaint_code":  "RECTAL_DISCHARGE",
+    "complaint_name":  "Rectal discharge",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_RD_001",
+                          "text":  "What is the discharge — mucus, blood, pus, or clear fluid?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_DISCHARGE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RD_002",
+                          "text":  "Is there pain, a lump, or fever?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RECTAL_DISCHARGE_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RD_003",
+                          "text":  "Have you had a change in bowel habit?",
+                          "purpose":  "change",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_015)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DISCHARGE_WITH_BOWEL_CHANGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

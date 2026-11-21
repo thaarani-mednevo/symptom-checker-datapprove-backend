@@ -1,0 +1,132 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_030",
+    "code":  "VITREOUS_HEMORRHAGE_BILATERAL",
+    "name":  "Vitreous hemorrhage, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Vitreous hemorrhage is the extravasation, or leakage, of blood into the areas in and around the vitreous humor of the eye. The vitreous humor is the clear gel that fills the space between the lens and the retina of the eye.",
+    "complaints":  [
+                       {
+                           "code":  "PHOTOPSIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DECREASED_VISUAL_ACUITY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FLOATERS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PHOTOPSIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "LOSS_OF_PERIPHERAL_VISION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HIGH_MYOPIA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BILATERAL_VITREOUS_HEMORRHAGE_SEVERE_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, profound vision loss in both eyes indicating extensive hemorrhage or retinal detachment"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_LOSS_OF_VISION_IN_BOT_VITREOUS_HEMORRHAGE_BILATERAL",
+                          "text":  "[LLM DRAFT] Do you have sudden loss of vision in both eyes?",
+                          "purpose":  "sudden bilateral vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VITREOUS_HEMORRHAGE_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_SEE_A_LOT_OF_FLOATERS_IN_BOTH_EYE",
+                          "text":  "[LLM DRAFT] Do you see a lot of floaters in both eyes?",
+                          "purpose":  "sudden bilateral floaters",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VITREOUS_HEMORRHAGE_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_PAIN_OR_REDNESS_IN_YOUR_EYES",
+                          "text":  "[LLM DRAFT] Do you have pain or redness in your eyes?",
+                          "purpose":  "rule out other eye conditions",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VITREOUS_HEMORRHAGE_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "343091000119103",
+    "snomed_verified_name":  "Hemorrhage of bilateral vitreous bodies",
+    "icd10_code":  "H43.13",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vitreous hemorrhage, bilateral",
+    "evidence_ids":  [
+                         "EVID_VITREOUS_HEMORRHAGE_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

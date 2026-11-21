@@ -1,0 +1,148 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_011",
+    "code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITHOUT_ASCITES",
+    "name":  "Toxic liver disease with chronic active hepatitis without ascites",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Drug-induced liver injury (DILI) causing chronic active hepatitis pattern is a form of hepatotoxicity in which a drug or chemical triggers a persistent autoimmune-like hepatic inflammatory response that continues after the offending agent has been removed. The pattern mimics autoimmune hepatitis histologically with interface hepatitis, plasma cell infiltration, and rosette formation. Common causative agents include nitrofurantoin, minocycline, diclofenac, methyldopa, and herbal supplements. Diagnosis requires temporal association with the drug, exclusion of other causes, and may require liver biopsy for confirmation.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PRURITUS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEPATOTOXIC_DRUG_EXPOSURE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "OCCUPATIONAL_CHEMICAL_EXPOSURE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HERBAL_SUPPLEMENT_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Jaundice with elevated INR, encephalopathy or rising creatinine in DILI — Hy\u0027s Law criteria met, risk of acute liver failure"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_DILI_001",
+                          "text":  "Are you currently taking or have you recently started any new medications, supplements, or herbal products?",
+                          "purpose":  "drug_exposure_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_DILI_002",
+                          "text":  "Did your jaundice or abnormal liver tests begin within weeks to months of starting a new medication?",
+                          "purpose":  "temporal_association_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DRUG_INDUCED_LIVER_INJURY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_DILI_003",
+                          "text":  "Have your liver tests improved after stopping the suspect medication?",
+                          "purpose":  "dechallenge_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DRUG_INDUCED_LIVER_INJURY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "AUTOIMMUNE_HEPATITIS",
+                              "distinguishing_feature":  "Autoimmune hepatitis shows positive ANA/ASMA/anti-LKM antibodies and high IgG; DILI mimics this pattern but has a clear drug exposure history and may resolve after drug withdrawal."
+                          },
+                          {
+                              "disease_code":  "VIRAL_HEPATITIS_B",
+                              "distinguishing_feature":  "Viral hepatitis B is confirmed by HBsAg and HBV DNA serology; DILI has no viral markers and a clear temporal drug association."
+                          },
+                          {
+                              "disease_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES",
+                              "distinguishing_feature":  "Alcoholic hepatitis has AST:ALT \u003e2:1 and clear alcohol history; DILI has a drug exposure history with variable LFT pattern depending on the agent."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001402"
+                  ],
+    "snomed_code":  "197321007",
+    "snomed_verified_name":  "Toxic liver disease",
+    "icd10_code":  "K71.50",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Toxic liver disease with chronic active hepatitis without ascites",
+    "evidence_ids":  [
+                         "EVID_TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITHOUT_ASCITES"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

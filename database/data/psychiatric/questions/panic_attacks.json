@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "PANIC_ATTACKS",
+    "complaint_name":  "Panic attacks",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PAN_001",
+                          "text":  "Do you have sudden episodes of intense fear lasting minutes with palpitations, sweating, or breathlessness?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PANIC_ATTACK_CHARACTER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PAN_002",
+                          "text":  "Is there a specific trigger, or do they come out of the blue?",
+                          "purpose":  "trigger",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PANIC_TRIGGER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PAN_003",
+                          "text":  "Do you avoid certain places or situations because of these attacks?",
+                          "purpose":  "avoidance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "AGORAPHOBIA_AVOIDANCE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PAN_004",
+                          "text":  "How often do they happen?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PANIC_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

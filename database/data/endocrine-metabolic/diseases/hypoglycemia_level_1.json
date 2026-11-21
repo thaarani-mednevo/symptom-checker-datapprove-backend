@@ -1,0 +1,114 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_030",
+    "code":  "HYPOGLYCEMIA_LEVEL_1",
+    "name":  "Hypoglycemia level 1",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypoglycemia level 1 is a mild drop in blood glucose below normal thresholds, often asymptomatic or presenting with mild adrenergic symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CLUMSINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIFFICULTY_TALKING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONFUSION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LOSS_OF_CONSCIOUSNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_OTHER_SYMPTOMS_RELATED_TO_HYPOGLYCEMIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GASTRIC_BYPASS_SURGERY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OVER_SECRETION_OF_INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_SHAKY_SWEATY_DIZZY_OR_CON",
+                          "text":  "[LLM DRAFT] Do you feel shaky, sweaty, dizzy, or confused, and is your blood sugar reading between 54 and 69 mg/dL?",
+                          "purpose":  "Screens for mild to moderate low blood sugar symptoms and range.",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_LEVEL_1_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_2",
+                              "distinguishing_feature":  "[LLM DRAFT] Defined by a lower blood glucose threshold (typically \u003c54 mg/dL) indicating more severe neuroglycopenic risk than level 1."
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_3",
+                              "distinguishing_feature":  "[LLM DRAFT] Defined by severe cognitive impairment requiring external assistance for recovery, unlike the self-treatable level 1."
+                          },
+                          {
+                              "disease_code":  "DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused specifically by exogenous medications or chemicals rather than endogenous metabolic dysregulation, without progressing to coma."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E16.A1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypoglycemia level 1",
+    "evidence_ids":  [
+                         "EVID_HYPOGLYCEMIA_LEVEL_1"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

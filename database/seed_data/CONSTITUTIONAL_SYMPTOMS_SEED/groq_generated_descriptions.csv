@@ -1,0 +1,11 @@
+code,description
+PARATYPHOID_FEVER_A,"A systemic infection caused by Salmonella Paratyphi A, presenting with prolonged fever, abdominal pain, and gastrointestinal symptoms."
+PARATYPHOID_FEVER_C,"Paratyphoid fever C is an acute enteric infection caused by Salmonella Paratyphi C, presenting with fever, abdominal pain, and gastrointestinal symptoms."
+HEAT_FATIGUE_TRANSIENT_SEQUELA,"Persistent fatigue and malaise following an episode of heat fatigue, typically resolving within days but may linger as a transient sequela."
+HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER,"A brief episode of fatigue and malaise precipitated by excessive heat exposure, resolving with rest and hydration."
+HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER,A temporary state of exhaustion and reduced physical performance following exposure to high temperatures.
+OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES,"A persistent fatigue syndrome that arises after an acute infection, characterized by profound tiredness lasting more than 6 weeks, often accompanied by cognitive dysfunction and post-exertional malaise."
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER,"Excessive fatigue and exhaustion during the first trimester of pregnancy, often due to hormonal changes and increased metabolic demands."
+PARATYPHOID_FEVER_B,"Paratyphoid fever B is an acute systemic infection caused by Salmonella Paratyphi B, presenting with fever, abdominal pain, and diarrhea, often following ingestion of contaminated food or water."
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER,"A persistent, generalized fatigue experienced during the second trimester of pregnancy, often accompanied by reduced energy and increased sleepiness."
+DEHYDRATION_OF_NEWBORN,"A condition in which a newborn lacks adequate fluid, leading to impaired organ function."

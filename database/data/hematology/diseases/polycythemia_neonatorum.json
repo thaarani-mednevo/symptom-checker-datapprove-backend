@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_014",
+    "code":  "POLYCYTHEMIA_NEONATORUM",
+    "name":  "Polycythemia neonatorum",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Polycythemia neonatorum.",
+    "complaints":  [
+                       {
+                           "code":  "POLYCYTHEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THROMBOEMBOLIC_EVENT",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Stroke, deep vein thrombosis, or renal vein thrombosis resulting from severe hyperviscosity."
+                      },
+                      {
+                          "code":  "RF_ACUTE_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Significant clinical bleeding manifestations such as purpura or gastrointestinal bleeding due to consumptive coagulopathy or hyperviscosity-induced platelet dysfunction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_A_NOTICEABLY",
+                          "text":  "[LLM DRAFT] Does your newborn baby have a noticeably ruddy, deep red, or purplish skin color?",
+                          "purpose":  "Screens for plethora/skin redness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYCYTHEMIA_NEONATORUM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_EXPERIENCING_SEVERE",
+                          "text":  "[LLM DRAFT] Is your newborn baby experiencing severe jitteriness, tremors, or seizures?",
+                          "purpose":  "Screens for neurological symptoms and hyperviscosity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POLYCYTHEMIA_NEONATORUM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_HAVING_SEVERE_DIFFI",
+                          "text":  "[LLM DRAFT] Is your newborn baby having severe difficulty breathing or bluish lips?",
+                          "purpose":  "Screens for respiratory distress and cyanosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "POLYCYTHEMIA_NEONATORUM_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_DUE_TO_POLYCYTHEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated elevated bilirubin resulting from the breakdown of excess red blood cells."
+                          },
+                          {
+                              "disease_code":  "FAMILIAL_ERYTHROCYTOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Genetic etiology presenting with persistent erythrocytosis without neonatal environmental risk factors like twin-twin transfusion or placental insufficiency."
+                          },
+                          {
+                              "disease_code":  "SECONDARY_POLYCYTHEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Driven by chronic hypoxemia or erythropoietin-secreting processes rather than acute perinatal transfusion phenomena."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "32984002",
+    "snomed_verified_name":  "Neonatal polycythemia",
+    "icd10_code":  "P61.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Polycythemia neonatorum",
+    "evidence_ids":  [
+                         "EVID_POLYCYTHEMIA_NEONATORUM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_015",
+  "code": "HIRSUTISM",
+  "name": "Hirsutism",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Hirsutism is excessive body hair on parts of the body where hair is normally absent or minimal. The word is from the early 17th century: from Latin hirsutus meaning \"hairy\".",
+  "hpo_codes": [],
+  "snomed_code": "399939002",
+  "snomed_verified_name": "Hirsutism",
+  "icd10_code": "L68.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Hirsutism",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

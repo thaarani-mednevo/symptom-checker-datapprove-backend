@@ -1,0 +1,7 @@
+disease_code,differential_disease_code,distinguishing_feature,source_status
+HISTORY_OF_FALLING,PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS,"[LLM DRAFT] Presence of resting tremor, rigidity, and bradykinesia accompanied by motor fluctuations.",ai_drafted_unverified
+HISTORY_OF_FALLING,OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY,"[LLM DRAFT] Prominent orthostatic hypotension, anhidrosis, or gastrointestinal dysmotility without central motor signs.",ai_drafted_unverified
+OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY,HISTORY_OF_FALLING,[LLM DRAFT] Episodic loss of balance without prominent systemic autonomic failure symptoms such as anhidrosis or orthostatic hypotension.,ai_drafted_unverified
+OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY,PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS,"[LLM DRAFT] Presence of central dopaminergic motor features like resting tremor, rigidity, and bradykinesia accompanying the autonomic symptoms.",ai_drafted_unverified
+PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS,HISTORY_OF_FALLING,"[LLM DRAFT] Early, frequent falls within the first year of symptom onset suggest atypical parkinsonism rather than Parkinson's disease.",ai_drafted_unverified
+PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS,OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY,[LLM DRAFT] Prominent early autonomic failure without central motor signs points toward a peripheral autonomic disorder rather than Parkinson's disease.,ai_drafted_unverified

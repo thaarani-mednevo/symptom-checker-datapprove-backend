@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_007",
+  "code": "OLIGURIA",
+  "name": "Oliguria",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Oliguria or hypouresis is the low output of urine: specifically, more than 80 ml/day, but less than 400ml/day. The decreased output of urine may be a sign of dehydration, kidney failure, hypovolemic shock, hyperosmolar hyperglycemic nonketotic syndrome (HHNS), multiple organ dysfunction syndrome, urinary obstruction/urinary retention, diabetic ketoacidosis (DKA), pre-eclampsia, and urinary tract infections, among other conditions.",
+  "hpo_codes": [],
+  "snomed_code": "83128009",
+  "snomed_verified_name": "Oliguria",
+  "icd10_code": "R34",
+  "icd10_validated": true,
+  "icd10_official_description": "Anuria and oliguria",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

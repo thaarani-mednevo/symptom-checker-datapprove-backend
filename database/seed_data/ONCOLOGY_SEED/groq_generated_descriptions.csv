@@ -1,0 +1,16 @@
+code,description
+BODY_MASS_INDEX_[BMI]_70_OR_GREATER_ADULT,"A severe obesity condition characterized by a BMI of 70 or higher in adults, associated with extreme metabolic and cardiovascular risk."
+NONDISPLACED_LATERAL_MASS_FRACTURE_OF_FIRST_CERVICAL_VERTEBRA_SEQUELA,"A chronic neck condition resulting from a nondisplaced fracture of the lateral mass of C1, leading to persistent pain and potential instability."
+BODY_MASS_INDEX_[BMI]_199_OR_LESS_ADULT,"Underweight status defined by BMI ≤19.9 in adults, indicating potential malnutrition or other underlying conditions."
+BODY_MASS_INDEX_[BMI]_200_209_ADULT,"A normal weight status in adults, indicating healthy body mass relative to height."
+BODY_MASS_INDEX_[BMI]_210_219_ADULT,A normal body mass index range indicating healthy weight status for adults.
+BODY_MASS_INDEX_[BMI]_220_229_ADULT,"A BMI within the normal range for adults, indicating healthy weight status."
+BODY_MASS_INDEX_[BMI]_230_239_ADULT,A BMI range of 23.0-23.9 indicates a healthy adult weight status within the normal range.
+UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST,"A palpable breast mass of uncertain etiology, not yet classified as benign or malignant."
+UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR,"A non‑specific, palpable mass located beneath the nipple in the left breast, often benign but requiring evaluation."
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT,"A palpable mass in the right breast of uncertain etiology, not localized to a specific quadrant."
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS,A palpable mass in the right breast that spans multiple quadrants without a clearly defined location.
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT,"A palpable mass in the left breast of uncertain etiology, not localized to a specific quadrant."
+UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS,A palpable mass in the left breast involving multiple quadrants without a specific location.
+UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT,"A palpable, non-specific mass located in the upper outer quadrant of the right breast."
+UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR,"A non‑specific palpable mass located beneath the nipple in the right breast, often detected during self‑examination or clinical assessment."

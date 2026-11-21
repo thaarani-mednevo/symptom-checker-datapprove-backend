@@ -1,0 +1,17 @@
+{
+  "id": "MUSCULOSKELETAL_COMP_MSK_006",
+  "code": "ACUTE_MONOARTHRITIS",
+  "name": "Acute monoarthritis",
+  "module": "musculoskeletal",
+  "body_system": "musculoskeletal",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by acute monoarthritis.",
+  "hpo_codes": [],
+  "snomed_code": "699462004",
+  "snomed_verified_name": "Monoarthritis",
+  "icd10_code": "M13.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Monoarthritis, not elsewhere classified, unspecified site",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

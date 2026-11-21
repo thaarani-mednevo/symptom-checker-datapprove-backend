@@ -1,0 +1,171 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_015",
+    "code":  "THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM",
+    "name":  "Thyrotoxicosis, unspecified with thyrotoxic crisis or storm",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hyperthyroidism is a endocrine disease in which the thyroid gland produces excessive amounts of thyroid hormones. Thyrotoxicosis is a condition that occurs due to elevated levels of thyroid hormones of any cause and therefore includes hyperthyroidism.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SLEEPING_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEARTBEAT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEAT_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ENLARGEMENT_OF_THE_THYROID",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GRAVES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MULTINODULAR_GOITER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOXIC_ADENOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFLAMMATION_OF_THE_THYROID",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EATING_TOO_MUCH_IODINE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOO_MUCH_SYNTHETIC_THYROID_HORMONE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXIC_STORM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Severe thyrotoxic crisis characterized by high fever, marked tachycardia, altered mental status, and gastrointestinal dysfunction requiring immediate life-saving intervention."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_A_DANGEROUSLY_FAST_THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                          "text":  "[LLM DRAFT] Are you experiencing a dangerously fast heartbeat, high fever, severe confusion, or extreme agitation?",
+                          "purpose":  "Screen for thyrotoxic crisis or storm symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_SUDDEN_SEVERE_TREMORS",
+                          "text":  "[LLM DRAFT] Have you noticed sudden, severe tremors, uncontrollable sweating, or vomiting along with a rapid pulse?",
+                          "purpose":  "Screen for acute autonomic instability of thyrotoxicosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_THYROTOXICOSIS_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Distinguished by a specific identified etiology (such as Graves\u0027 disease or toxic multinodular goiter) precipitating the storm, rather than an unspecified cause."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_FACTITIA_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by exogenous thyroid hormone ingestion, typically presenting with a low radioiodine uptake and low serum thyroglobulin levels."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Usually presents with a painful or painless thyroiditis phase leading to self-limited hormone release, rarely progressing to a true thyroid storm."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E05.91",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Thyrotoxicosis, unspecified with thyrotoxic crisis or storm",
+    "evidence_ids":  [
+                         "EVID_THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,110 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_002",
+    "code":  "OTHER_VIRAL_CONJUNCTIVITIS",
+    "name":  "Other viral conjunctivitis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Conjunctivitis, also known as pink eye, is inflammation of the conjunctiva, the thin and clear layer that covers the white surface of the eye and the inner eyelid. It makes the eye appear pink or reddish.",
+    "complaints":  [
+                       {
+                           "code":  "WATERY_EYES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "VIRAL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BACTERIAL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ALLERGIES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISIONLOSSEMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss"
+                      },
+                      {
+                          "code":  "RF_SEVEREPAINEMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_CLEAR_WATERY_DISCHARGE_FR",
+                          "text":  "[LLM DRAFT] Do you have a clear, watery discharge from your eye?",
+                          "purpose":  "viral discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_VIRAL_CONJUNCTIVITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_SORE_THROAT_OR_RUNNY_NOSE",
+                          "text":  "[LLM DRAFT] Do you have a sore throat or runny nose along with your eye symptoms?",
+                          "purpose":  "systemic viral signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_VIRAL_CONJUNCTIVITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_FEVER_HIGHER_THAN_1004°F",
+                          "text":  "[LLM DRAFT] Do you have a fever higher than 100.4°F (38°C)?",
+                          "purpose":  "fever screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_VIRAL_CONJUNCTIVITIS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "B30.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other viral conjunctivitis",
+    "evidence_ids":  [
+                         "EVID_OTHER_VIRAL_CONJUNCTIVITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

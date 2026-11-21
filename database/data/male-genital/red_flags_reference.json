@@ -1,0 +1,30 @@
+{
+  "module": "male-genital",
+  "red_flags": [
+    {
+      "code": "RED_MG_001",
+      "name": "Priapism — erection lasting more than 4 hours",
+      "action": "emergency_urology_priapism_pathway"
+    },
+    {
+      "code": "RED_MG_002",
+      "name": "Sudden severe scrotal pain with high-riding or horizontal testicle",
+      "action": "emergency_surgical_exploration_testicular_torsion"
+    },
+    {
+      "code": "RED_MG_003",
+      "name": "Fever with rapidly worsening scrotal erythema and systemic toxicity",
+      "action": "urgent_urology_epididymoorchitis_or_fourniers_gangrene"
+    },
+    {
+      "code": "RED_MG_004",
+      "name": "Painless firm or irregular intratesticular mass",
+      "action": "urgent_scrotal_ultrasound_and_tumour_markers"
+    },
+    {
+      "code": "RED_MG_005",
+      "name": "Urethral discharge with fever and joint pain",
+      "action": "disseminated_gonococcal_infection_urgent_evaluation"
+    }
+  ]
+}

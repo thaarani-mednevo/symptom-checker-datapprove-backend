@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_066",
+  "code": "UNSPECIFIED_VISUAL_DISTURBANCE",
+  "name": "Unspecified visual disturbance",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A vision disorder is an impairment of the sense of vision.",
+  "complaints": [
+    {
+      "code": "VISUAL_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "BLURRED_VISION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "VISUAL_FIELD_DEFECT",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "PHOTOPHOBIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "EYE_STRAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "SCHIZOPHRENIA_AND_OTHER_SCHIZOPHRENIA_SPECTRUM_DISORDERS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H53.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified visual disturbance",
+  "evidence_ids": [
+    "EVID_UNSPECIFIED_VISUAL_DISTURBANCE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,83 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_018",
+    "code":  "FUNCTIONAL_DIARRHEA",
+    "name":  "Functional diarrhea",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Functional diarrhea.",
+    "complaints":  [
+                       {
+                           "code":  "DIARRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "USUALLY_INFECTION_(VIRAL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BACTERIAL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PARASITIC)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_012",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DIARRHEA",
+                          "condition":  "Chronic diarrhea with unexplained iron-deficiency anemia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_013",
+                          "text":  "Have you been told you have low iron / anemia recently, without a clear cause?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_012)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FUNCTIONAL_DIARRHEA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA",
+                              "distinguishing_feature":  "Functional diarrhea is loose stools without associated abdominal pain meeting IBS criteria; IBS-D includes recurrent abdominal pain linked to altered bowel habit."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "47812002",
+    "snomed_verified_name":  "Functional diarrhea",
+    "icd10_code":  "K59.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Functional diarrhea",
+    "evidence_ids":  [
+                         "EVID_FUNCTIONAL_DIARRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,82 @@
+﻿{
+    "complaint_code":  "CONFUSION",
+    "complaint_name":  "Confusion",
+    "module":  "geriatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_CONF_001",
+                          "text":  "Did the confusion come on suddenly over hours or days, or has it been gradually worsening over months?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONFUSION_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_CONF_002",
+                          "text":  "Does the confusion come and go, being better at some times and worse at others?",
+                          "purpose":  "fluctuation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FLUCTUATING_CONFUSION",
+                          "yes_weight":  4,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_CONF_003",
+                          "text":  "Has the person started a new medication or changed a dose recently?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ADVERSE_DRUG_REACTION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRUG_INDUCED_CONFUSION",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_CONF_004",
+                          "text":  "Is there any fever, painful urination, or cough?",
+                          "purpose":  "infection_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "INFECTION_PRECIPITANT",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_CONF_005",
+                          "text":  "Is there severe agitation, aggression, or risk of harm to self or others?",
+                          "purpose":  "safety_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "AGITATED_DELIRIUM",
+                          "yes_weight":  5,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_CONF_006",
+                          "text":  "Has the person had progressive memory problems over many months before this episode?",
+                          "purpose":  "dementia_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "KNOWN_DEMENTIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

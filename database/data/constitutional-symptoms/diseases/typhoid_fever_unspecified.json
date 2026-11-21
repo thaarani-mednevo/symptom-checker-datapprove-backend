@@ -1,0 +1,208 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_005",
+    "code":  "TYPHOID_FEVER_UNSPECIFIED",
+    "name":  "Typhoid fever, unspecified",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Typhoid fever, also known as typhoid, is an orally contracted disease caused by Salmonella enterica serotype Typhi bacteria, also called Salmonella Typhi. Symptoms vary from mild to severe, and usually begin six to 30 days after exposure.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER_THAT_STARTS_LOW_AND_INCREASES_DAILY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POSSIBLY_REACHING_AS_HIGH_AS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEAKNESS_AND_FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_ACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DRY_COUGH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LOSS_OF_APPETITE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STOMACH_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA_OR_CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RASH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ABDOMINAL_PAIN_OR_SIGNS_OF_PERITONITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Suspected intestinal perforation or severe gastrointestinal bleeding"
+                      },
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS_OR_ENCEPHALOPATHY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Severe systemic toxicity affecting the central nervous system (typhoid encephalopathy)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TYPHOID_FEVER_UNSPECIFIED_1",
+                          "text":  "Have you traveled internationally to an area where typhoid fever is common within the past 60 days?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TYPHOID_FEVER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_TYPHOID_FEVER_UNSPECIFIED_2",
+                          "text":  "Did your fever start gradually and progressively worsen over several days?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TYPHOID_FEVER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_TYPHOID_FEVER_UNSPECIFIED_3",
+                          "text":  "Are you experiencing severe confusion, lethargy, or extreme drowsiness?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TYPHOID_FEVER_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_A",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella enterica serotype Paratyphoid A, often presenting with a slightly milder clinical course than typhoid fever."
+                          },
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_B",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella enterica serotype Paratyphoid B, more frequently associated with prominent gastrointestinal symptoms like diarrhea."
+                          },
+                          {
+                              "disease_code":  "Q_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Coxiella burnetii and typically features prominent atypical pneumonia or granulomatous hepatitis rather than the characteristic sustained high fever and relative bradycardia of typhoid."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A01.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Typhoid fever, unspecified",
+    "evidence_ids":  [
+                         "EVID_TYPHOID_FEVER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

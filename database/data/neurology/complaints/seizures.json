@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_029",
+  "code": "SEIZURES",
+  "name": "Seizures",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "A seizure is a sudden disruption of brain activity caused by excessive, synchronized neuronal firing that results in changes in behavior. This neurological condition is common, affecting approximately 50 million individuals around the world.",
+  "hpo_codes": [],
+  "snomed_code": "128613002",
+  "snomed_verified_name": "Seizure disorder",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

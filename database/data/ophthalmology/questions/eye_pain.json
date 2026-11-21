@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "EYE_PAIN",
+    "complaint_name":  "Eye pain",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_EP_001",
+                          "text":  "Is the pain on the surface of the eye or deeper inside?",
+                          "purpose":  "location",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EYE_PAIN_LOCATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EP_002",
+                          "text":  "Is there associated vision change, photophobia, or halos?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EYE_PAIN_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EP_003",
+                          "text":  "Did it start suddenly after an injury or chemical exposure?",
+                          "purpose":  "trauma",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OCULAR_TRAUMA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_EP_004",
+                          "text":  "Is the eye red and is there severe pain with vision loss?",
+                          "purpose":  "severe",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SEVERE_PAINFUL_RED_EYE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

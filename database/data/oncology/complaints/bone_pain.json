@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_007",
+  "code": "BONE_PAIN",
+  "name": "Bone pain",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Bone pain is a deep, aching, or throbbing pain localised to bone, often worse at night and not relieved by rest. In an oncology context, it is a key symptom of bone metastases (most commonly from breast, prostate, lung, kidney, and thyroid primaries), primary bone tumours (osteosarcoma, Ewing sarcoma), and multiple myeloma. Cancer-related bone pain is caused by periosteal stretching, cytokine-mediated sensitisation, or pathological fracture. New or worsening localised bone pain in a known cancer patient or a patient with constitutional symptoms requires urgent imaging to exclude metastatic disease or pathological fracture.",
+  "hpo_codes": ["HP:0002653"],
+  "snomed_code": "57676002",
+  "snomed_verified_name": "Joint pain",
+  "icd10_code": "M79.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Soft tissue disorder, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

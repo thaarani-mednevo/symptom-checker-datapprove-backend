@@ -1,0 +1,155 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_012",
+    "code":  "ACUTE_RESPIRATORY_FAILURE",
+    "name":  "Acute respiratory failure",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Acute respiratory failure (ARF) is a life-threatening condition in which the respiratory system cannot maintain adequate gas exchange, defined as PaO2 \u003c60 mmHg (Type 1, hypoxaemic) or PaCO2 \u003e50 mmHg with acidosis (Type 2, hypercapnic). Type 1 (hypoxaemic) failure occurs in conditions causing V/Q mismatch or shunt: pneumonia, pulmonary oedema, ARDS, pulmonary embolism. Type 2 (hypercapnic) failure occurs when ventilatory drive or muscle strength is insufficient: COPD exacerbation, neuromuscular disease, severe asthma, obesity hypoventilation. ARF is a medical emergency requiring immediate assessment and intervention including supplemental oxygen, non-invasive ventilation, or intubation.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SEVERE_DYSPNOEA_AT_REST",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "CYANOSIS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ACCESSORY_MUSCLE_USE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ALTERED_CONSCIOUSNESS",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "TACHYCARDIA_AND_TACHYPNOEA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "KNOWN_CHRONIC_RESPIRATORY_DISEASE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "SEVERE_PNEUMONIA_OR_SEPSIS",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "NEUROMUSCULAR_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OBESITY_HYPOVENTILATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ACUTE_PULMONARY_OEDEMA",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "SpO2 \u003c92% on room air, respiratory rate \u003e30/min, or use of accessory muscles — emergency airway and ventilatory support pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_ARF_001",
+                          "text":  "Is the patient having severe difficulty breathing at rest right now?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_RESPIRATORY_FAILURE_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RESP_ARF_002",
+                          "text":  "What is the patient\u0027s oxygen saturation on pulse oximetry?",
+                          "purpose":  "severity_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_RESPIRATORY_FAILURE_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RESP_ARF_003",
+                          "text":  "Is the patient confused, drowsy, or difficult to rouse?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_RESPIRATORY_FAILURE_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PNEUMONIA",
+                              "distinguishing_feature":  "Pneumonia is a common cause of Type 1 ARF; consolidation on CXR with fever and productive cough identify the aetiology but ARF management (oxygen, ventilatory support) takes priority."
+                          },
+                          {
+                              "disease_code":  "COPD",
+                              "distinguishing_feature":  "COPD exacerbation is a common cause of Type 2 ARF; known diagnosis, obstructive spirometry, and hypercarbia on ABG guide treatment with controlled O2 and NIV."
+                          },
+                          {
+                              "disease_code":  "PULMONARY_EMBOLISM",
+                              "distinguishing_feature":  "Massive PE can cause sudden ARF with haemodynamic compromise; absence of fever, unilateral leg swelling, and risk factors for VTE guide investigation with CTPA."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0002093"
+                  ],
+    "snomed_code":  "65710008",
+    "snomed_verified_name":  "Acute respiratory failure",
+    "icd10_code":  "J96.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia",
+    "evidence_ids":  [
+                         "EVD_RESP_012"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,77 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_092",
+  "code": "FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE",
+  "name": "Facial weakness following other cerebrovascular disease",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Facial weakness is a medical sign associated with a variety of medical conditions.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INABILITY_TO_MOVE_THE_FACIAL_MUSCLES_ON_ONE_SIDE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CHANGE_IN_TASTE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAIN_AROUND_THE_EAR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden worsening or new onset of full limb paralysis indicating acute stroke extension or new cerebrovascular event."
+    },
+    {
+      "code": "RF_APHASIA",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "APHASIA",
+      "condition": "[LLM DRAFT] Sudden acute onset of complete aphasia or severe expressive/receptive language failure associated with stroke progression."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.892",
+  "icd10_validated": true,
+  "icd10_official_description": "Facial weakness following other cerebrovascular disease",
+  "evidence_ids": [
+    "EVID_FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

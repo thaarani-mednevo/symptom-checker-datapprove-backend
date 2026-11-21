@@ -1,0 +1,137 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_004",
+    "code":  "NONTOXIC_GOITER_UNSPECIFIED",
+    "name":  "Nontoxic goiter, unspecified",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A diffuse enlargement of the thyroid gland without associated hyperthyroidism or hypothyroidism.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NECK_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "COMPRESSIVE_SYMPTOMS_OF_NECK_(DIFFICULTY_BREATHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIFFICULTY_SWALLOWING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOICE_CHANGES)",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "IODINE_DEFICIENCY_MOST_COMMON",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_AIRWAY_OBSTRUCTION_DUE_TO_RAPID_GOITER_EXPANSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROID_SWELLING",
+                          "condition":  "[LLM DRAFT] Rapid enlargement of a nontoxic goiter causing severe respiratory distress, stridor, or tracheal compression."
+                      },
+                      {
+                          "code":  "RF_THYROTOXIC_STORM_INDUCED_BY_MULTINODULAR_GOITER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Acute, life-threatening exacerbation of thyrotoxicosis featuring high fever, tachyarrhythmias, and altered mental status."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_NOTICEABLE_SWELLING_OR_LUM",
+                          "text":  "[LLM DRAFT] Do you feel a noticeable swelling or lump in the front of your neck?",
+                          "purpose":  "Screens for visible or palpable thyroid enlargement",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NONTOXIC_GOITER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SUDDEN_DIFFICULTY_B",
+                          "text":  "[LLM DRAFT] Are you experiencing sudden difficulty breathing or a feeling that your airway is blocked?",
+                          "purpose":  "Screens for acute airway obstruction caused by severe goiter",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NONTOXIC_GOITER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_DEVELOPED_A_PERSISTENT_HOARSENE",
+                          "text":  "[LLM DRAFT] Have you developed a persistent hoarseness or noticeable changes in your voice?",
+                          "purpose":  "Screens for recurrent laryngeal nerve compression by the goiter",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NONTOXIC_GOITER_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with a smooth, symmetrical thyroid enlargement rather than an unspecified structural pattern."
+                          },
+                          {
+                              "disease_code":  "NONTOXIC_MULTINODULAR_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by multiple distinct nodules palpated throughout the thyroid gland."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by an inherited defect in thyroid hormone synthesis, frequently presenting early in life with associated hypothyroidism."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E04.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nontoxic goiter, unspecified",
+    "evidence_ids":  [
+                         "EVID_NONTOXIC_GOITER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

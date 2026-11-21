@@ -1,0 +1,80 @@
+﻿{
+  "id": "GASTROINTESTINAL_DIS_GI_022",
+  "code": "OTHER_CONSTIPATION",
+  "name": "Other constipation",
+  "module": "gastrointestinal",
+  "category": "disease",
+  "description": "Constipation is a bowel dysfunction that makes bowel movements infrequent or hard to pass. The stool is often hard and dry.",
+  "complaints": [
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INFREQUENT_OR_HARD_TO_PASS_BOWEL_MOVEMENTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ABDOMINAL_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "BLOATING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "SLOW_MOVEMENT_OF_STOOL_WITHIN_THE_COLON",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "IRRITABLE_BOWEL_SYNDROME",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CELIAC_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "NON_CELIAC_GLUTEN_SENSITIVITY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PELVIC_FLOOR_DISORDERS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K59.09",
+  "icd10_validated": true,
+  "icd10_official_description": "Other constipation",
+  "evidence_ids": [
+    "EVID_OTHER_CONSTIPATION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,82 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_036",
+    "code":  "RECTAL_ABSCESS",
+    "name":  "Rectal abscess",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Rectal abscess.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECTAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECTAL_PAIN",
+                          "condition":  "Severe rectal pain with fever (suspect abscess needing urgent drainage)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_008",
+                          "text":  "Is your abdominal pain severe, constant, and getting worse, or does your belly feel hard/rigid?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_007)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_ABSCESS_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_012",
+                          "text":  "Do you have a fever along with your bowel symptoms?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_011)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RECTAL_ABSCESS_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "RECTAL_FISTULA_UNSPECIFIED",
+                              "distinguishing_feature":  "An abscess is an acute, painful, localized collection of pus; a fistula is a chronic abnormal tract (often a sequela of a prior abscess) with intermittent drainage rather than acute severe pain."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "197166005",
+    "snomed_verified_name":  "Rectal abscess",
+    "icd10_code":  "K61.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Rectal abscess",
+    "evidence_ids":  [
+                         "EVID_RECTAL_ABSCESS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

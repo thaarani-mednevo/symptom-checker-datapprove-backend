@@ -1,0 +1,209 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_033",
+    "code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+    "name":  "Major depressive disorder, single episode, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Major depressive disorder (MDD), also known as clinical depression, is a mental disorder characterized by at least two weeks of pervasive low mood, low self-esteem, and loss of interest or pleasure in normally enjoyable activities. Introduced by a group of US clinicians in the mid-1970s, the term was adopted by the American Psychiatric Association for this symptom cluster under mood disorders in the 1980 version of the Diagnostic and Statistical Manual of Mental Disorders (DSM-III), and has become widely used since.",
+    "complaints":  [
+                       {
+                           "code":  "LOW_MOOD",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SUICIDAL_THOUGHTS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SELF_HARM",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DEPRESSED_MOOD",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ANHEDONIA",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INSOMNIA",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SUICIDAL_IDEATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_DEPRESSION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_TRAUMA_OR_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "MAJOR_LIFE_STRESSORS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHRONIC_PHYSICAL_ILLNESS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SUBSTANCE_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FEMALE_GENDER",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_DEPRESSION_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports persistent depressed mood or loss of interest."
+                      },
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports thoughts of suicide or self-harm."
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports hallucinations or delusions."
+                      },
+                      {
+                          "code":  "RF_SUBSTANCE_USE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports heavy alcohol or drug use."
+                      },
+                      {
+                          "code":  "RF_MEDICATION_ADVERSE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Patient reports medication side effects causing mood changes."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DEPRESSION_SYMPTOMS",
+                          "text":  "Have you been feeling down, depressed, or hopeless for the past two weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_DEPRESSION_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUICIDE_IDEATION",
+                          "text":  "Have you had thoughts of harming yourself or suicide?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUICIDE_IDEATION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PSYCHOSIS",
+                          "text":  "Have you experienced hallucinations or delusions?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PSYCHOSIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUBSTANCE_USE",
+                          "text":  "Do you use alcohol or drugs to cope with anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "BIPOLAR_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Presence of manic or hypomanic episodes."
+                          },
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Predominant anxiety symptoms without depressed mood."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "370143000",
+    "snomed_verified_name":  "Major depressive disorder",
+    "icd10_code":  "F32.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Major depressive disorder, single episode, unspecified",
+    "evidence_ids":  [
+                         "EVID_MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

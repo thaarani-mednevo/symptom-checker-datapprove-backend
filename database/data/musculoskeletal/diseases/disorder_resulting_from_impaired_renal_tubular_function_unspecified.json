@@ -1,0 +1,137 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_012",
+    "code":  "DISORDER_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_UNSPECIFIED",
+    "name":  "Disorder resulting from impaired renal tubular function, unspecified",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Disorder resulting from impaired renal tubular function, unspecified.",
+    "complaints":  [
+                       {
+                           "code":  "IMPAIRED_FUNCTION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "POLYURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POLYDIPSIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "METABOLIC_ACIDOSIS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HYPOKALEMIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_HYPOKALEMIA_WITH_PROFOUND_WEAKNESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "MUSCLE_WEAKNESS",
+                          "condition":  "[LLM DRAFT] Severe hypokalemia secondary to renal tubular wasting leading to debilitating motor weakness or potential respiratory muscle compromise."
+                      },
+                      {
+                          "code":  "RF_PATHOLOGICAL_FRACTURE_FROM_SEVERE_OSTEOMALACIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] Acute severe bone pain and inability to bear weight due to profound osteomalacia or rickets caused by chronic tubular dysfunction (e.g., Fanconi syndrome)."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_YOU_ARE_URINATING_MORE_OFT",
+                          "text":  "[LLM DRAFT] Do you notice you are urinating more often than usual, especially at night?",
+                          "purpose":  "polyuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DISORDER_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_MUSCLE_CRAMPS_OR_WEAKN",
+                          "text":  "[LLM DRAFT] Do you experience muscle cramps or weakness that worsens after activity?",
+                          "purpose":  "electrolyte imbalance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DISORDER_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_DIZZY_OR_FAINT_WHEN_STANDING",
+                          "text":  "[LLM DRAFT] Do you feel dizzy or faint when standing up quickly?",
+                          "purpose":  "dehydration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DISORDER_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION",
+                              "distinguishing_feature":  "[LLM DRAFT] Fanconi syndrome with generalized metabolic acidosis"
+                          },
+                          {
+                              "disease_code":  "GOUT_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Tophi on joints"
+                          },
+                          {
+                              "disease_code":  "SYSTEMIC_LUPUS_ERYTHEMATOSUS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Malar rash"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N25.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Disorder resulting from impaired renal tubular function, unspecified",
+    "evidence_ids":  [
+                         "EVID_DISORDER_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

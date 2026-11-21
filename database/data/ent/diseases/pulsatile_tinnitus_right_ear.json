@@ -1,0 +1,80 @@
+﻿{
+  "id": "ENT_DIS_HB_006",
+  "code": "PULSATILE_TINNITUS_RIGHT_EAR",
+  "name": "Pulsatile tinnitus, right ear",
+  "module": "ent",
+  "category": "disease",
+  "description": "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+  "complaints": [
+    {
+      "code": "TINNITUS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NOISE_INDUCED_HEARING_LOSS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "EAR_INFECTIONS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MÉNIÈRES_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "VESTIBULAR_SCHWANNOMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CHOLESTEATOMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "TRAUMATIC_BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "EXCESSIVE_EARWAX",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "60862001",
+  "snomed_verified_name": "Tinnitus",
+  "icd10_code": "H93.A1",
+  "icd10_validated": true,
+  "icd10_official_description": "Pulsatile tinnitus, right ear",
+  "evidence_ids": [
+    "EVID_PULSATILE_TINNITUS_RIGHT_EAR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

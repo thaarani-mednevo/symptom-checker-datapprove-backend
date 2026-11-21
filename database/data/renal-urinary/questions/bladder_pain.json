@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "BLADDER_PAIN",
+    "complaint_name":  "Bladder pain",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BLA_001",
+                          "text":  "Is the pain worse when the bladder is full and better after passing urine?",
+                          "purpose":  "pattern",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLADDER_PAIN_PATTERN",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLA_002",
+                          "text":  "Is there blood in the urine?",
+                          "purpose":  "haematuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HAEMATURIA_WITH_BLADDER_PAIN",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLA_003",
+                          "text":  "Is there frequency, urgency, or dysuria?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BLADDER_PAIN_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLA_004",
+                          "text":  "Have you had recent chemotherapy or radiotherapy?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CYSTITIS_CAUSE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

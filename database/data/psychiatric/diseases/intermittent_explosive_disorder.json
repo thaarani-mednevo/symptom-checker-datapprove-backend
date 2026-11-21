@@ -1,0 +1,167 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_040",
+    "code":  "INTERMITTENT_EXPLOSIVE_DISORDER",
+    "name":  "Intermittent explosive disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Intermittent explosive disorder (IED), or episodic dyscontrol syndrome (EDS), is a mental disorder characterized by explosive outbursts of anger or violence, often to the point of rage, that are disproportionate to the situation. Impulsive aggression is not premeditated, and is defined by a disproportionate reaction to any provocation, real or perceived, that would often be associated with a choleric temperament.",
+    "complaints":  [
+                       {
+                           "code":  "AGGRESSIVE_BEHAVIOUR",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RECURRENT_VERBAL_AGGRESSION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "rapid",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PHYSICAL_ASSAULT",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "DISPROPORTIONATE_RAGE_OUTBURSTS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PROPERTY_DAMAGE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "IRRITABILITY_BEFORE_OUTBURST",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_SUBSTANCE_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_PHYSICAL_OR_SEXUAL_ABUSE_IN_CHILDHOOD",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "MALE_GENDER",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "YOUNGER_AGE_ONSET",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_TRAUMATIC_BRAIN_INJURY",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ANGRY_OUTBURST",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_ANGRY_OUTBURST",
+                          "condition":  "Sudden, intense anger leading to physical aggression."
+                      },
+                      {
+                          "code":  "RF_URGENCY_TO_ANGRY",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_URGENCY",
+                          "condition":  "Rapid escalation of anger within seconds."
+                      },
+                      {
+                          "code":  "RF_ANGRY_REACTIVITY",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_ANGRY_REACTIVITY",
+                          "condition":  "Excessive anger in response to minor provocation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANGRY_OUTBURST",
+                          "text":  "Do you experience sudden outbursts of anger that are disproportionate to the situation?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INTERMITTENT_EXPLOSIVE_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PHYSICAL_AGGRESSION",
+                          "text":  "Have you ever physically harmed someone or something during an angry episode?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INTERMITTENT_EXPLOSIVE_DISORDER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANGRY_DURATION",
+                          "text":  "Do these angry episodes last more than 15 minutes?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INTERMITTENT_EXPLOSIVE_DISORDER_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "BIPOLAR_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Mood episodes include mania/hypomania and depression, not just anger."
+                          },
+                          {
+                              "disease_code":  "BORDERLINE_PERSONALITY_DISORDER",
+                              "distinguishing_feature":  "Marked instability in relationships, self-image, and affect, with impulsivity beyond anger."
+                          },
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Persistent worry and anxiety rather than episodic explosive anger."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "40987004",
+    "snomed_verified_name":  "Intermittent explosive disorder",
+    "icd10_code":  "F63.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Intermittent explosive disorder",
+    "evidence_ids":  [
+                         "EVID_INTERMITTENT_EXPLOSIVE_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

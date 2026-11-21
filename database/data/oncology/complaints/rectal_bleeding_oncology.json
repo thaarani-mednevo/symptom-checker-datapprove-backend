@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_008",
+  "code": "RECTAL_BLEEDING_ONCOLOGY",
+  "name": "Rectal bleeding (oncology context)",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Rectal bleeding in an oncology context refers to the passage of fresh or altered blood per rectum that may indicate colorectal cancer or anal cancer. It is one of the most common presenting symptoms of colorectal malignancy, particularly when accompanied by a change in bowel habit, tenesmus, or unexplained weight loss. While the majority of rectal bleeding is benign (haemorrhoids, fissures), any rectal bleeding in patients over 40, or at any age with associated symptoms (change in bowel habit, weight loss, anaemia, tenesmus), requires investigation including colonoscopy to exclude colorectal cancer.",
+  "hpo_codes": ["HP:0002239"],
+  "snomed_code": "405729008",
+  "snomed_verified_name": "Hematochezia",
+  "icd10_code": "K92.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Melena",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

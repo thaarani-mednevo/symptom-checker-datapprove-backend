@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_004",
+  "code": "BLISTERS",
+  "name": "Blisters",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "A blister is a small pocket of body fluid within the upper layers of the skin, usually caused by forceful rubbing (friction), burning, freezing, chemical exposure or infection. Most blisters are filled with a clear fluid, either serum or plasma.",
+  "hpo_codes": [],
+  "snomed_code": "339008",
+  "snomed_verified_name": "Blister",
+  "icd10_code": "L99.8",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

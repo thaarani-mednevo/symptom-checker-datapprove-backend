@@ -1,0 +1,174 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_009",
+    "code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES",
+    "name":  "Alcoholic cirrhosis of liver without ascites",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Alcoholic cirrhosis is the end-stage consequence of chronic alcohol-related liver disease, characterised by irreversible diffuse hepatic fibrosis and formation of regenerative nodules that distort the hepatic architecture and cause portal hypertension. At the compensated stage (without ascites), patients may be relatively asymptomatic or present with fatigue, jaundice, and stigmata of chronic liver disease (spider naevi, palmar erythema, gynaecomastia, Dupuytren\u0027s contracture, parotid enlargement). The transition to decompensated cirrhosis (ascites, variceal bleeding, hepatic encephalopathy, jaundice) is a major prognostic landmark.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PRURITUS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SPIDER_NAEVI_PALMAR_ERYTHEMA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "GYNAECOMASTIA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEAVY_ALCOHOL_CONSUMPTION_LONG_TERM",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "GENETIC_PREDISPOSITION_ALDH2",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CONCURRENT_VIRAL_HEPATITIS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "POOR_NUTRITIONAL_STATUS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "New jaundice in compensated cirrhosis with altered mental status or coagulopathy — acute decompensation, urgent hepatology review"
+                      },
+                      {
+                          "code":  "RED_HB_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                          "condition":  "Sudden severe right upper quadrant pain in known cirrhosis — exclude variceal bleeding or hepatocellular carcinoma"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_CIR_001",
+                          "text":  "How many alcoholic drinks do you consume on a typical day, and for how many years have you been drinking at this level?",
+                          "purpose":  "risk_factor_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_CIR_002",
+                          "text":  "Have you noticed any yellowing of your skin or eyes?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_CIR_003",
+                          "text":  "Have you vomited blood or passed black tarry stools recently?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HB_CIR_004",
+                          "text":  "Have you had any confusion, difficulty concentrating, or unusual sleepiness?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES_SYMPTOM_4",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES",
+                              "distinguishing_feature":  "Alcoholic hepatitis is an acute inflammatory episode with rapid-onset jaundice and fever; cirrhosis is a chronic stable state with gradual stigmata and fibrosis on imaging."
+                          },
+                          {
+                              "disease_code":  "NON_ALCOHOLIC_FATTY_LIVER_DISEASE",
+                              "distinguishing_feature":  "NAFLD occurs in patients with metabolic syndrome without significant alcohol use; alcoholic cirrhosis requires a history of sustained heavy alcohol consumption."
+                          },
+                          {
+                              "disease_code":  "HEPATOCELLULAR_CARCINOMA",
+                              "distinguishing_feature":  "HCC may arise in cirrhosis and presents with rapid deterioration, weight loss, or a rising AFP. All cirrhotics should be on 6-monthly HCC surveillance with ultrasound and AFP."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001397"
+                  ],
+    "snomed_code":  "19943007",
+    "snomed_verified_name":  "Cirrhosis of liver",
+    "icd10_code":  "K70.30",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alcoholic cirrhosis of liver without ascites",
+    "evidence_ids":  [
+                         "EVID_ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

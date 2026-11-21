@@ -1,0 +1,19 @@
+disease_code,differential_disease_code,distinguishing_feature
+HEART_FAILURE,PULMONARY_HYPERTENSION,Criteria: ECHO EF (HF typically shows poor LVEF; PH shows isolated RV dilation with normal LV systolic/diastolic function). Symptoms: HF features prominent orthopnea and pulmonary crackles; PH has exertional dyspnea without orthopnea/PND.
+HEART_FAILURE,HYPERTENSIVE_HEART_DISEASE,HHD driven primarily by long-standing uncontrolled hypertension without another structural cause.
+ACUTE_CORONARY_SYNDROME,STABLE_ISCHEMIC_HEART_DISEASE,SIHD chest discomfort is exertional and predictable; ACS is new worsening or occurs at rest.
+ACUTE_CORONARY_SYNDROME,PERICARDITIS,Pericarditis pain is positional/pleuritic; ACS pain is typically pressure-like and exertion-related.
+STABLE_ISCHEMIC_HEART_DISEASE,ACUTE_CORONARY_SYNDROME,ACS presents with new worsening or rest symptoms; SIHD is stable and exertion-predictable.
+ATRIAL_FIBRILLATION,SUPRAVENTRICULAR_TACHYCARDIA,SVT is regular and typically abrupt onset/offset; AFib is irregularly irregular.
+ATRIAL_FIBRILLATION,VENTRICULAR_TACHYCARDIA,VT is a wide-complex often hemodynamically unstable rhythm; AFib is narrow-complex and irregular.
+SUPRAVENTRICULAR_TACHYCARDIA,ATRIAL_FIBRILLATION,AFib is irregularly irregular; SVT is regular with abrupt onset/offset.
+VENTRICULAR_TACHYCARDIA,SUPRAVENTRICULAR_TACHYCARDIA,VT is wide-complex and frequently unstable; SVT is narrow-complex and usually stable.
+BRADYARRHYTHMIA,VENTRICULAR_TACHYCARDIA,Bradyarrhythmia has abnormally slow rate; VT has abnormally fast rate - opposite ends of the rhythm spectrum.
+AORTIC_STENOSIS,MITRAL_REGURGITATION,AS murmur is systolic ejection radiates to carotids; MR is holosystolic radiates to axilla.
+MITRAL_REGURGITATION,AORTIC_STENOSIS,MR murmur is holosystolic radiating to axilla; AS murmur is systolic ejection radiating to carotids.
+CARDIOMYOPATHY,MYOCARDITIS,Myocarditis has recent viral illness and acute onset; cardiomyopathy is typically more gradual or has a family/toxin history.
+MYOCARDITIS,PERICARDITIS,Pericarditis pain is positional/pleuritic; myocarditis pain is less positional and paired with arrhythmia/heart-failure signs.
+PERICARDITIS,ACUTE_CORONARY_SYNDROME,Pericarditis pain worsens lying flat and improves leaning forward; ACS pain is typically pressure-like unaffected by position.
+PULMONARY_EMBOLISM,HEART_FAILURE,PE has sudden onset and usually unilateral leg swelling; HF has gradual onset and typically bilateral edema.
+PULMONARY_HYPERTENSION,HEART_FAILURE,Criteria: ECHO EF (PH shows isolated RV dilation with normal LV systolic/diastolic function; HF typically shows poor LVEF). Symptoms: PH has exertional dyspnea without orthopnea/PND; HF features prominent orthopnea and pulmonary crackles.
+HYPERTENSIVE_HEART_DISEASE,HEART_FAILURE,HHD is driven primarily by chronic hypertension; HF may have multiple structural causes and more pronounced congestive symptoms.

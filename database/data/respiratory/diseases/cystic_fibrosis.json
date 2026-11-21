@@ -1,0 +1,171 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_014",
+    "code":  "CYSTIC_FIBROSIS",
+    "name":  "Cystic fibrosis",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Cystic fibrosis (CF) is an autosomal recessive disorder caused by mutations in the CFTR gene (most commonly F508del), leading to defective chloride transport and production of thick, viscous secretions in the lungs, pancreas, liver, and reproductive tract. Pulmonary manifestations dominate: chronic productive cough, recurrent lower respiratory tract infections (Pseudomonas aeruginosa, Staphylococcus aureus, Burkholderia cepacia), progressive bronchiectasis, and eventual respiratory failure. Extrapulmonary features include pancreatic exocrine insufficiency (malabsorption, steatorrhoea), CF-related diabetes, and male infertility. Diagnosis is by sweat chloride test and CFTR genotyping. CFTR modulators (elexacaftor/tezacaftor/ivacaftor) have transformed outcomes in eligible patients.",
+    "complaints":  [
+                       {
+                           "code":  "PRODUCTIVE_COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHRONIC_PRODUCTIVE_COUGH_PURULENT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RECURRENT_RESPIRATORY_INFECTIONS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FAILURE_TO_THRIVE_OR_POOR_GROWTH",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "STEATORRHOEA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DIGITAL_CLUBBING",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HAEMOPTYSIS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AUTOSOMAL_RECESSIVE_CFTR_MUTATION",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_CYSTIC_FIBROSIS",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "CAUCASIAN_ETHNICITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Acute respiratory decompensation in CF patient with SpO2 \u003c92% — urgent CF centre review and ventilatory support assessment"
+                      },
+                      {
+                          "code":  "RED_RESP_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PRODUCTIVE_COUGH",
+                          "condition":  "Massive haemoptysis (\u003e240 mL in 24h) in CF patient — emergency bronchial artery embolisation pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_CF_001",
+                          "text":  "Have you been told you have cystic fibrosis, or has it been diagnosed in a sibling or close family member?",
+                          "purpose":  "diagnostic_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CYSTIC_FIBROSIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CYSTIC_FIBROSIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RESP_CF_002",
+                          "text":  "Have you had recurrent chest infections requiring antibiotics since childhood?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CYSTIC_FIBROSIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CYSTIC_FIBROSIS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_CF_003",
+                          "text":  "Do you have loose, oily, or particularly foul-smelling stools?",
+                          "purpose":  "extrapulmonary_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PANCREATIC_INSUFFICIENCY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CYSTIC_FIBROSIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "BRONCHIECTASIS",
+                              "distinguishing_feature":  "Bronchiectasis can be caused by CF but also has other aetiologies (post-infective, immunodeficiency, PCD). CF-specific diagnosis requires sweat chloride test and CFTR genotyping."
+                          },
+                          {
+                              "disease_code":  "ASTHMA",
+                              "distinguishing_feature":  "Asthma causes reversible wheeze without chronic sputum production or extrapulmonary manifestations. CF shows fixed obstructive or mixed pattern with HRCT bronchiectasis and positive sweat test."
+                          },
+                          {
+                              "disease_code":  "PRIMARY_IMMUNODEFICIENCY",
+                              "distinguishing_feature":  "Primary immunodeficiency causes recurrent sinopulmonary infections similar to CF but without pancreatic involvement or positive sweat test. Immunoglobulin levels and lymphocyte subsets are abnormal."
+                          }
+                      ],
+    "age_relevance":  "paediatric_and_young_adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001508"
+                  ],
+    "snomed_code":  "190905008",
+    "snomed_verified_name":  "Cystic fibrosis",
+    "icd10_code":  "E84.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cystic fibrosis, unspecified",
+    "evidence_ids":  [
+                         "EVD_RESP_014"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

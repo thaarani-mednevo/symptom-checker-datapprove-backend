@@ -1,0 +1,72 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_034",
+    "code":  "FEMALE_INFERTILITY_UNSPECIFIED",
+    "name":  "Female infertility, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Female infertility refers to infertility in women, which is the inability to conceive after sexual intercourse. In 2021, it affected an estimated 110 million women globally.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TRYING_TO_CONCEIVE_DURATION",
+                          "text":  "How many months have you been trying to conceive?",
+                          "purpose":  "Establish duration of subfertility",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Screen for ovulatory pattern",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "FEMALE_INFERTILITY_OF_OTHER_ORIGIN",
+                              "distinguishing_feature":  "Unspecified infertility has not yet been attributed to a specific origin, unlike \u0027other origin\u0027 where a cause outside tubal/uterine/anovulatory has been identified"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N97.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Female infertility, unspecified",
+    "evidence_ids":  [
+                         "EVID_FEMALE_INFERTILITY_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

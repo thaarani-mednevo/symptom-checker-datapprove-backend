@@ -1,0 +1,95 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_098",
+  "code": "EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS",
+  "name": "Epileptic seizures related to external causes, not intractable, without status epilepticus",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Epileptic seizures related to external causes, not intractable, without status epilepticus.",
+  "complaints": [
+    {
+      "code": "SEIZURES",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "FUNNY_TURNS",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BLACKOUTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SEIZURE_LIKE_EPISODES_WITHOUT_EEG_EVIDENCE_OF_EPILEPSY",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MAY_INCLUDE_UNRESPONSIVENESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SHAKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "OR_ALTERED_AWARENESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Prolonged seizure activity or failure to regain consciousness promptly following a provoked seizure, indicating potential progression to status epilepticus or acute intracranial emergency."
+    },
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] New or worsening focal neurological deficits following a seizure, such as severe hemiparalysis or Todd's paralysis that does not begin to resolve, suggesting an acute structural brain injury from the external cause."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G40.509",
+  "icd10_validated": true,
+  "icd10_official_description": "Epileptic seizures related to external causes, not intractable, without status epilepticus",
+  "evidence_ids": [
+    "EVID_EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

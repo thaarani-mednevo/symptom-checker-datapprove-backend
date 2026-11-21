@@ -1,0 +1,111 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_035",
+    "code":  "BIPOLAR_DISORDER_UNSPECIFIED",
+    "name":  "Bipolar disorder, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Bipolar disorder (BD), previously known as manic depression, is a mental disorder characterized by periods of depression and abnormally elevated mood, lasting days to weeks, and in some cases months. If the elevated mood is severe or associated with psychosis, it is called mania; if it does not significantly affect functioning, it is called hypomania.",
+    "complaints":  [
+                       {
+                           "code":  "ELEVATED_MOOD",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "MOOD_SWINGS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EMOTIONAL_DYSREGULATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SLEEP_DISTURBANCE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ENERGY_LEVEL_FLUCTUATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_BIPOLAR_DISORDER",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_TRAUMATIC_LIFE_EVENTS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SUBSTANCE_ABUSE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HIGH_STRESS_ENVIRONMENT",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BIPOLAR_ACUTE_MANIA_OR_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ELEVATED_MOOD",
+                          "condition":  "Severe agitation that feels out of control, or any current thoughts of self-harm — escalate immediately"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BIPOLAR_MANIA_SAFETY_CHECK",
+                          "text":  "Have you had a sudden, severe drop in your need for sleep along with impulsive or risky behavior, or any current thoughts of harming yourself?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BIPOLAR_DISORDER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "Distinguished by a history of at least one manic or hypomanic episode (elevated/irritable mood, decreased need for sleep, grandiosity, impulsivity) — unipolar depression has no such episode."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+                      "HP:0007302"
+                  ],
+    "snomed_code":  "13746004",
+    "snomed_verified_name":  "Bipolar disorder",
+    "icd10_code":  "F31.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Bipolar disorder, unspecified",
+    "evidence_ids":  [
+                         "EVID_BIPOLAR_DISORDER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

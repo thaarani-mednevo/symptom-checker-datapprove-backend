@@ -1,0 +1,156 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_022",
+    "code":  "OTHER_GIANT_CELL_ARTERITIS",
+    "name":  "Other giant cell arteritis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Giant cell arteritis (GCA), also called temporal arteritis, is an inflammatory autoimmune disease of large blood vessels. It is the most common type of systemic vasculitis affecting adults.",
+    "complaints":  [
+                       {
+                           "code":  "PHOTOPHOBIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIPLOPIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "TENDERNESS",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "JAW_PAIN",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE\u003e50",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "WHITE_ETHNICITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HLA_DRB1*04",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISIONLOSS_GCA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, unilateral vision loss or partial loss, especially if associated with headache or jaw claudication, indicating possible ischemic optic neuropathy."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_OR_DOUBLE",
+                          "text":  "[LLM DRAFT] Do you have sudden vision loss or double vision in one eye?",
+                          "purpose":  "visual symptoms of GCA",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_GIANT_CELL_ARTERITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_OR_TENDERNESS_WHEN_YOU",
+                          "text":  "[LLM DRAFT] Do you feel pain or tenderness when you touch your scalp or temples?",
+                          "purpose":  "scalp tenderness in GCA",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_GIANT_CELL_ARTERITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_NEW_SEVERE_HEADACHE_THAT",
+                          "text":  "[LLM DRAFT] Do you have a new, severe headache that started in the last few weeks?",
+                          "purpose":  "new severe headache in GCA",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_GIANT_CELL_ARTERITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M31.6",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other giant cell arteritis",
+    "evidence_ids":  [
+                         "EVID_OTHER_GIANT_CELL_ARTERITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "EYE_SWELLING",
+    "complaint_name":  "Eye swelling",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ES_001",
+                          "text":  "Is the swelling in the eyelid or around the eye?",
+                          "purpose":  "location",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EYE_SWELLING_LOCATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ES_002",
+                          "text":  "Is it red, warm, or painful?",
+                          "purpose":  "inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INFLAMED_SWELLING",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ES_003",
+                          "text":  "Is there protrusion of the eye itself?",
+                          "purpose":  "proptosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PROPTOSIS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ES_004",
+                          "text":  "Did it come on suddenly after an insect bite, allergy, or trauma?",
+                          "purpose":  "acute",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ACUTE_SWELLING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

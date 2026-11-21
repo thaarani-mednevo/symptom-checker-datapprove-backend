@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "THYROTOXICOSIS",
+    "complaint_name":  "Thyrotoxicosis",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_THYR_001",
+                                       "Have you lost weight despite increased appetite?",
+                                       "hypermetabolic",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "WEIGHT_LOSS_APPETITE",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_THYR_002",
+                          "text":  "Do you feel hot, sweat more than usual, or find warm environments uncomfortable?",
+                          "purpose":  "heat_intolerance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEAT_INTOLERANCE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_THYR_003",
+                          "text":  "Is your heart racing, pounding, or irregular?",
+                          "purpose":  "cardiac",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ARRHYTHMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PALPITATIONS_WITH_THYROTOXICOSIS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_THYR_004",
+                          "text":  "Do you have tremor, anxiety, or difficulty sleeping?",
+                          "purpose":  "neurological",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "THYROTOXICOSIS_NEUROLOGICAL",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_THYR_005",
+                          "text":  "Do you have a high fever, severe agitation, confusion, or very fast heart rate?",
+                          "purpose":  "storm_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "THYROID_STORM",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

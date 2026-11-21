@@ -1,0 +1,160 @@
+{
+  "module": "ent",
+  "red_flags": [
+    {
+      "code": "RF_SUDDEN_HEARING_LOSS",
+      "name": "Rf Sudden Hearing Loss",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_HEADACHE",
+      "name": "Rf Severe Headache",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_VISION_CHANGES",
+      "name": "Rf Vision Changes",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_NECK_PULSATING_MASS",
+      "name": "Rf Neck Pulsating Mass",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HYPERTENSION",
+      "name": "Rf Hypertension",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_DEFICIT",
+      "name": "Rf Neurological Deficit",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HEARING_LOSS",
+      "name": "Rf Hearing Loss",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PULSATING_BURST",
+      "name": "Rf Pulsating Burst",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_COAGULATION_ABNORMALITY",
+      "name": "Rf Coagulation Abnormality",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET",
+      "name": "Rf Sudden Onset",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_SYNDROME",
+      "name": "Rf Neurological Syndrome",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_BLOOD_PRESSURE",
+      "name": "Rf Blood Pressure",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PULSATING_TINNITUS",
+      "name": "Rf Pulsating Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HEAD_TRAUMA",
+      "name": "Rf Head Trauma",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OTOTOXIC_MEDICATION",
+      "name": "Rf Ototoxic Medication",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET_TINNITUS",
+      "name": "Rf Sudden Onset Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_EAR_FULLNESS",
+      "name": "Rf Ear Fullness",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_TINNITUS_VERTIGO",
+      "name": "Rf Tinnitus Vertigo",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_UNILATERAL_TINNITUS",
+      "name": "Rf Sudden Unilateral Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HEARING_LOSS_WITH_TINNITUS",
+      "name": "Rf Hearing Loss With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_VERTIGO_WITH_TINNITUS",
+      "name": "Rf Vertigo With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_EAR_DISCHARGE_WITH_TINNITUS",
+      "name": "Rf Ear Discharge With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_EAR_TRAUMA_WITH_TINNITUS",
+      "name": "Rf Ear Trauma With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_EAR_INFECTION_WITH_TINNITUS",
+      "name": "Rf Ear Infection With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_EAR_PRESSURE_WITH_TINNITUS",
+      "name": "Rf Ear Pressure With Tinnitus",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ACUTE_MASTOIDITIS",
+      "name": "Signs of Acute Mastoiditis",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_PERITONSILLAR_ABSCESS",
+      "name": "Signs of Peritonsillar Abscess",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_ORBITAL_CELLULITIS",
+      "name": "Signs of Orbital Cellulitis",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_NECROTIZING_OTITIS",
+      "name": "Signs of Necrotizing Otitis Externa",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_SEVERE_DEHYDRATION",
+      "name": "Severe Dehydration",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_UNILATERAL_HEARING_LOSS",
+      "name": "Rf Unilateral Hearing Loss",
+      "action": "PENDING_CLINICIAN_INPUT"
+    }
+  ]
+}

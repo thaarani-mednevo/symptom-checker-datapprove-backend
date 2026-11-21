@@ -1,0 +1,118 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_002",
+    "code":  "TRENCH_FEVER",
+    "name":  "Trench fever",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Trench fever is a moderately serious infectious disease caused by the bacterium Bartonella quintana and transmitted by body lice. From 1915 to 1918 between one-fifth and one-third of all British troops reported ill had trench fever while about one-fifth of ill German and Austrian troops had the disease.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INFECTED_INSECT_BITE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_CARDIAC_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Development of endocarditis signs such as new murmurs, chest pain, or acute heart failure."
+                      },
+                      {
+                          "code":  "RF_SEVERE_SEPSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "High persistent fever associated with hypotension, confusion, or organ dysfunction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TRENCH_FEVER_1",
+                          "text":  "Have you experienced recurring or relapsing fevers lasting several days at a time?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TRENCH_FEVER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_TRENCH_FEVER_2",
+                          "text":  "Have you recently lived in or spent time in conditions with louse infestation or crowded housing?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TRENCH_FEVER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_TRENCH_FEVER_3",
+                          "text":  "Do you have severe pain in your shins, often described as shin splints?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TRENCH_FEVER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "Q_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with atypical pneumonia and prominent hepatic involvement rather than vector-borne relapsing fevers associated with body lice."
+                          },
+                          {
+                              "disease_code":  "LASSA_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with rodent-to-human transmission via excreta in endemic West African regions, often presenting with pharyngitis and mucosal bleeding."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by a sustained stepwise fever, relative bradycardia, and gastrointestinal symptoms like constipation or pea-soup diarrhea."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "82214002",
+    "snomed_verified_name":  "Trench fever",
+    "icd10_code":  "A79.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Trench fever",
+    "evidence_ids":  [
+                         "EVID_TRENCH_FEVER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,85 @@
+﻿{
+  "id": "ENT_DIS_ENT_014",
+  "code": "ALLERGIC_RHINITIS",
+  "name": "Allergic rhinitis",
+  "module": "ent",
+  "category": "disease",
+  "description": "Allergic rhinitis, of which the seasonal type is called hay fever, is a type of inflammation in the nose that occurs when the immune system overreacts to allergens in the air. It is classified as a type I hypersensitivity reaction.",
+  "complaints": [
+    {
+      "code": "NASAL_CONGESTION",
+      "relationship": "common",
+      "priority": ""
+    },
+    {
+      "code": "RHINORRHOEA",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "NASAL_CONGESTION",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    },
+    {
+      "code": "RHINORRHOEA",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    },
+    {
+      "code": "SNEEZING",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "NASAL_ITCHING",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ATOPY",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "FAMILY_HISTORY_ALLERGY",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "POLLEN_EXPOSURE",
+      "strength": "ai_drafted_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "61582004",
+  "snomed_verified_name": "Allergic rhinitis",
+  "icd10_code": "J30.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Allergic rhinitis, unspecified",
+  "evidence_ids": [
+    "EVID_ALLERGIC_RHINITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

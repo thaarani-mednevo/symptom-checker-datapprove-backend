@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "EAR_PAIN",
+    "complaint_name":  "Ear pain",
+    "module":  "ent",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_EP_001",
+                          "text":  "Is the pain in one ear or both, and when did it start?",
+                          "purpose":  "onset",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EAR_PAIN_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EP_002",
+                          "text":  "Is there any discharge from the ear?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EAR_DISCHARGE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EP_003",
+                          "text":  "Have you had a recent cold, cough, or sore throat?",
+                          "purpose":  "urti",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RECENT_URTI",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_EP_004",
+                          "text":  "Is there pain behind the ear, redness, or swelling?",
+                          "purpose":  "mastoiditis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MASTOIDITIS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_EP_005",
+                          "text":  "Do you have hearing loss or ringing in the ear?",
+                          "purpose":  "hearing",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "HEARING_LOSS_WITH_OTALGIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,115 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_033",
+  "code": "PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS",
+  "name": "Parkinson's disease without dyskinesia, with fluctuations",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Parkinson's disease (PD), or simply Parkinson's, is a neurodegenerative disease primarily of the central nervous system, affecting both motor and non-motor systems. The motor symptoms, collectively called parkinsonism, include tremors, slowness in initiating movement (bradykinesia), rigidity, and difficulty maintaining balance.",
+  "complaints": [
+    {
+      "code": "DRY_MOUTH",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "BOWEL_DYSFUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "SMELL_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "SPEECH_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_MOVEMENTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MOTOR_FLUCTUATIONS_WEARING_OFF",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "BRADYKINESIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "RESTING_TREMOR",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "RIGIDITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "GAIT_FREEZING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G20.A2",
+  "icd10_validated": true,
+  "icd10_official_description": "Parkinson's disease without dyskinesia, with fluctuations",
+  "evidence_ids": [
+    "EVID_PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

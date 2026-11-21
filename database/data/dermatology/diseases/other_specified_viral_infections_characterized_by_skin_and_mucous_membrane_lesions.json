@@ -1,0 +1,81 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_HB_004",
+    "code":  "OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS",
+    "name":  "Other specified viral infections characterized by skin and mucous membrane lesions",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "A viral infection presenting with characteristic skin and mucous membrane lesions, not otherwise specified.",
+    "complaints":  [
+                       {
+                           "code":  "SKIN_LESIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_FEVER",
+                          "text":  "Do you have fever or feel significantly unwell along with the skin problem?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SYSTEMIC_ILLNESS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_MUCOSA",
+                          "text":  "Are there sores or painful lesions in the mouth, eyes, or genital area?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MUCOSAL_INVOLVEMENT)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "all_sexes",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "B08.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified viral infections characterized by skin and mucous membrane lesions",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

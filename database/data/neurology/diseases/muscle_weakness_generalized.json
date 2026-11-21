@@ -1,0 +1,89 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_088",
+  "code": "MUSCLE_WEAKNESS_GENERALIZED",
+  "name": "Muscle weakness (generalized)",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Muscle weakness is a lack of muscle strength. Its causes are numerous and can be divided into conditions associated with either true or perceived muscle weakness.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FATIGUE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "MYALGIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "DIFFICULTY_WALKING",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "REDUCED_MUSCLE_BULK",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "chronic",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "MALNUTRITION",
+      "strength": "moderate"
+    },
+    {
+      "code": "ELECTROLYTE_IMBALANCE",
+      "strength": "strong"
+    },
+    {
+      "code": "SEDENTARY_LIFESTYLE",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "1137501002",
+  "snomed_verified_name": "Generalized muscle weakness",
+  "icd10_code": "M62.81",
+  "icd10_validated": true,
+  "icd10_official_description": "Muscle weakness (generalized)",
+  "evidence_ids": [
+    "EVID_MUSCLE_WEAKNESS_GENERALIZED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

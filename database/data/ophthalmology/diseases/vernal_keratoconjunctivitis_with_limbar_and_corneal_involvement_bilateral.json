@@ -1,0 +1,146 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_020",
+    "code":  "VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL",
+    "name":  "Vernal keratoconjunctivitis, with limbar and corneal involvement, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Vernal keratoconjunctivitis is a recurrent, bilateral, and self-limiting type of conjunctivitis having a periodic seasonal incidence.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_ITCHING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INTENSE_ITCHING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "TEARING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SUBEPITHELIAL_CORNEAL_INFILTRATES",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HORNER_TRANTAS_DOTS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ATOPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ATOPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "AGE_IN_CHILDREN",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision in one or both eyes due to corneal ulceration or perforation"
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with redness and photophobia indicating possible corneal ulceration or perforation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_INTENSE_ITCHING_IN_BOTH_EYES",
+                          "text":  "[LLM DRAFT] Do you have intense itching in both eyes?",
+                          "purpose":  "bilateral itching",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_A_THICK_STICKY_DISCHARGE_THAT",
+                          "text":  "[LLM DRAFT] Is there a thick, sticky discharge that makes it hard to open your eyes?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_OR_SENSITIVITY_TO_LIGHT",
+                          "text":  "[LLM DRAFT] Do you feel pain or sensitivity to light in both eyes?",
+                          "purpose":  "photophobia/pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H16.263",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vernal keratoconjunctivitis, with limbar and corneal involvement, bilateral",
+    "evidence_ids":  [
+                         "EVID_VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,60 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_057",
+  "code": "TRANSIENT_VISUAL_LOSS_BILATERAL",
+  "name": "Transient visual loss, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Bilateral transient visual loss is a brief, reversible loss of vision in both eyes, often lasting seconds to minutes, associated with transient ischemia or neurological events.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "TEMPORARY_FLEETING_OF_VISION_IN_ONE_OR_BOTH_EYES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "MIGRAINE",
+      "strength": "strong"
+    },
+    {
+      "code": "VERTEBROBASILAR_INSUFFICIENCY",
+      "strength": "strong"
+    },
+    {
+      "code": "ELEVATED_INTRACRANIAL_PRESSURE",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPOTENSION",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "343201000119104",
+  "snomed_verified_name": "Bilateral transient visual loss",
+  "icd10_code": "H53.123",
+  "icd10_validated": true,
+  "icd10_official_description": "Transient visual loss, bilateral",
+  "evidence_ids": [
+    "EVID_TRANSIENT_VISUAL_LOSS_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

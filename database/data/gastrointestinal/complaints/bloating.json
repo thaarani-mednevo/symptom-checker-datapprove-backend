@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_009",
+  "code": "BLOATING",
+  "name": "Bloating",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Abdominal bloating is a short-term disease that affects the gastrointestinal tract. Bloating is generally characterized by an excess buildup of gas, air or fluids in the stomach.",
+  "hpo_codes": [],
+  "snomed_code": "116289008",
+  "snomed_verified_name": "Abdominal bloating",
+  "icd10_code": "R14.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Abdominal distension (gaseous)",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

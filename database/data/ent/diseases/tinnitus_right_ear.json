@@ -1,0 +1,176 @@
+﻿{
+    "id":  "ENT_DIS_HB_002",
+    "code":  "TINNITUS_RIGHT_EAR",
+    "name":  "Tinnitus, right ear",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+    "complaints":  [
+                       {
+                           "code":  "TINNITUS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NOISE_INDUCED_HEARING_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EAR_INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MÉNIÈRES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BRAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VESTIBULAR_SCHWANNOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CHOLESTEATOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMATIC_BRAIN_INJURY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EXCESSIVE_EARWAX",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_ONSET_TINNITUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Right_Ear_Complaint",
+                          "condition":  "Sudden onset unilateral tinnitus with hearing loss may indicate acoustic neuroma or sudden sensorineural hearing loss."
+                      },
+                      {
+                          "code":  "RF_PULSATING_TINNITUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Right_Ear_Complaint",
+                          "condition":  "Pulsatile tinnitus may indicate vascular malformation or carotid artery disease."
+                      },
+                      {
+                          "code":  "RF_EAR_FULLNESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Right_Ear_Complaint",
+                          "condition":  "Ear fullness or pain may indicate middle ear effusion or otitis media."
+                      },
+                      {
+                          "code":  "RF_TINNITUS_VERTIGO",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Right_Ear_Complaint",
+                          "condition":  "Tinnitus accompanied by vertigo may indicate Meniere\u0027s disease or vestibular schwannoma."
+                      },
+                      {
+                          "code":  "RF_HEAD_TRAUMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Right_Ear_Complaint",
+                          "condition":  "Recent head trauma with tinnitus may indicate inner ear injury or acoustic neuroma."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SUDDEN_ONSET",
+                          "text":  "Did the pulsatile tinnitus start suddenly?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUDDEN_ONSET)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TINNITUS_RIGHT_EAR_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PULSATING",
+                          "text":  "Is the tinnitus pulsatile, following your heartbeat?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PULSATING_TINNITUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TINNITUS_RIGHT_EAR_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_EAR_FULLNESS",
+                          "text":  "Do you have any ear fullness, pain, or discharge?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_EAR_FULLNESS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TINNITUS_RIGHT_EAR_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VERTIGO",
+                          "text":  "Have you experienced any dizziness or vertigo along with the tinnitus?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_TINNITUS_VERTIGO)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TINNITUS_RIGHT_EAR_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HEAD_TRAUMA",
+                          "text":  "Have you had any head or neck injury in the past month?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_HEAD_TRAUMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "TINNITUS_RIGHT_EAR_SYMPTOM_5",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "60862001",
+    "snomed_verified_name":  "Tinnitus",
+    "icd10_code":  "H93.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Tinnitus, right ear",
+    "evidence_ids":  [
+                         "EVID_TINNITUS_RIGHT_EAR"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

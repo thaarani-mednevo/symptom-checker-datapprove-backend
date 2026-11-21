@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_039",
+  "code": "PERSONALITY_CHANGE_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION",
+  "name": "Personality change due to known physiological condition",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Personality change refers to the different forms of change in various aspects of personality. An individual's personality may stay somewhat consistent throughout their life, though there is evidence that an individual's personality can change throughout their lifetime.",
+  "complaints": [
+    {
+      "code": "PERSONALITY_CHANGE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EMOTIONAL_LABILITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "APATHY_AND_INDIFFERENCE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "IMPULSIVE_BEHAVIORS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "SUSPICIOUSNESS_OR_PARANOIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "CEREBROVASCULAR_DISEASE",
+      "strength": "strong"
+    },
+    {
+      "code": "TRAUMATIC_BRAIN_INJURY",
+      "strength": "strong"
+    },
+    {
+      "code": "CENTRAL_NERVOUS_SYSTEM_INFECTION",
+      "strength": "moderate"
+    },
+    {
+      "code": "BRAIN_NEOPLASM",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "F07.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Personality change due to known physiological condition",
+  "evidence_ids": [
+    "EVID_PERSONALITY_CHANGE_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

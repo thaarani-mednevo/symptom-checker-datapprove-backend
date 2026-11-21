@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DRY_MOUTH",
+    "complaint_name":  "Dry mouth",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DM_001",
+                          "text":  "Is it constant or intermittent?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRY_MOUTH_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DM_002",
+                          "text":  "Do you also have dry eyes?",
+                          "purpose":  "sicca",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SICCA_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DM_003",
+                          "text":  "Are you taking anticholinergics, antidepressants, or diuretics?",
+                          "purpose":  "drug",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRUG_DRY_MOUTH",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DM_004",
+                          "text":  "Do you have joint pains, fatigue, or a rash?",
+                          "purpose":  "autoimmune",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SJOGREN_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

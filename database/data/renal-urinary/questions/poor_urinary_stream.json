@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POOR_URINARY_STREAM",
+    "complaint_name":  "Poor urinary stream",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PUS_001",
+                          "text":  "Is the stream weak, interrupted, or takes a long time to start?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POOR_STREAM_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PUS_002",
+                          "text":  "Are you a male over 50?",
+                          "purpose":  "bph_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BPH_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PUS_003",
+                          "text":  "Do you feel you have not fully emptied your bladder after passing urine?",
+                          "purpose":  "incomplete",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INCOMPLETE_EMPTYING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PUS_004",
+                          "text":  "Is there blood in the urine?",
+                          "purpose":  "haematuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "HAEMATURIA_WITH_POOR_STREAM",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

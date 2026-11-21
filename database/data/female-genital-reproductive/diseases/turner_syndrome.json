@@ -1,0 +1,62 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_050",
+    "code":  "TURNER_SYNDROME",
+    "name":  "Turner syndrome",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Turner syndrome (TS), commonly known as 45,X, or 45,X0, is a chromosomal disorder in which cells of females have only one X chromosome instead of two, or are partially missing an X chromosome leading to the complete or partial deletion of the in the affected X chromosome.",
+    "complaints":  [
+                       {
+                           "code":  "DELAYED_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_TURNER_CARDIAC_RISK",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "TURNER_SYNDROME",
+                          "condition":  "Suspected/confirmed Turner syndrome with cardiac symptoms or murmur"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BREAST_DEVELOPMENT_STARTED",
+                          "text":  "Has any breast development begun?",
+                          "purpose":  "Assess pubertal development",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TURNER_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "38804009",
+    "snomed_verified_name":  "Turner syndrome",
+    "icd10_code":  "Q96.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Turner\u0027s syndrome, unspecified",
+    "evidence_ids":  [
+                         "EVID_TURNER_SYNDROME"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

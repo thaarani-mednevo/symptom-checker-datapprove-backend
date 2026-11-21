@@ -1,0 +1,85 @@
+{
+  "complaint_code": "PALPITATIONS",
+  "complaint_name": "Palpitations",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "description": "Shared intake questions for palpitations.",
+  "questions": [
+    {
+      "code": "Q_CMP_PAL_001",
+      "text": "How would you describe the palpitations — is the heartbeat fast, slow, irregular, or just forceful?",
+      "purpose": "characterisation",
+      "answer_type": "multiple_choice",
+      "options": ["Fast and regular", "Fast and irregular", "Slow", "Irregular or skipped beats", "Forceful but normal rate"],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "PALPITATION_CHARACTER",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_PAL_002",
+      "text": "How long do episodes last — seconds, minutes, or hours?",
+      "purpose": "duration",
+      "answer_type": "multiple_choice",
+      "options": ["Seconds", "Minutes", "Hours", "Constant"],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "PALPITATION_DURATION",
+      "yes_weight": 0,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_PAL_003",
+      "text": "Do the palpitations start and stop suddenly?",
+      "purpose": "onset_pattern",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ARRHYTHMIA)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "SUDDEN_ONSET_OFFSET",
+      "yes_weight": 2,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_CMP_PAL_004",
+      "text": "Have you fainted or nearly fainted during an episode of palpitations?",
+      "purpose": "red_flag_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "SYNCOPE_WITH_PALPITATIONS",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PAL_005",
+      "text": "Do you have chest pain or breathlessness during the palpitations?",
+      "purpose": "associated_symptoms",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ARRHYTHMIA)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "CHEST_PAIN_WITH_PALPITATIONS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PAL_006",
+      "text": "Do you notice palpitations triggered by caffeine, alcohol, or stress?",
+      "purpose": "trigger_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "LIFESTYLE_TRIGGER",
+      "yes_weight": -1,
+      "no_weight": 1
+    }
+  ]
+}

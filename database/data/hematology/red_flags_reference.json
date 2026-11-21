@@ -1,0 +1,225 @@
+{
+  "module": "hematology",
+  "red_flags": [
+    {
+      "code": "RF_ANEMIA",
+      "name": "ANEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BLEEDING",
+      "name": "BLEEDING",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_THROMBOCYTOPENIA_LEADING_TO_LIFE_THREATENING_HEMORRHAGE",
+      "name": "Severe thrombocytopenia leading to life-threatening hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_NEUTROPENIA_COMPLICATED_BY_OVERWHELMING_SEPSIS",
+      "name": "Severe neutropenia complicated by overwhelming sepsis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BLEEDING_CRISIS",
+      "name": "bleeding_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_THROMBOTIC_EVENT",
+      "name": "acute_thrombotic_event",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_GI_HEMORRHAGE",
+      "name": "ACUTE_GI_HEMORRHAGE",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_SYMPTOMATIC_ANEMIA",
+      "name": "SEVERE_SYMPTOMATIC_ANEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_LIMB_ISCHEMIA",
+      "name": "acute_limb_ischemia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ARTERIAL_OCCLUSION",
+      "name": "acute_arterial_occlusion",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_AORTIC_THROMBOSIS_CAUSING_ACUTE_LIMB_ISCHEMIA_OR_VISCERALRENAL_INFARCTION",
+      "name": "Aortic thrombosis causing acute limb ischemia or visceral/renal infarction",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HEMORRHAGIC_TRANSFORMATION_OR_RUPTURE",
+      "name": "hemorrhagic_transformation_or_rupture",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_MASSIVE_GASTROINTESTINAL_HEMORRHAGE",
+      "name": "massive_gastrointestinal_hemorrhage",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_ACUTE_ANEMIA_FROM_VARICEAL_BLEED",
+      "name": "severe_acute_anemia_from_variceal_bleed",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THROMBOSIS",
+      "name": "THROMBOSIS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_BONE_MARROW_FAILURE_AND_THROMBOCYTOPENIA",
+      "name": "Severe bone marrow failure and thrombocytopenia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_NEUTROPENIA_WITH_SEPSIS",
+      "name": "Severe neutropenia with sepsis",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_BLEEDING_MANIFESTATIONS",
+      "name": "Severe bleeding manifestations",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_NEUTROPENIC_FEVER",
+      "name": "Severe neutropenic fever",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_LIMB_ISCHEMIA_OR_DEEP_VEIN_THROMBOSIS",
+      "name": "Acute limb ischemia or deep vein thrombosis",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_ACUTE_GASTROINTESTINAL_OR_MUCOSAL_HEMORRHAGE",
+      "name": "Severe acute gastrointestinal or mucosal hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THROMBOSIS_PRESENTATION",
+      "name": "thrombosis_presentation",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BLEEDING_DIATHESIS",
+      "name": "bleeding_diathesis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SPLENIC_RUPTURE_WITH_MASSIVE_INTERNAL_HEMORRHAGE",
+      "name": "Splenic rupture with massive internal hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_OVERWHELMING_SEPSIS",
+      "name": "Severe overwhelming sepsis",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_THROMBOEMBOLIC_EVENT",
+      "name": "thromboembolic_event",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_HEMORRHAGE",
+      "name": "acute_hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ARTERIAL_OR_VENOUS_THROMBOSIS",
+      "name": "Acute arterial or venous thrombosis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_MAJOR_BLEEDING_MANIFESTATION",
+      "name": "Major bleeding manifestation",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_VARICEAL_BLEEDING",
+      "name": "acute_variceal_bleeding",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_MESENTERIC_ISCHEMIA",
+      "name": "acute_mesenteric_ischemia",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_HEMORRHAGIC_SHOCK",
+      "name": "HEMORRHAGIC_SHOCK",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SEVERE_THROMBOCYTOPENIC_HEMORRHAGE",
+      "name": "severe_thrombocytopenic_hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_FEBRILE_NEUTROPENIA",
+      "name": "febrile_neutropenia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_HEMORRHAGE",
+      "name": "Severe hemorrhage",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THROMBOSIS_EMERGENCY",
+      "name": "thrombosis_emergency",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BLEEDING_EMERGENCY",
+      "name": "bleeding_emergency",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PERIANAL_VENOUS_THROMBOSIS_BLEEDING",
+      "name": "PERIANAL_VENOUS_THROMBOSIS_BLEEDING",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PERIANAL_VENOUS_THROMBOSIS_SEPSIS",
+      "name": "PERIANAL_VENOUS_THROMBOSIS_SEPSIS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_MASSIVE_BLEEDING",
+      "name": "Acute massive bleeding",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_OVULATION_BLEEDING_HEAVY_BLEEDING",
+      "name": "OVULATION_BLEEDING_HEAVY_BLEEDING",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_OVULATION_BLEEDING_ANEMIA",
+      "name": "OVULATION_BLEEDING_ANEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SUPPURATIVE_LYMPHADENITIS_ABSCESS",
+      "name": "Suppurative_Lymphadenitis_Abscess",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RUPTURED_NODE_BLEEDING",
+      "name": "Ruptured_Node_Bleeding",
+      "action": "CALL_EMERGENCY_SERVICES"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_006",
+  "code": "PHOTOSENSITIVITY",
+  "name": "Photosensitivity",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "In medicine, photosensitivity is an abnormal reaction of the skin to light. There are two types: photoallergy and phototoxicity.",
+  "hpo_codes": [],
+  "snomed_code": "90128006",
+  "snomed_verified_name": "Photosensitivity",
+  "icd10_code": "L56.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified acute skin changes due to ultraviolet radiation",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

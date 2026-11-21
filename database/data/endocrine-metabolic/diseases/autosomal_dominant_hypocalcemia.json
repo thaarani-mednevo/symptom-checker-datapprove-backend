@@ -1,0 +1,81 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_036",
+    "code":  "AUTOSOMAL_DOMINANT_HYPOCALCEMIA",
+    "name":  "Autosomal dominant hypocalcemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A genetic disorder characterized by low serum calcium, high serum phosphate, and low urinary calcium excretion due to activating mutations in the calcium-sensing receptor or GNA11 gene.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOCALCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOCALCEMIC_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOCALCEMIA",
+                          "condition":  "[LLM DRAFT] Severe symptomatic hypocalcemia presenting with carpopedal spasm, tetany, laryngospasm, or generalized seizures requiring immediate intravenous calcium administration."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SUDDEN_MUSCLE_SPASM",
+                          "text":  "[LLM DRAFT] Have you experienced sudden muscle spasms, cramps, or a tingling sensation in your hands, feet, or face?",
+                          "purpose":  "Screens for hypocalcemia symptoms like tetany and paresthesia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AUTOSOMAL_DOMINANT_HYPOCALCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EVER_HAD_A_SEIZURE_OR_A_BLACK_O",
+                          "text":  "[LLM DRAFT] Have you ever had a seizure or a black-out episode related to low calcium levels?",
+                          "purpose":  "Screens for severe neurological complications of hypocalcemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "AUTOSOMAL_DOMINANT_HYPOCALCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents in neonates secondary to high phosphate load from cow\u0027s milk formula rather than an inherited genetic defect in the calcium-sensing receptor."
+                          },
+                          {
+                              "disease_code":  "OTHER_NEONATAL_HYPOCALCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Encompasses transient causes of low calcium in newborns, such as prematurity or maternal diabetes, distinguished by lack of a lifelong autosomal dominant family history."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "711152006",
+    "snomed_verified_name":  "Autosomal dominant hypocalcemia",
+    "icd10_code":  "E20.810",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Autosomal dominant hypocalcemia",
+    "evidence_ids":  [
+                         "EVID_AUTOSOMAL_DOMINANT_HYPOCALCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

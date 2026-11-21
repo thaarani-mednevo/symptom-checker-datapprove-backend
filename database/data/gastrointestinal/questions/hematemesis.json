@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "HEMATEMESIS",
+    "complaint_name":  "Hematemesis",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HAEM_001",
+                          "text":  "Is there active vomiting of blood right now?",
+                          "purpose":  "active",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACTIVE_HAEMATEMESIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_002",
+                          "text":  "Is the vomit bright red or coffee-ground in appearance?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HAEMATEMESIS_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_003",
+                          "text":  "Do you feel dizzy, faint, or have you lost consciousness?",
+                          "purpose":  "shock",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HAEMORRHAGIC_SHOCK",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_004",
+                          "text":  "Do you have known liver disease, varices, or take blood thinners?",
+                          "purpose":  "risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "UPPER_GI_BLEED_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ]
+}

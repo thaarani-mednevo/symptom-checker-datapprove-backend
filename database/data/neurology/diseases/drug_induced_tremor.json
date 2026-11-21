@@ -1,0 +1,94 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_086",
+  "code": "DRUG_INDUCED_TREMOR",
+  "name": "Drug-induced tremor",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Drug-induced tremor.",
+  "complaints": [
+    {
+      "code": "TREMOR",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_MOVEMENTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "RESTING_TREMOR",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "ACTION_TREMOR",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "PARKINSONIAN_RIGIDITY",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "moderate"
+    },
+    {
+      "code": "HIGH_DOSAGE_OR_RAPID_TITRATION_OF_CULPRIT_DRUGS",
+      "strength": "strong"
+    },
+    {
+      "code": "PRE_EXISTING_ESSENTIAL_TREMOR_OR_PARKINSONS_DISEASE",
+      "strength": "strong"
+    },
+    {
+      "code": "POLYPHARMACY_AND_CONCURRENT_USE_OF_MULTIPLE_TREMOR_INDUCING_AGENTS",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SERIOUS_DRUG_INDUCED_PARKINSONISM",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Severe extrapyramidal symptoms or acute drug-induced parkinsonism leading to severe immobility, rigidity, or swallowing difficulties."
+    },
+    {
+      "code": "RF_SERIOUS_DRUG_INDUCED_NEUROLOGICAL_CRISIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Severe acute neurological deterioration associated with offending medications, manifesting as generalized seizures or status epilepticus."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "31430005",
+  "snomed_verified_name": "Medication-induced postural tremor",
+  "icd10_code": "G25.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Drug-induced tremor",
+  "evidence_ids": [
+    "EVID_DRUG_INDUCED_TREMOR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

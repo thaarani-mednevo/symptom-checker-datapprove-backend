@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "VULVAL_SORENESS",
+    "complaint_name":  "Vulval soreness",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_VUL_001",
+                          "text":  "Is there itching, burning, pain, or all three?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VULVAL_SYMPTOM",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VUL_002",
+                          "text":  "Is there a visible rash, ulcer, lump, or skin change?",
+                          "purpose":  "lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VULVAL_LESION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VUL_003",
+                          "text":  "Is there vaginal discharge?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VULVAL_WITH_DISCHARGE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VUL_004",
+                          "text":  "Have you had a new sexual partner or unprotected sex?",
+                          "purpose":  "sti_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "STI_EXPOSURE_WITH_VULVAL",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VUL_005",
+                          "text":  "Is there an ulcer that is persistent for more than 2 weeks?",
+                          "purpose":  "persistent",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_VULVAL_ULCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PERSISTENT_VULVAL_ULCER",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

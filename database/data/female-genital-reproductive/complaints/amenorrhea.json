@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_008",
+  "code": "AMENORRHEA",
+  "name": "Amenorrhea",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Amenorrhea or amenorrhoea is the absence of a menstrual period in a female organism which has reached reproductive age. Physiological states of amenorrhea are most commonly seen during pregnancy and lactation (breastfeeding).",
+  "hpo_codes": [],
+  "snomed_code": "14302001",
+  "snomed_verified_name": "Amenorrhea",
+  "icd10_code": "N91.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Amenorrhea, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

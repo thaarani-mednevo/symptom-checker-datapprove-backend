@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_015",
+    "code":  "VULVODYNIA_UNSPECIFIED",
+    "name":  "Vulvodynia, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Vulvodynia is a chronic pain condition that affects the vulvar area and occurs without an identifiable cause. Symptoms typically include a feeling of burning or irritation.",
+    "complaints":  [
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SYMPTOM_DURATION_CHRONIC",
+                          "text":  "Have the symptoms been present for more than 3 months?",
+                          "purpose":  "Confirm chronic pain criteria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VULVODYNIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N94.819",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vulvodynia, unspecified",
+    "evidence_ids":  [
+                         "EVID_VULVODYNIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

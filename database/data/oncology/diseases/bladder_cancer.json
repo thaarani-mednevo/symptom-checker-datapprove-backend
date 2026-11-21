@@ -1,0 +1,156 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_013",
+    "code":  "BLADDER_CANCER",
+    "name":  "Bladder cancer",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Bladder cancer is the most common malignancy of the urinary tract, with urothelial (transitional cell) carcinoma accounting for over 90% of cases. The hallmark presentation is painless frank haematuria, which must be assumed malignant until proven otherwise. Irritative bladder symptoms (frequency, urgency, dysuria) may also occur, particularly in carcinoma in situ (CIS). Risk factors include smoking (responsible for ~50% of cases), occupational exposure to aromatic amines (dyes, rubber), cyclophosphamide use, and chronic bladder inflammation. Upper tract urothelial carcinoma can occur concurrently and requires investigation.",
+    "complaints":  [
+                       {
+                           "code":  "HAEMATURIA_ONCOLOGY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAINLESS_HAEMATURIA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "URINARY_FREQUENCY",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PELVIC_PAIN",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "OCCUPATIONAL_AROMATIC_AMINE_EXPOSURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OLDER_AGE_MALE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CYCLOPHOSPHAMIDE_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CHRONIC_BLADDER_INFLAMMATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SCHISTOSOMIASIS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HAEMATURIA_ONCOLOGY",
+                          "condition":  "Any episode of painless frank haematuria in an adult — urgent urology referral for cystoscopy"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_BC_001",
+                          "text":  "Have you noticed blood in your urine (making it pink, red, or brown) even if it only happened once?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLADDER_CANCER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_BC_002",
+                          "text":  "Was the blood in your urine painless — not associated with burning or pain?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BLADDER_CANCER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_ONC_BC_003",
+                          "text":  "Do you smoke or have you smoked cigarettes in the past?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ELEVATED_CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BLADDER_CANCER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "URINARY_TRACT_INFECTION",
+                              "distinguishing_feature":  "UTI causes dysuria, frequency, and painful haematuria with pyuria on dipstick. Bladder cancer typically causes painless haematuria without infective features."
+                          },
+                          {
+                              "disease_code":  "RENAL_CELL_CARCINOMA",
+                              "distinguishing_feature":  "RCC causes haematuria with flank pain and a palpable mass; imaging shows a renal mass. Bladder cancer is confirmed by cystoscopy with biopsy."
+                          },
+                          {
+                              "disease_code":  "BENIGN_PROSTATIC_HYPERPLASIA",
+                              "distinguishing_feature":  "BPH causes obstructive lower urinary tract symptoms and may cause haematuria, but cystoscopy and upper tract imaging are needed to exclude malignancy in any adult with haematuria."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+                      "HP:0009725"
+                  ],
+    "snomed_code":  "399326009",
+    "snomed_verified_name":  "Carcinoma of urinary bladder",
+    "icd10_code":  "C67.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of bladder, unspecified",
+    "evidence_ids":  [
+                         "EVD_ONC_013"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,143 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_022",
+    "code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+    "name":  "Hypothyroidism due to medicaments and other exogenous substances",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypothyroidism is an endocrine disease in which the thyroid gland does not produce enough thyroid hormones. It can cause a number of symptoms, such as poor ability to tolerate cold, extreme fatigue, muscle aches, constipation, slow heart rate, depression, and weight gain.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POOR_ABILITY_TO_TOLERATE_COLD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_ACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_GAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HASHIMOTOS_THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SURGICAL_REMOVAL_OF_THYROID_GLAND",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "IODINE_DEFICIENCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LITHIUM_TREATMENT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOTHEMIA_AND_MYXEDEMA_COMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe drug-induced hypothyroidism progressing to altered mental status, hypothermia, and myxedema coma requiring immediate resuscitation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_TAKING_LITHIUM_AMIODA",
+                          "text":  "[LLM DRAFT] Are you currently taking lithium, amiodarone, or medications to treat an overactive thyroid?",
+                          "purpose":  "Screens for causative medications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_NOTICED_PERSISTENT_FAT",
+                          "text":  "[LLM DRAFT] Have you recently noticed persistent fatigue, weight gain, and unusual sensitivity to cold along with a slow heart rate?",
+                          "purpose":  "Screens for severe hypothyroidism symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Absence of a clearly identifiable history of causative medication or exogenous substance exposure"
+                          },
+                          {
+                              "disease_code":  "POSTPROCEDURAL_HYPOTHYROIDISM",
+                              "distinguishing_feature":  "[LLM DRAFT] History of prior thyroid surgery, radioactive iodine therapy, or external neck radiation rather than exogenous agents"
+                          },
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of autoimmune markers and an initial phase of excess thyroid hormone rather than isolated drug-induced underactivity"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E03.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypothyroidism due to medicaments and other exogenous substances",
+    "evidence_ids":  [
+                         "EVID_HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "FOAMY_URINE",
+    "complaint_name":  "Foamy urine",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_FOA_001",
+                          "text":  "Is the foam persistent and present each time you pass urine?",
+                          "purpose":  "pattern",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FOAMY_URINE_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FOA_002",
+                          "text":  "Do you have ankle or facial swelling?",
+                          "purpose":  "proteinuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OEDEMA_WITH_FOAMY_URINE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FOA_003",
+                          "text":  "Do you have diabetes or high blood pressure?",
+                          "purpose":  "renal_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RENAL_RISK_FACTORS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_FOA_004",
+                          "text":  "Have you had foamy urine for weeks or more?",
+                          "purpose":  "duration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CHRONIC_FOAMY_URINE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

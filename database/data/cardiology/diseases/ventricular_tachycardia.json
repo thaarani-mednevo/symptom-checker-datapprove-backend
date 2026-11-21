@@ -1,0 +1,127 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_006",
+    "code":  "VENTRICULAR_TACHYCARDIA",
+    "name":  "Ventricular Tachycardia",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Ventricular tachycardia is a rapid heart rhythm originating from the ventricles that can lead to hemodynamic instability and sudden cardiac death.",
+    "complaints":  [
+                       {
+                           "code":  "PALPITATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HEMODYNAMIC_INSTABILITY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREVIOUS_MI",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CORONARY_ARTERY_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CARDIOMYOPATHY_HISTORY",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPITATIONS",
+                          "condition":  "Palpitations with syncope — treat as emergency until proven otherwise"
+                      },
+                      {
+                          "code":  "RED_CARD_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SYNCOPE",
+                          "condition":  "Syncope during exertion — urgent cardiovascular evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_009",
+                          "text":  "Do your heartbeats feel irregular, very fast, or fluttering?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ARRHYTHMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VENTRICULAR_TACHYCARDIA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VENTRICULAR_TACHYCARDIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SUPRAVENTRICULAR_TACHYCARDIA",
+                              "distinguishing_feature":  "VT is wide-complex and frequently unstable; SVT is narrow-complex and usually stable."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0004756"
+                  ],
+    "snomed_code":  "25569003",
+    "snomed_verified_name":  "Ventricular tachycardia",
+    "icd10_code":  "I47.2",
+    "icd10_validated":  false,
+    "icd10_official_description":  null,
+    "evidence_ids":  [
+                         "EVD_CARD_006"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

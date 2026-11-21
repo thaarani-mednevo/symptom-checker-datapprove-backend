@@ -1,0 +1,116 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_026",
+    "code":  "CHRONIC_IDIOPATHIC_CONSTIPATION",
+    "name":  "Chronic idiopathic constipation",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Functional constipation, also known as chronic idiopathic constipation (CIC), is defined by less than three bowel movements per week, hard stools, severe straining, the sensation of anorectal blockage, the feeling of incomplete evacuation, and the need for manual maneuvers during feces, without organic abnormalities. Many illnesses, including endocrine, metabolic, neurological, mental, and gastrointestinal obstructions, can cause constipation as a secondary symptom.",
+    "complaints":  [
+                       {
+                           "code":  "CONSTIPATION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HARD_OR_LUMPY_STOOLS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DECREASED_FREQUENCY_OF_BOWEL_MOVEMENTS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "A_FEELING_OF_INCOMPLETE_EVACUATION_OR_OBSTRUCTION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRAINING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STOMACH_PAIN_AND_BLOATING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_015",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECTAL_PAIN",
+                          "condition":  "Rectal bleeding or palpable mass accompanying chronic constipation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_002",
+                          "text":  "Have you noticed blood in your stool, and if so, is it a large amount or ongoing?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_002)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CHRONIC_IDIOPATHIC_CONSTIPATION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_016",
+                          "text":  "Has the rectal bleeding or discharge lasted more than 4-6 weeks?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_015)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CHRONIC_IDIOPATHIC_CONSTIPATION_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SLOW_TRANSIT_CONSTIPATION",
+                              "distinguishing_feature":  "Chronic idiopathic constipation is a broader diagnosis of exclusion; slow transit constipation is a specific subtype confirmed by transit studies."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "82934008",
+    "snomed_verified_name":  "Chronic idiopathic constipation",
+    "icd10_code":  "K59.04",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chronic idiopathic constipation",
+    "evidence_ids":  [
+                         "EVID_CHRONIC_IDIOPATHIC_CONSTIPATION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

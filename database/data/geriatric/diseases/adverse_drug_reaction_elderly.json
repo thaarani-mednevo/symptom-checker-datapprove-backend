@@ -1,0 +1,176 @@
+﻿{
+    "id":  "GERIATRIC_DIS_GER_006",
+    "code":  "ADVERSE_DRUG_REACTION_ELDERLY",
+    "name":  "Adverse drug reaction in elderly",
+    "module":  "geriatric",
+    "category":  "disease",
+    "description":  "Adverse drug reactions (ADRs) in elderly patients are disproportionately common due to altered pharmacokinetics (reduced renal clearance, decreased hepatic metabolism, reduced volume of distribution for water-soluble drugs, increased fat distribution for lipophilic drugs) and pharmacodynamics (increased CNS sensitivity to sedatives, reduced baroreflex response to antihypertensives). The most clinically significant ADRs in older adults include falls from sedatives or antihypertensives, delirium from anticholinergics or opioids, bleeding from anticoagulants, hypoglycaemia from hypoglycaemics, and renal impairment from NSAIDs or ACE inhibitors. The Beers Criteria and STOPP/START tools provide evidence-based guidance on inappropriate prescribing in older adults.",
+    "complaints":  [
+                       {
+                           "code":  "POLYPHARMACY_CONCERN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FALLS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CONFUSION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FUNCTIONAL_DECLINE",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FALLS_OR_POSTURAL_HYPOTENSION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ACUTE_CONFUSION_OR_DELIRIUM",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXCESSIVE_SEDATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HYPOGLYCAEMIA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLEEDING_ANTICOAGULANT",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate_to_severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FIVE_OR_MORE_CONCURRENT_MEDICATIONS",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "RENAL_IMPAIRMENT",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AGE_OVER_80",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "COGNITIVE_IMPAIRMENT",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "MULTIPLE_PRESCRIBERS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RECENT_HOSPITAL_DISCHARGE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_GER_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "POLYPHARMACY_CONCERN",
+                          "condition":  "Active bleeding on anticoagulant therapy — emergency reversal pathway"
+                      },
+                      {
+                          "code":  "RED_GER_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "CONFUSION",
+                          "condition":  "Acute severe confusion following recent medication change — suspect ADR, review and withhold suspect drug"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GER_ADR_001",
+                          "text":  "How many different medications is this patient currently taking?",
+                          "purpose":  "polypharmacy_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ADVERSE_DRUG_REACTION_ELDERLY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_ADR_002",
+                          "text":  "Have any new medications been started or doses changed in the past 4 weeks?",
+                          "purpose":  "temporal_association_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ADVERSE_DRUG_REACTION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ADVERSE_DRUG_REACTION_ELDERLY_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_GER_ADR_003",
+                          "text":  "Is the patient taking any medications known to cause falls, confusion, or bleeding in the elderly (e.g., sedatives, opioids, blood thinners, blood pressure tablets)?",
+                          "purpose":  "high_risk_drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ADVERSE_DRUG_REACTION_ELDERLY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DELIRIUM",
+                              "distinguishing_feature":  "Delirium may be an ADR, but has multiple precipitants; identifying a specific drug cause requires careful temporal association, dechallenge (improvement on stopping), and rechallenge assessment."
+                          },
+                          {
+                              "disease_code":  "HISTORY_OF_FALLING",
+                              "distinguishing_feature":  "Falls may be multifactorial; ADR-related falls are specifically linked to new or changed medications and may resolve with dose reduction or drug withdrawal."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "62014003",
+    "snomed_verified_name":  "Adverse reaction to drug",
+    "icd10_code":  "T36.9X5A",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Adverse effect of unspecified systemic antibiotic, initial encounter",
+    "evidence_ids":  [
+                         "EVID_ADVERSE_DRUG_REACTION_ELDERLY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

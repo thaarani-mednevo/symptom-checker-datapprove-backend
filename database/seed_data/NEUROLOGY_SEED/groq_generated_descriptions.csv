@@ -1,0 +1,26 @@
+code,description
+UNSPECIFIED_VISUAL_DISTURBANCE,This diagnosis refers to
+RECURRENT_ISOLATED_SLEEP_PARALYSIS,"Recurrent isolated sleep paralysis is a chronic condition characterized by repeated episodes of temporary inability to move or speak while falling asleep or upon awakening, often accompanied by vivid hallucinations."
+PERSONAL_HISTORY_OF_TRAUMATIC_BRAIN_INJURY,"A record indicating that the patient has previously sustained a traumatic brain injury, which may influence current neurological assessment."
+MENINGOCOCCAL_ENCEPHALITIS,Acute inflammation of the brain parenchyma caused by Neisseria meningitidis infection.
+POSTINFECTIOUS_HYPOTHYROIDISM,"Postinfectious hypothyroidism is a delayed, often subacute, reduction in thyroid hormone production following an upper respiratory or other systemic infection."
+OTHER_VITAMIN_B12_DEFICIENCY_ANEMIAS,"A group of anemias caused by vitamin B12 deficiency due to malabsorption, dietary insufficiency, or other non-pernicious causes."
+TRANSIENT_RETINAL_ARTERY_OCCLUSION_BILATERAL,"Transient bilateral retinal artery occlusion is a temporary, painless loss of vision in both eyes due to brief arterial occlusion, often resolving within minutes to hours."
+MILD_COGNITIVE_IMPAIRMENT_OF_UNCERTAIN_OR_UNKNOWN_ETIOLOGY,Mild cognitive impairment of uncertain or unknown etiology is a subtle decline in memory or executive function that does not yet meet criteria for dementia and has no identified cause.
+OTHER_NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER,"A bladder dysfunction caused by neuromuscular disorders not otherwise specified, leading to urinary retention or incontinence due to impaired detrusor or sphincter control."
+NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER_UNSPECIFIED,A disorder characterized by impaired coordination of bladder muscle activity leading to urinary retention or incontinence without a known underlying cause.
+COCHLEAR_OTOSCLEROSIS_BILATERAL,"A progressive, bilateral sensorineural hearing loss due to abnormal bone remodeling in the cochlea."
+TRANSIENT_VISUAL_LOSS_BILATERAL,"Bilateral transient visual loss is a brief, reversible loss of vision in both eyes, often lasting seconds to minutes, associated with transient ischemia or neurological events."
+SUDDEN_VISUAL_LOSS_BILATERAL,"Sudden bilateral loss of vision, often due to central nervous system or ocular vascular events."
+TRANSIENT_VISUAL_LOSS_RIGHT_EYE,"Sudden, brief loss of vision in the right eye that resolves within 24 hours, often painless and without other neurological deficits."
+TRANSIENT_VISUAL_LOSS_LEFT_EYE,"Transient, painless loss of vision in the left eye, often due to a brief ischemic event such as amaurosis fugax."
+TRANSIENT_VISUAL_LOSS_UNSPECIFIED_EYE,"Transient visual loss, unspecified eye is a brief, temporary loss of vision in one eye that resolves spontaneously within minutes to hours."
+SUDDEN_VISUAL_LOSS_RIGHT_EYE,"Sudden, painless loss of vision in the right eye that occurs abruptly and is often accompanied by a curtain‑like shadow or complete blindness."
+SUDDEN_VISUAL_LOSS_LEFT_EYE,"Sudden loss of vision in the left eye, often occurring within minutes to hours."
+NONEXUDATIVE_AGE_RELATED_MACULAR_DEGENERATION_BILATERAL_STAGE_UNSPECIFIED,"Nonexudative age‑related macular degeneration is a chronic, bilateral retinal disease characterized by drusen accumulation and gradual loss of central vision without exudation."
+OTHER_NON_DIABETIC_PROLIFERATIVE_RETINOPATHY_BILATERAL,"A bilateral proliferative retinal disease not caused by diabetes, characterized by neovascularization and potential vision loss due to retinal ischemia."
+OTHER_SPECIFIED_FORMS_OF_TREMOR,"A tremor disorder that does not meet criteria for other specific tremor types, typically presenting with action or postural tremor of variable frequency and amplitude."
+EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITH_STATUS_EPILEPTICUS,Acute seizures triggered by external causes that progress to status epilepticus but are not refractory to initial treatment.
+AURAL_VERTIGO_BILATERAL,A condition characterized by vertigo and imbalance due to dysfunction of both vestibular organs.
+OSTEOARTHRITIS_OF_HIP_UNSPECIFIED,"A degenerative joint disease characterized by cartilage breakdown and joint space narrowing in the hip, leading to pain and stiffness."
+LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_COMPLEX_PARTIAL_SEIZURES_INTRACTABLE_WITHOUT_STATUS_EPILEPTICUS,A chronic focal epilepsy syndrome characterized by complex partial seizures that are refractory to treatment and occur without status epilepticus.

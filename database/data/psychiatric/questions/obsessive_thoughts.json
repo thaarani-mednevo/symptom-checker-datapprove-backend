@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "OBSESSIVE_THOUGHTS",
+    "complaint_name":  "Obsessive thoughts",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_OBS_001",
+                          "text":  "Do you have recurring unwanted thoughts that you find difficult to control?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OBSESSIVE_THOUGHTS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_OBS_002",
+                          "text":  "Do you feel compelled to repeat certain actions (checking, washing, counting)?",
+                          "purpose":  "compulsions",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "COMPULSIVE_BEHAVIOURS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_OBS_003",
+                          "text":  "How much time do these take up each day?",
+                          "purpose":  "severity",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OCD_SEVERITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_OBS_004",
+                          "text":  "Is it affecting your daily life or relationships?",
+                          "purpose":  "impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OCD_IMPACT",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "AGGRESSIVE_BEHAVIOUR",
+    "complaint_name":  "Aggressive behaviour",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AGG_001",
+                          "text":  "Are you having thoughts of harming someone else right now?",
+                          "purpose":  "imminent_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IMMINENT_HARM_OTHERS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AGG_002",
+                          "text":  "Have you been physically aggressive towards people or objects recently?",
+                          "purpose":  "behaviour",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RECENT_AGGRESSION",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AGG_003",
+                          "text":  "Are you using alcohol or drugs that may be affecting your behaviour?",
+                          "purpose":  "substance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUBSTANCE_WITH_AGGRESSION",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AGG_004",
+                          "text":  "Do you feel you can control these impulses?",
+                          "purpose":  "control",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "IMPULSE_CONTROL",
+                          "yes_weight":  -1,
+                          "no_weight":  2
+                      }
+                  ]
+}

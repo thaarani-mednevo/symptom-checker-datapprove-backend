@@ -1,0 +1,59 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+POSTMENOPAUSAL_BLEEDING,RF_POSTMENOPAUSAL_BLEEDING,complaint,POST_MENOPAUSAL_BLEEDING,Any vaginal bleeding after 12 months of amenorrhea in a postmenopausal woman,menopause_confirmed==true AND bleeding_present==true,clinician_approved
+ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_UNSPECIFIED,RF_HEMODYNAMIC_INSTABILITY,symptom,PROLONGED,Prolonged or heavy bleeding with symptoms of hemodynamic compromise,bleeding_duration_days>7 AND (dizziness==true OR pallor==true),clinician_approved
+OTHER_SPECIFIED_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING,RF_SUSPECTED_GYNAE_MALIGNANCY,complaint,IRREGULAR_VAGINAL_BLEEDING,Persistent irregular bleeding with unexplained weight loss or pelvic mass,bleeding_persistent==true AND (weight_loss==true OR pelvic_mass==true),clinician_approved
+EXCESSIVE_AND_FREQUENT_MENSTRUATION_WITH_IRREGULAR_CYCLE,RF_SEVERE_ANEMIA_SYMPTOMS,complaint,HEAVY_MENSTRUAL_BLEEDING,Heavy bleeding with symptoms suggestive of significant anemia,pad_soak_rate_per_hour>=1 AND (dizziness==true OR pallor==true),clinician_approved
+EXCESSIVE_AND_FREQUENT_MENSTRUATION_WITH_REGULAR_CYCLE,RF_SEVERE_ANEMIA_SYMPTOMS,complaint,HEAVY_MENSTRUAL_BLEEDING,Heavy bleeding with symptoms suggestive of significant anemia,pad_soak_rate_per_hour>=1 AND (dizziness==true OR pallor==true),clinician_approved
+EXCESSIVE_MENSTRUATION_AT_PUBERTY,RF_SEVERE_ANEMIA_SYMPTOMS,complaint,HEAVY_MENSTRUAL_BLEEDING,Heavy bleeding at puberty with symptoms suggestive of significant anemia,pad_soak_rate_per_hour>=1 AND (dizziness==true OR pallor==true),clinician_approved
+ENDOMETRIAL_POLYP,RF_SUSPECTED_GYNAE_MALIGNANCY,disease,ENDOMETRIAL_POLYP,Postmenopausal woman with suspected endometrial polyp (bleeding source needs histology to exclude malignancy),menopause_confirmed==true AND bleeding_present==true,clinician_approved
+HERPESVIRAL_CERVICITIS,RF_PID_SEPSIS,disease,HERPESVIRAL_CERVICITIS,Fever and severe pelvic pain suggestive of ascending infection,fever==true AND pelvic_pain_severity=='severe',clinician_approved
+GONOCOCCAL_CERVICITIS_UNSPECIFIED,RF_PID_SEPSIS,disease,GONOCOCCAL_CERVICITIS_UNSPECIFIED,Fever and severe pelvic pain suggestive of ascending infection/PID,fever==true AND pelvic_pain_severity=='severe',clinician_approved
+VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE,RF_PID_SEPSIS,disease,VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE,Fever and severe pelvic pain suggestive of ascending infection,fever==true AND pelvic_pain_severity=='severe',clinician_approved
+DEEP_DYSPAREUNIA,RF_OVARIAN_TORSION,complaint,DYSPAREUNIA,Sudden severe unilateral pelvic pain accompanying deep dyspareunia,pain_onset=='sudden' AND pain_severity=='severe' AND pain_laterality=='unilateral',clinician_approved
+FEMALE_INFERTILITY_OF_TUBAL_ORIGIN,RF_SUSPECTED_ECTOPIC,complaint,INFERTILITY,Positive pregnancy test with pelvic pain in a woman with known tubal disease,pregnancy_test=='positive' AND pelvic_pain_present==true,clinician_approved
+FEMALE_INFERTILITY_ASSOCIATED_WITH_ANOVULATION,RF_INFERTILITY_ACUTE_PAIN,complaint,INFERTILITY,Acute pelvic pain during a fertility work-up,pelvic_pain_onset=='acute',clinician_approved
+PRECOCIOUS_PUBERTY_CENTRAL,RF_PRECOCIOUS_PUBERTY_NEURO,disease,PRECOCIOUS_PUBERTY_CENTRAL,"Central precocious puberty with headache, visual change, or rapid tempo suggesting a CNS lesion",headache==true OR visual_change==true OR tempo=='rapid',clinician_approved
+MCCUNE_ALBRIGHT_SYNDROME,RF_PRECOCIOUS_PUBERTY_NEURO,disease,MCCUNE_ALBRIGHT_SYNDROME,Rapidly progressing precocious puberty with cafe-au-lait macules and bone pain,tempo=='rapid',clinician_approved
+CONGENITAL_ADRENAL_HYPERPLASIA,RF_RAPID_VIRILIZATION,disease,CONGENITAL_ADRENAL_HYPERPLASIA,"Rapid virilization or salt-wasting crisis signs (vomiting, dehydration) in infancy",virilization_tempo=='rapid' OR salt_wasting_signs==true,clinician_approved
+POLYCYSTIC_OVARIAN_SYNDROME,RF_RAPID_VIRILIZATION,complaint,HIRSUTISM,"Rapid-onset virilization atypical for PCOS, raising suspicion of an androgen-secreting tumor",hirsutism_onset=='rapid' OR voice_change==true OR clitoromegaly==true,clinician_approved
+IDIOPATHIC_HIRSUTISM,RF_RAPID_VIRILIZATION,complaint,HIRSUTISM,Rapid-onset hirsutism/virilization is not consistent with idiopathic hirsutism and needs urgent work-up,hirsutism_onset=='rapid' OR voice_change==true,clinician_approved
+CUSHING_SYNDROME_UNSPECIFIED,RF_CUSHINGOID_RAPID_ONSET,disease,CUSHING_SYNDROME_UNSPECIFIED,Rapidly progressive Cushingoid features with new-onset hypertension,feature_tempo=='rapid' AND hypertension_new_onset==true,clinician_approved
+GALACTORRHEA_NOT_ASSOCIATED_WITH_CHILDBIRTH,RF_GALACTORRHEA_VISUAL_FIELD,complaint,GALACTORRHEA,Galactorrhea with visual field defect or persistent headache suggesting pituitary macroadenoma,headache==true OR visual_field_defect==true,clinician_approved
+DELAYED_PUBERTY,RF_NO_PUBERTY_BY_13_15,complaint,DELAYED_PUBERTY,No breast development by 13 or no menarche by 15,age>=13 AND breast_development==false,clinician_approved
+HYPOGONADOTROPIC_HYPOGONADISM,RF_NO_PUBERTY_BY_13_15,disease,HYPOGONADOTROPIC_HYPOGONADISM,No breast development by 13 or no menarche by 15,age>=13 AND breast_development==false,clinician_approved
+TURNER_SYNDROME,RF_TURNER_CARDIAC_RISK,disease,TURNER_SYNDROME,Suspected/confirmed Turner syndrome with cardiac symptoms or murmur,cardiac_symptoms==true OR murmur_present==true,clinician_approved
+ACUTE_VULVITIS,RF_SAFEGUARDING_CONCERN,complaint,VULVAL_SORENESS,Genital soreness in a pre-pubertal child without a clear medical explanation,patient_age<12 AND explanation=='unclear',clinician_approved
+SUBACUTE_AND_CHRONIC_VAGINITIS,RF_SAFEGUARDING_CONCERN,complaint,VAGINAL_DISCHARGE,Recurrent vaginal discharge in a pre-pubertal child without a clear medical explanation,patient_age<12 AND explanation=='unclear',clinician_approved
+ACUTE_VAGINITIS,NONE_APPLICABLE,complaint,,,,clinician_approved
+AMENORRHEA_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_approved
+CERVICITIS_FOLLOWING_DELIVERY,NONE_APPLICABLE,complaint,,,,clinician_approved
+DYSMENORRHEA_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_approved
+DYSPAREUNIA_NOT_DUE_TO_A_SUBSTANCE_OR_KNOWN_PHYSIOLOGICAL_CONDITION,NONE_APPLICABLE,complaint,,,,clinician_approved
+ENCOUNTER_FOR_MALE_FACTOR_INFERTILITY_IN_FEMALE_PATIENT,NONE_APPLICABLE,complaint,,,,clinician_approved
+FEMALE_INFERTILITY_OF_OTHER_ORIGIN,NONE_APPLICABLE,complaint,,,,clinician_approved
+FEMALE_INFERTILITY_OF_UTERINE_ORIGIN,RF_POST_MENOPAUSAL_BLEEDING,complaint,POST_MENOPAUSAL_BLEEDING,[LLM DRAFT] New-onset post-menopausal bleeding potentially signaling endometrial hyperplasia or malignancy associated with uterine pathology.,,ai_drafted_unverified
+FEMALE_INFERTILITY_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_approved
+IRREGULAR_MENSTRUATION_UNSPECIFIED,RF_HEAVY_MENSTRUAL_BLEEDING,complaint,HEAVY_MENSTRUAL_BLEEDING,"[LLM DRAFT] Severe heavy menstrual bleeding accompanied by hemodynamic instability, dizziness, syncope, or signs of acute severe anemia.",,ai_drafted_unverified
+IRREGULAR_MENSTRUATION_UNSPECIFIED,RF_POST_MENOPAUSAL_BLEEDING,complaint,POST_MENOPAUSAL_BLEEDING,[LLM DRAFT] Any episode of post-menopausal bleeding requiring prompt gynecological evaluation to rule out malignancy.,,ai_drafted_unverified
+MALE_INFERTILITY_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_approved
+NIPPLE_DISCHARGE,NONE_APPLICABLE,complaint,,,,clinician_approved
+OLIGOMENORRHEA_UNSPECIFIED,RF_HEAVY_MENSTRUAL_BLEEDING,complaint,HEAVY_MENSTRUAL_BLEEDING,"[LLM DRAFT] Severe acute blood loss associated with menstrual irregularity causing hemodynamic instability, dizziness, or syncope.",,ai_drafted_unverified
+OTHER_MALE_INFERTILITY,NONE_APPLICABLE,complaint,,,,clinician_approved
+OTHER_SPECIFIED_DYSPAREUNIA,NONE_APPLICABLE,complaint,,,,clinician_approved
+OTHER_SPECIFIED_IRREGULAR_MENSTRUATION,RF_HEAVY_MENSTRUAL_BLEEDING,complaint,HEAVY_MENSTRUAL_BLEEDING,"[LLM DRAFT] Severe acute heavy menstrual bleeding leading to hemodynamic instability, symptomatic anemia (dizziness, syncope, tachycardia), or soaking through more than two heavy-flow pads per hour for over two consecutive hours.",,ai_drafted_unverified
+OTHER_SPECIFIED_IRREGULAR_MENSTRUATION,RF_POST_MENOPAUSAL_BLEEDING,complaint,POST_MENOPAUSAL_BLEEDING,[LLM DRAFT] Post-menopausal bleeding associated with severe lower abdominal pain or heavy hemorrhage requiring urgent gynecological evaluation to rule out malignancy or acute pelvic pathology.,,ai_drafted_unverified
+OTHER_VULVODYNIA,NONE_APPLICABLE,complaint,,,,clinician_approved
+OVULATION_BLEEDING,NONE_APPLICABLE,complaint,,,,clinician_approved
+POSTMENOPAUSAL_ATROPHIC_VAGINITIS,RF_POST_MENOPAUSAL_BLEEDING,complaint,POST_MENOPAUSAL_BLEEDING,"[LLM DRAFT] New or unexpected vaginal bleeding in a postmenopausal woman must be urgently evaluated to rule out endometrial malignancy or other serious pathology, even though atrophic vaginitis is a common benign cause.",,ai_drafted_unverified
+PRIMARY_AMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+PRIMARY_DYSMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+PRIMARY_OLIGOMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+PRURITUS_VULVAE,NONE_APPLICABLE,complaint,,,,clinician_approved
+SECONDARY_AMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+SECONDARY_DYSMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+SECONDARY_OLIGOMENORRHEA,NONE_APPLICABLE,complaint,,,,clinician_approved
+SUBACUTE_AND_CHRONIC_VULVITIS,NONE_APPLICABLE,complaint,,,,clinician_approved
+SUPERFICIAL_INTROITAL_DYSPAREUNIA,NONE_APPLICABLE,complaint,,,,clinician_approved
+UNSPECIFIED_DYSPAREUNIA,NONE_APPLICABLE,complaint,,,,clinician_approved
+VAGINITIS_FOLLOWING_DELIVERY,NONE_APPLICABLE,complaint,,,,clinician_approved
+VULVODYNIA_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_approved

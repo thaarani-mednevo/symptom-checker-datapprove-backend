@@ -1,0 +1,80 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_015",
+    "code":  "VOMITING_OF_PREGNANCY_UNSPECIFIED",
+    "name":  "Vomiting of pregnancy, unspecified",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Vomiting of pregnancy, unspecified.",
+    "complaints":  [
+                       {
+                           "code":  "VOMITING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VOMITING",
+                          "condition":  "Vomiting in pregnancy with inability to keep fluids down"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VOMITING_OF_PREGNANCY_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O21.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vomiting of pregnancy, unspecified",
+    "evidence_ids":  [
+                         "EVID_VOMITING_OF_PREGNANCY_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

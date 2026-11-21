@@ -1,0 +1,80 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_028",
+    "code":  "AMENORRHEA_UNSPECIFIED",
+    "name":  "Amenorrhea, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Amenorrhea or amenorrhoea is the absence of a menstrual period in a female organism which has reached reproductive age. Physiological states of amenorrhea are most commonly seen during pregnancy and lactation (breastfeeding).",
+    "complaints":  [
+                       {
+                           "code":  "AMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "ANOREXIA_NERVOSA",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_MEDICAL_HISTORY",
+                             "strength":  "wikidata_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PREGNANCY_STATUS",
+                          "text":  "Are you currently pregnant, or could you be pregnant?",
+                          "purpose":  "Exclude pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_ECTOPIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AMENORRHEA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MENARCHE_OCCURRED",
+                          "text":  "Have your periods started yet (menarche)?",
+                          "purpose":  "Determine primary vs secondary pattern",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "AMENORRHEA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N91.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Amenorrhea, unspecified",
+    "evidence_ids":  [
+                         "EVID_AMENORRHEA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

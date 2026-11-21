@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_005",
+  "code": "DAYTIME_SOMNOLENCE",
+  "name": "Daytime somnolence",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Excessive daytime sleepiness (EDS) is characterized by persistent sleepiness and often a general lack of energy, even during the day after apparently adequate or even prolonged nighttime sleep. EDS can be considered as a broad condition encompassing several sleep disorders where increased sleep is a symptom, or as a symptom of another underlying disorder like narcolepsy, circadian rhythm sleep disorder, sleep apnea or idiopathic hypersomnia.",
+  "hpo_codes": [],
+  "snomed_code": "141000119100",
+  "snomed_verified_name": "Daytime somnolence",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

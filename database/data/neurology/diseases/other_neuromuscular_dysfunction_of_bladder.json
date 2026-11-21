@@ -1,0 +1,144 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_046",
+  "code": "OTHER_NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER",
+  "name": "Other neuromuscular dysfunction of bladder",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A bladder dysfunction caused by neuromuscular disorders not otherwise specified, leading to urinary retention or incontinence due to impaired detrusor or sphincter control.",
+  "complaints": [
+    {
+      "code": "BLADDER_DYSFUNCTION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ANHIDROSIS_OR_HYPERHIDROSIS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "BLURRY_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TUNNEL_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ORTHOSTATIC_HYPOTENSION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIARRHEA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DYSPHAGIA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "BOWEL_INCONTINENCE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "URINARY_RETENTION_OR_URINARY_INCONTINENCE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "BRAIN_FOG",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "EXERCISE_INTOLERANCE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "INADEQUACY_OF_SYMPATHETIC",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "OR_PARASYMPATHETIC",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "COMPONENTS_OF_AUTONOMIC_NERVOUS_SYSTEM",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N31.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other neuromuscular dysfunction of bladder",
+  "evidence_ids": [
+    "EVID_OTHER_NEUROMUSCULAR_DYSFUNCTION_OF_BLADDER"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

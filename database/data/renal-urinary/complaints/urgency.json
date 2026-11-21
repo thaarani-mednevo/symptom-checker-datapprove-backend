@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_004",
+  "code": "URGENCY",
+  "name": "Urgency",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Urgency may refer to:Pan-pan, international radio calls for emergencies posing no imminent danger\nUrinary urgency or Bowel urgency, medical symptoms\nUrgency , 2007\nUrgency , 2005\nThe Urgency, an album by Saving Grace.",
+  "hpo_codes": [],
+  "snomed_code": "103391001",
+  "snomed_verified_name": "Urgent",
+  "icd10_code": "R39.15",
+  "icd10_validated": true,
+  "icd10_official_description": "Urgency of urination",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,32 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_GI_001,"Are you currently vomiting blood, or have you noticed black, tarry stools?",yes_no,flag_red_flag:RF_GI_001,continue,clinician_approved
+Q_GI_002,"Have you noticed blood in your stool, and if so, is it a large amount or ongoing?",yes_no,flag_red_flag:RF_GI_002,continue,clinician_approved
+Q_GI_003,"Are you feeling dizzy, lightheaded, or have you fainted?",yes_no,flag_red_flag,continue,clinician_approved
+Q_GI_004,"Is your swallowing difficulty getting worse over time, especially with solid foods?",yes_no,flag_red_flag:RF_GI_005,continue,clinician_approved
+Q_GI_005,"Did the swallowing difficulty start suddenly, along with slurred speech, facial drooping, or arm/leg weakness?",yes_no,flag_red_flag:RF_GI_006,continue,clinician_approved
+Q_GI_006,Are you unable to keep any fluids down?,yes_no,flag_red_flag:RF_GI_004,continue,clinician_approved
+Q_GI_007,For a newborn or infant: is the vomit green or yellow in color?,yes_no,flag_red_flag:RF_GI_003,continue,clinician_approved
+Q_GI_008,"Is your abdominal pain severe, constant, and getting worse, or does your belly feel hard/rigid?",yes_no,flag_red_flag:RF_GI_007,continue,clinician_approved
+Q_GI_009,"Have you stopped passing gas or having bowel movements, along with a bloated belly and vomiting?",yes_no,flag_red_flag:RF_GI_008,continue,clinician_approved
+Q_GI_010,Are you over 50 years old and experiencing this indigestion/heartburn for the first time?,yes_no,flag_red_flag:RF_GI_009,continue,clinician_approved
+Q_GI_011,"Have you lost weight without trying, over the last 3 months?",yes_no,flag_red_flag:RF_GI_010,continue,clinician_approved
+Q_GI_012,Do you have a fever along with your bowel symptoms?,yes_no,flag_red_flag:RF_GI_011,continue,clinician_approved
+Q_GI_013,"Have you been told you have low iron / anemia recently, without a clear cause?",yes_no,flag_red_flag:RF_GI_012,continue,clinician_approved
+Q_GI_014,Do you have a severe headache or stiff neck along with the vomiting?,yes_no,flag_red_flag:RF_GI_013,continue,clinician_approved
+Q_GI_015,Does anyone in your immediate family have colon cancer or inflammatory bowel disease (Crohn's/ulcerative colitis)?,yes_no,flag_red_flag:RF_GI_014,continue,clinician_approved
+Q_GI_016,Has the rectal bleeding or discharge lasted more than 4-6 weeks?,yes_no,flag_red_flag:RF_GI_015,continue,clinician_approved
+Q_GI_017,How long have you had this symptom?,text,,,clinician_approved
+Q_GI_018,Is the discomfort clearly related to eating meals?,yes_no,continue,continue,clinician_approved
+Q_GI_019,Are you currently pregnant?,yes_no,continue,continue,clinician_approved
+Q_GI_020,"Are you taking any new medications recently (e.g. opioids, iron supplements, antacids)?",yes_no,continue,continue,clinician_approved
+Q_HAVE_YOU_NOTICED_BLOOD_IN_YOUR_STOOL_OR,[LLM DRAFT] Have you noticed blood in your stool or experienced unexplained weight loss?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_HAD_HARD_INFREQUENT_BOWEL_MOVE,"[LLM DRAFT] Have you had hard, infrequent bowel movements or trouble passing stool for the past few weeks?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_HAVING_SEVERE_ABDOMINAL_PAIN_ALO,[LLM DRAFT] Are you having severe abdominal pain along with your constipation?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_BEEN_PASSING_HARD_STOOLS_LESS_T,[LLM DRAFT] Have you been passing hard stools less than three times a week for the past month?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_FEEL_LIKE_YOU_HAVE_A_BLOCKAGE_PRE,"[LLM DRAFT] Do you feel like you have a blockage preventing bowel movements, or need to press on your vagina or perineum to help pass stool?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_BLOOD_IN_YOUR_STOOL_OR_OUTLET_DYSFUNCTION_CONSTIPATION,"[LLM DRAFT] Have you noticed blood in your stool or experienced unexpected, significant weight loss alongside your constipation?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_YOUR_NEWBORN_FREQUENTLY_BRING_UP_MI,[LLM DRAFT] Does your newborn frequently bring up milk or food shortly after feeding?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_NEWBORN_FORCEFULLY_VOMITING_OR_N,[LLM DRAFT] Is your newborn forcefully vomiting or not gaining weight properly?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_FEWER_THAN_THREE_BOWEL_MOVEM,[LLM DRAFT] Do you have fewer than three bowel movements a week?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_HAD_PERSISTENT_CONSTIPATION_FOR,[LLM DRAFT] Have you had persistent constipation for months or years that does not respond to standard over-the-counter fiber supplements or laxatives?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_SEVERE_CONSTIPATION_START_SUDDE,[LLM DRAFT] Did your severe constipation start suddenly along with unexplained weight loss or blood in your stool?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

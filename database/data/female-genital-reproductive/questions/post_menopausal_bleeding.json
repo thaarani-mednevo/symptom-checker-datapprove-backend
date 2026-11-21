@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POST_MENOPAUSAL_BLEEDING",
+    "complaint_name":  "Post menopausal bleeding",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PMB_001",
+                          "text":  "Have you had any bleeding more than 12 months after your last period?",
+                          "purpose":  "confirm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POSTMENOPAUSAL_BLEEDING_CONFIRMED",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PMB_002",
+                          "text":  "Is it spotting, a light flow, or heavy?",
+                          "purpose":  "severity",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PMB_SEVERITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PMB_003",
+                          "text":  "Is there associated weight loss, pelvic pain, or change in bowel habit?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_GYNAE_MALIGNANCY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PMB_ALARM_FEATURES",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PMB_004",
+                          "text":  "Are you on HRT?",
+                          "purpose":  "hrt",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "HRT_WITH_PMB",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      }
+                  ]
+}

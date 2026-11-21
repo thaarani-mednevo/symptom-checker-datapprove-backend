@@ -1,0 +1,91 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_027",
+    "code":  "INTRACARDIAC_THROMBOSIS_NOT_ELSEWHERE_CLASSIFIED",
+    "name":  "Intracardiac thrombosis, not elsewhere classified",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Intracardiac thrombosis, not elsewhere classified.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_LIMB_ISCHEMIA_OR_DEEP_VEIN_THROMBOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Acute onset of severe pain, pallor, pulselessness, or swelling in an extremity indicating thromboembolic occlusion secondary to intracardiac thrombus."
+                      },
+                      {
+                          "code":  "RF_SEVERE_ACUTE_GASTROINTESTINAL_OR_MUCOSAL_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Sudden, profuse bleeding or hemorrhagic manifestations associated with consumptive coagulopathy or anticoagulant therapy complications related to intracardiac thrombosis."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_A_SUDDEN_LOSS_OF_FE",
+                          "text":  "[LLM DRAFT] Have you experienced a sudden loss of feeling or weakness in your face, arm, or leg, especially on one side of your body?",
+                          "purpose":  "screens for acute stroke symptoms caused by a dislodged clot",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INTRACARDIAC_THROMBOSIS_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SUDDEN_SEVERE_SHOR",
+                          "text":  "[LLM DRAFT] Have you experienced sudden, severe shortness of breath or pain in your chest?",
+                          "purpose":  "screens for pulmonary embolism or acute cardiac ischemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INTRACARDIAC_THROMBOSIS_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with signs of distal malperfusion, back pain, or pulse deficits rather than primary cardiac chamber filling defects or valvular/ventricular dysfunction."
+                          },
+                          {
+                              "disease_code":  "NONPYOGENIC_THROMBOSIS_OF_INTRACRANIAL_VENOUS_SYSTEM",
+                              "distinguishing_feature":  "[LLM DRAFT] Manifests primarily with neurological symptoms such as headache, seizures, or focal deficits due to cerebral venous outflow obstruction."
+                          },
+                          {
+                              "disease_code":  "PORTAL_VEIN_THROMBOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by abdominal pain, portal hypertension, or gastrointestinal bleeding rather than intracardiac embolic events."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "I51.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Intracardiac thrombosis, not elsewhere classified",
+    "evidence_ids":  [
+                         "EVID_INTRACARDIAC_THROMBOSIS_NOT_ELSEWHERE_CLASSIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

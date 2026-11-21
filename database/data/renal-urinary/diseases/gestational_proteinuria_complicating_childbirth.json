@@ -1,0 +1,129 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_035",
+    "code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH",
+    "name":  "Gestational proteinuria, complicating childbirth",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "A renal-urinary condition known as Gestational proteinuria, complicating childbirth.",
+    "complaints":  [
+                       {
+                           "code":  "FOAMY_URINE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "TYPICALLY_FEW_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FOAMY_URINE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PRE_EXISTING_HYPERTENSION",
+                             "strength":  "weak"
+                         },
+                         {
+                             "code":  "PRE_EXISTING_RENAL_DISEASE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_011",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FOAMY_URINE",
+                          "condition":  "Foamy urine in pregnancy with headache or hypertension — pre-eclampsia"
+                      },
+                      {
+                          "code":  "RF_RU_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FOAMY_URINE",
+                          "condition":  "Foamy urine with progressive oedema — nephrotic syndrome"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_012",
+                          "text":  "Are you currently pregnant, or did this symptom start during or after a pregnancy?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_008",
+                          "text":  "Is your urine foamy or frothy, and do you have swelling in your legs, ankles, or face?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_007",
+                          "text":  "Has your blood pressure been very high (≥180/120 mmHg), and do you have a headache, blurred vision, or confusion right now?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GESTATIONAL_PROTEINURIA_COMPLICATING_THE_PUERPERIUM",
+                              "distinguishing_feature":  "Complicating childbirth is during active delivery; complicating the puerperium is the postnatal period (up to 6 weeks after delivery) — same gestational proteinuria, different timing."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012595 | HP:0012596"
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O12.14",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gestational proteinuria, complicating childbirth",
+    "evidence_ids":  [
+                         "EVID_GESTATIONAL_PROTEINURIA_COMPLICATING_CHILDBIRTH"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,171 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_011",
+    "code":  "OBSTRUCTIVE_SLEEP_APNOEA",
+    "name":  "Obstructive sleep apnoea",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Obstructive sleep apnoea (OSA) is a sleep-related breathing disorder characterised by repetitive episodes of complete (apnoea) or partial (hypopnoea) upper airway obstruction during sleep, causing intermittent hypoxia and sleep fragmentation. It affects approximately 10–30% of adults, is significantly underdiagnosed, and is associated with hypertension, cardiovascular disease, type 2 diabetes, and road traffic accidents from excessive daytime sleepiness. The severity is classified by the apnoea-hypopnoea index (AHI): mild 5–14/h, moderate 15–29/h, severe ≥30/h. Diagnosis requires polysomnography or home sleep testing. First-line treatment is continuous positive airway pressure (CPAP); weight loss, positional therapy, and mandibular advancement devices are alternatives.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOUD_SNORING",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WITNESSED_APNOEAS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXCESSIVE_DAYTIME_SLEEPINESS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MORNING_HEADACHE",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NOCTURNAL_CHOKING_OR_GASPING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "UNREFRESHING_SLEEP",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OBESITY_BMI_OVER_30",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CRANIOFACIAL_ABNORMALITY_RETROGNATHIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "LARGE_NECK_CIRCUMFERENCE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ALCOHOL_SEDATIVE_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "NASAL_CONGESTION_OR_OBSTRUCTION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_009",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Severe OSA with oxygen saturation below 80% on oximetry or respiratory failure — urgent sleep medicine and respiratory review"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_OSA_001",
+                          "text":  "Do you snore loudly most nights, or has anyone told you that you stop breathing during sleep?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SLEEP_APNOEA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OBSTRUCTIVE_SLEEP_APNOEA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_OSA_002",
+                          "text":  "Do you feel excessively sleepy during the day, even after a full night\u0027s sleep?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SLEEP_APNOEA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OBSTRUCTIVE_SLEEP_APNOEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_OSA_003",
+                          "text":  "Have you fallen asleep while driving or in dangerous situations due to sleepiness?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OBSTRUCTIVE_SLEEP_APNOEA_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COPD",
+                              "distinguishing_feature":  "COPD causes daytime breathlessness and obstructive spirometry; OSA causes nocturnal symptoms with normal spirometry. Overlap syndrome (OSA + COPD) can coexist."
+                          },
+                          {
+                              "disease_code":  "HEART_FAILURE",
+                              "distinguishing_feature":  "Heart failure causes central sleep apnoea (Cheyne-Stokes respiration) and orthopnoea; OSA causes obstructive events due to pharyngeal collapse and is worsened by supine position and obesity."
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM",
+                              "distinguishing_feature":  "Hypothyroidism can cause or worsen OSA through macroglossia and pharyngeal oedema; thyroid function should be checked in all new OSA patients."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_predominant",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0010535"
+                  ],
+    "snomed_code":  "78275009",
+    "snomed_verified_name":  "Obstructive sleep apnea syndrome",
+    "icd10_code":  "G47.33",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Obstructive sleep apnea (adult) (pediatric)",
+    "evidence_ids":  [
+                         "EVD_RESP_011"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

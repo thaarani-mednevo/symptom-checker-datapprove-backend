@@ -1,0 +1,17 @@
+{
+  "id": "BREAST_COMP_BRE_005",
+  "code": "AXILLARY_LUMP",
+  "name": "Axillary lump/swelling",
+  "module": "breast",
+  "body_system": "breast",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by axillary lump/swelling.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "R22.30",
+  "icd10_validated": true,
+  "icd10_official_description": "Localized swelling, mass and lump, unspecified upper limb",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

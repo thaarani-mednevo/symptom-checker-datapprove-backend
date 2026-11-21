@@ -1,0 +1,7 @@
+code,name,action
+RED_RESP_001,Sudden severe breathlessness,emergency_pathway
+RED_RESP_002,Haemoptysis with night sweats — suspected malignancy or TB,urgent_respiratory_evaluation
+RED_RESP_003,Tension pneumothorax signs,emergency_pathway
+RED_RESP_004,Acute severe asthma — no response to bronchodilator,emergency_pathway
+RED_RESP_005,Respiratory failure — oxygen saturation < 92%,emergency_pathway
+RED_RESP_006,Suspected active pulmonary tuberculosis with close contacts,tb_isolation_pathway

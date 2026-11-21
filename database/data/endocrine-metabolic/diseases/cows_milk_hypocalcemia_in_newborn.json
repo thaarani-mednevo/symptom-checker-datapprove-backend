@@ -1,0 +1,97 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_038",
+    "code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN",
+    "name":  "Cow\u0027s milk hypocalcemia in newborn",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A neonatal condition characterized by low serum calcium due to inadequate intake or absorption, often associated with cow\u0027s milk-based formula feeding.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOCALCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOCALCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOCALCEMIA",
+                          "condition":  "[LLM DRAFT] Newborn with severe symptomatic hypocalcemia presenting with acute tetany, laryngospasm, or generalized tonic-clonic seizures."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IS_THE_NEWBORN_BABY_EXPERIENCING_MUSCLE",
+                          "text":  "[LLM DRAFT] Is the newborn baby experiencing muscle twitching, tremors, or jitteriness?",
+                          "purpose":  "Screens for neuromuscular irritability due to low calcium",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DOES_THE_BABY_HAVE_EPISODES_OF_SUDDEN_MU",
+                          "text":  "[LLM DRAFT] Does the baby have episodes of sudden muscle stiffness or brief muscle spasms (tetany)?",
+                          "purpose":  "Screens for severe hypocalcemic tetany",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_THE_NEWBORN_EXPERIENCED_POOR_FEEDING",
+                          "text":  "[LLM DRAFT] Has the newborn experienced poor feeding, extreme lethargy, or repeated vomiting?",
+                          "purpose":  "Screens for generalized symptoms of metabolic disturbance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_NEONATAL_HYPOCALCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with neonatal hypocalcemia due to causes other than cow\u0027s milk formula ingestion, such as prematurity, maternal diabetes, or birth asphyxia."
+                          },
+                          {
+                              "disease_code":  "AUTOSOMAL_DOMINANT_HYPOCALCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by an activating mutation in the calcium-sensing receptor gene (CASR) rather than dietary phosphate overload from cow\u0027s milk, often associated with autosomal dominant inheritance and hypocalciuria."
+                          },
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with features of thyroid hormone deficiency (e.g., prolonged jaundice, hypotonia, umbilical hernia) rather than the neuromuscular irritability or tetany characteristic of hypocalcemia."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "63275006",
+    "snomed_verified_name":  "Neonatal cow milk hypocalcemia",
+    "icd10_code":  "P71.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cow\u0027s milk hypocalcemia in newborn",
+    "evidence_ids":  [
+                         "EVID_COWS_MILK_HYPOCALCEMIA_IN_NEWBORN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

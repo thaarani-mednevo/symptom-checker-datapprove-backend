@@ -1,0 +1,135 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_036",
+    "code":  "CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL",
+    "name":  "Cystoid macular edema following cataract surgery, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Macular edema occurs when fluid and protein deposits collect on or under the macula of the eye and causes it to thicken and swell (edema). The swelling may distort a person\u0027s central vision, because the macula holds tightly packed cones that provide sharp, clear, central vision to enable a person to see detail, form, and color that is directly in the centre of the field of view.",
+    "complaints":  [
+                       {
+                           "code":  "VISUAL_DISTORTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DECREASED_CENTRAL_VISION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "METAMORPHOPSIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "CYSTIC_SPACES_ON_OCT",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "UVEITIS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PSEUDOEXFOLIATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RETINAL_DISEASE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_ANY_BLURRY_OR_HAZY_VISION",
+                          "text":  "[LLM DRAFT] Do you notice any blurry or hazy vision in either eye since your cataract surgery?",
+                          "purpose":  "blurred vision after surgery",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_SEE_ANY_WAVY_OR_DISTORTED_LINES_I",
+                          "text":  "[LLM DRAFT] Do you see any wavy or distorted lines in your vision (like looking through a screen or water)?",
+                          "purpose":  "metamorphopsia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_YOUR_CENTRAL_VISION_THE_STRAIGHT‑AH",
+                          "text":  "[LLM DRAFT] Has your central vision (the straight‑ahead part of your sight) become weaker or dimmer in either eye?",
+                          "purpose":  "central vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE",
+                              "distinguishing_feature":  "[LLM DRAFT] Anterior chamber cells and flare"
+                          },
+                          {
+                              "disease_code":  "HYPERTENSIVE_RETINOPATHY_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Hard exudates and microaneurysms"
+                          },
+                          {
+                              "disease_code":  "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Retinal neovascularization and hard exudates"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "346411000119106",
+    "snomed_verified_name":  "Bilateral cystoid macular edema of eyes due to and following cataract surgery",
+    "icd10_code":  "H59.033",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Cystoid macular edema following cataract surgery, bilateral",
+    "evidence_ids":  [
+                         "EVID_CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

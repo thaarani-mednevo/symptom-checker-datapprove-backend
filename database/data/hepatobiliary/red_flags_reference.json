@@ -1,0 +1,55 @@
+{
+  "module": "hepatobiliary",
+  "red_flags": [
+    {
+      "code": "RED_HB_001",
+      "name": "Jaundice with encephalopathy, coagulopathy, or renal failure",
+      "action": "acute_liver_failure_emergency_pathway"
+    },
+    {
+      "code": "RED_HB_002",
+      "name": "Fever with ascites and abdominal tenderness",
+      "action": "spontaneous_bacterial_peritonitis_urgent_paracentesis"
+    },
+    {
+      "code": "RED_HB_003",
+      "name": "New jaundice in compensated cirrhosis with altered mental status",
+      "action": "acute_decompensation_urgent_hepatology"
+    },
+    {
+      "code": "RED_HB_004",
+      "name": "Sudden severe RUQ pain in known cirrhosis",
+      "action": "exclude_variceal_bleeding_or_HCC"
+    },
+    {
+      "code": "RED_HB_005",
+      "name": "Haematemesis or melaena in decompensated cirrhosis",
+      "action": "variceal_bleeding_emergency"
+    },
+    {
+      "code": "RED_HB_006",
+      "name": "Jaundice within first 24 hours of life",
+      "action": "pathological_neonatal_jaundice_urgent_investigation"
+    },
+    {
+      "code": "RED_HB_007",
+      "name": "Jaundice persisting beyond 14 days in term infant",
+      "action": "prolonged_neonatal_jaundice_exclude_biliary_atresia"
+    },
+    {
+      "code": "RED_HB_008",
+      "name": "Neonatal jaundice with high-pitched cry, opisthotonus, or seizures",
+      "action": "acute_bilirubin_encephalopathy_emergency_exchange_transfusion"
+    },
+    {
+      "code": "RED_HB_009",
+      "name": "RUQ pain with fever, rigors, and jaundice (Charcot's triad)",
+      "action": "ascending_cholangitis_emergency_biliary_drainage"
+    },
+    {
+      "code": "RED_HB_010",
+      "name": "RUQ pain with fever and hypotension",
+      "action": "sepsis_gangrenous_cholecystitis_emergency_surgery"
+    }
+  ]
+}

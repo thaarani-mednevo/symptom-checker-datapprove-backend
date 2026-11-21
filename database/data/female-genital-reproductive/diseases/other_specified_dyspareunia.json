@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_012",
+    "code":  "OTHER_SPECIFIED_DYSPAREUNIA",
+    "name":  "Other specified dyspareunia",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Dyspareunia is painful sexual intercourse. Although the word dyspareunia includes both female and male patients, discussions that use the term without specifying the patient\u0027s sex usually concern the female type, which is the more common.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPAREUNIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_INTERCOURSE_PAIN_LOCATION",
+                          "text":  "Is the pain during sex felt at entry, or deep inside?",
+                          "purpose":  "Characterize pain pattern",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_DYSPAREUNIA_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N94.19",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified dyspareunia",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_DYSPAREUNIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

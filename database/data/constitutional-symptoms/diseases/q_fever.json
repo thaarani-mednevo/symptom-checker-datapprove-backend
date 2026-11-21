@@ -1,0 +1,116 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_001",
+    "code":  "Q_FEVER",
+    "name":  "Q fever",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Q fever or query fever is a disease caused by infection with Coxiella burnetii, a bacterium that affects humans and other animals. This organism is uncommon, but may be found in cattle, sheep, goats, and other domestic mammals, including cats and dogs.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CONTACT_WITH_LIVESTOCK",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_CHEST_PAIN_OR_SHORTNESS_OF_BREATH",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "May indicate Q fever-associated pneumonia or acute pericarditis/myocarditis."
+                      },
+                      {
+                          "code":  "RF_PERSISTENT_HIGH_FEVER_WITH_SEVERE_HEADACHE_AND_CONFUSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Can signal central nervous system involvement such as meningoencephalitis."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_Q_FEVER_1",
+                          "text":  "Have you had recent occupational or recreational contact with livestock such as sheep, goats, or cattle, especially during birthing season?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "Q_FEVER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_Q_FEVER_2",
+                          "text":  "Do you experience persistent shortness of breath or chest pain when breathing?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "Q_FEVER_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_Q_FEVER_3",
+                          "text":  "Have you consumed unpasteurized dairy products recently?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "Q_FEVER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "LASSA_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with prominent hemorrhagic manifestations, pharyngitis, and sensorineural hearing loss, often linked to rodent exposure in West Africa."
+                          },
+                          {
+                              "disease_code":  "TRENCH_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with body lice infestation and characterized by relapsing five-day fevers accompanied by severe shin pain."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Marked by a more insidious onset with sustained high fever, relative bradycardia, and characteristic rose spots on the trunk."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "186788009",
+    "snomed_verified_name":  "Q fever",
+    "icd10_code":  "A78",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Q fever",
+    "evidence_ids":  [
+                         "EVID_Q_FEVER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_012",
+  "code": "DELAYED_PUBERTY",
+  "name": "Delayed puberty",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Delayed puberty is when a person lacks or has incomplete development of specific sexual characteristics past the usual age of onset of puberty. The person may have no physical or hormonal signs that puberty has begun.",
+  "hpo_codes": [],
+  "snomed_code": "400003000",
+  "snomed_verified_name": "Delayed puberty",
+  "icd10_code": "E30.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Delayed puberty",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

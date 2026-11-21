@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POLYMENORRHEA",
+    "complaint_name":  "Polymenorrhea",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_POLY_001",
+                          "text":  "How many days apart are your periods?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYMENORRHEA_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_002",
+                          "text":  "Are the periods heavy as well as frequent?",
+                          "purpose":  "heavy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEAVY_FREQUENT_PERIODS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_003",
+                          "text":  "Are you on hormonal contraception?",
+                          "purpose":  "contraception",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HORMONAL_CAUSE",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_004",
+                          "text":  "Are you perimenopausal?",
+                          "purpose":  "age",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PERIMENOPAUSAL_PATTERN",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ]
+}

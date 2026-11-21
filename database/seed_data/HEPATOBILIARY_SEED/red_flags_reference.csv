@@ -1,0 +1,3 @@
+red_flag_code,severity,title,description
+RF_JAUNDICE_NEWBORN_LETHARGY,emergency,Lethargy in newborn,Newborn with jaundice is lethargic or difficult to wake.
+RF_LIVER_FAILURE_SIGNS,emergency,Signs of liver failure,"Confusion, severe abdominal swelling, or bleeding."

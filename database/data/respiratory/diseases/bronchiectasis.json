@@ -1,0 +1,120 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_007",
+    "code":  "BRONCHIECTASIS",
+    "name":  "Bronchiectasis",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung. Symptoms typically include a chronic cough with mucus production.",
+    "complaints":  [
+                       {
+                           "code":  "PRODUCTIVE_COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HEMOPTYSIS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RECURRENT_RESPIRATORY_INFECTIONS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "COPIOUS_SPUTUM",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FINGER_CLUBBING",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECURRENT_RESPIRATORY_INFECTIONS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CYSTIC_FIBROSIS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "IMMUNODEFICIENCY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CHRONIC_ASPIRATION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_004",
+                          "text":  "Do you have a persistent cough that produces phlegm most days?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHRONIC_AIRWAY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BRONCHIECTASIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_012",
+                          "text":  "Do you cough up large amounts of phlegm in the mornings?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BRONCHIECTASIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BRONCHIECTASIS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COPD",
+                              "distinguishing_feature":  "COPD has diffuse airflow obstruction without bronchial dilatation; bronchiectasis shows dilated bronchi on HRCT with copious daily sputum production and recurrent infections."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0002110"
+                  ],
+    "snomed_code":  "12295008",
+    "snomed_verified_name":  "Bronchiectasis",
+    "icd10_code":  "J47.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Bronchiectasis, uncomplicated",
+    "evidence_ids":  [
+                         "EVD_RESP_007"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

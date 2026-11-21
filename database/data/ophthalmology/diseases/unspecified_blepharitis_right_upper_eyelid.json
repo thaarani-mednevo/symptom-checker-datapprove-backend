@@ -1,0 +1,151 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_003",
+    "code":  "UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID",
+    "name":  "Unspecified blepharitis right upper eyelid",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Inflammation of the right upper eyelid margin of unspecified etiology.",
+    "complaints":  [
+                       {
+                           "code":  "WATERY_EYES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EYE_ITCHING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EYELID_MARGIN_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "CRUSTING_OF_LASHES",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ITCHING_OF_EYELID",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BURNING_SENSATION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DRY_EYE_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BACTERIAL_COLONIZATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DEMODEX_INFESTATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CONTACT_LENS_WEAR",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "AGING",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision in the right eye."
+                      },
+                      {
+                          "code":  "RF_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe pain with swelling and redness of the right upper eyelid."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_CRUSTY_OR_GREASY_MATERIAL_AT",
+                          "text":  "[LLM DRAFT] Do you have crusty or greasy material at the base of your eyelashes?",
+                          "purpose":  "detect eyelid margin crusting",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_ITCHING_OR_BURNING_IN_YOUR_R",
+                          "text":  "[LLM DRAFT] Do you feel itching or burning in your right upper eyelid?",
+                          "purpose":  "detect irritation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_OR_VISION",
+                          "text":  "[LLM DRAFT] Do you have sudden severe pain or vision loss in the right eye?",
+                          "purpose":  "rule out serious complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H01.001",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified blepharitis right upper eyelid",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

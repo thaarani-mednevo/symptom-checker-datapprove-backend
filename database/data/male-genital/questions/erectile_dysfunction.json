@@ -1,0 +1,107 @@
+{
+  "complaint_code": "ERECTILE_DYSFUNCTION",
+  "complaint_name": "Erectile Dysfunction",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_ED_001",
+      "text": "How long have you had difficulty with erections, and did it develop gradually or suddenly?",
+      "purpose": "Sudden onset suggests psychological or vascular event; gradual onset suggests organic progressive disease",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 3 months, sudden onset",
+        "Less than 3 months, gradual",
+        "3–12 months, gradual",
+        "More than 12 months, gradual",
+        "Lifelong (since first sexual experience)"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "ED_ONSET_DURATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_002",
+      "text": "Is the problem present in all situations (global) — including during masturbation and on waking — or only with a partner (situational)?",
+      "purpose": "Situational ED suggests psychogenic cause; global ED across all contexts points to organic vascular or neurological aetiology",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Only with partner — able to have morning erections and masturbate normally",
+        "Only with partner — no morning erections",
+        "In all situations, including masturbation and on waking",
+        "Partial erections only in all situations"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "ED_SITUATIONAL_VS_GLOBAL",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_003",
+      "text": "Do you have any cardiovascular risk factors — hypertension, diabetes, high cholesterol, obesity, or do you smoke?",
+      "purpose": "Vascular risk factors are the most common organic cause of ED; ED may also be a sentinel marker for occult cardiovascular disease",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(CARDIOVASCULAR_RISK_ED_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "CARDIOVASCULAR_RISK_ED",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_004",
+      "text": "Have you had any recent chest pain, shortness of breath on exertion, or been told you have heart disease?",
+      "purpose": "Established cardiac disease requires cardiovascular risk stratification before prescribing PDE5 inhibitors",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "ESTABLISHED_CARDIAC_DISEASE_ED",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_005",
+      "text": "Are you taking any medications that may cause ED — antihypertensives (beta-blockers, thiazides), antidepressants, antipsychotics, or antiandrogens?",
+      "purpose": "Many medications cause ED as a side effect; identifying them may allow substitution without further investigation",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(MEDICATION_INDUCED_ED_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "MEDICATION_INDUCED_ED",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_006",
+      "text": "Do you have any symptoms suggesting low testosterone — reduced libido, fatigue, reduced body hair, or loss of muscle?",
+      "purpose": "Hypogonadism is a correctable hormonal cause of ED",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HYPOGONADISM_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "HYPOGONADISM_FEATURES",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_ED_007",
+      "text": "Are you experiencing significant stress, anxiety, depression, or relationship difficulties?",
+      "purpose": "Psychological factors are the leading cause of ED in younger men; identifying them guides psychosexual therapy referral",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(PSYCHOGENIC_ED_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "PSYCHOGENIC_ED_FACTORS",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

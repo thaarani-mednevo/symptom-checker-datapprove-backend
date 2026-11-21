@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_004",
+  "code": "CHEST_TIGHTNESS",
+  "name": "Chest tightness",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "Shortness of breath (SOB), known as dyspnea or dyspnoea, is an uncomfortable feeling of not being able to breathe well enough. The American Thoracic Society defines it as \"a subjective experience of breathing discomfort that consists of qualitatively distinct sensations that vary in intensity\", and recommends evaluating dyspnea by assessing the intensity of its distinct sensations, the degree of distress and discomfort involved, and its burden or impact on the patient's activities of daily living.",
+  "hpo_codes": [
+    "HP:0031996"
+  ],
+  "snomed_code": "23924001",
+  "snomed_verified_name": "Tight chest",
+  "icd10_code": "R07.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other chest pain",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

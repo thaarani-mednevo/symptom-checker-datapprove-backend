@@ -1,0 +1,179 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_HB_001",
+    "code":  "RIGHT_TESTICULAR_PAIN",
+    "name":  "Right testicular pain",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Right testicular pain refers to pain perceived in or around the right testicle, which may originate from the testis itself, the epididymis, the spermatic cord, or be referred from the lower abdomen or retroperitoneum. The most urgent cause to exclude is right testicular torsion — an emergency requiring surgical exploration within 6 hours to preserve testicular viability. Other causes include epididymo-orchitis, trauma, varicocele, hernia, and testicular tumour (which may present with a dull ache rather than acute pain).",
+    "complaints":  [
+                       {
+                           "code":  "TESTICULAR_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SCROTAL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "SCROTAL_SWELLING",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNDESCENDED_TESTIS_HISTORY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "PREVIOUS_TESTICULAR_TORSION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "EPIDIDYMITIS_ORCHITIS_HISTORY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SEXUALLY_ACTIVE_MALE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_PAIN",
+                          "condition":  "Sudden, severe onset of pain; testicle riding high or lying horizontally; absent cremasteric reflex; or pain with nausea/vomiting, especially in a child, adolescent, or young adult."
+                      },
+                      {
+                          "code":  "RED_MG_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_PAIN",
+                          "condition":  "Fever, scrotal erythema/warmth, or rapidly worsening swelling suggesting epididymo-orchitis with systemic infection."
+                      },
+                      {
+                          "code":  "RED_MG_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_SWELLING",
+                          "condition":  "Painless, firm, or irregular testicular lump or nodule present on examination or by patient report."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TESTICULAR_PAIN_SUDDEN_ONSET",
+                          "text":  "Did the testicular pain start suddenly and severely, within minutes to a few hours?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_TESTICULAR_TORSION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_TESTICULAR_PAIN_NAUSEA_VOMITING",
+                          "text":  "Is the testicular pain accompanied by nausea or vomiting?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_TESTICULAR_TORSION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_TESTICLE_HIGH_RIDING_OR_HORIZONTAL",
+                          "text":  "Does the affected testicle appear higher, or lie horizontally, compared to the other side?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_TESTICULAR_TORSION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_TESTICULAR_FEVER",
+                          "text":  "Is there fever along with the testicular pain or swelling?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_INFECTION_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_4",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_TESTICULAR_PAINLESS_LUMP",
+                          "text":  "Is there a painless lump or hard area felt in the testicle?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_5",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_TESTICULAR_TRAUMA_HISTORY",
+                          "text":  "Did the pain begin right after a direct injury or trauma to the groin or testicle?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "RIGHT_TESTICULAR_PAIN_SYMPTOM_6",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "LEFT_TESTICULAR_PAIN",
+                              "distinguishing_feature":  "Right testicular pain is documented as localized to the right testicle; left testicular pain is localized to the left. Laterality is confirmed on exam, not by history alone."
+                          },
+                          {
+                              "disease_code":  "TESTICULAR_PAIN_UNSPECIFIED",
+                              "distinguishing_feature":  "Right testicular pain has a confirmed side; unspecified testicular pain is used when laterality has not been documented or the pain is bilateral/unclear."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "16675201000119107",
+    "snomed_verified_name":  "Pain of right testicle",
+    "icd10_code":  "N50.811",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Right testicular pain",
+    "evidence_ids":  [
+                         "EVID_RIGHT_TESTICULAR_PAIN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

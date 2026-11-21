@@ -1,0 +1,126 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_019",
+    "code":  "DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND",
+    "name":  "Dry eye syndrome of right lacrimal gland",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "A ophthalmology condition known as Dry eye syndrome of right lacrimal gland.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_ITCHING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "OCULAR_DRYNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BURNING_SENSATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision in the right eye"
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain in the right eye suggestive of acute inflammation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DRY_GRITTY_SENSATION_IN_Y",
+                          "text":  "[LLM DRAFT] Do you feel a dry, gritty sensation in your right eye?",
+                          "purpose":  "dryness sensation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_BURNING_OR_STINGING_IN",
+                          "text":  "[LLM DRAFT] Do you experience burning or stinging in your right eye?",
+                          "purpose":  "burning sensation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_REDNESS_OR_SWELLING_AROUND",
+                          "text":  "[LLM DRAFT] Do you notice redness or swelling around your right eye?",
+                          "purpose":  "redness/swelling",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H04.121",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dry eye syndrome of right lacrimal gland",
+    "evidence_ids":  [
+                         "EVID_DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

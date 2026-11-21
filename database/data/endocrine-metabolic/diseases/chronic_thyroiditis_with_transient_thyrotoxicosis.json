@@ -1,0 +1,151 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_009",
+    "code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+    "name":  "Chronic thyroiditis with transient thyrotoxicosis",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Chronic thyroiditis with transient thyrotoxicosis is an autoimmune thyroid inflammation that temporarily elevates thyroid hormone levels before returning to euthyroid state.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WEIGHT_GAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "JOINT_AND_MUSCLE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "COLD_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DRY_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HAIR_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SLOWED_HEART_RATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GENETIC_AND_ENVIRONMENTAL_FACTORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Acute thyrotoxic crisis (thyroid storm) characterized by severe hyperpyrexia, tachycardia out of proportion to fever, altered mental status, and gastrointestinal dysfunction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_A_SUDDEN_RAPID_HEAR",
+                          "text":  "[LLM DRAFT] Have you experienced a sudden rapid heartbeat, tremors, or unexplained weight loss recently?",
+                          "purpose":  "Screens for thyrotoxicosis symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_NOTICE_A_PAINLESS_SWELLING_OR_TE",
+                          "text":  "[LLM DRAFT] Did you notice a painless swelling or tenderness in the front of your neck?",
+                          "purpose":  "Screens for thyroid gland inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of TSH receptor stimulating antibodies and ophthalmopathy pointing to Graves\u0027 disease rather than destructive thyroiditis."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Undetectable thyroglobulin levels and low radioactive iodine uptake due to exogenous hormone ingestion."
+                          },
+                          {
+                              "disease_code":  "OTHER_THYROTOXICOSIS_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Markedly elevated ESR and anterior neck pain characteristic of subacute granulomatous thyroiditis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "237538007",
+    "snomed_verified_name":  "Chronic thyroiditis with transient thyrotoxicosis",
+    "icd10_code":  "E06.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chronic thyroiditis with transient thyrotoxicosis",
+    "evidence_ids":  [
+                         "EVID_CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

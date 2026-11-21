@@ -1,0 +1,91 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_019",
+    "code":  "POSTPROCEDURAL_HYPOTHYROIDISM",
+    "name":  "Postprocedural hypothyroidism",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Postprocedural hypothyroidism is a transient or permanent reduction in thyroid hormone production following thyroid surgery, radioiodine therapy, or neck irradiation.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOCALCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOCALCEMIA",
+                          "condition":  "[LLM DRAFT] Severe postprocedural hypocalcemia presenting with carpopedal spasm, tetany, or QT prolongation following total thyroidectomy."
+                      },
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Postprocedural thyroid storm presenting with high fever, tachycardia, and altered mental status due to manipulation of the thyroid gland during surgery."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_SURGERY_RADIATION_TREATMEN",
+                          "text":  "[LLM DRAFT] Have you had surgery, radiation treatment, or another medical procedure involving your neck or thyroid gland in the past?",
+                          "purpose":  "history of neck procedure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POSTPROCEDURAL_HYPOTHYROIDISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_EXPERIENCED_NEW_OR_WOR",
+                          "text":  "[LLM DRAFT] Have you recently experienced new or worsening fatigue, weight gain, feeling unusually cold, or sluggishness following a neck or thyroid procedure?",
+                          "purpose":  "hypothyroidism symptoms after procedure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POSTPROCEDURAL_HYPOTHYROIDISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] History of inciting drug or exogenous substance exposure rather than surgical or procedural intervention"
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Absence of a documented history of thyroid surgery, neck irradiation, or medical procedures involving the thyroid"
+                          },
+                          {
+                              "disease_code":  "POSTINFECTIOUS_HYPOTHYROIDISM",
+                              "distinguishing_feature":  "[LLM DRAFT] Preceding history of an infectious or inflammatory thyroid illness rather than an iatrogenic procedure"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E89.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Postprocedural hypothyroidism",
+    "evidence_ids":  [
+                         "EVID_POSTPROCEDURAL_HYPOTHYROIDISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

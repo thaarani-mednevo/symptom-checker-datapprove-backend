@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_068",
+  "code": "UNSPECIFIED_OPEN_ANGLE_GLAUCOMA_STAGE_UNSPECIFIED",
+  "name": "Unspecified open-angle glaucoma, stage unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Glaucoma is a group of eye diseases that can lead to damage of the optic nerve, which transmits visual information from the eye to the brain. Glaucoma may cause vision loss if left untreated.",
+  "complaints": [
+    {
+      "code": "VISUAL_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ELEVATED_INTRAOCULAR_PRESSURE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "VISUAL_FIELD_LOSS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "severe"
+    },
+    {
+      "code": "OPTIC_DISC_CUPPING",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "ASYMPTOMATIC_PRESENTATION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "ELEVATED_INTRAOCULAR_PRESSURE",
+      "strength": "strong"
+    },
+    {
+      "code": "FAMILY_HISTORY_OF_GLAUCOMA",
+      "strength": "strong"
+    },
+    {
+      "code": "AFRICAN_OR_HISPANIC_ANCESTRY",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H40.10X0",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified open-angle glaucoma, stage unspecified",
+  "evidence_ids": [
+    "EVID_UNSPECIFIED_OPEN_ANGLE_GLAUCOMA_STAGE_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

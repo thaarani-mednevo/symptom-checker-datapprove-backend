@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_002",
+  "code": "LYMPHADENOPATHY",
+  "name": "Lymphadenopathy",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "Lymphadenopathy or adenopathy is a disease of the lymph nodes, in which they are abnormal in size or consistency. Lymphadenopathy of an inflammatory type is lymphadenitis, producing swollen or enlarged lymph nodes.",
+  "hpo_codes": [],
+  "snomed_code": "30746006",
+  "snomed_verified_name": "Lymphadenopathy",
+  "icd10_code": "R59.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Enlarged lymph nodes, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

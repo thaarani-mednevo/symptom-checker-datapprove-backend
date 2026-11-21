@@ -1,0 +1,79 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_003",
+  "code": "STIFFNESS_OF_LEFT_SHOULDER_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of left shoulder, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "A condition characterized by limited range of motion and pain in the left shoulder without an identifiable underlying cause.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "REDUCED_RANGE_OF_MOTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "PAIN_WITH_ABDUCTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "JOINT_CAPSULE_TIGHTNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "LOCALIZED_MUSCLE_GUARDING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.612",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of left shoulder, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_LEFT_SHOULDER_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

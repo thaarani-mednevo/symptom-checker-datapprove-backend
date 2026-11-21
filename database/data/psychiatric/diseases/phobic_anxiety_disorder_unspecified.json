@@ -1,0 +1,102 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_004",
+    "code":  "PHOBIC_ANXIETY_DISORDER_UNSPECIFIED",
+    "name":  "Phobic anxiety disorder, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "A phobia is an anxiety disorder, defined by an irrational, unrealistic, persistent and excessive fear of an object or situation. Phobias typically result in a rapid onset of fear and are usually present for more than six months.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PANIC_ATTACKS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_AN_OBJECT_OR_SITUATION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GENETIC_AND_ENVIRONMENTAL_FACTORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_PHOBIC_ANXIETY",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_PANIC_ATTACK_CARDIAC_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_PHOBIC_ANXIETY",
+                          "condition":  "Patient experiences chest pain, palpitations, or shortness of breath during panic attacks."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PHOBIC_ANXIETY_SCREEN_1",
+                          "text":  "Do you experience intense fear or anxiety when approaching or thinking about a specific situation or object?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PHOBIC_ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PHOBIC_ANXIETY_SCREEN_2",
+                          "text":  "Do you avoid the feared situation or object, or endure it with great distress?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PHOBIC_ANXIETY_DISORDER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Widespread anxiety across multiple domains rather than a specific phobia."
+                          },
+                          {
+                              "disease_code":  "PANIC_DISORDER",
+                              "distinguishing_feature":  "Recurrent unexpected panic attacks with fear of future attacks, not limited to a specific phobia."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "386810004",
+    "snomed_verified_name":  "Phobic disorder",
+    "icd10_code":  "F40.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Phobic anxiety disorder, unspecified",
+    "evidence_ids":  [
+                         "EVID_PHOBIC_ANXIETY_DISORDER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

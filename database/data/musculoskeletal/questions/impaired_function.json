@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "IMPAIRED_FUNCTION",
+    "complaint_name":  "Impaired function",
+    "module":  "musculoskeletal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_IF_001",
+                          "text":  "Which activities are you unable to do that you could do before?",
+                          "purpose":  "activities",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FUNCTIONAL_DECLINE_ACTIVITIES",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IF_002",
+                          "text":  "Is the limitation from pain, weakness, stiffness, or something else?",
+                          "purpose":  "cause",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FUNCTIONAL_LIMITATION_CAUSE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IF_003",
+                          "text":  "Did the limitation come on suddenly or gradually?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FUNCTIONAL_DECLINE_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IF_004",
+                          "text":  "Do you have associated joint pain, muscle weakness, or neurological symptoms?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FUNCTIONAL_LIMITATION_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

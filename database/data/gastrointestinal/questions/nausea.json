@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "NAUSEA",
+    "complaint_name":  "Nausea",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_NAUS_001",
+                          "text":  "How long have you felt nauseous and is it constant or intermittent?",
+                          "purpose":  "pattern",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NAUSEA_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NAUS_002",
+                          "text":  "Are you also vomiting?",
+                          "purpose":  "vomiting",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NAUSEA_WITH_VOMITING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NAUS_003",
+                          "text":  "Could you be pregnant?",
+                          "purpose":  "pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PREGNANCY_NAUSEA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NAUS_004",
+                          "text":  "Did it start after a new medication, food, or alcohol?",
+                          "purpose":  "trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NAUSEA_TRIGGER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NAUS_005",
+                          "text":  "Do you have abdominal pain, fever, or jaundice?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "NAUSEA_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

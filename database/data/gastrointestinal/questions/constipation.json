@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "CONSTIPATION",
+    "complaint_name":  "Constipation",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_CONST_001",
+                          "text":  "How long since your last normal bowel movement?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONSTIPATION_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_CONST_002",
+                          "text":  "Is there abdominal pain or bloating?",
+                          "purpose":  "symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONSTIPATION_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_CONST_003",
+                          "text":  "Is there blood in the stool?",
+                          "purpose":  "bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_001)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RECTAL_BLEEDING_WITH_CONSTIPATION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_CONST_004",
+                          "text":  "Have you had a recent change in bowel habit lasting more than 4 weeks?",
+                          "purpose":  "change_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_002)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CHANGE_IN_BOWEL_HABIT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_CONST_005",
+                          "text":  "Are you taking any medications that may cause constipation?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DRUG_CONSTIPATION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

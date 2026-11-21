@@ -1,0 +1,14 @@
+{
+  "complaint_code": "ORTHOPNEA",
+  "complaint_name": "Orthopnea",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_ORTH_001", "text": "How many pillows do you need to sleep comfortably without feeling breathless?", "purpose": "severity_grading", "answer_type": "multiple_choice", "options": ["One pillow (normal)", "Two pillows", "Three or more pillows", "Must sleep in a chair"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "ORTHOPNOEA_GRADE", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_ORTH_002", "text": "How long have you needed extra pillows to sleep?", "purpose": "duration", "answer_type": "free_text", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "ORTHOPNOEA_DURATION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_ORTH_003", "text": "Do you also wake from sleep with sudden severe breathlessness?", "purpose": "pnd_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "PAROXYSMAL_NOCTURNAL_DYSPNOEA", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_ORTH_004", "text": "Do you have ankle or leg swelling?", "purpose": "oedema_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "PERIPHERAL_OEDEMA", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

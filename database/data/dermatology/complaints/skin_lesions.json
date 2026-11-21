@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_002",
+  "code": "SKIN_LESIONS",
+  "name": "Skin lesions",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "A skin condition, also known as a cutaneous condition, is any medical condition that affects the integumentary system—the organ system that encloses the body and includes skin, nails, and related muscle and glands. The major function of this system is to act as a barrier against the external environment.",
+  "hpo_codes": [],
+  "snomed_code": "1145367001",
+  "snomed_verified_name": "Profuse pigmented skin lesions",
+  "icd10_code": "R23.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other skin changes",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

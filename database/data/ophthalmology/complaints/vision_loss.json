@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_011",
+  "code": "VISION_LOSS",
+  "name": "Vision loss",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Visual or vision impairment is the partial or total inability of visual perception. In the absence of treatment such as corrective eyewear, assistive devices, and medical treatment, visual impairment may cause the individual difficulties with normal daily tasks, including reading and walking.",
+  "hpo_codes": [],
+  "snomed_code": "1231696003",
+  "snomed_verified_name": "Transient vision loss caused by light",
+  "icd10_code": "H54.7",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified visual loss",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

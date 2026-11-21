@@ -1,0 +1,134 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_012",
+    "code":  "PSYCHOTIC_DISORDER_WITH_DELUSIONS_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION",
+    "name":  "Psychotic disorder with delusions due to known physiological condition",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "In psychopathology, psychosis is the inability to distinguish what is or is not real. Examples of psychotic symptoms are delusions, hallucinations, and disorganized or incoherent thoughts or speech.",
+    "complaints":  [
+                       {
+                           "code":  "DELUSIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DELUSIONS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "HALLUCINATIONS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "INCOHERENT_SPEECH_AND_BEHAVIOR",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "MENTAL_ILLNESS_(SCHIZOPHRENIA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BIPOLAR_DISORDER)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SLEEP_DEPRIVATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SOME_MEDICAL_CONDITIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CERTAIN_MEDICATIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DRUGS_(INCLUDING_ALCOHOL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CAFFEINE_AND_CANNABIS)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PSYCHOSIS_ORGANIC_ACUTE_ONSET",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DELUSIONS",
+                          "condition":  "Delusions started suddenly along with confusion, fever, or followed a head injury or new medication — possible reversible medical cause, needs urgent medical workup"
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS_SAFETY_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DELUSIONS",
+                          "condition":  "Patient reports feeling unsafe or having thoughts of harming self or others because of these beliefs — treat as emergency"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PSYCHOSIS_ORGANIC_ONSET",
+                          "text":  "Did these beliefs or unusual thoughts start suddenly, along with confusion, fever, or after a head injury or new medication?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PSYCHOTIC_DISORDER_WITH_DELUSIONS_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PSYCHOSIS_SAFETY_CHECK",
+                          "text":  "Do you feel unsafe right now, or have you had any thoughts of harming yourself or someone else because of these beliefs?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PSYCHOTIC_DISORDER_WITH_DELUSIONS_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F06.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Psychotic disorder with delusions due to known physiological condition",
+    "evidence_ids":  [
+                         "EVID_PSYCHOTIC_DISORDER_WITH_DELUSIONS_DUE_TO_KNOWN_PHYSIOLOGICAL_CONDITION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

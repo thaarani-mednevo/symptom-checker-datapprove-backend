@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POLYURIA",
+    "complaint_name":  "Polyuria",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_POLY_001",
+                          "text":  "How much urine do you pass per day and how often?",
+                          "purpose":  "volume",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYURIA_VOLUME",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_002",
+                          "text":  "Are you excessively thirsty?",
+                          "purpose":  "polydipsia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POLYDIPSIA_WITH_POLYURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_003",
+                          "text":  "Do you have diabetes or a family history?",
+                          "purpose":  "diabetes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DIABETES_WITH_POLYURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_004",
+                          "text":  "Is it worse at night?",
+                          "purpose":  "nocturia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NOCTURNAL_POLYURIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

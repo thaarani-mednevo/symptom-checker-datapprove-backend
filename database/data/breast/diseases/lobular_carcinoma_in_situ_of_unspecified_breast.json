@@ -1,0 +1,127 @@
+﻿{
+    "id":  "BREAST_DIS_CS_004",
+    "code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+    "name":  "Lobular carcinoma in situ of unspecified breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "Lobular carcinoma in situ of unspecified breast is a non‑invasive breast cancer confined to the lobules, characterized by proliferation of malignant epithelial cells without stromal invasion.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EARLY:_VAGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NONE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BRCA2_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_BREAST_CANCER",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HORMONE_REPLACEMENT_THERAPY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_A_DOCTOR_RECENTLY_TELL_YOU_THAT_A_RO",
+                          "text":  "[LLM DRAFT] Did a doctor recently tell you that a routine mammogram or breast biopsy found abnormal cells called lobular carcinoma in situ (LCIS)?",
+                          "purpose":  "screens for known LCIS diagnosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_NEW_BREAST_LUMP_THIC",
+                          "text":  "[LLM DRAFT] Have you noticed a new breast lump, thickening, or skin dimpling on either of your breasts?",
+                          "purpose":  "screens for invasive breast cancer symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_RECEIVE_PATHOLOGY_RESULTS_SHOWIN",
+                          "text":  "[LLM DRAFT] Did you receive pathology results showing abnormal cells in both breasts?",
+                          "purpose":  "screens for bilateral breast involvement typical of LCIS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a fluid-filled, mobile mass that typically demonstrates benign features on ultrasound rather than the non-palpable microcalcifications or incidental findings characteristic of LCIS."
+                          },
+                          {
+                              "disease_code":  "MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Manifests as a rapidly growing cutaneous or subcutaneous nodule originating from the skin rather than the terminal ductulo-lobular unit."
+                          },
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with nipple discharge or periareolar inflammation due to dilated ducts rather than the clonal proliferation of epithelial cells confined to the lobules seen in LCIS."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D05.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Lobular carcinoma in situ of unspecified breast",
+    "evidence_ids":  [
+                         "EVID_LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

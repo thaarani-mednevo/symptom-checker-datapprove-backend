@@ -1,0 +1,69 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_017",
+    "code":  "SUBACUTE_AND_CHRONIC_VULVITIS",
+    "name":  "Subacute and chronic vulvitis",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Subacute and chronic vulvitis.",
+    "complaints":  [
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SYMPTOM_DURATION_CHRONIC",
+                          "text":  "Have the symptoms been present for more than 3 months?",
+                          "purpose":  "Confirm chronicity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SUBACUTE_AND_CHRONIC_VULVITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VULVAL_SYMPTOM_TRIGGER",
+                          "text":  "Did the soreness start after using a new soap, product, or clothing?",
+                          "purpose":  "Identify irritant trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUBACUTE_AND_CHRONIC_VULVITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N76.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Subacute and chronic vulvitis",
+    "evidence_ids":  [
+                         "EVID_SUBACUTE_AND_CHRONIC_VULVITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

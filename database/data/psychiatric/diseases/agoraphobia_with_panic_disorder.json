@@ -1,0 +1,106 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_044",
+    "code":  "AGORAPHOBIA_WITH_PANIC_DISORDER",
+    "name":  "Agoraphobia with panic disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Agoraphobia is an anxiety disorder characterized by symptoms of anxiety in situations where people perceive their environment to be unsafe with no way to escape. These situations can include public transit, shopping centers, crowds and queues, or simply being outside their home on their own.",
+    "complaints":  [
+                       {
+                           "code":  "PANIC_ATTACKS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_OPEN_OR_CROWDED_SPACES",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AVOIDANCE_OF_SITUATIONS_DIFFICULT_TO_ESCAPE",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PANIC_ATTACKS_IN_TRIGGERING_SITUATIONS",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "NEED_FOR_COMPANION_WHEN_LEAVING_HOME",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SOCIAL_ISOLATION",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_AGORAPHOBIA_HOUSEBOUND",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_PANIC",
+                          "condition":  "Patient reports being completely unable to leave home due to fear of panic attacks."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGORAPHOBIA_AVOIDANCE",
+                          "text":  "Do you avoid leaving home, or need someone with you, because you\u0027re afraid of having a panic attack in public?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AGORAPHOBIA_WITH_PANIC_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "35607004",
+    "snomed_verified_name":  "Panic disorder with agoraphobia",
+    "icd10_code":  "F40.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Agoraphobia with panic disorder",
+    "evidence_ids":  [
+                         "EVID_AGORAPHOBIA_WITH_PANIC_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

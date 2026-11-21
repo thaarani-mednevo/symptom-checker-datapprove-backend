@@ -1,0 +1,70 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_037",
+    "code":  "RECTAL_POLYP",
+    "name":  "Rectal polyp",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A colorectal polyp is a polyp occurring on the lining of the colon or rectum. Untreated colorectal polyps can develop into colorectal cancer.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECTAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_015",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECTAL_DISCHARGE",
+                          "condition":  "Persistent rectal bleeding or discharge beyond 4-6 weeks"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_016",
+                          "text":  "Has the rectal bleeding or discharge lasted more than 4-6 weeks?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_015)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_POLYP_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "RECTAL_PROLAPSE",
+                              "distinguishing_feature":  "A rectal polyp is a discrete mucosal growth seen on endoscopy; rectal prolapse is protrusion of the full rectal wall through the anus, visible on physical exam, especially with straining."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "39772007",
+    "snomed_verified_name":  "Rectal polyp",
+    "icd10_code":  "K62.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Rectal polyp",
+    "evidence_ids":  [
+                         "EVID_RECTAL_POLYP"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

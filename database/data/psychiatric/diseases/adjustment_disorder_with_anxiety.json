@@ -1,0 +1,120 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_007",
+    "code":  "ADJUSTMENT_DISORDER_WITH_ANXIETY",
+    "name":  "Adjustment disorder with anxiety",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Adjustment disorder is a mental disorder defined by a maladaptive response to a psychosocial stressor. The maladaptive response usually involves otherwise normal emotional and behavioral reactions that manifest more intensely than usual, causing marked distress, preoccupation with the stressor and its consequences, and functional impairment.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ANXIETY",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DEPRESSION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HISTORY_OF_MENTAL_DISORDERS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LOW_SOCIAL_SUPPORT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDAL_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SUICIDAL_IDEATION",
+                          "condition":  "Presence of suicidal thoughts or intent."
+                      },
+                      {
+                          "code":  "RF_SELF_HARM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SELF_HARM",
+                          "condition":  "History or current self-harm behaviors."
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "PSYCHOSIS",
+                          "condition":  "Evidence of hallucinations or delusions."
+                      },
+                      {
+                          "code":  "RF_SEVERE_FUNCTIONAL_IMPAIRMENT",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "SEVERE_FUNCTIONAL_IMPAIRMENT",
+                          "condition":  "Significant impairment in work, school, or social functioning."
+                      },
+                      {
+                          "code":  "RF_CONTINUOUS_STRESSOR",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "CONTINUOUS_STRESSOR",
+                          "condition":  "Ongoing exposure to the stressor without resolution."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SUICIDAL_IDEATION",
+                          "text":  "Do you have thoughts of harming yourself or ending your life?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ADJUSTMENT_DISORDER_WITH_ANXIETY_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SELF_HARM",
+                          "text":  "Have you ever harmed yourself intentionally?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ADJUSTMENT_DISORDER_WITH_ANXIETY_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "47372000",
+    "snomed_verified_name":  "Adjustment disorder with anxious mood",
+    "icd10_code":  "F43.22",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Adjustment disorder with anxiety",
+    "evidence_ids":  [
+                         "EVID_ADJUSTMENT_DISORDER_WITH_ANXIETY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

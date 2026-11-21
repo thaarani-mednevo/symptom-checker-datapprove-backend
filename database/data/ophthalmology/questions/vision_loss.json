@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "VISION_LOSS",
+    "complaint_name":  "Vision loss",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_VL_001",
+                          "text":  "Did the vision loss come on suddenly or gradually?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VISION_LOSS_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VL_002",
+                          "text":  "Is it in one eye or both?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VISION_LOSS_LATERALITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VL_003",
+                          "text":  "Is it painful?",
+                          "purpose":  "pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PAINFUL_VISION_LOSS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VL_004",
+                          "text":  "Is there a curtain or shadow coming down over your vision?",
+                          "purpose":  "retinal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "RETINAL_DETACHMENT",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VL_005",
+                          "text":  "Did it happen suddenly and painlessly in one eye?",
+                          "purpose":  "acute_painless",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "ACUTE_PAINLESS_MONOCULAR",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

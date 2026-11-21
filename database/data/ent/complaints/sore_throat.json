@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_004",
+  "code": "SORE_THROAT",
+  "name": "Sore throat",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "Sore throat, also known as throat pain, is pain or irritation of the throat. The majority of sore throats are caused by a virus, for which antibiotics are not helpful.",
+  "hpo_codes": [],
+  "snomed_code": "267102003",
+  "snomed_verified_name": "Sore throat",
+  "icd10_code": "J02.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Acute pharyngitis, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

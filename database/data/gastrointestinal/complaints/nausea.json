@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_005",
+  "code": "NAUSEA",
+  "name": "Nausea",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Nausea is a diffuse sensation of unease and discomfort, sometimes perceived as an urge to vomit. It can be a debilitating symptom if prolonged and has been described as placing discomfort on the chest, abdomen, or back of the throat.",
+  "hpo_codes": [],
+  "snomed_code": "422587007",
+  "snomed_verified_name": "Nausea",
+  "icd10_code": "R11.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Nausea",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

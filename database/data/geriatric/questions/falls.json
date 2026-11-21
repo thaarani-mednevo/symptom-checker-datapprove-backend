@@ -1,0 +1,100 @@
+﻿{
+  "complaint_code": "FALLS",
+  "complaint_name": "Falls",
+  "module": "geriatric",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_in_review",
+  "questions": [
+    {
+      "code": "Q_CMP_FALLS_001",
+      "text": "How many times have you fallen in the past 12 months?",
+      "purpose": "fall_frequency",
+      "answer_type": "multiple_choice",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "FALL_FREQUENCY",
+      "yes_weight": 0,
+      "no_weight": 0,
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-19T12:38:49+00:00"
+    },
+    {
+      "code": "Q_CMP_FALLS_002",
+      "text": "Did you lose consciousness or black out during the fall?",
+      "purpose": "syncope_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "SYNCOPE_WITH_FALL",
+      "yes_weight": 5,
+      "no_weight": "-1",
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-19T12:39:15+00:00"
+    },
+    {
+      "code": "Q_CMP_FALLS_003",
+      "text": "Did you injure yourself in the fall — head injury, fracture, or cuts?",
+      "purpose": "injury_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "RED_FLAG(RF_FALL_INJURY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "FALL_INJURY",
+      "yes_weight": 4,
+      "no_weight": "-1"
+    },
+    {
+      "code": "Q_CMP_FALLS_004",
+      "text": "Do you feel dizzy or light-headed when you stand up quickly?",
+      "purpose": "orthostatic_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "ORTHOSTATIC_HYPOTENSION",
+      "yes_weight": 2,
+      "no_weight": "-1"
+    },
+    {
+      "code": "Q_CMP_FALLS_005",
+      "text": "Are you taking more than 5 medications, including sedatives, blood pressure tablets, or sleeping pills?",
+      "purpose": "polypharmacy_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(MEDICATION_REVIEW)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "FALL_POLYPHARMACY",
+      "yes_weight": 3,
+      "no_weight": "-1"
+    },
+    {
+      "code": "Q_CMP_FALLS_006",
+      "text": "Do you have any weakness in your legs or difficulty walking?",
+      "purpose": "gait_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "GAIT_WEAKNESS",
+      "yes_weight": 2,
+      "no_weight": "-1"
+    },
+    {
+      "code": "Q_CMP_FALLS_007",
+      "text": "Do you have poor vision or wear glasses that may need updating?",
+      "purpose": "vision_check",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "VISUAL_IMPAIRMENT",
+      "yes_weight": 2,
+      "no_weight": "-1"
+    }
+  ]
+}

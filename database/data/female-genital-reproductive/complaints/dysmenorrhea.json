@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_004",
+  "code": "DYSMENORRHEA",
+  "name": "Dysmenorrhea",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Dysmenorrhea, also known as period pain, painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins.",
+  "hpo_codes": [],
+  "snomed_code": "266599000",
+  "snomed_verified_name": "Dysmenorrhea",
+  "icd10_code": "N94.6",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysmenorrhea, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

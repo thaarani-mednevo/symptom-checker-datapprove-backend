@@ -1,0 +1,86 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_080",
+  "code": "LATE_ONSET_CEREBELLAR_ATAXIA",
+  "name": "Late-onset cerebellar ataxia",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Late-onset cerebellar ataxia.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "GAIT_ATAXIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "LIMB_ATAXIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "OCULOMOTOR_ABNORMALITIES",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FAMILY_HISTORY_OF_ATAXIA",
+      "strength": "strong"
+    },
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "230232005",
+  "snomed_verified_name": "Late onset cerebellar ataxia",
+  "icd10_code": "G11.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Late-onset cerebellar ataxia",
+  "evidence_ids": [
+    "EVID_LATE_ONSET_CEREBELLAR_ATAXIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "POLYPHARMACY_CONCERN",
+    "complaint_name":  "Polypharmacy concern",
+    "module":  "geriatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_POLY_001",
+                          "text":  "How many different medications is the patient currently taking?",
+                          "purpose":  "count",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MEDICATION_COUNT",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_002",
+                          "text":  "Has the patient had any recent falls, confusion, or dizziness that could be drug-related?",
+                          "purpose":  "adr_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ADVERSE_DRUG_REACTION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ADR_SYMPTOMS",
+                          "yes_weight":  4,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_003",
+                          "text":  "Is the patient taking any anticoagulants, diabetes medications, or narrow therapeutic index drugs?",
+                          "purpose":  "high_risk_drugs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HIGH_RISK_MEDICATIONS",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_POLY_004",
+                          "text":  "Has anyone reviewed all the medications together recently for appropriateness?",
+                          "purpose":  "review_status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MEDICATION_REVIEW_STATUS",
+                          "yes_weight":  "-2",
+                          "no_weight":  3
+                      }
+                  ]
+}

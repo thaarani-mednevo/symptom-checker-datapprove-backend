@@ -1,0 +1,138 @@
+﻿{
+    "id":  "BREAST_DIS_CS_012",
+    "code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+    "name":  "Mammary duct ectasia of right breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "Mammary duct ectasia of the right breast is a benign dilation of the milk ducts causing nipple discharge, pain, and skin changes.",
+    "complaints":  [
+                       {
+                           "code":  "NIPPLE_DISCHARGE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIPPLE_CHANGES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BREAST_PAIN_AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREGNANCY_LACTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HORMONAL_THERAPY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "weak"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_MASTITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Severe pain with redness, warmth, and fever indicating possible abscess"
+                      },
+                      {
+                          "code":  "RF_BLOODY_NIPPLE_DISCHARGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "NIPPLE_DISCHARGE",
+                          "condition":  "[LLM DRAFT] Sudden onset of bloody discharge warranting prompt evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_THICK_STICKY_DISCHARGE_FR",
+                          "text":  "[LLM DRAFT] Do you have a thick, sticky discharge from your right nipple that is dark green or black?",
+                          "purpose":  "screens for typical nipple discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_SKIN_AROUND_YOUR_RIGHT_NIPPLE_RED",
+                          "text":  "[LLM DRAFT] Is the skin around your right nipple red, swollen, or unusually warm to the touch?",
+                          "purpose":  "screens for acute inflammation or infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_RIGHT_NIPPLE_INVERTED_OR_PULLED",
+                          "text":  "[LLM DRAFT] Is your right nipple inverted or pulled inward recently?",
+                          "purpose":  "screens for duct retraction symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a well-circumscribed, fluid-filled mass on imaging rather than dilated, fluid-filled subareolar ducts."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by acute localized inflammation, severe pain, erythema, and purulent discharge rather than chronic, bland periductal inflammation."
+                          },
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Typically asymptomatic and detected mammographically as microcalcifications rather than presenting with palpable subareolar masses or nipple discharge."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "10735191000119105",
+    "snomed_verified_name":  "Mammary duct ectasia of right breast",
+    "icd10_code":  "N60.41",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Mammary duct ectasia of right breast",
+    "evidence_ids":  [
+                         "EVID_MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

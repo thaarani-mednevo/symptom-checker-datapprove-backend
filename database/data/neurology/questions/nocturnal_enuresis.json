@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "NOCTURNAL_ENURESIS",
+    "complaint_name":  "Nocturnal enuresis",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_NE_001",
+                          "text":  "Is this a child, and if so how old?",
+                          "purpose":  "age",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ENURESIS_AGE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NE_002",
+                          "text":  "Has the child ever been dry at night for 6 months?",
+                          "purpose":  "primary_secondary",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SECONDARY_ENURESIS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NE_003",
+                          "text":  "Is there daytime wetting, urgency, or dysuria?",
+                          "purpose":  "daytime",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DAYTIME_SYMPTOMS_WITH_ENURESIS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NE_004",
+                          "text":  "Is there constipation or faecal soiling?",
+                          "purpose":  "constipation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CONSTIPATION_WITH_ENURESIS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

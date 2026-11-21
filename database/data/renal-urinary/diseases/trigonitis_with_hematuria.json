@@ -1,0 +1,177 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_027",
+    "code":  "TRIGONITIS_WITH_HEMATURIA",
+    "name":  "Trigonitis with hematuria",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "Trigonitis is a condition of inflammation of the trigone region of the bladder. It is more common in women.",
+    "complaints":  [
+                       {
+                           "code":  "HAEMATURIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HAEMATURIA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLADDER_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FREQUENCY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "URGENCY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "RECURRENT_UTI",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HAEMATURIA",
+                          "condition":  "Haematuria with clots, flank pain, or fever"
+                      },
+                      {
+                          "code":  "RF_RU_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HAEMATURIA",
+                          "condition":  "Haematuria with weight loss or age \u003e40"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_003",
+                          "text":  "Is there blood visible in the urine?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_HAEMATURIA)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_004",
+                          "text":  "Is the blood in the urine accompanied by clots, severe flank/back pain, or fever?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_005",
+                          "text":  "Have you had unintentional weight loss recently, or are you over 40 years old?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_018",
+                          "text":  "Have you had pelvic radiotherapy or chemotherapy for cancer in the past?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_IRRADIATION_CYSTITIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_5",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_015",
+                          "text":  "Do you have a known history of kidney stones, prostate problems, or bladder issues?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "TRIGONITIS_WITH_HEMATURIA_SYMPTOM_6",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ACUTE_CYSTITIS_WITH_HEMATURIA",
+                              "distinguishing_feature":  "Trigonitis is localised to the trigone (confirmed on cystoscopy); acute cystitis involves diffuse bladder mucosal inflammation with positive urine culture."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0100577 | HP:5210192"
+                  ],
+    "snomed_code":  "368371000119102",
+    "snomed_verified_name":  "Hematuria co-occurrent and due to trigonitis",
+    "icd10_code":  "N30.31",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Trigonitis with hematuria",
+    "evidence_ids":  [
+                         "EVID_TRIGONITIS_WITH_HEMATURIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,177 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_041",
+    "code":  "CONDUCT_DISORDER_UNSPECIFIED",
+    "name":  "Conduct disorder, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Conduct disorder (CD) is a mental disorder diagnosed in childhood or adolescence that is characterized by a repetitive and persistent pattern of antisocial behavior involving the violation of the basic rights of others or major age-appropriate norms. These behaviors may include theft, lying, physical violence, destruction, and rule-breaking.",
+    "complaints":  [
+                       {
+                           "code":  "AGGRESSIVE_BEHAVIOUR",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "AGGRESSION_TO_PEOPLE_AND_ANIMALS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "DESTRUCTION_OF_PROPERTY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DECEITFULNESS_OR_THEFT",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SERIOUS_VIOLATIONS_OF_RULES",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ANTISOCIAL_BEHAVIOR",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HARSH_OR_INCONSISTENT_PARENTING",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHILDHOOD_ABUSE_OR_NEGLECT",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "ASSOCIATION_WITH_DEVIANT_PEERS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SOCIOECONOMIC_DISADVANTAGE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "EXPOSURE_TO_COMMUNITY_VIOLENCE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "NEUROPSYCHOLOGICAL_DEFICITS",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_AGGRESSIVE_BEHAVIOR",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_AGGRESSIVE",
+                          "condition":  "Frequent physical aggression towards peers or adults"
+                      },
+                      {
+                          "code":  "RF_RULE_BREAKING",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_RULE_BREAKING",
+                          "condition":  "Repeated violations of school or community rules"
+                      },
+                      {
+                          "code":  "RF_DEFIANCE",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_DEFIANCE",
+                          "condition":  "Persistent refusal to comply with authority"
+                      },
+                      {
+                          "code":  "RF_PROPERTY_DAMAGE",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "BEHAVIOR_PROPERTY_DAMAGE",
+                          "condition":  "Destruction of property on a regular basis"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGGRESSION",
+                          "text":  "Has the child ever physically threatened or harmed another person?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONDUCT_DISORDER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RULE_BREAKING",
+                          "text":  "Does the child frequently break rules or laws?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONDUCT_DISORDER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DEFIANCE",
+                          "text":  "Does the child often refuse to follow instructions from adults?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CONDUCT_DISORDER_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PROPERTY_DAMAGE",
+                          "text":  "Has the child damaged property on multiple occasions?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CONDUCT_DISORDER_UNSPECIFIED_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "INTERMITTENT_EXPLOSIVE_DISORDER",
+                              "distinguishing_feature":  "Sudden, intense episodes of aggression not sustained over time"
+                          }
+                      ],
+    "age_relevance":  "pediatric",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "430909002",
+    "snomed_verified_name":  "Conduct disorder",
+    "icd10_code":  "F91.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Conduct disorder, unspecified",
+    "evidence_ids":  [
+                         "EVID_CONDUCT_DISORDER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,77 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_091",
+  "code": "FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE",
+  "name": "Facial weakness following nontraumatic intracerebral hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Facial weakness is a medical sign associated with a variety of medical conditions.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INABILITY_TO_MOVE_THE_FACIAL_MUSCLES_ON_ONE_SIDE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CHANGE_IN_TASTE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAIN_AROUND_THE_EAR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden or progressive worsening of motor paralysis indicating stroke extension or mass effect following nontraumatic intracerebral hemorrhage."
+    },
+    {
+      "code": "RF_SPEECH_DISTURBANCE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SPEECH_DISTURBANCE",
+      "condition": "[LLM DRAFT] Acute onset or worsening of severe speech disturbance indicating neurological deterioration or secondary brain injury."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.192",
+  "icd10_validated": true,
+  "icd10_official_description": "Facial weakness following nontraumatic intracerebral hemorrhage",
+  "evidence_ids": [
+    "EVID_FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

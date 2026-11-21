@@ -1,0 +1,60 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_046",
+    "code":  "OVULATION_BLEEDING",
+    "name":  "Ovulation bleeding",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Ovulation bleeding.",
+    "complaints":  [
+                       {
+                           "code":  "INTERMENSTRUAL_BLEEDING",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Confirm mid-cycle timing",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OVULATION_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ENDOMETRIAL_POLYP",
+                              "distinguishing_feature":  "Ovulation bleeding is light, predictable, mid-cycle timed bleeding; endometrial polyp bleeding is often unpredictable intermenstrual bleeding confirmed structurally on ultrasound/hysteroscopy"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "266603000",
+    "snomed_verified_name":  "Ovulation bleeding",
+    "icd10_code":  "N92.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ovulation bleeding",
+    "evidence_ids":  [
+                         "EVID_OVULATION_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

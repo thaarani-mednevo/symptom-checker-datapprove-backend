@@ -1,0 +1,149 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_021",
+    "code":  "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS",
+    "name":  "Migraine with aura, intractable, with status migrainosus",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Migraine is a neurological disorder that causes moderate-to-severe headaches. The pain often affects one side of the head, but can affect both.",
+    "complaints":  [
+                       {
+                           "code":  "PHOTOPHOBIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PHOTOPSIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "BLURRED_VISION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "VISUAL_DISTORTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOMITING",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BURPING",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ENVIRONMENTAL_AND_GENETIC",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDENVISIONLOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, unilateral vision loss during migraine attack"
+                      },
+                      {
+                          "code":  "RF_NEWDIPLOPIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DIPLOPIA",
+                          "condition":  "[LLM DRAFT] New onset diplopia during migraine attack"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_NOTICE_VISUAL_CHANGES_SUCH_AS_F",
+                          "text":  "[LLM DRAFT] Did you notice visual changes, such as flashing lights or blind spots, before the headache began?",
+                          "purpose":  "aura detection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_THE_HEADACHE_PERSISTED_FOR_MORE_THAN",
+                          "text":  "[LLM DRAFT] Has the headache persisted for more than 72 hours or returned repeatedly despite treatment?",
+                          "purpose":  "status migrainosus",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_NAUSEA_OR_VOMITING",
+                          "text":  "[LLM DRAFT] Are you experiencing nausea or vomiting that prevents you from keeping food or medication down?",
+                          "purpose":  "severity indicator",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G43.111",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Migraine with aura, intractable, with status migrainosus",
+    "evidence_ids":  [
+                         "EVID_MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

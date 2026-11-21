@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_009",
+  "code": "PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNILATERAL",
+  "name": "Paralysis of vocal cords and larynx, unilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Vocal cord paresis, also known as recurrent laryngeal nerve paralysis or vocal fold paralysis, is an injury to one or both recurrent laryngeal nerves (RLNs), which control all intrinsic muscles of the larynx except for the cricothyroid muscle. The RLN is important for speaking, breathing and swallowing.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HOARSENESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "BREATHY_VOICE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "ASPIRATION_DURING_SWALLOWING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "VOCAL_FATIGUE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "IATROGENIC_SURGICAL_TRAUMA_THYROIDNECK_SURGERY",
+      "strength": "strong"
+    },
+    {
+      "code": "MALIGNANCY_LUNG_THYROID_OR_ESOPHAGEAL_CANCER",
+      "strength": "strong"
+    },
+    {
+      "code": "NECK_OR_CHEST_TRAUMA",
+      "strength": "moderate"
+    },
+    {
+      "code": "VIRAL_INFECTIONS_NEUROTROPIC_VIRUSES",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "J38.01",
+  "icd10_validated": true,
+  "icd10_official_description": "Paralysis of vocal cords and larynx, unilateral",
+  "evidence_ids": [
+    "EVID_PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

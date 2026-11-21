@@ -1,0 +1,191 @@
+﻿{
+    "id":  "GERIATRIC_DIS_GER_005",
+    "code":  "ALZHEIMERS_DEMENTIA",
+    "name":  "Alzheimer\u0027s dementia",
+    "module":  "geriatric",
+    "category":  "disease",
+    "description":  "Alzheimer\u0027s disease (AD) is the most common cause of dementia, accounting for 60–80% of cases. It is a progressive neurodegenerative disorder characterised by amyloid plaques and neurofibrillary tau tangles, beginning in the entorhinal cortex and hippocampus before spreading to association cortices. The clinical hallmark is progressive episodic memory loss (difficulty retaining new information) followed by impairment in language, visuospatial skills, executive function, and behaviour. Diagnosis is clinical, supported by neuropsychological testing and biomarkers (CSF amyloid/tau, amyloid PET). Current pharmacological treatments (cholinesterase inhibitors, memantine) are symptomatic; anti-amyloid therapies (lecanemab, donanemab) represent emerging disease-modifying options in early-stage disease.",
+    "complaints":  [
+                       {
+                           "code":  "MEMORY_LOSS_GERIATRIC",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CONFUSION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FUNCTIONAL_DECLINE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PROGRESSIVE_EPISODIC_MEMORY_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate_to_severe"
+                     },
+                     {
+                         "code":  "DISORIENTATION_TO_TIME_AND_PLACE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LANGUAGE_DIFFICULTY_WORD_FINDING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PERSONALITY_AND_BEHAVIOUR_CHANGE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "IMPAIRED_INSTRUMENTAL_ADLS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE_OVER_65",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_DEMENTIA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "APOE4_GENOTYPE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CARDIOVASCULAR_RISK_FACTORS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "LOW_EDUCATIONAL_ATTAINMENT",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DEPRESSION_HISTORY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HEARING_LOSS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_GER_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "CONFUSION",
+                          "condition":  "Acute deterioration superimposed on known dementia — suspect delirium precipitant, urgent medical review"
+                      },
+                      {
+                          "code":  "RED_GER_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FUNCTIONAL_DECLINE",
+                          "condition":  "Rapid decline over weeks in known dementia patient — exclude reversible cause (infection, medication toxicity, subdural haematoma)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GER_AD_001",
+                          "text":  "Has the person been having increasing difficulty remembering recent events, appointments, or conversations over the past 6 months or more?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(COGNITIVE_IMPAIRMENT)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALZHEIMERS_DEMENTIA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_AD_002",
+                          "text":  "Has the memory difficulty affected their ability to manage daily activities such as shopping, cooking, or managing finances?",
+                          "purpose":  "functional_impact_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DEMENTIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALZHEIMERS_DEMENTIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_AD_003",
+                          "text":  "Have there been noticeable changes in personality, mood, or behaviour alongside the memory problems?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DEMENTIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALZHEIMERS_DEMENTIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_GER_AD_004",
+                          "text":  "Have blood tests been done to exclude reversible causes such as thyroid problems or vitamin B12 deficiency?",
+                          "purpose":  "reversible_causes_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ALZHEIMERS_DEMENTIA_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VASCULAR_DEMENTIA",
+                              "distinguishing_feature":  "Vascular dementia has stepwise deterioration with vascular risk factors and evidence of cerebrovascular disease on MRI; Alzheimer\u0027s has gradual insidious onset predominantly affecting episodic memory."
+                          },
+                          {
+                              "disease_code":  "DELIRIUM",
+                              "distinguishing_feature":  "Delirium is acute onset with fluctuating course and an identifiable precipitant; Alzheimer\u0027s dementia is slowly progressive over months to years without acute fluctuation."
+                          },
+                          {
+                              "disease_code":  "DEPRESSION_PSEUDODEMENTIA",
+                              "distinguishing_feature":  "Depression in elderly patients can mimic dementia (\u0027pseudodementia\u0027) with cognitive complaints, withdrawal, and poor concentration. Mood-first presentation, preserved memory on testing, and response to antidepressants distinguish depression."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0002511"
+                  ],
+    "snomed_code":  "26929004",
+    "snomed_verified_name":  "Alzheimer\u0027s disease",
+    "icd10_code":  "G30.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alzheimer\u0027s disease, unspecified",
+    "evidence_ids":  [
+                         "EVID_ALZHEIMERS_DEMENTIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

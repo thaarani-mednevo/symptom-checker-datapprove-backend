@@ -1,0 +1,107 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_020",
+    "code":  "SECONDARY_DYSMENORRHEA",
+    "name":  "Secondary dysmenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Dysmenorrhea, also known as period pain, painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins.",
+    "complaints":  [
+                       {
+                           "code":  "DYSMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN_DURING_FIRST_FEW_DAYS_OF_MENSTRUATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NO_UNDERLYING_PROBLEM",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "UTERINE_FIBROIDS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ADENOMYOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ENDOMETRIOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PAIN_WORSENING_OVER_TIME",
+                          "text":  "Has the pain gradually gotten worse over months or years?",
+                          "purpose":  "Assess progressive worsening suggestive of secondary cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SECONDARY_DYSMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_INTERCOURSE_PAIN_LOCATION",
+                          "text":  "Is the pain during sex felt at entry, or deep inside?",
+                          "purpose":  "Screen for endometriosis-associated dyspareunia",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SECONDARY_DYSMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "32096006",
+    "snomed_verified_name":  "Secondary dysmenorrhea",
+    "icd10_code":  "N94.5",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Secondary dysmenorrhea",
+    "evidence_ids":  [
+                         "EVID_SECONDARY_DYSMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

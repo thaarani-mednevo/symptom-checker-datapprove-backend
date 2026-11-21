@@ -1,0 +1,13 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_TESTICULAR_PAIN_SUDDEN_ONSET,"Did the testicular pain start suddenly and severely, within minutes to a few hours?",yes_no,flag_torsion_suspected_emergency,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_TESTICULAR_PAIN_NAUSEA_VOMITING,Is the testicular pain accompanied by nausea or vomiting?,yes_no,flag_torsion_suspected_emergency,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_TESTICLE_HIGH_RIDING_OR_HORIZONTAL,"Does the affected testicle appear higher, or lie horizontally, compared to the other side?",yes_no,flag_torsion_suspected_emergency,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_TESTICULAR_FEVER,Is there fever along with the testicular pain or swelling?,yes_no,flag_infection_suspected_urgent,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_TESTICULAR_PAINLESS_LUMP,Is there a painless lump or hard area felt in the testicle?,yes_no,flag_mass_suspected_referral,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_TESTICULAR_TRAUMA_HISTORY,Did the pain begin right after a direct injury or trauma to the groin or testicle?,yes_no,note_trauma_history,continue_routine_testicular_pain_workup,clinician_not_approved
+Q_ERECTION_DURATION_OVER_4H,"Has an erection lasted longer than 4 hours, with or without sexual stimulation?",yes_no,flag_priapism_suspected_emergency,continue_routine_ed_workup,clinician_not_approved
+Q_ED_NEW_MEDICATION_ONSET,Did the erectile difficulty begin shortly after starting a new medication?,yes_no,review_medication_list_for_causative_drug,continue_routine_ed_workup,clinician_not_approved
+Q_ED_PROSTATECTOMY_HISTORY,Has the patient had prostate surgery (radical or simple prostatectomy) in the past?,yes_no,note_surgical_history_prostatectomy,continue_routine_ed_workup,clinician_not_approved
+Q_ED_CYSTECTOMY_HISTORY,Has the patient had bladder removal surgery (radical cystectomy) in the past?,yes_no,note_surgical_history_cystectomy,continue_routine_ed_workup,clinician_not_approved
+Q_ED_URETHRAL_SURGERY_HISTORY,Has the patient had prior urethral surgery or repeated urethral catheterization?,yes_no,note_surgical_history_urethral,continue_routine_ed_workup,clinician_not_approved
+Q_ED_SITUATIONAL_PATTERN,"Does the erectile difficulty occur only in certain situations (for example, normal erections during sleep or masturbation but not with a partner)?",yes_no,consider_psychogenic_contributing_cause,continue_routine_ed_workup,clinician_not_approved

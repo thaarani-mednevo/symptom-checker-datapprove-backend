@@ -1,0 +1,80 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_007",
+    "code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING",
+    "name":  "Other esophagitis without bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Esophagitis, also spelled oesophagitis, is a disease characterized by inflammation of the esophagus. The esophagus is a tube composed of a mucosal lining, and longitudinal and circular smooth muscle fibers.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SEVERE_CHEST_PAIN_OR_TROUBLE",
+                          "text":  "[LLM DRAFT] Do you have severe chest pain or trouble swallowing that makes it impossible to keep down food or liquids?",
+                          "purpose":  "Check for urgent complications of esophagitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_ONGOING_DISCOMFORT_BU",
+                          "text":  "[LLM DRAFT] Do you experience ongoing discomfort, burning, or pain in your chest or upper abdomen when swallowing?",
+                          "purpose":  "Screen for typical symptoms of esophageal inflammation without bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of acute hemorrhage, hematemesis, or melena on presentation rather than purely inflammatory symptoms like dysphagia or heartburn."
+                          },
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Endoscopic visualization of dilated submucosal veins rather than inflammatory mucosal changes or ulcerations."
+                          },
+                          {
+                              "disease_code":  "DUODENITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Inflammation localized to the duodenal bulb and small intestine rather than the esophageal mucosa, typically presenting with epigastric pain related to meals."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K20.80",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other esophagitis without bleeding",
+    "evidence_ids":  [
+                         "EVID_OTHER_ESOPHAGITIS_WITHOUT_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

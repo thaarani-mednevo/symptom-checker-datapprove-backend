@@ -1,0 +1,17 @@
+{
+  "id": "HEPATOBILIARY_COMP_HB_001",
+  "code": "JAUNDICE",
+  "name": "Jaundice",
+  "module": "hepatobiliary",
+  "body_system": "hepatobiliary",
+  "category": "complaint",
+  "description": "Jaundice, also known as icterus, is a yellowish or, less frequently, greenish pigmentation of the skin and conjunctivae due to high bilirubin levels. Jaundice in adults typically indicates the presence of underlying diseases involving abnormal heme metabolism, liver dysfunction, or biliary-tract obstruction.",
+  "hpo_codes": ["HP:0000952"],
+  "snomed_code": "18165001",
+  "snomed_verified_name": "Jaundice",
+  "icd10_code": "R17",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified jaundice",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

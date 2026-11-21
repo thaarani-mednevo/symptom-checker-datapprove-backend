@@ -1,0 +1,156 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_017",
+    "code":  "ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL",
+    "name":  "Acute follicular conjunctivitis, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Acute follicular conjunctivitis, bilateral is a rapidly developing inflammation of both conjunctival surfaces characterized by follicle formation, redness, itching, tearing, and mild to moderate discharge.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PHOTOPHOBIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CONJUNCTIVAL_INJECTION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FOLLICULAR_REACTION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "TEARING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PREAURICULAR_LYMPHADENOPATHY",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CONTACT_LENS_WEAR",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ADENOVIRUS_EXPOSURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OCULAR_SURFACE_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "IMMUNOSUPPRESSION",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision in either eye, suggesting corneal involvement or other serious ocular pathology."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_ITCHY_WATERY_EYES_IN_BOTH_E",
+                          "text":  "[LLM DRAFT] Do you have itchy, watery eyes in both eyes?",
+                          "purpose":  "screen for viral follicular conjunctivitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_RECENT_SORE_THROAT_OR_COUG",
+                          "text":  "[LLM DRAFT] Do you have a recent sore throat or cough?",
+                          "purpose":  "associate with viral infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SEVERE_EYE_PAIN_OR_VISION_CH",
+                          "text":  "[LLM DRAFT] Do you have severe eye pain or vision changes?",
+                          "purpose":  "rule out serious eye conditions",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Intense itching with papillae on upper tarsal conjunctiva"
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_SCLERITIS_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Deep, boring ocular pain with diffuse scleral injection"
+                          },
+                          {
+                              "disease_code":  "VIRAL_CONJUNCTIVITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Preauricular lymphadenopathy and watery discharge"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "347321000119107",
+    "snomed_verified_name":  "Acute follicular conjunctivitis of bilateral eyes",
+    "icd10_code":  "H10.013",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute follicular conjunctivitis, bilateral",
+    "evidence_ids":  [
+                         "EVID_ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

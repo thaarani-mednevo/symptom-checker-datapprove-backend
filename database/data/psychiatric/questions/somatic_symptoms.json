@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "SOMATIC_SYMPTOMS",
+    "complaint_name":  "Somatic symptoms",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SOM_001",
+                          "text":  "Do you have multiple physical symptoms that doctors have not been able to explain?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNEXPLAINED_SOMATIC_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SOM_002",
+                          "text":  "Are you very worried about your health or that you have a serious illness?",
+                          "purpose":  "health_anxiety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEALTH_ANXIETY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SOM_003",
+                          "text":  "How much do these symptoms affect your daily life?",
+                          "purpose":  "impact",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SOMATIC_IMPACT",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SOM_004",
+                          "text":  "How long have you had these symptoms?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SOMATIC_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

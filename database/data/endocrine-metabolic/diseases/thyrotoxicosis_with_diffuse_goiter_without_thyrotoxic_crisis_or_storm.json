@@ -1,0 +1,171 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_016",
+    "code":  "THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+    "name":  "Thyrotoxicosis with diffuse goiter without thyrotoxic crisis or storm",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hyperthyroidism is a endocrine disease in which the thyroid gland produces excessive amounts of thyroid hormones. Thyrotoxicosis is a condition that occurs due to elevated levels of thyroid hormones of any cause and therefore includes hyperthyroidism.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SLEEPING_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEARTBEAT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEAT_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ENLARGEMENT_OF_THE_THYROID",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GRAVES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MULTINODULAR_GOITER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOXIC_ADENOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFLAMMATION_OF_THE_THYROID",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EATING_TOO_MUCH_IODINE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOO_MUCH_SYNTHETIC_THYROID_HORMONE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Onset of high fever, altered mental status, marked tachycardia, or gastrointestinal symptoms indicating progression to thyroid storm."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_VISIBLE_SWELLING_OR_L_THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                          "text":  "[LLM DRAFT] Have you noticed a visible swelling or lump in the front of your neck that has grown over time?",
+                          "purpose":  "Screens for diffuse goiter",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_AN_UNEXPLAINED_RAPI",
+                          "text":  "[LLM DRAFT] Have you experienced an unexplained rapid heartbeat, tremors, or severe anxiety along with sudden weight loss?",
+                          "purpose":  "Screens for thyrotoxicosis symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with painful or painless thyroiditis leading to temporary thyroid hormone release followed by resolution or hypothyroidism, often with low radioactive iodine uptake."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Typically presents in neonates or children with congenital defects in thyroid hormone synthesis, usually resulting in hypothyroidism rather than thyrotoxicosis despite the diffuse goiter."
+                          },
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by a diffusely enlarged thyroid gland in the setting of normal thyroid function (euthyroid) without any biochemical evidence of thyrotoxicosis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E05.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Thyrotoxicosis with diffuse goiter without thyrotoxic crisis or storm",
+    "evidence_ids":  [
+                         "EVID_THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

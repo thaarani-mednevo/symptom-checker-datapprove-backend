@@ -1,0 +1,142 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_033",
+    "code":  "HYPOVOLEMIA",
+    "name":  "Hypovolemia",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Hypovolemia, also known as volume depletion or volume contraction, is a state of abnormally low extracellular fluid in the body. This may be due to either a loss of both salt and water or a decrease in blood volume.",
+    "complaints":  [
+                       {
+                           "code":  "DEHYDRATION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PROFUSE_SWEATING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_HYPOTENSION_OR_SHOCK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Blood pressure drops significantly with symptoms of confusion, dizziness, or cold, clammy skin."
+                      },
+                      {
+                          "code":  "RF_ANURIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Complete lack of urination for 8 hours or more, indicating acute kidney injury."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HYPOVOLEMIA_1",
+                          "text":  "Have you experienced recent severe vomiting, diarrhea, or excessive sweating?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOVOLEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HYPOVOLEMIA_2",
+                          "text":  "Are you currently feeling dizzy, lightheaded, or confused when standing up?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOVOLEMIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HYPOVOLEMIA_3",
+                          "text":  "Have you noticed a significant decrease in your urine output or very dark-colored urine today?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOVOLEMIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DEHYDRATION_OF_NEWBORN",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with sunken fontanelles, lethargy, and inadequate wet diapers specific to neonatal physiology and feeding issues."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by self-imposed severe caloric restriction and distorted body image rather than acute fluid or blood loss."
+                          },
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with temporary heat-related discomfort and fatigue without the profound intravascular volume depletion or hemodynamic instability seen in hypovolemia."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "816082000",
+    "snomed_verified_name":  "Hypovolemia",
+    "icd10_code":  "E86.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypovolemia",
+    "evidence_ids":  [
+                         "EVID_HYPOVOLEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

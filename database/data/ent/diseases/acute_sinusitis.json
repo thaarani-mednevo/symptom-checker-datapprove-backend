@@ -1,0 +1,100 @@
+﻿{
+    "id":  "ENT_DIS_ENT_015",
+    "code":  "ACUTE_SINUSITIS",
+    "name":  "Acute sinusitis",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Sinusitis, also known as rhinosinusitis and commonly known as a sinus infection, is an inflammation of the mucous membranes that line the sinuses resulting in symptoms that may include production of thick nasal mucus, nasal congestion, facial congestion, facial pain, facial pressure, loss of smell, or fever.",
+    "complaints":  [
+                       {
+                           "code":  "NASAL_CONGESTION",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NASAL_CONGESTION",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FACIAL_PAIN_PRESSURE",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PURULENT_NASAL_DISCHARGE",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PRECEDING_VIRAL_URI",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "NASAL_POLYPS",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ORBITAL_CELLULITIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "PERIORBITAL_EDEMA",
+                          "condition":  "Swelling or redness around the eye"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_EYE_SWELLING",
+                          "text":  "Is there any swelling or redness around your eyes, or changes in your vision?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_SINUSITIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "36971009",
+    "snomed_verified_name":  "Sinusitis",
+    "icd10_code":  "J01.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute sinusitis, unspecified",
+    "evidence_ids":  [
+                         "EVID_ACUTE_SINUSITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

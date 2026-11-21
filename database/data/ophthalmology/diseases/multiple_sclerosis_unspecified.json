@@ -1,0 +1,96 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_039",
+    "code":  "MULTIPLE_SCLEROSIS_UNSPECIFIED",
+    "name":  "Multiple sclerosis, unspecified",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Multiple sclerosis (MS) is a chronic and neurodegenerative autoimmune disease in which the immune system attacks myelin, the insulating cover of nerve cells, causing damage to the central nervous system. This impairs the nervous system\u0027s ability to transmit signals.",
+    "complaints":  [
+                       {
+                           "code":  "DIPLOPIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHRONIC_NEUROPATHIC_PAIN",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_OPTIC_NEURITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden unilateral vision loss with pain on eye movement"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_SUDDEN_PAINLESS_LOSS_OF_VI",
+                          "text":  "[LLM DRAFT] Have you had sudden, painless loss of vision in one eye?",
+                          "purpose":  "optic neuritis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MULTIPLE_SCLEROSIS_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_NUMBNESS_OR_TINGLING_IN_YOUR",
+                          "text":  "[LLM DRAFT] Do you feel numbness or tingling in your arms or legs that comes and goes?",
+                          "purpose":  "sensory changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MULTIPLE_SCLEROSIS_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNEXPLAINED_WEAKNES",
+                          "text":  "[LLM DRAFT] Have you experienced unexplained weakness that makes it hard to walk or lift objects?",
+                          "purpose":  "motor weakness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MULTIPLE_SCLEROSIS_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G35.D",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Multiple sclerosis, unspecified",
+    "evidence_ids":  [
+                         "EVID_MULTIPLE_SCLEROSIS_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

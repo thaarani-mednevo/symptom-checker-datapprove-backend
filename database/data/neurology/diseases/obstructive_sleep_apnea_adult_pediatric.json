@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_024",
+  "code": "OBSTRUCTIVE_SLEEP_APNEA_ADULT_PEDIATRIC",
+  "name": "Obstructive sleep apnea (adult) (pediatric)",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Obstructive sleep apnea (OSA) is the most common sleep-related breathing disorder. This type of sleep apnea is characterized by recurrent episodes of complete or partial obstruction of the upper airway leading to reduced or absent breathing during sleep.",
+  "complaints": [
+    {
+      "code": "DAYTIME_SOMNOLENCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "LOUD_SNORING",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "EXCESSIVE_DAYTIME_SLEEPINESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "OBSERVED_APNEIC_EPISODES",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "severe"
+    },
+    {
+      "code": "MORNING_HEADACHES",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "OBESITY",
+      "strength": "strong"
+    },
+    {
+      "code": "TONSILLAR_HYPERTROPHY",
+      "strength": "strong"
+    },
+    {
+      "code": "MALE_SEX",
+      "strength": "moderate"
+    },
+    {
+      "code": "CRANIOFACIAL_ABNORMALITIES",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G47.33",
+  "icd10_validated": true,
+  "icd10_official_description": "Obstructive sleep apnea (adult) (pediatric)",
+  "evidence_ids": [
+    "EVID_OBSTRUCTIVE_SLEEP_APNEA_ADULT_PEDIATRIC"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,28 @@
+﻿{
+  "id": "ENT_DIS_ENT_020",
+  "code": "HYPOXIA",
+  "name": "Hypoxia",
+  "module": "ent",
+  "category": "disease",
+  "description": "Hypoxia means a lower than normal level of oxygen, and may refer to:.",
+  "complaints": [],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "389086002",
+  "snomed_verified_name": "Hypoxia",
+  "icd10_code": "D80.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Immunodeficiency with predominantly antibody defects, unspecified",
+  "evidence_ids": [
+    "EVID_HYPOXIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

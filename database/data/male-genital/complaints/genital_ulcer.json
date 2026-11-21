@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_004",
+  "code": "GENITAL_ULCER",
+  "name": "Genital ulcer",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "A genital ulcer is an open sore located on the genital area, which includes the vulva, penis, perianal region, or anus. Genital ulcers are most commonly caused by infectious agents.",
+  "hpo_codes": [],
+  "snomed_code": "1371402009",
+  "snomed_verified_name": "Ulceration of genital organ",
+  "icd10_code": "N48.5",
+  "icd10_validated": true,
+  "icd10_official_description": "Ulcer of penis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

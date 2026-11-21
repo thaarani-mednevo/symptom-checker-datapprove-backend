@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_026",
+  "code": "IDIOPATHIC_HYPERSOMNIA_WITH_LONG_SLEEP_TIME",
+  "name": "Idiopathic hypersomnia with long sleep time",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Idiopathic hypersomnia (IH) is a neurological disorder which is characterized primarily by excessive sleep and excessive daytime sleepiness (EDS). Idiopathic hypersomnia was first described by Bedrich Roth in 1956, and it can be divided into two forms: polysymptomatic and monosymptomatic.",
+  "complaints": [
+    {
+      "code": "DAYTIME_SOMNOLENCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DIFFICULTY_STAYING_AWAKE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MENTAL_FOG",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PERSISTENT_SLEEPINESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FAMILYHISTORY",
+      "strength": "moderate"
+    },
+    {
+      "code": "DEPRESSION",
+      "strength": "moderate"
+    },
+    {
+      "code": "FEMALESEX",
+      "strength": "weak"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "442416002",
+  "snomed_verified_name": "Idiopathic hypersomnia associated with long sleep time",
+  "icd10_code": "G47.11",
+  "icd10_validated": true,
+  "icd10_official_description": "Idiopathic hypersomnia with long sleep time",
+  "evidence_ids": [
+    "EVID_IDIOPATHIC_HYPERSOMNIA_WITH_LONG_SLEEP_TIME"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

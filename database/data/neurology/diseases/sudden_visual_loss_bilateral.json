@@ -1,0 +1,56 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_058",
+  "code": "SUDDEN_VISUAL_LOSS_BILATERAL",
+  "name": "Sudden visual loss, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Sudden bilateral loss of vision, often due to central nervous system or ocular vascular events.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DECREASED_ABILITY_TO_SEE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNCORRECTED_REFRACTIVE_ERRORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CATARACTS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "GLAUCOMA",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "343331000119104",
+  "snomed_verified_name": "Bilateral sudden visual loss of eyes",
+  "icd10_code": "H53.133",
+  "icd10_validated": true,
+  "icd10_official_description": "Sudden visual loss, bilateral",
+  "evidence_ids": [
+    "EVID_SUDDEN_VISUAL_LOSS_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

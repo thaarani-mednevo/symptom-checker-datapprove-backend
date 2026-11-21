@@ -1,0 +1,139 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_014",
+    "code":  "CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB",
+    "name":  "Carpal tunnel syndrome, unspecified upper limb",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Carpal tunnel syndrome (CTS) is the symptoms and signs characteristic of compressive median neuropathy at the carpal tunnel of the wrist. Compressive median neuropathy is a structural, largely hereditary condition that is usually measurable in both wrists.",
+    "complaints":  [
+                       {
+                           "code":  "IMPAIRED_FUNCTION",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NUMBNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "TINGLING_IN_THE_THUMB",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INDEX",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MIDDLE_FINGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_HALF_OF_RING_FINGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ERGONOMIC_HAZARD",
+                             "strength":  "wikidata_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_NUMBNESS_OR_TINGLING_IN_YOUR",
+                          "text":  "[LLM DRAFT] Do you feel numbness or tingling in your thumb, index, or middle finger?",
+                          "purpose":  "hand paresthesia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_WEAKNESS_OR_TROUBLE_GRIPPING",
+                          "text":  "[LLM DRAFT] Do you have weakness or trouble gripping objects?",
+                          "purpose":  "motor weakness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_PAIN_OR_NUMBNESS_THAT",
+                          "text":  "[LLM DRAFT] Do you experience pain or numbness that wakes you up at night?",
+                          "purpose":  "nocturnal symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GOUT_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Acute, painful, red, swollen joint with tophi"
+                          },
+                          {
+                              "disease_code":  "RHEUMATOID_ARTHRITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Symmetrical joint swelling and \u003e1 hour morning stiffness"
+                          },
+                          {
+                              "disease_code":  "AMYOTROPHIC_LATERAL_SCLEROSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Progressive muscle weakness with preserved sensation"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G56.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Carpal tunnel syndrome, unspecified upper limb",
+    "evidence_ids":  [
+                         "EVID_CARPAL_TUNNEL_SYNDROME_UNSPECIFIED_UPPER_LIMB"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

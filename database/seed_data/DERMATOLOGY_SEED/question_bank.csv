@@ -1,0 +1,45 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_DERM_TIMING,"When did the skin/hair problem first start, and how has it changed?",text,use_onset_for_triage,continue,clinician_approved
+Q_DERM_NEW_DRUG,"Did the problem begin after starting, stopping, or changing a medication or supplement?",yes_no,consider_drug_reaction_pathway,continue,clinician_approved
+Q_DERM_FEVER,Do you have fever or feel significantly unwell along with the skin problem?,yes_no,red_flag_systemic_illness,continue,clinician_approved
+Q_DERM_MUCOSA,"Are there sores or painful lesions in the mouth, eyes, or genital area?",yes_no,red_flag_mucosal_involvement,continue,clinician_approved
+Q_DERM_BREATHING,Are you having difficulty breathing or chest symptoms?,yes_no,urgent_assessment,continue,clinician_approved
+Q_DERM_JAUNDICE,Have you developed yellow eyes/skin or dark urine?,yes_no,urgent_assessment,continue,clinician_approved
+Q_YAWS_EXPOSURE,"Have you lived in or recently travelled to an area where yaws occurs, or had close skin-to-skin contact with an affected person?",yes_no,consider_yaws_exposure,continue,clinician_approved
+Q_YAWS_BONE_JOINT,Do you have bone or joint pain/swelling associated with the skin lesions?,yes_no,consider_yaws_complication,continue,clinician_approved
+Q_VIRAL_MUCOUS,Are there lesions or ulcers involving the mouth or other mucous membranes?,yes_no,assess_mucosal_disease,continue,clinician_approved
+Q_HAIR_PATTERN,"Is the hair loss diffuse, patchy, or mainly along the hairline/central scalp?",single_choice,classify_hair_loss_pattern,continue,clinician_approved
+Q_HAIR_SCALP,"Is there scalp redness, scaling, pain, itching, or scarring?",yes_no,assess_scarring_or_inflammatory_cause,continue,clinician_approved
+Q_HAIR_TRIGGER,"Did the hair loss follow a major illness, fever, surgery, severe stress, rapid weight change, or childbirth?",yes_no,consider_telogen_effluvium,continue,clinician_approved
+Q_NEW_MEDICATION,Have you started any new medication in the past 2 to 8 weeks?,boolean,escalate_red_flag,continue,clinician_approved
+Q_FACIAL_SWELLING,Do you have any swelling of your face along with the rash and fever?,boolean,escalate_red_flag,continue,clinician_approved
+Q_HAIR_SHEDDING_DURATION,How long have you noticed increased hair shedding?,text,continue,continue,clinician_approved
+Q_RECENT_STRESS_ILLNESS,"Have you had any major illness, surgery, childbirth, or significant stress in the last 3 months?",boolean,continue,continue,clinician_approved
+Q_ZOSTER_EYE_INVOLVEMENT,"Is the rash near your eye, on your eyelid, or on the tip of your nose?",boolean,escalate_red_flag,continue,clinician_approved
+Q_NAIL_INFECTION_SIGNS,"Is there redness, swelling, warmth, or pus around the affected nail?",boolean,escalate_red_flag,continue,clinician_approved
+Q_PHOTOSENSITIVITY_SEVERITY,"Have you started a new medication recently, and does the rash appear only on skin exposed to sunlight?",boolean,continue,continue,clinician_approved
+Q_LUMP_GROWTH_CHANGE,"Has the lump grown quickly, become hard, or started to hurt?",boolean,escalate_red_flag,continue,clinician_approved
+Q_DO_YOU_HAVE_ITCHY_RED_AND_DRY_PATCHES,"[LLM DRAFT] Do you have itchy, red, and dry patches of skin, especially in the creases of your elbows or knees?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_SKIN_PATCHES_SEVERELY_SWOLLEN,"[LLM DRAFT] Are your skin patches severely swollen, hot, oozing pus, or accompanied by a high fever?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_CURRENTLY_HAVE_AN_OPEN_SORE_WOUN,"[LLM DRAFT] Do you currently have an open sore, wound, or break in the skin on your foot or ankle?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_NOTICE_A_FOUL_ODOR_PUS_OR_RED_S,"[LLM DRAFT] Do you notice a foul odor, pus, or red streaks spreading from a sore on your foot?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_FOOT_SIGNIFICANTLY_SWOLLEN_RED,"[LLM DRAFT] Is your foot significantly swollen, red, or feeling unusually hot to the touch around a wound?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_LUMP_UNDER_YOUR_SKIN_PAINLESS_SL,"[LLM DRAFT] Is the lump under your skin painless, slow-growing, and easily movable?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAS_THE_SKIN_LUMP_SUDDENLY_BECOME_EXTREM,"[LLM DRAFT] Has the skin lump suddenly become extremely painful, red, hot, or started draining pus?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_MORE_THAN_90%_OF_YOUR_SKIN_SURFACE_A,"[LLM DRAFT] Are more than 90% of your skin surface areas red, inflamed, and peeling?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_CURRENTLY_EXPERIENCING_CHILLS_F,"[LLM DRAFT] Are you currently experiencing chills, fever, or feeling unusually cold all the time?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_DARK_FLAT_PATCHES_OF_SKIN_O,"[LLM DRAFT] Do you have dark, flat patches of skin on your face, such as on your cheeks, forehead, or upper lip?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THESE_DARK_SKIN_PATCHES_APPEAR_OR_WO,[LLM DRAFT] Did these dark skin patches appear or worsen after sun exposure or during hormonal changes like pregnancy or taking birth control pills?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOUR_FINGERNAILS_OR_TOENAILS_HAVE_TIN,[LLM DRAFT] Do your fingernails or toenails have tiny dents or pits in the surface?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOUR_NAILS_STARTED_TO_SEPARATE_FROM,"[LLM DRAFT] Have your nails started to separate from the skin underneath or turned a yellowish-brown color like ""oil drops""?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_NAILS_NOTICEABLY_THICKENED_CRU,"[LLM DRAFT] Are your nails noticeably thickened, crumbly, or crumbling away from the nail bed?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOUR_SKIN_RASHES_APPEAR_WITHIN_HOURS,[LLM DRAFT] Do your skin rashes appear within hours or days after sun exposure?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_THE_SKIN_BUMPS_OR_BLISTERS_ITCH_INTEN,[LLM DRAFT] Do the skin bumps or blisters itch intensely?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_THE_SKIN_LESIONS_COMPLETELY_CLEAR_UP,[LLM DRAFT] Do the skin lesions completely clear up without scarring within a week or two?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_WELL_DEFINED_RED_PATCHES_OF,"[LLM DRAFT] Do you have well-defined, red patches of skin covered with silvery-white scales, especially on your elbows, knees, or scalp?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_JOINTS_SWOLLEN_STIFF_OR_PAINF,"[LLM DRAFT] Are your joints swollen, stiff, or painful along with your skin rash?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_AN_INTENSE_ITCHY_RASH_THAT,"[LLM DRAFT] Do you have an intense, itchy rash that tends to get much worse at night?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_THE_ITCHY_RASH_IN_S,"[LLM DRAFT] Are you experiencing the itchy rash in skin folds, such as between your fingers, on your wrists, or around your waistline?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_OTHERS_LIVING_IN_YOUR_CLOSE_HOUSEHOLD,[LLM DRAFT] Do others living in your close household currently have a similar itchy rash?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SMOOTH_WHITE_OR_LIGHTER_PATC,[LLM DRAFT] Do you have smooth white or lighter patches of skin that have appeared suddenly or spread over time?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_THE_WHITE_PATCHES_ON_YOUR_SKIN_ACCOM,"[LLM DRAFT] Are the white patches on your skin accompanied by any painful blistering, burning, or open sores?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

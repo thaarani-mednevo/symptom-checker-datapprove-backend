@@ -1,0 +1,152 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_004",
+    "code":  "PULMONARY_TUBERCULOSIS",
+    "name":  "Pulmonary Tuberculosis",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "A respiratory condition known as Pulmonary Tuberculosis.",
+    "complaints":  [
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HEMOPTYSIS",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FEVER_WITH_COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "AFTERNOON_FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ANOREXIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HIV_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CLOSE_TB_CONTACT",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALNUTRITION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OVERCROWDING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMOPTYSIS",
+                          "condition":  "Haemoptysis with night sweats — suspected TB"
+                      },
+                      {
+                          "code":  "RED_RESP_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FEVER_WITH_COUGH",
+                          "condition":  "Suspected active pulmonary TB with close contacts"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_008",
+                          "text":  "Have you had a cough lasting more than 3 weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHRONIC_COUGH)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PULMONARY_TUBERCULOSIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_009",
+                          "text":  "Have you had unexplained weight loss in the past few months?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SYSTEMIC_ILLNESS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PULMONARY_TUBERCULOSIS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PNEUMONIA",
+                              "distinguishing_feature":  "Community pneumonia has acute onset with lobar consolidation and responds to standard antibiotics; TB has gradual onset with \u003e3 weeks of cough, night sweats, and upper lobe CXR changes."
+                          },
+                          {
+                              "disease_code":  "LUNG_CANCER",
+                              "distinguishing_feature":  "Lung cancer rarely causes fever and responds poorly to antibiotics; TB features systemic symptoms (night sweats, weight loss) and AFB positivity on sputum microscopy."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0004935"
+                  ],
+    "snomed_code":  "154283005",
+    "snomed_verified_name":  "Pulmonary tuberculosis",
+    "icd10_code":  "A15.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Tuberculosis of lung",
+    "evidence_ids":  [
+                         "EVD_RESP_004"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

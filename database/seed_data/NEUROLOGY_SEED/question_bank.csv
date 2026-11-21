@@ -1,0 +1,10 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_DO_YOU_HAVE_SUDDEN_WEAKNESS_OR_NUMBNESS,[LLM DRAFT] Do you have sudden weakness or numbness in both arms or legs?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_DO_YOU_FEEL_A_SUDDEN_LOSS_OF_SENSATION_B,[LLM DRAFT] Do you feel a sudden loss of sensation below a certain level of your body?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_ARE_YOU_EXPERIENCING_SEVERE_BACK_PAIN_TH,[LLM DRAFT] Are you experiencing severe back pain that started suddenly?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_DID_YOU_SUDDENLY_LOSE_VISION_IN_ONE_EYE,[LLM DRAFT] Did you suddenly lose vision in one eye for a few seconds or minutes?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_DID_YOU_SEE_A_DARK_CURTAIN_OR_SHADOW_OVE,[LLM DRAFT] Did you see a dark curtain or shadow over one eye that went away on its own?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_DID_YOU_FEEL_WEAKNESS_OR_NUMBNESS_IN_ANY,[LLM DRAFT] Did you feel weakness or numbness in any arm or leg at the same time?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_not_approved
+Q_HAVE_YOU_NOTICED_PROGRESSIVE_MUSCLE_WEAK,"[LLM DRAFT] Have you noticed progressive muscle weakness in your hands, arms, or legs that makes it difficult to perform daily tasks like buttoning a shirt or walking?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_ONGOING_MUSCLE_TWIT,"[LLM DRAFT] Have you experienced ongoing muscle twitching, cramping, or noticeable muscle shrinkage in your arms, legs, or tongue?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_HAD_PERSISTENT_DIFFICULTY_SPEAK,"[LLM DRAFT] Have you had persistent difficulty speaking clearly, slurred speech, or trouble swallowing food and liquids?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

@@ -1,0 +1,104 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_035",
+    "code":  "OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING",
+    "name":  "Other ulcerative colitis with rectal bleeding",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Ulcerative colitis (UC) is one of the two types of inflammatory bowel disease (IBD), with the other type being Crohn\u0027s disease. It is a long-term condition that results in inflammation and ulcers of the colon and rectum.",
+    "complaints":  [
+                       {
+                           "code":  "HEMATOCHEZIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ABDOMINAL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA_MIXED_WITH_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ANEMIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_011",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING",
+                          "condition":  "Bloody diarrhea with fever and systemic illness"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_012",
+                          "text":  "Do you have a fever along with your bowel symptoms?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_011)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K51.811",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other ulcerative colitis with rectal bleeding",
+    "evidence_ids":  [
+                         "EVID_OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

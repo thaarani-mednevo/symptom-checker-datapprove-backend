@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "COGNITIVE_IMPAIRMENT",
+    "complaint_name":  "Cognitive impairment",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_CI_001",
+                          "text":  "Is it memory, attention, language, or problem-solving that is affected?",
+                          "purpose":  "domain",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "COGNITIVE_DOMAIN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_CI_002",
+                          "text":  "Has it been gradual over months or sudden?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "COGNITIVE_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_CI_003",
+                          "text":  "Is it affecting daily activities?",
+                          "purpose":  "impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "COGNITIVE_FUNCTIONAL_IMPACT",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_CI_004",
+                          "text":  "Is there fluctuation or confusion?",
+                          "purpose":  "delirium",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DELIRIUM_WITH_COGNITIVE_IMPAIRMENT",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_CI_005",
+                          "text":  "Is there a history of stroke, TIA, or vascular risk factors?",
+                          "purpose":  "vascular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "VASCULAR_COGNITIVE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

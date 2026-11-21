@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_003",
+  "code": "RED_EYE",
+  "name": "Red eye",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Red eye, red-eye, redeye or variants may refer to:.",
+  "hpo_codes": [],
+  "snomed_code": "703630003",
+  "snomed_verified_name": "Red eye",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,14 @@
+{
+  "complaint_code": "PRESYNCOPE",
+  "complaint_name": "Presyncope",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_PRE_001", "text": "What do you feel during the episode — dizziness, light-headedness, greyness of vision, or feeling you are about to faint?", "purpose": "characterisation", "answer_type": "multiple_choice", "options": ["Dizziness", "Light-headedness", "Greyness of vision", "Near-blackout", "Nausea and sweating"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "PRESYNCOPE_CHARACTER", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_PRE_002", "text": "Does it happen when you stand up quickly from sitting or lying?", "purpose": "postural_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "ORTHOSTATIC_PRESYNCOPE", "yes_weight": 2, "no_weight": 0 },
+    { "code": "Q_CMP_PRE_003", "text": "Does it happen during exertion?", "purpose": "exertional_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "EXERTIONAL_PRESYNCOPE", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_PRE_004", "text": "Do you also notice palpitations just before the near-faint?", "purpose": "arrhythmia_screen", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(ARRHYTHMIA)", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "PRESYNCOPE_WITH_PALPITATIONS", "yes_weight": 4, "no_weight": -1 }
+  ]
+}

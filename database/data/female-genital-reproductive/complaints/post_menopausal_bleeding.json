@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_007",
+  "code": "POST_MENOPAUSAL_BLEEDING",
+  "name": "Post menopausal bleeding",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by post menopausal bleeding.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N95.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Postmenopausal bleeding",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

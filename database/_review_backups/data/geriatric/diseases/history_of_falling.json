@@ -1,0 +1,133 @@
+﻿{
+    "id":  "GERIATRIC_DIS_CS_001",
+    "code":  "HISTORY_OF_FALLING",
+    "name":  "History of falling",
+    "module":  "geriatric",
+    "category":  "disease",
+    "description":  "A documented occurrence of one or more falls, indicating potential underlying balance, gait, or neurological issues.",
+    "complaints":  [
+                       {
+                           "code":  "FALLS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GAIT_INSTABILITY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEAR_OF_FALLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ORTHOSTATIC_HYPOTENSION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREVIOUSFALLS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "POLYPHARMACY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "VISUALIMPAIRMENT",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_GER_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FALLS",
+                          "condition":  "Patient has experienced a fall resulting in loss of consciousness, severe headache, confusion, or neurological deficits."
+                      },
+                      {
+                          "code":  "RED_GER_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FALLS",
+                          "condition":  "Patient has experienced a fall resulting in severe localized pain, inability to bear weight, or obvious skeletal deformity."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_FALLEN_DOWN_WITHIN_THE_PAST_YEA",
+                          "text":  "Have you fallen down within the past year?",
+                          "purpose":  "screens for recent falls",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HISTORY_OF_FALLING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_SUFFERED_ANY_INJURIES_AS_A_RESU",
+                          "text":  "Have you suffered any injuries as a result of a fall recently?",
+                          "purpose":  "screens for fall-related injury",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HISTORY_OF_FALLING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS",
+                              "distinguishing_feature":  "Presence of resting tremor, rigidity, and bradykinesia accompanied by motor fluctuations."
+                          },
+                          {
+                              "disease_code":  "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY",
+                              "distinguishing_feature":  "Prominent orthostatic hypotension, anhidrosis, or gastrointestinal dysmotility without central motor signs."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "428942009",
+    "snomed_verified_name":  "History of fall",
+    "icd10_code":  "Z91.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "History of falling",
+    "evidence_ids":  [
+                         "EVID_HISTORY_OF_FALLING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

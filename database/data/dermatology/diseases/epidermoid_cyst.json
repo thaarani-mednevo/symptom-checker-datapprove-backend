@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_019",
+  "code": "EPIDERMOID_CYST",
+  "name": "Epidermoid cyst",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "An epidermoid cyst or epidermal inclusion cyst is a benign cyst usually found on the skin. The cyst develops out of ectodermal tissue.",
+  "complaints": [
+    {
+      "code": "SKIN_LUMPS",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "419893006",
+  "snomed_verified_name": "Epidermoid cyst",
+  "icd10_code": "L72.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Epidermal cyst",
+  "evidence_ids": [
+    "EVID_EPIDERMOID_CYST"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

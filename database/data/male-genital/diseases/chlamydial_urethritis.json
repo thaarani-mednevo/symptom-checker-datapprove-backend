@@ -1,0 +1,131 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_MG_016",
+    "code":  "CHLAMYDIAL_URETHRITIS",
+    "name":  "Chlamydial urethritis",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Chlamydial urethritis is caused by Chlamydia trachomatis (serovars D–K), an obligate intracellular bacterium and the most common bacterial sexually transmitted infection globally. In men it typically presents with mild dysuria and a scant, clear or mucoid urethral discharge, with an incubation period of 7–21 days. Up to 50% of infected men may be asymptomatic, making contact tracing essential. Untreated infection can cause epididymo-orchitis and, through female partners, pelvic inflammatory disease and infertility. First-line treatment is doxycycline (7 days) or azithromycin (1 g stat). Test-of-cure and partner notification are required.",
+    "complaints":  [
+                       {
+                           "code":  "URETHRAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "MUCOID_URETHRAL_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ASYMPTOMATIC_CARRIER_STATE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "none"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNPROTECTED_SEXUAL_INTERCOURSE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "YOUNG_AGE_15_TO_25",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MULTIPLE_SEXUAL_PARTNERS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREVIOUS_STI",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_PAIN",
+                          "condition":  "Urethral discharge progressing to scrotal pain and swelling — ascending infection causing epididymo-orchitis, urgent treatment required"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MG_CU_001",
+                          "text":  "Have you noticed any discharge from the tip of your penis, even a small amount?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CHLAMYDIAL_URETHRITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_CU_002",
+                          "text":  "Have you had unprotected sexual intercourse in the past 3 weeks?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CHLAMYDIAL_URETHRITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_CU_003",
+                          "text":  "Have you developed scrotal pain or swelling since the urethral symptoms started?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(EPIDIDYMO_ORCHITIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CHLAMYDIAL_URETHRITIS_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GONOCOCCAL_URETHRITIS",
+                              "distinguishing_feature":  "Gonococcal urethritis produces copious purulent discharge with shorter incubation (2–7 days); chlamydial urethritis has scant mucoid discharge with longer incubation (7–21 days). NAAT testing on urethral swab or first-void urine differentiates the two."
+                          },
+                          {
+                              "disease_code":  "NON_GONOCOCCAL_URETHRITIS",
+                              "distinguishing_feature":  "NGU is the broader category; chlamydial urethritis is the most common specific cause, confirmed by positive Chlamydia NAAT."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012242"
+                  ],
+    "snomed_code":  "59871006",
+    "snomed_verified_name":  "Chlamydial urethritis",
+    "icd10_code":  "A56.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chlamydial cystitis and urethritis",
+    "evidence_ids":  [
+                         "EVID_CHLAMYDIAL_URETHRITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

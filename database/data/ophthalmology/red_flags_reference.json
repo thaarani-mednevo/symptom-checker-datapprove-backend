@@ -1,0 +1,195 @@
+{
+  "module": "ophthalmology",
+  "red_flags": [
+    {
+      "code": "RF_ACUTEANGLECLOSUREPAIN",
+      "name": "AcuteAngleClosurePain",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTEANGLECLOSUREVISIONLOSS",
+      "name": "AcuteAngleClosureVisionLoss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ORBITAL_CELLULITIS_RISK",
+      "name": "Orbital_Cellulitis_Risk",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_VISION_LOSS_RISK",
+      "name": "Vision_Loss_Risk",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_VISION_LOSS",
+      "name": "Vision loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SUDDEN_VISION_LOSS",
+      "name": "Sudden Vision Loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_EYE_PAIN",
+      "name": "Severe Eye Pain",
+      "action": "URGENT_CARE_SAME_DAY"
+    },
+    {
+      "code": "RF_VISION_LOSS_EMERGENCY",
+      "name": "VISION_LOSS_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_EYE_PAIN_EMERGENCY",
+      "name": "EYE_PAIN_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_MGD_ACUTE_CORNEAL_ULCER",
+      "name": "MGD_ACUTE_CORNEAL_ULCER",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_MGD_ACUTE_INFECTION",
+      "name": "MGD_ACUTE_INFECTION",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SUDDENVISIONLOSS",
+      "name": "SuddenVisionLoss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NEWDIPLOPIA",
+      "name": "NewDiplopia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_OPTIC_NEURITIS",
+      "name": "Acute optic neuritis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ORBITAL_CELLULITIS",
+      "name": "Orbital_Cellulitis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA",
+      "name": "Acute angle-closure glaucoma",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_CORNEAL_ULCER",
+      "name": "Corneal ulcer",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_CORNEAL_ULCER_PERFORATION",
+      "name": "CORNEAL_ULCER_PERFORATION",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_VISIONLOSSEMERGENCY",
+      "name": "VisionLossEmergency",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_EYEPAINEMERGENCY",
+      "name": "EyePainEmergency",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_VISIONLOSS_GCA",
+      "name": "VisionLoss_GCA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SUDDEN_PHOTOPSIA",
+      "name": "Sudden Photopsia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVEREEYEPAIN",
+      "name": "SevereEyePain",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVEREPAINEMERGENCY",
+      "name": "SeverePainEmergency",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_PHOTOPSIA_EMERGENCY",
+      "name": "PHOTOPSIA_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SCLERITIS_EMERGENCY",
+      "name": "SCLERITIS_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_VISION_LOSS",
+      "name": "Acute_Vision_Loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_RETINAL_VASCULITIS",
+      "name": "Acute retinal vasculitis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ANGLE‑CLOSURE_GLAUCOMA",
+      "name": "Acute angle‑closure glaucoma",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SUDDEN_PAINLESS_VISION_LOSS",
+      "name": "Sudden_Painless_Vision_Loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ANGLE_CLOSURE",
+      "name": "Acute_Angle_Closure",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_EYE_PAIN",
+      "name": "Acute Eye Pain",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_EYE_PAIN",
+      "name": "EYE_PAIN",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ANGLE_CLOSURE_EYE_PAIN",
+      "name": "ACUTE_ANGLE_CLOSURE_EYE_PAIN",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_ANGLE_CLOSURE_BLURRING",
+      "name": "ACUTE_ANGLE_CLOSURE_BLURRING",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_DIPLOPIA_EMERGENCY",
+      "name": "DIPLOPIA_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_EYE_PAIN_EMERGENCY",
+      "name": "SEVERE_EYE_PAIN_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BILATERAL_VITREOUS_HEMORRHAGE_SEVERE_VISION_LOSS",
+      "name": "Bilateral_Vitreous_Hemorrhage_Severe_Vision_Loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    }
+  ]
+}

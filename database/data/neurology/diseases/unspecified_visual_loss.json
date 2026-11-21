@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_056",
+  "code": "UNSPECIFIED_VISUAL_LOSS",
+  "name": "Unspecified visual loss",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Visual or vision impairment is the partial or total inability of visual perception. In the absence of treatment such as corrective eyewear, assistive devices, and medical treatment, visual impairment may cause the individual difficulties with normal daily tasks, including reading and walking.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DECREASED_VISUAL_ACUITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "BLURRED_VISION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "VISUAL_FIELD_DEFECT",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "severe"
+    },
+    {
+      "code": "DIFFICULTY_WITH_NIGHT_VISION",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H54.7",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified visual loss",
+  "evidence_ids": [
+    "EVID_UNSPECIFIED_VISUAL_LOSS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

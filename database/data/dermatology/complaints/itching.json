@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_005",
+  "code": "ITCHING",
+  "name": "Itching",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "An itch is a sensation that causes a strong desire or reflex to scratch. Itches have many similarities to pain, and while both are unpleasant sensory experiences, their behavioral response patterns are different.",
+  "hpo_codes": [],
+  "snomed_code": "418290006",
+  "snomed_verified_name": "Itching",
+  "icd10_code": "L29.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Pruritus, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

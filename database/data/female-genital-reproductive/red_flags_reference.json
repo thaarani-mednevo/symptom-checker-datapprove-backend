@@ -1,0 +1,80 @@
+{
+  "module": "female-genital-reproductive",
+  "red_flags": [
+    {
+      "code": "RF_HEMODYNAMIC_INSTABILITY",
+      "name": "Heavy bleeding with hemodynamic instability",
+      "action": "Emergency referral / call ambulance"
+    },
+    {
+      "code": "RF_SUSPECTED_ECTOPIC",
+      "name": "Suspected ectopic pregnancy (positive pregnancy test with pelvic pain/bleeding)",
+      "action": "Emergency referral for urgent beta-hCG and pelvic ultrasound"
+    },
+    {
+      "code": "RF_POSTMENOPAUSAL_BLEEDING",
+      "name": "Any bleeding occurring after confirmed menopause",
+      "action": "Urgent 2-week-wait gynecology referral to rule out endometrial malignancy"
+    },
+    {
+      "code": "RF_SUSPECTED_GYNAE_MALIGNANCY",
+      "name": "Persistent bleeding, unexplained weight loss, or palpable pelvic mass",
+      "action": "Urgent 2-week-wait gynecology-oncology referral"
+    },
+    {
+      "code": "RF_PID_SEPSIS",
+      "name": "Fever, severe pelvic pain, and tachycardia suggestive of PID with sepsis",
+      "action": "Same-day urgent assessment; consider IV antibiotics and admission"
+    },
+    {
+      "code": "RF_OVARIAN_TORSION",
+      "name": "Sudden severe unilateral pelvic pain with nausea/vomiting",
+      "action": "Emergency surgical referral"
+    },
+    {
+      "code": "RF_RAPID_VIRILIZATION",
+      "name": "Rapid-onset virilization (voice deepening, clitoromegaly, rapid hair growth progression)",
+      "action": "Urgent endocrinology referral to rule out androgen-secreting tumor"
+    },
+    {
+      "code": "RF_PRECOCIOUS_PUBERTY_NEURO",
+      "name": "Precocious puberty with headache, visual disturbance, or rapid tempo",
+      "action": "Urgent pediatric endocrinology referral; consider MRI brain"
+    },
+    {
+      "code": "RF_SEVERE_ANEMIA_SYMPTOMS",
+      "name": "Heavy bleeding with dizziness, pallor, breathlessness, or tachycardia",
+      "action": "Urgent referral for hemoglobin check and possible transfusion"
+    },
+    {
+      "code": "RF_GALACTORRHEA_VISUAL_FIELD",
+      "name": "Galactorrhea with visual field defect or persistent severe headache",
+      "action": "Urgent MRI pituitary and endocrinology referral"
+    },
+    {
+      "code": "RF_CUSHINGOID_RAPID_ONSET",
+      "name": "Rapidly progressive Cushingoid features with new hypertension",
+      "action": "Urgent endocrinology referral"
+    },
+    {
+      "code": "RF_SAFEGUARDING_CONCERN",
+      "name": "Genital symptoms in a child/adolescent raising safeguarding concern",
+      "action": "Safeguarding referral per local child-protection protocol"
+    },
+    {
+      "code": "RF_NO_PUBERTY_BY_13_15",
+      "name": "No breast development by age 13, or no menarche by age 15",
+      "action": "Referral to pediatric endocrinology"
+    },
+    {
+      "code": "RF_TURNER_CARDIAC_RISK",
+      "name": "Known/suspected Turner syndrome with cardiac symptoms or murmur",
+      "action": "Cardiology referral for echocardiogram (coarctation/aortic root risk)"
+    },
+    {
+      "code": "RF_INFERTILITY_ACUTE_PAIN",
+      "name": "Infertility work-up patient presenting with acute pelvic pain",
+      "action": "Urgent gynecology assessment to exclude ectopic pregnancy or torsion"
+    }
+  ]
+}

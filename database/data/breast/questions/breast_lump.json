@@ -1,0 +1,88 @@
+﻿{
+  "complaint_code": "BREAST_LUMP",
+  "complaint_name": "Breast lump",
+  "module": "breast",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_in_review",
+  "questions": [
+    {
+      "code": "Q_CMP_BL_001",
+      "text": "How long have you had the lump and did you find it yourself?",
+      "purpose": "history",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "BREAST_LUMP_DURATION",
+      "yes_weight": 0,
+      "no_weight": 0,
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-20T13:53:29+00:00"
+    },
+    {
+      "code": "Q_CMP_BL_002",
+      "text": "Is the lump hard, firm, or soft?",
+      "purpose": "character",
+      "answer_type": "multiple_choice",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "BREAST_LUMP_CHARACTER",
+      "yes_weight": 0,
+      "no_weight": 0,
+      "review_status": "doctor_not_approved",
+      "reviewed_by": "Doctor",
+      "reviewed_at": "2026-11-20T13:56:09+00:00"
+    },
+    {
+      "code": "Q_CMP_BL_003",
+      "text": "Is the lump fixed to the skin or chest wall, or can it move freely?",
+      "purpose": "mobility",
+      "answer_type": "yes_no",
+      "if_yes_action": "RED_FLAG(RF_MASS_SUSPECTED)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "FIXED_LUMP",
+      "yes_weight": 4,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_BL_004",
+      "text": "Have you noticed skin dimpling, puckering, or redness over the lump?",
+      "purpose": "skin_change",
+      "answer_type": "yes_no",
+      "if_yes_action": "RED_FLAG(RF_MASS_SUSPECTED)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "SKIN_CHANGES_WITH_LUMP",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BL_005",
+      "text": "Is there any bloody or clear nipple discharge?",
+      "purpose": "discharge",
+      "answer_type": "yes_no",
+      "if_yes_action": "RED_FLAG(RF_MASS_SUSPECTED)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "NIPPLE_DISCHARGE_WITH_LUMP",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BL_006",
+      "text": "Does the lump change with your menstrual cycle?",
+      "purpose": "cyclical",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "CYCLICAL_LUMP",
+      "yes_weight": -1,
+      "no_weight": 1
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_075",
+  "code": "DYSARTHRIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE",
+  "name": "Dysarthria following unspecified cerebrovascular disease",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Dysarthria is a speech sound disorder resulting from neurological injury of the motor component of the motor–speech system and is characterized by poor articulation of phonemes. Those affected lack sufficient control of the muscles used for speech to pronounce words clearly.",
+  "complaints": [
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SLURRED_SPEECH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEAK_EXECUTION_OF_ORAL_MUSCULAR_MOVEMENTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of paralysis accompanying dysarthria, indicating acute stroke expansion or new vascular event."
+    },
+    {
+      "code": "RF_SPEECH_DISTURBANCE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SPEECH_DISTURBANCE",
+      "condition": "[LLM DRAFT] Acute progression or severe worsening of speech disturbance alongside dysarthria suggestive of evolving neurological deterioration."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.922",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysarthria following unspecified cerebrovascular disease",
+  "evidence_ids": [
+    "EVID_DYSARTHRIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_007",
+  "code": "LEG_ULCERS",
+  "name": "Leg ulcers",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "Venous ulcer is defined by the American Venous Forum as \"a full-thickness defect of skin, most frequently in the ankle region, that fails to heal spontaneously and is sustained by chronic venous disease, based on venous duplex ultrasound testing.\" Venous ulcers are wounds that are thought to occur due to improper functioning of venous valves, usually of the legs. They are an important cause of chronic wounds, affecting 1% of the population.",
+  "hpo_codes": [],
+  "snomed_code": "95344007",
+  "snomed_verified_name": "Ulcer of lower extremity",
+  "icd10_code": "L97.9",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

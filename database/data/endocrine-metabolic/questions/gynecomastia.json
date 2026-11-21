@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "GYNECOMASTIA",
+    "complaint_name":  "Gynecomastia",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_GYNE_001",
+                                       "Is the breast enlargement in one or both sides?",
+                                       "laterality",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "GYNECOMASTIA_LATERALITY",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_GYNE_002",
+                          "text":  "Is it tender or painful?",
+                          "purpose":  "tenderness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TENDER_GYNECOMASTIA",
+                          "yes_weight":  1,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_GYNE_003",
+                          "text":  "Are you taking any new medications or supplements?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRUG_GYNECOMASTIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_GYNE_004",
+                          "text":  "Do you have a lump that is hard or firm, distinct from the generalised swelling?",
+                          "purpose":  "lump_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FIRM_LUMP_WITH_GYNECOMASTIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_GYNE_005",
+                          "text":  "Have you noticed reduced libido, erectile dysfunction, or testicular changes?",
+                          "purpose":  "endocrine_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "HYPGONADISM_FEATURES",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

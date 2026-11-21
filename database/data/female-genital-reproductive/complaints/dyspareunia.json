@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_002",
+  "code": "DYSPAREUNIA",
+  "name": "Dyspareunia",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Dyspareunia is painful sexual intercourse. Although dyspareunia can occur in all human bodies, it is most commonly observed in people with vulvas.",
+  "hpo_codes": [],
+  "snomed_code": "71315007",
+  "snomed_verified_name": "Dyspareunia",
+  "icd10_code": "N94.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified dyspareunia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

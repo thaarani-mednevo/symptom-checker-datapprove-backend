@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_010",
+  "code": "PLEURITIC_CHEST_PAIN",
+  "name": "Pleuritic chest pain",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "Pleurisy, also known as pleuritis, is inflammation of the membranes that surround the lungs and line the chest cavity (pleurae). This can result in a sharp chest pain while breathing.",
+  "hpo_codes": [
+    "HP:0002083"
+  ],
+  "snomed_code": "75314000",
+  "snomed_verified_name": null,
+  "icd10_code": "R07.81",
+  "icd10_validated": true,
+  "icd10_official_description": "Pleurodynia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

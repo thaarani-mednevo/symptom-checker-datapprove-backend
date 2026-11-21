@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "OLIGURIA",
+    "complaint_name":  "Oliguria",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_OLI_001",
+                          "text":  "How much urine have you passed in the last 24 hours?",
+                          "purpose":  "volume",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OLIGURIA_VOLUME",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_OLI_002",
+                          "text":  "Do you have known kidney disease, heart failure, or recent severe illness?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OLIGURIA_CAUSE",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_OLI_003",
+                          "text":  "Do you have ankle swelling, breathlessness, or confusion?",
+                          "purpose":  "severe",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OLIGURIA_WITH_FLUID_RETENTION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_OLI_004",
+                          "text":  "Have you stopped passing urine completely?",
+                          "purpose":  "anuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ANURIA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

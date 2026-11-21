@@ -1,0 +1,147 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_028",
+    "code":  "PERSONAL_HISTORY_OF_NONSUICIDAL_SELF_HARM",
+    "name":  "Personal history of nonsuicidal self-harm",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "A documented history of self-inflicted injury without intent to die.",
+    "complaints":  [
+                       {
+                           "code":  "SELF_HARM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "UNSTABLE_RELATIONSHIPS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DISTORTED_SENSE_OF_SELF",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AND_INTENSE_EMOTIONS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "IMPULSIVITY",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RECURRENT_SUICIDAL_AND_SELF_HARMING_BEHAVIOR",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "FEAR_OF_ABANDONMENT",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHRONIC_FEELINGS_OF_EMPTINESS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INAPPROPRIATE_ANGER",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DISSOCIATION",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GENETIC",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "NEUROBIOLOGIC",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AND_PSYCHOSOCIAL_THEORIES_PROPOSED",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_NSSH_CURRENT_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SUICIDAL_THOUGHTS",
+                          "condition":  "Any current thoughts of self-harm or a returning urge, despite this being a history-only code — escalate immediately, do not treat as resolved"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_NSSH_CURRENT_CHECK",
+                          "text":  "Are you currently having any thoughts of hurting yourself, or has the urge to self-harm come back recently?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PERSONAL_HISTORY_OF_NONSUICIDAL_SELF_HARM_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "This is a status/history code with no current self-harm behavior or active ideation, whereas active major depressive disorder may carry current risk — always screen for present-day thoughts/urges rather than relying on the history label alone."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "Z91.52",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Personal history of nonsuicidal self-harm",
+    "evidence_ids":  [
+                         "EVID_PERSONAL_HISTORY_OF_NONSUICIDAL_SELF_HARM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

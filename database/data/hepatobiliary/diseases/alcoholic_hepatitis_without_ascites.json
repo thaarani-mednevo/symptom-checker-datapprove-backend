@@ -1,0 +1,176 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_007",
+    "code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES",
+    "name":  "Alcoholic hepatitis without ascites",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Alcoholic hepatitis is an acute inflammatory condition of the liver caused by sustained heavy alcohol consumption, typically more than 8–10 standard drinks per day for at least 10 years. It presents with rapid-onset jaundice, right upper quadrant pain, fever, and elevated liver enzymes (predominantly AST:ALT ratio \u003e2:1). Severe cases (Maddrey discriminant function ≥32) carry significant 28-day mortality and may warrant corticosteroid therapy. It must be distinguished from cirrhosis and other causes of hepatitis.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TENDER_HEPATOMEGALY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEAVY_ALCOHOL_CONSUMPTION_LONG_TERM",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "POOR_NUTRITIONAL_STATUS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "GENETIC_PREDISPOSITION_ALDH2",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Deep jaundice with encephalopathy, coagulopathy, or renal failure — acute liver failure pathway, urgent ICU review"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_AH_001",
+                          "text":  "How many alcoholic drinks do you consume on a typical day, and for how many years have you been drinking at this level?",
+                          "purpose":  "risk_factor_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_AH_002",
+                          "text":  "Have you noticed your skin or eyes turning yellow in the last few days or weeks?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_AH_003",
+                          "text":  "Have you felt confused, drowsy, or had difficulty concentrating recently?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HB_AH_004",
+                          "text":  "Have you had any unusual bleeding or bruising recently?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES_SYMPTOM_4",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITHOUT_ASCITES",
+                              "distinguishing_feature":  "Cirrhosis reflects end-stage chronic liver damage with fibrosis and portal hypertension; alcoholic hepatitis is an acute inflammatory episode that may be superimposed on underlying cirrhosis."
+                          },
+                          {
+                              "disease_code":  "VIRAL_HEPATITIS_B",
+                              "distinguishing_feature":  "Viral hepatitis B presents with similar jaundice and elevated LFTs but is confirmed by HBsAg serology; alcoholic hepatitis has AST:ALT \u003e2:1 and clear alcohol history."
+                          },
+                          {
+                              "disease_code":  "DRUG_INDUCED_LIVER_INJURY",
+                              "distinguishing_feature":  "DILI requires a detailed medication history; pattern of LFT elevation (hepatocellular vs. cholestatic) and temporal relationship to drug exposure are key differentiators."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012115"
+                  ],
+    "snomed_code":  "417275003",
+    "snomed_verified_name":  "Alcoholic hepatitis",
+    "icd10_code":  "K70.10",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alcoholic hepatitis without ascites",
+    "evidence_ids":  [
+                         "EVID_ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,15 @@
+{
+  "complaint_code": "WHEEZING",
+  "complaint_name": "Wheezing",
+  "module": "respiratory",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_WHEEZ_001", "text": "Is the wheeze on breathing in, breathing out, or both?", "purpose": "character", "answer_type": "multiple_choice", "options": ["Breathing out (expiratory)", "Breathing in (inspiratory)", "Both"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "WHEEZE_PHASE", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_WHEEZ_002", "text": "Does the wheeze come and go in episodes or is it present all the time?", "purpose": "pattern", "answer_type": "multiple_choice", "options": ["Episodic", "Constant", "Constant with episodes of worsening"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "WHEEZE_PATTERN", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_WHEEZ_003", "text": "What triggers the wheeze — exercise, allergens, cold air, smoke, or infection?", "purpose": "trigger_check", "answer_type": "multiple_choice", "options": ["Exercise", "Allergens or dust", "Cold air", "Respiratory infection", "No clear trigger"], "if_yes_action": "GOTO_PATHWAY(ASTHMA)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "WHEEZE_TRIGGERS", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_WHEEZ_004", "text": "Does the wheeze respond to a blue reliever inhaler (salbutamol)?", "purpose": "reversibility", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(ASTHMA)", "if_no_action": "GOTO_PATHWAY(CHRONIC_AIRWAY)", "sequence_order": 4, "tests_symptom_code": "BRONCHODILATOR_RESPONSE", "yes_weight": 4, "no_weight": 2 },
+    { "code": "Q_CMP_WHEEZ_005", "text": "Is the wheeze severe right now with difficulty speaking in full sentences?", "purpose": "red_flag_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "SEVERE_WHEEZE", "yes_weight": 5, "no_weight": -2 }
+  ]
+}

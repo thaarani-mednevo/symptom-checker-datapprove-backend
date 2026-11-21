@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_055",
+  "code": "UNSPECIFIED_CHOLESTEATOMA_BILATERAL",
+  "name": "Unspecified cholesteatoma, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Cholesteatoma is a destructive and expanding growth consisting of keratinizing, squamous epithelium in the middle ear and/or mastoid process. Cholesteatomas are not cancerous, but can cause significant problems because of their erosive and expansile properties.",
+  "complaints": [
+    {
+      "code": "HEARING_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HEARING_LOSS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "OTORRHEA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "TINNITUS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H71.93",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified cholesteatoma, bilateral",
+  "evidence_ids": [
+    "EVID_UNSPECIFIED_CHOLESTEATOMA_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

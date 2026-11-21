@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_002",
+  "code": "WEIGHT_LOSS",
+  "name": "Weight loss",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "In medicine, health, or physical fitness, weight loss is a reduction of the total body mass, by a mean loss of fluid, body fat, or lean mass. Weight loss can either occur unintentionally because of malnourishment or an underlying disease, or from a conscious effort to improve an actual or perceived overweight or obese state.",
+  "hpo_codes": [],
+  "snomed_code": "816160009",
+  "snomed_verified_name": "Weight loss",
+  "icd10_code": "R63.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Abnormal weight loss",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

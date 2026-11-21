@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_013",
+  "code": "PRECOCIOUS_PUBERTY",
+  "name": "Precocious puberty",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "In medicine, precocious puberty is puberty occurring at an unusually early age. In most cases, the process is normal in every aspect except the unusually early age and simply represents a variation of normal development.",
+  "hpo_codes": [],
+  "snomed_code": "400179000",
+  "snomed_verified_name": "Precocious puberty",
+  "icd10_code": "E30.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Precocious puberty",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

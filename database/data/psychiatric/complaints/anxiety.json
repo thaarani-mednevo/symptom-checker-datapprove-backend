@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_001",
+  "code": "ANXIETY",
+  "name": "Anxiety",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Anxiety is an emotion characterized by an unpleasant state of inner turmoil and includes feelings of dread over anticipated events. Anxiety is different from fear in that fear is defined as the emotional response to a present threat, whereas anxiety is the anticipation of a future one.",
+  "hpo_codes": [
+    "HP:0000739"
+  ],
+  "snomed_code": "48694002",
+  "snomed_verified_name": "Anxiety",
+  "icd10_code": "R45.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Nervousness",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

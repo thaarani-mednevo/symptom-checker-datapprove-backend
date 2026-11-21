@@ -1,0 +1,146 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_027",
+    "code":  "UNSPECIFIED_GLAUCOMA",
+    "name":  "Unspecified glaucoma",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Glaucoma is a group of eye diseases that can lead to damage of the optic nerve, which transmits visual information from the eye to the brain. Glaucoma may cause vision loss if left untreated.",
+    "complaints":  [
+                       {
+                           "code":  "GLARE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HALOS_AROUND_LIGHTS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "EYE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PERIPHERAL_VISION_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ELEVATED_IOP",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MYOPIA",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Sudden severe eye pain with halos, nausea, vomiting"
+                      },
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE_BLURRING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLURRED_VISION",
+                          "condition":  "[LLM DRAFT] Sudden blurred vision with halos, eye pain, red eye, photophobia, nausea, vomiting"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_SEE_HALOS_AROUND_LIGHTS?",
+                          "text":  "[LLM DRAFT] Do you see halos around lights?",
+                          "purpose":  "detects glare",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_GLAUCOMA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_SUDDEN_LOSS_OF_PERIPH",
+                          "text":  "[LLM DRAFT] Have you noticed a sudden loss of peripheral vision?",
+                          "purpose":  "detects acute visual loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_GLAUCOMA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_OR_PRESSURE_IN_YOUR_EYE",
+                          "text":  "[LLM DRAFT] Do you feel pain or pressure in your eye?",
+                          "purpose":  "detects eye pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_GLAUCOMA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H40.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified glaucoma",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_GLAUCOMA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

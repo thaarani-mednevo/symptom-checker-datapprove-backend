@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_010",
+  "code": "AGGRESSIVE_BEHAVIOUR",
+  "name": "Aggressive behaviour",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Aggression is behavior aimed at opposing or attacking something or someone. Though often done with the intent to cause harm, some might channel it into creative and practical outlets.",
+  "hpo_codes": [
+    "HP:0007185|HP:0100718"
+  ],
+  "snomed_code": "61372001",
+  "snomed_verified_name": "Aggressive behavior",
+  "icd10_code": "R45.6",
+  "icd10_validated": true,
+  "icd10_official_description": "Violent behavior",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

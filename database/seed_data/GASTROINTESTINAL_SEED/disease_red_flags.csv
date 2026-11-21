@@ -1,0 +1,46 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+NEONATAL_HEMATEMESIS,RF_GI_001,complaint,HEMATEMESIS,"Any neonatal hematemesis with pallor, lethargy, or poor feeding",,clinician_approved
+NEONATAL_MELENA,RF_GI_001,complaint,MELENA,"Neonatal melena with signs of blood loss (pallor, lethargy, poor feeding)",,clinician_approved
+NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD,RF_GI_001,complaint,HEMATEMESIS,Must be distinguished from true neonatal GI bleed before reassurance,,clinician_approved
+NEONATAL_RECTAL_HEMORRHAGE,RF_GI_002,complaint,HEMATOCHEZIA,Any neonatal rectal bleeding with pallor or lethargy,,clinician_approved
+CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING,RF_GI_002,complaint,HEMATOCHEZIA,Ongoing or heavy rectal bleeding with dizziness/fainting,,clinician_approved
+ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING,RF_GI_011,disease,ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING,Bloody diarrhea with fever and systemic illness (suspect severe flare),,clinician_approved
+ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING,RF_GI_002,complaint,HEMATOCHEZIA,Heavy or persistent rectal bleeding,,clinician_approved
+ULCERATIVE_CHRONIC_RECTOSIGMOIDITIS_WITH_RECTAL_BLEEDING,RF_GI_002,complaint,HEMATOCHEZIA,Heavy or persistent rectal bleeding,,clinician_approved
+LEFT_SIDED_COLITIS_WITH_RECTAL_BLEEDING,RF_GI_011,disease,LEFT_SIDED_COLITIS_WITH_RECTAL_BLEEDING,Bloody diarrhea with fever and systemic illness,,clinician_approved
+OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING,RF_GI_011,disease,OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING,Bloody diarrhea with fever and systemic illness,,clinician_approved
+SIDEROPENIC_DYSPHAGIA,RF_GI_005,complaint,DYSPHAGIA,Progressive dysphagia with unintentional weight loss,,clinician_approved
+DYSPHAGIA_FOLLOWING_CEREBRAL_INFARCTION,RF_GI_006,complaint,DYSPHAGIA,New/sudden dysphagia with neurological deficits,,clinician_approved
+DYSPHAGIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE,RF_GI_006,complaint,DYSPHAGIA,New/sudden dysphagia with neurological deficits,,clinician_approved
+DYSPHAGIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE,RF_GI_006,complaint,DYSPHAGIA,New/sudden dysphagia with neurological deficits,,clinician_approved
+DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE,RF_GI_006,complaint,DYSPHAGIA,New/sudden dysphagia with neurological deficits,,clinician_approved
+DYSPHAGIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE,RF_GI_006,complaint,DYSPHAGIA,New/sudden dysphagia with neurological deficits,,clinician_approved
+FUNCTIONAL_DYSPEPSIA,RF_GI_009,complaint,DYSPEPSIA,"New dyspepsia in a patient over 50, or dyspepsia with alarm features (weight loss, bleeding, dysphagia)",,clinician_approved
+GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS,RF_GI_009,complaint,HEARTBURN,"Heartburn with dysphagia, weight loss, or bleeding",,clinician_approved
+GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITHOUT_BLEEDING,RF_GI_009,complaint,HEARTBURN,"Heartburn with dysphagia, weight loss, or bleeding",,clinician_approved
+GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING,RF_GI_001,disease,GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING,Any hematemesis or melena from esophagitis bleeding,,clinician_approved
+BILIOUS_VOMITING_OF_NEWBORN,RF_GI_003,disease,BILIOUS_VOMITING_OF_NEWBORN,Any bilious (green) vomiting in a neonate,,clinician_approved
+OTHER_VOMITING_OF_NEWBORN,RF_GI_004,complaint,VOMITING,Newborn unable to retain feeds / signs of dehydration,,clinician_approved
+VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY,RF_GI_004,complaint,VOMITING,Persistent post-operative vomiting with dehydration or inability to tolerate fluids,,clinician_approved
+LATE_VOMITING_OF_PREGNANCY,RF_GI_004,complaint,VOMITING,Vomiting in pregnancy with inability to keep fluids down (suspect hyperemesis gravidarum),,clinician_approved
+OTHER_VOMITING_COMPLICATING_PREGNANCY,RF_GI_004,complaint,VOMITING,Vomiting in pregnancy with inability to keep fluids down,,clinician_approved
+VOMITING_OF_PREGNANCY_UNSPECIFIED,RF_GI_004,complaint,VOMITING,Vomiting in pregnancy with inability to keep fluids down,,clinician_approved
+DRUG_INDUCED_CONSTIPATION,RF_GI_008,complaint,CONSTIPATION,"No flatus/stool with distension and vomiting (suspect obstruction, not just drug side-effect)",,clinician_approved
+CHRONIC_IDIOPATHIC_CONSTIPATION,RF_GI_015,complaint,RECTAL_PAIN,Rectal bleeding or palpable mass accompanying chronic constipation,,clinician_approved
+FUNCTIONAL_DIARRHEA,RF_GI_012,complaint,DIARRHEA,Chronic diarrhea with unexplained iron-deficiency anemia,,clinician_approved
+NONINFECTIVE_NEONATAL_DIARRHEA,RF_GI_004,complaint,DIARRHEA,Neonatal diarrhea with signs of dehydration,,clinician_approved
+IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA,RF_GI_014,complaint,DIARRHEA,New bowel symptom change with family history of colorectal cancer or IBD,,clinician_approved
+RECTAL_ABSCESS,RF_GI_007,complaint,RECTAL_PAIN,Severe rectal pain with fever (suspect abscess needing urgent drainage),,clinician_approved
+RECTAL_POLYP,RF_GI_015,complaint,RECTAL_DISCHARGE,Persistent rectal bleeding or discharge beyond 4-6 weeks,,clinician_approved
+RECTAL_PROLAPSE,RF_GI_007,disease,RECTAL_PROLAPSE,Irreducible or strangulated prolapse with severe pain,,clinician_approved
+RECTAL_FISTULA_UNSPECIFIED,RF_GI_007,complaint,RECTAL_PAIN,"Fistula with fever, spreading redness, or severe pain (suspect sepsis)",,clinician_approved
+RECTAL_FISTULA_SIMPLE_INITIAL,RF_GI_007,complaint,RECTAL_PAIN,"Fistula with fever, spreading redness, or severe pain",,clinician_approved
+CONSTIPATION_UNSPECIFIED,RF_HEMATOCHEZIA_ACUTE,complaint,HEMATOCHEZIA,[LLM DRAFT] New or substantial rectal bleeding accompanying constipation that may indicate lower GI hemorrhage or serious pathology.,,ai_drafted_unverified
+CONSTIPATION_UNSPECIFIED,RF_MELENA_ACUTE,complaint,MELENA,"[LLM DRAFT] Passage of black, tarry stools alongside constipation suggesting acute upper gastrointestinal bleeding.",,ai_drafted_unverified
+OTHER_CONSTIPATION,RF_SEVERE_CONSTIPATION_WITH_OBSTRUCTION,complaint,VOMITING,"[LLM DRAFT] Severe constipation accompanied by intractable vomiting and inability to pass gas, suggesting complete bowel obstruction.",,ai_drafted_unverified
+OTHER_CONSTIPATION,RF_MASSIVE_RECTAL_BLEEDING_FROM_CONSTIPATION,complaint,HEMATOCHEZIA,[LLM DRAFT] Constipation complicated by large volume rectal bleeding or severe hemodynamic instability.,,ai_drafted_unverified
+OUTLET_DYSFUNCTION_CONSTIPATION,RF_HEMATOCHEZIA_MASSIVE,complaint,HEMATOCHEZIA,[LLM DRAFT] Massive lower gastrointestinal bleeding or severe rectal hemorrhage associated with straining or underlying structural pathology.,,ai_drafted_unverified
+OUTLET_DYSFUNCTION_CONSTIPATION,RF_RECTAL_PAIN_SEVERE,complaint,RECTAL_PAIN,"[LLM DRAFT] Severe, unremitting rectal or pelvic pain suggesting bowel ischemia, severe impaction, or acute perianal complications.",,ai_drafted_unverified
+REGURGITATION_AND_RUMINATION_OF_NEWBORN,RF_HEMATEMESIS_SHOCK,complaint,HEMATEMESIS,[LLM DRAFT] Massive hematemesis in a neonate indicating upper gastrointestinal hemorrhage or severe esophagitis requiring immediate resuscitation and surgical or gastroenterological evaluation.,,ai_drafted_unverified
+REGURGITATION_AND_RUMINATION_OF_NEWBORN,RF_BILIOUS_VOMITING_OBSTRUCTION,complaint,VOMITING,"[LLM DRAFT] Bilious vomiting associated with regurgitation suggesting neonatal intestinal obstruction or malrotation with volvulus, a surgical emergency.",,ai_drafted_unverified
+SLOW_TRANSIT_CONSTIPATION,NONE_APPLICABLE,complaint,,,,clinician_approved

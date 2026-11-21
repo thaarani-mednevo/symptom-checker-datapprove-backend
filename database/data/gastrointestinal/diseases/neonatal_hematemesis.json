@@ -1,0 +1,72 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_029",
+    "code":  "NEONATAL_HEMATEMESIS",
+    "name":  "Neonatal hematemesis",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Neonatal hematemesis.",
+    "complaints":  [
+                       {
+                           "code":  "HEMATEMESIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "VOMITING_BRIGHT_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMATEMESIS",
+                          "condition":  "Any neonatal hematemesis with pallor, lethargy, or poor feeding"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_HEMATEMESIS_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD",
+                              "distinguishing_feature":  "Swallowed maternal blood (from delivery or a cracked nipple) is confirmed with an Apt-Downey test showing adult hemoglobin; true neonatal GI bleeding shows fetal hemoglobin and needs its own work-up."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "206423004",
+    "snomed_verified_name":  "Neonatal hematemesis",
+    "icd10_code":  "P54.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal hematemesis",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_HEMATEMESIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

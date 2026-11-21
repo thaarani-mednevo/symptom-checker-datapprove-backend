@@ -1,0 +1,81 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_054",
+    "code":  "POLYCYSTIC_OVARIAN_SYNDROME",
+    "name":  "Polycystic ovarian syndrome",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Polyendocrine metabolic ovarian syndrome (PMOS), previously called polycystic ovary syndrome (PCOS), is the most common hormonal disorder in women of reproductive age.",
+    "complaints":  [
+                       {
+                           "code":  "HIRSUTISM",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPID_VIRILIZATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HIRSUTISM",
+                          "condition":  "Rapid-onset virilization atypical for PCOS, raising suspicion of an androgen-secreting tumor"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Screen for oligo/amenorrhea",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYCYSTIC_OVARIAN_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VOICE_CLITOROMEGALY_RAPID",
+                          "text":  "Has there been rapid deepening of the voice or rapid new hair growth over weeks?",
+                          "purpose":  "Exclude atypical rapid virilization",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_RAPID_VIRILIZATION)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POLYCYSTIC_OVARIAN_SYNDROME_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "IDIOPATHIC_HIRSUTISM",
+                              "distinguishing_feature":  "PCOS shows irregular cycles/ovulatory dysfunction and characteristic ultrasound/biochemical findings; idiopathic hirsutism has regular ovulatory cycles and normal androgen levels"
+                          },
+                          {
+                              "disease_code":  "CUSHING_SYNDROME_UNSPECIFIED",
+                              "distinguishing_feature":  "Cushing\u0027s syndrome shows additional features (central obesity, striae, proximal weakness) and abnormal cortisol testing, distinguishing it from PCOS-related hirsutism"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E28.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Polycystic ovarian syndrome",
+    "evidence_ids":  [
+                         "EVID_POLYCYSTIC_OVARIAN_SYNDROME"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

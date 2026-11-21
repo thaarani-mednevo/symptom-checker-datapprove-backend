@@ -1,0 +1,108 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_005",
+    "code":  "DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE",
+    "name":  "Dysphagia following other cerebrovascular disease",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Dysphagia is difficulty in swallowing. Although classified under \"symptoms and signs\" in ICD-10, in some contexts it is classified as a condition in its own right.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPHAGIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INABILITY_OR_DIFFICULTY_SWALLOWING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ESOPHAGEAL_CANCER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ESOPHAGITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "STOMACH_CANCER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MENTAL_ILLNESS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ALCOHOLISM",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "REFEEDING_SYNDROME",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "STARVATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFECTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "GASTRITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MALNUTRITION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DYSPHAGIA",
+                          "condition":  "New/sudden dysphagia with neurological deficits"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_005",
+                          "text":  "Did the swallowing difficulty start suddenly, along with slurred speech, facial drooping, or arm/leg weakness?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_006)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "I69.891",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dysphagia following other cerebrovascular disease",
+    "evidence_ids":  [
+                         "EVID_DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_017",
+  "code": "INCOMPLETE_BLADDER_EMPTYING",
+  "name": "Incomplete bladder emptying",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Vesical tenesmus refers to the feeling of incomplete emptying of the bladder following urination. This sensation can be present even when the post-void residual urine volume is very small.",
+  "hpo_codes": [],
+  "snomed_code": "249288007",
+  "snomed_verified_name": "Incomplete emptying of urinary bladder",
+  "icd10_code": "R39.14",
+  "icd10_validated": true,
+  "icd10_official_description": "Feeling of incomplete bladder emptying",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

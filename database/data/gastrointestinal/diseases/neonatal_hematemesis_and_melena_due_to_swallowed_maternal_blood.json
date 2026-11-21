@@ -1,0 +1,74 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_028",
+    "code":  "NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD",
+    "name":  "Neonatal hematemesis and melena due to swallowed maternal blood",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Neonatal hematemesis and melena due to swallowed maternal blood.",
+    "complaints":  [
+                       {
+                           "code":  "MELENA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HEMATEMESIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "VOMITING_BRIGHT_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMATEMESIS",
+                          "condition":  "Must be distinguished from true neonatal GI bleed before reassurance"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "P78.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal hematemesis and melena due to swallowed maternal blood",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

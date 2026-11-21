@@ -1,0 +1,85 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_016",
+    "code":  "FAMILIAL_ERYTHROCYTOSIS",
+    "name":  "Familial erythrocytosis",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Polycythemia is a medical condition suggested by a laboratory finding that the hematocrit and/or hemoglobin concentration are increased in the blood, although this finding is also present in capillary leak syndrome. Polycythemia is sometimes called erythrocytosis, and there is significant overlap in the two findings, but the terms are not the same: polycythemia describes any increase in hematocrit and/or hemoglobin, while erythrocytosis describes an increase specifically in the number of red blood cells in the blood.",
+    "complaints":  [
+                       {
+                           "code":  "POLYCYTHEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THROMBOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Acute arterial or venous thromboembolism due to severe erythrocytosis-induced hyperviscosity."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_DIAGNOSED_WITH_AN_ABNORMAL",
+                          "text":  "[LLM DRAFT] Have you been diagnosed with an abnormally high red blood cell count (erythrocytosis or polycythemia) that runs in your family?",
+                          "purpose":  "Screens for family history of high red blood cells",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FAMILIAL_ERYTHROCYTOSIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_FREQUENT_SEVERE_HEADAC",
+                          "text":  "[LLM DRAFT] Do you experience frequent severe headaches, dizziness, or blurred vision along with a flushed or reddened face?",
+                          "purpose":  "Screens for common symptoms of increased blood viscosity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FAMILIAL_ERYTHROCYTOSIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "POLYCYTHEMIA_VERA",
+                              "distinguishing_feature":  "[LLM DRAFT] Often presents with panmyelosis, splenomegaly, and JAK2 mutations rather than isolated erythrocytosis."
+                          },
+                          {
+                              "disease_code":  "SECONDARY_POLYCYTHEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Usually caused by chronic hypoxia, high-altitude exposure, or erythropoietin-secreting tumors with elevated serum EPO levels."
+                          },
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_DUE_TO_POLYCYTHEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Manifests strictly in newborns with hyperbilirubinemia secondary to an elevated hematocrit."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "17342003",
+    "snomed_verified_name":  "Familial erythrocytosis",
+    "icd10_code":  "D75.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Familial erythrocytosis",
+    "evidence_ids":  [
+                         "EVID_FAMILIAL_ERYTHROCYTOSIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

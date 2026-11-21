@@ -1,0 +1,11 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression
+ASTHMA,RED_RESP_004,complaint,SHORTNESS_OF_BREATH,Acute severe asthma — no improvement after reliever use,(COMPLAINT:SHORTNESS_OF_BREATH==True) AND (severity>=8) AND (bronchodilator_response=='none')
+ASTHMA,RED_RESP_001,complaint,SHORTNESS_OF_BREATH,Sudden severe breathlessness in known asthmatic,(COMPLAINT:SHORTNESS_OF_BREATH==True) AND (onset=='sudden') AND (severity=='severe')
+COPD,RED_RESP_005,complaint,SHORTNESS_OF_BREATH,Respiratory failure — oxygen saturation critically low,(COMPLAINT:SHORTNESS_OF_BREATH==True) AND (oxygen_sat<'92') AND (onset=='acute')
+COPD,RED_RESP_001,complaint,SHORTNESS_OF_BREATH,Sudden severe breathlessness in COPD patient,(COMPLAINT:SHORTNESS_OF_BREATH==True) AND (onset=='sudden') AND (severity=='severe')
+PNEUMONIA,RED_RESP_005,complaint,FEVER_WITH_COUGH,Respiratory failure in severe pneumonia,(COMPLAINT:FEVER_WITH_COUGH==True) AND (oxygen_sat<'92')
+PULMONARY_TUBERCULOSIS,RED_RESP_002,complaint,HEMOPTYSIS,Haemoptysis with night sweats — suspected TB,(COMPLAINT:HEMOPTYSIS==True) AND (COMPLAINT:NIGHT_SWEATS==True)
+PULMONARY_TUBERCULOSIS,RED_RESP_006,complaint,FEVER_WITH_COUGH,Suspected active pulmonary TB with close contacts,(COMPLAINT:FEVER_WITH_COUGH==True) AND (tb_contact=='yes') AND (cough_duration>='3_weeks')
+LUNG_CANCER,RED_RESP_002,complaint,HEMOPTYSIS,Haemoptysis with night sweats — suspected malignancy,(COMPLAINT:HEMOPTYSIS==True) AND (COMPLAINT:NIGHT_SWEATS==True) AND (age>='45')
+PNEUMOTHORAX,RED_RESP_003,complaint,SHORTNESS_OF_BREATH,Tension pneumothorax — sudden breathlessness with tracheal deviation,(COMPLAINT:SHORTNESS_OF_BREATH==True) AND (COMPLAINT:CHEST_TIGHTNESS==True) AND (onset=='sudden')
+PNEUMOTHORAX,RED_RESP_001,complaint,PLEURITIC_CHEST_PAIN,Sudden severe breathlessness with pleuritic pain — suspected pneumothorax,(COMPLAINT:PLEURITIC_CHEST_PAIN==True) AND (onset=='sudden') AND (severity=='severe')

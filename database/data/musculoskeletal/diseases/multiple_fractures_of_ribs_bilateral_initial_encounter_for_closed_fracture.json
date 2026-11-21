@@ -1,0 +1,102 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_031",
+    "code":  "MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_INITIAL_ENCOUNTER_FOR_CLOSED_FRACTURE",
+    "name":  "Multiple fractures of ribs, bilateral, initial encounter for closed fracture",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Multiple fractures of ribs, bilateral, initial encounter for closed fracture.",
+    "complaints":  [
+                       {
+                           "code":  "FRACTURES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_PAIN_THAT_IS_WORSE_WITH_BREATHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHEST_TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RESPIRATORY_FAILURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] Severe respiratory distress, tachypnea, or paradoxical chest wall movement indicative of a flail chest requiring immediate airway management and ventilatory support."
+                      },
+                      {
+                          "code":  "RF_TENSION_PNEUMOTHORAX",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "IMPAIRED_FUNCTION",
+                          "condition":  "[LLM DRAFT] Acute, severe dyspnea, tracheal deviation, and absent breath sounds on one side suggesting tension pneumothorax or major hemothorax from displaced rib ends."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_SHARP_CHEST_PAIN_THAT_GETS_W",
+                          "text":  "[LLM DRAFT] Do you feel sharp chest pain that gets worse when you take a deep breath or cough?",
+                          "purpose":  "severe pain on breathing",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_INITIAL_ENCOUNTER_FOR_CLOSED_FRACTURE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_PAIN_WHEN_YOU_PRESS_ON_THE_A",
+                          "text":  "[LLM DRAFT] Do you have pain when you press on the area around your ribs?",
+                          "purpose":  "localized rib pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_INITIAL_ENCOUNTER_FOR_CLOSED_FRACTURE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_SHORTNESS_OF_BREATH_OR_TRO",
+                          "text":  "[LLM DRAFT] Do you notice shortness of breath or trouble breathing?",
+                          "purpose":  "breathing difficulty",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_INITIAL_ENCOUNTER_FOR_CLOSED_FRACTURE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "S22.43XA",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Multiple fractures of ribs, bilateral, initial encounter for closed fracture",
+    "evidence_ids":  [
+                         "EVID_MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_INITIAL_ENCOUNTER_FOR_CLOSED_FRACTURE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

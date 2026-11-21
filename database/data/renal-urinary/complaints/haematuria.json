@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_009",
+  "code": "HAEMATURIA",
+  "name": "Haematuria",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Hematuria or haematuria is defined as the presence of blood or red blood cells in the urine. \"Gross hematuria\" occurs when urine appears red, brown, or tea-colored due to the presence of blood.",
+  "hpo_codes": [],
+  "snomed_code": "34436003",
+  "snomed_verified_name": "Blood in urine",
+  "icd10_code": "R31.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Hematuria, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

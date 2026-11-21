@@ -1,0 +1,182 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_014",
+    "code":  "ACUTE_CHOLECYSTITIS",
+    "name":  "Acute cholecystitis",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Acute cholecystitis is inflammation of the gallbladder, most commonly caused by obstruction of the cystic duct by a gallstone (calculous cholecystitis, 90–95%) with subsequent bacterial infection and distension. Acalculous cholecystitis (5–10%) occurs in critically ill patients. The classic presentation is severe, constant right upper quadrant or epigastric pain radiating to the right scapula or shoulder tip, with fever, nausea, and a positive Murphy\u0027s sign (inspiratory arrest during deep RUQ palpation). Jaundice may occur if there is concurrent choledocholithiasis. Complications include empyema, perforation, and gangrenous cholecystitis.",
+    "complaints":  [
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RADIATION_RIGHT_SCAPULA_OR_SHOULDER_TIP",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POSITIVE_MURPHYS_SIGN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GALLSTONES",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "FEMALE_SEX_OVER_40",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "RAPID_WEIGHT_LOSS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "PREGNANCY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CRITICAL_ILLNESS_ACALCULOUS",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_009",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                          "condition":  "Severe RUQ pain with high fever, rigors, and jaundice (Charcot\u0027s triad) — suspect ascending cholangitis, emergency biliary drainage required"
+                      },
+                      {
+                          "code":  "RED_HB_010",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                          "condition":  "RUQ pain with fever and hypotension — sepsis from gangrenous cholecystitis or perforation, emergency surgery pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_CHOLE_001",
+                          "text":  "Is the pain in your right upper abdomen constant and severe, as opposed to coming and going in waves?",
+                          "purpose":  "symptom_characterisation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ACUTE_CHOLECYSTITIS)",
+                          "if_no_action":  "GOTO_PATHWAY(BILIARY_COLIC)",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_CHOLECYSTITIS_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_CHOLE_002",
+                          "text":  "Does the pain radiate to your right shoulder or shoulder blade?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BILIARY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_CHOLECYSTITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_CHOLE_003",
+                          "text":  "Do you have fever along with the right-sided abdominal pain?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_CHOLECYSTITIS_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HB_CHOLE_004",
+                          "text":  "Have you also noticed yellowing of your skin or eyes?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHOLEDOCHOLITHIASIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ACUTE_CHOLECYSTITIS_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VIRAL_HEPATITIS_B",
+                              "distinguishing_feature":  "Hepatitis causes jaundice with elevated transaminases and serology; cholecystitis has gallstones on ultrasound, positive Murphy\u0027s sign, and elevated inflammatory markers."
+                          },
+                          {
+                              "disease_code":  "PEPTIC_ULCER_DISEASE",
+                              "distinguishing_feature":  "Peptic ulcer causes epigastric pain related to meals; cholecystitis has RUQ localisation, positive Murphy\u0027s sign, and gallstones on ultrasound."
+                          },
+                          {
+                              "disease_code":  "RIGHT_LOWER_LOBE_PNEUMONIA",
+                              "distinguishing_feature":  "Right lower lobe pneumonia can cause referred RUQ pain with fever; chest X-ray and absence of gallstones on ultrasound differentiate it from cholecystitis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0001997"
+                  ],
+    "snomed_code":  "65275009",
+    "snomed_verified_name":  "Acute cholecystitis",
+    "icd10_code":  "K81.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute cholecystitis",
+    "evidence_ids":  [
+                         "EVID_ACUTE_CHOLECYSTITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

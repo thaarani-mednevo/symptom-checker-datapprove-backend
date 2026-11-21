@@ -1,0 +1,81 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_071",
+  "code": "DYSARTHRIA_FOLLOWING_CEREBRAL_INFARCTION",
+  "name": "Dysarthria following cerebral infarction",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Dysarthria is a speech sound disorder resulting from neurological injury of the motor component of the motor–speech system and is characterized by poor articulation of phonemes. Those affected lack sufficient control of the muscles used for speech to pronounce words clearly.",
+  "complaints": [
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SLURRED_SPEECH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEAK_EXECUTION_OF_ORAL_MUSCULAR_MOVEMENTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "DIABETES_MELLITUS",
+      "strength": "moderate"
+    },
+    {
+      "code": "SMOKING",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of new or worsening focal motor weakness or complete paralysis indicating recurrent stroke or stroke extension."
+    },
+    {
+      "code": "RF_SPEECH_DISTURBANCE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SPEECH_DISTURBANCE",
+      "condition": "[LLM DRAFT] Sudden progression from mild dysarthria to complete loss of speech or severe global aphasia suggesting acute neurological deterioration."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.322",
+  "icd10_validated": true,
+  "icd10_official_description": "Dysarthria following cerebral infarction",
+  "evidence_ids": [
+    "EVID_DYSARTHRIA_FOLLOWING_CEREBRAL_INFARCTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

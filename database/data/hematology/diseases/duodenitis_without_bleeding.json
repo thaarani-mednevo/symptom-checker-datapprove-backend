@@ -1,0 +1,97 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_003",
+    "code":  "DUODENITIS_WITHOUT_BLEEDING",
+    "name":  "Duodenitis without bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Duodenitis is inflammation of the duodenum. It may persist acutely or chronically.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Development of active gastrointestinal bleeding manifesting as hematemesis, melena, or significant hemoglobin drop despite prior non-bleeding classification."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_BURNING_ACHE_OR_PAIN_IN_YO",
+                          "text":  "[LLM DRAFT] Do you have a burning ache or pain in your upper abdomen, just below your ribs?",
+                          "purpose":  "Screens for upper abdominal pain typical of duodenitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DUODENITIS_WITHOUT_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DOES_EATING_FOOD_OR_TAKING_ANTACIDS_TEMP",
+                          "text":  "[LLM DRAFT] Does eating food or taking antacids temporarily make your upper stomach pain better?",
+                          "purpose":  "Screens for food-relieved epigastric pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DUODENITIS_WITHOUT_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_EXPERIENCING_FREQUENT_NAUS",
+                          "text":  "[LLM DRAFT] Have you been experiencing frequent nausea or bloating after meals?",
+                          "purpose":  "Screens for dyspepsia symptoms associated with inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DUODENITIS_WITHOUT_BLEEDING_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DUODENITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with overt gastrointestinal bleeding such as melena or hematemesis rather than just non-bleeding dyspeptic symptoms."
+                          },
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with portal hypertension and distinct endoscopic findings in the esophagus rather than the duodenum."
+                          },
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Inflammation located in the esophagus typically causing retrosternal chest pain or heartburn instead of duodenal discomfort."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K29.80",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Duodenitis without bleeding",
+    "evidence_ids":  [
+                         "EVID_DUODENITIS_WITHOUT_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

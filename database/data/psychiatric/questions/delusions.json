@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DELUSIONS",
+    "complaint_name":  "Delusions",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DEL_001",
+                          "text":  "Do you believe something is happening that others do not believe, such as being followed or controlled?",
+                          "purpose":  "content",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DELUSION_CONTENT",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_002",
+                          "text":  "Are these beliefs affecting your behaviour or safety?",
+                          "purpose":  "impact",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DELUSIONS_AFFECTING_BEHAVIOUR",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_003",
+                          "text":  "Have you been using alcohol or drugs?",
+                          "purpose":  "substance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUBSTANCE_WITH_DELUSIONS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DEL_004",
+                          "text":  "Do you also hear voices or see things others do not?",
+                          "purpose":  "hallucinations",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DELUSIONS_WITH_HALLUCINATIONS",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,34 @@
+﻿{
+  "id": "GASTROINTESTINAL_DIS_GI_023",
+  "code": "SLOW_TRANSIT_CONSTIPATION",
+  "name": "Slow transit constipation",
+  "module": "gastrointestinal",
+  "category": "disease",
+  "description": "A gastrointestinal condition known as Slow transit constipation.",
+  "complaints": [
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "35298007",
+  "snomed_verified_name": "Slow transit constipation",
+  "icd10_code": "K59.01",
+  "icd10_validated": true,
+  "icd10_official_description": "Slow transit constipation",
+  "evidence_ids": [
+    "EVID_SLOW_TRANSIT_CONSTIPATION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

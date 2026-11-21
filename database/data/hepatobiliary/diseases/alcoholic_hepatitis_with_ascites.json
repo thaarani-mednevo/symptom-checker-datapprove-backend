@@ -1,0 +1,188 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_008",
+    "code":  "ALCOHOLIC_HEPATITIS_WITH_ASCITES",
+    "name":  "Alcoholic hepatitis with ascites",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Alcoholic hepatitis with ascites represents a more severe form of alcoholic hepatitis in which portal hypertension has developed sufficiently to cause peritoneal fluid accumulation. Ascites in this context signals advanced hepatic dysfunction with reduced albumin synthesis and elevated sinusoidal pressure. These patients are at high risk for spontaneous bacterial peritonitis (SBP), hepatorenal syndrome, and variceal bleeding. The combination of acute-on-chronic liver injury with ascites carries a substantially higher 90-day mortality than alcoholic hepatitis alone.",
+    "complaints":  [
+                       {
+                           "code":  "ASCITES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ABDOMINAL_DISTENSION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TENDER_HEPATOMEGALY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEAVY_ALCOHOL_CONSUMPTION_LONG_TERM",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "POOR_NUTRITIONAL_STATUS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "UNDERLYING_CIRRHOSIS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Deep jaundice with encephalopathy, coagulopathy, or renal failure — acute liver failure pathway"
+                      },
+                      {
+                          "code":  "RED_HB_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ASCITES",
+                          "condition":  "Sudden increase in abdominal distension with fever and abdominal tenderness — suspect spontaneous bacterial peritonitis, urgent paracentesis"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_AHA_001",
+                          "text":  "How many alcoholic drinks do you consume on a typical day, and for how many years?",
+                          "purpose":  "risk_factor_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITH_ASCITES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_AHA_002",
+                          "text":  "Has your abdomen become visibly swollen or distended recently?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ASCITES)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITH_ASCITES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_AHA_003",
+                          "text":  "Do you have fever along with abdominal swelling and tenderness?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITH_ASCITES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HB_AHA_004",
+                          "text":  "Have you felt confused or found it difficult to stay awake recently?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ALCOHOLIC_HEPATITIS_WITH_ASCITES_SYMPTOM_4",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITH_ASCITES",
+                              "distinguishing_feature":  "Cirrhosis is a chronic fibrotic end-stage disease with stable portal hypertension; alcoholic hepatitis with ascites is an acute inflammatory episode which may be superimposed on cirrhosis and presents with more rapid deterioration and fever."
+                          },
+                          {
+                              "disease_code":  "SPONTANEOUS_BACTERIAL_PERITONITIS",
+                              "distinguishing_feature":  "SBP is a complication of ascites presenting with fever, abdominal pain, and altered mental status; it is diagnosed by ascitic fluid PMN count \u003e250 cells/mm3 on diagnostic paracentesis."
+                          },
+                          {
+                              "disease_code":  "MALIGNANT_ASCITES",
+                              "distinguishing_feature":  "Malignant ascites is due to peritoneal carcinomatosis or hepatic metastases and shows exudative fluid with high protein; alcoholic hepatitis ascites is typically transudative with SAAG \u003e1.1 g/dL."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012115",
+                      "HP:0001541"
+                  ],
+    "snomed_code":  "1082611000119101",
+    "snomed_verified_name":  "Ascites due to alcoholic hepatitis",
+    "icd10_code":  "K70.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alcoholic hepatitis with ascites",
+    "evidence_ids":  [
+                         "EVID_ALCOHOLIC_HEPATITIS_WITH_ASCITES"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

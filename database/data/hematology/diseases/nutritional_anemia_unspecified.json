@@ -1,0 +1,169 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_022",
+    "code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED",
+    "name":  "Nutritional anemia, unspecified",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Anemia is a deficiency in the size or number of red blood cells or in the amount of hemoglobin they contain. This deficiency limits the exchange of O2 and CO2 between the blood and the tissue cells.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PALE_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LIGHTHEADEDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEART_RATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BURNING_OR_NUMBNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND_DEPRESSION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NUTRITIONAL_DISORDER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ANEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANEMIA",
+                          "condition":  "[LLM DRAFT] Severe symptomatic anemia resulting in hemodynamic instability (e.g., resting tachycardia, hypotension, dizziness, or shortness of breath at rest)"
+                      },
+                      {
+                          "code":  "RF_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Severe or uncontrollable hemorrhage secondary to profound bone marrow suppression or severe thrombocytopenia associated with nutritional deficiency"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FREQUENTLY_FEEL_UNUSUALLY_TIRED_NUTRITIONAL_ANEMIA_UNSPECIFIED",
+                          "text":  "[LLM DRAFT] Do you frequently feel unusually tired, weak, or exhausted during your daily activities?",
+                          "purpose":  "screens for fatigue",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_THAT_YOUR_SKIN_APPEARS",
+                          "text":  "[LLM DRAFT] Have you noticed that your skin appears much paler than usual, or do people tell you that you look pale?",
+                          "purpose":  "screens for pallor",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_EXPERIENCING_FREQUENT_DIZZ",
+                          "text":  "[LLM DRAFT] Have you been experiencing frequent dizziness, lightheadedness, or shortness of breath when exerting yourself?",
+                          "purpose":  "screens for dizziness and dyspnea",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NUTRITIONAL_ANEMIA_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Broad classification requiring further laboratory evaluation to confirm a specific nutritional versus non-nutritional etiology."
+                          },
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with pancytopenia and a hypocellular bone marrow rather than isolated nutritional deficiencies."
+                          },
+                          {
+                              "disease_code":  "PROTEIN_DEFICIENCY_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Specifically linked to inadequate protein intake accompanied by distinctive signs of protein-energy malnutrition."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D53.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nutritional anemia, unspecified",
+    "evidence_ids":  [
+                         "EVID_NUTRITIONAL_ANEMIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

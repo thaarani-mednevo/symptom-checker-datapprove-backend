@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "PNEUMATURIA",
+    "complaint_name":  "Pneumaturia",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PNEU_001",
+                          "text":  "Do you pass gas or bubbles in your urine?",
+                          "purpose":  "confirm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PNEUMATURIA_CONFIRM",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PNEU_002",
+                          "text":  "Do you have a history of bowel disease, diverticulitis, or cancer?",
+                          "purpose":  "fistula_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_VESICOENTERIC_FISTULA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FISTULA_RISK_FACTORS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PNEU_003",
+                          "text":  "Is there recurrent urinary infection?",
+                          "purpose":  "uti",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RECURRENT_UTI_WITH_PNEUMATURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PNEU_004",
+                          "text":  "Is there faecal material in the urine?",
+                          "purpose":  "severe",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_VESICOENTERIC_FISTULA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FAECALuria",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

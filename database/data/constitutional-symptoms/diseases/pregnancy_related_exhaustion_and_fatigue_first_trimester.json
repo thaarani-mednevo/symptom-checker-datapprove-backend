@@ -1,0 +1,113 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_022",
+    "code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER",
+    "name":  "Pregnancy related exhaustion and fatigue, first trimester",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Excessive fatigue and exhaustion during the first trimester of pregnancy, often due to hormonal changes and increased metabolic demands.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHRONIC_FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_VAGINAL_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Heavy bleeding with or without severe lower abdominal pain during early pregnancy."
+                      },
+                      {
+                          "code":  "RF_INABILITY_TO_KEEP_FLUIDS_DOWN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Persistent vomiting leading to signs of dehydration and inability to retain oral fluids."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_1",
+                          "text":  "Are you experiencing severe dizziness, fainting, or chest pain along with your fatigue?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_2",
+                          "text":  "Are you able to keep food and fluids down throughout the day?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_3",
+                          "text":  "Did the extreme fatigue begin only after you became pregnant?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Fatigue improves somewhat as the pregnancy progresses into the second trimester compared to the first."
+                          },
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Fatigue is persistent and disabling beyond standard pregnancy duration, accompanied by post-exertional malaise and unrefreshing sleep."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Fatigue is accompanied by severe restriction of caloric intake, intense fear of gaining weight, and body image distortion rather than normal pregnancy physiology."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O26.811",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pregnancy related exhaustion and fatigue, first trimester",
+    "evidence_ids":  [
+                         "EVID_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

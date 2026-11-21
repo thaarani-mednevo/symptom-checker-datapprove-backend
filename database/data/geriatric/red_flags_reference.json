@@ -1,0 +1,45 @@
+{
+  "module": "geriatric",
+  "red_flags": [
+    {
+      "code": "RED_GER_001",
+      "name": "Fall with loss of consciousness, severe headache, confusion, or neurological deficit",
+      "action": "emergency_head_injury_pathway"
+    },
+    {
+      "code": "RED_GER_002",
+      "name": "Fall with severe localised pain, inability to bear weight, or skeletal deformity",
+      "action": "emergency_fracture_pathway"
+    },
+    {
+      "code": "RED_GER_003",
+      "name": "Acute severe agitation with self-harm risk",
+      "action": "urgent_sedation_assessment_and_safety_review"
+    },
+    {
+      "code": "RED_GER_004",
+      "name": "New confusion with fever and neck stiffness",
+      "action": "emergency_meningitis_encephalitis_pathway"
+    },
+    {
+      "code": "RED_GER_005",
+      "name": "Acute deterioration superimposed on known dementia",
+      "action": "delirium_precipitant_urgent_medical_review"
+    },
+    {
+      "code": "RED_GER_006",
+      "name": "Rapid cognitive decline over weeks in known dementia",
+      "action": "exclude_reversible_cause_urgent_review"
+    },
+    {
+      "code": "RED_GER_007",
+      "name": "Active bleeding on anticoagulant therapy",
+      "action": "emergency_anticoagulant_reversal_pathway"
+    },
+    {
+      "code": "RED_GER_008",
+      "name": "Acute severe confusion following recent medication change",
+      "action": "adr_suspected_withhold_and_review"
+    }
+  ]
+}

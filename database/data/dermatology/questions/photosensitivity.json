@@ -1,0 +1,68 @@
+﻿{
+    "complaint_code":  "PHOTOSENSITIVITY",
+    "complaint_name":  "Photosensitivity",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_PHOT_001",
+                                       "Does the rash appear only on sun-exposed areas (face, arms, neck, hands)?",
+                                       "distribution",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "SUN_EXPOSED_RASH",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_PHOT_002",
+                          "text":  "How quickly does the rash appear after sun exposure — minutes, hours, or days?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PHOTO_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PHOT_003",
+                          "text":  "Are you taking any medications (antibiotics, diuretics, NSAIDs, retinoids)?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PHOTOSENSITISING_DRUG",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PHOT_004",
+                          "text":  "Do you have joint pain, mouth ulcers, or fatigue?",
+                          "purpose":  "autoimmune_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "LUPUS_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

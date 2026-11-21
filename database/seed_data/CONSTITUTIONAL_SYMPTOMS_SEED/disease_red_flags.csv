@@ -1,0 +1,59 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+Q_FEVER,RF_SEVERE_CHEST_PAIN_OR_SHORTNESS_OF_BREATH,complaint,,May indicate Q fever-associated pneumonia or acute pericarditis/myocarditis.,,ai_drafted_unverified
+Q_FEVER,RF_PERSISTENT_HIGH_FEVER_WITH_SEVERE_HEADACHE_AND_CONFUSION,complaint,,Can signal central nervous system involvement such as meningoencephalitis.,,ai_drafted_unverified
+TRENCH_FEVER,RF_SEVERE_CARDIAC_SYMPTOMS,complaint,,"Development of endocarditis signs such as new murmurs, chest pain, or acute heart failure.",,ai_drafted_unverified
+TRENCH_FEVER,RF_SEVERE_SEPSIS,complaint,,"High persistent fever associated with hypotension, confusion, or organ dysfunction.",,ai_drafted_unverified
+SANDFLY_FEVER,RF_SIGNS_OF_MENINGOENCEPHALITIS,complaint,,"Development of severe headache, altered mental status, or neck stiffness",,ai_drafted_unverified
+LASSA_FEVER,RF_HEMORRHAGIC_MANIFESTATIONS,complaint,,"Bleeding from gums, eyes, nose, or gastrointestinal tract in a suspected patient.",,ai_drafted_unverified
+LASSA_FEVER,RF_NEUROLOGICAL_DETERIORATION,complaint,,"Onset of confusion, seizures, or coma.",,ai_drafted_unverified
+TYPHOID_FEVER_UNSPECIFIED,RF_SEVERE_ABDOMINAL_PAIN_OR_SIGNS_OF_PERITONITIS,complaint,,Suspected intestinal perforation or severe gastrointestinal bleeding,,ai_drafted_unverified
+TYPHOID_FEVER_UNSPECIFIED,RF_ALTERED_MENTAL_STATUS_OR_ENCEPHALOPATHY,complaint,,Severe systemic toxicity affecting the central nervous system (typhoid encephalopathy),,ai_drafted_unverified
+PARATYPHOID_FEVER_A,RF_SEVERE_ABDOMINAL_PAIN,complaint,,"Sudden, severe, or worsening abdominal pain indicating potential intestinal perforation or hemorrhage.",,ai_drafted_unverified
+PARATYPHOID_FEVER_A,RF_ALTERED_MENTAL_STATUS,complaint,,"Confusion, delirium, or lethargy associated with severe systemic infection (typhoid encephalopathy).",,ai_drafted_unverified
+PARATYPHOID_FEVER_B,RF_SEVERE_ABDOMINAL_PAIN,complaint,,"Sudden, severe, or worsening abdominal pain potentially indicating intestinal perforation or peritonitis.",,ai_drafted_unverified
+PARATYPHOID_FEVER_B,RF_ALTERED_MENTAL_STATUS,complaint,,"Confusion, delirium, or lethargy associated with high persistent fever (typhoidal state).",,ai_drafted_unverified
+PARATYPHOID_FEVER_C,RF_SEVERE_ABDOMINAL_PAIN,complaint,,"Sudden, severe, or worsening abdominal pain potentially indicating intestinal perforation.",,ai_drafted_unverified
+PARATYPHOID_FEVER_C,RF_SIGNS_OF_SHOCK_OR_ALTERED_MENTAL_STATUS,complaint,,"Severe lethargy, confusion, hypotension, or signs of septic shock.",,ai_drafted_unverified
+MUSCLE_WEAKNESS_GENERALIZED,RF_ACUTE_RESPIRATORY_COMPROMISE,complaint,,"Generalized muscle weakness accompanied by shortness of breath, difficulty swallowing, or inability to lift the head.",,ai_drafted_unverified
+MUSCLE_WEAKNESS_GENERALIZED,RF_SUDDEN_ONSET_FOCAL_NEUROLOGICAL_DEFICITS,complaint,,"Generalized weakness accompanied by sudden facial droop, slurred speech, or loss of vision.",,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION,RF_ACUTE_STROKE_RECURRENCE,complaint,,"Sudden onset of new neurological deficits such as severe headache, confusion, or sudden loss of vision",,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE,RF_SUDDEN_SEVERE_HEADACHE_OR_ALTERED_MENTAL_STATUS,complaint,,May indicate rebleeding or acute hydrocephalus following subarachnoid hemorrhage,,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE,RF_SUDDEN_NEUROLOGICAL_DETERIORATION,complaint,,"Worsening facial weakness accompanied by acute confusion, severe headache, or altered mental status.",,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE,RF_ACUTE_STROKE_SYMPTOMS,complaint,,"Sudden onset of new neurological deficits, severe headache, confusion, or sudden severe weakness on one side of the body.",,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE,RF_SUDDEN_NEUROLOGICAL_DETERIORATION,complaint,,"Sudden worsening of facial weakness, new confusion, severe headache, or sudden weakness in the limbs indicating potential acute stroke.",,ai_drafted_unverified
+FACIAL_WEAKNESS_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE,RF_SUDDEN_NEUROLOGICAL_DETERIORATION,complaint,,"Worsening facial weakness accompanied by altered mental status, severe headache, or acute confusion.",,ai_drafted_unverified
+POSTVIRAL_FATIGUE_SYNDROME,RF_SEVERE_PROGRESSIVE_NEUROLOGICAL_DEFICITS,complaint,,"New focal neurological signs, seizures, or acute confusion indicating potential alternative central nervous system pathology.",,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_SEQUELA,RF_ALTERED_MENTAL_STATUS,complaint,,"Confusion, lethargy, or loss of consciousness following heat exposure",,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_SEQUELA,RF_HIGH_BODY_TEMPERATURE,complaint,,Core body temperature exceeding 104°F (40°C),,ai_drafted_unverified
+MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME,RF_SEVERE_PROGRESSIVE_NEUROLOGICAL_DEFICITS,complaint,,"Rapid onset of focal deficits, severe cognitive decline, or new-onset seizures not explained by ME/CFS.",,ai_drafted_unverified
+MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME,RF_SUICIDAL_IDEATION,complaint,,"Expression of hopelessness, self-harm thoughts, or suicidal intent due to chronic suffering.",,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER,RF_ALTERED_MENTAL_STATUS,complaint,,"Confusion, lethargy, disorientation, or loss of consciousness suggesting progression to heat stroke.",,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER,RF_HIGH_CORE_BODY_TEMPERATURE,complaint,,Core body temperature exceeding 104°F (40°C) indicating severe heat illness.,,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER,RF_HEAT_STROKE,complaint,,"Altered mental status, confusion, loss of consciousness, or a body temperature above 104°F (40°C)",,ai_drafted_unverified
+HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER,RF_SEVERE_DEHYDRATION,complaint,,"Inability to retain fluids, extreme dizziness, or absence of urination",,ai_drafted_unverified
+OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES,RF_SEVERE_NEUROLOGICAL_DEFICITS,complaint,,"Acute onset of focal weakness, confusion, seizures, or severe altered mental status",,ai_drafted_unverified
+OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES,RF_PROGRESSIVE_CARDIOPULMONARY_SYMPTOMS,complaint,,"New or worsening chest pain, severe dyspnea at rest, or syncope",,ai_drafted_unverified
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER,RF_SEVERE_VAGINAL_BLEEDING,complaint,,Heavy bleeding with or without severe lower abdominal pain during early pregnancy.,,ai_drafted_unverified
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER,RF_INABILITY_TO_KEEP_FLUIDS_DOWN,complaint,,Persistent vomiting leading to signs of dehydration and inability to retain oral fluids.,,ai_drafted_unverified
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER,RF_SEVERE_SHORTNESS_OF_BREATH,complaint,,"Sudden onset of dyspnea at rest, potentially indicating pulmonary embolism or severe anemia",,ai_drafted_unverified
+PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER,RF_CHEST_PAIN_OR_PALPITATIONS,complaint,,"New or worsening chest pain, severe palpitations, or dizziness associated with fatigue",,ai_drafted_unverified
+ANOREXIA_NERVOSA_UNSPECIFIED,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,"Heart rate persistently below 40 bpm, dizziness, or fainting episodes.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_UNSPECIFIED,RF_SEVERE_ELECTROLYTE_IMBALANCE,complaint,,Laboratory findings showing critical hypokalemia or hyponatremia.,,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,Resting heart rate below 40 beats per minute or orthostatic vital sign changes,,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD,RF_SUICIDAL_IDEATION_OR_INTENT,complaint,,Active thoughts of self-harm or suicide related to distress over body image or food intake,,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,"Heart rate persistently below 40 bpm, orthostatic hypotension, or syncope.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE,RF_SEVERE_ELECTROLYTE_IMBALANCE,complaint,,"Significant hypokalemia, hyponatremia, or hypophosphatemia indicating risk of refeeding syndrome or acute medical compromise.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,"Heart rate persistently below 40 beats per minute, hypotension, or dizziness upon standing.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE,RF_SEVERE_ELECTROLYTE_IMBALANCE,complaint,,"Suspected severe hypokalemia, hypophosphatemia, or hyponatremia due to restriction or purging.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,"Resting heart rate below 40 bpm, severe hypotension, or syncope indicating acute cardiovascular compromise.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_EXTREME,RF_SEVERE_ELECTROLYTE_DERANGEMENT,complaint,,Critical abnormalities such as severe hypokalemia or hyponatremia putting the patient at risk for fatal arrhythmias.,,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_UNSPECIFIED,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,"Heart rate persistently below 40 bpm, hypotension, or dizziness upon standing",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_UNSPECIFIED,RF_SEVERE_ELECTROLYTE_IMBALANCE,complaint,,"Laboratory evidence of acute hypokalemia, hyponatremia, or severe dehydration",,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION,RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY,complaint,,Heart rate drops below 40 bpm or systolic blood pressure drops below 90 mmHg,,ai_drafted_unverified
+ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION,RF_ACUTE_SUICIDAL_IDEATION,complaint,,Expressing active thoughts of self-harm or suicide,,ai_drafted_unverified
+ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD,RF_SEVERE_ELECTROLYTE_ABNORMALITY,complaint,,"Presence of severe dizziness, fainting, cardiac palpitations, or seizures secondary to purging behaviors.",,ai_drafted_unverified
+ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD,RF_SUICIDAL_IDEATION,complaint,,Expressing active thoughts of suicide or self-harm.,,ai_drafted_unverified
+DEHYDRATION_OF_NEWBORN,RF_LETHARGY_OR_UNRESPONSIVENESS,complaint,,Newborn is unusually difficult to wake or completely unresponsive.,,ai_drafted_unverified
+DEHYDRATION_OF_NEWBORN,RF_SEVERE_OLIGURIA_ANURIA,complaint,,No wet diapers for 6 to 8 hours or significantly decreased urine output.,,ai_drafted_unverified
+HYPOVOLEMIA,RF_SEVERE_HYPOTENSION_OR_SHOCK,complaint,,"Blood pressure drops significantly with symptoms of confusion, dizziness, or cold, clammy skin.",,ai_drafted_unverified
+HYPOVOLEMIA,RF_ANURIA,complaint,,"Complete lack of urination for 8 hours or more, indicating acute kidney injury.",,ai_drafted_unverified

@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_008",
+  "code": "ANURIA",
+  "name": "Anuria",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Anuria is nonpassage of urine, in practice is defined as passage of less than 100 milliliters of urine in a day. Anuria is often caused by failure in the function of kidneys.",
+  "hpo_codes": [],
+  "snomed_code": "2472002",
+  "snomed_verified_name": "Anuria",
+  "icd10_code": "R34",
+  "icd10_validated": true,
+  "icd10_official_description": "Anuria and oliguria",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

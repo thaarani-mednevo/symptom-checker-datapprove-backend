@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_015",
+  "code": "SMELL_DISTURBANCE",
+  "name": "Smell disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Anosmia, also known as smell blindness, is the lack of ability to detect one or more smells. Anosmia may be temporary or permanent.",
+  "hpo_codes": [],
+  "snomed_code": "112105008",
+  "snomed_verified_name": "Sense of smell altered",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

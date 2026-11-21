@@ -1,0 +1,123 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_008",
+    "code":  "PNEUMOTHORAX",
+    "name":  "Pneumothorax",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "A pneumothorax is collection of air in the pleural space between the lung and the chest wall. Symptoms typically include sudden onset of sharp, one-sided chest pain and shortness of breath.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PLEURITIC_CHEST_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CHEST_TIGHTNESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "TACHYCARDIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "REDUCED_BREATH_SOUNDS_UNILATERAL",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "TALL_THIN_HABITUS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CONNECTIVE_TISSUE_DISORDER",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "TRAUMA",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Tension pneumothorax — sudden breathlessness with tracheal deviation"
+                      },
+                      {
+                          "code":  "RED_RESP_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PLEURITIC_CHEST_PAIN",
+                          "condition":  "Sudden severe breathlessness with pleuritic pain — suspected pneumothorax"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_003",
+                          "text":  "Are you experiencing sudden severe difficulty breathing right now?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PNEUMOTHORAX_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RESP_011",
+                          "text":  "Do you feel chest pain that is worse when breathing in deeply?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PLEURITIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PNEUMOTHORAX_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PLEURAL_EFFUSION",
+                              "distinguishing_feature":  "Pleural effusion causes dullness to percussion; pneumothorax causes hyper-resonance — both reduce breath sounds but are distinguished by percussion note and CXR."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_predominant",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0002107"
+                  ],
+    "snomed_code":  "36118008",
+    "snomed_verified_name":  "Pneumothorax",
+    "icd10_code":  "J93.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pneumothorax, unspecified",
+    "evidence_ids":  [
+                         "EVD_RESP_008"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

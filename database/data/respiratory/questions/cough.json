@@ -1,0 +1,17 @@
+{
+  "complaint_code": "COUGH",
+  "complaint_name": "Cough",
+  "module": "respiratory",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_COUGH_001", "text": "How long have you had the cough?", "purpose": "duration", "answer_type": "multiple_choice", "options": ["Less than 3 weeks (acute)", "3–8 weeks (subacute)", "More than 8 weeks (chronic)"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "COUGH_DURATION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_COUGH_002", "text": "Is the cough dry or does it produce phlegm (sputum)?", "purpose": "character", "answer_type": "multiple_choice", "options": ["Dry", "White or clear sputum", "Yellow or green sputum", "Blood-stained"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "COUGH_CHARACTER", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_COUGH_003", "text": "Have you coughed up blood or blood-stained phlegm?", "purpose": "haemoptysis_check", "answer_type": "yes_no", "if_yes_action": "RED_FLAG(RF_HAEMOPTYSIS)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "HAEMOPTYSIS", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_COUGH_004", "text": "Is the cough worse at night or when you lie down?", "purpose": "nocturnal_pattern", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "NOCTURNAL_COUGH", "yes_weight": 2, "no_weight": 0 },
+    { "code": "Q_CMP_COUGH_005", "text": "Do you have a fever along with the cough?", "purpose": "infection_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "FEVER_WITH_COUGH", "yes_weight": 2, "no_weight": 0 },
+    { "code": "Q_CMP_COUGH_006", "text": "Do you smoke or have you smoked in the past?", "purpose": "risk_factor", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(LUNG_CANCER)", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "SMOKING_HISTORY", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_COUGH_007", "text": "Did the cough start shortly after beginning a new blood pressure medication?", "purpose": "ace_inhibitor_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 7, "tests_symptom_code": "ACE_INHIBITOR_COUGH", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

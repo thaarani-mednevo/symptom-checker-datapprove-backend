@@ -1,0 +1,97 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_008",
+    "code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING",
+    "name":  "Other esophagitis with bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Esophagitis, also spelled oesophagitis, is a disease characterized by inflammation of the esophagus. The esophagus is a tube composed of a mucosal lining, and longitudinal and circular smooth muscle fibers.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, massive hematemesis or melena causing hemodynamic instability, dizziness, or syncope."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_VOMITED_BLOOD_OR_NOTIC",
+                          "text":  "[LLM DRAFT] Have you recently vomited blood or noticed bright red blood in your vomit?",
+                          "purpose":  "Screens for acute upper gastrointestinal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_YOUR_STOOL_APPEARING_BL",
+                          "text":  "[LLM DRAFT] Have you noticed your stool appearing black, tarry, or extremely dark in color?",
+                          "purpose":  "Screens for gastrointestinal bleeding from the esophagus",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_PERSISTENT_PAIN_OR",
+                          "text":  "[LLM DRAFT] Are you experiencing persistent pain or difficulty when trying to swallow food or liquids?",
+                          "purpose":  "Screens for esophageal inflammation and irritation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with massive upper gastrointestinal hemorrhage often secondary to portal hypertension rather than mucosal inflammation."
+                          },
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Shares identical inflammatory esophageal symptoms but lacks overt hemorrhage or blood loss."
+                          },
+                          {
+                              "disease_code":  "DUODENITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Causes upper gastrointestinal bleeding originating from the small bowel rather than the esophagus."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K20.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other esophagitis with bleeding",
+    "evidence_ids":  [
+                         "EVID_OTHER_ESOPHAGITIS_WITH_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

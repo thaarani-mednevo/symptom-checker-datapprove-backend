@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_021",
+  "code": "EXFOLIATIVE_DERMATITIS",
+  "name": "Exfoliative dermatitis",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Erythroderma is an inflammatory skin disease with redness and scaling that affects nearly the entire cutaneous surface. This term applies when 90% or more of the skin is affected.",
+  "complaints": [
+    {
+      "code": "SKIN_PEELING",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "399992009",
+  "snomed_verified_name": "Erythroderma",
+  "icd10_code": "L26",
+  "icd10_validated": true,
+  "icd10_official_description": "Exfoliative dermatitis",
+  "evidence_ids": [
+    "EVID_EXFOLIATIVE_DERMATITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

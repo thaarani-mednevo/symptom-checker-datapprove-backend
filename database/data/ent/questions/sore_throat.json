@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "SORE_THROAT",
+    "complaint_name":  "Sore throat",
+    "module":  "ent",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ST_001",
+                          "text":  "How long has the sore throat lasted?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SORE_THROAT_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ST_002",
+                          "text":  "Can you swallow your own saliva, or is it too painful?",
+                          "purpose":  "dysphagia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SEVERE_DYSPHAGIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ST_003",
+                          "text":  "Are you drooling, unable to open your mouth fully, or having difficulty breathing?",
+                          "purpose":  "epiglottitis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "EPIGLOTTITIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ST_004",
+                          "text":  "Do you have a fever or swollen neck glands?",
+                          "purpose":  "infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SORE_THROAT_FEVER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ST_005",
+                          "text":  "Do you have a rash or white patches on your tonsils?",
+                          "purpose":  "exudate_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "EXUDATIVE_TONSILLITIS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

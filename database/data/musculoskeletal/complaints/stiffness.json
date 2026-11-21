@@ -1,0 +1,17 @@
+{
+  "id": "MUSCULOSKELETAL_COMP_MSK_001",
+  "code": "STIFFNESS",
+  "name": "Stiffness",
+  "module": "musculoskeletal",
+  "body_system": "musculoskeletal",
+  "category": "complaint",
+  "description": "Stiffness or rigidity is the extent to which an object resists deformation in response to an applied force.\nThe inverse of stiffness is flexibility or pliability: the more flexible an object is, the less stiff it is. Other terms with related meanings are compliance and elasticity.",
+  "hpo_codes": [],
+  "snomed_code": "271587009",
+  "snomed_verified_name": "Stiffness",
+  "icd10_code": "M25.60",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of unspecified joint, not elsewhere classified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

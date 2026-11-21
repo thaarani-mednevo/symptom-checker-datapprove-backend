@@ -1,0 +1,136 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_008",
+    "code":  "PARATYPHOID_FEVER_C",
+    "name":  "Paratyphoid fever C",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Paratyphoid fever C is an acute enteric infection caused by Salmonella Paratyphi C, presenting with fever, abdominal pain, and gastrointestinal symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RASH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ABDOMINAL_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Sudden, severe, or worsening abdominal pain potentially indicating intestinal perforation."
+                      },
+                      {
+                          "code":  "RF_SIGNS_OF_SHOCK_OR_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Severe lethargy, confusion, hypotension, or signs of septic shock."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_C_1",
+                          "text":  "Have you recently traveled to an area where paratyphoid fever is endemic?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_C_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_C_2",
+                          "text":  "Are you experiencing a persistent, high fever that has lasted for several days?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_C_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_C_3",
+                          "text":  "Have you developed severe abdominal tenderness or sudden sharp pain in your abdomen?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_C_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_A",
+                              "distinguishing_feature":  "[LLM DRAFT] Clinically indistinguishable presentation caused by Salmonella enterica serovar Paratyphoid A, typically diagnosed via blood or stool culture to differentiate the specific serovar."
+                          },
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_B",
+                              "distinguishing_feature":  "[LLM DRAFT] Clinically similar enteric fever caused by Salmonella enterica serovar Paratyphoid B, often associated with more prominent gastrointestinal symptoms than other paratyphoid types."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by Salmonella enterica serovar Typhi, historically presenting with a generally more severe clinical course and higher rates of classic complications like intestinal perforation."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "51254007",
+    "snomed_verified_name":  "Paratyphoid C fever",
+    "icd10_code":  "A01.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Paratyphoid fever C",
+    "evidence_ids":  [
+                         "EVID_PARATYPHOID_FEVER_C"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

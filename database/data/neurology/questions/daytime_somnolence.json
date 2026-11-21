@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DAYTIME_SOMNOLENCE",
+    "complaint_name":  "Daytime somnolence",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DS_001",
+                          "text":  "Do you fall asleep during the day despite adequate night sleep?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EXCESSIVE_DAYTIME_SLEEPINESS",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DS_002",
+                          "text":  "Do you snore or has anyone witnessed you stop breathing during sleep?",
+                          "purpose":  "osa",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SLEEP_APNOEA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OSA_SYMPTOMS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DS_003",
+                          "text":  "Have you fallen asleep while driving or in dangerous situations?",
+                          "purpose":  "danger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DANGEROUS_SLEEPINESS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DS_004",
+                          "text":  "Do you have cataplexy, sleep paralysis, or vivid dreams?",
+                          "purpose":  "narcolepsy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NARCOLEPSY_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ]
+}

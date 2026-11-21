@@ -1,0 +1,69 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_027",
+    "code":  "NEONATAL_MELENA",
+    "name":  "Neonatal melena",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Neonatal melena.",
+    "complaints":  [
+                       {
+                           "code":  "MELENA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DARK_BLOOD_IN_STOOL",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "MELENA",
+                          "condition":  "Neonatal melena with signs of blood loss (pallor, lethargy, poor feeding)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_MELENA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "206424005",
+    "snomed_verified_name":  "Neonatal melena",
+    "icd10_code":  "P54.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal melena",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_MELENA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

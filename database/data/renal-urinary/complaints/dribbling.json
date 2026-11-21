@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_016",
+  "code": "DRIBBLING",
+  "name": "Dribbling",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "In sports, dribbling is maneuvering a ball by one player while moving in a given direction, avoiding defenders' attempts to intercept the ball. A successful dribble will bring the ball past defenders legally and create opportunities to score.",
+  "hpo_codes": [],
+  "snomed_code": "58972000",
+  "snomed_verified_name": "Dribbling of urine",
+  "icd10_code": "R39.43",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

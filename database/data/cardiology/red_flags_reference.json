@@ -1,0 +1,35 @@
+{
+  "module": "cardiology",
+  "red_flags": [
+    {
+      "code": "RED_CARD_001",
+      "name": "Sudden severe breathlessness",
+      "action": "emergency_pathway"
+    },
+    {
+      "code": "RED_CARD_002",
+      "name": "Syncope during exertion",
+      "action": "urgent_cv_evaluation"
+    },
+    {
+      "code": "RED_CARD_003",
+      "name": "Palpitations with syncope",
+      "action": "urgent_evaluation"
+    },
+    {
+      "code": "RED_CARD_004",
+      "name": "Sudden breathlessness + unilateral leg swelling",
+      "action": "pe_dvt_red_flag_pathway"
+    },
+    {
+      "code": "RED_CARD_005",
+      "name": "Severe breathlessness at rest",
+      "action": "emergency_pathway"
+    },
+    {
+      "code": "RED_CARD_006",
+      "name": "New severe chest discomfort + dyspnea",
+      "action": "emergency_pathway"
+    }
+  ]
+}

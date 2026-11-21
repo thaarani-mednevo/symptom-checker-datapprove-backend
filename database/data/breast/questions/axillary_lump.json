@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "AXILLARY_LUMP",
+    "complaint_name":  "Axillary lump",
+    "module":  "breast",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AL_001",
+                          "text":  "How long has the lump been present and is it growing?",
+                          "purpose":  "history",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "AXILLARY_LUMP_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AL_002",
+                          "text":  "Is the lump tender or painful?",
+                          "purpose":  "tenderness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TENDER_AXILLARY_LUMP",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_AL_003",
+                          "text":  "Do you have fever, night sweats, or unexplained weight loss?",
+                          "purpose":  "b_symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LYMPHOMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "B_SYMPTOMS_WITH_LUMP",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AL_004",
+                          "text":  "Do you have a breast lump or skin changes on the same side?",
+                          "purpose":  "breast_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(BREAST_LUMP)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "BREAST_WITH_AXILLARY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

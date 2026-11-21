@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_006",
+  "code": "GENITAL_RASH",
+  "name": "Genital rash",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by genital rash.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "R21",
+  "icd10_validated": true,
+  "icd10_official_description": "Rash and other nonspecific skin eruption",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

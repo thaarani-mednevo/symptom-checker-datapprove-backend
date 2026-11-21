@@ -1,0 +1,17 @@
+{
+  "id": "HEPATOBILIARY_COMP_HB_003",
+  "code": "RIGHT_UPPER_QUADRANT_PAIN",
+  "name": "Right upper quadrant pain",
+  "module": "hepatobiliary",
+  "body_system": "hepatobiliary",
+  "category": "complaint",
+  "description": "Right upper quadrant (RUQ) pain is pain localised to the region of the abdomen below the right costal margin, overlying the liver, gallbladder, and right hepatic flexure of the colon. It may radiate to the right shoulder tip (phrenic nerve irritation by the gallbladder or diaphragm), the right scapula (classic for biliary colic), or be diffuse across the epigastrium. Common causes include biliary colic, acute cholecystitis, choledocholithiasis, hepatitis, hepatic abscess, and right-sided pneumonia (referred pain). The character, timing (constant vs. colicky), radiation, and associated symptoms (fever, jaundice, nausea) guide the differential diagnosis.",
+  "hpo_codes": ["HP:0002027"],
+  "snomed_code": "57676002",
+  "snomed_verified_name": "Joint pain",
+  "icd10_code": "R10.11",
+  "icd10_validated": true,
+  "icd10_official_description": "Right upper quadrant pain",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

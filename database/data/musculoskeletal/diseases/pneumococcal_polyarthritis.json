@@ -1,0 +1,112 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_017",
+    "code":  "PNEUMOCOCCAL_POLYARTHRITIS",
+    "name":  "Pneumococcal polyarthritis",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Pneumococcal polyarthritis.",
+    "complaints":  [
+                       {
+                           "code":  "POLYARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WARM",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWOLLEN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PAINFUL_JOINTS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPTIC_JOINT_DECOMPENSATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ACUTE_MONOARTHRITIS",
+                          "condition":  "[LLM DRAFT] Acute, severe monoarticular pain and swelling with joint effusion indicating purulent bacterial invasion requiring urgent arthrocentesis and surgical evaluation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_IN_MORE",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe pain in more than one joint?",
+                          "purpose":  "detects acute polyarthritis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PNEUMOCOCCAL_POLYARTHRITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_A_FEVER_OR_CHILLS_IN_THE_LA",
+                          "text":  "[LLM DRAFT] Have you had a fever or chills in the last few days?",
+                          "purpose":  "detects systemic infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PNEUMOCOCCAL_POLYARTHRITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DID_YOU_HAVE_A_CHEST_INFECTION_LIKE_PNE",
+                          "text":  "[LLM DRAFT] Did you have a chest infection (like pneumonia) in the past month?",
+                          "purpose":  "risk factor for pneumococcal arthritis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PNEUMOCOCCAL_POLYARTHRITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "201467001",
+    "snomed_verified_name":  "Pneumococcal arthritis and polyarthritis",
+    "icd10_code":  "M00.19",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pneumococcal polyarthritis",
+    "evidence_ids":  [
+                         "EVID_PNEUMOCOCCAL_POLYARTHRITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

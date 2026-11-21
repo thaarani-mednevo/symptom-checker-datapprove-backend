@@ -1,0 +1,129 @@
+﻿{
+  "id": "ENT_DIS_HB_004",
+  "code": "TINNITUS_UNSPECIFIED_EAR",
+  "name": "Tinnitus, unspecified ear",
+  "module": "ent",
+  "category": "disease",
+  "description": "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+  "complaints": [
+    {
+      "code": "TINNITUS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NOISE_INDUCED_HEARING_LOSS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "EAR_INFECTIONS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MÉNIÈRES_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "VESTIBULAR_SCHWANNOMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "CHOLESTEATOMA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "TRAUMATIC_BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "EXCESSIVE_EARWAX",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SUDDEN_UNILATERAL_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Sudden onset of unilateral tinnitus"
+    },
+    {
+      "code": "RF_PULSATING_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Pulsatile or rhythmic tinnitus"
+    },
+    {
+      "code": "RF_HEARING_LOSS_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus accompanied by hearing loss"
+    },
+    {
+      "code": "RF_VERTIGO_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus with vertigo or dizziness"
+    },
+    {
+      "code": "RF_EAR_DISCHARGE_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus with ear discharge"
+    },
+    {
+      "code": "RF_EAR_TRAUMA_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus following recent ear trauma"
+    },
+    {
+      "code": "RF_EAR_INFECTION_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus after recent ear infection"
+    },
+    {
+      "code": "RF_EAR_PRESSURE_WITH_TINNITUS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "TINNITUS",
+      "condition": "Tinnitus with sensation of ear pressure"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "60862001",
+  "snomed_verified_name": "Tinnitus",
+  "icd10_code": "H93.19",
+  "icd10_validated": true,
+  "icd10_official_description": "Tinnitus, unspecified ear",
+  "evidence_ids": [
+    "EVID_TINNITUS_UNSPECIFIED_EAR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

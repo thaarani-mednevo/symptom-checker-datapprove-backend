@@ -1,0 +1,114 @@
+{
+  "complaint_code": "PALPABLE_MASS",
+  "complaint_name": "Palpable Mass",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_PALPABLE_MASS_001",
+      "text": "How long have you noticed this lump or mass, and has it changed in size since you first found it?",
+      "purpose": "Characterise onset and growth trajectory of the mass",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 2 weeks, stable",
+        "Less than 2 weeks, growing",
+        "2–8 weeks, stable",
+        "2–8 weeks, growing",
+        "More than 8 weeks, stable",
+        "More than 8 weeks, growing"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "PALPABLE_MASS_DURATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_002",
+      "text": "Is the mass hard or firm to touch, and does it feel fixed (immovable) rather than freely mobile?",
+      "purpose": "Identify features of malignancy: hardness and fixity suggest invasive disease",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "MASS_HARD_FIXED",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_003",
+      "text": "Have you noticed any associated skin changes over the mass, such as redness, dimpling, ulceration, or peau d'orange appearance?",
+      "purpose": "Detect cutaneous signs of malignant infiltration",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "MASS_SKIN_CHANGES",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_004",
+      "text": "Have you experienced unintentional weight loss of more than 5% of your body weight over the past 3 months?",
+      "purpose": "Identify constitutional B-symptom suggesting systemic malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ONCOLOGY_SYSTEMIC_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "CONSTITUTIONAL_WEIGHT_LOSS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_005",
+      "text": "Do you have any enlarged lymph nodes in your neck, armpits, or groin alongside this mass?",
+      "purpose": "Assess for regional lymphadenopathy indicating possible metastatic spread",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(LYMPHADENOPATHY_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "ASSOCIATED_LYMPHADENOPATHY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_006",
+      "text": "Is the mass painful or tender?",
+      "purpose": "Pain can indicate rapid growth, inflammation, or nerve involvement",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "MASS_PAIN",
+      "yes_weight": 1,
+      "no_weight": 1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_007",
+      "text": "Do you have a personal or family history of cancer?",
+      "purpose": "Family history raises prior probability of malignancy and may guide pathway",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HIGH_RISK_ONCOLOGY_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "CANCER_FAMILY_HISTORY",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_PALPABLE_MASS_008",
+      "text": "Are you currently experiencing night sweats or fevers that occur without an obvious infection?",
+      "purpose": "Night sweats and fever are B-symptoms associated with lymphoma and other haematological malignancies",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 8,
+      "tests_symptom_code": "B_SYMPTOMS_FEVER_SWEATS",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

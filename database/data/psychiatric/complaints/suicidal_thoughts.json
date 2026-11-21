@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_009",
+  "code": "SUICIDAL_THOUGHTS",
+  "name": "Suicidal thoughts",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Suicidal ideation, or suicidal thoughts, is the thought process of having ideas or ruminations about the possibility of dying by suicide. It is not a diagnosis but is a symptom of some mental disorders, use of certain psychoactive drugs, and can also occur in response to adverse life circumstances without the presence of a mental disorder.",
+  "hpo_codes": [
+    "HP:0002717|HP:0000716"
+  ],
+  "snomed_code": "6471006",
+  "snomed_verified_name": "Suicidal thoughts",
+  "icd10_code": "R45.851",
+  "icd10_validated": true,
+  "icd10_official_description": "Suicidal ideations",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_007",
+  "code": "DEHYDRATION",
+  "name": "Dehydration",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "In physiology, dehydration is a lack of total body water that disrupts metabolic processes. It occurs when free water loss exceeds intake, often resulting from excessive sweating, health conditions, or inadequate consumption of water.",
+  "hpo_codes": [],
+  "snomed_code": "34095006",
+  "snomed_verified_name": "Dehydration",
+  "icd10_code": "E86.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Dehydration",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

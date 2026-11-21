@@ -1,0 +1,60 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_059",
+  "code": "TRANSIENT_VISUAL_LOSS_RIGHT_EYE",
+  "name": "Transient visual loss, right eye",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Sudden, brief loss of vision in the right eye that resolves within 24 hours, often painless and without other neurological deficits.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "TEMPORARY_FLEETING_OF_VISION_IN_ONE_OR_BOTH_EYES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "CAROTID_ARTERY_STENOSIS",
+      "strength": "strong"
+    },
+    {
+      "code": "ATRIAL_FIBRILLATION",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "DIABETES_MELLITUS",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "331791000119103",
+  "snomed_verified_name": "Transient visual loss of right eye",
+  "icd10_code": "H53.121",
+  "icd10_validated": true,
+  "icd10_official_description": "Transient visual loss, right eye",
+  "evidence_ids": [
+    "EVID_TRANSIENT_VISUAL_LOSS_RIGHT_EYE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

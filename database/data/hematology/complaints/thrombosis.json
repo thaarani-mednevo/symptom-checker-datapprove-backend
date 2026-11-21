@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_007",
+  "code": "THROMBOSIS",
+  "name": "Thrombosis",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "Thrombosis is the formation of a blood clot inside a blood vessel, obstructing the flow of blood through the circulatory system. When a blood vessel is injured, the body uses platelets (thrombocytes) and fibrin to form a blood clot to prevent blood loss.",
+  "hpo_codes": [],
+  "snomed_code": "439127006",
+  "snomed_verified_name": "Thrombosis",
+  "icd10_code": "I82.90",
+  "icd10_validated": true,
+  "icd10_official_description": "Acute embolism and thrombosis of unspecified vein",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

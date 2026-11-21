@@ -1,0 +1,176 @@
+﻿{
+    "id":  "ENT_DIS_HB_007",
+    "code":  "PULSATILE_TINNITUS_LEFT_EAR",
+    "name":  "Pulsatile tinnitus, left ear",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+    "complaints":  [
+                       {
+                           "code":  "TINNITUS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NOISE_INDUCED_HEARING_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EAR_INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MÉNIÈRES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BRAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VESTIBULAR_SCHWANNOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CHOLESTEATOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMATIC_BRAIN_INJURY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EXCESSIVE_EARWAX",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPERTENSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Left_Ear",
+                          "condition":  "Hypertension or uncontrolled blood pressure"
+                      },
+                      {
+                          "code":  "RF_NEUROLOGICAL_DEFICIT",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Left_Ear",
+                          "condition":  "Any focal neurological deficit"
+                      },
+                      {
+                          "code":  "RF_HEARING_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Left_Ear",
+                          "condition":  "Concurrent sensorineural hearing loss"
+                      },
+                      {
+                          "code":  "RF_PULSATING_BURST",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Left_Ear",
+                          "condition":  "Pulsatile sound synchronous with heartbeat"
+                      },
+                      {
+                          "code":  "RF_COAGULATION_ABNORMALITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "Tinnitus_Left_Ear",
+                          "condition":  "History of coagulopathy or recent thrombosis"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_TINNITUS_ONSET",
+                          "text":  "Did the pulsatile tinnitus start suddenly or gradually?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_LEFT_EAR_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HEARING_LOSS",
+                          "text":  "Do you also experience hearing loss in the left ear?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_LEFT_EAR_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_NEUROLOGICAL_SYMPTOMS",
+                          "text":  "Have you had any recent headaches, dizziness, or weakness?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_LEFT_EAR_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_BURSTING_SOUND",
+                          "text":  "Is the sound in your left ear a steady hum or does it burst with each heartbeat?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_LEFT_EAR_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MEDICAL_HISTORY",
+                          "text":  "Do you have a history of hypertension, vascular disease, or coagulopathy?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_LEFT_EAR_SYMPTOM_5",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "60862001",
+    "snomed_verified_name":  "Tinnitus",
+    "icd10_code":  "H93.A2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pulsatile tinnitus, left ear",
+    "evidence_ids":  [
+                         "EVID_PULSATILE_TINNITUS_LEFT_EAR"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

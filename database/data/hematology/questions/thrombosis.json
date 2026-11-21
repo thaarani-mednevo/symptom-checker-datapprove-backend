@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "THROMBOSIS",
+    "complaint_name":  "Thrombosis",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_THR_001",
+                          "text":  "Where is the clot — leg, arm, lung, brain, or elsewhere?",
+                          "purpose":  "location",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THROMBOSIS_LOCATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_THR_002",
+                          "text":  "Did it come on suddenly?",
+                          "purpose":  "onset",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUDDEN_THROMBOSIS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_THR_003",
+                          "text":  "Have you had recent surgery, immobility, cancer, or pregnancy?",
+                          "purpose":  "risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PE_DVT)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VTE_RISK_FACTORS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_THR_004",
+                          "text":  "Is there a family history of blood clots?",
+                          "purpose":  "family",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FAMILIAL_THROMBOPHILIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_THR_005",
+                          "text":  "Is there swelling, redness, or pain in a limb?",
+                          "purpose":  "dvt",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PE_DVT)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DVT_SIGNS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

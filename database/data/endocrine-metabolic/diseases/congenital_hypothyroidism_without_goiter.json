@@ -1,0 +1,102 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_005",
+    "code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER",
+    "name":  "Congenital hypothyroidism without goiter",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Congenital hypothyroidism (CH) is a thyroid hormone deficiency present at birth. If untreated soon after birth, severe congenital hypothyroidism can lead to growth failure and permanent intellectual disability.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOTHYROIDISM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe myxedema coma characterized by profound lethargy, hypothermia, hypoventilation, and bradycardia in an untreated infant."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_EXTREME_ONGOING_TIREDN",
+                          "text":  "[LLM DRAFT] Have you noticed extreme, ongoing tiredness, sluggishness, or a lack of energy in your daily life?",
+                          "purpose":  "Screens for fatigue and lethargy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_EXPERIENCING_CONSTANT_SENS",
+                          "text":  "[LLM DRAFT] Have you been experiencing constant sensitivity to cold temperatures even when others are warm?",
+                          "purpose":  "Screens for cold intolerance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_DEVELOPED_PERSISTENT_SEVERE_CO",
+                          "text":  "[LLM DRAFT] Have you developed persistent, severe constipation that does not respond to changes in diet?",
+                          "purpose":  "Screens for constipation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of thyroid enlargement (goiter) on physical examination rather than an absent or normal-sized gland."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with an enzymatic defect in thyroid hormone synthesis presenting with goiter rather than thyroid dysgenesis or athyreosis."
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Broad classification lacking the specific congenital onset and absence of goiter characteristic of the primary neonatal diagnosis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "237515009",
+    "snomed_verified_name":  "Congenital hypothyroidism without goiter",
+    "icd10_code":  "E03.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Congenital hypothyroidism without goiter",
+    "evidence_ids":  [
+                         "EVID_CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

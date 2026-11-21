@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_010",
+  "code": "MELENA",
+  "name": "Melena",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Melena is a form of blood in stool which refers to the dark black, tarry feces that are commonly associated with upper gastrointestinal bleeding. The black color and characteristic strong odor are caused by hemoglobin in the blood being altered by digestive enzymes and intestinal bacteria.",
+  "hpo_codes": [],
+  "snomed_code": "2901004",
+  "snomed_verified_name": "Melena",
+  "icd10_code": "K92.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Melena",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

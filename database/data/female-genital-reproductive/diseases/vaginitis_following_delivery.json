@@ -1,0 +1,127 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_003",
+    "code":  "VAGINITIS_FOLLOWING_DELIVERY",
+    "name":  "Vaginitis following delivery",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Vaginitis, also known as vulvovaginitis, is inflammation of the vagina and vulva. Symptoms may include itching, burning, pain, discharge, and a bad smell.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ITCHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BURNING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BAD_SMELL",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INFECTIONS_(BACTERIAL_VAGINOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VAGINAL_YEAST_INFECTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRICHOMONIASIS)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ALLERGIC_REACTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LOW_ESTROGEN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RECENT_DELIVERY",
+                          "text":  "Have you given birth in the last 6 weeks?",
+                          "purpose":  "Confirm postpartum timing",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VAGINITIS_FOLLOWING_DELIVERY_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_FEVER_PRESENT",
+                          "text":  "Do you currently have a fever or chills?",
+                          "purpose":  "Exclude puerperal sepsis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PID_SEPSIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VAGINITIS_FOLLOWING_DELIVERY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O86.13",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vaginitis following delivery",
+    "evidence_ids":  [
+                         "EVID_VAGINITIS_FOLLOWING_DELIVERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

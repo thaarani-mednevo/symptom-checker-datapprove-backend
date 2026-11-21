@@ -1,0 +1,134 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_035",
+    "code":  "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL",
+    "name":  "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Type 1 diabetes (T1D), or type 1 diabetes mellitus, is an autoimmune disease that occurs when the body\u0027s immune system destroys beta cells in the pancreas that produce the hormone insulin. Insulin is used by the body to store and convert blood sugar into energy.",
+    "complaints":  [
+                       {
+                           "code":  "VISION_LOSS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POLYDIPSIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POLYPHAGIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POLYURIA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BODY_DOES_NOT_PRODUCE_ENOUGH_INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] sudden, profound loss of vision in one or both eyes"
+                      },
+                      {
+                          "code":  "RF_SUDDEN_PHOTOPSIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PHOTOPSIA",
+                          "condition":  "[LLM DRAFT] sudden onset of flashes and floaters indicating retinal detachment"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_SUDDENLY_SEE_A_CURTAIN_OR_SHADOW",
+                          "text":  "[LLM DRAFT] Do you suddenly see a curtain or shadow covering part of your vision?",
+                          "purpose":  "detects retinal detachment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_SUDDEN_FLASHES_OF_LIGHT",
+                          "text":  "[LLM DRAFT] Have you noticed sudden flashes of light in your vision?",
+                          "purpose":  "detects retinal detachment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_A_SUDDEN_INCREASE_I",
+                          "text":  "[LLM DRAFT] Are you experiencing a sudden increase in floaters in your vision?",
+                          "purpose":  "detects retinal detachment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E10.3543",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral",
+    "evidence_ids":  [
+                         "EVID_TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

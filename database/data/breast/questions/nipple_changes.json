@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "NIPPLE_CHANGES",
+    "complaint_name":  "Nipple changes",
+    "module":  "breast",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_NC_001",
+                          "text":  "Is the nipple newly inverted (pulled inward), and was it previously normal?",
+                          "purpose":  "inversion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEW_NIPPLE_INVERSION",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NC_002",
+                          "text":  "Is there scaling, crusting, or eczema-like change on the nipple?",
+                          "purpose":  "eczema",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NIPPLE_ECZEMA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NC_003",
+                          "text":  "Is the change in one breast or both?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNILATERAL_NIPPLE_CHANGE",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NC_004",
+                          "text":  "Is there any discharge or bleeding from the nipple?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NIPPLE_DISCHARGE_WITH_CHANGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

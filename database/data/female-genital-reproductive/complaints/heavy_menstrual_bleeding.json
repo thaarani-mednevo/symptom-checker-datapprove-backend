@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_005",
+  "code": "HEAVY_MENSTRUAL_BLEEDING",
+  "name": "Heavy menstrual bleeding",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Heavy menstrual bleeding (HMB), previously known as menorrhagia or hematomunia, is a menstrual period with excessively heavy flow. It is a type of abnormal uterine bleeding (AUB).",
+  "hpo_codes": [],
+  "snomed_code": "386692008",
+  "snomed_verified_name": "Menorrhagia",
+  "icd10_code": "N92.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Excessive and frequent menstruation with regular cycle",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

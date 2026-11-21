@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_008",
+  "code": "SELF_HARM",
+  "name": "Self harm",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Self-harm is intentional behavior that causes harm to oneself. This is most commonly regarded as direct injury of one's own tissues, usually without suicidal intention.",
+  "hpo_codes": [
+    "HP:0001377|HP:0100785"
+  ],
+  "snomed_code": "102911000",
+  "snomed_verified_name": "Thoughts of self harm",
+  "icd10_code": "R45.88",
+  "icd10_validated": true,
+  "icd10_official_description": "Nonsuicidal self-harm",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

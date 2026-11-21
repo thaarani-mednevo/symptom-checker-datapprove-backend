@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "POLYARTHRITIS",
+    "complaint_name":  "Polyarthritis",
+    "module":  "musculoskeletal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PA_001",
+                          "text":  "How many joints are involved and are they symmetrical?",
+                          "purpose":  "pattern",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYARTHRITIS_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PA_002",
+                          "text":  "How long is the morning stiffness?",
+                          "purpose":  "stiffness",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MORNING_STIFFNESS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PA_003",
+                          "text":  "Is there a skin rash, eye redness, or nail changes?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ASSOCIATED_FEATURES",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PA_004",
+                          "text":  "Do you have fever or weight loss?",
+                          "purpose":  "systemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(INFECTIOUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SYSTEMIC_WITH_POLYARTHRITIS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PA_005",
+                          "text":  "Is there a family history of arthritis?",
+                          "purpose":  "family",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FAMILY_ARTHRITIS",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ]
+}

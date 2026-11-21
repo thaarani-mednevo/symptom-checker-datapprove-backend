@@ -1,0 +1,85 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_001",
+  "code": "STIFFNESS_OF_UNSPECIFIED_JOINT_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of unspecified joint, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "A condition characterized by stiffness in an unspecified joint without a specific diagnosis, often presenting with reduced range of motion and discomfort.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "REDUCED_RANGE_OF_MOTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "JOINT_PAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "JOINT_SWELLING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "CREPITUS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_STIFFNESS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Joint swelling, severe pain, fever, systemic signs"
+    },
+    {
+      "code": "RF_JOINT_FRAGILE_STIFFNESS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "FRACTURES",
+      "condition": "[LLM DRAFT] Joint stiffness with deformity, inability to bear weight"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.60",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of unspecified joint, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_UNSPECIFIED_JOINT_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

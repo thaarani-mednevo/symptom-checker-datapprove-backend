@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "DIARRHEA",
+    "complaint_name":  "Diarrhoea",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DIA_001",
+                          "text":  "How long has the diarrhoea lasted and how many times per day?",
+                          "purpose":  "history",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DIARRHOEA_HISTORY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DIA_002",
+                          "text":  "Is there blood, mucus, or pus in the stool?",
+                          "purpose":  "bloody",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BLOODY_DIARRHOEA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DIA_003",
+                          "text":  "Do you have fever?",
+                          "purpose":  "fever",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DIARRHOEA_FEVER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DIA_004",
+                          "text":  "Have you travelled abroad recently or eaten unusual food?",
+                          "purpose":  "exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TRAVEL_DIARRHOEA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DIA_005",
+                          "text":  "Are you dehydrated, dizzy, or passing very little urine?",
+                          "purpose":  "dehydration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DEHYDRATION_FROM_DIARRHOEA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

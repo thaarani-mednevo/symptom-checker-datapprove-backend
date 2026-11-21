@@ -1,0 +1,62 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_052",
+    "code":  "MCCUNE_ALBRIGHT_SYNDROME",
+    "name":  "McCune-Albright syndrome",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "McCune–Albright syndrome is a complex genetic disorder affecting the bone, skin and endocrine systems. It is a mosaic disease arising from somatic activating mutations in GNAS, which encodes the alpha-subunit of the Gs heterotrimeric G protein.",
+    "complaints":  [
+                       {
+                           "code":  "PRECOCIOUS_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PRECOCIOUS_PUBERTY_NEURO",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "MCCUNE_ALBRIGHT_SYNDROME",
+                          "condition":  "Rapidly progressing precocious puberty with cafe-au-lait macules and bone pain"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm precocious onset age",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MCCUNE_ALBRIGHT_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "726029005",
+    "snomed_verified_name":  "McCune Albright syndrome",
+    "icd10_code":  "Q78.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Polyostotic fibrous dysplasia",
+    "evidence_ids":  [
+                         "EVID_MCCUNE_ALBRIGHT_SYNDROME"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

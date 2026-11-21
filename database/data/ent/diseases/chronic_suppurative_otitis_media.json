@@ -1,0 +1,68 @@
+﻿{
+  "id": "ENT_DIS_ENT_011",
+  "code": "CHRONIC_SUPPURATIVE_OTITIS_MEDIA",
+  "name": "Chronic suppurative otitis media",
+  "module": "ent",
+  "category": "disease",
+  "description": "Otitis media is a group of inflammatory diseases of the middle ear. One of the two main types is acute otitis media (AOM), an infection of rapid onset that usually presents with ear pain.",
+  "complaints": [
+    {
+      "code": "EAR_DISCHARGE",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "OTORRHOEA",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "HEARING_LOSS",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "TINNITUS",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "common",
+      "typicality": "atypical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "RECURRENT_OTITIS_MEDIA",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "EUSTACHIAN_TUBE_DYSFUNCTION",
+      "strength": "ai_drafted_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "38394007",
+  "snomed_verified_name": "Chronic purulent otitis media",
+  "icd10_code": "H66.3X9",
+  "icd10_validated": true,
+  "icd10_official_description": "Other chronic suppurative otitis media, unspecified ear",
+  "evidence_ids": [
+    "EVID_CHRONIC_SUPPURATIVE_OTITIS_MEDIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

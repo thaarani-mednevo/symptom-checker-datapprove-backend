@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "INCOMPLETE_BLADDER_EMPTYING",
+    "complaint_name":  "Incomplete bladder emptying",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_IBE_001",
+                          "text":  "Do you feel the need to pass urine again soon after finishing?",
+                          "purpose":  "symptom",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POST_VOID_URGENCY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IBE_002",
+                          "text":  "Are you passing small volumes each time?",
+                          "purpose":  "pattern",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SMALL_VOLUME_VOIDING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IBE_003",
+                          "text":  "Are you male with a known prostate problem?",
+                          "purpose":  "bph",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BPH_WITH_INCOMPLETE_EMPTYING",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_IBE_004",
+                          "text":  "Is there blood, pain, or fever?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "INCOMPLETE_EMPTYING_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,81 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_051",
+    "code":  "PRECOCIOUS_PUBERTY_CENTRAL",
+    "name":  "Precocious puberty, central",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "In medicine, precocious puberty is puberty occurring at an unusually early age. In most cases, the process is normal in every aspect except the unusually early age and simply represents a variation of normal development.",
+    "complaints":  [
+                       {
+                           "code":  "PRECOCIOUS_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PRECOCIOUS_PUBERTY_NEURO",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "PRECOCIOUS_PUBERTY_CENTRAL",
+                          "condition":  "Central precocious puberty with headache, visual change, or rapid tempo suggesting a CNS lesion"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm precocious onset age",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRECOCIOUS_PUBERTY_CENTRAL_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HEADACHE_VISUAL_CHANGE",
+                          "text":  "Have you had headaches or any change in vision?",
+                          "purpose":  "Screen for CNS lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GALACTORRHEA_VISUAL_FIELD)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRECOCIOUS_PUBERTY_CENTRAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MCCUNE_ALBRIGHT_SYNDROME",
+                              "distinguishing_feature":  "Central precocious puberty is GnRH-dependent with a normal progression pattern; McCune-Albright is GnRH-independent, often with cafe-au-lait macules and fibrous dysplasia"
+                          },
+                          {
+                              "disease_code":  "CONGENITAL_ADRENAL_HYPERPLASIA",
+                              "distinguishing_feature":  "CAH classically shows virilization (clitoromegaly, rapid growth) and abnormal adrenal hormone levels rather than the typical GnRH-dependent pattern of central precocious puberty"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "237816004",
+    "snomed_verified_name":  "Central precocious puberty",
+    "icd10_code":  "E30.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Precocious puberty",
+    "evidence_ids":  [
+                         "EVID_PRECOCIOUS_PUBERTY_CENTRAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

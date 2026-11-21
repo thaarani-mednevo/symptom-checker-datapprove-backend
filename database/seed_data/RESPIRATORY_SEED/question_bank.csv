@@ -1,0 +1,13 @@
+question_code,text,answer_type,if_yes_action,if_no_action
+Q_RESP_001,Does your breathing become difficult or noisy (wheezy) during or after exercise?,yes_no,ASTHMA_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_002,Do you wake up at night due to cough or breathing difficulty?,yes_no,NOCTURNAL_ASTHMA_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_003,Are you experiencing sudden severe difficulty breathing right now?,yes_no,EMERGENCY_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_004,Do you have a persistent cough that produces phlegm most days?,yes_no,CHRONIC_AIRWAY_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_005,Have you smoked cigarettes for more than 10 pack-years?,yes_no,COPD_HIGH_RISK_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_006,Do you have a fever along with your cough?,yes_no,INFECTIOUS_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_007,Are you breathing very fast or does your oxygen feel low?,yes_no,EMERGENCY_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_008,Have you had a cough lasting more than 3 weeks?,yes_no,CHRONIC_COUGH_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_009,Have you had unexplained weight loss in the past few months?,yes_no,SYSTEMIC_ILLNESS_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_010,Have you ever smoked or been exposed to asbestos/industrial dust?,yes_no,CANCER_RISK_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_011,Do you feel chest pain that is worse when breathing in deeply?,yes_no,PLEURITIC_PATHWAY,CONTINUE_PATHWAY
+Q_RESP_012,Do you cough up large amounts of phlegm in the mornings?,yes_no,BRONCHIECTASIS_PATHWAY,CONTINUE_PATHWAY

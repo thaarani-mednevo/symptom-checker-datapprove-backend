@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_006",
+  "code": "RHINORRHOEA",
+  "name": "Rhinorrhoea",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "Rhinorrhea, also spelled rhinorrhoea or rhinorrhœa, or informally, runny nose, is the free discharge of a thin mucus fluid from the nose; it is an extremely common condition. It is a common symptom of allergies or certain viral infections, such as the common cold or COVID-19.",
+  "hpo_codes": [],
+  "snomed_code": "64531003",
+  "snomed_verified_name": "Nasal discharge",
+  "icd10_code": "J34.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified disorders of nose and nasal sinuses",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

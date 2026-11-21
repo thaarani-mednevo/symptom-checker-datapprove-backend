@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_011",
+    "code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY",
+    "name":  "Chronic congestive splenomegaly",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Splenomegaly is an enlargement of the spleen. The spleen usually lies in the left upper quadrant (LUQ) of the human abdomen.",
+    "complaints":  [
+                       {
+                           "code":  "SPLENOMEGALY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BLEEDING_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Acute, severe hemorrhage resulting from portal hypertension-induced variceal rupture or severe thrombocytopenia associated with hypersplenism."
+                      },
+                      {
+                          "code":  "RF_ACUTE_THROMBOTIC_EVENT",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Acute portal vein thrombosis or splenic vein thrombosis causing sudden worsening of abdominal pain and congestion."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_TOLD_YOU_HAVE_CHRONIC_LIVE",
+                          "text":  "[LLM DRAFT] Have you been told you have chronic liver disease, cirrhosis, or severe swelling in your abdomen?",
+                          "purpose":  "screens for portal hypertension causes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_RAPID_UNEXPLAINED_FULL",
+                          "text":  "[LLM DRAFT] Have you noticed rapid, unexplained fullness in your upper left belly or persistent left-sided abdominal discomfort?",
+                          "purpose":  "screens for splenomegaly symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_EXPERIENCED_SEVERE_SU",
+                          "text":  "[LLM DRAFT] Have you recently experienced severe, sudden left upper abdominal pain or vomiting blood?",
+                          "purpose":  "screens for splenic infarction or variceal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CHRONIC_CONGESTIVE_SPLENOMEGALY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEUTROPENIC_SPLENOMEGALY",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with prominent neutropenia and recurrent infections rather than primarily portal hypertension and congestion."
+                          },
+                          {
+                              "disease_code":  "PORTAL_VEIN_THROMBOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Directly causes presinusoidal portal hypertension and congestive splenomegaly via acute or chronic occlusion of the main portal vein."
+                          },
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents a severe, acute hemorrhagic complication driven by the elevated portal pressures underlying chronic congestive splenomegaly."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191382009",
+    "snomed_verified_name":  "Chronic congestive splenomegaly",
+    "icd10_code":  "D73.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chronic congestive splenomegaly",
+    "evidence_ids":  [
+                         "EVID_CHRONIC_CONGESTIVE_SPLENOMEGALY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

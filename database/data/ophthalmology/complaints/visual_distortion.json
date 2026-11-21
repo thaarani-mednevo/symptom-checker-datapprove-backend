@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_012",
+  "code": "VISUAL_DISTORTION",
+  "name": "Visual distortion",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "A hallucination is a perception in the absence of an external context stimulus that has the compelling sense of reality. They are distinguishable from several related phenomena, such as dreaming, which does not involve wakefulness; pseudohallucination, which does not mimic real perception, and is accurately perceived as unreal; illusion, which involves distorted or misinterpreted real perception; and mental imagery, which does not mimic real perception, and is under voluntary control.",
+  "hpo_codes": [],
+  "snomed_code": "446617001",
+  "snomed_verified_name": "Visual distortion of perception of shape",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_008",
+  "code": "COGNITIVE_IMPAIRMENT",
+  "name": "Cognitive impairment",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Cognitive impairment is an inclusive term to describe any characteristic that acts as a barrier to the cognition process or different areas of cognition. Cognition, also known as cognitive function, refers to the mental processes of how a person gains knowledge, uses existing knowledge, and understands things that are happening around them using their thoughts and senses.",
+  "hpo_codes": [],
+  "snomed_code": "386806002",
+  "snomed_verified_name": "Impaired cognition",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

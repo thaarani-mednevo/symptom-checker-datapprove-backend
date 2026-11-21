@@ -1,0 +1,93 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_023",
+  "code": "VITAMIN_B12_DEFICIENCY_ANEMIA_UNSPECIFIED",
+  "name": "Vitamin B12 deficiency anemia, unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Pernicious anemia is a disease where not enough red blood cells are produced due to a deficiency of vitamin B12. Those affected often have a gradual onset.",
+  "complaints": [
+    {
+      "code": "TASTE_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEELING_TIRED",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SHORTNESS_OF_BREATH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PALE_SKIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "NUMBNESS_IN_THE_HANDS_AND_FEET",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CONFUSION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "POOR_REFLEXES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NOT_ENOUGH_INTRINSIC_FACTOR",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "D51.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Vitamin B12 deficiency anemia, unspecified",
+  "evidence_ids": [
+    "EVID_VITAMIN_B12_DEFICIENCY_ANEMIA_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

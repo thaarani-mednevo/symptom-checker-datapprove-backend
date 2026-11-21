@@ -1,0 +1,150 @@
+{
+  "module": "endocrine-metabolic",
+  "red_flags": [
+    {
+      "code": "RF_HYPOCALCEMIC_CRISIS",
+      "name": "hypocalcemic_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THYROTOXICOSIS",
+      "name": "THYROTOXICOSIS",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_THYROID_SWELLING",
+      "name": "THYROID_SWELLING",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOTHYROIDISM",
+      "name": "HYPOTHYROIDISM",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOCALCEMIA",
+      "name": "HYPOCALCEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPERGLYCEMIA_CRISIS",
+      "name": "hyperglycemia_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOGLYCEMIA_CRISIS",
+      "name": "hypoglycemia_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_HYPOGLYCEMIA_PROGRESSION",
+      "name": "Severe hypoglycemia progression",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_HYPERGLYCEMIA",
+      "name": "HYPERGLYCEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOGLYCEMIA",
+      "name": "HYPOGLYCEMIA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THYROTOXIC_CRISIS",
+      "name": "THYROTOXIC_CRISIS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEVERE_HYPOGLYCEMIA",
+      "name": "Severe Hypoglycemia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOGLYCEMIA_LEVEL_3",
+      "name": "HYPOGLYCEMIA_LEVEL_3",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "name": "red_flag_name",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_HYPOTHEMIA_AND_MYXEDEMA_COMA",
+      "name": "HYPOTHEMIA_AND_MYXEDEMA_COMA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOTROPIC_COMA",
+      "name": "HYPOTROPIC_COMA",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THYROID_SWELLING_RESPIRATORY_DISTRESS",
+      "name": "thyroid_swelling_respiratory_distress",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NEONATAL_THYROTOXIC_CRISIS",
+      "name": "neonatal_thyrotoxic_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_AIRWAY_COMPROMISE",
+      "name": "acute_airway_compromise",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_AIRWAY_OBSTRUCTION_DUE_TO_RAPID_GOITER_EXPANSION",
+      "name": "Acute Airway Obstruction Due to Rapid Goiter Expansion",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_THYROTOXIC_STORM_INDUCED_BY_MULTINODULAR_GOITER",
+      "name": "Thyrotoxic Storm Induced by Multinodular Goiter",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPOCALCEMIA_SEIZURES",
+      "name": "hypocalcemia_seizures",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_MYXEDEMA_COMA",
+      "name": "myxedema_coma",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_THYROTOXIC_STORM",
+      "name": "THYROTOXIC_STORM",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPERGLYCEMIC_HYPEROSMOLAR_STATE",
+      "name": "hyperglycemic_hyperosmolar_state",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_DIABETIC_KETOACIDOSIS",
+      "name": "diabetic_ketoacidosis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ALTERED_MENTAL_STATUS",
+      "name": "Altered mental status",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_CARDIAC_ARRHYTHMIA",
+      "name": "Cardiac arrhythmia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_HYPERCALCEMIC_CRISIS",
+      "name": "hypercalcemic_crisis",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    }
+  ]
+}

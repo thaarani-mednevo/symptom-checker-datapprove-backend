@@ -1,0 +1,137 @@
+﻿{
+    "id":  "BREAST_DIS_CS_006",
+    "code":  "SOLITARY_CYST_OF_LEFT_BREAST",
+    "name":  "Solitary cyst of left breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A benign, fluid-filled lesion confined to the left breast, presenting as a solitary, usually painless lump.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PALPABLE_BREAST_LUMP",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BREAST_PAIN_OR_TENDERNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NIPPLE_DISCHARGE_CLEAR_OR_SEROUS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SKIN_DIMPLING_OR_RETRACTION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HORMONAL_FLUCTUATIONS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AGE_POSTMENOPAUSAL",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_OF_BREAST_DISEASE",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] sudden severe pain with fever, redness, or swelling indicating infection"
+                      },
+                      {
+                          "code":  "RF_BLOODY_NIPPLE_DISCHARGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "NIPPLE_DISCHARGE",
+                          "condition":  "[LLM DRAFT] sudden onset of bloody discharge from nipple"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y",
+                          "text":  "[LLM DRAFT] Do you feel a distinct, single lump in your left breast?",
+                          "purpose":  "screens for presence of a solitary breast mass",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_LEFT_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_LUMP_IN_YOUR_LEFT_BREAST_ACCOMPAN",
+                          "text":  "[LLM DRAFT] Is the lump in your left breast accompanied by sudden, severe pain or rapid skin changes like severe redness or swelling?",
+                          "purpose":  "screens for acute inflammatory signs or urgent complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_LEFT_BREAST_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a similar benign, fluid-filled mass but is located in the contralateral breast."
+                          },
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Manifests as non-invasive neoplastic cellular proliferation rather than a benign fluid-filled cavity."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute inflammatory signs such as localized erythema, warmth, and purulent tenderness rather than a smooth, painless cyst."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N60.02",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Solitary cyst of left breast",
+    "evidence_ids":  [
+                         "EVID_SOLITARY_CYST_OF_LEFT_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

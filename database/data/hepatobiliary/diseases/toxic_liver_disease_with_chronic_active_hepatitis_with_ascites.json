@@ -1,0 +1,155 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_012",
+    "code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITH_ASCITES",
+    "name":  "Toxic liver disease with chronic active hepatitis with ascites",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Toxic liver disease with chronic active hepatitis progressing to ascites indicates that drug-induced hepatic injury has caused sufficient portal hypertension and reduced synthetic function to result in peritoneal fluid accumulation. This represents advanced DILI with features of decompensated liver disease. At this stage the offending agent should have already been withdrawn; persistence of disease suggests either ongoing exposure, or progression to an autoimmune phenotype that requires immunosuppressive therapy (corticosteroids, azathioprine). Liver transplantation may be required in refractory cases.",
+    "complaints":  [
+                       {
+                           "code":  "ASCITES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ABDOMINAL_DISTENSION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PRURITUS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEPATOTOXIC_DRUG_EXPOSURE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "CONTINUED_DRUG_EXPOSURE_DESPITE_LFT_RISE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HERBAL_SUPPLEMENT_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FEMALE_SEX",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Deepening jaundice with encephalopathy or rising INR — acute liver failure in DILI, emergency hepatology referral"
+                      },
+                      {
+                          "code":  "RED_HB_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ASCITES",
+                          "condition":  "New fever with abdominal pain and ascites — exclude spontaneous bacterial peritonitis"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_DILAA_001",
+                          "text":  "Are you currently taking or have you recently taken any medications, supplements, or herbal products?",
+                          "purpose":  "drug_exposure_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(MEDICATION_REVIEW)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITH_ASCITES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_DILAA_002",
+                          "text":  "Has your abdomen become visibly swollen in recent weeks or months?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ASCITES)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITH_ASCITES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_DILAA_003",
+                          "text":  "Do you have fever along with abdominal swelling and tenderness?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITH_ASCITES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ALCOHOLIC_CIRRHOSIS_OF_LIVER_WITH_ASCITES",
+                              "distinguishing_feature":  "Alcoholic cirrhosis requires a history of sustained heavy drinking; DILI has a drug or chemical exposure history. Biopsy and exclusion of alcohol use differentiate the two."
+                          },
+                          {
+                              "disease_code":  "AUTOIMMUNE_HEPATITIS",
+                              "distinguishing_feature":  "Autoimmune hepatitis has positive autoantibodies (ANA, ASMA) and elevated IgG; drug-induced autoimmune-like hepatitis may be seronegative and resolves (at least partially) with drug withdrawal."
+                          },
+                          {
+                              "disease_code":  "MALIGNANT_ASCITES",
+                              "distinguishing_feature":  "Malignant ascites has SAAG \u003c1.1 g/dL and may show positive cytology; DILI-related ascites has portal hypertension pattern with SAAG \u003e1.1 g/dL."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001402",
+                      "HP:0001541"
+                  ],
+    "snomed_code":  "1092801000119102",
+    "snomed_verified_name":  "Hepatic ascites co-occurrent with chronic active hepatitis due to toxic liver disease",
+    "icd10_code":  "K71.51",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Toxic liver disease with chronic active hepatitis with ascites",
+    "evidence_ids":  [
+                         "EVID_TOXIC_LIVER_DISEASE_WITH_CHRONIC_ACTIVE_HEPATITIS_WITH_ASCITES"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

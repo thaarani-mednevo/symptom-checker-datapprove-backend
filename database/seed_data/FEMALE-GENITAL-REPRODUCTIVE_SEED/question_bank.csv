@@ -1,0 +1,26 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_PREGNANCY_STATUS,"Are you currently pregnant, or could you be pregnant?",yes_no,escalate_red_flag:RF_SUSPECTED_ECTOPIC,continue,ai_drafted_unverified
+Q_PAD_SOAK_RATE,How many pads or tampons are you soaking through per hour at the heaviest point?,numeric,escalate_red_flag:RF_HEMODYNAMIC_INSTABILITY,continue,ai_drafted_unverified
+Q_DIZZINESS_PALLOR,"Have you felt dizzy, faint, or noticed you look unusually pale?",yes_no,escalate_red_flag:RF_SEVERE_ANEMIA_SYMPTOMS,continue,ai_drafted_unverified
+Q_MENOPAUSE_STATUS,Have your periods stopped for 12 months or more (menopause)?,yes_no,escalate_red_flag:RF_POSTMENOPAUSAL_BLEEDING,continue,ai_drafted_unverified
+Q_UNEXPLAINED_WEIGHT_LOSS,Have you had unexplained weight loss recently?,yes_no,escalate_red_flag:RF_SUSPECTED_GYNAE_MALIGNANCY,continue,ai_drafted_unverified
+Q_FEVER_PRESENT,Do you currently have a fever or chills?,yes_no,escalate_red_flag:RF_PID_SEPSIS,continue,ai_drafted_unverified
+Q_PAIN_ONSET_SUDDEN_SEVERE,Did the pain start suddenly and is it severe (one-sided)?,yes_no,escalate_red_flag:RF_OVARIAN_TORSION,continue,ai_drafted_unverified
+Q_FOUL_SMELLING_DISCHARGE,Is the discharge foul-smelling or an unusual color (green/grey)?,yes_no,continue,continue,ai_drafted_unverified
+Q_RECENT_DELIVERY,Have you given birth in the last 6 weeks?,yes_no,continue,continue,ai_drafted_unverified
+Q_RECENT_NEW_PARTNER_STI_RISK,Have you had a new sexual partner or unprotected sex recently?,yes_no,continue,continue,ai_drafted_unverified
+Q_PAIN_TIMING_CYCLE,Does the pain mainly occur during your period?,yes_no,continue,continue,ai_drafted_unverified
+Q_PAIN_WORSENING_OVER_TIME,Has the pain gradually gotten worse over months or years?,yes_no,continue,continue,ai_drafted_unverified
+Q_INTERCOURSE_PAIN_LOCATION,"Is the pain during sex felt at entry, or deep inside?",single_choice,continue,continue,ai_drafted_unverified
+Q_VULVAL_SYMPTOM_TRIGGER,"Did the soreness start after using a new soap, product, or clothing?",yes_no,continue,continue,ai_drafted_unverified
+Q_SYMPTOM_DURATION_CHRONIC,Have the symptoms been present for more than 3 months?,yes_no,continue,continue,ai_drafted_unverified
+Q_CONTRACEPTION_USE,Are you currently using any hormonal contraception or an IUD?,yes_no,continue,continue,ai_drafted_unverified
+Q_CYCLE_LENGTH,How many days between the start of one period and the start of the next?,numeric,continue,continue,ai_drafted_unverified
+Q_MENARCHE_OCCURRED,Have your periods started yet (menarche)?,yes_no,continue,escalate_red_flag:RF_NO_PUBERTY_BY_13_15,ai_drafted_unverified
+Q_BREAST_DEVELOPMENT_STARTED,Has any breast development begun?,yes_no,continue,escalate_red_flag:RF_NO_PUBERTY_BY_13_15,ai_drafted_unverified
+Q_AGE_AT_SYMPTOM_ONSET,At what age did this first begin?,numeric,continue,continue,ai_drafted_unverified
+Q_HEADACHE_VISUAL_CHANGE,Have you had headaches or any change in vision?,yes_no,escalate_red_flag:RF_GALACTORRHEA_VISUAL_FIELD,continue,ai_drafted_unverified
+Q_VOICE_CLITOROMEGALY_RAPID,Has there been rapid deepening of the voice or rapid new hair growth over weeks?,yes_no,escalate_red_flag:RF_RAPID_VIRILIZATION,continue,ai_drafted_unverified
+Q_TRYING_TO_CONCEIVE_DURATION,How many months have you been trying to conceive?,numeric,continue,continue,ai_drafted_unverified
+Q_PARTNER_FERTILITY_ASSESSED,Has your partner had a fertility (semen) assessment?,yes_no,continue,continue,ai_drafted_unverified
+Q_PELVIC_SURGERY_INFECTION_HISTORY,"Have you had previous pelvic surgery, PID, or a pelvic infection?",yes_no,continue,continue,ai_drafted_unverified

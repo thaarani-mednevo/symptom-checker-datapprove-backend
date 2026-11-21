@@ -1,0 +1,153 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_MG_014",
+    "code":  "TESTICULAR_CANCER",
+    "name":  "Testicular cancer",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Testicular germ cell tumours (GCTs) are the most common malignancy in men aged 15–35. They are classified as seminomas (~55%) and non-seminomatous GCTs (~45%, including embryonal carcinoma, teratoma, choriocarcinoma, and mixed). The classic presentation is a painless, hard, firm testicular mass or scrotal heaviness, often discovered incidentally by the patient. A dull ache may be present. Metastatic disease may cause back pain (retroperitoneal nodes), respiratory symptoms (pulmonary metastases), or gynaecomastia (hCG-secreting tumours). Diagnosis is by urgent scrotal ultrasound and tumour markers (AFP, hCG, LDH); orchidectomy is the definitive diagnostic and primary therapeutic procedure. Testicular GCTs are highly curable even at advanced stage.",
+    "complaints":  [
+                       {
+                           "code":  "TESTICULAR_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "TESTICULAR_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "GENITAL_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAINLESS_TESTICULAR_MASS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SCROTAL_HEAVINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "GYNAECOMASTIA",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BACK_PAIN_RETROPERITONEAL",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNDESCENDED_TESTIS_HISTORY",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "PREVIOUS_TESTICULAR_GCT",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_TESTICULAR_CANCER",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "KLINEFELTER_SYNDROME",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CAUCASIAN_ETHNICITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_SWELLING",
+                          "condition":  "Painless firm or irregular testicular mass — testicular cancer suspected, urgent scrotal ultrasound and tumour markers required"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MG_TC_001",
+                          "text":  "Have you felt a painless hard lump or firm area inside the testicle?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(TESTICULAR_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TESTICULAR_CANCER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_MG_TC_002",
+                          "text":  "Has one testicle become heavier or felt different in texture compared to before?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(TESTICULAR_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TESTICULAR_CANCER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_TC_003",
+                          "text":  "Were you born with an undescended testicle or did you have surgery to bring a testicle into the scrotum?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(TESTICULAR_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TESTICULAR_CANCER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EPIDIDYMO_ORCHITIS",
+                              "distinguishing_feature":  "Orchitis produces a tender, warm, swollen testis with fever; testicular cancer presents as a painless firm intratesticular mass. Any mass persisting or worsening after antibiotic treatment must be investigated by ultrasound."
+                          },
+                          {
+                              "disease_code":  "HYDROCELE",
+                              "distinguishing_feature":  "Hydrocele is a fluid-filled sac around the testis that transilluminates; testicular cancer is a solid mass that does not transilluminate. Ultrasound distinguishes the two definitively."
+                          }
+                      ],
+    "age_relevance":  "young_adult_predominant",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+                      "HP:0010788"
+                  ],
+    "snomed_code":  "363449006",
+    "snomed_verified_name":  "Malignant neoplasm of testis",
+    "icd10_code":  "C62.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of unspecified testis, unspecified whether descended or undescended",
+    "evidence_ids":  [
+                         "EVID_TESTICULAR_CANCER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

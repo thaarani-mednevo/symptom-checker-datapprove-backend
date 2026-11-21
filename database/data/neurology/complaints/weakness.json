@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_028",
+  "code": "WEAKNESS",
+  "name": "Weakness",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Muscle weakness is a lack of muscle strength. Its causes are numerous and can be divided into conditions associated with either true or perceived muscle weakness.",
+  "hpo_codes": [],
+  "snomed_code": "13791008",
+  "snomed_verified_name": "Asthenia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

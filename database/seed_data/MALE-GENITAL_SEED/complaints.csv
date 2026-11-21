@@ -1,0 +1,9 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_MG_001,TESTICULAR_PAIN,Testicular pain,male-genital,male-genital,complaint,,,N50.81,1.0,true,,
+COMP_MG_002,TESTICULAR_SWELLING,Testicular swelling,male-genital,male-genital,complaint,,,N50.89,1.0,true,,
+COMP_MG_003,URETHRAL_DISCHARGE,Urethral discharge,male-genital,male-genital,complaint,,9957009,R36.9,1.0,true,,
+COMP_MG_004,GENITAL_ULCER,Genital ulcer,male-genital,male-genital,complaint,,1371402009,N48.5,1.0,true,,
+COMP_MG_005,GENITAL_LUMP,Genital lump,male-genital,male-genital,complaint,,,R22.2,1.0,true,,
+COMP_MG_006,GENITAL_RASH,Genital rash,male-genital,male-genital,complaint,,,R21,1.0,true,,
+COMP_MG_007,GENITAL_ITCHING,Genital itching,male-genital,male-genital,complaint,,,L29.3,1.0,true,,
+COMP_MG_008,ERECTILE_DYSFUNCTION,Erectile dysfunction,male-genital,male-genital,complaint,,860914002,N52.9,1.0,true,,

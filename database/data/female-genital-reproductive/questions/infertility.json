@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "INFERTILITY",
+    "complaint_name":  "Infertility",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_INF_001",
+                          "text":  "How long have you been trying to conceive?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INFERTILITY_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_INF_002",
+                          "text":  "Are your periods regular?",
+                          "purpose":  "cycle",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "REGULAR_CYCLES",
+                          "yes_weight":  -1,
+                          "no_weight":  2
+                      },
+                      {
+                          "code":  "Q_CMP_INF_003",
+                          "text":  "Have you been pregnant before?",
+                          "purpose":  "parity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PREVIOUS_PREGNANCIES",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_INF_004",
+                          "text":  "Does your partner have any known fertility issues?",
+                          "purpose":  "partner",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PARTNER_FACTORS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_INF_005",
+                          "text":  "Do you have pelvic pain, heavy periods, or irregular cycles?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_CAUSE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

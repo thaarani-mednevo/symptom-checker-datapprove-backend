@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_006",
+  "code": "ANEMIA",
+  "name": "Anemia",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "Anemia is a blood disorder in which the blood has a reduced ability to carry oxygen. This can be due to a lower than normal number of red blood cells, a reduction in the amount of hemoglobin available for oxygen transport, or abnormalities in hemoglobin that impair its function.",
+  "hpo_codes": [],
+  "snomed_code": "271737000",
+  "snomed_verified_name": "Anemia",
+  "icd10_code": "D64.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Anemia, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

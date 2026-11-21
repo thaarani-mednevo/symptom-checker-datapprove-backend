@@ -1,0 +1,126 @@
+﻿{
+    "id":  "BREAST_DIS_CS_011",
+    "code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_SECOND_TRIMESTER",
+    "name":  "Abscess of breast associated with pregnancy, second trimester",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A localized collection of pus in the breast tissue occurring during the second trimester of pregnancy, often secondary to mastitis.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "AXILLARY_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BREAST_PAIN_AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREGNANCY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BREASTFEEDING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NIPPLE_TRAUMA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPSIS_SYSTEMIC_TOXICITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Presence of high fever, tachycardia, altered mental status, or rapidly spreading erythema indicating systemic infection or sepsis in pregnancy."
+                      },
+                      {
+                          "code":  "RF_SEVERE_AXILLARY_COMPRESSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "AXILLARY_LUMP",
+                          "condition":  "[LLM DRAFT] Rapidly enlarging axillary abscess causing severe neurovascular compromise or impending skin necrosis of the arm."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_IN_YOUR_SECOND_TRIMEST",
+                          "text":  "[LLM DRAFT] Are you currently in your second trimester of pregnancy and experiencing a painful, swollen lump or redness in your breast?",
+                          "purpose":  "Screens for classic signs of a breast abscess during the second trimester",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_SECOND_TRIMESTER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_DEVELOPED_A_FEVER_CHILLS_OR_G",
+                          "text":  "[LLM DRAFT] Have you developed a fever, chills, or generally feel unwell along with breast pain during your pregnancy?",
+                          "purpose":  "Screens for systemic infection associated with a breast abscess",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_SECOND_TRIMESTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_FIRST_TRIMESTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs during the earlier 1-13 weeks gestational window rather than weeks 14-27."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION",
+                              "distinguishing_feature":  "[LLM DRAFT] Develops during the postpartum breastfeeding period rather than during the ongoing second trimester of gestation."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] General breast and nipple abscess presentation not specifically tied to the hormonal and physiological state of the second trimester of pregnancy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O91.112",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abscess of breast associated with pregnancy, second trimester",
+    "evidence_ids":  [
+                         "EVID_ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_SECOND_TRIMESTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

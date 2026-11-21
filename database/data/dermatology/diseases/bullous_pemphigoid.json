@@ -1,0 +1,57 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_DERM_007",
+    "code":  "BULLOUS_PEMPHIGOID",
+    "name":  "Bullous pemphigoid",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Bullous pemphigoid is an autoimmune pruritic skin disease that typically occurs in people aged over 60, that may involve the formation of blisters (bullae) in the space between the epidermal and dermal skin layers. It is classified as a type II hypersensitivity reaction, which involves the formation of anti-hemidesmosome antibodies, causing a loss of keratinocytes to basement membrane adhesion.",
+    "complaints":  [
+                       {
+                           "code":  "BLISTERS",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BULLOUS_PEMPHIGOID_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "77090002",
+    "snomed_verified_name":  "Bullous pemphigoid",
+    "icd10_code":  "L12.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Bullous pemphigoid",
+    "evidence_ids":  [
+                         "EVID_BULLOUS_PEMPHIGOID"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

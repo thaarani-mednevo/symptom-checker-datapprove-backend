@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_003",
+  "code": "SPLENOMEGALY",
+  "name": "Splenomegaly",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "Splenomegaly is an enlargement of the spleen. The spleen usually lies in the left upper quadrant (LUQ) of the human abdomen.",
+  "hpo_codes": [],
+  "snomed_code": "16294009",
+  "snomed_verified_name": "Splenomegaly",
+  "icd10_code": "R16.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Splenomegaly, not elsewhere classified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

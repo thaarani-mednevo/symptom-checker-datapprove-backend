@@ -1,0 +1,17 @@
+{
+  "complaint_code": "EXERTIONAL_DYSPNEA",
+  "complaint_name": "Exertional dyspnea",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_EDYSP_001", "text": "How much exertion brings on the breathlessness — heavy exercise, mild activity such as walking on flat ground, or does it happen at rest?", "purpose": "severity_grading", "answer_type": "multiple_choice", "options": ["Heavy exercise only", "Moderate activity (stairs, hills)", "Mild activity (walking on flat)", "Minimal activity (dressing, washing)", "At rest"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "DYSPNOEA_GRADE", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_EDYSP_002", "text": "How long have you had breathlessness on exertion — did it come on suddenly or gradually over weeks to months?", "purpose": "onset_pattern", "answer_type": "multiple_choice", "options": ["Sudden (hours to days)", "Subacute (days to weeks)", "Gradual (months to years)"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "DYSPNOEA_ONSET", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_EDYSP_003", "text": "Do you wake at night feeling breathless and need to sit up to breathe?", "purpose": "pnd_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "PAROXYSMAL_NOCTURNAL_DYSPNOEA", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_EDYSP_004", "text": "Do you need extra pillows to sleep comfortably at night?", "purpose": "orthopnea_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "ORTHOPNOEA", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_EDYSP_005", "text": "Do you have ankle or leg swelling along with the breathlessness?", "purpose": "oedema_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "PERIPHERAL_OEDEMA", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_EDYSP_006", "text": "Do you have a wheeze or noisy breathing with the breathlessness?", "purpose": "wheeze_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "EXPIRATORY_WHEEZE", "yes_weight": 2, "no_weight": -1 },
+    { "code": "Q_CMP_EDYSP_007", "text": "Is the breathlessness at rest severe right now?", "purpose": "red_flag_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 7, "tests_symptom_code": "REST_DYSPNOEA", "yes_weight": 5, "no_weight": -2 }
+  ]
+}

@@ -1,0 +1,155 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_018",
+    "code":  "HYPOTHYROIDISM_UNSPECIFIED",
+    "name":  "Hypothyroidism, unspecified",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypothyroidism is an endocrine disease in which the thyroid gland does not produce enough thyroid hormones. It can cause a number of symptoms, such as poor ability to tolerate cold, extreme fatigue, muscle aches, constipation, slow heart rate, depression, and weight gain.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POOR_ABILITY_TO_TOLERATE_COLD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_ACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_GAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HASHIMOTOS_THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SURGICAL_REMOVAL_OF_THYROID_GLAND",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "IODINE_DEFICIENCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LITHIUM_TREATMENT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOTROPIC_COMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe myxedema coma characterized by hypothermia, altered mental status, hypoventilation, and hemodynamic instability in the setting of untreated or poorly managed hypothyroidism."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_FEELING_UNUSUALLY_TIRED_S",
+                          "text":  "[LLM DRAFT] Have you been feeling unusually tired, sluggish, or lacking in energy lately?",
+                          "purpose":  "Screens for fatigue",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOTHYROIDISM_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_UNEXPECTED_WEIGHT_GAIN",
+                          "text":  "[LLM DRAFT] Have you noticed unexpected weight gain or difficulty losing weight despite no changes in your diet?",
+                          "purpose":  "Screens for unexplained weight gain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOTHYROIDISM_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_MUCH_MORE_SENSITIVE_TO_COLD",
+                          "text":  "[LLM DRAFT] Do you feel much more sensitive to cold temperatures than other people around you?",
+                          "purpose":  "Screens for cold intolerance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOTHYROIDISM_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] History of exposure to offending drugs or exogenous substances known to impair thyroid function."
+                          },
+                          {
+                              "disease_code":  "POSTPROCEDURAL_HYPOTHYROIDISM",
+                              "distinguishing_feature":  "[LLM DRAFT] History of prior thyroid surgery, neck irradiation, or radioiodine ablation."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Initial phase presenting with hyperthyroidism symptoms and elevated thyroid hormones before progressing to hypothyroidism."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E03.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypothyroidism, unspecified",
+    "evidence_ids":  [
+                         "EVID_HYPOTHYROIDISM_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

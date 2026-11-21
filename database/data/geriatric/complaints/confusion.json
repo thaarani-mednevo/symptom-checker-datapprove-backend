@@ -1,0 +1,17 @@
+{
+  "id": "GERIATRIC_COMP_GER_002",
+  "code": "CONFUSION",
+  "name": "Confusion",
+  "module": "geriatric",
+  "body_system": "geriatric",
+  "category": "complaint",
+  "description": "Confusion in elderly patients refers to an acute or subacute change in mental status characterised by disorientation, impaired attention, and altered consciousness. Acute confusion (delirium) is a medical emergency that must be distinguished from dementia (which is chronic and progressive). Common precipitants in older adults include infection (especially urinary tract infection, pneumonia), metabolic disturbances (hypo/hyperglycaemia, hyponatraemia, uraemia), medication effects (anticholinergics, opioids, benzodiazepines), pain, constipation, and urinary retention. The '4 A's Test' (4AT) or Confusion Assessment Method (CAM) are validated bedside tools for delirium screening.",
+  "hpo_codes": ["HP:0001289"],
+  "snomed_code": "40917007",
+  "snomed_verified_name": "Clouded consciousness",
+  "icd10_code": "R41.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Other amnesia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

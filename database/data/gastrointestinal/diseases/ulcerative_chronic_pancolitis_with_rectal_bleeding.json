@@ -1,0 +1,77 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_031",
+    "code":  "ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING",
+    "name":  "Ulcerative (chronic) pancolitis with rectal bleeding",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Ulcerative (chronic) pancolitis with rectal bleeding.",
+    "complaints":  [
+                       {
+                           "code":  "HEMATOCHEZIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ABDOMINAL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RECTAL_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_011",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING",
+                          "condition":  "Bloody diarrhea with fever and systemic illness (suspect severe flare)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_012",
+                          "text":  "Do you have a fever along with your bowel symptoms?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_011)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K51.011",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ulcerative (chronic) pancolitis with rectal bleeding",
+    "evidence_ids":  [
+                         "EVID_ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,164 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_022",
+    "code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS",
+    "name":  "Alcohol dependence with alcohol-induced psychotic disorder with hallucinations",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Alcohol dependence is a previous psychiatric diagnosis in which an individual is physically or psychologically dependent upon alcohol.",
+    "complaints":  [
+                       {
+                           "code":  "HALLUCINATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "AUDITORY_HALLUCINATIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "VISUAL_HALLUCINATIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ALCOHOL_CRAVING",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "constant",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "PARANOID_IDEATION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AUTONOMIC_HYPERACTIVITY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHRONIC_HEAVY_ALCOHOL_CONSUMPTION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ALCOHOL_USE_DISORDER",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "GENETIC_PREDISPOSITION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CO_OCCURRING_PSYCHIATRIC_DISORDERS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_ALCOHOL_WITHDRAWAL_SYMPTOMS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SOCIAL_AND_ENVIRONMENTAL_STRESSORS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "EARLY_AGE_OF_ONSET_OF_DRINKING",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HALLUCINATIONS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "HALLUCINATIONS",
+                          "condition":  "Presence of visual or auditory hallucinations while intoxicated or during withdrawal"
+                      },
+                      {
+                          "code":  "RF_VIOLENT_BEHAVIOR",
+                          "trigger_entity_type":  "behavior",
+                          "trigger_entity_code":  "VIOLENT_BEHAVIOR",
+                          "condition":  "Any aggressive or violent actions towards others or self"
+                      },
+                      {
+                          "code":  "RF_SEVERE_WITHDRAWAL",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "WITHDRAWAL_SYMPTOMS",
+                          "condition":  "Severe withdrawal symptoms such as tremors, seizures, or delirium tremens"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ALCOHOL_CONSUMPTION",
+                          "text":  "Have you consumed alcohol in the past 24 hours?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HALLUCINATIONS",
+                          "text":  "Do you hear voices or see things that others do not while drinking?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ALCOHOL_WITHDRAWAL_RISK",
+                          "text":  "Have you recently stopped or cut down heavy drinking? This can raise the risk of withdrawal seizures or delirium tremens.",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191475003",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F10.251",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Alcohol dependence with alcohol-induced psychotic disorder with hallucinations",
+    "evidence_ids":  [
+                         "EVID_ALCOHOL_DEPENDENCE_WITH_ALCOHOL_INDUCED_PSYCHOTIC_DISORDER_WITH_HALLUCINATIONS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

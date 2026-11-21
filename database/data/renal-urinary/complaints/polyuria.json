@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_005",
+  "code": "POLYURIA",
+  "name": "Polyuria",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Polyuria is excessive or an abnormally large production or passage of urine. Increased production and passage of urine may also be termed as diuresis.",
+  "hpo_codes": [],
+  "snomed_code": "28442001",
+  "snomed_verified_name": "Polyuria",
+  "icd10_code": "R35.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Nocturia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

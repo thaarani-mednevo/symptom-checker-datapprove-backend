@@ -1,0 +1,50 @@
+{
+  "module": "respiratory",
+  "red_flags": [
+    {
+      "code": "RED_RESP_001",
+      "name": "Sudden severe breathlessness",
+      "action": "emergency_pathway"
+    },
+    {
+      "code": "RED_RESP_002",
+      "name": "Haemoptysis with night sweats — suspected malignancy or TB",
+      "action": "urgent_respiratory_evaluation"
+    },
+    {
+      "code": "RED_RESP_003",
+      "name": "Tension pneumothorax signs",
+      "action": "emergency_pathway"
+    },
+    {
+      "code": "RED_RESP_004",
+      "name": "Acute severe asthma — no response to bronchodilator",
+      "action": "emergency_pathway"
+    },
+    {
+      "code": "RED_RESP_005",
+      "name": "Respiratory failure — oxygen saturation below 92%",
+      "action": "emergency_ventilatory_support_pathway"
+    },
+    {
+      "code": "RED_RESP_006",
+      "name": "Suspected active pulmonary tuberculosis with close contacts",
+      "action": "tb_isolation_pathway"
+    },
+    {
+      "code": "RED_RESP_007",
+      "name": "Progressive breathlessness with fibrotic change on HRCT",
+      "action": "urgent_respiratory_referral_chronic_hp_or_ild"
+    },
+    {
+      "code": "RED_RESP_008",
+      "name": "Massive haemoptysis over 240 mL in 24 hours in CF patient",
+      "action": "emergency_bronchial_artery_embolisation"
+    },
+    {
+      "code": "RED_RESP_009",
+      "name": "Severe OSA with SpO2 below 80% on oximetry",
+      "action": "urgent_sleep_medicine_and_respiratory_review"
+    }
+  ]
+}

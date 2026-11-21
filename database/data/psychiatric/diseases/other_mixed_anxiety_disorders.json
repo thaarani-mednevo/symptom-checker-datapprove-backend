@@ -1,0 +1,193 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_005",
+    "code":  "OTHER_MIXED_ANXIETY_DISORDERS",
+    "name":  "Other mixed anxiety disorders",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "A heterogeneous group of anxiety presentations that do not meet criteria for specific anxiety disorders but involve significant anxiety symptoms across multiple domains.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EXCESSIVE_WORRY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AUTONOMIC_ARROUSAL",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SLEEP_DISTURBANCE",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MUSCLE_TENSION",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PANIC_ATTACKS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_ANXIETY_OR_DEPRESSION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_CHILDHOOD_TRAUMA_OR_ADVERSITY",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "CHRONIC_STRESS_OR_MAJOR_LIFE_CHANGES",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "NEUROTICISM_OR_BEHAVIORAL_INHIBITION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SUBSTANCE_ABUSE",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDE_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SUICIDE",
+                          "condition":  "Patient reports thoughts of self-harm or suicide."
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_PSYCHOSIS",
+                          "condition":  "Patient exhibits hallucinations or delusions."
+                      },
+                      {
+                          "code":  "RF_SUBSTANCE_ABUSE",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "HISTORY_SUBSTANCE_ABUSE",
+                          "condition":  "Patient has a history of substance abuse that may exacerbate anxiety."
+                      },
+                      {
+                          "code":  "RF_SEVERE_PANIC",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYMPTOM_PANIC_ATTACK",
+                          "condition":  "Patient experiences panic attacks that are severe or frequent."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_EXCESSIVE_WORRY",
+                          "text":  "Do you find yourself worrying excessively about everyday matters?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_MIXED_ANXIETY_DISORDERS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PHYSICAL_SOMATICS",
+                          "text":  "Do you notice physical symptoms such as trembling, sweating, or heart palpitations when anxious?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_MIXED_ANXIETY_DISORDERS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PANIC_ATTACKS",
+                          "text":  "Have you experienced panic attacks in the past month?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_MIXED_ANXIETY_DISORDERS_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SUBSTANCE_USE",
+                          "text":  "Do you use alcohol or drugs to cope with anxiety?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OTHER_MIXED_ANXIETY_DISORDERS_SYMPTOM_4",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GENERALIZED_ANXIETY_DISORDER",
+                              "distinguishing_feature":  "Worry is chronic and generalized across multiple domains."
+                          },
+                          {
+                              "disease_code":  "PANIC_DISORDER",
+                              "distinguishing_feature":  "Recurrent unexpected panic attacks with fear of future attacks."
+                          },
+                          {
+                              "disease_code":  "OBSESSIVE_COMPULSIVE_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Presence of intrusive thoughts and compulsive behaviors."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F41.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other mixed anxiety disorders",
+    "evidence_ids":  [
+                         "EVID_OTHER_MIXED_ANXIETY_DISORDERS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

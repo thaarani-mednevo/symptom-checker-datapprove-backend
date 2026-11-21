@@ -1,0 +1,74 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_025",
+    "code":  "DRUG_INDUCED_CONSTIPATION",
+    "name":  "Drug induced constipation",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Drug induced constipation.",
+    "complaints":  [
+                       {
+                           "code":  "CONSTIPATION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "CONSTIPATION",
+                          "condition":  "No flatus/stool with distension and vomiting (suspect obstruction, not just drug side-effect)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_009",
+                          "text":  "Have you stopped passing gas or having bowel movements, along with a bloated belly and vomiting?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_008)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_INDUCED_CONSTIPATION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_020",
+                          "text":  "Are you taking any new medications recently (e.g. opioids, iron supplements, antacids)?",
+                          "purpose":  "gather_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRUG_INDUCED_CONSTIPATION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "21782001",
+    "snomed_verified_name":  "Drug-induced constipation",
+    "icd10_code":  "K59.03",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Drug induced constipation",
+    "evidence_ids":  [
+                         "EVID_DRUG_INDUCED_CONSTIPATION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

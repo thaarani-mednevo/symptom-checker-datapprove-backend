@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_005",
+  "code": "EYE_PAIN",
+  "name": "Eye pain",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Eye pain, also called ophthomalgia or ocular pain, is a nonspecific term for pain in one or both eyes, around the eyes, or behind the eyes. It may encompass minor eye irritation, aching, or burning sensation to intense and prolonged pain.",
+  "hpo_codes": [],
+  "snomed_code": "41652007",
+  "snomed_verified_name": "Pain in eye",
+  "icd10_code": "H57.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Ocular pain, unspecified eye",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

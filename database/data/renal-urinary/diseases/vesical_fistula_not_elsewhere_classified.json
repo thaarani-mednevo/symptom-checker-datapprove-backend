@@ -1,0 +1,136 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_039",
+    "code":  "VESICAL_FISTULA_NOT_ELSEWHERE_CLASSIFIED",
+    "name":  "Vesical fistula, not elsewhere classified",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "A renal-urinary condition known as Vesical fistula, not elsewhere classified.",
+    "complaints":  [
+                       {
+                           "code":  "PNEUMATURIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PNEUMATURIA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CLOUDY_URINE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "RECURRENT_UTI",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HAEMATURIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PRIOR_PELVIC_SURGERY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PELVIC_RADIOTHERAPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "INFLAMMATORY_BOWEL_DISEASE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PNEUMATURIA",
+                          "condition":  "Gas in urine stream — colovesical fistula"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_009",
+                          "text":  "Do you notice bubbles or gas passing through the urine stream?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VESICAL_FISTULA_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VESICAL_FISTULA_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_015",
+                          "text":  "Do you have a known history of kidney stones, prostate problems, or bladder issues?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VESICAL_FISTULA_NOT_ELSEWHERE_CLASSIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0034255 | HP:0034451"
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N32.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vesical fistula, not elsewhere classified",
+    "evidence_ids":  [
+                         "EVID_VESICAL_FISTULA_NOT_ELSEWHERE_CLASSIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

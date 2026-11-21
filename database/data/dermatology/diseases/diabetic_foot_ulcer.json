@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_012",
+  "code": "DIABETIC_FOOT_ULCER",
+  "name": "Diabetic foot ulcer",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Diabetic foot ulcer is a breakdown of the skin and sometimes deeper tissues of the foot that leads to sore formation. It is thought to occur due to abnormal pressure or mechanical stress chronically applied to the foot, usually with concomitant predisposing conditions such as peripheral sensory neuropathy, peripheral motor neuropathy, autonomic neuropathy or peripheral arterial disease.",
+  "complaints": [
+    {
+      "code": "LEG_ULCERS",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "371087003",
+  "snomed_verified_name": "Diabetic foot ulcer",
+  "icd10_code": "E11.621",
+  "icd10_validated": true,
+  "icd10_official_description": "Type 2 diabetes mellitus with foot ulcer",
+  "evidence_ids": [
+    "EVID_DIABETIC_FOOT_ULCER"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

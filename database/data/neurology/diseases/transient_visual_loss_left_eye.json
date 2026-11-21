@@ -1,0 +1,60 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_060",
+  "code": "TRANSIENT_VISUAL_LOSS_LEFT_EYE",
+  "name": "Transient visual loss, left eye",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Transient, painless loss of vision in the left eye, often due to a brief ischemic event such as amaurosis fugax.",
+  "complaints": [
+    {
+      "code": "VISUAL_LOSS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "TEMPORARY_FLEETING_OF_VISION_IN_ONE_OR_BOTH_EYES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "CAROTID_ARTERY_STENOSIS",
+      "strength": "strong"
+    },
+    {
+      "code": "ATRIAL_FIBRILLATION",
+      "strength": "strong"
+    },
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "GIANT_CELL_ARTERITIS",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "337411000119105",
+  "snomed_verified_name": "Transient visual loss of left eye",
+  "icd10_code": "H53.122",
+  "icd10_validated": true,
+  "icd10_official_description": "Transient visual loss, left eye",
+  "evidence_ids": [
+    "EVID_TRANSIENT_VISUAL_LOSS_LEFT_EYE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

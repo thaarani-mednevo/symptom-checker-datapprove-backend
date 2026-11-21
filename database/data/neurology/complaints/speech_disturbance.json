@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_019",
+  "code": "SPEECH_DISTURBANCE",
+  "name": "Speech disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Speech disorders, impairments, or impediments are a type of communication disorder in which normal speech is disrupted. This can mean fluency disorders like stuttering and cluttering.",
+  "hpo_codes": [],
+  "snomed_code": "8011004",
+  "snomed_verified_name": "Dysarthria",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,101 @@
+{
+  "complaint_code": "HAEMATURIA_ONCOLOGY",
+  "complaint_name": "Haematuria (Oncology)",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_HAEMATU_001",
+      "text": "Is the blood in your urine visible to the naked eye (frank haematuria), and when during urination does it appear — at the start, throughout, or at the end?",
+      "purpose": "Characterise haematuria type and timing; painless frank haematuria throughout urination is the classic bladder cancer presentation",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Visible blood — at start of urination (initial)",
+        "Visible blood — throughout urination (total)",
+        "Visible blood — at end of urination (terminal)",
+        "Blood only detected on urine dipstick (microscopic)",
+        "Clots in urine"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "HAEMATURIA_TYPE_TIMING",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMATU_002",
+      "text": "Is the haematuria painless — that is, there is no burning, stinging, or pain when you pass urine?",
+      "purpose": "Painless haematuria is the classic red flag presentation of bladder or kidney malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "PAINLESS_HAEMATURIA",
+      "yes_weight": 5,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_HAEMATU_003",
+      "text": "Are you over 45 years of age and a current or ex-smoker?",
+      "purpose": "Age >45 with smoking is a high-risk combination for urothelial malignancy in the context of haematuria",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(UROTHELIAL_MALIGNANCY_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "BLADDER_CANCER_RISK_FACTORS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMATU_004",
+      "text": "Do you have any flank pain, a palpable abdominal mass, or unexplained weight loss?",
+      "purpose": "Flank pain and mass in the context of haematuria suggest renal cell carcinoma (classic triad)",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "RENAL_CANCER_TRIAD",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMATU_005",
+      "text": "Do you have any symptoms of urinary tract infection — burning, frequency, urgency, or fever?",
+      "purpose": "Identify UTI as a common benign cause of haematuria; note that UTI does not fully exclude malignancy in high-risk patients",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(UTI_HAEMATURIA_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "UTI_SYMPTOMS",
+      "yes_weight": -2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_HAEMATU_006",
+      "text": "Have you had any occupational exposure to chemicals such as aniline dyes, benzene, or aromatic amines?",
+      "purpose": "Occupational chemical exposure is a known risk factor for urothelial malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(OCCUPATIONAL_BLADDER_CANCER_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "OCCUPATIONAL_CHEMICAL_EXPOSURE",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMATU_007",
+      "text": "Have you had previous bladder tumours, kidney stones, or urological procedures?",
+      "purpose": "History of prior bladder cancer is the strongest risk factor for recurrence",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "PRIOR_UROLOGICAL_HISTORY",
+      "yes_weight": 4,
+      "no_weight": -1
+    }
+  ]
+}

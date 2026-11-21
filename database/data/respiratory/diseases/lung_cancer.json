@@ -1,0 +1,146 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_005",
+    "code":  "LUNG_CANCER",
+    "name":  "Lung Cancer",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Lung cancer is a malignant tumor that originates in the tissues of the lungs. Lung cancer is caused by genetic damage to the DNA of cells in the airways, often caused by cigarette smoking or inhaling damaging chemicals.",
+    "complaints":  [
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HEMOPTYSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CHEST_TIGHTNESS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HOARSENESS",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FINGER_CLUBBING",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "RADON_EXPOSURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ASBESTOS_EXPOSURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_LUNG_CANCER",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMOPTYSIS",
+                          "condition":  "Haemoptysis with night sweats — suspected malignancy"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_008",
+                          "text":  "Have you had a cough lasting more than 3 weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHRONIC_COUGH)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LUNG_CANCER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_010",
+                          "text":  "Have you ever smoked or been exposed to asbestos/industrial dust?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LUNG_CANCER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PULMONARY_TUBERCULOSIS",
+                              "distinguishing_feature":  "TB is associated with contact history, AFB-positive sputum, and upper lobe infiltrates; lung cancer is associated with smoking/age, hemoptysis, and a discrete mass on CT."
+                          },
+                          {
+                              "disease_code":  "PLEURAL_EFFUSION",
+                              "distinguishing_feature":  "Pleural effusion can be a complication of lung cancer (malignant effusion) but also occurs in heart failure, infection, and liver disease — cytology and LDH/protein ratio differentiate."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0100526"
+                  ],
+    "snomed_code":  "254637007",
+    "snomed_verified_name":  "Non-small cell lung cancer",
+    "icd10_code":  "C34.10",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of upper lobe, unspecified bronchus or lung",
+    "evidence_ids":  [
+                         "EVD_RESP_005"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

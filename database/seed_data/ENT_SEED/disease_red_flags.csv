@@ -1,0 +1,48 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+PULSATILE_TINNITUS_BILATERAL,RF_SUDDEN_HEARING_LOSS,complaint,COMPLAINT_SUDDEN_HEARING_LOSS,Sudden hearing loss with pulsatile tinnitus may indicate vascular occlusion or hemorrhage.,,clinician_approved
+PULSATILE_TINNITUS_BILATERAL,RF_SEVERE_HEADACHE,complaint,COMPLAINT_SEVERE_HEADACHE,Severe headache suggests possible intracranial hypertension or aneurysm.,,clinician_approved
+PULSATILE_TINNITUS_BILATERAL,RF_VISION_CHANGES,complaint,COMPLAINT_VISION_CHANGES,Vision changes may indicate increased intracranial pressure or carotid-cavernous fistula.,,clinician_approved
+PULSATILE_TINNITUS_BILATERAL,RF_NECK_PULSATING_MASS,complaint,COMPLAINT_NECK_PULSATING_MASS,Pulsating neck mass suggests carotid artery stenosis or aneurysm.,,clinician_approved
+PULSATILE_TINNITUS_BILATERAL,RF_HYPERTENSION,history,HISTORY_HYPERTENSION,Uncontrolled hypertension increases risk of vascular causes of pulsatile tinnitus.,,clinician_approved
+PULSATILE_TINNITUS_LEFT_EAR,RF_HYPERTENSION,complaint,Tinnitus_Left_Ear,Hypertension or uncontrolled blood pressure,,clinician_approved
+PULSATILE_TINNITUS_LEFT_EAR,RF_NEUROLOGICAL_DEFICIT,complaint,Tinnitus_Left_Ear,Any focal neurological deficit,,clinician_approved
+PULSATILE_TINNITUS_LEFT_EAR,RF_HEARING_LOSS,complaint,Tinnitus_Left_Ear,Concurrent sensorineural hearing loss,,clinician_approved
+PULSATILE_TINNITUS_LEFT_EAR,RF_PULSATING_BURST,complaint,Tinnitus_Left_Ear,Pulsatile sound synchronous with heartbeat,,clinician_approved
+PULSATILE_TINNITUS_LEFT_EAR,RF_COAGULATION_ABNORMALITY,complaint,Tinnitus_Left_Ear,History of coagulopathy or recent thrombosis,,clinician_approved
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,RF_SUDDEN_ONSET,complaint,COMPLAINT_PULSATILE_TINNITUS,Sudden onset of pulsatile tinnitus with hearing loss,,clinician_approved
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,RF_NEUROLOGICAL_SYNDROME,complaint,COMPLAINT_PULSATILE_TINNITUS,Associated with neurological deficits such as weakness or speech difficulty,,clinician_approved
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,RF_BLOOD_PRESSURE,complaint,COMPLAINT_PULSATILE_TINNITUS,Concurrent severe hypertension or orthostatic changes,,clinician_approved
+TINNITUS_BILATERAL,RF_SUDDEN_ONSET,complaint,COMPLAINT_TINNITUS,Sudden onset of bilateral tinnitus within 24 hours,,clinician_approved
+TINNITUS_BILATERAL,RF_PULSATING_TINNITUS,complaint,COMPLAINT_TINNITUS,Pulsatile tinnitus that syncs with heartbeat,,clinician_approved
+TINNITUS_BILATERAL,RF_HEARING_LOSS,complaint,COMPLAINT_TINNITUS,Concurrent sudden hearing loss in one or both ears,,clinician_approved
+TINNITUS_BILATERAL,RF_HEAD_TRAUMA,history,HISTORY_HEAD_INJURY,Recent head or neck trauma within the past month,,clinician_approved
+TINNITUS_BILATERAL,RF_OTOTOXIC_MEDICATION,medication,MEDICATION_OTOTOXIC,"Use of known ototoxic drugs (e.g., aminoglycosides, cisplatin) within the past 6 months",,clinician_approved
+TINNITUS_RIGHT_EAR,RF_SUDDEN_ONSET_TINNITUS,complaint,Tinnitus_Right_Ear_Complaint,Sudden onset unilateral tinnitus with hearing loss may indicate acoustic neuroma or sudden sensorineural hearing loss.,,clinician_approved
+TINNITUS_RIGHT_EAR,RF_PULSATING_TINNITUS,complaint,Tinnitus_Right_Ear_Complaint,Pulsatile tinnitus may indicate vascular malformation or carotid artery disease.,,clinician_approved
+TINNITUS_RIGHT_EAR,RF_EAR_FULLNESS,complaint,Tinnitus_Right_Ear_Complaint,Ear fullness or pain may indicate middle ear effusion or otitis media.,,clinician_approved
+TINNITUS_RIGHT_EAR,RF_TINNITUS_VERTIGO,complaint,Tinnitus_Right_Ear_Complaint,Tinnitus accompanied by vertigo may indicate Meniere's disease or vestibular schwannoma.,,clinician_approved
+TINNITUS_RIGHT_EAR,RF_HEAD_TRAUMA,complaint,Tinnitus_Right_Ear_Complaint,Recent head trauma with tinnitus may indicate inner ear injury or acoustic neuroma.,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_SUDDEN_UNILATERAL_TINNITUS,complaint,TINNITUS,Sudden onset of unilateral tinnitus,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_PULSATING_TINNITUS,complaint,TINNITUS,Pulsatile or rhythmic tinnitus,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_HEARING_LOSS_WITH_TINNITUS,complaint,TINNITUS,Tinnitus accompanied by hearing loss,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_VERTIGO_WITH_TINNITUS,complaint,TINNITUS,Tinnitus with vertigo or dizziness,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_EAR_DISCHARGE_WITH_TINNITUS,complaint,TINNITUS,Tinnitus with ear discharge,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_EAR_TRAUMA_WITH_TINNITUS,complaint,TINNITUS,Tinnitus following recent ear trauma,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_EAR_INFECTION_WITH_TINNITUS,complaint,TINNITUS,Tinnitus after recent ear infection,,clinician_approved
+TINNITUS_UNSPECIFIED_EAR,RF_EAR_PRESSURE_WITH_TINNITUS,complaint,TINNITUS,Tinnitus with sensation of ear pressure,,clinician_approved
+ACUTE_OTITIS_MEDIA,RF_ACUTE_MASTOIDITIS,symptom,POSTAURICULAR_SWELLING,Swelling and redness behind the ear,,clinician_approved
+OTITIS_EXTERNA,RF_NECROTIZING_OTITIS,symptom,SEVERE_EAR_PAIN,"Severe, deep ear pain especially in diabetics or immunocompromised",,clinician_approved
+ACUTE_TONSILLITIS,RF_PERITONSILLAR_ABSCESS,symptom,TRISMUS,Inability to open mouth fully or muffled voice,,clinician_approved
+ACUTE_SINUSITIS,RF_ORBITAL_CELLULITIS,symptom,PERIORBITAL_EDEMA,Swelling or redness around the eye,,clinician_approved
+ACUTE_PHARYNGITIS,RF_SEVERE_DEHYDRATION,symptom,DECREASED_URINE,Inability to swallow liquids resulting in dehydration,,clinician_approved
+TINNITUS_LEFT_EAR,RF_UNILATERAL_HEARING_LOSS,symptom,HEARING_LOSS,Sudden onset of hearing loss,,clinician_approved
+APHTHOUS_STOMATITIS,NONE_APPLICABLE,complaint,,,,clinician_approved
+CHRONIC_SUPPURATIVE_OTITIS_MEDIA,RF_INTRACRANIAL_COMPLICATION_OR_MASTOIDITIS,complaint,EAR_PAIN,"[LLM DRAFT] Severe, progressive otalgia accompanied by temporal headache, high fever, or signs of meningism indicating mastoiditis or intracranial spread from chronic ear infection.",,ai_drafted_unverified
+CHRONIC_SUPPURATIVE_OTITIS_MEDIA,RF_SEVERE_OTOGENIC_COMPLICATION,complaint,EAR_DISCHARGE,"[LLM DRAFT] Copious purulent otorrhea accompanied by acute vertigo, facial nerve paralysis, or sensorineural hearing loss suggesting labyrinthine or intratemporal complications.",,ai_drafted_unverified
+HYPOXIA,NONE_APPLICABLE,complaint,,,,clinician_approved
+PULSATILE_TINNITUS_RIGHT_EAR,NONE_APPLICABLE,complaint,,,,clinician_approved
+SORE_THROAT,RF_EPIGLOTTITIS_AIRWAY,complaint,SORE_THROAT,"[LLM DRAFT] Severe sore throat accompanied by stridor, drooling, or acute respiratory distress indicating impending airway obstruction",,ai_drafted_unverified
+SORE_THROAT,RF_RETROPHARYNGEAL_ABSCESS,complaint,SORE_THROAT,"[LLM DRAFT] Severe sore throat with torticollis, neck swelling, or inability to swallow secretions suggesting deep neck space infection",,ai_drafted_unverified
+TONSILLITIS,RF_PERITONSILLAR_ABSCESS_OR_SEVERE_AIRWAY_INFLAMMATION_CAUSING_UPPER_AIRWAY_OBSTRUCTION,complaint,SORE_THROAT,"[LLM DRAFT] Severe sore throat accompanied by difficulty breathing, stridor, drooling, or inability to swallow secretions.",,ai_drafted_unverified
+TONSILLITIS,RF_ACUTE_OTITIS_MEDIA_OR_MASTOIDITIS_WITH_COMPLICATION,complaint,EAR_PAIN,[LLM DRAFT] Severe ear pain associated with otorrhea and high fever suggesting secondary deep tissue spread.,,ai_drafted_unverified
+VIRAL_UPPER_RESPIRATORY_INFECTION,NONE_APPLICABLE,complaint,,,,clinician_approved

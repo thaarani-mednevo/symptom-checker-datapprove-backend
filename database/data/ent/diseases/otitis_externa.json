@@ -1,0 +1,104 @@
+﻿{
+    "id":  "ENT_DIS_ENT_010",
+    "code":  "OTITIS_EXTERNA",
+    "name":  "Otitis externa",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Otitis externa, also called swimmer\u0027s ear, is inflammation of the ear canal. It often presents with ear pain, swelling of the ear canal, and occasionally decreased hearing.",
+    "complaints":  [
+                       {
+                           "code":  "EAR_PAIN",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EAR_CANAL_PAIN",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EAR_DISCHARGE",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "EAR_ITCHING",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "TRAGUS_TENDERNESS",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SWIMMING",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "EAR_CANAL_TRAUMA",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_NECROTIZING_OTITIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SEVERE_EAR_PAIN",
+                          "condition":  "Severe, deep ear pain especially in diabetics or immunocompromised"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IMMUNOCOMPROMISED",
+                          "text":  "Are you diabetic, or do you have any condition that weakens your immune system?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTITIS_EXTERNA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "3135009",
+    "snomed_verified_name":  "Otitis externa",
+    "icd10_code":  "H60.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified otitis externa, unspecified ear",
+    "evidence_ids":  [
+                         "EVID_OTITIS_EXTERNA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

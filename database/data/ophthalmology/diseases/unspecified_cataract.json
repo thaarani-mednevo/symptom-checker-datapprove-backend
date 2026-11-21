@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_024",
+    "code":  "UNSPECIFIED_CATARACT",
+    "name":  "Unspecified cataract",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "A cataract is a cloudy area in the lens of the eye that impairs vision. How fast a cataract develops depends on the type and one or both eyes may be affected by the condition.",
+    "complaints":  [
+                       {
+                           "code":  "GLARE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GLARE_AND_HALOS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DIFFICULTY_READING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NIGHT_VISION_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "UV_EXPOSURE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, painless loss of vision due to lens dislocation or traumatic cataract"
+                      },
+                      {
+                          "code":  "RF_ACUTE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with red eye, possible lens dislocation or acute glaucoma"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_PAINLESS_LOSS_OF_VIS",
+                          "text":  "[LLM DRAFT] Do you have sudden, painless loss of vision in one eye?",
+                          "purpose":  "sudden vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_CATARACT_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_SEE_HALOS_OR_GLARE_AROUND_LIGHTS?",
+                          "text":  "[LLM DRAFT] Do you see halos or glare around lights?",
+                          "purpose":  "visual distortion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_CATARACT_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_DIFFICULTY_SEEING_AT_NIGHT?",
+                          "text":  "[LLM DRAFT] Do you have difficulty seeing at night?",
+                          "purpose":  "night vision difficulty",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_CATARACT_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H26.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified cataract",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_CATARACT"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

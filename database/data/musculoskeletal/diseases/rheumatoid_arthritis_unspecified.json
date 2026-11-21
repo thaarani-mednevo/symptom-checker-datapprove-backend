@@ -1,0 +1,76 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_013",
+  "code": "RHEUMATOID_ARTHRITIS_UNSPECIFIED",
+  "name": "Rheumatoid arthritis, unspecified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Rheumatoid arthritis (RA) is a long-term autoimmune disorder that primarily affects joints. It typically results in warm, swollen, and painful joints.",
+  "complaints": [
+    {
+      "code": "IMPAIRED_FUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "POLYARTHRITIS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "WARM",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SWOLLEN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAINFUL_JOINTS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M06.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Rheumatoid arthritis, unspecified",
+  "evidence_ids": [
+    "EVID_RHEUMATOID_ARTHRITIS_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

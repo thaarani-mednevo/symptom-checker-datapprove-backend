@@ -1,0 +1,2 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_GER_001,FALLS,Falls,geriatric,geriatric,complaint,,161898004,R29.6,1.0,true,,

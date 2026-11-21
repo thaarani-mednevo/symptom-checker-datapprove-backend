@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "PRECOCIOUS_PUBERTY",
+    "complaint_name":  "Precocious puberty",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PRECOC_001",
+                          "text":  "How old is the child and what signs of puberty have appeared?",
+                          "purpose":  "age_features",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRECOCIOUS_PUBERTY_AGE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PRECOC_002",
+                          "text":  "Has there been a rapid growth spurt?",
+                          "purpose":  "growth",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GROWTH_ACCELERATION",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PRECOC_003",
+                          "text":  "Is there breast development before age 8 in a girl or testicular enlargement before age 9 in a boy?",
+                          "purpose":  "definition",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PRECOCIOUS_PUBERTY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PRECOCIOUS_PUBERTY_CONFIRMED",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PRECOC_004",
+                          "text":  "Is there any body odour, acne, or pubic hair?",
+                          "purpose":  "androgen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ANDROGEN_SIGNS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

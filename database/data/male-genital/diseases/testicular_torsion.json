@@ -1,0 +1,164 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_MG_012",
+    "code":  "TESTICULAR_TORSION",
+    "name":  "Testicular torsion",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Testicular torsion is a urological emergency caused by twisting of the spermatic cord, compromising testicular blood supply and causing ischaemia. It is most common in adolescents (peak incidence 12–18 years) and is associated with the \u0027bell-clapper\u0027 deformity. It presents with sudden severe unilateral scrotal pain, often with nausea and vomiting, and an elevated, transversely lying (\u0027horizontal\u0027) testicle with absent cremasteric reflex. Time to surgery is critical: salvage rates are \u003e90% within 6 hours, ~50% at 12 hours, and near-zero after 24 hours. Diagnosis is clinical — scrotal exploration must not be delayed for imaging if clinical suspicion is high.",
+    "complaints":  [
+                       {
+                           "code":  "TESTICULAR_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "TESTICULAR_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SUDDEN_SEVERE_SCROTAL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HIGH_RIDING_HORIZONTAL_TESTICLE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ABSENT_CREMASTERIC_REFLEX",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SCROTAL_ERYTHEMA_AND_SWELLING",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BELL_CLAPPER_DEFORMITY",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "ADOLESCENT_MALE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREVIOUS_CONTRALATERAL_TORSION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "UNDESCENDED_TESTIS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_PAIN",
+                          "condition":  "Sudden severe scrotal pain with high-riding or horizontally lying testicle and absent cremasteric reflex — testicular torsion, emergency surgical exploration within 6 hours"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MG_TT_001",
+                          "text":  "Did the scrotal pain start suddenly and severely, within minutes?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TESTICULAR_TORSION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_MG_TT_002",
+                          "text":  "Is the affected testicle sitting higher or lying in a different position than the other side?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TESTICULAR_TORSION_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_MG_TT_003",
+                          "text":  "Is the pain accompanied by nausea or vomiting?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TESTICULAR_TORSION_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_MG_TT_004",
+                          "text":  "How long ago did the pain start?",
+                          "purpose":  "time_critical_assessment",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TESTICULAR_TORSION_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EPIDIDYMO_ORCHITIS",
+                              "distinguishing_feature":  "Epididymo-orchitis has gradual onset with fever, dysuria, and urethral discharge in sexually active males. Torsion has sudden onset, absent cremasteric reflex, and high-riding testicle. When in doubt, explore surgically."
+                          },
+                          {
+                              "disease_code":  "TESTICULAR_PAIN_UNSPECIFIED",
+                              "distinguishing_feature":  "Unspecified testicular pain is a holding diagnosis; torsion must be excluded first by surgical exploration or Doppler ultrasound demonstrating absent intratesticular flow."
+                          }
+                      ],
+    "age_relevance":  "paediatric_adolescent_predominant",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0000031"
+                  ],
+    "snomed_code":  "31996006",
+    "snomed_verified_name":  "Torsion of testis",
+    "icd10_code":  "N44.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Torsion of testis, unspecified",
+    "evidence_ids":  [
+                         "EVID_TESTICULAR_TORSION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "VAGINAL_DISCHARGE",
+    "complaint_name":  "Vaginal discharge",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_VD_001",
+                          "text":  "What is the colour and consistency — clear, white, yellow, green, or bloody?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DISCHARGE_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VD_002",
+                          "text":  "Is there a fishy or unpleasant odour?",
+                          "purpose":  "odour",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DISCHARGE_ODOUR",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VD_003",
+                          "text":  "Is there itching, soreness, or pain on intercourse?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VAGINITIS_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VD_004",
+                          "text":  "Have you had a new sexual partner or unprotected sex?",
+                          "purpose":  "sti_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "STI_EXPOSURE_WITH_DISCHARGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VD_005",
+                          "text":  "Is there bleeding after sex or between periods?",
+                          "purpose":  "cervical",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTCOITAL_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "POSTCOITAL_BLEEDING",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

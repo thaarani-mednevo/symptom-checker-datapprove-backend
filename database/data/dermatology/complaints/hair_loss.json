@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_010",
+  "code": "HAIR_LOSS",
+  "name": "Hair loss",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "Hair loss, also known as alopecia or baldness, refers to a loss of hair from part of the head or body. Typically at least the head is involved.",
+  "hpo_codes": [],
+  "snomed_code": "298000004",
+  "snomed_verified_name": "Loss of scalp hair",
+  "icd10_code": "L65.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Nonscarring hair loss, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

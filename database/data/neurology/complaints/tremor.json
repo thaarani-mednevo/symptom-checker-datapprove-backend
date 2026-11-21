@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_025",
+  "code": "TREMOR",
+  "name": "Tremor",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by tremor.",
+  "hpo_codes": [],
+  "snomed_code": "26079004",
+  "snomed_verified_name": "Tremor",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

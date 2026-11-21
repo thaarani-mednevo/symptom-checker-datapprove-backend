@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_031",
+    "code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD",
+    "name":  "Anorexia nervosa, binge eating/purging type, mild",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Anorexia nervosa (AN), commonly referred to as anorexia, is an eating disorder characterized by predominant food restriction, body image disturbance, fear of gaining weight, and an overwhelming desire to be thin. These characteristics often mean individuals undergo severe malnutrition as a result of the disorder.",
+    "complaints":  [
+                       {
+                           "code":  "LOSS_OF_APPETITE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_GAINING_WEIGHT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRONG_DESIRE_TO_BE_THIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FOOD_RESTRICTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ELECTROLYTE_ABNORMALITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Presence of severe dizziness, fainting, cardiac palpitations, or seizures secondary to purging behaviors."
+                      },
+                      {
+                          "code":  "RF_SUICIDAL_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Expressing active thoughts of suicide or self-harm."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_1",
+                          "text":  "Do you experience recurrent episodes of eating unusually large amounts of food while feeling a loss of control?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_2",
+                          "text":  "Do you regularly engage in compensatory behaviors such as self-induced vomiting, misuse of laxatives, or excessive exercise?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_3",
+                          "text":  "Have you experienced dizziness, fainting, or severe weakness recently?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by restriction of energy intake without engaging in recurrent binge eating or purging behaviors."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with characteristic features of anorexia nervosa but lacks specific subtype documentation regarding binge-eating/purging or severity level."
+                          },
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with profound, debilitating fatigue and post-exertional malaise rather than core psychopathology centered on body weight, distorted self-image, and intentional weight loss."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F50.020",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anorexia nervosa, binge eating/purging type, mild",
+    "evidence_ids":  [
+                         "EVID_ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

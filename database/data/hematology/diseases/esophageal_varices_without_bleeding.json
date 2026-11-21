@@ -1,0 +1,107 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_005",
+    "code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING",
+    "name":  "Esophageal varices without bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Esophageal varices are extremely dilated sub-mucosal veins in the lower third of the esophagus. They are most often a consequence of portal hypertension, commonly due to cirrhosis.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "VOMITING_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PASSING_BLACK_STOOL",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OR_LIVER_BASED",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CIRCULATION)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Acute gastrointestinal bleeding manifested as hematemesis or melena due to variceal rupture."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EVER_VOMITED_BRIGHT_RED_BLOOD_O",
+                          "text":  "[LLM DRAFT] Have you ever vomited bright red blood or material that looks like dark coffee grounds?",
+                          "purpose":  "screens for upper gastrointestinal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_YOUR_STOOLS_TURNING_BLA",
+                          "text":  "[LLM DRAFT] Have you noticed your stools turning black, tarry, or sticky like road pitch?",
+                          "purpose":  "screens for gastrointestinal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with hematemesis or melena rather than being incidentally found or asymptomatic."
+                          },
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with retrosternal chest pain or heartburn rather than submucosal venous dilation."
+                          },
+                          {
+                              "disease_code":  "DUODENITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with epigastric pain and duodenal mucosal inflammation rather than lower esophageal venous varices."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "17709002",
+    "snomed_verified_name":  "Bleeding esophageal varices",
+    "icd10_code":  "I85.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Esophageal varices without bleeding",
+    "evidence_ids":  [
+                         "EVID_ESOPHAGEAL_VARICES_WITHOUT_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

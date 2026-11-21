@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "NOCTURIA",
+    "complaint_name":  "Nocturia",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_NOC_001",
+                          "text":  "How many times do you wake to pass urine at night?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NOCTURIA_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NOC_002",
+                          "text":  "Is there associated daytime frequency, urgency, or dysuria?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NOCTURIA_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NOC_003",
+                          "text":  "Do you have ankle swelling, breathlessness, or need extra pillows to sleep?",
+                          "purpose":  "cardiac",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CARDIAC_NOCTURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NOC_004",
+                          "text":  "Are you a male over 50?",
+                          "purpose":  "bph_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "BPH_RISK",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

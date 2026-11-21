@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_014",
+  "code": "GALACTORRHEA",
+  "name": "Galactorrhea",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Galactorrhea or lactorrhea is the spontaneous flow of milk from the breast, unassociated with childbirth or nursing.",
+  "hpo_codes": [],
+  "snomed_code": "237801002",
+  "snomed_verified_name": "Normoprolactinemic galactorrhea",
+  "icd10_code": "N64.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Galactorrhea not associated with childbirth",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

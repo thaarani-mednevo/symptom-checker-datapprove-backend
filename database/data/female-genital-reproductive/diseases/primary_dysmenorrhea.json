@@ -1,0 +1,114 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_019",
+    "code":  "PRIMARY_DYSMENORRHEA",
+    "name":  "Primary dysmenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Primary dysmenorrhea.",
+    "complaints":  [
+                       {
+                           "code":  "DYSMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN_DURING_FIRST_FEW_DAYS_OF_MENSTRUATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NO_UNDERLYING_PROBLEM",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "UTERINE_FIBROIDS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ADENOMYOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ENDOMETRIOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PAIN_TIMING_CYCLE",
+                          "text":  "Does the pain mainly occur during your period?",
+                          "purpose":  "Confirm cyclical pain pattern",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_DYSMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm onset near menarche",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRIMARY_DYSMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SECONDARY_DYSMENORRHEA",
+                              "distinguishing_feature":  "Primary dysmenorrhea has no identifiable pelvic pathology and typically starts near menarche; secondary dysmenorrhea is due to an underlying condition (e.g. endometriosis, fibroids) and often starts later with worsening pain"
+                          },
+                          {
+                              "disease_code":  "DYSMENORRHEA_UNSPECIFIED",
+                              "distinguishing_feature":  "Primary dysmenorrhea has been specifically confirmed to have no underlying pathology, unlike unspecified dysmenorrhea where this hasn\u0027t been established"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "65754002",
+    "snomed_verified_name":  "Primary dysmenorrhea",
+    "icd10_code":  "N94.4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Primary dysmenorrhea",
+    "evidence_ids":  [
+                         "EVID_PRIMARY_DYSMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

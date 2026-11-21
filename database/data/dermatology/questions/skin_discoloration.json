@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "SKIN_DISCOLORATION",
+    "complaint_name":  "Skin discoloration",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_SD_001",
+                                       "Is the discoloration lighter, darker, red, or white compared to normal skin?",
+                                       "character",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "DISCOLORATION_TYPE",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_SD_002",
+                          "text":  "Where on the body is it and how large an area?",
+                          "purpose":  "distribution",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DISCOLORATION_DISTRIBUTION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SD_003",
+                          "text":  "Is it symmetrical on both sides of the body?",
+                          "purpose":  "symmetry",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SYMMETRICAL_DISCOLORATION",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SD_004",
+                          "text":  "Is there itching or scaling on the affected skin?",
+                          "purpose":  "symptom",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DISCOLORATION_SYMPTOM",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SD_005",
+                          "text":  "Has it been gradually spreading or stable?",
+                          "purpose":  "progression",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DISCOLORATION_PROGRESSION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

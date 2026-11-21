@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "HEMATOCHEZIA",
+    "complaint_name":  "Hematochezia",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HAE_001",
+                          "text":  "Is the blood bright red, on the paper, or mixed in with the stool?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_BLEEDING_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HAE_002",
+                          "text":  "Have you had a change in bowel habit or weight loss?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_008)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ALARM_WITH_RECTAL_BLEEDING",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HAE_003",
+                          "text":  "Are you over 40?",
+                          "purpose":  "age",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_009)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "AGE_OVER_40_RECTAL_BLEEDING",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HAE_004",
+                          "text":  "Is there a large volume of blood or are you feeling faint?",
+                          "purpose":  "severe",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MASSIVE_RECTAL_BLEEDING",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

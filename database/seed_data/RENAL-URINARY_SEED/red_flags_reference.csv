@@ -1,0 +1,15 @@
+code,name,action,source_status
+RF_RU_001,Complete inability to urinate (acute urinary retention) — no output despite urge,go_to_er_immediately,clinician_approved
+RF_RU_002,Anuria in the setting of known trauma,go_to_er_immediately,clinician_approved
+RF_RU_003,"Haematuria with clots, severe flank/back pain, or fever (obstructing clot, stone with infection, or tumour)",urgent_specialist_referral,clinician_approved
+RF_RU_004,Haematuria with unintentional weight loss or age >40 (red flag for urological malignancy),urgent_specialist_referral,clinician_approved
+RF_RU_005,"Dysuria with high fever, rigors, flank pain, nausea/vomiting (suspected pyelonephritis or urosepsis)",go_to_er_immediately,clinician_approved
+RF_RU_006,"Hypertensive urgency: BP ≥180/120 mmHg with new headache, visual change, or confusion",go_to_er_immediately,clinician_approved
+RF_RU_007,Foamy urine with progressive leg/facial oedema (suspected nephrotic syndrome),urgent_specialist_referral,clinician_approved
+RF_RU_008,"Pneumaturia (gas in urine stream) — suggests colovesical fistula, needs urgent surgical review",urgent_specialist_referral,clinician_approved
+RF_RU_009,New urinary incontinence following trauma or spinal injury,go_to_er_immediately,clinician_approved
+RF_RU_010,Poor stream / dribbling with perineal pain and fever in a male (suspected prostate abscess),go_to_er_immediately,clinician_approved
+RF_RU_011,Foamy urine in pregnancy with headache or hypertension (suspected pre-eclampsia),go_to_er_immediately,clinician_approved
+RF_RU_012,"Oliguria or anuria with confusion, severe oedema, or absent urine output >12h (acute kidney injury / renal failure)",go_to_er_immediately,clinician_approved
+RF_RU_013,"Dysuria with painless penile/vaginal discharge and sexual exposure (STI — chlamydia, trichomonal, candidal)",urgent_specialist_referral,clinician_approved
+RF_RU_014,Bladder pain with gross haematuria (interstitial cystitis with bleeding),urgent_specialist_referral,clinician_approved

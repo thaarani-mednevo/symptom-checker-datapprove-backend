@@ -1,0 +1,15 @@
+{
+  "complaint_code": "EDEMA",
+  "complaint_name": "Edema",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_OEDEMA_001", "text": "Is the swelling in both legs equally, or mainly one side?", "purpose": "laterality", "answer_type": "multiple_choice", "options": ["Both legs equally", "Mainly right leg", "Mainly left leg", "Face and ankles", "Generalised"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "OEDEMA_DISTRIBUTION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_OEDEMA_002", "text": "Does the swelling pit (leave an indentation) when you press it firmly for a few seconds?", "purpose": "pitting_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "PITTING_OEDEMA", "yes_weight": 2, "no_weight": 1 },
+    { "code": "Q_CMP_OEDEMA_003", "text": "Is the swelling worse at the end of the day and better in the morning?", "purpose": "diurnal_variation", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "DIURNAL_OEDEMA", "yes_weight": 1, "no_weight": 0 },
+    { "code": "Q_CMP_OEDEMA_004", "text": "Do you also have breathlessness or difficulty breathing when lying flat?", "purpose": "cardiac_cause_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "CARDIAC_DYSPNOEA_WITH_OEDEMA", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_OEDEMA_005", "text": "Have you noticed any sudden worsening of the swelling or breathlessness in the last 24 hours?", "purpose": "red_flag_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "ACUTE_DECOMPENSATION", "yes_weight": 4, "no_weight": -1 }
+  ]
+}

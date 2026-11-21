@@ -1,0 +1,101 @@
+{
+  "complaint_code": "TESTICULAR_SWELLING",
+  "complaint_name": "Testicular Swelling",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_TSWEL_001",
+      "text": "Is the testicular swelling painful or completely painless, and how long have you had it?",
+      "purpose": "Painless testicular swelling is a red flag for testicular malignancy; duration helps gauge urgency",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Painless, less than 4 weeks",
+        "Painless, 4–12 weeks",
+        "Painless, more than 12 weeks",
+        "Painful, less than 1 week (acute)",
+        "Painful, more than 1 week"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "TESTICULAR_SWELLING_CHARACTER",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TSWEL_002",
+      "text": "Is the swelling confined to the testicle itself and is it hard or firm to touch?",
+      "purpose": "A hard, firm mass within the testis strongly suggests testicular cancer",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "HARD_INTRATESTICULAR_MASS",
+      "yes_weight": 5,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_TSWEL_003",
+      "text": "Does the swelling transilluminate (light passes through it) when a torch is shone behind the scrotum?",
+      "purpose": "Transillumination is characteristic of a hydrocele (fluid-filled, benign), distinguishing it from solid malignant mass",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HYDROCELE_VARICOCELE_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "TRANSILLUMINATION_SCROTAL",
+      "yes_weight": -2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_TSWEL_004",
+      "text": "Have you noticed any associated back pain, abdominal mass, or enlarged lymph nodes?",
+      "purpose": "Back pain from para-aortic lymphadenopathy or abdominal mass may indicate metastatic testicular cancer",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "METASTATIC_FEATURES_TESTICULAR",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TSWEL_005",
+      "text": "Have you had fever, pain, or urinary symptoms suggesting infection?",
+      "purpose": "Infective orchitis or epididymo-orchitis presents with fever, pain, and urinary symptoms",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(EPIDIDYMO_ORCHITIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "INFECTIVE_ORCHITIS_FEATURES",
+      "yes_weight": -1,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_TSWEL_006",
+      "text": "Have you had a previous undescended testicle (cryptorchidism), even if surgically corrected?",
+      "purpose": "Cryptorchidism is the strongest risk factor for testicular germ cell tumour",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HIGH_RISK_TESTICULAR_CANCER_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "CRYPTORCHIDISM_HISTORY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TSWEL_007",
+      "text": "Do you have breast tenderness or enlargement (gynaecomastia)?",
+      "purpose": "Gynaecomastia can occur with hCG-secreting testicular tumours (e.g. choriocarcinoma)",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "GYNAECOMASTIA_ASSOCIATED",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

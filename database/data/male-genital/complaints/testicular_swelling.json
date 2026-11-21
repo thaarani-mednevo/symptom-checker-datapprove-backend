@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_002",
+  "code": "TESTICULAR_SWELLING",
+  "name": "Testicular swelling",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by testicular swelling.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N50.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified disorders of the male genital organs",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

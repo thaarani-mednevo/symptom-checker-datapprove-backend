@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_002",
+  "code": "ORTHOPNEA",
+  "name": "Orthopnea",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Orthopnea or orthopnoea is shortness of breath (dyspnea) that occurs when lying flat, causing the person to have to sleep propped up in bed or sitting in a chair. It is commonly seen as a late manifestation of heart failure, resulting from fluid redistribution into the central circulation, causing an increase in pulmonary capillary pressure and causing difficulty in breathing.",
+  "hpo_codes": [
+    "HP:0012765"
+  ],
+  "snomed_code": "62744007",
+  "snomed_verified_name": "Orthopnea",
+  "icd10_code": "R06.01",
+  "icd10_validated": true,
+  "icd10_official_description": "Orthopnea",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

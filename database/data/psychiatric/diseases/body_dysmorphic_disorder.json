@@ -1,0 +1,113 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_045",
+    "code":  "BODY_DYSMORPHIC_DISORDER",
+    "name":  "Body dysmorphic disorder",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Body dysmorphic disorder (BDD), also known in some contexts as dysmorphophobia or simply dysmorphia, is a mental disorder defined by an overwhelming preoccupation with a perceived flaw in one\u0027s physical appearance. In BDD\u0027s delusional variant, the flaw is imagined.",
+    "complaints":  [
+                       {
+                           "code":  "OBSESSIVE_THOUGHTS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PREOCCUPATION_WITH_PERCEIVED_APPEARANCE_FLAW",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "REPETITIVE_MIRROR_CHECKING_OR_AVOIDANCE",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXCESSIVE_GROOMING_OR_SKIN_PICKING",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CAMOUFLAGING_BEHAVIOR",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "AVOIDANCE_OF_SOCIAL_SITUATIONS_DUE_TO_APPEARANCE",
+                         "relationship":  "claude_gap_fill_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BDD_SUICIDALITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Patient reports thoughts of self-harm or suicide connected to appearance concerns."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_BDD_TIME_PREOCCUPATION",
+                          "text":  "How much of your day do you spend thinking about or checking this appearance concern?",
+                          "purpose":  "screening",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BODY_DYSMORPHIC_DISORDER_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_BDD_SAFETY",
+                          "text":  "Have you had any thoughts of harming yourself because of how you feel about your appearance?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BODY_DYSMORPHIC_DISORDER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "83482000",
+    "snomed_verified_name":  "Body dysmorphic disorder",
+    "icd10_code":  "F45.22",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Body dysmorphic disorder",
+    "evidence_ids":  [
+                         "EVID_BODY_DYSMORPHIC_DISORDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

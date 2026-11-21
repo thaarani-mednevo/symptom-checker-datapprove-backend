@@ -1,0 +1,97 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_015",
+  "code": "APHASIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+  "name": "Aphasia following nontraumatic subarachnoid hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Aphasia, also known as dysphasia, is an impairment in a person's ability to comprehend or formulate language because of dysfunction in specific brain regions. The major causes are stroke and head trauma; prevalence is hard to determine, but aphasia due to stroke is estimated to be 0.1–0.4% in developed countries.",
+  "complaints": [
+    {
+      "code": "APHASIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EXPRESSIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "RECEPTIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "SEVERE_HEADACHE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "HEMIPARESIS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "ADVANCED_AGE",
+      "strength": "strong"
+    },
+    {
+      "code": "SEVERITY_OF_SUBARACHNOID_HEMORRHAGE_EG_HIGH_HUNT_AND_HESS_OR_FISHER_GRADE",
+      "strength": "strong"
+    },
+    {
+      "code": "PRESENCE_OF_CEREBRAL_VASOSPASM_OR_DELAYED_CEREBRAL_ISCHEMIA",
+      "strength": "strong"
+    },
+    {
+      "code": "LEFT_HEMISPHERE_STROKE_OR_ANEURYSM_LOCATION_AFFECTING_LANGUAGE_CENTERS",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] New or recurrent seizure activity in a patient with a recent nontraumatic subarachnoid hemorrhage indicating acute neurological deterioration or vasospasm."
+    },
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset or progression of hemiplegia or focal motor deficits suggesting acute cerebral ischemia secondary to vasospasm."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.020",
+  "icd10_validated": true,
+  "icd10_official_description": "Aphasia following nontraumatic subarachnoid hemorrhage",
+  "evidence_ids": [
+    "EVID_APHASIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

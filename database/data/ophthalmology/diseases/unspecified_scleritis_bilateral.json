@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_011",
+    "code":  "UNSPECIFIED_SCLERITIS_BILATERAL",
+    "name":  "Unspecified scleritis, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Scleritis is a serious inflammatory disease that affects the white outer coating of the eye, known as the sclera. The disease is often contracted through association with other diseases of the body, such as granulomatosis with polyangiitis or rheumatoid arthritis.",
+    "complaints":  [
+                       {
+                           "code":  "RED_EYE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EYE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "REDUCED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RHEUMATOID_ARTHRITIS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SYSTEMIC_LUPUS_ERYTHEMATOSUS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "GRANULOMATOSIS_WITH_POLYANGIITIS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "INFECTIONS",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden bilateral vision loss in the setting of scleritis"
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe bilateral eye pain with redness and possible vision compromise"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SEVERE_PAIN_BEHIND_YOUR_EYES",
+                          "text":  "[LLM DRAFT] Do you have severe pain behind your eyes?",
+                          "purpose":  "severe eye pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_SCLERITIS_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_REDNESS_IN_BOTH_EYES?",
+                          "text":  "[LLM DRAFT] Is there redness in both eyes?",
+                          "purpose":  "bilateral redness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_SCLERITIS_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_A_WHITE_OR_GRAY_SPOT_ON_TH",
+                          "text":  "[LLM DRAFT] Do you notice a white or gray spot on the white part of your eye?",
+                          "purpose":  "scleritis sign",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_SCLERITIS_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H15.003",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified scleritis, bilateral",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_SCLERITIS_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,96 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_DERM_013",
+    "code":  "ONYCHOMYCOSIS",
+    "name":  "Onychomycosis",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Onychomycosis, also known as tinea unguium, is a fungal infection of the nail. Symptoms may include white or yellow nail discoloration, thickening of the nail, and separation of the nail from the nail bed.",
+    "complaints":  [
+                       {
+                           "code":  "NAIL_ABNORMALITIES",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NAIL_THICKENING",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NAIL_DISCOLORATION",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BRITTLE_CRUMBLY_NAIL",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "NAIL_TRAUMA",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "COMMUNAL_SHOWER_EXPOSURE",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_NAIL_SECONDARY_INFECTION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "NAIL_THICKENING",
+                          "condition":  "Spreading redness, swelling, warmth, or pus around the nail — possible secondary bacterial infection"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_NAIL_INFECTION_SIGNS",
+                          "text":  "Is there redness, swelling, warmth, or pus around the affected nail?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ONYCHOMYCOSIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "414941008",
+    "snomed_verified_name":  "Onychomycosis",
+    "icd10_code":  "B35.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Tinea unguium",
+    "evidence_ids":  [
+                         "EVID_ONYCHOMYCOSIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

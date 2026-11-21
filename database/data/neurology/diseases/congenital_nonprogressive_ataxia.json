@@ -1,0 +1,89 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_078",
+  "code": "CONGENITAL_NONPROGRESSIVE_ATAXIA",
+  "name": "Congenital nonprogressive ataxia",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Congenital nonprogressive ataxia.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "GAIT_ATAXIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "TRUNCAL_HYPOTONIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "DELAYED_MOTOR_MILESTONES",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "NYSTAGMUS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "chronic",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "715825009",
+  "snomed_verified_name": "Spinocerebellar ataxia type 29",
+  "icd10_code": "G11.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Congenital nonprogressive ataxia",
+  "evidence_ids": [
+    "EVID_CONGENITAL_NONPROGRESSIVE_ATAXIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

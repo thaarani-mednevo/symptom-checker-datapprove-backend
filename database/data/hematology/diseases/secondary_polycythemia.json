@@ -1,0 +1,91 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_013",
+    "code":  "SECONDARY_POLYCYTHEMIA",
+    "name":  "Secondary polycythemia",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Polycythemia is a medical condition suggested by a laboratory finding that the hematocrit and/or hemoglobin concentration are increased in the blood, although this finding is also present in capillary leak syndrome. Polycythemia is sometimes called erythrocytosis, and there is significant overlap in the two findings, but the terms are not the same: polycythemia describes any increase in hematocrit and/or hemoglobin, while erythrocytosis describes an increase specifically in the number of red blood cells in the blood.",
+    "complaints":  [
+                       {
+                           "code":  "POLYCYTHEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THROMBOSIS_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Acute arterial or venous thrombosis such as stroke, myocardial infarction, deep vein thrombosis, or pulmonary embolism resulting from hyperviscosity."
+                      },
+                      {
+                          "code":  "RF_BLEEDING_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Severe or uncontrollable hemorrhage, such as major gastrointestinal bleeding, due to acquired von Willebrand syndrome or abnormal hemostasis."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_HISTORY_OF_CHRONIC_LUNG_DI",
+                          "text":  "[LLM DRAFT] Do you have a history of chronic lung disease, sleep apnea, or smoking?",
+                          "purpose":  "screens for chronic hypoxia causes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SECONDARY_POLYCYTHEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SUDDEN_WEAKNESS_CO",
+                          "text":  "[LLM DRAFT] Are you experiencing sudden weakness, confusion, or vision changes?",
+                          "purpose":  "screens for acute thrombotic complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SECONDARY_POLYCYTHEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "POLYCYTHEMIA_VERA",
+                              "distinguishing_feature":  "[LLM DRAFT] Associated with JAK2 mutation, leukocytosis, thrombocytosis, and low serum erythropoietin levels."
+                          },
+                          {
+                              "disease_code":  "FAMILIAL_ERYTHROCYTOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Autosomal dominant inheritance pattern with normal oxygen affinity and high erythropoietin independent of hypoxia."
+                          },
+                          {
+                              "disease_code":  "POLYCYTHEMIA_NEONATORUM",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs exclusively in newborns, often due to delayed cord clamping or twin-twin transfusion."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "44865000",
+    "snomed_verified_name":  "Secondary polycythemia",
+    "icd10_code":  "D75.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Secondary polycythemia",
+    "evidence_ids":  [
+                         "EVID_SECONDARY_POLYCYTHEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

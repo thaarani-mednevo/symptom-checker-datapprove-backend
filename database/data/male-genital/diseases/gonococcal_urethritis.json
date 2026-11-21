@@ -1,0 +1,140 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_MG_015",
+    "code":  "GONOCOCCAL_URETHRITIS",
+    "name":  "Gonococcal urethritis",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Gonococcal urethritis is inflammation of the urethra caused by Neisseria gonorrhoeae, a gram-negative diplococcus. It is one of the most common sexually transmitted infections worldwide. In men, it typically presents with a profuse, purulent or mucopurulent urethral discharge and dysuria, usually appearing 2–7 days after exposure. Asymptomatic infection is less common in men than women but can occur. Untreated infection may ascend to cause epididymo-orchitis, prostatitis, or disseminated gonococcal infection (DGI) with arthritis, tenosynovitis, and skin lesions. Treatment requires dual therapy due to increasing antibiotic resistance; partner notification and testing are mandatory.",
+    "complaints":  [
+                       {
+                           "code":  "URETHRAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "GENITAL_ULCER",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PURULENT_URETHRAL_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "URETHRAL_MEATAL_ERYTHEMA",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNPROTECTED_SEXUAL_INTERCOURSE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "MULTIPLE_SEXUAL_PARTNERS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MEN_WHO_HAVE_SEX_WITH_MEN",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREVIOUS_STI",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "YOUNG_AGE_15_TO_30",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "URETHRAL_DISCHARGE",
+                          "condition":  "Urethral discharge with fever, joint pain, or skin lesions — suspect disseminated gonococcal infection, urgent evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MG_GU_001",
+                          "text":  "Do you have a discharge from the tip of your penis?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GONOCOCCAL_URETHRITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_GU_002",
+                          "text":  "Have you had unprotected sexual intercourse in the past 2 weeks?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GONOCOCCAL_URETHRITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_GU_003",
+                          "text":  "Do you have pain or swelling in any joints along with the urethral discharge?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "GONOCOCCAL_URETHRITIS_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHLAMYDIAL_URETHRITIS",
+                              "distinguishing_feature":  "Chlamydial urethritis typically produces a scant, clear or mucoid discharge with milder symptoms and longer incubation (7–21 days); gonococcal urethritis produces copious purulent discharge with 2–7 day incubation. Both may coexist and require simultaneous treatment."
+                          },
+                          {
+                              "disease_code":  "NON_GONOCOCCAL_URETHRITIS",
+                              "distinguishing_feature":  "Non-gonococcal urethritis (NGU) is diagnosed when NAAT for gonorrhoea is negative; most cases are due to Chlamydia trachomatis, Mycoplasma genitalium, or Ureaplasma."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_predominant",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0012242"
+                  ],
+    "snomed_code":  "15628003",
+    "snomed_verified_name":  "Gonorrhea",
+    "icd10_code":  "A54.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gonococcal cystitis and urethritis, unspecified",
+    "evidence_ids":  [
+                         "EVID_GONOCOCCAL_URETHRITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

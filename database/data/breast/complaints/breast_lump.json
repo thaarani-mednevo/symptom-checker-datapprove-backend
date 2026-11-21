@@ -1,0 +1,17 @@
+{
+  "id": "BREAST_COMP_BRE_002",
+  "code": "BREAST_LUMP",
+  "name": "Breast lump",
+  "module": "breast",
+  "body_system": "breast",
+  "category": "complaint",
+  "description": "A breast mass, also known as a breast lump, is a localized swelling that feels different from the surrounding tissue. Breast pain, nipple discharge, or skin changes may be present.",
+  "hpo_codes": [],
+  "snomed_code": "89164003",
+  "snomed_verified_name": "Breast lump",
+  "icd10_code": "N63",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

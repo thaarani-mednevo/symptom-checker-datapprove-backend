@@ -1,0 +1,69 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_105",
+  "code": "BENIGN_PAROXYSMAL_VERTIGO_BILATERAL",
+  "name": "Benign paroxysmal vertigo, bilateral",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Benign paroxysmal positional vertigo (BPPV), sometimes called \"top shelf vertigo\", is a disorder arising from a problem in the inner ear. Symptoms are repeated, brief periods of vertigo with movement, characterized by a spinning sensation upon changes in the position of the head.",
+  "complaints": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "REPEATED_PERIODS_OF_A_SPINNING_SENSATION_WITH_MOVEMENT",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "OLDER_AGE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MINOR_HEAD_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H81.13",
+  "icd10_validated": true,
+  "icd10_official_description": "Benign paroxysmal vertigo, bilateral",
+  "evidence_ids": [
+    "EVID_BENIGN_PAROXYSMAL_VERTIGO_BILATERAL"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

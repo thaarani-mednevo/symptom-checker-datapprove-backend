@@ -1,0 +1,93 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_016",
+  "code": "STAPHYLOCOCCAL_POLYARTHRITIS",
+  "name": "Staphylococcal polyarthritis",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "A musculoskeletal condition known as Staphylococcal polyarthritis.",
+  "complaints": [
+    {
+      "code": "POLYARTHRITIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEVER_>_5_DAYS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "LARGE_LYMPH_NODES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "RASH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SORE_THROAT",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIARRHEA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEPTIC_SHOCK",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "POLYARTHRITIS",
+      "condition": "[LLM DRAFT] Patient presents with staphylococcal polyarthritis accompanied by signs of systemic instability, hypotension, altered mental status, or multi-organ dysfunction suggestive of sepsis."
+    },
+    {
+      "code": "RF_ACUTE_JOINT_DESTRUCTION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "IMPAIRED_FUNCTION",
+      "condition": "[LLM DRAFT] Patient presents with staphylococcal polyarthritis and profound, sudden loss of joint function accompanied by severe pain and systemic fever, indicating possible rapid articular cartilage and bone destruction requiring urgent surgical washout."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "201466005",
+  "snomed_verified_name": "Staphylococcal arthritis and polyarthritis",
+  "icd10_code": "M00.09",
+  "icd10_validated": true,
+  "icd10_official_description": "Staphylococcal polyarthritis",
+  "evidence_ids": [
+    "EVID_STAPHYLOCOCCAL_POLYARTHRITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

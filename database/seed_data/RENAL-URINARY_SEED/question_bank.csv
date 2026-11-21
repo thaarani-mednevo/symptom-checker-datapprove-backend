@@ -1,0 +1,24 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_RU_001,Are you completely unable to pass any urine at all despite feeling the urge?,yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_002,"Did the inability to urinate start after an injury or trauma to the abdomen, pelvis, or back?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_003,Is there blood visible in the urine?,yes_no,flag_haematuria,continue,clinician_approved
+Q_RU_004,"Is the blood in the urine accompanied by clots, severe flank/back pain, or fever?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_005,"Have you had unintentional weight loss recently, or are you over 40 years old?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_006,"Is there pain or burning when you urinate, combined with fever, chills, or back/flank pain?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_007,"Has your blood pressure been very high (≥180/120 mmHg), and do you have a headache, blurred vision, or confusion right now?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_008,"Is your urine foamy or frothy, and do you have swelling in your legs, ankles, or face?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_009,Do you notice bubbles or gas passing through the urine stream?,yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_010,"Did the loss of bladder control begin after a back injury, fall, or spinal problem?",yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_011,Is there perineal or pelvic pain along with a slow or dribbling urine stream and fever?,yes_no,escalate_red_flag,continue,clinician_approved
+Q_RU_012,"Are you currently pregnant, or did this symptom start during or after a pregnancy?",yes_no,flag_pregnancy_context,continue,clinician_approved
+Q_RU_013,Is there any discharge from the penis or vagina along with the urinary symptoms?,yes_no,flag_sti_screen,continue,clinician_approved
+Q_RU_014,Does the symptom change depending on body position (e.g. leaking only when standing up or coughing)?,yes_no,flag_postural_pattern,continue,clinician_approved
+Q_RU_015,"Do you have a known history of kidney stones, prostate problems, or bladder issues?",yes_no,flag_known_urological_history,continue,clinician_approved
+Q_RU_016,"Is the skin around the groin or thighs red, sore, or broken down from urinary leakage?",yes_no,flag_incontinence_dermatitis,continue,clinician_approved
+Q_RU_017,"Do you feel an urgent, uncontrollable need to urinate that is difficult to defer?",yes_no,flag_urgency_incontinence,continue,clinician_approved
+Q_RU_018,Have you had pelvic radiotherapy or chemotherapy for cancer in the past?,yes_no,flag_irradiation_cystitis,continue,clinician_approved
+Q_RU_019,"Have you noticed the urine being very pale or colourless, and are you drinking very large volumes of water?",yes_no,flag_polyuria_polydipsia,continue,clinician_approved
+Q_RU_020,How long have you had this urinary symptom? (days / weeks / months / years),multiple_choice,,,clinician_approved
+Q_RU_021,Do you have chronic high blood pressure or known kidney disease?,yes_no,flag_hypertensive_renal,continue,clinician_approved
+Q_RU_022,Has a recent surgical procedure or urethral catheterisation been performed?,yes_no,flag_postprocedural_stricture,continue,clinician_approved
+Q_RU_023,Does the dribbling occur after you have fully finished urinating (post-void)?,yes_no,flag_post_void_dribbling,continue,clinician_approved

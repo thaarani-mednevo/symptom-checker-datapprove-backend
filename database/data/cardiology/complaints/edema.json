@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_007",
+  "code": "EDEMA",
+  "name": "Edema",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Edema or oedema, also known as dropsy, hydropsy, fluid retention, or simply swelling, is the buildup of fluid in a bodily tissue. Most commonly, the legs or arms are affected.",
+  "hpo_codes": [
+    "HP:0000969"
+  ],
+  "snomed_code": "267038008",
+  "snomed_verified_name": "Edema",
+  "icd10_code": "R60.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Edema, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

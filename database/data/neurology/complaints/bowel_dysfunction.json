@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_012",
+  "code": "BOWEL_DYSFUNCTION",
+  "name": "Bowel dysfunction",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Neurogenic bowel dysfunction (NBD) is reduced ability or inability to control defecation due to deterioration of or injury to the nervous system, resulting in fecal incontinence or constipation. It is common in people with spinal cord injury (SCI), multiple sclerosis (MS) or spina bifida.",
+  "hpo_codes": [],
+  "snomed_code": "235594008",
+  "snomed_verified_name": "Bowel dysfunction",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

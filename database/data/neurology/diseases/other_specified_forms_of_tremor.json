@@ -1,0 +1,69 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_087",
+  "code": "OTHER_SPECIFIED_FORMS_OF_TREMOR",
+  "name": "Other specified forms of tremor",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A tremor disorder that does not meet criteria for other specific tremor types, typically presenting with action or postural tremor of variable frequency and amplitude.",
+  "complaints": [
+    {
+      "code": "TREMOR",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_MOVEMENTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ACTION_TREMOR",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "POSTURAL_TREMOR",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "KINETIC_TREMOR",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G25.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified forms of tremor",
+  "evidence_ids": [
+    "EVID_OTHER_SPECIFIED_FORMS_OF_TREMOR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

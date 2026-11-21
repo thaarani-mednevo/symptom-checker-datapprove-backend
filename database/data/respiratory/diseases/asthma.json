@@ -1,0 +1,164 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_001",
+    "code":  "ASTHMA",
+    "name":  "Asthma",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Asthma is a common long-term inflammatory disease of the airways. It is characterized by variable and recurring symptoms and reduced lung function.",
+    "complaints":  [
+                       {
+                           "code":  "WHEEZING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CHEST_TIGHTNESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EXPIRATORY_WHEEZE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NOCTURNAL_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXERCISE_INDUCED_BRONCHOSPASM",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "REVERSIBLE_AIRFLOW_OBSTRUCTION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "episodic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "ATOPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_ASTHMA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AIR_POLLUTION_EXPOSURE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OCCUPATIONAL_ALLERGENS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_004",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Acute severe asthma — no improvement after reliever use"
+                      },
+                      {
+                          "code":  "RED_RESP_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Sudden severe breathlessness in known asthmatic"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_001",
+                          "text":  "Does your breathing become difficult or noisy (wheezy) during or after exercise?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ASTHMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ASTHMA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_002",
+                          "text":  "Do you wake up at night due to cough or breathing difficulty?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ASTHMA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ASTHMA_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_003",
+                          "text":  "Are you experiencing sudden severe difficulty breathing right now?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ASTHMA_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COPD",
+                              "distinguishing_feature":  "COPD is associated with a history of heavy smoking and shows fixed airflow obstruction (post-BD FEV1/FVC \u003c0.7); asthma shows reversible obstruction and onset is typically younger with atopic history."
+                          },
+                          {
+                              "disease_code":  "ACUTE_BRONCHITIS",
+                              "distinguishing_feature":  "Acute bronchitis is self-limiting with no episodic wheeze; asthma features recurrent discrete episodes triggered by allergens/exercise with reversible airflow obstruction."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0002099"
+                  ],
+    "snomed_code":  "195967001",
+    "snomed_verified_name":  "Asthma",
+    "icd10_code":  "J45.909",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified asthma, uncomplicated",
+    "evidence_ids":  [
+                         "EVD_RESP_001"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_006",
+  "code": "HYPERCALCEMIA",
+  "name": "Hypercalcemia",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Hypercalcaemia, also spelt hypercalcemia (US), is a high calcium (Ca2+) level in the blood serum. The normal range for total calcium is 2.1–2.6 mmol/L (8.8–10.7 mg/dL, 4.3–5.2 mEq/L), with levels greater than 2.6 mmol/L defined as hypercalcaemia.",
+  "hpo_codes": [],
+  "snomed_code": "66931009",
+  "snomed_verified_name": "Hypercalcemia",
+  "icd10_code": "E83.52",
+  "icd10_validated": true,
+  "icd10_official_description": "Hypercalcemia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

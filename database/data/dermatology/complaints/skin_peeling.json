@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_009",
+  "code": "SKIN_PEELING",
+  "name": "Skin peeling",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "Desquamation, or peeling skin, is the shedding of dead cells from the outermost layer of skin.",
+  "hpo_codes": [],
+  "snomed_code": "271767006",
+  "snomed_verified_name": "Peeling of skin",
+  "icd10_code": "R23.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Changes in skin texture",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

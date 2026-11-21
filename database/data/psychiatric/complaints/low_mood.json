@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_002",
+  "code": "LOW_MOOD",
+  "name": "Low mood",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Depression is a mental state of low mood and aversion to activity. It affects about 3.5% of the global population, or about 280 million people worldwide, as of 2020.",
+  "hpo_codes": [
+    "HP:0001872|HP:0000716"
+  ],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "R45.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Unhappiness",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

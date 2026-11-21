@@ -1,0 +1,115 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_107",
+  "code": "AURAL_VERTIGO_LEFT_EAR",
+  "name": "Aural vertigo, left ear",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Aural vertigo, left ear.",
+  "complaints": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEELING_OF_SPINNING_OR_SWAYING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "VOMITING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIFFICULTY_WALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "BENIGN_PAROXYSMAL_POSITIONAL_VERTIGO_(BPPV)",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MÉNIÈRES_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "VESTIBULAR_NEURITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "STROKE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MULTIPLE_SCLEROSIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MIGRAINE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_ACUTE_STROKE_PRESENTATION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "WEAKNESS",
+      "condition": "[LLM DRAFT] When left-sided aural vertigo is accompanied by acute focal neurological deficits such as sudden unilateral weakness suggesting central vertebrobasilar ischemia."
+    },
+    {
+      "code": "RF_CENTRAL_VESTIBULAR_EMERGENCY",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ATAXIA",
+      "condition": "[LLM DRAFT] When vertigo and balance disturbance are accompanied by profound ataxia and inability to stand, indicating a potential acute central posterior circulation stroke."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "H81.312",
+  "icd10_validated": true,
+  "icd10_official_description": "Aural vertigo, left ear",
+  "evidence_ids": [
+    "EVID_AURAL_VERTIGO_LEFT_EAR"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

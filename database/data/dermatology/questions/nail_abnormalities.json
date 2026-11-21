@@ -1,0 +1,68 @@
+﻿{
+    "complaint_code":  "NAIL_ABNORMALITIES",
+    "complaint_name":  "Nail abnormalities",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_NA_001",
+                                       "What is the abnormality — thickening, discolouration, pitting, ridging, or separation from the nail bed?",
+                                       "character",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "NAIL_ABNORMALITY_TYPE",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_NA_002",
+                          "text":  "How many nails are affected?",
+                          "purpose":  "extent",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NAILS_AFFECTED",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_NA_003",
+                          "text":  "Do you have any skin rash (especially psoriasis) or joint pain?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PSORIASIS_ASSOCIATION",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_NA_004",
+                          "text":  "Have you had a fungal infection of the skin or nails before?",
+                          "purpose":  "fungal_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FUNGAL_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

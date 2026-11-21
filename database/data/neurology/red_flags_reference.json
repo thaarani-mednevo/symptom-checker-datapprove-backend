@@ -1,0 +1,135 @@
+{
+  "module": "neurology",
+  "red_flags": [
+    {
+      "code": "RF_RAPID_PARALYSIS_PROGRESSION",
+      "name": "Rapid Paralysis Progression",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_URINARY_RETENTION",
+      "name": "Acute Urinary Retention",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_STROKE_SYMPTOMS",
+      "name": "stroke_symptoms",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_PERMANENT_VISION_LOSS",
+      "name": "permanent_vision_loss",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RESPIRATORY_FAILURE",
+      "name": "respiratory_failure",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_AIRWAY_COMPROMISE",
+      "name": "acute_airway_compromise",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_PARALYSIS",
+      "name": "PARALYSIS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SEIZURES",
+      "name": "SEIZURES",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RECURRENT_STROKE_PARALYSIS",
+      "name": "recurrent_stroke_paralysis",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_SEIZURE_ACTIVITY",
+      "name": "acute_seizure_activity",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_RED_FLAG_NAME",
+      "name": "red_flag_name",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_APHASIA",
+      "name": "aphasia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_PRESENTATION",
+      "name": "ACUTE_STROKE_PRESENTATION",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_CENTRAL_VESTIBULAR_EMERGENCY",
+      "name": "CENTRAL_VESTIBULAR_EMERGENCY",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_BILATERAL_CRAO_STROKE",
+      "name": "bilateral_crao_stroke",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_BILATERAL_CRAO_VISION",
+      "name": "bilateral_crao_vision",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SERIOUS_DRUG_INDUCED_PARKINSONISM",
+      "name": "SERIOUS_DRUG_INDUCED_PARKINSONISM",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SERIOUS_DRUG_INDUCED_NEUROLOGICAL_CRISIS",
+      "name": "SERIOUS_DRUG_INDUCED_NEUROLOGICAL_CRISIS",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_SPEECH_DISTURBANCE",
+      "name": "SPEECH_DISTURBANCE",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_PARALYSIS",
+      "name": "ACUTE_STROKE_PARALYSIS",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_SPEECH",
+      "name": "ACUTE_STROKE_SPEECH",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_APHASIA",
+      "name": "acute_stroke_aphasia",
+      "action": "CALL_EMERGENCY_SERVICES"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET_APHASIA",
+      "name": "Sudden_Onset_Aphasia",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NEW_ONSET_SEIZURE",
+      "name": "New_Onset_Seizure",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_REBLEEDING_SIGNS",
+      "name": "Rebleeding_Signs",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_DETERIORATION",
+      "name": "Neurological_Deterioration",
+      "action": "EMERGENCY_DEPARTMENT_IMMEDIATE"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_017",
+  "code": "VITILIGO",
+  "name": "Vitiligo",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Vitiligo is a chronic autoimmune disorder that causes skin to lose pigment in patches that vary in size and can appear anywhere on the body.",
+  "complaints": [
+    {
+      "code": "SKIN_DISCOLORATION",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "56727007",
+  "snomed_verified_name": "Vitiligo",
+  "icd10_code": "L80",
+  "icd10_validated": true,
+  "icd10_official_description": "Vitiligo",
+  "evidence_ids": [
+    "EVID_VITILIGO"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "RED_EYE",
+    "complaint_name":  "Red eye",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_RE_001",
+                          "text":  "Is the red eye painful or painless?",
+                          "purpose":  "pain",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RED_EYE_PAIN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RE_002",
+                          "text":  "Is there any change in vision?",
+                          "purpose":  "vision_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RED_EYE_VISION_CHANGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_RE_003",
+                          "text":  "Is there discharge from the eye?",
+                          "purpose":  "discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RED_EYE_DISCHARGE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RE_004",
+                          "text":  "Do you wear contact lenses?",
+                          "purpose":  "contacts",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CONTACT_LENS_USE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RE_005",
+                          "text":  "Is the eye severely painful with halos around lights and nausea?",
+                          "purpose":  "glaucoma",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "ACUTE_ANGLE_CLOSURE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

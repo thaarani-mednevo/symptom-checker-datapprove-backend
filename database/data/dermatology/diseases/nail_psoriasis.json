@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_014",
+  "code": "NAIL_PSORIASIS",
+  "name": "Nail psoriasis",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Psoriatic onychodystrophy is a nail disease which is common in those with psoriasis, with reported incidences varying from 10% to 78%. Elderly patients and those with psoriatic arthritis are more likely to have psoriatic nails.",
+  "complaints": [
+    {
+      "code": "NAIL_ABNORMALITIES",
+      "relationship": "occasional",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "238604005",
+  "snomed_verified_name": "Psoriasis of nail",
+  "icd10_code": "L40.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other psoriasis",
+  "evidence_ids": [
+    "EVID_NAIL_PSORIASIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

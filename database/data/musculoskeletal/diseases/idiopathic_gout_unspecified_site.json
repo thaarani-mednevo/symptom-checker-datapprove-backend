@@ -1,0 +1,132 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_040",
+    "code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SITE",
+    "name":  "Idiopathic gout, unspecified site",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Idiopathic gout, unspecified site.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_JOINT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ERYTHEMA_AND_WARMTH",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TOPHI",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HYPERURICEMIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERURICEMIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIETARY_FACTORS_PURINE_RICH_FOODS_AND_ALCOHOL",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_THE_PAIN_IN_YOUR_JOINT_START_SUDDENL",
+                          "text":  "[LLM DRAFT] Did the pain in your joint start suddenly and feel like a throbbing, intense ache?",
+                          "purpose":  "sudden severe joint pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SITE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_AFFECTED_JOINT_SWOLLEN_RED_AND",
+                          "text":  "[LLM DRAFT] Is the affected joint swollen, red, and warm to the touch?",
+                          "purpose":  "signs of inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SITE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SIMILAR_JOINT_PAIN",
+                          "text":  "[LLM DRAFT] Have you experienced similar joint pain episodes before?",
+                          "purpose":  "gout history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_UNSPECIFIED_SITE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, unspecified site",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_UNSPECIFIED_SITE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

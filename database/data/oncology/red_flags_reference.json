@@ -1,0 +1,60 @@
+{
+  "module": "oncology",
+  "red_flags": [
+    {
+      "code": "RED_ONC_001",
+      "name": "Rapidly enlarging lymphadenopathy with B-symptoms",
+      "action": "urgent_haematology_referral"
+    },
+    {
+      "code": "RED_ONC_002",
+      "name": "Weight loss >10% with lymphadenopathy",
+      "action": "urgent_investigation_lymphoma"
+    },
+    {
+      "code": "RED_ONC_003",
+      "name": "Weight loss with lymphadenopathy in immunocompromised patient",
+      "action": "urgent_evaluation"
+    },
+    {
+      "code": "RED_ONC_004",
+      "name": "Haemoptysis in smoker over 40",
+      "action": "urgent_chest_imaging_and_referral"
+    },
+    {
+      "code": "RED_ONC_005",
+      "name": "New bone pain in known or suspected lung cancer",
+      "action": "urgent_metastasis_imaging"
+    },
+    {
+      "code": "RED_ONC_006",
+      "name": "Rectal bleeding with change in bowel habit or weight loss over 40",
+      "action": "urgent_colonoscopy_referral"
+    },
+    {
+      "code": "RED_ONC_007",
+      "name": "Iron deficiency anaemia with change in bowel habit",
+      "action": "two_week_wait_colorectal_referral"
+    },
+    {
+      "code": "RED_ONC_008",
+      "name": "Painless frank haematuria in adult",
+      "action": "urgent_urology_cystoscopy_referral"
+    },
+    {
+      "code": "RED_ONC_009",
+      "name": "New axial bone pain in older male",
+      "action": "urgent_psa_and_bone_imaging"
+    },
+    {
+      "code": "RED_ONC_010",
+      "name": "Back pain with bilateral leg weakness or bladder/bowel dysfunction",
+      "action": "emergency_spinal_cord_compression_imaging"
+    },
+    {
+      "code": "RED_ONC_011",
+      "name": "Fracture following minimal trauma in known cancer patient",
+      "action": "urgent_orthopaedic_and_oncology_review"
+    }
+  ]
+}

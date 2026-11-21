@@ -1,0 +1,8 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_ENT_001,TINNITUS,Tinnitus,ent,ent,complaint,,60862001,H93.19,1.0,true,,
+COMP_ENT_002,EAR_PAIN,Ear pain,ent,ent,complaint,,15836001,H92.09,1.0,true,,
+COMP_ENT_003,EAR_DISCHARGE,Ear discharge,ent,ent,complaint,,300132001,H92.1,1.0,true,,
+COMP_ENT_004,SORE_THROAT,Sore throat,ent,ent,complaint,,267102003,J02.9,1.0,true,,
+COMP_ENT_005,NASAL_CONGESTION,Nasal congestion,ent,ent,complaint,,68235000,R09.81,1.0,true,,
+COMP_ENT_006,RHINORRHOEA,Rhinorrhoea,ent,ent,complaint,,64531003,J34.89,1.0,true,,
+COMP_ENT_007,MOUTH_ULCERS,Mouth ulcers,ent,ent,complaint,,26284000,K12.1,1.0,true,,

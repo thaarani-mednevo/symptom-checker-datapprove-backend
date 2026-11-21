@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_024",
+  "code": "ABNORMAL_MOVEMENTS",
+  "name": "Abnormal movements",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Movement disorders are clinical syndromes with either an excess of movement or a paucity of voluntary and involuntary movements, unrelated to weakness or spasticity.Movement disorders are conventionally divided into two major categories- hyperkinetic and hypokinetic.",
+  "hpo_codes": [],
+  "snomed_code": "9748009",
+  "snomed_verified_name": "Dyskinesia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

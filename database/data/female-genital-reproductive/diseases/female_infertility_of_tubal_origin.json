@@ -1,0 +1,65 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_036",
+    "code":  "FEMALE_INFERTILITY_OF_TUBAL_ORIGIN",
+    "name":  "Female infertility of tubal origin",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Female infertility of tubal origin.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUSPECTED_ECTOPIC",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "INFERTILITY",
+                          "condition":  "Positive pregnancy test with pelvic pain in a woman with known tubal disease"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PELVIC_SURGERY_INFECTION_HISTORY",
+                          "text":  "Have you had previous pelvic surgery, PID, or a pelvic infection?",
+                          "purpose":  "Identify tubal-damage risk factors",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_OF_TUBAL_ORIGIN_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "FEMALE_INFERTILITY_OF_UTERINE_ORIGIN",
+                              "distinguishing_feature":  "Tubal origin relates to tubal patency/damage (e.g. prior PID); uterine origin relates to cavity abnormalities (e.g. fibroids, polyps, adhesions)"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "39446004",
+    "snomed_verified_name":  "Female infertility of tubal origin",
+    "icd10_code":  "N97.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Female infertility of tubal origin",
+    "evidence_ids":  [
+                         "EVID_FEMALE_INFERTILITY_OF_TUBAL_ORIGIN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

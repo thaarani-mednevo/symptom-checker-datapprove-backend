@@ -1,0 +1,147 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_014",
+    "code":  "NEPHROGENIC_DIABETES_INSIPIDUS",
+    "name":  "Nephrogenic diabetes insipidus",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "Nephrogenic diabetes insipidus (NDI), also known as arginine vasopressin resistance (AVP-R) and previously known as renal diabetes insipidus, is a form of diabetes insipidus primarily due to pathology of the kidney. This is in contrast to central or neurogenic diabetes insipidus, which is caused by insufficient levels of vasopressin.",
+    "complaints":  [
+                       {
+                           "code":  "POLYURIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "POLYURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NOCTURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "POLYDIPSIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DEHYDRATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEELING_TIRED",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LITHIUM_THERAPY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CHRONIC_KIDNEY_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HYPERCALCAEMIA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "GENETIC_MUTATION_AVPR2",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_019",
+                          "text":  "Have you noticed the urine being very pale or colourless, and are you drinking very large volumes of water?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEPHROGENIC_DIABETES_INSIPIDUS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_008",
+                          "text":  "Is your urine foamy or frothy, and do you have swelling in your legs, ankles, or face?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NEPHROGENIC_DIABETES_INSIPIDUS_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NEPHROGENIC_DIABETES_INSIPIDUS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_015",
+                          "text":  "Do you have a known history of kidney stones, prostate problems, or bladder issues?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NEPHROGENIC_DIABETES_INSIPIDUS_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0009806"
+                  ],
+    "snomed_code":  "111395007",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N25.1",
+    "icd10_validated":  false,
+    "icd10_official_description":  null,
+    "evidence_ids":  [
+                         "EVID_NEPHROGENIC_DIABETES_INSIPIDUS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

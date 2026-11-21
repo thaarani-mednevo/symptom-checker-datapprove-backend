@@ -1,0 +1,125 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_005",
+    "code":  "VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE",
+    "name":  "Vaginitis, vulvitis and vulvovaginitis in diseases classified elsewhere",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Vaginitis, also known as vulvovaginitis, is inflammation of the vagina and vulva. Symptoms may include itching, burning, pain, discharge, and a bad smell.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ITCHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BURNING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BAD_SMELL",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INFECTIONS_(BACTERIAL_VAGINOSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VAGINAL_YEAST_INFECTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRICHOMONIASIS)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ALLERGIC_REACTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LOW_ESTROGEN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PID_SEPSIS",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE",
+                          "condition":  "Fever and severe pelvic pain suggestive of ascending infection"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_FEVER_PRESENT",
+                          "text":  "Do you currently have a fever or chills?",
+                          "purpose":  "Exclude systemic infective cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PID_SEPSIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N77.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vaginitis, vulvitis and vulvovaginitis in diseases classified elsewhere",
+    "evidence_ids":  [
+                         "EVID_VAGINITIS_VULVITIS_AND_VULVOVAGINITIS_IN_DISEASES_CLASSIFIED_ELSEWHERE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

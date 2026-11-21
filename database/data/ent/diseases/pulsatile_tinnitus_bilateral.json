@@ -1,0 +1,152 @@
+﻿{
+    "id":  "ENT_DIS_HB_005",
+    "code":  "PULSATILE_TINNITUS_BILATERAL",
+    "name":  "Pulsatile tinnitus, bilateral",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+    "complaints":  [
+                       {
+                           "code":  "TINNITUS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NOISE_INDUCED_HEARING_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EAR_INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MÉNIÈRES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BRAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VESTIBULAR_SCHWANNOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CHOLESTEATOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMATIC_BRAIN_INJURY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EXCESSIVE_EARWAX",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_HEARING_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SUDDEN_HEARING_LOSS",
+                          "condition":  "Sudden hearing loss with pulsatile tinnitus may indicate vascular occlusion or hemorrhage."
+                      },
+                      {
+                          "code":  "RF_SEVERE_HEADACHE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SEVERE_HEADACHE",
+                          "condition":  "Severe headache suggests possible intracranial hypertension or aneurysm."
+                      },
+                      {
+                          "code":  "RF_VISION_CHANGES",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_VISION_CHANGES",
+                          "condition":  "Vision changes may indicate increased intracranial pressure or carotid-cavernous fistula."
+                      },
+                      {
+                          "code":  "RF_NECK_PULSATING_MASS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_NECK_PULSATING_MASS",
+                          "condition":  "Pulsating neck mass suggests carotid artery stenosis or aneurysm."
+                      },
+                      {
+                          "code":  "RF_HYPERTENSION",
+                          "trigger_entity_type":  "history",
+                          "trigger_entity_code":  "HISTORY_HYPERTENSION",
+                          "condition":  "Uncontrolled hypertension increases risk of vascular causes of pulsatile tinnitus."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SUDDEN_HEARING_LOSS",
+                          "text":  "Have you experienced sudden hearing loss?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SEVERE_HEADACHE",
+                          "text":  "Do you have a severe headache that is new or worsening?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VISION_CHANGES",
+                          "text":  "Have you noticed any changes in your vision?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PULSATILE_TINNITUS_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "60862001",
+    "snomed_verified_name":  "Tinnitus",
+    "icd10_code":  "H93.A3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pulsatile tinnitus, bilateral",
+    "evidence_ids":  [
+                         "EVID_PULSATILE_TINNITUS_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

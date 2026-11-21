@@ -1,0 +1,69 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_030",
+    "code":  "SECONDARY_OLIGOMENORRHEA",
+    "name":  "Secondary oligomenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Secondary oligomenorrhea.",
+    "complaints":  [
+                       {
+                           "code":  "OLIGOMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Quantify cycle length",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SECONDARY_OLIGOMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PREGNANCY_STATUS",
+                          "text":  "Are you currently pregnant, or could you be pregnant?",
+                          "purpose":  "Exclude pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_ECTOPIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SECONDARY_OLIGOMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "34272008",
+    "snomed_verified_name":  "Secondary oligomenorrhea",
+    "icd10_code":  "N91.4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Secondary oligomenorrhea",
+    "evidence_ids":  [
+                         "EVID_SECONDARY_OLIGOMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

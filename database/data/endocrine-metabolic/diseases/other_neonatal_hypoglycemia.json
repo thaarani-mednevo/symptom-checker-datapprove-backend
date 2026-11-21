@@ -1,0 +1,116 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_034",
+    "code":  "OTHER_NEONATAL_HYPOGLYCEMIA",
+    "name":  "Other neonatal hypoglycemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Neonatal hypoglycemia, or low blood sugar in newborn babies, occurs when an infant\u0027s blood glucose level is below normal. Diagnostic thresholds vary internationally.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERINSULINISM",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LIMITED_GLYCOGEN_STORES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INCREASES_GLUCOSE_USE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DECREASED_GLUCONEOGENESIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DEPLETED_GLYCOGEN_STORES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe symptomatic neonatal hypoglycemia presenting with lethargy, apnea, seizures, or poor feeding unresponsive to initial feeding."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_THE_SHAKES",
+                          "text":  "[LLM DRAFT] Does your newborn baby have the shakes, jitteriness, or muscle twitching?",
+                          "purpose":  "Screens for neonatal jitteriness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_NEONATAL_HYPOGLYCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_HAVING_TROUBLE_WAKI",
+                          "text":  "[LLM DRAFT] Is your newborn baby having trouble waking up for feedings or appearing unusually sleepy?",
+                          "purpose":  "Screens for lethargy and poor feeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_NEONATAL_HYPOGLYCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_BREATHING_MUCH_FAST",
+                          "text":  "[LLM DRAFT] Is your newborn baby breathing much faster than usual or showing blue discoloration around the lips?",
+                          "purpose":  "Screens for respiratory distress and cyanosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_NEONATAL_HYPOGLYCEMIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "IATROGENIC_NEONATAL_HYPOGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] History of exogenous insulin administration or glucose-lowering medical intervention in the neonate."
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Applies when specific etiology or neonatal status details are not documented or known."
+                          },
+                          {
+                              "disease_code":  "OTHER_HYPOGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs in non-neonates or broader clinical contexts outside the newborn period."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "P70.4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other neonatal hypoglycemia",
+    "evidence_ids":  [
+                         "EVID_OTHER_NEONATAL_HYPOGLYCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

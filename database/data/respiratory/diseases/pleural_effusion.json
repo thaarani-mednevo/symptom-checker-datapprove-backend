@@ -1,0 +1,116 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_006",
+    "code":  "PLEURAL_EFFUSION",
+    "name":  "Pleural Effusion",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "A respiratory condition known as Pleural Effusion.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PLEURITIC_CHEST_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "REDUCED_BREATH_SOUNDS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DULLNESS_TO_PERCUSSION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HEART_FAILURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALIGNANCY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PNEUMONIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "LIVER_DISEASE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_003",
+                          "text":  "Are you experiencing sudden severe difficulty breathing right now?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PLEURAL_EFFUSION_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RESP_011",
+                          "text":  "Do you feel chest pain that is worse when breathing in deeply?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(PLEURITIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PLEURAL_EFFUSION_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "LUNG_CANCER",
+                              "distinguishing_feature":  "Cytology and LDH/protein ratio distinguish generic effusion from lung cancer; effusion can be a complication of lung cancer (malignant effusion) but also occurs in heart failure/infection."
+                          },
+                          {
+                              "disease_code":  "PNEUMOTHORAX",
+                              "distinguishing_feature":  "Pneumothorax shows absent breath sounds with hyper-resonance on percussion; pleural effusion shows absent breath sounds with dullness to percussion."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0002202"
+                  ],
+    "snomed_code":  "60046008",
+    "snomed_verified_name":  "Pleural effusion",
+    "icd10_code":  "J90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pleural effusion, not elsewhere classified",
+    "evidence_ids":  [
+                         "EVD_RESP_006"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

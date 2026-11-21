@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_004",
+  "code": "LYMPHADENOPATHY_ONCOLOGY",
+  "name": "Lymphadenopathy (oncology context)",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Lymphadenopathy is enlargement of one or more lymph nodes beyond their normal size (generally >1 cm for most regions, >1.5 cm for inguinal nodes). In an oncology context, it represents either primary lymph node malignancy (lymphoma, leukaemia) or metastatic spread from a solid tumour. Worrying features include firmness or rubbery texture, non-tender nodes, nodes fixed to underlying structures, progressive enlargement over weeks, nodes in unusual locations (supraclavicular, epitrochlear), and constitutional B-symptoms. Supraclavicular lymphadenopathy in particular carries high malignancy risk and warrants urgent evaluation.",
+  "hpo_codes": ["HP:0002716"],
+  "snomed_code": "30746006",
+  "snomed_verified_name": "Lymphadenopathy",
+  "icd10_code": "R59.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Enlarged lymph nodes, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

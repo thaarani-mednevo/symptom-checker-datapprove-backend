@@ -1,0 +1,85 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_011",
+    "code":  "THYROTOXICOSIS_FACTITIA_WITH_THYROTOXIC_CRISIS_OR_STORM",
+    "name":  "Thyrotoxicosis factitia with thyrotoxic crisis or storm",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Thyrotoxicosis factitia is a condition of thyrotoxicosis caused by the ingestion of exogenous thyroid hormone. It can be the result of mistaken ingestion of excess drugs, such as levothyroxine and triiodothyronine, or as a symptom of Munchausen syndrome.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXIC_STORM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Presentation with signs of thyroid storm including severe hyperthermia, tachycardia out of proportion to fever, altered mental status, and gastrointestinal dysfunction in a patient with thyrotoxicosis factitia."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_A_DANGEROUSLY_HIGH",
+                          "text":  "[LLM DRAFT] Are you experiencing a dangerously high fever, severe confusion, or a racing heartbeat while taking thyroid hormone medications in excessive amounts?",
+                          "purpose":  "Screens for severe thyrotoxic crisis symptoms linked to excessive thyroid hormone use",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THYROTOXICOSIS_FACTITIA_WITH_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_INGESTED_VERY_HIGH_DOS",
+                          "text":  "[LLM DRAFT] Have you recently ingested very high doses of thyroid hormone supplements or medications?",
+                          "purpose":  "Screens for the exogenous source of thyroid hormone characteristic of factitious thyrotoxicosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROTOXICOSIS_FACTITIA_WITH_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_THYROTOXICOSIS_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with hyperthyroid storm symptoms due to endogenous overproduction rather than exogenous hormone ingestion."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with biochemical thyrotoxicosis from exogenous hormone use but lacks the life-threatening systemic decompensation of a storm."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Features acute life-threatening storm symptoms where the specific endogenous or exogenous etiology has not yet been determined."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E05.41",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Thyrotoxicosis factitia with thyrotoxic crisis or storm",
+    "evidence_ids":  [
+                         "EVID_THYROTOXICOSIS_FACTITIA_WITH_THYROTOXIC_CRISIS_OR_STORM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

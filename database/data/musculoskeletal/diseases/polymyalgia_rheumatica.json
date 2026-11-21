@@ -1,0 +1,71 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_010",
+  "code": "POLYMYALGIA_RHEUMATICA",
+  "name": "Polymyalgia rheumatica",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Polymyalgia rheumatica (PMR) is a systemic inflammatory disease characterized by pain or stiffness, usually in the neck, shoulders, upper arms, and hips, but which may occur all over the body. Almost all cases occur in people age 50 or older.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SHOULDER",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "NECK_AND_HIP_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "AGE_>_50",
+      "strength": "strong"
+    },
+    {
+      "code": "NORTHERN_EUROPEAN_ANCESTRY",
+      "strength": "strong"
+    },
+    {
+      "code": "FEMALE_SEX",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_GIANT_CELL_ARTERITIS_WITH_VISUAL_LOSS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "IMPAIRED_FUNCTION",
+      "condition": "[LLM DRAFT] New-onset visual disturbances, transient visual loss, or permanent vision loss in a patient with polymyalgia rheumatica, indicating cranial giant cell arteritis requiring immediate high-dose corticosteroids."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "65323003",
+  "snomed_verified_name": "Polymyalgia rheumatica",
+  "icd10_code": "M35.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Polymyalgia rheumatica",
+  "evidence_ids": [
+    "EVID_POLYMYALGIA_RHEUMATICA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

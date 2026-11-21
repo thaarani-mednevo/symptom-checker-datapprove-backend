@@ -1,0 +1,128 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_019",
+    "code":  "OTHER_STREPTOCOCCAL_POLYARTHRITIS",
+    "name":  "Other streptococcal polyarthritis",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Other streptococcal polyarthritis.",
+    "complaints":  [
+                       {
+                           "code":  "POLYARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SORE_THROAT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWOLLEN_NECK_GLANDS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BODY_ACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STUFFED_NOSE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_A_SORE_THROAT_OR_STREP_INFE",
+                          "text":  "[LLM DRAFT] Have you had a sore throat or strep infection in the last 4 weeks?",
+                          "purpose":  "recent streptococcal exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_STREPTOCOCCAL_POLYARTHRITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SWELLING_OR_PAIN_IN",
+                          "text":  "[LLM DRAFT] Are you experiencing swelling or pain in more than one joint at the same time?",
+                          "purpose":  "polyarthritis screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_STREPTOCOCCAL_POLYARTHRITIS_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_FEVER_HIGHER_THAN_101°F_3",
+                          "text":  "[LLM DRAFT] Do you have a fever higher than 101°F (38.3°C) along with joint pain?",
+                          "purpose":  "severe infection indicator",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_STREPTOCOCCAL_POLYARTHRITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M00.29",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other streptococcal polyarthritis",
+    "evidence_ids":  [
+                         "EVID_OTHER_STREPTOCOCCAL_POLYARTHRITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

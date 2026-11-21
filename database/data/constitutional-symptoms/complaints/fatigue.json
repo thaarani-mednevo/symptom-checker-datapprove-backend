@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_004",
+  "code": "FATIGUE",
+  "name": "Fatigue",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "Fatigue is a state of being without energy for a prolonged period of time. The word fatigue is used in two contexts: in the medical sense, and in the sense of normal tiredness.",
+  "hpo_codes": [],
+  "snomed_code": "84229001",
+  "snomed_verified_name": "Fatigue",
+  "icd10_code": "R53.83",
+  "icd10_validated": true,
+  "icd10_official_description": "Other fatigue",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

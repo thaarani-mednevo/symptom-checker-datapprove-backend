@@ -1,0 +1,74 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_053",
+    "code":  "CONGENITAL_ADRENAL_HYPERPLASIA",
+    "name":  "Congenital adrenal hyperplasia",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Congenital adrenal hyperplasia (CAH) is a group of autosomal recessive disorders characterized by impaired cortisol synthesis. It results from the deficiency of one of the five enzymes required for the synthesis of cortisol in the adrenal cortex.",
+    "complaints":  [
+                       {
+                           "code":  "PRECOCIOUS_PUBERTY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPID_VIRILIZATION",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "CONGENITAL_ADRENAL_HYPERPLASIA",
+                          "condition":  "Rapid virilization or salt-wasting crisis signs (vomiting, dehydration) in infancy"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm onset timing",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONGENITAL_ADRENAL_HYPERPLASIA_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_VOICE_CLITOROMEGALY_RAPID",
+                          "text":  "Has there been rapid deepening of the voice or rapid new hair growth over weeks?",
+                          "purpose":  "Screen for rapid virilization",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_RAPID_VIRILIZATION)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONGENITAL_ADRENAL_HYPERPLASIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "237751000",
+    "snomed_verified_name":  "Congenital adrenal hyperplasia",
+    "icd10_code":  "E25.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Congenital adrenogenital disorders associated with enzyme deficiency",
+    "evidence_ids":  [
+                         "EVID_CONGENITAL_ADRENAL_HYPERPLASIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

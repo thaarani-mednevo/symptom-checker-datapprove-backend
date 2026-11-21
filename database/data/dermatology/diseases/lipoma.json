@@ -1,0 +1,84 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_DERM_020",
+    "code":  "LIPOMA",
+    "name":  "Lipoma",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "A lipoma is a benign tumor made of fat tissue. They are generally soft to the touch, movable, and painless.",
+    "complaints":  [
+                       {
+                           "code":  "SKIN_LUMPS",
+                           "relationship":  "common",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SOFT_MOBILE_SKIN_LUMP",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SLOW_GROWING_PAINLESS_MASS",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_LIPOMA",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPID_LUMP_CHANGE",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SOFT_MOBILE_SKIN_LUMP",
+                          "condition":  "Lump has grown quickly, become hard/fixed to underlying tissue, or painful — refer to rule out liposarcoma"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_LUMP_GROWTH_CHANGE",
+                          "text":  "Has the lump grown quickly, become hard, or started to hurt?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LIPOMA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "134328007",
+    "snomed_verified_name":  "Lipoma",
+    "icd10_code":  "D17.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Benign lipomatous neoplasm, unspecified",
+    "evidence_ids":  [
+                         "EVID_LIPOMA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

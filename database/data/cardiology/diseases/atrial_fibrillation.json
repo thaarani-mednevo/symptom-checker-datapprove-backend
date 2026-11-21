@@ -1,0 +1,138 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_004",
+    "code":  "ATRIAL_FIBRILLATION",
+    "name":  "Atrial Fibrillation",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Atrial fibrillation is an abnormal heart rhythm (arrhythmia) characterized by rapid and irregular beating of the atrial chambers of the heart. It often begins as short periods of abnormal beating, which become longer or continuous over time.",
+    "complaints":  [
+                       {
+                           "code":  "PALPITATIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "rare",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "EXERCISE_INTOLERANCE",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "VALVULAR_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ALCOHOL_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SLEEP_APNEA",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPITATIONS",
+                          "condition":  "Palpitations with syncope — urgent evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_009",
+                          "text":  "Do your heartbeats feel irregular, very fast, or fluttering?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ARRHYTHMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ATRIAL_FIBRILLATION_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ATRIAL_FIBRILLATION_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SUPRAVENTRICULAR_TACHYCARDIA",
+                              "distinguishing_feature":  "SVT is regular and typically abrupt onset/offset; AFib is irregularly irregular."
+                          },
+                          {
+                              "disease_code":  "VENTRICULAR_TACHYCARDIA",
+                              "distinguishing_feature":  "VT is a wide-complex often hemodynamically unstable rhythm; AFib is narrow-complex and irregular."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+                      "HP:0005110"
+                  ],
+    "snomed_code":  "49436004",
+    "snomed_verified_name":  "Atrial fibrillation",
+    "icd10_code":  "I48.91",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified atrial fibrillation",
+    "evidence_ids":  [
+                         "EVD_CARD_004"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

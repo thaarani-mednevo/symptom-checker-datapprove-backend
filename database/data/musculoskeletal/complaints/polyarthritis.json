@@ -1,0 +1,17 @@
+{
+  "id": "MUSCULOSKELETAL_COMP_MSK_003",
+  "code": "POLYARTHRITIS",
+  "name": "Polyarthritis",
+  "module": "musculoskeletal",
+  "body_system": "musculoskeletal",
+  "category": "complaint",
+  "description": "Polyarthritis is any type of arthritis that involves five or more joints simultaneously. It can be associated with autoimmune conditions; it may be experienced at any age and is not sex specific.",
+  "hpo_codes": [],
+  "snomed_code": "416956002",
+  "snomed_verified_name": "Undifferentiated inflammatory polyarthritis",
+  "icd10_code": "M13.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Polyarthritis, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

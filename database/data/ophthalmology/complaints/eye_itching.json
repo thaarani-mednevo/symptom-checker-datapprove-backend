@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_006",
+  "code": "EYE_ITCHING",
+  "name": "Eye itching",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by eye itching.",
+  "hpo_codes": [],
+  "snomed_code": "74776002",
+  "snomed_verified_name": "Itching of eye",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

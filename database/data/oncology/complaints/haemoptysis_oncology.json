@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_005",
+  "code": "HAEMOPTYSIS_ONCOLOGY",
+  "name": "Haemoptysis (oncology context)",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Haemoptysis is the coughing up of blood or blood-stained mucus from the respiratory tract. In an oncology context, it is a red flag symptom for lung cancer, particularly in patients over 40 with a smoking history. Any new haemoptysis in a patient without a known benign cause (e.g., bronchiectasis exacerbation) warrants urgent chest imaging and bronchoscopy. It may also occur in pulmonary metastases from other primary tumours. Even a single episode of frank haemoptysis without prior respiratory disease requires investigation.",
+  "hpo_codes": ["HP:0002105"],
+  "snomed_code": "66857006",
+  "snomed_verified_name": "Haemoptysis",
+  "icd10_code": "R04.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Hemoptysis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

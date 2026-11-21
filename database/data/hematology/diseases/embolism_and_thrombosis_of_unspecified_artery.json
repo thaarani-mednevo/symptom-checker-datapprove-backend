@@ -1,0 +1,153 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_032",
+    "code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY",
+    "name":  "Embolism and thrombosis of unspecified artery",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Sudden blockage of an unspecified artery by an embolus or thrombus, causing ischemia of downstream tissues.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SHORTNESS_OF_BREATH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "COUGHING_UP_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CANCER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PROLONGED_BED_REST",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BLUNT_TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "STROKE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CERTAIN_GENETIC_CONDITIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ESTROGEN_BASED_MEDICATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PREGNANCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AFTER_SURGERY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ARTERIAL_OCCLUSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] Sudden onset of severe pain, pallor, pulselessness, poikilothermia, paresthesia, or paralysis in an affected limb indicating critical ischemia."
+                      },
+                      {
+                          "code":  "RF_HEMORRHAGIC_TRANSFORMATION_OR_RUPTURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, uncontrolled hemorrhage or signs of internal bleeding secondary to vascular occlusion or anticoagulant therapy."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_SUDDENLY_LOSE_FEELING_STRENGTH",
+                          "text":  "[LLM DRAFT] Did you suddenly lose feeling, strength, or movement in one of your arms or legs?",
+                          "purpose":  "sudden limb numbness or weakness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_ONE_OF_YOUR_LEGS_OR_ARMS_FEELING_NOTI",
+                          "text":  "[LLM DRAFT] Is one of your legs or arms feeling noticeably colder to the touch or looking pale compared to the other?",
+                          "purpose":  "acute limb ischemia signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute lower extremity ischemia, claudication, or absent distal pulses localized specifically to the lower limbs."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute chest or back pain, upper-to-lower extremity blood pressure discrepancies, or symptoms of aortic arch syndrome."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_OTHER_ARTERIES",
+                              "distinguishing_feature":  "[LLM DRAFT] Involves specifically identified visceral, upper extremity, or carotid arterial beds rather than an unspecified anatomical location."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "I74.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Embolism and thrombosis of unspecified artery",
+    "evidence_ids":  [
+                         "EVID_EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

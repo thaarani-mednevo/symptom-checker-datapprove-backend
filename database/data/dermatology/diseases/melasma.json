@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_018",
+  "code": "MELASMA",
+  "name": "Melasma",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Melasma is a common skin disorder characterized by tan, brown, or grayish hyperpigmented patches, usually on the face.",
+  "complaints": [
+    {
+      "code": "SKIN_DISCOLORATION",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "36209000",
+  "snomed_verified_name": "Chloasma",
+  "icd10_code": "L81.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Chloasma",
+  "evidence_ids": [
+    "EVID_MELASMA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

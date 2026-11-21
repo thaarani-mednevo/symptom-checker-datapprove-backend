@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_024",
+    "code":  "ANOREXIA_NERVOSA_UNSPECIFIED",
+    "name":  "Anorexia nervosa, unspecified",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Anorexia nervosa (AN), commonly referred to as anorexia, is an eating disorder characterized by predominant food restriction, body image disturbance, fear of gaining weight, and an overwhelming desire to be thin. These characteristics often mean individuals undergo severe malnutrition as a result of the disorder.",
+    "complaints":  [
+                       {
+                           "code":  "LOSS_OF_APPETITE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_GAINING_WEIGHT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRONG_DESIRE_TO_BE_THIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FOOD_RESTRICTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Heart rate persistently below 40 bpm, dizziness, or fainting episodes."
+                      },
+                      {
+                          "code":  "RF_SEVERE_ELECTROLYTE_IMBALANCE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Laboratory findings showing critical hypokalemia or hyponatremia."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_UNSPECIFIED_1",
+                          "text":  "Do you experience an intense fear of gaining weight, even though you are underweight?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_UNSPECIFIED_2",
+                          "text":  "Have you experienced significant, rapid weight loss recently?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_UNSPECIFIED_3",
+                          "text":  "Have you had thoughts of self-harm or suicide due to distress about your body image or weight?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by prominent caloric restriction and weight loss without binge eating or purging behaviors, with severity specified."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Accompanied by recurrent episodes of binge eating or purging behaviors rather than restriction alone."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_IN_REMISSION",
+                              "distinguishing_feature":  "[LLM DRAFT] Demonstrates a previous history of anorexia nervosa with criteria no longer met for a sustained period."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F50.00",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anorexia nervosa, unspecified",
+    "evidence_ids":  [
+                         "EVID_ANOREXIA_NERVOSA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

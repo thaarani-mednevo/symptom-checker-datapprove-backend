@@ -1,0 +1,9 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_EM_001,THYROID_SWELLING,Thyroid swelling,endocrine-metabolic,endocrine-metabolic,complaint,,,R22.1,1.0,true,,
+COMP_EM_002,THYROTOXICOSIS,Thyrotoxicosis,endocrine-metabolic,endocrine-metabolic,complaint,,90739004,E05.9,1.0,true,,
+COMP_EM_003,HYPOTHYROIDISM,Hypothyroidism,endocrine-metabolic,endocrine-metabolic,complaint,,40930008,E03.9,1.0,true,,
+COMP_EM_004,HYPERGLYCEMIA,Hyperglycemia,endocrine-metabolic,endocrine-metabolic,complaint,,80394007,R73.9,1.0,true,,
+COMP_EM_005,HYPOGLYCEMIA,Hypoglycemia,endocrine-metabolic,endocrine-metabolic,complaint,,302866003,E16.2,1.0,true,,
+COMP_EM_006,HYPERCALCEMIA,Hypercalcemia,endocrine-metabolic,endocrine-metabolic,complaint,,66931009,E83.52,1.0,true,,
+COMP_EM_007,HYPOCALCEMIA,Hypocalcemia,endocrine-metabolic,endocrine-metabolic,complaint,,5291005,E83.51,1.0,true,,
+COMP_EM_008,GYNECOMASTIA,Gynecomastia,endocrine-metabolic,endocrine-metabolic,complaint,,4754008,N62,1.0,true,,

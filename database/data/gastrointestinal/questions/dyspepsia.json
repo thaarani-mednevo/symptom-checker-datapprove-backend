@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DYSPEPSIA",
+    "complaint_name":  "Dyspepsia",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DYS_001",
+                          "text":  "Is the discomfort in the upper abdomen, and is it related to meals?",
+                          "purpose":  "pattern",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSPEPSIA_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_002",
+                          "text":  "Do you have heartburn or acid regurgitation?",
+                          "purpose":  "reflux",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "REFLUX_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_003",
+                          "text":  "Are you over 55 or have any alarm features (weight loss, dysphagia, vomiting, anaemia)?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_003)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DYSPEPSIA_ALARM_FEATURES",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_004",
+                          "text":  "Are you taking NSAIDs, aspirin, or blood thinners?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NSAID_USE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

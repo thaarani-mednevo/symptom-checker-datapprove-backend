@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_011",
+  "code": "HEMATEMESIS",
+  "name": "Hematemesis",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Hematemesis is the vomiting of blood. It can be confused with hemoptysis or epistaxis (nosebleed), which are more common.",
+  "hpo_codes": [],
+  "snomed_code": "8765009",
+  "snomed_verified_name": "Hematemesis",
+  "icd10_code": "K92.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Hematemesis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

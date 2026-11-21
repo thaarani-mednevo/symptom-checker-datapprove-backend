@@ -1,0 +1,72 @@
+﻿{
+  "id": "ENT_DIS_ENT_017",
+  "code": "APHTHOUS_STOMATITIS",
+  "name": "Aphthous stomatitis",
+  "module": "ent",
+  "category": "disease",
+  "description": "Aphthous stomatitis, or recurrent aphthous stomatitis (RAS), commonly referred to as a canker sore or salt blister, is a common condition characterized by the repeated formation of benign and non-contagious mouth ulcers (aphthae) in otherwise healthy individuals.",
+  "complaints": [
+    {
+      "code": "MOUTH_ULCERS",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ORAL_ULCERS",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "MOUTH_PAIN",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "DYSPHAGIA",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "uncommon",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "STRESS",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "NUTRITIONAL_DEFICIENCY",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "TRAUMA_TO_ORAL_MUCOSA",
+      "strength": "ai_drafted_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "426965005",
+  "snomed_verified_name": "Aphthous ulcer of mouth",
+  "icd10_code": "K12.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Recurrent oral aphthae",
+  "evidence_ids": [
+    "EVID_APHTHOUS_STOMATITIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

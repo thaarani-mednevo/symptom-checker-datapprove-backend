@@ -1,0 +1,17 @@
+{
+  "id": "CONSTITUTIONAL-SYMPTOMS_COMP_CS_005",
+  "code": "LOSS_OF_APPETITE",
+  "name": "Loss of appetite",
+  "module": "constitutional-symptoms",
+  "body_system": "constitutional",
+  "category": "complaint",
+  "description": "Anorexia is a medical term for loss of appetite. While the term outside of the scientific literature is often used interchangeably with anorexia nervosa, many possible causes exist for a loss of appetite, some of which may be harmless, while others indicate a serious clinical condition or pose a significant risk.",
+  "hpo_codes": [],
+  "snomed_code": "79890006",
+  "snomed_verified_name": "Loss of appetite",
+  "icd10_code": "R63.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Anorexia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

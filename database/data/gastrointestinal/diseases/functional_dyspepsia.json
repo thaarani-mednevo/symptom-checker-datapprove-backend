@@ -1,0 +1,136 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_007",
+    "code":  "FUNCTIONAL_DYSPEPSIA",
+    "name":  "Functional dyspepsia",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Functional dyspepsia (FD) is a common gastrointestinal disorder defined by symptoms arising from the gastroduodenal region in the absence of an underlying organic disease that could easily explain the symptoms. Characteristic symptoms include epigastric burning, epigastric pain, postprandial fullness, and early satiety.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPEPSIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EARLY_SATIETY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEARTBURN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POSTPRANDIAL_FULLNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AND/OR_EPIGASTRIC_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_009",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DYSPEPSIA",
+                          "condition":  "New dyspepsia in a patient over 50, or dyspepsia with alarm features (weight loss, bleeding, dysphagia)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_010",
+                          "text":  "Are you over 50 years old and experiencing this indigestion/heartburn for the first time?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_009)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FUNCTIONAL_DYSPEPSIA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_004",
+                          "text":  "Is your swallowing difficulty getting worse over time, especially with solid foods?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_005)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FUNCTIONAL_DYSPEPSIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_018",
+                          "text":  "Is the discomfort clearly related to eating meals?",
+                          "purpose":  "gather_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FUNCTIONAL_DYSPEPSIA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS",
+                              "distinguishing_feature":  "GERD is dominated by heartburn and acid regurgitation; functional dyspepsia presents with epigastric pain/fullness without a clear acid-reflux pattern and normal endoscopy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "3696007",
+    "snomed_verified_name":  "Nonulcer dyspepsia",
+    "icd10_code":  "K30",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Functional dyspepsia",
+    "evidence_ids":  [
+                         "EVID_FUNCTIONAL_DYSPEPSIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

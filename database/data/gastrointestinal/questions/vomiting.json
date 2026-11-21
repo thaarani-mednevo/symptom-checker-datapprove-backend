@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "VOMITING",
+    "complaint_name":  "Vomiting",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_VOM_001",
+                          "text":  "How many times have you vomited in the last 24 hours?",
+                          "purpose":  "frequency",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VOMITING_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_VOM_002",
+                          "text":  "Is there blood or coffee-ground material in the vomit?",
+                          "purpose":  "haematemesis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HAEMATEMESIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VOM_003",
+                          "text":  "Do you have severe abdominal pain?",
+                          "purpose":  "pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VOMITING_WITH_PAIN",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VOM_004",
+                          "text":  "Are you dehydrated, dizzy, or unable to keep fluids down?",
+                          "purpose":  "dehydration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DEHYDRATION_FROM_VOMITING",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_VOM_005",
+                          "text":  "Could you be pregnant?",
+                          "purpose":  "pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PREGNANCY_VOMITING",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ]
+}

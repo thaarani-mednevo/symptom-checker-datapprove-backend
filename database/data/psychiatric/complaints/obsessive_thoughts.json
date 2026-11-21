@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_007",
+  "code": "OBSESSIVE_THOUGHTS",
+  "name": "Obsessive thoughts",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by obsessive thoughts.",
+  "hpo_codes": [
+    "HP:0030113"
+  ],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "F42.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other obsessive-compulsive disorder",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

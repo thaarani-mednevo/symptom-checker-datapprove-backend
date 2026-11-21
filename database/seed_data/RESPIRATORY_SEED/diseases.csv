@@ -1,0 +1,11 @@
+id,code,name,module,age_relevance,sex_relevance,acute_chronic,hpo_codes,snomed_code,icd10_code,version,evidence_id,snomed_needs_confirmation,icd10_validated,icd10_official_description
+DIS_RESP_001,ASTHMA,Asthma,respiratory,all,both,chronic,HP:0002099,195967001,J45.909,1.0,EVD_RESP_001,,true,"Unspecified asthma, uncomplicated"
+DIS_RESP_002,COPD,Chronic Obstructive Pulmonary Disease,respiratory,adult,both,chronic,HP:0006510,13645005,J44.1,1.0,EVD_RESP_002,,true,Chronic obstructive pulmonary disease with acute exacerbation
+DIS_RESP_003,PNEUMONIA,Pneumonia,respiratory,all,both,acute,HP:0002090,233604007,J18.9,1.0,EVD_RESP_003,,true,"Pneumonia, unspecified organism"
+DIS_RESP_004,PULMONARY_TUBERCULOSIS,Pulmonary Tuberculosis,respiratory,all,both,chronic,HP:0004935,154283005,A15.0,1.0,EVD_RESP_004,,true,Tuberculosis of lung
+DIS_RESP_005,LUNG_CANCER,Lung Cancer,respiratory,adult,both,chronic,HP:0100526,254637007,C34.10,1.0,EVD_RESP_005,,true,"Malignant neoplasm of upper lobe, bronchus or lung, unspecified side"
+DIS_RESP_006,PLEURAL_EFFUSION,Pleural Effusion,respiratory,all,both,acute,HP:0002202,60046008,J90,1.0,EVD_RESP_006,,true,Pleural effusion in conditions classified elsewhere
+DIS_RESP_007,BRONCHIECTASIS,Bronchiectasis,respiratory,all,both,chronic,HP:0002110,12295008,J47.9,1.0,EVD_RESP_007,,true,"Bronchiectasis, uncomplicated"
+DIS_RESP_008,PNEUMOTHORAX,Pneumothorax,respiratory,adult,male_predominant,acute,HP:0002107,36118008,J93.9,1.0,EVD_RESP_008,,true,"Pneumothorax, unspecified"
+DIS_RESP_009,INTERSTITIAL_LUNG_DISEASE,Interstitial Lung Disease,respiratory,adult,both,chronic,HP:0006530,233703007,J84.9,1.0,EVD_RESP_009,,true,"Interstitial lung disease, unspecified"
+DIS_RESP_010,ACUTE_BRONCHITIS,Acute Bronchitis,respiratory,all,both,acute,HP:0012387,10509002,J20.9,1.0,EVD_RESP_010,,true,"Acute bronchitis, unspecified"

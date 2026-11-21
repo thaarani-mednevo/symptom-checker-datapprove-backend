@@ -1,0 +1,76 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_029",
+    "code":  "PRIMARY_OLIGOMENORRHEA",
+    "name":  "Primary oligomenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Primary oligomenorrhea.",
+    "complaints":  [
+                       {
+                           "code":  "OLIGOMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm onset since menarche",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_OLIGOMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Quantify cycle length",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRIMARY_OLIGOMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SECONDARY_OLIGOMENORRHEA",
+                              "distinguishing_feature":  "Primary oligomenorrhea = infrequent periods since menarche; secondary oligomenorrhea = previously normal cycles that became infrequent"
+                          },
+                          {
+                              "disease_code":  "OLIGOMENORRHEA_UNSPECIFIED",
+                              "distinguishing_feature":  "Primary oligomenorrhea specifically confirms the pattern has been present since menarche"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "14884007",
+    "snomed_verified_name":  "Primary oligomenorrhea",
+    "icd10_code":  "N91.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Primary oligomenorrhea",
+    "evidence_ids":  [
+                         "EVID_PRIMARY_OLIGOMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

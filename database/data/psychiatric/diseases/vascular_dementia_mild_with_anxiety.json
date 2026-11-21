@@ -1,0 +1,124 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_008",
+    "code":  "VASCULAR_DEMENTIA_MILD_WITH_ANXIETY",
+    "name":  "Vascular dementia, mild, with anxiety",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Vascular dementia is dementia caused by a series of strokes. Restricted blood flow due to strokes reduces oxygen and glucose delivery to the brain, causing cell injury and neurological deficits in the affected region.",
+    "complaints":  [
+                       {
+                           "code":  "ANXIETY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "COGNITIVE_IMPAIRMENTSHORT_TERM_MEMORY_LOSS",
+                         "relationship":  "wikipedia_infobox_unverified,groq_detail_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "DIABETES_MELLITUS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HYPERLIPIDEMIA",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_STROKE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "ATRIAL_FIBRILLATION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "SEDENTARY_LIFESTYLE",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_ONSET_COGNITIVE_DECLINE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_SUDDEN_ONSET",
+                          "condition":  "Rapid cognitive decline within days to weeks"
+                      },
+                      {
+                          "code":  "RF_FOCAL_NEUROLOGICAL_DEFICIT",
+                          "trigger_entity_type":  "sign",
+                          "trigger_entity_code":  "SIGN_FOCAL_DEFICIT",
+                          "condition":  "New focal weakness, speech difficulty, visual field loss"
+                      },
+                      {
+                          "code":  "RF_SEVERE_HEADACHE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_HEADACHE",
+                          "condition":  "Intense headache with photophobia or visual changes"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_VASCULAR_DEMENTIA_ONSET",
+                          "text":  "Did memory or thinking problems start suddenly or worsen in a stepwise pattern, such as after a stroke or TIA?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VASCULAR_DEMENTIA_MILD_WITH_ANXIETY_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VASCULAR_DEMENTIA_SAFETY",
+                          "text":  "Is the person safe to be left alone (e.g., not leaving the stove on, wandering, or getting lost)?",
+                          "purpose":  "safety",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VASCULAR_DEMENTIA_MILD_WITH_ANXIETY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "429998004",
+    "snomed_verified_name":  "Vascular dementia",
+    "icd10_code":  "F01.A4",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Vascular dementia, mild, with anxiety",
+    "evidence_ids":  [
+                         "EVID_VASCULAR_DEMENTIA_MILD_WITH_ANXIETY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

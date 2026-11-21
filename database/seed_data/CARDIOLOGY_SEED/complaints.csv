@@ -1,0 +1,10 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+CMP_CARD_001,EXERTIONAL_DYSPNEA,Exertional dyspnea,cardiology,cardiovascular,complaint,HP:0002094,60845006,R06.0,1.0,,false,
+CMP_CARD_002,ORTHOPNEA,Orthopnea,cardiology,cardiovascular,complaint,HP:0012765,62744007,R06.01,1.0,true,true,Orthopnea
+CMP_CARD_003,PND,Paroxysmal nocturnal dyspnea,cardiology,cardiovascular,complaint,HP:0025268,55442000,R06.00,1.0,true,true,"Dyspnea, unspecified"
+CMP_CARD_004,PALPITATIONS,Palpitations,cardiology,cardiovascular,complaint,HP:0001962,80313002,R00.2,1.0,,true,Palpitations
+CMP_CARD_005,PRESYNCOPE,Presyncope,cardiology,cardiovascular,complaint,HP:0031637,427461000,R55,1.0,true,true,Syncope and collapse
+CMP_CARD_006,SYNCOPE,Syncope,cardiology,cardiovascular,complaint,HP:0001279,271594007,R55,1.0,,true,Syncope and collapse
+CMP_CARD_007,EDEMA,Edema,cardiology,cardiovascular,complaint,HP:0000969,267038008,R60.9,1.0,,true,"Edema, unspecified"
+CMP_CARD_008,UNILATERAL_LEG_SWELLING,Unilateral leg swelling,cardiology,cardiovascular,complaint,HP:0009036,271809000,R60.0,1.0,true,true,Localized edema
+CMP_CARD_009,CHEST_DISCOMFORT,Chest discomfort,cardiology,cardiovascular,complaint,HP:0001618,29857009,R07.9,1.0,,true,"Chest pain, unspecified"

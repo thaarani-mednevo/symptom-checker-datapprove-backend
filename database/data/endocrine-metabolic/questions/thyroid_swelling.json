@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "THYROID_SWELLING",
+    "complaint_name":  "Thyroid swelling",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_TSW_001",
+                                       "Is the swelling in the front of your neck and does it move when you swallow?",
+                                       "location",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "THYROID_LOCATION",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_TSW_002",
+                          "text":  "Has the swelling grown recently or over a long time?",
+                          "purpose":  "growth",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROID_SWELLING_GROWTH",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_TSW_003",
+                          "text":  "Do you have difficulty swallowing, a change in your voice, or breathing difficulty?",
+                          "purpose":  "compression",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_THYROID_COMPRESSION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "THYROID_COMPRESSION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_TSW_004",
+                          "text":  "Is the swelling tender or painful?",
+                          "purpose":  "tenderness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "TENDER_THYROID",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_TSW_005",
+                          "text":  "Do you have symptoms of overactive or underactive thyroid (palpitations, heat intolerance, fatigue, weight change)?",
+                          "purpose":  "function",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "THYROID_DYSFUNCTION_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

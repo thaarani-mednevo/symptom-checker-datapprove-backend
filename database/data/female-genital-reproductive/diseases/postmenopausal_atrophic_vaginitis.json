@@ -1,0 +1,87 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_002",
+    "code":  "POSTMENOPAUSAL_ATROPHIC_VAGINITIS",
+    "name":  "Postmenopausal atrophic vaginitis",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Postmenopausal atrophic vaginitis.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN_WITH_SEX",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VAGINAL_ITCHINESS_OR_DRYNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "AN_URGE_TO_URINATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BREASTFEEDING",
+                             "strength":  "wikidata_unverified"
+                         },
+                         {
+                             "code":  "MENOPAUSE",
+                             "strength":  "wikidata_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MENOPAUSE_STATUS",
+                          "text":  "Have your periods stopped for 12 months or more (menopause)?",
+                          "purpose":  "Confirm menopausal status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POSTMENOPAUSAL_ATROPHIC_VAGINITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "52441000",
+    "snomed_verified_name":  "Atrophic vaginitis",
+    "icd10_code":  "N95.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Postmenopausal atrophic vaginitis",
+    "evidence_ids":  [
+                         "EVID_POSTMENOPAUSAL_ATROPHIC_VAGINITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

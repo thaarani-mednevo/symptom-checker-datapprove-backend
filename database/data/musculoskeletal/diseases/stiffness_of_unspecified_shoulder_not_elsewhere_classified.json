@@ -1,0 +1,85 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_004",
+  "code": "STIFFNESS_OF_UNSPECIFIED_SHOULDER_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of unspecified shoulder, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Stiffness of unspecified shoulder, not elsewhere classified, is a condition characterized by reduced range of motion and discomfort in the shoulder joint without a specific underlying diagnosis.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "REDUCED_SHOULDER_RANGE_OF_MOTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "SHOULDER_PAIN_WITH_MOVEMENT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "DIFFICULTY_SLEEPING_ON_THE_AFFECTED_SIDE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "JOINT_CAPSULE_TIGHTNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_SHOULDER",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Sudden severe shoulder pain with fever, swelling, and limited motion indicating possible septic arthritis"
+    },
+    {
+      "code": "RF_SHOULDER_FRACTURE_IMMEDIATE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "FRACTURES",
+      "condition": "[LLM DRAFT] Acute trauma with deformity, severe pain, and inability to move the shoulder suggesting a fracture."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.619",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of unspecified shoulder, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_UNSPECIFIED_SHOULDER_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

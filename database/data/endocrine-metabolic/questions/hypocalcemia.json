@@ -1,0 +1,68 @@
+﻿{
+    "complaint_code":  "HYPOCALCEMIA",
+    "complaint_name":  "Hypocalcemia",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_LCA_001",
+                                       "Do you have tingling or numbness around your mouth, fingers, or toes?",
+                                       "perioral_tingling",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "PERIORAL_TINGLING",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_LCA_002",
+                          "text":  "Do you have muscle cramps, spasms, or twitching?",
+                          "purpose":  "tetany",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TETANY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LCA_003",
+                          "text":  "Have you had a seizure or lost consciousness?",
+                          "purpose":  "seizure_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPOCALCAEMIA_SEIZURE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LCA_004",
+                          "text":  "Have you had recent neck surgery or thyroid/parathyroid problems?",
+                          "purpose":  "cause_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "POST_SURGICAL_HYPOCALCAEMIA",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ]
+}

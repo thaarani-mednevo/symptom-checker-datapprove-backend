@@ -1,0 +1,120 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_009",
+    "code":  "INTERSTITIAL_LUNG_DISEASE",
+    "name":  "Interstitial Lung Disease",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "A respiratory condition known as Interstitial Lung Disease.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "CHEST_TIGHTNESS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FINGER_CLUBBING",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "FINE_CRACKLES_BIBASAL",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXERCISE_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OCCUPATIONAL_DUST_EXPOSURE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CONNECTIVE_TISSUE_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DRUG_TOXICITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_004",
+                          "text":  "Do you have a persistent cough that produces phlegm most days?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHRONIC_AIRWAY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INTERSTITIAL_LUNG_DISEASE_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_009",
+                          "text":  "Have you had unexplained weight loss in the past few months?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SYSTEMIC_ILLNESS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INTERSTITIAL_LUNG_DISEASE_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COPD",
+                              "distinguishing_feature":  "COPD is obstructive with hyperinflation; ILD is restrictive with reduced DLCO and fine bibasal crackles — spirometry pattern is key distinguishing feature."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0006530"
+                  ],
+    "snomed_code":  "233703007",
+    "snomed_verified_name":  "Interstitial lung disease",
+    "icd10_code":  "J84.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Interstitial pulmonary disease, unspecified",
+    "evidence_ids":  [
+                         "EVD_RESP_009"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

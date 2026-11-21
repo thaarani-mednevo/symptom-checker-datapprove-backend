@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_011",
+  "code": "SOMATIC_SYMPTOMS",
+  "name": "Somatic symptoms",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "Somatic anxiety, also known as somatization, is the physical manifestation of anxiety. It is commonly contrasted with cognitive anxiety, which is the mental manifestation of anxiety, or the specific thought processes that occur during anxiety, such as concern or worry.",
+  "hpo_codes": [
+    "HP:0200114"
+  ],
+  "snomed_code": "723916001",
+  "snomed_verified_name": "Bodily distress disorder",
+  "icd10_code": "F45.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Undifferentiated somatoform disorder",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

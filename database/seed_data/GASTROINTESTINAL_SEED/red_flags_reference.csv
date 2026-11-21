@@ -1,0 +1,24 @@
+code,name,action,source_status
+RF_GI_001,"Hematemesis or melena with hemodynamic instability (dizziness, fainting, rapid heart rate)",call_emergency_services,clinician_approved
+RF_GI_002,Large-volume or ongoing hematochezia with dizziness or fainting,call_emergency_services,clinician_approved
+RF_GI_003,Bilious (green/yellow) vomiting in a neonate or infant,call_emergency_services,clinician_approved
+RF_GI_004,Inability to keep any fluids down / signs of dehydration,go_to_er_immediately,clinician_approved
+RF_GI_005,"Progressive dysphagia (worsening, especially to solids) with unintentional weight loss",urgent_specialist_referral,clinician_approved
+RF_GI_006,"Sudden-onset dysphagia with slurred speech, facial droop, or limb weakness",call_emergency_services,clinician_approved
+RF_GI_007,"Severe, constant, worsening abdominal pain with a rigid or distended abdomen",go_to_er_immediately,clinician_approved
+RF_GI_008,No passage of flatus or stool with abdominal distension and vomiting (suspected obstruction),go_to_er_immediately,clinician_approved
+RF_GI_009,"New-onset dyspepsia/heartburn in a patient over 50, or with alarm features",urgent_specialist_referral,clinician_approved
+RF_GI_010,Unintentional weight loss of more than 5% body weight over 3 months,urgent_specialist_referral,clinician_approved
+RF_GI_011,Bloody diarrhea with high fever and systemic illness (looks unwell),go_to_er_immediately,clinician_approved
+RF_GI_012,Iron-deficiency anemia in an adult male or a postmenopausal woman without an obvious cause,urgent_specialist_referral,clinician_approved
+RF_GI_013,"Persistent vomiting for more than 24-48 hours, or vomiting with severe headache/stiff neck",go_to_er_immediately,clinician_approved
+RF_GI_014,Family history of colorectal cancer or inflammatory bowel disease with new bowel symptoms,urgent_specialist_referral,clinician_approved
+RF_GI_015,"Rectal mass, non-healing rectal ulcer, or persistent rectal bleeding beyond 4-6 weeks",urgent_specialist_referral,clinician_approved
+RF_HEMATOCHEZIA_ACUTE,hematochezia_acute,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_MELENA_ACUTE,melena_acute,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_SEVERE_CONSTIPATION_WITH_OBSTRUCTION,severe_constipation_with_obstruction,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_MASSIVE_RECTAL_BLEEDING_FROM_CONSTIPATION,massive_rectal_bleeding_from_constipation,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_HEMATOCHEZIA_MASSIVE,hematochezia_massive,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_RECTAL_PAIN_SEVERE,rectal_pain_severe,URGENT_CARE_SAME_DAY,ai_drafted_unverified
+RF_HEMATEMESIS_SHOCK,hematemesis_shock,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified
+RF_BILIOUS_VOMITING_OBSTRUCTION,bilious_vomiting_obstruction,EMERGENCY_DEPARTMENT_IMMEDIATE,ai_drafted_unverified

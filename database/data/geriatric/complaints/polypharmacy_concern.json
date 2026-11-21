@@ -1,0 +1,17 @@
+{
+  "id": "GERIATRIC_COMP_GER_004",
+  "code": "POLYPHARMACY_CONCERN",
+  "name": "Polypharmacy concern",
+  "module": "geriatric",
+  "body_system": "geriatric",
+  "category": "complaint",
+  "description": "Polypharmacy is defined as the concurrent use of five or more medications, though clinically the concern is about inappropriate or unnecessary drug combinations. In older adults, polypharmacy drives adverse drug reactions, falls (sedatives, antihypertensives, diuretics), cognitive impairment (anticholinergics, opioids, benzodiazepines), renal impairment, and poor adherence. The Beers Criteria and STOPP/START tools identify potentially inappropriate medications in elderly patients. A structured medication review — stopping unnecessary drugs, simplifying regimens, and reviewing indication and dosing for renal/hepatic function — is a core geriatric intervention.",
+  "hpo_codes": [],
+  "snomed_code": "182817000",
+  "snomed_verified_name": "Drug therapy",
+  "icd10_code": "Z87.891",
+  "icd10_validated": true,
+  "icd10_official_description": "Personal history of other specified conditions",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

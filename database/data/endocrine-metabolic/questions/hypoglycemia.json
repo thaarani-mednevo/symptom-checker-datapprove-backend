@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "HYPOGLYCEMIA",
+    "complaint_name":  "Hypoglycemia",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_LG_001",
+                                       "Do you feel shaky, sweaty, hungry, or dizzy before meals?",
+                                       "symptoms",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "HYPO_SYMPTOMS",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_LG_002",
+                          "text":  "Does eating relieve the symptoms?",
+                          "purpose":  "relief",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RELIEF_WITH_FOOD",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LG_003",
+                          "text":  "Do you take insulin or tablets for diabetes?",
+                          "purpose":  "medication_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DIABETES_MEDICATION",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_LG_004",
+                          "text":  "Have you lost consciousness, had a seizure, or been unable to wake up?",
+                          "purpose":  "severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SEVERE_HYPOGLYCEMIA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LG_005",
+                          "text":  "Have the episodes occurred after fasting, exercise, or alcohol?",
+                          "purpose":  "trigger",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "HYPO_TRIGGER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,19 @@
+code,description
+CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS,Chronic thyroiditis with transient thyrotoxicosis is an autoimmune thyroid inflammation that temporarily elevates thyroid hormone levels before returning to euthyroid state.
+POSTINFECTIOUS_HYPOTHYROIDISM,Postinfectious hypothyroidism is a delayed onset of hypothyroid symptoms following an acute viral or bacterial infection.
+POSTPROCEDURAL_HYPOTHYROIDISM,"Postprocedural hypothyroidism is a transient or permanent reduction in thyroid hormone production following thyroid surgery, radioiodine therapy, or neck irradiation."
+SUBCLINICAL_IODINE_DEFICIENCY_HYPOTHYROIDISM,"A mild form of hypothyroidism caused by insufficient iodine intake, presenting with subtle biochemical changes but minimal clinical symptoms."
+DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA,Sudden onset of hyperglycemia due to exposure to certain drugs or chemicals that impair insulin secretion or action.
+HYPOGLYCEMIA_LEVEL_1,"Hypoglycemia level 1 is a mild drop in blood glucose below normal thresholds, often asymptomatic or presenting with mild adrenergic symptoms."
+HYPOGLYCEMIA_LEVEL_2,A moderate drop in blood glucose requiring intervention but not life-threatening.
+HYPOGLYCEMIA_LEVEL_3,A severe hypoglycemic episode with neuroglycopenic symptoms requiring immediate medical intervention.
+IATROGENIC_NEONATAL_HYPOGLYCEMIA,Iatrogenic neonatal hypoglycemia is a transient low blood glucose condition in newborns caused by medical interventions such as excessive glucose infusion or delayed feeding.
+DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA,"Drug-induced hypoglycemia without coma is a sudden drop in blood glucose levels caused by medication, presenting with neuroglycopenic symptoms but no loss of consciousness."
+AUTOSOMAL_DOMINANT_HYPOCALCEMIA,"A genetic disorder characterized by low serum calcium, high serum phosphate, and low urinary calcium excretion due to activating mutations in the calcium-sensing receptor or GNA11 gene."
+DYSHORMOGENETIC_GOITER,"A goiter caused by impaired synthesis or action of thyroid hormones, leading to compensatory thyroid enlargement."
+NONTOXIC_DIFFUSE_GOITER,"Diffuse enlargement of the thyroid gland without evidence of hyperthyroidism, often due to iodine deficiency or other non-toxic causes."
+NONTOXIC_GOITER_UNSPECIFIED,A diffuse enlargement of the thyroid gland without associated hyperthyroidism or hypothyroidism.
+OTHER_SPECIFIED_NONTOXIC_GOITER,"A slowly enlarging thyroid gland without evidence of hyperthyroidism or iodine deficiency, often diagnosed after other causes are excluded."
+NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED,"A thyroid enlargement in a newborn due to iodine deficiency or maternal thyroid disease, presenting with neck swelling and potential compressive symptoms."
+COWS_MILK_HYPOCALCEMIA_IN_NEWBORN,"A neonatal condition characterized by low serum calcium due to inadequate intake or absorption, often associated with cow's milk-based formula feeding."
+HYPERCALCEMIA_OF_MALIGNANCY,Hypercalcemia of malignancy is an elevated serum calcium level caused by tumor-related secretion of parathyroid hormone-related peptide or osteolytic bone metastases.

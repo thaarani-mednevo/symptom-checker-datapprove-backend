@@ -1,0 +1,17 @@
+{
+  "id": "BREAST_COMP_BRE_001",
+  "code": "BREAST_PAIN",
+  "name": "Breast pain",
+  "module": "breast",
+  "body_system": "breast",
+  "category": "complaint",
+  "description": "Breast pain is the symptom of discomfort in either one or both breasts. Pain in both breasts is often described as breast tenderness, is usually associated with the menstrual period and is not serious.",
+  "hpo_codes": [],
+  "snomed_code": "53430007",
+  "snomed_verified_name": "Pain of breast",
+  "icd10_code": "N64.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Mastodynia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

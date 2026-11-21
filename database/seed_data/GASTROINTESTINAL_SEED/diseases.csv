@@ -1,0 +1,42 @@
+id,code,name,module,age_relevance,sex_relevance,acute_chronic,hpo_codes,snomed_code,icd10_code,version,evidence_id,snomed_needs_confirmation,icd10_validated,icd10_official_description,discovery_status
+DIS_GI_001,SIDEROPENIC_DYSPHAGIA,Sideropenic dysphagia,gastrointestinal,,,,,80126007,D50.1,1.0,EVID_SIDEROPENIC_DYSPHAGIA,true,,,icd10_keyword_match_unverified
+DIS_GI_002,DYSPHAGIA_FOLLOWING_CEREBRAL_INFARCTION,Dysphagia following cerebral infarction,gastrointestinal,,,,,,I69.391,1.0,EVID_DYSPHAGIA_FOLLOWING_CEREBRAL_INFARCTION,true,,,icd10_keyword_match_unverified
+DIS_GI_003,DYSPHAGIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE,Dysphagia following nontraumatic subarachnoid hemorrhage,gastrointestinal,,,,,,I69.091,1.0,EVID_DYSPHAGIA_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE,true,,,icd10_keyword_match_unverified
+DIS_GI_004,DYSPHAGIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE,Dysphagia following nontraumatic intracerebral hemorrhage,gastrointestinal,,,,,,I69.191,1.0,EVID_DYSPHAGIA_FOLLOWING_NONTRAUMATIC_INTRACEREBRAL_HEMORRHAGE,true,,,icd10_keyword_match_unverified
+DIS_GI_005,DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE,Dysphagia following other cerebrovascular disease,gastrointestinal,,,,,,I69.891,1.0,EVID_DYSPHAGIA_FOLLOWING_OTHER_CEREBROVASCULAR_DISEASE,true,,,icd10_keyword_match_unverified
+DIS_GI_006,DYSPHAGIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE,Dysphagia following unspecified cerebrovascular disease,gastrointestinal,,,,,,I69.991,1.0,EVID_DYSPHAGIA_FOLLOWING_UNSPECIFIED_CEREBROVASCULAR_DISEASE,true,,,icd10_keyword_match_unverified
+DIS_GI_007,FUNCTIONAL_DYSPEPSIA,Functional dyspepsia,gastrointestinal,,,,,3696007,K30,1.0,EVID_FUNCTIONAL_DYSPEPSIA,true,,,icd10_keyword_match_unverified
+DIS_GI_008,GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS,Gastro-esophageal reflux disease without esophagitis,gastrointestinal,,,,,266435005,K21.9,1.0,EVID_GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITHOUT_ESOPHAGITIS,true,,,icd10_keyword_match_unverified
+DIS_GI_009,GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITHOUT_BLEEDING,"Gastro-esophageal reflux disease with esophagitis, without bleeding",gastrointestinal,,,,,,K21.00,1.0,EVID_GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITHOUT_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_010,GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING,"Gastro-esophageal reflux disease with esophagitis, with bleeding",gastrointestinal,,,,,,K21.01,1.0,EVID_GASTRO_ESOPHAGEAL_REFLUX_DISEASE_WITH_ESOPHAGITIS_WITH_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_011,REGURGITATION_AND_RUMINATION_OF_NEWBORN,Regurgitation and rumination of newborn,gastrointestinal,,,,,,P92.1,1.0,EVID_REGURGITATION_AND_RUMINATION_OF_NEWBORN,true,,,icd10_keyword_match_unverified
+DIS_GI_012,VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY,Vomiting following gastrointestinal surgery,gastrointestinal,,,,,,K91.0,1.0,EVID_VOMITING_FOLLOWING_GASTROINTESTINAL_SURGERY,true,,,icd10_keyword_match_unverified
+DIS_GI_013,LATE_VOMITING_OF_PREGNANCY,Late vomiting of pregnancy,gastrointestinal,,,,,,O21.2,1.0,EVID_LATE_VOMITING_OF_PREGNANCY,true,,,icd10_keyword_match_unverified
+DIS_GI_014,OTHER_VOMITING_COMPLICATING_PREGNANCY,Other vomiting complicating pregnancy,gastrointestinal,,,,,,O21.8,1.0,EVID_OTHER_VOMITING_COMPLICATING_PREGNANCY,true,,,icd10_keyword_match_unverified
+DIS_GI_015,VOMITING_OF_PREGNANCY_UNSPECIFIED,"Vomiting of pregnancy, unspecified",gastrointestinal,,,,,,O21.9,1.0,EVID_VOMITING_OF_PREGNANCY_UNSPECIFIED,true,,,icd10_keyword_match_unverified
+DIS_GI_016,BILIOUS_VOMITING_OF_NEWBORN,Bilious vomiting of newborn,gastrointestinal,,,,,722933003,P92.01,1.0,EVID_BILIOUS_VOMITING_OF_NEWBORN,true,,,icd10_keyword_match_unverified
+DIS_GI_017,OTHER_VOMITING_OF_NEWBORN,Other vomiting of newborn,gastrointestinal,,,,,,P92.09,1.0,EVID_OTHER_VOMITING_OF_NEWBORN,true,,,icd10_keyword_match_unverified
+DIS_GI_018,FUNCTIONAL_DIARRHEA,Functional diarrhea,gastrointestinal,,,,,47812002,K59.1,1.0,EVID_FUNCTIONAL_DIARRHEA,true,,,icd10_keyword_match_unverified
+DIS_GI_019,NONINFECTIVE_NEONATAL_DIARRHEA,Noninfective neonatal diarrhea,gastrointestinal,,,,,,P78.3,1.0,EVID_NONINFECTIVE_NEONATAL_DIARRHEA,true,,,icd10_keyword_match_unverified
+DIS_GI_020,IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA,Irritable bowel syndrome with diarrhea,gastrointestinal,,,,,197125005,K58.0,1.0,EVID_IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA,true,,,icd10_keyword_match_unverified
+DIS_GI_021,CONSTIPATION_UNSPECIFIED,"Constipation, unspecified",gastrointestinal,,,,,,K59.00,1.0,EVID_CONSTIPATION_UNSPECIFIED,true,,,icd10_keyword_match_unverified
+DIS_GI_022,OTHER_CONSTIPATION,Other constipation,gastrointestinal,,,,,,K59.09,1.0,EVID_OTHER_CONSTIPATION,true,,,icd10_keyword_match_unverified
+DIS_GI_023,SLOW_TRANSIT_CONSTIPATION,Slow transit constipation,gastrointestinal,,,,,35298007,K59.01,1.0,EVID_SLOW_TRANSIT_CONSTIPATION,true,,,icd10_keyword_match_unverified
+DIS_GI_024,OUTLET_DYSFUNCTION_CONSTIPATION,Outlet dysfunction constipation,gastrointestinal,,,,,,K59.02,1.0,EVID_OUTLET_DYSFUNCTION_CONSTIPATION,true,,,icd10_keyword_match_unverified
+DIS_GI_025,DRUG_INDUCED_CONSTIPATION,Drug induced constipation,gastrointestinal,,,,,,K59.03,1.0,EVID_DRUG_INDUCED_CONSTIPATION,true,,,icd10_keyword_match_unverified
+DIS_GI_026,CHRONIC_IDIOPATHIC_CONSTIPATION,Chronic idiopathic constipation,gastrointestinal,,,,,82934008,K59.04,1.0,EVID_CHRONIC_IDIOPATHIC_CONSTIPATION,true,,,icd10_keyword_match_unverified
+DIS_GI_027,NEONATAL_MELENA,Neonatal melena,gastrointestinal,,,,,206424005,P54.1,1.0,EVID_NEONATAL_MELENA,true,,,icd10_keyword_match_unverified
+DIS_GI_028,NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD,Neonatal hematemesis and melena due to swallowed maternal blood,gastrointestinal,,,,,,P78.2,1.0,EVID_NEONATAL_HEMATEMESIS_AND_MELENA_DUE_TO_SWALLOWED_MATERNAL_BLOOD,true,,,icd10_keyword_match_unverified
+DIS_GI_029,NEONATAL_HEMATEMESIS,Neonatal hematemesis,gastrointestinal,,,,,206423004,P54.0,1.0,EVID_NEONATAL_HEMATEMESIS,true,,,icd10_keyword_match_unverified
+DIS_GI_030,CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING,"Crohn's disease, unspecified, with rectal bleeding",gastrointestinal,,,,,,K50.911,1.0,EVID_CROHNS_DISEASE_UNSPECIFIED_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_031,ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING,Ulcerative (chronic) pancolitis with rectal bleeding,gastrointestinal,,,,,,K51.011,1.0,EVID_ULCERATIVE_CHRONIC_PANCOLITIS_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_032,ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING,Ulcerative (chronic) proctitis with rectal bleeding,gastrointestinal,,,,,,K51.211,1.0,EVID_ULCERATIVE_CHRONIC_PROCTITIS_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_033,ULCERATIVE_CHRONIC_RECTOSIGMOIDITIS_WITH_RECTAL_BLEEDING,Ulcerative (chronic) rectosigmoiditis with rectal bleeding,gastrointestinal,,,,,,K51.311,1.0,EVID_ULCERATIVE_CHRONIC_RECTOSIGMOIDITIS_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_034,LEFT_SIDED_COLITIS_WITH_RECTAL_BLEEDING,Left sided colitis with rectal bleeding,gastrointestinal,,,,,,K51.511,1.0,EVID_LEFT_SIDED_COLITIS_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_035,OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING,Other ulcerative colitis with rectal bleeding,gastrointestinal,,,,,,K51.811,1.0,EVID_OTHER_ULCERATIVE_COLITIS_WITH_RECTAL_BLEEDING,true,,,icd10_keyword_match_unverified
+DIS_GI_036,RECTAL_ABSCESS,Rectal abscess,gastrointestinal,,,,,197166005,K61.1,1.0,EVID_RECTAL_ABSCESS,true,,,icd10_keyword_match_unverified
+DIS_GI_037,RECTAL_POLYP,Rectal polyp,gastrointestinal,,,,,39772007,K62.1,1.0,EVID_RECTAL_POLYP,true,,,icd10_keyword_match_unverified
+DIS_GI_038,RECTAL_PROLAPSE,Rectal prolapse,gastrointestinal,,,,,57773001,K62.3,1.0,EVID_RECTAL_PROLAPSE,true,,,icd10_keyword_match_unverified
+DIS_GI_039,RECTAL_FISTULA_UNSPECIFIED,"Rectal fistula, unspecified",gastrointestinal,,,,,,K60.40,1.0,EVID_RECTAL_FISTULA_UNSPECIFIED,true,,,icd10_keyword_match_unverified
+DIS_GI_040,NEONATAL_RECTAL_HEMORRHAGE,Neonatal rectal hemorrhage,gastrointestinal,,,,,206425006,P54.2,1.0,EVID_NEONATAL_RECTAL_HEMORRHAGE,true,,,icd10_keyword_match_unverified
+DIS_GI_041,RECTAL_FISTULA_SIMPLE_INITIAL,"Rectal fistula, simple, initial",gastrointestinal,,,,,,K60.411,1.0,EVID_RECTAL_FISTULA_SIMPLE_INITIAL,true,,,icd10_keyword_match_unverified

@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_007",
+  "code": "MOUTH_ULCERS",
+  "name": "Mouth ulcers",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "A mouth ulcer (aphtha), or sometimes called a canker sore or salt blister, is an ulcer that occurs on the mucous membrane of the oral cavity. Mouth ulcers are very common, occurring in association with many diseases and by many different mechanisms, but usually there is no serious underlying cause.",
+  "hpo_codes": [],
+  "snomed_code": "26284000",
+  "snomed_verified_name": "Ulcer of mouth",
+  "icd10_code": "K12.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Other forms of stomatitis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

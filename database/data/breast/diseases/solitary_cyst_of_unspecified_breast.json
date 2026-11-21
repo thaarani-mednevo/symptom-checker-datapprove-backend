@@ -1,0 +1,145 @@
+﻿{
+    "id":  "BREAST_DIS_CS_007",
+    "code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+    "name":  "Solitary cyst of unspecified breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A solitary, usually painless cystic lesion of the breast that is not associated with a specific breast structure.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PALPABLE_BREAST_LUMP",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "BREAST_TENDERNESS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NIPPLE_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SKIN_DIMPLING",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HORMONAL_INFLUENCE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_INFECTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "AXILLARY_LUMP",
+                          "condition":  "[LLM DRAFT] Sudden severe pain, redness, swelling, fever, and systemic signs of infection"
+                      },
+                      {
+                          "code":  "RF_ACUTE_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Sudden severe pain with rapid swelling, pallor, tachycardia, or signs of anemia/shock."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_SINGLE_LUMP_IN_Y_SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+                          "text":  "[LLM DRAFT] Do you feel a distinct, single lump in your breast?",
+                          "purpose":  "screens for a solitary breast mass",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_BREAST_LUMP_SOFT_TO_FIRM_SMOOTH",
+                          "text":  "[LLM DRAFT] Is the breast lump soft to firm, smooth, and easily movable under the skin?",
+                          "purpose":  "screens for typical benign cyst characteristics",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DID_THE_BREAST_LUMP_APPEAR_OR_CHANGE_RAP",
+                          "text":  "[LLM DRAFT] Did the breast lump appear or change rapidly, or is it accompanied by skin dimpling or bloody nipple discharge?",
+                          "purpose":  "screens for red flag symptoms requiring urgent evaluation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Laterality specification helps differentiate the exact anatomical location compared to an unspecified breast cyst."
+                          },
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_LEFT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Laterality specification distinguishes the exact side of the lesion from a cyst with unspecified laterality."
+                          },
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Histological malignancy rather than a benign fluid-filled cyst distinguishes this neoplastic condition."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N60.09",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Solitary cyst of unspecified breast",
+    "evidence_ids":  [
+                         "EVID_SOLITARY_CYST_OF_UNSPECIFIED_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

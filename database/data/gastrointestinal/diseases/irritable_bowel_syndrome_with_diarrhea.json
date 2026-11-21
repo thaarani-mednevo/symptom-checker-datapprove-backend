@@ -1,0 +1,116 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_020",
+    "code":  "IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA",
+    "name":  "Irritable bowel syndrome with diarrhea",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Irritable bowel syndrome (IBS) is a functional gastrointestinal disorder characterized by a group of symptoms that commonly include abdominal pain, abdominal bloating, and changes in the consistency of bowel movements. These symptoms may occur over a long time, sometimes for years.",
+    "complaints":  [
+                       {
+                           "code":  "DIARRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_PAIN",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLOATING",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_DISCOMFORT",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_014",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DIARRHEA",
+                          "condition":  "New bowel symptom change with family history of colorectal cancer or IBD"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_002",
+                          "text":  "Have you noticed blood in your stool, and if so, is it a large amount or ongoing?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_002)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_015",
+                          "text":  "Does anyone in your immediate family have colon cancer or inflammatory bowel disease (Crohn\u0027s/ulcerative colitis)?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_014)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "197125005",
+    "snomed_verified_name":  "Irritable bowel syndrome with diarrhea",
+    "icd10_code":  "K58.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Irritable bowel syndrome with diarrhea",
+    "evidence_ids":  [
+                         "EVID_IRRITABLE_BOWEL_SYNDROME_WITH_DIARRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

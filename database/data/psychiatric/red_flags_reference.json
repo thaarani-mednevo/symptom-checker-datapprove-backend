@@ -1,0 +1,590 @@
+{
+  "module": "psychiatric",
+  "red_flags": [
+    {
+      "code": "RF_PSYCHOSIS_ORGANIC_ACUTE_ONSET",
+      "name": "Sudden-onset delusions with confusion, fever, or after head injury/new medication",
+      "action": "urgent_medical_review"
+    },
+    {
+      "code": "RF_PSYCHOSIS_SAFETY_RISK",
+      "name": "Danger to self or others driven by delusional beliefs",
+      "action": "emergency_referral"
+    },
+    {
+      "code": "RF_NSSH_CURRENT_IDEATION",
+      "name": "Current thoughts of self-harm despite a past (resolved) history",
+      "action": "emergency_referral"
+    },
+    {
+      "code": "RF_BIPOLAR_ACUTE_MANIA_OR_RISK",
+      "name": "Acute mania with severe agitation, or suicidal ideation during a depressive phase",
+      "action": "emergency_referral"
+    },
+    {
+      "code": "RF_SUICIDAL_IDEATION",
+      "name": "Rf Suicidal Ideation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SELF_HARM",
+      "name": "Rf Self Harm",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PSYCHOSIS",
+      "name": "Rf Psychosis",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_FUNCTIONAL_IMPAIRMENT",
+      "name": "Rf Severe Functional Impairment",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CONTINUOUS_STRESSOR",
+      "name": "Rf Continuous Stressor",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "ALCOHOL_INDUCED_PSYCHOTIC_RISK_VIOLENCE",
+      "name": "Alcohol Induced Psychotic Risk Violence",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "ALCOHOL_INDUCED_PSYCHOTIC_RISK_SELF_HARM",
+      "name": "Alcohol Induced Psychotic Risk Self Harm",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "ALCOHOL_INDUCED_PSYCHOTIC_RISK_HALLUCINATIONS",
+      "name": "Alcohol Induced Psychotic Risk Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SCREAMING",
+      "name": "Rf Screaming",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_VIOLENT_BEHAVIOR",
+      "name": "Rf Violent Behavior",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HALLUCINATIONS",
+      "name": "Rf Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DELUSIONS",
+      "name": "Rf Delusions",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ALCOHOL_INTAKE",
+      "name": "Rf Alcohol Intake",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET_HALLUCINATIONS",
+      "name": "Rf Sudden Onset Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PARANOID_DELUSIONS",
+      "name": "Rf Paranoid Delusions",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_AGITATION_AND_VIOLENCE",
+      "name": "Rf Agitation And Violence",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_WITHDRAWAL",
+      "name": "Rf Severe Withdrawal",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUICIDE_IDEATION",
+      "name": "Rf Suicide Ideation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_WITH_CARDIAC_SYMPTOMS",
+      "name": "Rf Panic With Cardiac Symptoms",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUBSTANCE_ABUSE",
+      "name": "Rf Substance Abuse",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_MEDICAL_CONDITION",
+      "name": "Rf Medical Condition",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_UNSTABLE_RELATIONSHIPS",
+      "name": "Rf Unstable Relationships",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_IDENTITY_DISTURBANCE",
+      "name": "Rf Identity Disturbance",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_IMPULSIVITY",
+      "name": "Rf Impulsivity",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CANNABIS_USE_WITH_AUDITORY_HALLUCINATIONS",
+      "name": "Rf Cannabis Use With Auditory Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CANNABIS_USE_WITH_PERSECUTORY_DELUSIONS",
+      "name": "Rf Cannabis Use With Persecutory Delusions",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CANNABIS_USE_WITH_SUDDEN_ONSET_PSYCHOSIS",
+      "name": "Rf Cannabis Use With Sudden Onset Psychosis",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_AUDITORY_HALLUCINATIONS",
+      "name": "Rf Severe Auditory Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DELUSIONS_OF_PERSECUTION",
+      "name": "Rf Delusions Of Persecution",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HIGH_POTENCY_CANNABIS_USE",
+      "name": "Rf High Potency Cannabis Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HISTORY_OF_PSYCHOSIS",
+      "name": "Rf History Of Psychosis",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_USE_OF_OTHER_SUBSTANCES",
+      "name": "Rf Use Of Other Substances",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_ANXIETY",
+      "name": "Rf Severe Anxiety",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CANNABIS_USE_WITH_HALLUCINATIONS",
+      "name": "Rf Cannabis Use With Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PSYCHOTIC_SYMPTOMS_WITH_CANNABIS",
+      "name": "Rf Psychotic Symptoms With Cannabis",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_LONG_TERM_CANNABIS_USE_WITH_PSYCHOTIC_HISTORY",
+      "name": "Rf Long Term Cannabis Use With Psychotic History",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CHRONIC_HIGH_POTENCY_USE",
+      "name": "Rf Chronic High Potency Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CO_OCCURING_SUBSTANCE_USE",
+      "name": "Rf Co Occuring Substance Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SEVERE_HALLUCINATIONS",
+      "name": "Severe Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "VIGILANT_AGITATION",
+      "name": "Vigilant Agitation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SELF_HARM_RISK",
+      "name": "Self Harm Risk",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_AGGRESSIVE_BEHAVIOR",
+      "name": "Rf Aggressive Behavior",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_RULE_BREAKING",
+      "name": "Rf Rule Breaking",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DEFIANCE",
+      "name": "Rf Defiance",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PROPERTY_DAMAGE",
+      "name": "Rf Property Damage",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_ATTACKS",
+      "name": "Rf Panic Attacks",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUBSTANCE_USE",
+      "name": "Rf Substance Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PHYSIOLOGICAL_SYMPTOMS",
+      "name": "Rf Physiological Symptoms",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DEPRESSION",
+      "name": "Rf Depression",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ACUTE_MEDICAL_SYMPTOM",
+      "name": "Rf Acute Medical Symptom",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SEVERE_PAIN",
+      "name": "Severe Pain",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "FUNCTIONAL_LIMITATION",
+      "name": "Functional Limitation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "DEPRESSION",
+      "name": "Depression",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ELECTROCUTION_SEQUELA",
+      "name": "Rf Electrocution Sequela",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CARDIAC_ARREST",
+      "name": "Rf Cardiac Arrest",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_BURN_INJURY",
+      "name": "Rf Burn Injury",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SELF_HARM_IDEATION",
+      "name": "Rf Self Harm Ideation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PRIOR_SELF_HARM_ATTEMPT",
+      "name": "Rf Prior Self Harm Attempt",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_KNIFE_USE_SELF_HARM",
+      "name": "Rf Knife Use Self Harm",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ANGRY_OUTBURST",
+      "name": "Rf Angry Outburst",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_URGENCY_TO_ANGRY",
+      "name": "Rf Urgency To Angry",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ANGRY_REACTIVITY",
+      "name": "Rf Angry Reactivity",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DEPRESSION_SYMPTOMS",
+      "name": "Rf Depression Symptoms",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_MEDICATION_ADVERSE",
+      "name": "Rf Medication Adverse",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUICIDE_RISK",
+      "name": "Rf Suicide Risk",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HOMICIDE_RISK",
+      "name": "Rf Homicide Risk",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_HALLUCINATIONS",
+      "name": "Rf Opioid Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_DELUSIONS",
+      "name": "Rf Opioid Delusions",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_PARANOIA",
+      "name": "Rf Opioid Paranoia",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_USE",
+      "name": "Rf Opioid Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_MENTAL_STATUS_CHANGE",
+      "name": "Rf Opioid Mental Status Change",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_OPIOID_SENSORY_DISTORTION",
+      "name": "Rf Opioid Sensory Distortion",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_AGITATION",
+      "name": "Rf Severe Agitation",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_VIOLENT_HALLUCINATIONS",
+      "name": "Rf Violent Hallucinations",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_PANIC",
+      "name": "Rf Severe Panic",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_DANGER_PHOBIA",
+      "name": "Rf Danger Phobia",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_ATTACK_CHEST_PAIN",
+      "name": "Rf Panic Attack Chest Pain",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_ATTACK_IMPENDING_DOOM",
+      "name": "Rf Panic Attack Impending Doom",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_ATTACK_SUDDEN_ONSET",
+      "name": "Rf Panic Attack Sudden Onset",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PANIC_ATTACK_CARDIAC_SYMPTOMS",
+      "name": "Rf Panic Attack Cardiac Symptoms",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HEARING_LOSS",
+      "name": "Rf Hearing Loss",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_RENAL_DYSFUNCTION",
+      "name": "Rf Renal Dysfunction",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_NEUROMUSCULAR_WEAKNESS",
+      "name": "Rf Neuromuscular Weakness",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_VESTIBULAR_SYMPTOMS",
+      "name": "Rf Vestibular Symptoms",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SEVERE_RESPIRATORY_DISTRESS",
+      "name": "Severe Respiratory Distress",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "ALTERED_MENTAL_STATUS",
+      "name": "Altered Mental Status",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "CARDIAC_ARRHYTHMIA",
+      "name": "Cardiac Arrhythmia",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SEVERE_ABDOMINAL_PAIN",
+      "name": "Severe Abdominal Pain",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "HYPOTENSION",
+      "name": "Hypotension",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SEIZURES",
+      "name": "Seizures",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "CHRONIC_MACROLIDE_USE",
+      "name": "Chronic Macrolide Use",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "UNEXPLAINED_TACHYCARDIA",
+      "name": "Unexplained Tachycardia",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_ANAPHYLAXIS",
+      "name": "Rf Severe Anaphylaxis",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_RESPIRATORY_DISTRESS",
+      "name": "Rf Respiratory Distress",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_CARDIAC_ARRHYTHMIA",
+      "name": "Rf Cardiac Arrhythmia",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ALTERED_MENTAL_STATUS",
+      "name": "Rf Altered Mental Status",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_HISTORY_OVERDOSE",
+      "name": "Rf History Overdose",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "VOMITING_WITH_BLOOD",
+      "name": "Vomiting With Blood",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RESPIRATORY_DISTRESS",
+      "name": "Respiratory Distress",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "SKIN_RASH",
+      "name": "Skin Rash",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "OCCULT_BLOOD_IN_STOOL",
+      "name": "Occult Blood In Stool",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_PHYSICAL_CAUSE_PRESENT",
+      "name": "Rf Physical Cause Present",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET",
+      "name": "Rf Sudden Onset",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_COMMAND_CONTENT",
+      "name": "Rf Command Content",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_UNEXPLAINED_WEIGHT_LOSS",
+      "name": "Rf Unexplained Weight Loss",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_UNEXPLAINED_FEVER",
+      "name": "Rf Unexplained Fever",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_DEFICIT",
+      "name": "Rf Neurological Deficit",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET_COGNITIVE_DECLINE",
+      "name": "Rf Sudden Onset Cognitive Decline",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_FOCAL_NEUROLOGICAL_DEFICIT",
+      "name": "Rf Focal Neurological Deficit",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_SEVERE_HEADACHE",
+      "name": "Rf Severe Headache",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_AGORAPHOBIA_HOUSEBOUND",
+      "name": "Patient is unable to leave home at all due to fear/avoidance",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_BDD_SUICIDALITY",
+      "name": "Appearance preoccupation accompanied by thoughts of self-harm or suicide (BDD carries elevated suicide risk)",
+      "action": "PENDING_CLINICIAN_INPUT"
+    },
+    {
+      "code": "RF_ANXIETY_FUNCTIONAL_COLLAPSE",
+      "name": "Anxiety symptoms accompanied by inability to work, care for self, or thoughts of self-harm",
+      "action": "PENDING_CLINICIAN_INPUT"
+    }
+  ]
+}

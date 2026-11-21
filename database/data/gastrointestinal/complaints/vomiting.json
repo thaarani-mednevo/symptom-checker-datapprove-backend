@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_006",
+  "code": "VOMITING",
+  "name": "Vomiting",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Vomiting is the forceful expulsion of the contents of one's stomach through the mouth and sometimes the nose. The vomited contents are known as vomit or vomitus.",
+  "hpo_codes": [],
+  "snomed_code": "422400008",
+  "snomed_verified_name": "Vomiting",
+  "icd10_code": "R11.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Vomiting, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

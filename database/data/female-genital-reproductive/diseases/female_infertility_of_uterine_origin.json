@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_037",
+    "code":  "FEMALE_INFERTILITY_OF_UTERINE_ORIGIN",
+    "name":  "Female infertility of uterine origin",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Female infertility of uterine origin.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PELVIC_SURGERY_INFECTION_HISTORY",
+                          "text":  "Have you had previous pelvic surgery, PID, or a pelvic infection?",
+                          "purpose":  "Identify uterine-cavity risk factors",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_OF_UTERINE_ORIGIN_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "26899006",
+    "snomed_verified_name":  "Female infertility of uterine origin",
+    "icd10_code":  "N97.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Female infertility of uterine origin",
+    "evidence_ids":  [
+                         "EVID_FEMALE_INFERTILITY_OF_UTERINE_ORIGIN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,80 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_041",
+    "code":  "HYPERCALCEMIA_OF_MALIGNANCY",
+    "name":  "Hypercalcemia of malignancy",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypercalcemia of malignancy is an elevated serum calcium level caused by tumor-related secretion of parathyroid hormone-related peptide or osteolytic bone metastases.",
+    "complaints":  [
+                       {
+                           "code":  "HYPERCALCEMIA",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERCALCEMIA",
+                          "condition":  "[LLM DRAFT] Serum Ca \u003e 14 mg/dL with confusion, seizures, or coma"
+                      },
+                      {
+                          "code":  "RF_CARDIAC_ARRHYTHMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERCALCEMIA",
+                          "condition":  "[LLM DRAFT] Serum Ca \u003e 14 mg/dL with arrhythmia or syncope"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_DIAGNOSED_WITH_CANCER_AND",
+                          "text":  "[LLM DRAFT] Have you been diagnosed with cancer and recently experienced severe confusion, extreme drowsiness, or trouble thinking clearly?",
+                          "purpose":  "Screens for severe neurological symptoms of hypercalcemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPERCALCEMIA_OF_MALIGNANCY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_UNDERGOING_CANCER_TREA",
+                          "text":  "[LLM DRAFT] Are you currently undergoing cancer treatment and experiencing frequent urination, intense thirst, and severe nausea or vomiting?",
+                          "purpose":  "Screens for common metabolic signs of elevated calcium",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPERCALCEMIA_OF_MALIGNANCY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "47709007",
+    "snomed_verified_name":  "Humoral hypercalcemia of malignancy",
+    "icd10_code":  "E83.52",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypercalcemia",
+    "evidence_ids":  [
+                         "EVID_HYPERCALCEMIA_OF_MALIGNANCY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

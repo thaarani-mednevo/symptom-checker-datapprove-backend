@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "FUNCTIONAL_DECLINE",
+    "complaint_name":  "Functional decline",
+    "module":  "geriatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_FUNCDEC_001",
+                          "text":  "What activities has the person stopped being able to do that they could manage before?",
+                          "purpose":  "adl_check",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FUNCTIONAL_DECLINE_ACTIVITIES",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FUNCDEC_002",
+                          "text":  "Did the decline happen suddenly or gradually?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DECLINE_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_FUNCDEC_003",
+                          "text":  "Has there been any recent illness, hospital admission, or change in medications?",
+                          "purpose":  "precipitant",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ADVERSE_DRUG_REACTION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DECLINE_PRECIPITANT",
+                          "yes_weight":  3,
+                          "no_weight":  "-1"
+                      },
+                      {
+                          "code":  "Q_CMP_FUNCDEC_004",
+                          "text":  "Is the person confused or showing signs of delirium?",
+                          "purpose":  "delirium_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DELIRIUM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DELIRIUM_WITH_DECLINE",
+                          "yes_weight":  4,
+                          "no_weight":  "-1"
+                      }
+                  ]
+}

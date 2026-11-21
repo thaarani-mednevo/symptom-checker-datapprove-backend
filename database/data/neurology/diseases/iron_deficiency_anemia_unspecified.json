@@ -1,0 +1,85 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_020",
+  "code": "IRON_DEFICIENCY_ANEMIA_UNSPECIFIED",
+  "name": "Iron deficiency anemia, unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Iron-deficiency anemia is anemia caused by a lack of iron. Anemia is defined as a decrease in the number of red blood cells or the amount of hemoglobin in the blood.",
+  "complaints": [
+    {
+      "code": "TASTE_DISTURBANCE",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEELING_TIRED",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SHORTNESS_OF_BREATH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CONFUSION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PALLOR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "IRON_DEFICIENCY",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "D50.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Iron deficiency anemia, unspecified",
+  "evidence_ids": [
+    "EVID_IRON_DEFICIENCY_ANEMIA_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

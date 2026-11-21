@@ -1,0 +1,72 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_013",
+    "code":  "DYSPAREUNIA_NOT_DUE_TO_A_SUBSTANCE_OR_KNOWN_PHYSIOLOGICAL_CONDITION",
+    "name":  "Dyspareunia not due to a substance or known physiological condition",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Dyspareunia not due to a substance or known physiological condition.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPAREUNIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_INTERCOURSE_PAIN_LOCATION",
+                          "text":  "Is the pain during sex felt at entry, or deep inside?",
+                          "purpose":  "Characterize pain pattern",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSPAREUNIA_NOT_DUE_TO_A_SUBSTANCE_OR_KNOWN_PHYSIOLOGICAL_CONDITION_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_SYMPTOM_DURATION_CHRONIC",
+                          "text":  "Have the symptoms been present for more than 3 months?",
+                          "purpose":  "Confirm chronicity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DYSPAREUNIA_NOT_DUE_TO_A_SUBSTANCE_OR_KNOWN_PHYSIOLOGICAL_CONDITION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_SPECIFIED_DYSPAREUNIA",
+                              "distinguishing_feature":  "Diagnosis of exclusion after a known physiological/substance-related cause has been ruled out, unlike other specified dyspareunia with an identified physical cause"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F52.6",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dyspareunia not due to a substance or known physiological condition",
+    "evidence_ids":  [
+                         "EVID_DYSPAREUNIA_NOT_DUE_TO_A_SUBSTANCE_OR_KNOWN_PHYSIOLOGICAL_CONDITION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

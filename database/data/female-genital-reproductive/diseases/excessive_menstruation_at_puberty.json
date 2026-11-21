@@ -1,0 +1,77 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_022",
+    "code":  "EXCESSIVE_MENSTRUATION_AT_PUBERTY",
+    "name":  "Excessive menstruation at puberty",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Excessive menstruation at puberty.",
+    "complaints":  [
+                       {
+                           "code":  "HEAVY_MENSTRUAL_BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ANEMIA_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEAVY_MENSTRUAL_BLEEDING",
+                          "condition":  "Heavy bleeding at puberty with symptoms suggestive of significant anemia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_AGE_AT_SYMPTOM_ONSET",
+                          "text":  "At what age did this first begin?",
+                          "purpose":  "Confirm pubertal timing",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EXCESSIVE_MENSTRUATION_AT_PUBERTY_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_PAD_SOAK_RATE",
+                          "text":  "How many pads or tampons are you soaking through per hour at the heaviest point?",
+                          "purpose":  "Quantify bleeding severity",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "RED_FLAG(RF_HEMODYNAMIC_INSTABILITY)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EXCESSIVE_MENSTRUATION_AT_PUBERTY_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EXCESSIVE_AND_FREQUENT_MENSTRUATION_WITH_IRREGULAR_CYCLE",
+                              "distinguishing_feature":  "Timing at puberty (often anovulatory, self-limiting) distinguishes this from established irregular heavy bleeding in adulthood"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N92.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Excessive menstruation at puberty",
+    "evidence_ids":  [
+                         "EVID_EXCESSIVE_MENSTRUATION_AT_PUBERTY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

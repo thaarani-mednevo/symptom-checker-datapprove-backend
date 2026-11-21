@@ -1,0 +1,140 @@
+﻿{
+    "id":  "GERIATRIC_DIS_CS_003",
+    "code":  "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY",
+    "name":  "Other idiopathic peripheral autonomic neuropathy",
+    "module":  "geriatric",
+    "category":  "disease",
+    "description":  "A rare, unexplained peripheral autonomic neuropathy presenting with orthostatic intolerance, sweating abnormalities, and gastrointestinal dysmotility.",
+    "complaints":  [
+                       {
+                           "code":  "FALLS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SHOOTING_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NUMBNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "TINGLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "TREMORS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLADDER_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "UNSTEADINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_AUTONOMIC_INSTABILITY_SEVERE_FALLS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FALLS",
+                          "condition":  "Recurrent unexplained falls due to sudden severe orthostatic hypotension or profound neurogenic syncope leading to injury or inability to maintain an upright posture."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_SUDDEN_SEVERE_DIZZINE",
+                          "text":  "Do you experience sudden, severe dizziness or fainting when standing up from a sitting or lying position?",
+                          "purpose":  "screens for orthostatic hypotension",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_A_PERSISTENT_LOSS_O",
+                          "text":  "Have you experienced a persistent loss of bladder control or sudden bowel incontinence?",
+                          "purpose":  "screens for severe autonomic failure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_AN_UNEXPLAINED_SIGNIFI",
+                          "text":  "Have you noticed an unexplained, significant decrease in your ability to sweat when exercising or in hot weather?",
+                          "purpose":  "screens for anhidrosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HISTORY_OF_FALLING",
+                              "distinguishing_feature":  "Episodic loss of balance without prominent systemic autonomic failure symptoms such as anhidrosis or orthostatic hypotension."
+                          },
+                          {
+                              "disease_code":  "PARKINSONS_DISEASE_WITHOUT_DYSKINESIA_WITH_FLUCTUATIONS",
+                              "distinguishing_feature":  "Presence of central dopaminergic motor features like resting tremor, rigidity, and bradykinesia accompanying the autonomic symptoms."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G90.09",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other idiopathic peripheral autonomic neuropathy",
+    "evidence_ids":  [
+                         "EVID_OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

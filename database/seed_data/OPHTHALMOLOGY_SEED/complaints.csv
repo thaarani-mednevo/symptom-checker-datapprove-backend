@@ -1,0 +1,14 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description,icd10_needs_confirmation
+COMP_OPH_001,WATERY_EYES,Watery eyes,ophthalmology,ophthalmology,complaint,,,H04.20,1.0,true,,,False
+COMP_OPH_002,DRY_EYES,Dry eyes,ophthalmology,ophthalmology,complaint,,162290004,H04.129,1.0,true,,,False
+COMP_OPH_003,RED_EYE,Red eye,ophthalmology,ophthalmology,complaint,,703630003,,1.0,true,,,True
+COMP_OPH_004,EYE_SWELLING,Eye swelling,ophthalmology,ophthalmology,complaint,,45177002,,1.0,true,,,True
+COMP_OPH_005,EYE_PAIN,Eye pain,ophthalmology,ophthalmology,complaint,,41652007,H57.10,1.0,true,,,False
+COMP_OPH_006,EYE_ITCHING,Eye itching,ophthalmology,ophthalmology,complaint,,,,1.0,true,,,True
+COMP_OPH_007,PHOTOPHOBIA,Photophobia,ophthalmology,ophthalmology,complaint,,409668002,H53.16,1.0,true,,,False
+COMP_OPH_008,GLARE,Glare,ophthalmology,ophthalmology,complaint,,64445006,,1.0,true,,,True
+COMP_OPH_009,PHOTOPSIA,Photopsia,ophthalmology,ophthalmology,complaint,,56170001,H53.19,1.0,true,,,True
+COMP_OPH_010,BLURRED_VISION,Blurred vision,ophthalmology,ophthalmology,complaint,,111516008,,1.0,true,,,True
+COMP_OPH_011,VISION_LOSS,Vision loss,ophthalmology,ophthalmology,complaint,,,H54.7,1.0,true,,,False
+COMP_OPH_012,VISUAL_DISTORTION,Visual distortion,ophthalmology,ophthalmology,complaint,,,,1.0,true,,,True
+COMP_OPH_013,DIPLOPIA,Diplopia,ophthalmology,ophthalmology,complaint,,24982008,H53.2,1.0,true,,,False

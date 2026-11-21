@@ -1,0 +1,113 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_021",
+    "code":  "OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES",
+    "name":  "Other post infection and related fatigue syndromes",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A persistent fatigue syndrome that arises after an acute infection, characterized by profound tiredness lasting more than 6 weeks, often accompanied by cognitive dysfunction and post-exertional malaise.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHRONIC_FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_NEUROLOGICAL_DEFICITS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Acute onset of focal weakness, confusion, seizures, or severe altered mental status"
+                      },
+                      {
+                          "code":  "RF_PROGRESSIVE_CARDIOPULMONARY_SYMPTOMS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "New or worsening chest pain, severe dyspnea at rest, or syncope"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_1",
+                          "text":  "Did your severe fatigue and body aches begin shortly after recovering from a known viral or bacterial infection?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_2",
+                          "text":  "Do you experience extreme, prolonged exhaustion lasting more than 24 hours after performing minor physical or mental activities?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_3",
+                          "text":  "Have you experienced any sudden, unexplained neurological changes such as paralysis or acute visual loss?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by post-exertional malaise, unrefreshing sleep, and cognitive impairment lasting at least six months without a confirmed preceding acute infection."
+                          },
+                          {
+                              "disease_code":  "POSTVIRAL_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Follows a definitively identified viral infection rather than other types of pathogens or unspecified infectious agents."
+                          },
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute fatigue and exhaustion directly linked to environmental heat exposure rather than an antecedent infection."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "G93.39",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other post infection and related fatigue syndromes",
+    "evidence_ids":  [
+                         "EVID_OTHER_POST_INFECTION_AND_RELATED_FATIGUE_SYNDROMES"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

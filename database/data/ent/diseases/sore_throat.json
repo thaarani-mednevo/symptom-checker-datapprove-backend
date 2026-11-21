@@ -1,0 +1,28 @@
+﻿{
+  "id": "ENT_DIS_ENT_018",
+  "code": "SORE_THROAT",
+  "name": "Sore throat",
+  "module": "ent",
+  "category": "disease",
+  "description": "Sore throat, also known as throat pain, is pain or irritation of the throat. The majority of sore throats are caused by a virus, for which antibiotics are not helpful.",
+  "complaints": [],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "25064002",
+  "snomed_verified_name": "Headache",
+  "icd10_code": "J02.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Acute pharyngitis, unspecified",
+  "evidence_ids": [
+    "EVID_SORE_THROAT"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

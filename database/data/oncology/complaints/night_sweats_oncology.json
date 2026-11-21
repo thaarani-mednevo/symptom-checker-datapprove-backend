@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_003",
+  "code": "NIGHT_SWEATS_ONCOLOGY",
+  "name": "Night sweats (oncology context)",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Night sweats in an oncology context refer to drenching nocturnal sweating severe enough to soak bedclothes, occurring as a constitutional symptom of malignancy. Together with fever and weight loss, they form the classic 'B-symptom' triad in lymphoma, which is associated with more advanced disease and worse prognosis. Night sweats also occur in leukaemia, solid tumours with paraneoplastic syndromes, and in patients on hormonal treatments for cancer. They must be distinguished from benign causes including menopause, infections (TB, HIV, endocarditis), and medications.",
+  "hpo_codes": ["HP:0030166"],
+  "snomed_code": "42984000",
+  "snomed_verified_name": "Night sweats",
+  "icd10_code": "R61",
+  "icd10_validated": true,
+  "icd10_official_description": "Generalized hyperhidrosis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

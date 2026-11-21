@@ -1,0 +1,99 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_001",
+    "code":  "SIDEROPENIC_DYSPHAGIA",
+    "name":  "Sideropenic dysphagia",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Plummer–Vinson syndrome is a rare disease characterized by dysphagia, iron-deficiency anemia, atrophic glossitis, angular cheilitis or cheilosis, and upper esophageal webs. Treatment with iron supplementation and mechanical widening of the esophagus generally leads to positive outcomes.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPHAGIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ESOPHAGEAL_WEB",
+                         "relationship":  "wikidata_unverified",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "IRON_DEFICIENCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "DYSPHAGIA",
+                          "condition":  "Progressive dysphagia with unintentional weight loss"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_004",
+                          "text":  "Is your swallowing difficulty getting worse over time, especially with solid foods?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_005)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SIDEROPENIC_DYSPHAGIA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_011",
+                          "text":  "Have you lost weight without trying, over the last 3 months?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_010)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SIDEROPENIC_DYSPHAGIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_GI_013",
+                          "text":  "Have you been told you have low iron / anemia recently, without a clear cause?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_012)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SIDEROPENIC_DYSPHAGIA_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DYSPHAGIA_FOLLOWING_CEREBRAL_INFARCTION",
+                              "distinguishing_feature":  "Sideropenic (Plummer-Vinson) dysphagia is gradual, painless, associated with iron-deficiency anemia and an esophageal web; post-stroke dysphagia is sudden-onset and accompanied by other neurological deficits."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "80126007",
+    "snomed_verified_name":  "Plummer-Vinson syndrome",
+    "icd10_code":  "D50.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Sideropenic dysphagia",
+    "evidence_ids":  [
+                         "EVID_SIDEROPENIC_DYSPHAGIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

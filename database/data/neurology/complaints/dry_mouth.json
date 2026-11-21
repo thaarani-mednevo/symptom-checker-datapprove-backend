@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_007",
+  "code": "DRY_MOUTH",
+  "name": "Dry mouth",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Xerostomia, also known as dry mouth, is a subjective complaint of dryness in the mouth, which may be associated with a change in the composition of saliva, reduced salivary flow, or have no identifiable cause.",
+  "hpo_codes": [],
+  "snomed_code": "87715008",
+  "snomed_verified_name": "Xerostomia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

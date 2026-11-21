@@ -1,0 +1,16 @@
+id,code,name,module,age_relevance,sex_relevance,acute_chronic,hpo_codes,snomed_code,icd10_code,version,evidence_id,snomed_needs_confirmation,icd10_validated,icd10_official_description
+DIS_CARD_001,HEART_FAILURE,Heart Failure,cardiology,all,both,both,HP:0001635,84114007,I50.9,1.0,EVD_CARD_001,,true,"Heart failure, unspecified"
+DIS_CARD_002,ACUTE_CORONARY_SYNDROME,Acute Coronary Syndrome,cardiology,adult,both,acute,HP:0100749,394659003,I24.9,1.0,EVD_CARD_002,,true,"Acute ischemic heart disease, unspecified"
+DIS_CARD_003,STABLE_ISCHEMIC_HEART_DISEASE,Stable Ischemic Heart Disease,cardiology,adult,both,chronic,HP:0001681,413838009,I25.9,1.0,EVD_CARD_003,,true,"Chronic ischemic heart disease, unspecified"
+DIS_CARD_004,ATRIAL_FIBRILLATION,Atrial Fibrillation,cardiology,elderly_predominant,both,both,HP:0005110,49436004,I48.91,1.0,EVD_CARD_004,,true,Unspecified atrial fibrillation
+DIS_CARD_005,SUPRAVENTRICULAR_TACHYCARDIA,Supraventricular Tachycardia,cardiology,all,both,acute,HP:0004755,6456007,I47.1,1.0,EVD_CARD_005,,false,
+DIS_CARD_006,VENTRICULAR_TACHYCARDIA,Ventricular Tachycardia,cardiology,adult,both,acute,HP:0004756,25569003,I47.2,1.0,EVD_CARD_006,,false,
+DIS_CARD_007,BRADYARRHYTHMIA,Bradyarrhythmia,cardiology,elderly_predominant,both,chronic,HP:0001662,421869004,R00.1,1.0,EVD_CARD_007,true,true,"Bradycardia, unspecified"
+DIS_CARD_008,AORTIC_STENOSIS,Aortic Stenosis,cardiology,elderly_predominant,both,chronic,HP:0001650,60573004,I35.0,1.0,EVD_CARD_008,,true,Nonrheumatic aortic (valve) stenosis
+DIS_CARD_009,MITRAL_REGURGITATION,Mitral Regurgitation,cardiology,all,both,chronic,HP:0001653,48724000,I34.0,1.0,EVD_CARD_009,,true,Nonrheumatic mitral (valve) insufficiency
+DIS_CARD_010,CARDIOMYOPATHY,Cardiomyopathy,cardiology,all,both,chronic,HP:0001638,85898001,I42.9,1.0,EVD_CARD_010,,true,"Cardiomyopathy, unspecified"
+DIS_CARD_011,MYOCARDITIS,Myocarditis,cardiology,young_adult_predominant,both,acute,HP:0012247,50920009,I40.9,1.0,EVD_CARD_011,true,true,"Acute myocarditis, unspecified"
+DIS_CARD_012,PERICARDITIS,Pericarditis,cardiology,all,both,acute,HP:0001701,3238004,I30.9,1.0,EVD_CARD_012,,true,"Acute pericarditis, unspecified"
+DIS_CARD_013,PULMONARY_EMBOLISM,Pulmonary Embolism,cardiology,all,both,acute,HP:0002204,59282003,I26.99,1.0,EVD_CARD_013,,true,Other pulmonary embolism without acute cor pulmonale
+DIS_CARD_014,PULMONARY_HYPERTENSION,Pulmonary Hypertension,cardiology,all,female_predominant,chronic,HP:0002092,70995007,I27.20,1.0,EVD_CARD_014,,true,"Pulmonary hypertension, unspecified"
+DIS_CARD_015,HYPERTENSIVE_HEART_DISEASE,Hypertensive Heart Disease,cardiology,adult,both,chronic,HP:0001639,64715009,I11.9,1.0,EVD_CARD_015,,true,Hypertensive heart disease without heart failure

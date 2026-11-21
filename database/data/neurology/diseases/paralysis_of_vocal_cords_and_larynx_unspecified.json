@@ -1,0 +1,92 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_008",
+  "code": "PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNSPECIFIED",
+  "name": "Paralysis of vocal cords and larynx, unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Vocal cord paresis, also known as recurrent laryngeal nerve paralysis or vocal fold paralysis, is an injury to one or both recurrent laryngeal nerves (RLNs), which control all intrinsic muscles of the larynx except for the cricothyroid muscle. The RLN is important for speaking, breathing and swallowing.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "HOARSENESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "BREATHING_DIFFICULTY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "VOICE_CHANGES",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "ASPIRATION",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "STRIDOR",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "THYROID_SURGERY_OR_NECK_SURGERY",
+      "strength": "strong"
+    },
+    {
+      "code": "MALIGNANCY_LUNG_THYROID_OR_ESOPHAGEAL_CANCER",
+      "strength": "strong"
+    },
+    {
+      "code": "NECK_TRAUMA_OR_INTUBATION_TRAUMA",
+      "strength": "strong"
+    },
+    {
+      "code": "NEUROLOGICAL_DISORDERS_STROKE_ALS",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "J38.00",
+  "icd10_validated": true,
+  "icd10_official_description": "Paralysis of vocal cords and larynx, unspecified",
+  "evidence_ids": [
+    "EVID_PARALYSIS_OF_VOCAL_CORDS_AND_LARYNX_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

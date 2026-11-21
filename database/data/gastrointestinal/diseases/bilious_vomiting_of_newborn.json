@@ -1,0 +1,91 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_016",
+    "code":  "BILIOUS_VOMITING_OF_NEWBORN",
+    "name":  "Bilious vomiting of newborn",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Bilious vomiting of newborn.",
+    "complaints":  [
+                       {
+                           "code":  "VOMITING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ANTENATAL_PERIOD:_POLYHYDRAMNIOS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_DISTENSION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "LACK_OF_STOOLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_003",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "BILIOUS_VOMITING_OF_NEWBORN",
+                          "condition":  "Any bilious (green) vomiting in a neonate"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_007",
+                          "text":  "For a newborn or infant: is the vomit green or yellow in color?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_003)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BILIOUS_VOMITING_OF_NEWBORN_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_VOMITING_OF_NEWBORN",
+                              "distinguishing_feature":  "Bilious (green/yellow) vomiting suggests intestinal obstruction distal to the ampulla of Vater and is a surgical emergency; non-bilious vomiting has a broader, usually less urgent differential."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "722933003",
+    "snomed_verified_name":  "Neonatal bilious vomiting",
+    "icd10_code":  "P92.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Bilious vomiting of newborn",
+    "evidence_ids":  [
+                         "EVID_BILIOUS_VOMITING_OF_NEWBORN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

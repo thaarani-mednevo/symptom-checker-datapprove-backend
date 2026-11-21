@@ -1,0 +1,101 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_097",
+  "code": "EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITH_STATUS_EPILEPTICUS",
+  "name": "Epileptic seizures related to external causes, not intractable, with status epilepticus",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Acute seizures triggered by external causes that progress to status epilepticus but are not refractory to initial treatment.",
+  "complaints": [
+    {
+      "code": "SEIZURES",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "FUNNY_TURNS",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BLACKOUTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "VARIABLE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "PROVOKED:_LOW_BLOOD_SUGAR",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "ALCOHOL_WITHDRAWAL",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "LOW_BLOOD_SODIUM",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "FEVER",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INFECTION",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "TRAUMATIC_BRAIN_INJURY_UNPROVOKED:_FLASHING_LIGHTS_OR_COLORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "UNKNOWN_CAUSES",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "PREVIOUS_STROKE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMOR",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Active or prolonged seizure activity fulfilling the criteria for status epilepticus requiring immediate emergency intervention."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G40.501",
+  "icd10_validated": true,
+  "icd10_official_description": "Epileptic seizures related to external causes, not intractable, with status epilepticus",
+  "evidence_ids": [
+    "EVID_EPILEPTIC_SEIZURES_RELATED_TO_EXTERNAL_CAUSES_NOT_INTRACTABLE_WITH_STATUS_EPILEPTICUS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

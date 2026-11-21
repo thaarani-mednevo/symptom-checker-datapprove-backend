@@ -1,0 +1,204 @@
+﻿{
+    "id":  "RENAL-URINARY_DIS_HB_044",
+    "code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS",
+    "name":  "Benign prostatic hyperplasia with lower urinary tract symptoms",
+    "module":  "renal-urinary",
+    "category":  "disease",
+    "description":  "Benign prostatic hyperplasia (BPH), also called prostate enlargement, is a noncancerous increase in size of the prostate gland. Symptoms may include frequent urination, trouble starting to urinate, weak stream, inability to urinate, or loss of bladder control.",
+    "complaints":  [
+                       {
+                           "code":  "POOR_URINARY_STREAM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NOCTURIA",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "URINARY_HESITANCY",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "INCOMPLETE_BLADDER_EMPTYING",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "POOR_URINARY_STREAM",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "URINARY_HESITANCY",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NOCTURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FREQUENCY",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "INCOMPLETE_BLADDER_EMPTYING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DRIBBLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_MALE_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_BPH",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RU_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "POOR_URINARY_STREAM",
+                          "condition":  "BPH progressing to complete urinary retention"
+                      },
+                      {
+                          "code":  "RF_RU_010",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "POOR_URINARY_STREAM",
+                          "condition":  "Poor stream with perineal pain and fever — prostate abscess"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RU_001",
+                          "text":  "Are you completely unable to pass any urine at all despite feeling the urge?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_011",
+                          "text":  "Is there perineal or pelvic pain along with a slow or dribbling urine stream and fever?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_RU_023",
+                          "text":  "Does the dribbling occur after you have fully finished urinating (post-void)?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_022",
+                          "text":  "Has a recent surgical procedure or urethral catheterisation been performed?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTPROCEDURAL_STRICTURE)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_020",
+                          "text":  "How long have you had this urinary symptom? (days / weeks / months / years)",
+                          "purpose":  "context",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_5",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RU_015",
+                          "text":  "Do you have a known history of kidney stones, prostate problems, or bladder issues?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS_SYMPTOM_6",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_URETHRAL_STRICTURE_FEMALE",
+                              "distinguishing_feature":  "BPH occurs in males with prostate enlargement on DRE/ultrasound; urethral stricture (female) is a narrowing of the female urethra, confirmed on urethrogram or cystoscopy — different anatomy and sex."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0008711 | HP:0010936"
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N40.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Benign prostatic hyperplasia with lower urinary tract symptoms",
+    "evidence_ids":  [
+                         "EVID_BENIGN_PROSTATIC_HYPERPLASIA_WITH_LOWER_URINARY_TRACT_SYMPTOMS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

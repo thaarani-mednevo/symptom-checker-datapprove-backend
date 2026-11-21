@@ -1,0 +1,122 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_014",
+    "code":  "PULMONARY_HYPERTENSION",
+    "name":  "Pulmonary Hypertension",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Pulmonary hypertension is a condition of increased blood pressure in the arteries of the lungs. Symptoms include shortness of breath, fainting, tiredness, chest pain, swelling of the legs, and a fast heartbeat.",
+    "complaints":  [
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EDEMA",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXERCISE_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHRONIC_LUNG_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "LEFT_HEART_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CONNECTIVE_TISSUE_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CHRONIC_PE",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SYNCOPE",
+                          "condition":  "Syncope during exertion — urgent cardiovascular evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_003",
+                          "text":  "Do you feel breathless when walking on flat ground?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PULMONARY_HYPERTENSION_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PULMONARY_HYPERTENSION_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HEART_FAILURE",
+                              "distinguishing_feature":  "Criteria: ECHO EF (PH shows isolated RV dilation with normal LV systolic/diastolic function; HF typically shows poor LVEF). Symptoms: PH has exertional dyspnea without orthopnea/PND; HF features prominent orthopnea and pulmonary crackles."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0002092"
+                  ],
+    "snomed_code":  "70995007",
+    "snomed_verified_name":  "Pulmonary hypertension",
+    "icd10_code":  "I27.20",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pulmonary hypertension, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_014"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

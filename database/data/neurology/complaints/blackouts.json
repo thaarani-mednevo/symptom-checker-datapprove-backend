@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_031",
+  "code": "BLACKOUTS",
+  "name": "Blackouts",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Syncope, commonly known as fainting or passing out, is a loss of consciousness and muscle strength characterized by a fast onset, short duration, and spontaneous recovery. It is caused by a decrease in blood flow to the brain, typically from low blood pressure.",
+  "hpo_codes": [],
+  "snomed_code": "271594007",
+  "snomed_verified_name": "Syncope",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_004",
+    "code":  "MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID",
+    "name":  "Meibomian gland dysfunction right upper eyelid",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Meibomian gland dysfunction of the right upper eyelid is a chronic disorder characterized by obstruction of the meibomian glands leading to altered tear film and ocular surface irritation.",
+    "complaints":  [
+                       {
+                           "code":  "WATERY_EYES",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DRY_EYE_SYMPTOMS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GRITTY_OR_FOREIGN_BODY_SENSATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "EYELID_MARGIN_TELANGIECTASIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "CRUSTING_OF_LASHES",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HORMONAL_CHANGES",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CONTACT_LENS_WEAR",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "BLEPHARITIS",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_MGD_ACUTE_CORNEAL_ULCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss in right eye"
+                      },
+                      {
+                          "code":  "RF_MGD_ACUTE_INFECTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with redness and swelling"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_GRITTY_OR_BURNING_SENSATIO",
+                          "text":  "[LLM DRAFT] Do you feel a gritty or burning sensation in your right upper eyelid?",
+                          "purpose":  "dryness sensation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_ANY_OILY_DISCHARGE_OR_CRUS",
+                          "text":  "[LLM DRAFT] Do you notice any oily discharge or crusting at the base of your right upper eyelid?",
+                          "purpose":  "meibomian gland obstruction",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SEVERE_PAIN_OR_SUDDEN_VISION",
+                          "text":  "[LLM DRAFT] Do you have severe pain or sudden vision loss in your right eye?",
+                          "purpose":  "possible urgent eye condition",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "16909481000119106",
+    "snomed_verified_name":  "Right upper eyelid meibomian gland dysfunction",
+    "icd10_code":  "H02.881",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Meibomian gland dysfunction right upper eyelid",
+    "evidence_ids":  [
+                         "EVID_MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

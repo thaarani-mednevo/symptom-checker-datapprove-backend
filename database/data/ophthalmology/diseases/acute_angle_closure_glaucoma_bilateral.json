@@ -1,0 +1,163 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_010",
+    "code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL",
+    "name":  "Acute angle-closure glaucoma, bilateral",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Glaucoma is a group of eye diseases that can lead to damage of the optic nerve, which transmits visual information from the eye to the brain. Glaucoma may cause vision loss if left untreated.",
+    "complaints":  [
+                       {
+                           "code":  "RED_EYE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PHOTOPHOBIA",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EYE_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "HALOS_AROUND_LIGHTS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MID_DILATED_NON_REACTIVE_PUPIL",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INCREASED_PRESSURE_IN_THE_EYE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "HIGH_BLOOD_PRESSURE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTEANGLECLOSUREPAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Sudden severe eye pain with halos and blurred vision."
+                      },
+                      {
+                          "code":  "RF_ACUTEANGLECLOSUREVISIONLOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss or severe visual distortion."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_IN_BOTH",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe pain in both eyes?",
+                          "purpose":  "severe eye pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_SEEING_HALOS_AROUND_LIGHTS_IN_BO",
+                          "text":  "[LLM DRAFT] Are you seeing halos around lights in both eyes?",
+                          "purpose":  "halos vision",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_NAUSEA_OR_VOMITING_WITH_EYE",
+                          "text":  "[LLM DRAFT] Do you feel nausea or vomiting with eye pain?",
+                          "purpose":  "nausea/vomiting",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE",
+                              "distinguishing_feature":  "[LLM DRAFT] Anterior chamber inflammation with cells and flare"
+                          },
+                          {
+                              "disease_code":  "RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Flashing lights and curtain‑like visual field defect"
+                          },
+                          {
+                              "disease_code":  "VITREOUS_HEMORRHAGE_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Painless sudden vision loss with floaters"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H40.213",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute angle-closure glaucoma, bilateral",
+    "evidence_ids":  [
+                         "EVID_ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,92 @@
+﻿{
+    "complaint_code":  "RASH",
+    "complaint_name":  "Rash",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_RASH_001",
+                                       "Where on the body is the rash and when did it start?",
+                                       "distribution_onset",
+                                       "free_text",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "RASH_DISTRIBUTION",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_RASH_002",
+                          "text":  "Is the rash flat (macular), raised (papular), blistered, or hive-like?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RASH_CHARACTER",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RASH_003",
+                          "text":  "Is the rash itchy, painful, or asymptomatic?",
+                          "purpose":  "symptom",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "RASH_SYMPTOM",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RASH_004",
+                          "text":  "Do you have a fever or feel unwell?",
+                          "purpose":  "systemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "FEBRILE_RASH",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_RASH_005",
+                          "text":  "Does the rash involve the inside of your mouth or lips?",
+                          "purpose":  "mucosal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MUCOSAL_INVOLVEMENT)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "MUCOSAL_RASH",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_RASH_006",
+                          "text":  "Have you started any new medication in the past 4 weeks?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "DRUG_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

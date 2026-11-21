@@ -1,0 +1,70 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_039",
+    "code":  "RECTAL_FISTULA_UNSPECIFIED",
+    "name":  "Rectal fistula, unspecified",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "Anal fistula is a chronic abnormal communication between the anal canal and the perianal skin. An anal fistula can be described as a narrow tunnel with its internal opening in the anal canal and its external opening in the skin near the anus.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECTAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECTAL_PAIN",
+                          "condition":  "Fistula with fever, spreading redness, or severe pain (suspect sepsis)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_012",
+                          "text":  "Do you have a fever along with your bowel symptoms?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_011)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "RECTAL_FISTULA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "RECTAL_FISTULA_SIMPLE_INITIAL",
+                              "distinguishing_feature":  "Distinguished by fistula complexity/anatomy on exam or imaging: a \u0027simple\u0027 fistula has a single, low tract not involving significant sphincter muscle, versus a complex/unspecified presentation."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K60.40",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Rectal fistula, unspecified",
+    "evidence_ids":  [
+                         "EVID_RECTAL_FISTULA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

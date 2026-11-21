@@ -1,0 +1,60 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_033",
+    "code":  "MALE_INFERTILITY_UNSPECIFIED",
+    "name":  "Male infertility, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Male infertility refers to a sexually mature male\u0027s inability to impregnate a fertile female. Male infertility can wholly or partially account for 40% of infertility among couples who are trying to have children.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARTNER_FERTILITY_ASSESSED",
+                          "text":  "Has your partner had a fertility (semen) assessment?",
+                          "purpose":  "Confirm male-factor work-up",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MALE_INFERTILITY_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ENCOUNTER_FOR_MALE_FACTOR_INFERTILITY_IN_FEMALE_PATIENT",
+                              "distinguishing_feature":  "Male infertility unspecified is coded for the male patient directly; the encounter code is used when documenting male-factor infertility in the female partner\u0027s own record"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N46.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Male infertility, unspecified",
+    "evidence_ids":  [
+                         "EVID_MALE_INFERTILITY_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

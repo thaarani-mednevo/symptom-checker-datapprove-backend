@@ -1,0 +1,17 @@
+{
+  "id": "GERIATRIC_COMP_GER_005",
+  "code": "FUNCTIONAL_DECLINE",
+  "name": "Functional decline",
+  "module": "geriatric",
+  "body_system": "geriatric",
+  "category": "complaint",
+  "description": "Functional decline in older adults is a reduction in the ability to perform activities of daily living (ADLs: bathing, dressing, toileting, transferring, continence, feeding) or instrumental ADLs (iADLs: shopping, managing finances, cooking, using transport, taking medications). It is a common presentation of acute illness in frail elderly patients and may be the only manifestation of conditions such as infection, cardiac decompensation, or medication toxicity. Assessment using validated tools (Barthel Index, Katz ADL scale) establishes the baseline and guides rehabilitation goals. Reversible and irreversible contributors must be distinguished to plan appropriate care.",
+  "hpo_codes": ["HP:0001323"],
+  "snomed_code": "248536006",
+  "snomed_verified_name": "Feeding difficulties",
+  "icd10_code": "R53.81",
+  "icd10_validated": true,
+  "icd10_official_description": "Other malaise",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

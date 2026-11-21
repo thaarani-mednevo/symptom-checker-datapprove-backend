@@ -1,0 +1,17 @@
+{
+  "id": "BREAST_COMP_BRE_003",
+  "code": "NIPPLE_DISCHARGE",
+  "name": "Nipple discharge",
+  "module": "breast",
+  "body_system": "breast",
+  "category": "complaint",
+  "description": "Nipple discharge is fluid from the nipple, with or without squeezing the breast. The discharge can be milky, clear, green, purulent, bloody, or faintly yellow.",
+  "hpo_codes": [],
+  "snomed_code": "54302000",
+  "snomed_verified_name": "Discharge from nipple",
+  "icd10_code": "N64.52",
+  "icd10_validated": true,
+  "icd10_official_description": "Nipple discharge",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,96 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_007",
+    "code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER",
+    "name":  "Congenital hypothyroidism with diffuse goiter",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Congenital hypothyroidism (CH) is a thyroid hormone deficiency present at birth. If untreated soon after birth, severe congenital hypothyroidism can lead to growth failure and permanent intellectual disability.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROID_SWELLING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROID_SWELLING",
+                          "condition":  "[LLM DRAFT] Severe diffuse goiter in a neonate or infant causing acute upper airway obstruction, stridor, or respiratory distress."
+                      },
+                      {
+                          "code":  "RF_HYPOTHYROIDISM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe congenital hypothyroidism presenting with myxedema coma, profound hypothermia, bradycardia, or circulatory collapse."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_VISIBLE_SWELLING_OR_ENLARG",
+                          "text":  "[LLM DRAFT] Do you have a visible swelling or enlargement in the front of your neck?",
+                          "purpose":  "Screens for goiter",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SEVERE_ONGOING_FAT",
+                          "text":  "[LLM DRAFT] Have you experienced severe, ongoing fatigue, extreme sluggishness, or a constant feeling of being cold since birth or early life?",
+                          "purpose":  "Screens for congenital hypothyroidism symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Absent thyroid enlargement on physical examination, typically due to thyroid dysgenesis (agenesis, hypoplasia, or ectopic location)."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by an intrinsic enzymatic defect in thyroid hormone synthesis rather than structural absence or iodine deficiency, often presenting with a familial inheritance pattern."
+                          },
+                          {
+                              "disease_code":  "NEONATAL_GOITER_NOT_ELSEWHERE_CLASSIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Diffuse thyroid enlargement present at birth that may be euthyroid or transient, often linked to maternal exposure to antithyroid medications or goitrogens rather than a permanent congenital defect."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "278503003",
+    "snomed_verified_name":  "Congenital hypothyroidism with diffuse goiter",
+    "icd10_code":  "E03.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Congenital hypothyroidism with diffuse goiter",
+    "evidence_ids":  [
+                         "EVID_CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

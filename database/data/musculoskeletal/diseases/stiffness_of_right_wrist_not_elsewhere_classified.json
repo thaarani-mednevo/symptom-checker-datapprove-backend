@@ -1,0 +1,61 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_008",
+  "code": "STIFFNESS_OF_RIGHT_WRIST_NOT_ELSEWHERE_CLASSIFIED",
+  "name": "Stiffness of right wrist, not elsewhere classified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Stiffness of the right wrist not attributable to a specific underlying disease or injury, presenting as limited range of motion and discomfort.",
+  "complaints": [
+    {
+      "code": "STIFFNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SMALL_SOFT_BUMP_ASSOCIATED_WITH_A_JOINT_OR_TENDON_SHEATH",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_ACUTE_MONOARTHRITIS_WITH_FEVER",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Acute severe right wrist stiffness and pain accompanied by systemic fever and chills, highly suggestive of septic arthritis."
+    },
+    {
+      "code": "RF_ACUTE_NEUROVASCULAR_COMPROMISE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "MUSCLE_WEAKNESS",
+      "condition": "[LLM DRAFT] Right wrist stiffness accompanied by acute progressive muscle weakness, numbness, or signs of acute compartment syndrome."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M25.631",
+  "icd10_validated": true,
+  "icd10_official_description": "Stiffness of right wrist, not elsewhere classified",
+  "evidence_ids": [
+    "EVID_STIFFNESS_OF_RIGHT_WRIST_NOT_ELSEWHERE_CLASSIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

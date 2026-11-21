@@ -1,0 +1,183 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_014",
+    "code":  "THYROTOXICOSIS_UNSPECIFIED_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+    "name":  "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hyperthyroidism is a endocrine disease in which the thyroid gland produces excessive amounts of thyroid hormones. Thyrotoxicosis is a condition that occurs due to elevated levels of thyroid hormones of any cause and therefore includes hyperthyroidism.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "IRRITABILITY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SLEEPING_PROBLEMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEARTBEAT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEAT_INTOLERANCE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ENLARGEMENT_OF_THE_THYROID",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "GRAVES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MULTINODULAR_GOITER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOXIC_ADENOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "INFLAMMATION_OF_THE_THYROID",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EATING_TOO_MUCH_IODINE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TOO_MUCH_SYNTHETIC_THYROID_HORMONE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Acute progression to thyroid storm characterized by high fever, severe tachycardia, altered mental status, and gastrointestinal symptoms in a patient with thyrotoxicosis."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_YOUR_HEART_BEATING_UNUS",
+                          "text":  "[LLM DRAFT] Have you noticed your heart beating unusually fast, fluttering, or pounding even when you are resting?",
+                          "purpose":  "screens for resting tachycardia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THYROTOXICOSIS_UNSPECIFIED_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNEXPLAINED_WEIGHT",
+                          "text":  "[LLM DRAFT] Have you experienced unexplained weight loss despite having a normal or increased appetite?",
+                          "purpose":  "screens for hypermetabolic weight loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROTOXICOSIS_UNSPECIFIED_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_UNUSUALLY_WARM_INTOLERANT_T",
+                          "text":  "[LLM DRAFT] Do you feel unusually warm, intolerant to heat, or excessively sweaty compared to those around you?",
+                          "purpose":  "screens for heat intolerance",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "THYROTOXICOSIS_UNSPECIFIED_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with initial hyperthyroidism followed by spontaneous hypothyroidism and is often associated with painful or painless thyroiditis rather than primary hypersecretion."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_UNSPECIFIED_WITH_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with life-threatening systemic decompensation, high fever, and severe multi-organ dysfunction rather than stable excess thyroid hormone."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by exogenous thyroid hormone ingestion, typically demonstrating a low radioiodine uptake and suppressed thyroglobulin levels."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E05.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+    "evidence_ids":  [
+                         "EVID_THYROTOXICOSIS_UNSPECIFIED_WITHOUT_THYROTOXIC_CRISIS_OR_STORM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

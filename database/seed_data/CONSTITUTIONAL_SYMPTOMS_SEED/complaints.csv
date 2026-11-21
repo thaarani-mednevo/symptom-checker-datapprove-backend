@@ -1,0 +1,8 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_CS_001,FEVER,Fever,constitutional-symptoms,constitutional,complaint,,386661006,R50.9,1.0,true,,
+COMP_CS_002,WEIGHT_LOSS,Weight loss,constitutional-symptoms,constitutional,complaint,,816160009,R63.4,1.0,true,,
+COMP_CS_003,GENERALIZED_WEAKNESS,Generalized weakness,constitutional-symptoms,constitutional,complaint,,,R53.1,1.0,true,,
+COMP_CS_004,FATIGUE,Fatigue,constitutional-symptoms,constitutional,complaint,,84229001,R53.83,1.0,true,,
+COMP_CS_005,LOSS_OF_APPETITE,Loss of appetite,constitutional-symptoms,constitutional,complaint,,79890006,R63.0,1.0,true,,
+COMP_CS_006,NIGHT_SWEATS,Night sweats,constitutional-symptoms,constitutional,complaint,,42984000,R61,1.0,true,,
+COMP_CS_007,DEHYDRATION,Dehydration,constitutional-symptoms,constitutional,complaint,,34095006,E86.0,1.0,true,,

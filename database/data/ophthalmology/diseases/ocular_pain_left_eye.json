@@ -1,0 +1,126 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_016",
+    "code":  "OCULAR_PAIN_LEFT_EYE",
+    "name":  "Ocular pain, left eye",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Localized pain in the left eye, often accompanied by inflammation, irritation, or increased intraocular pressure.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CORNEAL_ABRASION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "CONJUNCTIVITIS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DRY_EYE_SYNDROME",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLURRED_VISION",
+                          "condition":  "[LLM DRAFT] Sudden severe eye pain with blurred vision and halos"
+                      },
+                      {
+                          "code":  "RF_CORNEAL_ULCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with redness and vision loss"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOU_NOTICE_SUDDEN_SEVERE_PAIN_IN_YO",
+                          "text":  "[LLM DRAFT] Did you notice sudden, severe pain in your left eye along with vision loss?",
+                          "purpose":  "sudden vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OCULAR_PAIN_LEFT_EYE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_REDNESS_OR_SWELLING_AROUND_YOUR",
+                          "text":  "[LLM DRAFT] Is there redness or swelling around your left eye?",
+                          "purpose":  "eye inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OCULAR_PAIN_LEFT_EYE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_FOREIGN_BODY_SENSATION_OR",
+                          "text":  "[LLM DRAFT] Do you feel a foreign body sensation or irritation in your left eye?",
+                          "purpose":  "mild irritation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OCULAR_PAIN_LEFT_EYE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H57.12",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ocular pain, left eye",
+    "evidence_ids":  [
+                         "EVID_OCULAR_PAIN_LEFT_EYE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

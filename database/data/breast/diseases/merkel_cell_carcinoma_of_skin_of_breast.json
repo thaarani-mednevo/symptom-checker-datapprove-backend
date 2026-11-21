@@ -1,0 +1,141 @@
+﻿{
+    "id":  "BREAST_DIS_CS_001",
+    "code":  "MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST",
+    "name":  "Merkel cell carcinoma of skin of breast",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A rare, aggressive neuroendocrine skin cancer arising in the breast skin, often presenting as a rapidly growing, painless nodule.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAINLESS_RAPIDLY_ENLARGING_NODULE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLUEPURPLE_SKIN_DISCOLORATION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ULCERATION_OR_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "REGIONAL_LYMPHADENOPATHY",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LIGHT_SKIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ULTRAVIOLET_LIGHT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "RADIATION_THERAPY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "ARSENIC",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "POOR_IMMUNE_FUNCTION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPIDLY_ENLARGING_BREAST_LUMP",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_LUMP",
+                          "condition":  "[LLM DRAFT] Breast lump that increases in size rapidly over days or weeks"
+                      },
+                      {
+                          "code":  "RF_NIPPLE_ULCERATION_OR_BLEEDING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "NIPPLE_CHANGES",
+                          "condition":  "[LLM DRAFT] Nipple changes with ulceration or active bleeding"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_FAST_GROWING_FIRM_P",
+                          "text":  "[LLM DRAFT] Have you noticed a fast-growing, firm, painless red or violet lump on the skin of your breast?",
+                          "purpose":  "screen for rapidly growing primary skin lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_A_DOCTOR_TOLD_YOU_THAT_A_SKIN_LESION",
+                          "text":  "[LLM DRAFT] Has a doctor told you that a skin lesion on your breast has spread to your lymph nodes?",
+                          "purpose":  "screen for regional metastasis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Arises from the glandular breast tissue rather than the overlying skin and is typically non-invasive and clinically occult."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute inflammatory signs such as localized erythema, warmth, tenderness, and purulent discharge rather than a firm, painless cutaneous nodule."
+                          },
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by dilated subareolar ducts often leading to nipple retraction or thick discharge rather than a primary dermal malignant neoplasm."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "351471000119106",
+    "snomed_verified_name":  "Primary Merkel cell carcinoma of skin of breast",
+    "icd10_code":  "C4A.52",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Merkel cell carcinoma of skin of breast",
+    "evidence_ids":  [
+                         "EVID_MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

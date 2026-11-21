@@ -1,0 +1,96 @@
+{
+  "complaint_code": "ANEMIA",
+  "complaint_name": "Anaemia",
+  "module": "hematology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_HEM_ANE_001",
+      "text": "How long have you been feeling unusually tired or weak?",
+      "purpose": "Characterise onset and duration of anaemic symptoms",
+      "answer_type": "multiple_choice",
+      "options": ["Less than 1 week", "1–4 weeks", "1–3 months", "More than 3 months"],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "ANEMIA",
+      "yes_weight": 1,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_HEM_ANE_002",
+      "text": "How severely does fatigue affect your daily activities?",
+      "purpose": "Grade fatigue severity to guide urgency",
+      "answer_type": "multiple_choice",
+      "options": ["Mild – I can do most things", "Moderate – I have to cut some activities", "Severe – I struggle with basic tasks", "Extreme – I am mostly bedbound"],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "FATIGUE_SEVERITY",
+      "yes_weight": 2,
+      "no_weight": 0
+    },
+    {
+      "code": "Q_HEM_ANE_003",
+      "text": "Do you feel short of breath or have chest pain at rest or with minimal exertion?",
+      "purpose": "Identify severe symptomatic anaemia requiring urgent escalation",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "EXERTIONAL_DYSPNEA",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_HEM_ANE_004",
+      "text": "Have you or anyone else noticed that your skin, gums, or inner eyelids look pale?",
+      "purpose": "Confirm clinical pallor as objective sign of anaemia",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "PALLOR",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_HEM_ANE_005",
+      "text": "Do you notice your heart racing or pounding (palpitations) even when resting?",
+      "purpose": "Detect compensatory tachycardia from significant anaemia",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "PALPITATIONS",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_HEM_ANE_006",
+      "text": "Have you had any recent blood loss — such as heavy periods, blood in your stool, vomiting blood, or a known bleeding source?",
+      "purpose": "Identify blood-loss anaemia and direct toward source investigation",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(BLOOD_LOSS_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "BLOOD_LOSS_HISTORY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_HEM_ANE_007",
+      "text": "Do you follow a diet that excludes or greatly limits meat, fish, or dairy products?",
+      "purpose": "Screen for nutritional deficiency as a cause (iron, B12, folate)",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "NUTRITIONAL_DEFICIENCY_RISK",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_003",
+    "code":  "NONTOXIC_MULTINODULAR_GOITER",
+    "name":  "Nontoxic multinodular goiter",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Nontoxic multinodular goitre, also known as an inactive multinodular goitre, is an enlargement of the thyroid gland, which develops multiple nodules without affecting thyroid hormone function. In the United States it is the most common cause of an enlarged thyroid, affecting between 3–5% of the population.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "NECK_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "COMPRESSIVE_SYMPTOMS_OF_NECK_(DIFFICULTY_BREATHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIFFICULTY_SWALLOWING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "VOICE_CHANGES)",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "IODINE_DEFICIENCY_MOST_COMMON",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROID_SWELLING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROID_SWELLING",
+                          "condition":  "[LLM DRAFT] Acute, rapid enlargement of a multinodular goiter causing severe compression of the trachea or esophagus, presenting with acute respiratory distress, stridor, or severe dysphagia."
+                      },
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Acute manifestation of thyrotoxicosis (thyroid storm) associated with a multinodular goiter, presenting with hyperpyrexia, tachycardia, altered mental status, and gastrointestinal dysfunction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_VISIBLE_OR_GROWING_SWELLIN",
+                          "text":  "[LLM DRAFT] Do you feel a visible or growing swelling or lumps at the base of your front neck?",
+                          "purpose":  "Screens for physical enlargement of the thyroid gland",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NONTOXIC_MULTINODULAR_GOITER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_EXPERIENCED_DIFFICULTY",
+                          "text":  "[LLM DRAFT] Have you recently experienced difficulty breathing, a feeling of choking, or trouble swallowing?",
+                          "purpose":  "Screens for compressive symptoms of a large goiter on the trachea or esophagus",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NONTOXIC_MULTINODULAR_GOITER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_PERSISTENT_HOARSE_VOICE_OR",
+                          "text":  "[LLM DRAFT] Do you have a persistent hoarse voice or changes in your vocal quality that have lasted for weeks?",
+                          "purpose":  "Screens for possible nerve compression or malignancy in the neck",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NONTOXIC_MULTINODULAR_GOITER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with a smooth, symmetrical thyroid enlargement rather than multiple distinct palpable nodules."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Features transient biochemical thyrotoxicosis and inflammatory markers or thyroid autoantibodies rather than normal thyroid function and multinodularity."
+                          },
+                          {
+                              "disease_code":  "OTHER_SPECIFIED_NONTOXIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Involves specific etiology or structural characteristics not classified under standard multinodular goiter."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E04.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nontoxic multinodular goiter",
+    "evidence_ids":  [
+                         "EVID_NONTOXIC_MULTINODULAR_GOITER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,109 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_007",
+    "code":  "BRADYARRHYTHMIA",
+    "name":  "Bradyarrhythmia",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Bradycardia, also called bradyarrhythmia, is a resting heart rate under 60 beats per minute (BPM). While bradycardia can result from various pathological processes, it is commonly a physiological response to cardiovascular conditioning or due to asymptomatic type 1 atrioventricular block.",
+    "complaints":  [
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EXERCISE_INTOLERANCE",
+                         "relationship":  "occasional",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CONDUCTION_SYSTEM_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MEDICATION_INDUCED",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SYNCOPE",
+                          "condition":  "Syncope during exertion — urgent cardiovascular evaluation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BRADYARRHYTHMIA_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VENTRICULAR_TACHYCARDIA",
+                              "distinguishing_feature":  "Bradyarrhythmia has abnormally slow rate; VT has abnormally fast rate - opposite ends of the rhythm spectrum."
+                          }
+                      ],
+    "age_relevance":  "elderly_predominant",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0001662"
+                  ],
+    "snomed_code":  "421869004",
+    "snomed_verified_name":  "Bradyarrhythmia",
+    "icd10_code":  "R00.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Bradycardia, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_007"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

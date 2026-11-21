@@ -1,0 +1,72 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_018",
+    "code":  "PRURITUS_VULVAE",
+    "name":  "Pruritus vulvae",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Pruritus vulvae is itchiness of the vulva, which is the counterpart of pruritus scroti, and may have many different causes. Patch testing may be used to diagnose the cause.",
+    "complaints":  [
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_VULVAL_SYMPTOM_TRIGGER",
+                          "text":  "Did the soreness start after using a new soap, product, or clothing?",
+                          "purpose":  "Identify irritant/allergic trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRURITUS_VULVAE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MENOPAUSE_STATUS",
+                          "text":  "Have your periods stopped for 12 months or more (menopause)?",
+                          "purpose":  "Assess atrophic/lichen sclerosus risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRURITUS_VULVAE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SUBACUTE_AND_CHRONIC_VULVITIS",
+                              "distinguishing_feature":  "Pruritus vulvae is itch without necessarily visible inflammation; chronic vulvitis shows ongoing inflammatory changes on exam"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "67882000",
+    "snomed_verified_name":  "Pruritus of vulva",
+    "icd10_code":  "L29.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pruritus vulvae",
+    "evidence_ids":  [
+                         "EVID_PRURITUS_VULVAE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

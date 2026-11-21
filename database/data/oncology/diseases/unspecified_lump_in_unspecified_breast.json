@@ -1,0 +1,118 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_001",
+    "code":  "UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST",
+    "name":  "Unspecified lump in unspecified breast",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A palpable breast mass of uncertain etiology, not yet classified as benign or malignant.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DENSE_BREAST_TISSUE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HORMONAL_FACTORS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden onset of severe pain, swelling, redness, and fever indicating possible abscess."
+                      },
+                      {
+                          "code":  "RF_BREAST_CELLULITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Rapidly enlarging mass with surrounding erythema, warmth, and systemic signs of infection."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_SKIN_DIMPLING_PUCK_UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST",
+                          "text":  "Have you noticed any skin dimpling, puckering, or redness on your breast over the lump?",
+                          "purpose":  "Screens for inflammatory or locally advanced malignant signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_LUMP_HARD_FIXED_IN_PLACE_OR_DOE_UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST",
+                          "text":  "Is the lump hard, fixed in place, or does it feel firmly attached to the underlying tissue?",
+                          "purpose":  "Screens for suspicious physical characteristics of malignancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_IS_THE_LUMP_PAINFUL_OR_TENDER_AND_DOES",
+                          "text":  "Is the lump painful or tender, and does it seem to change in size with your menstrual cycle?",
+                          "purpose":  "Screens for benign or hormonal breast changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Located directly beneath the nipple-areolar complex, which increases suspicion for nipple discharge or central ductal pathology."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT",
+                              "distinguishing_feature":  "Localized specifically to the upper outer quadrant, the most common site for both benign breast conditions and breast carcinomas."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS",
+                              "distinguishing_feature":  "Spans across multiple quadrants, often presenting with a more ill-defined clinical boundary or a larger lesion size."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in unspecified breast",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

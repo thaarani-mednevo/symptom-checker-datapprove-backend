@@ -1,0 +1,34 @@
+﻿{
+  "id": "DERMATOLOGY_DIS_DERM_015",
+  "code": "POLYMORPHIC_LIGHT_ERUPTION",
+  "name": "Polymorphic light eruption",
+  "module": "dermatology",
+  "category": "disease",
+  "description": "Polymorphous light eruption (PLE) is a non-life-threatening and potentially distressing skin condition that presents with itchy red small bumps on sun-exposed skin, particularly the face, neck, forearms and legs. It generally appears 30 minutes to a few hours after sun exposure and may last between one and 14 days.",
+  "complaints": [
+    {
+      "code": "PHOTOSENSITIVITY",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [],
+  "risk_factors": [],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "238525001",
+  "snomed_verified_name": "Polymorphous light eruption",
+  "icd10_code": "L56.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Polymorphous light eruption",
+  "evidence_ids": [
+    "EVID_POLYMORPHIC_LIGHT_ERUPTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

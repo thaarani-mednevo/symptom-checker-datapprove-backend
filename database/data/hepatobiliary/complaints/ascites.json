@@ -1,0 +1,17 @@
+{
+  "id": "HEPATOBILIARY_COMP_HB_002",
+  "code": "ASCITES",
+  "name": "Ascites",
+  "module": "hepatobiliary",
+  "body_system": "hepatobiliary",
+  "category": "complaint",
+  "description": "Ascites is the abnormal build-up of fluid in the abdomen. Technically, it is more than 25 millilitres of fluid in the peritoneal cavity, although volumes greater than one litre may occur.",
+  "hpo_codes": ["HP:0001541"],
+  "snomed_code": "389026000",
+  "snomed_verified_name": "Ascites",
+  "icd10_code": "R18.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other ascites",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

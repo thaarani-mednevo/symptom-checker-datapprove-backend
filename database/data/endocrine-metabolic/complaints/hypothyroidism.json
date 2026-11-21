@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_003",
+  "code": "HYPOTHYROIDISM",
+  "name": "Hypothyroidism",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Hypothyroidism is an endocrine disease in which the thyroid gland does not produce enough thyroid hormones. It can cause a number of symptoms, such as poor ability to tolerate cold, extreme fatigue, muscle aches, constipation, slow heart rate, depression, and weight gain.",
+  "hpo_codes": [],
+  "snomed_code": "40930008",
+  "snomed_verified_name": "Hypothyroidism",
+  "icd10_code": "E03.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Hypothyroidism, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

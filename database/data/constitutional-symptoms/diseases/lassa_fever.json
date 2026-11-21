@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_004",
+    "code":  "LASSA_FEVER",
+    "name":  "Lassa fever",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Lassa fever, also known as Lassa hemorrhagic fever, is a type of viral hemorrhagic fever caused by the Lassa virus. Many of those infected by the virus do not develop symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LASSA_VIRUS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HEMORRHAGIC_MANIFESTATIONS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Bleeding from gums, eyes, nose, or gastrointestinal tract in a suspected patient."
+                      },
+                      {
+                          "code":  "RF_NEUROLOGICAL_DETERIORATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Onset of confusion, seizures, or coma."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_LASSA_FEVER_1",
+                          "text":  "Have you traveled to West Africa within the past 3 weeks?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "LASSA_FEVER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_LASSA_FEVER_2",
+                          "text":  "Have you been in direct contact with rodent droppings or urine, or lived in a household with a confirmed Lassa fever case?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "LASSA_FEVER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_LASSA_FEVER_3",
+                          "text":  "Are you experiencing sudden onset of high fever accompanied by a sore throat and retrosternal chest pain?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "LASSA_FEVER_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_A",
+                              "distinguishing_feature":  "[LLM DRAFT] Accompanied by gastrointestinal symptoms like constipation or diarrhea with relative bradycardia rather than prominent hemorrhagic manifestations."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by a step-ladder fever pattern, rose spots on the trunk, and hepatosplenomegaly without the mucosal bleeding typical of Lassa fever."
+                          },
+                          {
+                              "disease_code":  "Q_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents predominantly with atypical pneumonia and a history of livestock exposure rather than acute viral hemorrhagic fever features."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "19065005",
+    "snomed_verified_name":  "Lassa fever",
+    "icd10_code":  "A96.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Lassa fever",
+    "evidence_ids":  [
+                         "EVID_LASSA_FEVER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

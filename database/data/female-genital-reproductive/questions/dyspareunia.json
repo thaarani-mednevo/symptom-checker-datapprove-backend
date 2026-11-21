@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DYSPAREUNIA",
+    "complaint_name":  "Dyspareunia",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DYSPAR_001",
+                          "text":  "Is the pain at the entrance (superficial) or deep inside (deep)?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSPAREUNIA_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYSPAR_002",
+                          "text":  "Is there associated vaginal discharge, bleeding, or itching?",
+                          "purpose":  "infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "INFECTION_WITH_DYSPAREUNIA",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYSPAR_003",
+                          "text":  "Has it been present for months or is it new?",
+                          "purpose":  "duration",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DYSPAREUNIA_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYSPAR_004",
+                          "text":  "Do you have pelvic pain, heavy periods, or bowel symptoms?",
+                          "purpose":  "endometriosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_ENDOMETRIOSIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ENDOMETRIOSIS_WITH_DYSPAREUNIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

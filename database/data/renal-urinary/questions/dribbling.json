@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DRIBBLING",
+    "complaint_name":  "Dribbling",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DRIB_001",
+                          "text":  "Is the dribbling after you finish urinating or continuous?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRIBBLING_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DRIB_002",
+                          "text":  "Are you a male over 50?",
+                          "purpose":  "bph",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BPH_WITH_DRIBBLING",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DRIB_003",
+                          "text":  "Do you feel you have not fully emptied your bladder?",
+                          "purpose":  "incomplete",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INCOMPLETE_EMPTYING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DRIB_004",
+                          "text":  "Is there any associated pain or blood?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DRIBBLING_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

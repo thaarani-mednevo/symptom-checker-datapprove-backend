@@ -1,0 +1,6 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_BRE_001,BREAST_PAIN,Breast pain,breast,breast,complaint,,53430007,N64.4,1.0,true,,
+COMP_BRE_002,BREAST_LUMP,Breast lump,breast,breast,complaint,,89164003,N63,1.0,true,,
+COMP_BRE_003,NIPPLE_DISCHARGE,Nipple discharge,breast,breast,complaint,,,N64.52,1.0,true,,
+COMP_BRE_004,NIPPLE_CHANGES,Nipple changes,breast,breast,complaint,,,N64.59,1.0,true,,
+COMP_BRE_005,AXILLARY_LUMP,Axillary lump/swelling,breast,breast,complaint,,,R22.30,1.0,true,,

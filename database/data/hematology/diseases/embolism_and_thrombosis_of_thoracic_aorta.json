@@ -1,0 +1,97 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_029",
+    "code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA",
+    "name":  "Embolism and thrombosis of thoracic aorta",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "A hematology condition known as Embolism and thrombosis of thoracic aorta.",
+    "complaints":  [
+                       {
+                           "code":  "THROMBOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_AORTIC_THROMBOSIS_CAUSING_ACUTE_LIMB_ISCHEMIA_OR_VISCERALRENAL_INFARCTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] When acute thrombosis of the thoracic aorta leads to sudden, severe limb ischemia (pain, pallor, pulselessness) or end-organ ischemia."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_TEARING_PAIN",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe tearing pain in your chest or upper back?",
+                          "purpose":  "Screens for acute aortic dissection/pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_EXPERIENCED_SUDDEN_WEA",
+                          "text":  "[LLM DRAFT] Have you recently experienced sudden weakness, numbness, or paralysis on one side of your body?",
+                          "purpose":  "Screens for thromboembolic stroke",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_SHORTNESS_OF",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe shortness of breath accompanied by a rapid heart rate?",
+                          "purpose":  "Screens for pulmonary/systemic embolization",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_ILIAC_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with lower extremity ischemia and absent femoral or distal pulses rather than chest or back pain."
+                          },
+                          {
+                              "disease_code":  "EMBOLISM_AND_THROMBOSIS_OF_UNSPECIFIED_ARTERY",
+                              "distinguishing_feature":  "[LLM DRAFT] Lacks anatomical localization to the thoracic aorta and requires imaging to identify the specific site of occlusion."
+                          },
+                          {
+                              "disease_code":  "INTRACARDIAC_THROMBOSIS_NOT_ELSEWHERE_CLASSIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Involves thrombus formation within cardiac chambers rather than the great vessels of the thorax."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "195317001",
+    "snomed_verified_name":  "Embolism and thrombosis of the thoracic aorta",
+    "icd10_code":  "I74.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Embolism and thrombosis of thoracic aorta",
+    "evidence_ids":  [
+                         "EVID_EMBOLISM_AND_THROMBOSIS_OF_THORACIC_AORTA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

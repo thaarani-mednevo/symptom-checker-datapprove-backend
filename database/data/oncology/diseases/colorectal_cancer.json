@@ -1,0 +1,196 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_ONC_012",
+    "code":  "COLORECTAL_CANCER",
+    "name":  "Colorectal cancer",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "Colorectal cancer (CRC) is the third most common cancer worldwide and the second leading cause of cancer death. It arises from the epithelial lining of the colon or rectum, most often as a progression from adenomatous polyps over 10–15 years. Presentation depends on tumour location: right-sided tumours cause anaemia and weight loss with minimal change in bowel habit; left-sided and rectal tumours cause altered bowel habit, rectal bleeding, and tenesmus. Many cases are detected incidentally via screening. Lynch syndrome and familial adenomatous polyposis (FAP) confer high genetic risk.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_BLEEDING_ONCOLOGY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "UNEXPLAINED_WEIGHT_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "BONE_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RECTAL_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHANGE_IN_BOWEL_HABIT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TENESMUS",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "IRON_DEFICIENCY_ANAEMIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE_OVER_50",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_CRC_OR_POLYPS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "INFLAMMATORY_BOWEL_DISEASE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "LYNCH_SYNDROME_FAP",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "HIGH_RED_MEAT_LOW_FIBRE_DIET",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OBESITY_AND_PHYSICAL_INACTIVITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING_AND_ALCOHOL",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_ONC_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECTAL_BLEEDING_ONCOLOGY",
+                          "condition":  "Rectal bleeding with change in bowel habit or weight loss in patient over 40 — urgent colonoscopy referral"
+                      },
+                      {
+                          "code":  "RED_ONC_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "UNEXPLAINED_WEIGHT_LOSS",
+                          "condition":  "Iron deficiency anaemia with weight loss and change in bowel habit — two-week wait colorectal cancer referral"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ONC_CRC_001",
+                          "text":  "Have you noticed blood in your stool or on the toilet paper when wiping, lasting more than 3 weeks?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_GI_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "COLORECTAL_CANCER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_CRC_002",
+                          "text":  "Have you had a persistent change in your bowel habits (more frequent, looser stools, or constipation) lasting more than 4 weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(COLORECTAL_CANCER)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "COLORECTAL_CANCER_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ONC_CRC_003",
+                          "text":  "Have you been told you have iron deficiency anaemia without an obvious explanation?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(IRON_DEFICIENCY_ANAEMIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "COLORECTAL_CANCER_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ONC_CRC_004",
+                          "text":  "Do you have a first-degree relative who was diagnosed with colorectal cancer or bowel polyps?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(FAMILIAL_CANCER_RISK)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "COLORECTAL_CANCER_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HAEMORRHOIDS",
+                              "distinguishing_feature":  "Haemorrhoids cause bright red blood on the toilet paper or in the pan, typically without change in bowel habit or weight loss. Colonoscopy is required to exclude CRC in patients over 40."
+                          },
+                          {
+                              "disease_code":  "INFLAMMATORY_BOWEL_DISEASE",
+                              "distinguishing_feature":  "IBD causes rectal bleeding with mucus, abdominal cramping, and systemic inflammation markers. It tends to present in younger patients; CRC risk increases with long-standing IBD."
+                          },
+                          {
+                              "disease_code":  "DIVERTICULAR_DISEASE",
+                              "distinguishing_feature":  "Diverticular bleeding is typically painless and large-volume. CRC should be excluded in any patient with diverticular-pattern bleeding by colonoscopy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+                      "HP:0003003"
+                  ],
+    "snomed_code":  "363346000",
+    "snomed_verified_name":  "Malignant neoplasm of colon",
+    "icd10_code":  "C18.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Malignant neoplasm of colon, unspecified",
+    "evidence_ids":  [
+                         "EVD_ONC_012"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

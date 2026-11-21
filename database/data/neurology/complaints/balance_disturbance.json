@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_023",
+  "code": "BALANCE_DISTURBANCE",
+  "name": "Balance disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "A balance disorder is a disturbance that causes an individual to feel unsteady, for example when standing or walking. It may be accompanied by feelings of giddiness, wooziness, or a sensation of movement, spinning, or floating.",
+  "hpo_codes": [],
+  "snomed_code": "282299006",
+  "snomed_verified_name": "Unable to balance",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

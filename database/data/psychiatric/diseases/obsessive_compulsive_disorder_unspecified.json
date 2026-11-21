@@ -1,0 +1,141 @@
+﻿{
+    "id":  "PSYCHIATRIC_DIS_PSYCH_038",
+    "code":  "OBSESSIVE_COMPULSIVE_DISORDER_UNSPECIFIED",
+    "name":  "Obsessive-compulsive disorder, unspecified",
+    "module":  "psychiatric",
+    "category":  "disease",
+    "description":  "Obsessive–compulsive disorder (OCD) is a mental disorder in which an individual has intrusive thoughts and feels the need to perform certain behaviors (compulsions) repeatedly to relieve the distress caused by the obsession, to the extent where it impairs general function. OCD has been described since antiquity and has affected numerous notable historical and contemporary figures; understandings of it were historically rooted in religion and beliefs about demonic possession.",
+    "complaints":  [
+                       {
+                           "code":  "OBSESSIVE_THOUGHTS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "OBSESSIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "COMPULSIONS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ANXIETY",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "frequent",
+                         "typicality":  "typical",
+                         "onset_pattern":  "variable",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TIME_CONSUMING_RITUALS",
+                         "relationship":  "groq_unverified",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "FAMILY_HISTORY_OF_OCD",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "GENETIC_PREDISPOSITION",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "HISTORY_OF_CHILDHOOD_TRAUMA",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "STRESSFUL_LIFE_EVENTS",
+                             "strength":  "groq_unverified"
+                         },
+                         {
+                             "code":  "BEHAVIORAL_INHIBITION_IN_CHILDHOOD",
+                             "strength":  "groq_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUICIDAL_IDEATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Presence of suicidal thoughts or self-harm behaviors"
+                      },
+                      {
+                          "code":  "RF_PSYCHOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "COMPLAINT_CODE",
+                          "condition":  "Hallucinations or delusions reported"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SELF_HARM",
+                          "text":  "Have you ever harmed yourself intentionally?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OBSESSIVE_COMPULSIVE_DISORDER_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_OBS_COMP",
+                          "text":  "Do you experience intrusive thoughts that you feel compelled to perform rituals?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OBSESSIVE_COMPULSIVE_DISORDER_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANXIETY_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Generalized anxiety without specific intrusive thoughts"
+                          },
+                          {
+                              "disease_code":  "MAJOR_DEPRESSIVE_DISORDER_SINGLE_EPISODE_UNSPECIFIED",
+                              "distinguishing_feature":  "Persistent low mood rather than compulsive behaviors"
+                          },
+                          {
+                              "disease_code":  "BIPOLAR_DISORDER_UNSPECIFIED",
+                              "distinguishing_feature":  "Mood episodes with mania/hypomania instead of obsessions"
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "191736004",
+    "snomed_verified_name":  "Obsessive-compulsive disorder",
+    "icd10_code":  "F42.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Obsessive-compulsive disorder, unspecified",
+    "evidence_ids":  [
+                         "EVID_OBSESSIVE_COMPULSIVE_DISORDER_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

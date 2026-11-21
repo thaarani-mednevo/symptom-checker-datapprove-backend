@@ -1,0 +1,163 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_HB_005",
+    "code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED",
+    "name":  "Nonscarring hair loss, unspecified",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Non scarring hair loss, also known as noncicatricial alopecia, is the loss of hair without any scarring being present. There is typically little inflammation and irritation, but hair loss is significant.",
+    "complaints":  [
+                       {
+                           "code":  "HAIR_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIFFUSE_HAIR_THINNING",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "INCREASED_HAIR_SHEDDING",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SCALP_ITCHING",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "uncommon",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECENT_ILLNESS_OR_STRESS",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "THYROID_DISORDER",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "IRON_DEFICIENCY",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_HAIR_LOSS",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_PATCHY_HAIR_LOSS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SCALP_ITCHING",
+                          "condition":  "Sudden patchy (not diffuse) hair loss with scalp redness or scarring — refer to dermatologist to rule out scarring alopecia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_PATTERN",
+                          "text":  "Is the hair loss diffuse, patchy, or mainly along the hairline/central scalp?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_SCALP",
+                          "text":  "Is there scalp redness, scaling, pain, itching, or scarring?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_TRIGGER",
+                          "text":  "Did the hair loss follow a major illness, fever, surgery, severe stress, rapid weight change, or childbirth?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_SHEDDING_DURATION",
+                          "text":  "How long have you noticed increased hair shedding?",
+                          "purpose":  "screening",
+                          "answer_type":  "text",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_5",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RECENT_STRESS_ILLNESS",
+                          "text":  "Have you had any major illness, surgery, childbirth, or significant stress in the last 3 months?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED_SYMPTOM_6",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS",
+                              "distinguishing_feature":  "Both are nonscarring hair-loss categories; the specified category should be used when the cause/pattern is documented."
+                          }
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "all_sexes",
+    "acute_chronic":  "variable",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "L65.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nonscarring hair loss, unspecified",
+    "evidence_ids":  [
+                         "EVID_NONSCARRING_HAIR_LOSS_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

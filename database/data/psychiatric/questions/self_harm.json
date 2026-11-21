@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "SELF_HARM",
+    "complaint_name":  "Self harm",
+    "module":  "psychiatric",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SH_001",
+                          "text":  "Have you self-harmed in the past 24 hours, or are you about to right now?",
+                          "purpose":  "current",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "CURRENT_SELF_HARM",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SH_002",
+                          "text":  "Have you had thoughts of suicide along with the self-harm?",
+                          "purpose":  "suicide",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SELF_HARM_WITH_SUICIDE",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SH_003",
+                          "text":  "Do you need medical attention for any injuries?",
+                          "purpose":  "medical",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SELF_HARM_INJURY",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SH_004",
+                          "text":  "Is there a pattern of recurrent self-harm?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "RECURRENT_SELF_HARM",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

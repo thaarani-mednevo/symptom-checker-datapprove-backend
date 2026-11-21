@@ -1,0 +1,134 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_011",
+    "code":  "OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION",
+    "name":  "Other disorders resulting from impaired renal tubular function",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Other disorders resulting from impaired renal tubular function.",
+    "complaints":  [
+                       {
+                           "code":  "IMPAIRED_FUNCTION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "POLYURIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POLYDIPSIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HYPOKALEMIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "METABOLIC_ACIDOSIS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GROWTH_RETARDATION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_HYPOKALEMIC_PARALYSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "MUSCLE_WEAKNESS",
+                          "condition":  "[LLM DRAFT] Severe generalized muscle weakness or ascending paralysis due to profound tubular potassium wasting leading to risk of respiratory failure or cardiac arrhythmias."
+                      },
+                      {
+                          "code":  "RF_PATHOLOGICAL_FRACTURE_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] Acute severe bone pain and inability to bear weight resulting from severe osteomalacia or rickets secondary to chronic renal phosphate or calcium wasting."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_URINATE_MORE_THAN_8_TIMES_A_DAY?",
+                          "text":  "[LLM DRAFT] Do you urinate more than 8 times a day?",
+                          "purpose":  "polyuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_THIRSTY_ALL_THE_TIME?",
+                          "text":  "[LLM DRAFT] Do you feel thirsty all the time?",
+                          "purpose":  "polydipsia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_BONE_PAIN_OR_EASY_FRACTURES?",
+                          "text":  "[LLM DRAFT] Do you have bone pain or easy fractures?",
+                          "purpose":  "bone issues",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N25.89",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other disorders resulting from impaired renal tubular function",
+    "evidence_ids":  [
+                         "EVID_OTHER_DISORDERS_RESULTING_FROM_IMPAIRED_RENAL_TUBULAR_FUNCTION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

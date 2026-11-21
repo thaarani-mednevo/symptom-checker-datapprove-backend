@@ -1,0 +1,107 @@
+{
+  "complaint_code": "TESTICULAR_PAIN",
+  "complaint_name": "Testicular Pain",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_TPAIN_001",
+      "text": "How did the pain start — was it sudden and severe, or did it develop gradually over hours or days?",
+      "purpose": "Sudden severe testicular pain is the classic presentation of testicular torsion until proven otherwise",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Sudden onset, severe (worst within minutes)",
+        "Sudden onset, moderate",
+        "Gradual onset over hours",
+        "Gradual onset over days",
+        "Chronic dull ache, weeks to months"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "TESTICULAR_PAIN_ONSET",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TPAIN_002",
+      "text": "Did the pain start suddenly and is it severe enough that you cannot walk comfortably?",
+      "purpose": "Sudden severe pain strongly suggests testicular torsion — a urological emergency requiring immediate surgical assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "TORSION_PAIN_SEVERITY",
+      "yes_weight": 5,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_TPAIN_003",
+      "text": "Have you noticed that the affected testicle appears higher than normal in the scrotum or is lying in an unusual position?",
+      "purpose": "A high-riding testicle with a horizontal lie is the clinical hallmark of testicular torsion",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "HIGH_RIDING_TESTICLE",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TPAIN_004",
+      "text": "Are you experiencing nausea or vomiting alongside the testicular pain?",
+      "purpose": "Nausea and vomiting accompany testicular torsion due to vagal stimulation from severe pain",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "ASSOCIATED_NAUSEA_VOMITING",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TPAIN_005",
+      "text": "Do you have fever, urinary symptoms such as burning or frequency, or penile discharge alongside the pain?",
+      "purpose": "Fever with testicular pain suggests epididymo-orchitis, which requires a different pathway to torsion",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(EPIDIDYMO_ORCHITIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "EPIDIDYMO_ORCHITIS_FEATURES",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TPAIN_006",
+      "text": "Have you had a recent scrotal injury or trauma?",
+      "purpose": "Identify traumatic aetiology which may still require urgent assessment for haematocele or rupture",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(SCROTAL_TRAUMA_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "TESTICULAR_TRAUMA",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_TPAIN_007",
+      "text": "How old are you? Torsion is most common in males aged 12–25 years.",
+      "purpose": "Age 12–25 is the peak risk window for testicular torsion; this contextualises urgency",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Under 12 years",
+        "12–25 years",
+        "26–40 years",
+        "Over 40 years"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "TORSION_AGE_RISK",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

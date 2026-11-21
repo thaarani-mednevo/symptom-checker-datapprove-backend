@@ -1,0 +1,104 @@
+﻿{
+    "id":  "ENT_DIS_HB_003",
+    "code":  "TINNITUS_LEFT_EAR",
+    "name":  "Tinnitus, left ear",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+    "complaints":  [
+                       {
+                           "code":  "TINNITUS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEARING_SOUND_WHEN_NO_EXTERNAL_SOUND_IS_PRESENT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NOISE_INDUCED_HEARING_LOSS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EAR_INFECTIONS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DISEASE_OF_THE_HEART_OR_BLOOD_VESSELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "MÉNIÈRES_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "BRAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "VESTIBULAR_SCHWANNOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CHOLESTEATOMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "TRAUMATIC_BRAIN_INJURY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "EXCESSIVE_EARWAX",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_UNILATERAL_HEARING_LOSS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "HEARING_LOSS",
+                          "condition":  "Sudden onset of hearing loss"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEARING_LOSS",
+                          "text":  "Do you also experience hearing loss in the left ear?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TINNITUS_LEFT_EAR_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "60862001",
+    "snomed_verified_name":  "Tinnitus",
+    "icd10_code":  "H93.12",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Tinnitus, left ear",
+    "evidence_ids":  [
+                         "EVID_TINNITUS_LEFT_EAR"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

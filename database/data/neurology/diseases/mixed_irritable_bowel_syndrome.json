@@ -1,0 +1,80 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_043",
+  "code": "MIXED_IRRITABLE_BOWEL_SYNDROME",
+  "name": "Mixed irritable bowel syndrome",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Mixed irritable bowel syndrome.",
+  "complaints": [
+    {
+      "code": "BOWEL_DYSFUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "DIARRHEA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CONSTIPATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ABDOMINAL_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FLATULENCE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FREQUENT_URINATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K58.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Mixed irritable bowel syndrome",
+  "evidence_ids": [
+    "EVID_MIXED_IRRITABLE_BOWEL_SYNDROME"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

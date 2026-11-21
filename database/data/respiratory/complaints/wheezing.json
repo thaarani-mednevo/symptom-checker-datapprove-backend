@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_003",
+  "code": "WHEEZING",
+  "name": "Wheezing",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "A wheeze is a clinical symptom of a continuous, coarse, whistling sound produced in the respiratory airways during breathing. For wheezes to occur, part of the respiratory tree must be narrowed or obstructed, or airflow velocity within the respiratory tree must be heightened.",
+  "hpo_codes": [
+    "HP:0030828"
+  ],
+  "snomed_code": "56018004",
+  "snomed_verified_name": "Wheezing",
+  "icd10_code": "R06.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Wheezing",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

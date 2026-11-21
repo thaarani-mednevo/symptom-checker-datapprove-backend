@@ -1,0 +1,96 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_027",
+    "code":  "MULTIPLE_FRACTURES_OF_RIBS_UNSPECIFIED_SIDE_SEQUELA",
+    "name":  "Multiple fractures of ribs, unspecified side, sequela",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Multiple fractures of ribs, unspecified side, sequela.",
+    "complaints":  [
+                       {
+                           "code":  "FRACTURES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_PAIN_THAT_IS_WORSE_WITH_BREATHING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CHEST_TRAUMA",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_STILL_FEEL_SHARP_OR_ACHING_PAIN_I",
+                          "text":  "[LLM DRAFT] Do you still feel sharp or aching pain in your chest when you breathe deeply or cough?",
+                          "purpose":  "residual pain screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_UNSPECIFIED_SIDE_SEQUELA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_ANY_BULGING_OR_INDENTATION",
+                          "text":  "[LLM DRAFT] Do you notice any bulging or indentation on your chest wall?",
+                          "purpose":  "chest wall deformity screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_UNSPECIFIED_SIDE_SEQUELA_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_SHORT_OF_BREATH_OR_HAVE_TROU",
+                          "text":  "[LLM DRAFT] Do you feel short of breath or have trouble breathing when walking or climbing stairs?",
+                          "purpose":  "respiratory compromise screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MULTIPLE_FRACTURES_OF_RIBS_UNSPECIFIED_SIDE_SEQUELA_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "S22.49XS",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Multiple fractures of ribs, unspecified side, sequela",
+    "evidence_ids":  [
+                         "EVID_MULTIPLE_FRACTURES_OF_RIBS_UNSPECIFIED_SIDE_SEQUELA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

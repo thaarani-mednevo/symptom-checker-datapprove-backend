@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "PARALYSIS",
+    "complaint_name":  "Paralysis",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PAR_001",
+                          "text":  "Is it on one side, both legs, or all limbs?",
+                          "purpose":  "distribution",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PARALYSIS_DISTRIBUTION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PAR_002",
+                          "text":  "Did it come on suddenly within minutes to hours?",
+                          "purpose":  "acute",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_PARALYSIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PAR_003",
+                          "text":  "Is there facial droop, slurred speech, or visual loss?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "CNS_PARALYSIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PAR_004",
+                          "text":  "Is it ascending from the legs upward?",
+                          "purpose":  "GBS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ASCENDING_PARALYSIS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PAR_005",
+                          "text":  "Is it intermittent, episodic, or constant?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PARALYSIS_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

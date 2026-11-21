@@ -1,0 +1,100 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_032",
+    "code":  "DEHYDRATION_OF_NEWBORN",
+    "name":  "Dehydration of newborn",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A condition in which a newborn lacks adequate fluid, leading to impaired organ function.",
+    "complaints":  [
+                       {
+                           "code":  "DEHYDRATION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_LETHARGY_OR_UNRESPONSIVENESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Newborn is unusually difficult to wake or completely unresponsive."
+                      },
+                      {
+                          "code":  "RF_SEVERE_OLIGURIA_ANURIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "No wet diapers for 6 to 8 hours or significantly decreased urine output."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DEHYDRATION_OF_NEWBORN_1",
+                          "text":  "Has the newborn had fewer than 6 wet diapers in the past 24 hours?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DEHYDRATION_OF_NEWBORN_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_DEHYDRATION_OF_NEWBORN_2",
+                          "text":  "Does the newborn have a sunken soft spot (fontanelle) on top of their head?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DEHYDRATION_OF_NEWBORN_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DEHYDRATION_OF_NEWBORN_3",
+                          "text":  "Is the baby having difficulty latching or refusing to feed entirely?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DEHYDRATION_OF_NEWBORN_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOVOLEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with acute intravascular volume depletion due to hemorrhage or fluid shifts across all pediatric age groups, whereas neonatal dehydration is primarily characterized by hypernatremia or total body water loss often related to feeding difficulties."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "49513005",
+    "snomed_verified_name":  "Dehydration fever in newborn",
+    "icd10_code":  "P74.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dehydration of newborn",
+    "evidence_ids":  [
+                         "EVID_DEHYDRATION_OF_NEWBORN"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

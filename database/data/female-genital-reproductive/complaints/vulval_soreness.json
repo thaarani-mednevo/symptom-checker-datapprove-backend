@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_003",
+  "code": "VULVAL_SORENESS",
+  "name": "Vulval soreness",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by vulval soreness.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N90.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other specified noninflammatory disorders of vulva and perineum",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

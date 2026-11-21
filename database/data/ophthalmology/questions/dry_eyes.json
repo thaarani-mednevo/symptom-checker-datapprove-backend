@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DRY_EYES",
+    "complaint_name":  "Dry eyes",
+    "module":  "ophthalmology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DE_001",
+                          "text":  "Is there a gritty, burning, or foreign body sensation?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRY_EYE_CHARACTER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DE_002",
+                          "text":  "Is it worse with reading, screens, or air conditioning?",
+                          "purpose":  "aggravators",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRY_EYE_AGGRAVATORS",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DE_003",
+                          "text":  "Do you have a dry mouth or joint pains?",
+                          "purpose":  "autoimmune",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SJOGREN_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DE_004",
+                          "text":  "Are you taking antihistamines, antidepressants, or blood pressure medications?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DRY_EYE_DRUGS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

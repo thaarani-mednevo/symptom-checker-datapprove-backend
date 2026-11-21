@@ -1,0 +1,101 @@
+{
+  "complaint_code": "NIGHT_SWEATS",
+  "complaint_name": "Night Sweats",
+  "module": "constitutional-symptoms",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_NS_001",
+      "text": "How long have you been experiencing night sweats, and how severe are they — do they drench your clothes or bedding?",
+      "purpose": "Characterise duration and severity; drenching night sweats are a clinically significant constitutional B-symptom",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 2 weeks, mild sweating",
+        "Less than 2 weeks, drenching",
+        "2–8 weeks, mild sweating",
+        "2–8 weeks, drenching",
+        "More than 8 weeks, persistent"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "NIGHT_SWEATS_SEVERITY_DURATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NS_002",
+      "text": "Have you also had unexplained weight loss or persistent fever alongside the night sweats?",
+      "purpose": "The triad of fever, night sweats, and weight loss (B-symptoms) is a red flag for lymphoma or haematological malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "B_SYMPTOM_TRIAD_CONSTITUTIONAL",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NS_003",
+      "text": "Could this be related to menopause — are you female and aged 40 or above, or perimenopausal?",
+      "purpose": "Menopausal hot flushes/night sweats are the most common benign cause in women in the appropriate age group",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(MENOPAUSAL_NIGHT_SWEATS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "MENOPAUSE_NIGHT_SWEATS",
+      "yes_weight": -2,
+      "no_weight": 1
+    },
+    {
+      "code": "Q_CMP_NS_004",
+      "text": "Do you have symptoms suggesting tuberculosis — persistent cough, haemoptysis, or known TB contact?",
+      "purpose": "TB is a major infectious cause of night sweats requiring specific investigation",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(TB_SCREEN_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "TB_SYMPTOMS_NIGHT_SWEATS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NS_005",
+      "text": "Do you have HIV, are on HIV treatment, or have you had any recent high-risk exposures?",
+      "purpose": "HIV and HIV-associated infections (MAC, CMV, opportunistic infections) cause night sweats",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HIV_ASSOCIATED_NIGHT_SWEATS)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "HIV_NIGHT_SWEATS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NS_006",
+      "text": "Do you have any enlargement of lymph nodes, spleen, or liver?",
+      "purpose": "Lymphadenopathy or organomegaly with night sweats points to haematological or infective aetiology",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "LYMPHADENOPATHY_SWEATS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_NS_007",
+      "text": "Are you taking any medications such as antidepressants, tamoxifen, or other drugs that commonly cause sweating?",
+      "purpose": "Many medications cause night sweats as a side effect and are reversible causes",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(DRUG_INDUCED_SWEATS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "MEDICATION_INDUCED_SWEATS",
+      "yes_weight": -1,
+      "no_weight": 1
+    }
+  ]
+}

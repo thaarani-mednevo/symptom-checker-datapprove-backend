@@ -1,0 +1,67 @@
+﻿{
+    "id":  "GASTROINTESTINAL_DIS_GI_040",
+    "code":  "NEONATAL_RECTAL_HEMORRHAGE",
+    "name":  "Neonatal rectal hemorrhage",
+    "module":  "gastrointestinal",
+    "category":  "disease",
+    "description":  "A gastrointestinal condition known as Neonatal rectal hemorrhage.",
+    "complaints":  [
+                       {
+                           "code":  "RECTAL_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECTAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_GI_002",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HEMATOCHEZIA",
+                          "condition":  "Any neonatal rectal bleeding with pallor or lethargy"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_GI_006",
+                          "text":  "Are you unable to keep any fluids down?",
+                          "purpose":  "screen_red_flag",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_004)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_RECTAL_HEMORRHAGE_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "206425006",
+    "snomed_verified_name":  "Neonatal rectal hemorrhage",
+    "icd10_code":  "P54.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal rectal hemorrhage",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_RECTAL_HEMORRHAGE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,64 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_009",
+    "code":  "UNSPECIFIED_DYSPAREUNIA",
+    "name":  "Unspecified dyspareunia",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Dyspareunia is painful sexual intercourse. Although the word dyspareunia includes both female and male patients, discussions that use the term without specifying the patient\u0027s sex usually concern the female type, which is the more common.",
+    "complaints":  [
+                       {
+                           "code":  "DYSPAREUNIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_INTERCOURSE_PAIN_LOCATION",
+                          "text":  "Is the pain during sex felt at entry, or deep inside?",
+                          "purpose":  "Localize pain (superficial vs deep)",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_DYSPAREUNIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SUPERFICIAL_INTROITAL_DYSPAREUNIA",
+                              "distinguishing_feature":  "Superficial dyspareunia is pain at the vaginal entry/introitus, typically on initial penetration"
+                          },
+                          {
+                              "disease_code":  "DEEP_DYSPAREUNIA",
+                              "distinguishing_feature":  "Deep dyspareunia is pain felt internally/deep in the pelvis, often with deep thrusting"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N94.10",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified dyspareunia",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_DYSPAREUNIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

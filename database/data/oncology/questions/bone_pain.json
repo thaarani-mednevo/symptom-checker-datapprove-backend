@@ -1,0 +1,101 @@
+{
+  "complaint_code": "BONE_PAIN",
+  "complaint_name": "Bone Pain",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_BPAIN_001",
+      "text": "Where is the bone pain located, how long have you had it, and is it constant or does it come and go?",
+      "purpose": "Characterise location, duration, and pattern; constant, worsening bone pain particularly at night suggests malignant aetiology",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Localised to one site, less than 4 weeks, intermittent",
+        "Localised to one site, less than 4 weeks, constant",
+        "Localised to one site, more than 4 weeks, constant or worsening",
+        "Multiple sites, any duration",
+        "Spinal/back pain, any duration"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "BONE_PAIN_LOCATION_PATTERN",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BPAIN_002",
+      "text": "Is the bone pain worse at night or at rest, rather than during activity?",
+      "purpose": "Night pain and rest pain are red flags for malignant bone involvement, distinguishing it from mechanical musculoskeletal pain",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "NOCTURNAL_BONE_PAIN",
+      "yes_weight": 5,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_BPAIN_003",
+      "text": "Do you have a known history of cancer (e.g. breast, prostate, lung, kidney, thyroid)?",
+      "purpose": "Prior cancer history significantly raises suspicion for bony metastases",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "PRIOR_CANCER_HISTORY",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BPAIN_004",
+      "text": "Have you experienced any weakness, numbness, or loss of bladder or bowel control alongside the back or spinal pain?",
+      "purpose": "Neurological signs with spinal pain suggest metastatic spinal cord compression — a surgical emergency",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "CORD_COMPRESSION_SIGNS",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BPAIN_005",
+      "text": "Have you had any unexplained fractures or bone injuries after minimal or no trauma?",
+      "purpose": "Pathological fractures through tumour-involved bone are red flags for primary or metastatic bone malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "PATHOLOGICAL_FRACTURE",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BPAIN_006",
+      "text": "Have you had unexplained weight loss, night sweats, or persistent fatigue alongside the bone pain?",
+      "purpose": "Constitutional B-symptoms with bone pain raise malignancy suspicion — particularly multiple myeloma or lymphoma",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(HAEMATOLOGICAL_MALIGNANCY_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "CONSTITUTIONAL_SYMPTOMS_ASSOCIATED",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_BPAIN_007",
+      "text": "Is there a visible or palpable swelling, lump, or bony prominence at the site of pain?",
+      "purpose": "A local mass at the pain site may indicate a primary bone tumour",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(PRIMARY_BONE_TUMOUR_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "LOCAL_MASS_AT_PAIN_SITE",
+      "yes_weight": 4,
+      "no_weight": -1
+    }
+  ]
+}

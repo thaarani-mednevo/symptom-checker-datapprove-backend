@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_004",
+  "code": "PALPITATIONS",
+  "name": "Palpitations",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Palpitations occur when a person becomes aware of their heartbeat. The heartbeat may feel hard, fast, or uneven in their chest.",
+  "hpo_codes": [
+    "HP:0001962"
+  ],
+  "snomed_code": "80313002",
+  "snomed_verified_name": "Palpitations",
+  "icd10_code": "R00.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Palpitations",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

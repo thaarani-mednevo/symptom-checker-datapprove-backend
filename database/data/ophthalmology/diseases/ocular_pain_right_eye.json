@@ -1,0 +1,126 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_015",
+    "code":  "OCULAR_PAIN_RIGHT_EYE",
+    "name":  "Ocular pain, right eye",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Acute ocular pain localized to the right eye, often accompanied by redness, tearing, and photophobia, indicating a potential inflammatory or traumatic ocular condition.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "RED_EYE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "TEARING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLURRED_VISION",
+                          "condition":  "[LLM DRAFT] Sudden severe eye pain with blurred vision and halos around lights"
+                      },
+                      {
+                          "code":  "RF_CORNEAL_ULCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RED_EYE",
+                          "condition":  "[LLM DRAFT] Severe eye pain with red eye and purulent discharge"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_VISION_LOSS_IN_YOUR_R",
+                          "text":  "[LLM DRAFT] Do you have sudden vision loss in your right eye?",
+                          "purpose":  "vision loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OCULAR_PAIN_RIGHT_EYE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_REDNESS_OR_SWELLING_AROUND_YOUR_OCULAR_PAIN_RIGHT_EYE",
+                          "text":  "[LLM DRAFT] Is there redness or swelling around your right eye?",
+                          "purpose":  "eye redness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OCULAR_PAIN_RIGHT_EYE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DOES_THE_PAIN_IN_YOUR_RIGHT_EYE_GET_WORS",
+                          "text":  "[LLM DRAFT] Does the pain in your right eye get worse when you move your eye?",
+                          "purpose":  "eye movement pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OCULAR_PAIN_RIGHT_EYE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H57.11",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ocular pain, right eye",
+    "evidence_ids":  [
+                         "EVID_OCULAR_PAIN_RIGHT_EYE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

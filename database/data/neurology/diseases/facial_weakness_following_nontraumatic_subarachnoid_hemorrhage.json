@@ -1,0 +1,85 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_090",
+  "code": "FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE",
+  "name": "Facial weakness following nontraumatic subarachnoid hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Facial weakness is a medical sign associated with a variety of medical conditions.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "SEVERE_HEADACHE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "NUCHAL_RIGIDITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "ALTERED_MENTAL_STATUS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "CRANIAL_NERVE_PALSIES",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_REBLEEDING_SIGNS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Sudden onset of seizures after SAH indicating possible rebleeding or increased intracranial pressure"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_DETERIORATION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden worsening of facial weakness to complete paralysis or new generalized paralysis indicating expanding hematoma"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.092",
+  "icd10_validated": true,
+  "icd10_official_description": "Facial weakness following nontraumatic subarachnoid hemorrhage",
+  "evidence_ids": [
+    "EVID_FACIAL_WEAKNESS_FOLLOWING_NONTRAUMATIC_SUBARACHNOID_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_004",
+    "code":  "DUODENITIS_WITH_BLEEDING",
+    "name":  "Duodenitis with bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Duodenitis is inflammation of the duodenum. It may persist acutely or chronically.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_GI_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, profuse gastrointestinal bleeding manifested by hematemesis, melena, or hemodynamic instability resulting from the duodenitis."
+                      },
+                      {
+                          "code":  "RF_SEVERE_SYMPTOMATIC_ANEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANEMIA",
+                          "condition":  "[LLM DRAFT] Critical drop in hemoglobin secondary to chronic or acute duodenal bleeding, presenting with acute shortness of breath, chest pain, syncope, or severe dizziness."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_BLACK_TARRY_OR_BLOODY",
+                          "text":  "[LLM DRAFT] Have you noticed black, tarry, or bloody bowel movements?",
+                          "purpose":  "Screening for gastrointestinal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DUODENITIS_WITH_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SHARP_BURNING_OR",
+                          "text":  "[LLM DRAFT] Are you experiencing sharp, burning, or gnawing pain in your upper abdomen?",
+                          "purpose":  "Screening for duodenitis symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DUODENITIS_WITH_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_VOMITED_BLOOD_OR_MATERIAL_THAT",
+                          "text":  "[LLM DRAFT] Have you vomited blood or material that looks like dark coffee grounds?",
+                          "purpose":  "Screening for upper GI hemorrhage",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DUODENITIS_WITH_BLEEDING_SYMPTOM_3",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DUODENITIS_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Confirmed presence of mucosal inflammation without active hemorrhage or blood loss on endoscopy."
+                          },
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Hematemesis often associated with portal hypertension and stigmata of chronic liver disease rather than proximal small bowel inflammation."
+                          },
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Upper gastrointestinal bleeding originating from the distal esophagus rather than the duodenal bulb, typically presenting with retrosternal discomfort or heartburn."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "K29.81",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Duodenitis with bleeding",
+    "evidence_ids":  [
+                         "EVID_DUODENITIS_WITH_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

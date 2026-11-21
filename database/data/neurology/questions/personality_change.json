@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "PERSONALITY_CHANGE",
+    "complaint_name":  "Personality change",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PC_001",
+                          "text":  "Is it gradual or sudden?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PERSONALITY_CHANGE_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PC_002",
+                          "text":  "Are there disinhibition, apathy, aggression, or social inappropriateness?",
+                          "purpose":  "frontal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FRONTAL_LOBE_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PC_003",
+                          "text":  "Is there cognitive decline, memory loss, or confusion?",
+                          "purpose":  "dementia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(DEMENTIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DEMENTIA_WITH_PERSONALITY_CHANGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PC_004",
+                          "text":  "Is there headache, visual change, or weakness?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CNS_PERSONALITY_CHANGE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PC_005",
+                          "text":  "Is there depression, anxiety, or psychosis?",
+                          "purpose":  "psychiatric",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PSYCHIATRIC_WITH_PERSONALITY_CHANGE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

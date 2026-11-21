@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_023",
+    "code":  "GLARE_SENSITIVITY",
+    "name":  "Glare sensitivity",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Glare sensitivity is a visual disturbance characterized by discomfort and impaired vision when exposed to bright light.",
+    "complaints":  [
+                       {
+                           "code":  "GLARE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "EYE_STRAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "DRY_EYE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "CATARACTS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "REFRACTIVE_ERRORS",
+                             "strength":  "weak"
+                         },
+                         {
+                             "code":  "MIGRAINE",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_VISION_LOSS_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision or partial vision loss with glare sensitivity indicating possible retinal detachment or ischemic optic neuropathy."
+                      },
+                      {
+                          "code":  "RF_EYE_PAIN_EMERGENCY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain with glare sensitivity and vision changes suggestive of acute angle‑closure glaucoma."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_OR_SEVERE_DISCOMFORT_WH",
+                          "text":  "[LLM DRAFT] Do you feel pain or severe discomfort when looking at bright lights?",
+                          "purpose":  "detect acute eye pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GLARE_SENSITIVITY_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_EXPERIENCE_HEADACHES_OR_EYE_STRAI",
+                          "text":  "[LLM DRAFT] Do you experience headaches or eye strain when exposed to bright light?",
+                          "purpose":  "screen for glare sensitivity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GLARE_SENSITIVITY_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_DIFFICULTY_SEEING_IN_BRIGHT",
+                          "text":  "[LLM DRAFT] Do you have difficulty seeing in bright sunlight or indoor lighting?",
+                          "purpose":  "assess visual discomfort",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "GLARE_SENSITIVITY_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "64445006",
+    "snomed_verified_name":  "Increased glare sensitivity",
+    "icd10_code":  "H53.71",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Glare sensitivity",
+    "evidence_ids":  [
+                         "EVID_GLARE_SENSITIVITY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,11 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+CMP_RESP_001,COUGH,Cough,respiratory,respiratory,complaint,HP:0012735,49727002,R05,1.0,,false,
+CMP_RESP_002,SHORTNESS_OF_BREATH,Shortness of breath,respiratory,respiratory,complaint,HP:0002094,267036007,R06.00,1.0,,true,"Dyspnea, unspecified"
+CMP_RESP_003,WHEEZING,Wheezing,respiratory,respiratory,complaint,HP:0030828,56018004,R06.2,1.0,,true,Wheezing
+CMP_RESP_004,CHEST_TIGHTNESS,Chest tightness,respiratory,respiratory,complaint,HP:0031996,23924001,R07.89,1.0,,true,Other chest pain
+CMP_RESP_005,HEMOPTYSIS,Hemoptysis,respiratory,respiratory,complaint,HP:0002105,66857006,R04.2,1.0,,true,Hemoptysis
+CMP_RESP_006,PRODUCTIVE_COUGH,Productive cough,respiratory,respiratory,complaint,HP:0031245,28743005,R09.3,1.0,,true,Abnormal sputum
+CMP_RESP_007,FEVER_WITH_COUGH,Fever with cough,respiratory,respiratory,complaint,HP:0001945,386661006,R05,1.0,,false,
+CMP_RESP_008,NIGHT_SWEATS,Night sweats,respiratory,respiratory,complaint,HP:0030166,42984000,R61,1.0,,true,"Generalized hyperhidrosis, unspecified"
+CMP_RESP_009,STRIDOR,Stridor,respiratory,respiratory,complaint,HP:0010307,70407001,R06.1,1.0,,true,Stridor
+CMP_RESP_010,PLEURITIC_CHEST_PAIN,Pleuritic chest pain,respiratory,respiratory,complaint,HP:0002083,75314000,R07.81,1.0,,true,Pleurodynia

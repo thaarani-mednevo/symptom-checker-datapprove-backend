@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_002",
+  "code": "UNEXPLAINED_WEIGHT_LOSS",
+  "name": "Unexplained weight loss",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Unexplained weight loss is defined as an unintentional reduction in body weight of more than 5% over 6–12 months without a clear dietary or volitional cause. It is a significant red flag symptom that may indicate an underlying malignancy, chronic infection, endocrine disorder, or inflammatory disease. Cancer-related weight loss (cachexia) is driven by systemic inflammation, cytokine release, altered metabolism, and reduced caloric intake, and is associated with poorer prognosis. All causes of significant unintentional weight loss require systematic investigation.",
+  "hpo_codes": ["HP:0001824"],
+  "snomed_code": "89362005",
+  "snomed_verified_name": "Weight loss",
+  "icd10_code": "R63.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Abnormal weight loss",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

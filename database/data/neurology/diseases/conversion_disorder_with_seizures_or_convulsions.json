@@ -1,0 +1,119 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_096",
+  "code": "CONVERSION_DISORDER_WITH_SEIZURES_OR_CONVULSIONS",
+  "name": "Conversion disorder with seizures or convulsions",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Conversion disorder (CD) was a formerly diagnosed psychiatric disorder characterized by abnormal sensory experiences and movement problems during periods of high psychological stress. Individuals diagnosed with CD presented with highly distressing neurological symptoms such as numbness, blindness, paralysis, or convulsions, none of which were consistent with a well-established organic cause and could be traced back to a psychological trigger.",
+  "complaints": [
+    {
+      "code": "SEIZURES",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "NUMBNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MOVEMENT_PROBLEMS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "NON_EPILEPTIC_SEIZURES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TREMOR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FAINTING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TROUBLE_SPEAKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "IMPAIRED_HEARING_AND_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "TROUBLE_SWALLOWING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "LONG_TERM_STRESS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "NONE_APPLICABLE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "",
+      "condition": ""
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "F44.5",
+  "icd10_validated": true,
+  "icd10_official_description": "Conversion disorder with seizures or convulsions",
+  "evidence_ids": [
+    "EVID_CONVERSION_DISORDER_WITH_SEIZURES_OR_CONVULSIONS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

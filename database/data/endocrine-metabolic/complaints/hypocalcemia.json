@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_007",
+  "code": "HYPOCALCEMIA",
+  "name": "Hypocalcemia",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Hypocalcemia (US) or hypocalcaemia (UK) is a medical condition characterized by low calcium levels in the blood serum. The normal range of blood calcium is typically between 2.1 and 2.6 mmol/L, while levels less than 2.1 mmol/L are defined as hypocalcemic.",
+  "hpo_codes": [],
+  "snomed_code": "5291005",
+  "snomed_verified_name": "Hypocalcemia",
+  "icd10_code": "E83.51",
+  "icd10_validated": true,
+  "icd10_official_description": "Hypocalcemia",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

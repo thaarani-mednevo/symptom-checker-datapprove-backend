@@ -1,0 +1,95 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_103",
+  "code": "EPIDEMIC_VERTIGO",
+  "name": "Epidemic vertigo",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Labyrinthitis is inflammation of the labyrinth, a maze of fluid-filled channels in the inner ear. Vestibular neuritis is inflammation of the vestibular nerve.",
+  "complaints": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "NAUSEA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "IMBALANCE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "VOMITING",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of paralysis accompanying epidemic vertigo, suggesting a central neurological event such as a brainstem or cerebellar stroke."
+    },
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Occurrence of seizures in the context of epidemic vertigo, indicating potential acute intracranial pathology."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "186738001",
+  "snomed_verified_name": "Epidemic vertigo",
+  "icd10_code": "A88.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Epidemic vertigo",
+  "evidence_ids": [
+    "EVID_EPIDEMIC_VERTIGO"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

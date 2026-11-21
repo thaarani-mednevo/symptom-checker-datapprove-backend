@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_004",
+  "code": "REGURGITATION",
+  "name": "Regurgitation",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Regurgitation or regurgitate may refer to:Regurgitation (circulation)\nRegurgitation (digestion)\nRegurgitate (band).",
+  "hpo_codes": [],
+  "snomed_code": "263854006",
+  "snomed_verified_name": "Regurgitation - mechanism",
+  "icd10_code": "R12",
+  "icd10_validated": true,
+  "icd10_official_description": "Heartburn",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

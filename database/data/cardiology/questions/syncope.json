@@ -1,0 +1,16 @@
+{
+  "complaint_code": "SYNCOPE",
+  "complaint_name": "Syncope",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_SYN_001", "text": "Did you have any warning before you fainted — such as feeling dizzy, nauseous, sweaty, or seeing spots?", "purpose": "prodrome_check", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "VASOVAGAL_PRODROME", "yes_weight": -2, "no_weight": 2 },
+    { "code": "Q_CMP_SYN_002", "text": "Did the fainting happen during or immediately after physical exertion?", "purpose": "exertional_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "EXERTIONAL_SYNCOPE", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_SYN_003", "text": "Were you sitting, standing, or lying down when it happened?", "purpose": "positional_check", "answer_type": "multiple_choice", "options": ["Sitting", "Standing", "Lying down", "During exertion"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "SYNCOPE_POSITION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_SYN_004", "text": "Did your heart race or beat irregularly just before you fainted?", "purpose": "arrhythmia_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(ARRHYTHMIA)", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "PRE_SYNCOPE_PALPITATIONS", "yes_weight": 4, "no_weight": -1 },
+    { "code": "Q_CMP_SYN_005", "text": "How long were you unconscious, and did you recover fully within a few minutes?", "purpose": "duration_recovery", "answer_type": "free_text", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "SYNCOPE_DURATION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_SYN_006", "text": "Were there any jerking movements or tongue biting during the episode?", "purpose": "seizure_differentiation", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "CONVULSIVE_FEATURES", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

@@ -1,0 +1,173 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_MG_013",
+    "code":  "EPIDIDYMO_ORCHITIS",
+    "name":  "Epididymo-orchitis",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Epididymo-orchitis is inflammation of the epididymis (epididymitis) and testis (orchitis), most commonly due to bacterial infection spreading from the urethra or bladder. In sexually active men under 35, Chlamydia trachomatis and Neisseria gonorrhoeae are the most common causes. In older men and boys, enteric organisms (E. coli, Klebsiella) predominate, often associated with urinary tract pathology. It presents with gradual-onset scrotal pain, swelling, warmth, and erythema, typically accompanied by fever, dysuria, and urethral discharge. Treatment is with appropriate antibiotics; empirical therapy covers both STI and enteric organisms until cultures confirm the cause.",
+    "complaints":  [
+                       {
+                           "code":  "TESTICULAR_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "TESTICULAR_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "URETHRAL_DISCHARGE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "SCROTAL_PAIN_GRADUAL_ONSET",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SCROTAL_SWELLING_AND_ERYTHEMA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DYSURIA",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "URETHRAL_DISCHARGE",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SEXUALLY_ACTIVE_MALE_UNDER_35",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "UNPROTECTED_SEXUAL_INTERCOURSE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "URINARY_TRACT_ABNORMALITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "INSTRUMENTATION_OR_CATHETERISATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "OLDER_AGE_WITH_BPH",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_003",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "TESTICULAR_PAIN",
+                          "condition":  "Fever with rapidly worsening scrotal erythema, swelling, and systemic toxicity — severe epididymo-orchitis or Fournier\u0027s gangrene, urgent urological review"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MG_EO_001",
+                          "text":  "Did the scrotal pain and swelling develop gradually over hours to days rather than suddenly?",
+                          "purpose":  "differential_from_torsion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(EPIDIDYMO_ORCHITIS)",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "EPIDIDYMO_ORCHITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_MG_EO_002",
+                          "text":  "Have you had any burning sensation when passing urine or any discharge from the penis?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "EPIDIDYMO_ORCHITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_EO_003",
+                          "text":  "Have you recently had unprotected sexual intercourse with a new or multiple partners?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(STI_SCREEN)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "EPIDIDYMO_ORCHITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_MG_EO_004",
+                          "text":  "Do you have fever along with the scrotal pain?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "EPIDIDYMO_ORCHITIS_SYMPTOM_4",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "TESTICULAR_TORSION",
+                              "distinguishing_feature":  "Testicular torsion has sudden onset, absent cremasteric reflex, and high-riding testicle. Epididymo-orchitis has gradual onset with fever and dysuria. When distinction is clinically unclear, urgent Doppler ultrasound or surgical exploration is required."
+                          },
+                          {
+                              "disease_code":  "TESTICULAR_CANCER",
+                              "distinguishing_feature":  "Testicular cancer presents with a painless firm testicular mass or heaviness; orchitis produces a tender, swollen, warm testis. Any solid intratesticular mass persisting after antibiotic treatment requires urgent ultrasound and tumour markers."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0000031"
+                  ],
+    "snomed_code":  "31996006",
+    "snomed_verified_name":  "Torsion of testis",
+    "icd10_code":  "N45.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Orchitis",
+    "evidence_ids":  [
+                         "EVID_EPIDIDYMO_ORCHITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

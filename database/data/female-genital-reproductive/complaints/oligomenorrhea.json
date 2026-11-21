@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_009",
+  "code": "OLIGOMENORRHEA",
+  "name": "Oligomenorrhea",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Oligomenorrhea is an abnormal bleeding pattern where menstrual bleeding occurs at intervals of greater than 35 days, with fewer than 9 periods in a year. The period may be light in flow, short in duration or occur at irregular intervals.",
+  "hpo_codes": [],
+  "snomed_code": "52073004",
+  "snomed_verified_name": "Oligomenorrhea",
+  "icd10_code": "N91.5",
+  "icd10_validated": true,
+  "icd10_official_description": "Oligomenorrhea, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

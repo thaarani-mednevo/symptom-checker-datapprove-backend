@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_012",
+    "code":  "NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS",
+    "name":  "Neonatal conjunctivitis and dacryocystitis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Neonatal conjunctivitis and dacryocystitis are acute bacterial infections of the eye and lacrimal sac occurring within the first month of life.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_SWELLING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PURULENT_CONJUNCTIVAL_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CHEMOSIS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PREAURICULAR_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "CORNEAL_ULCERATION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "MATERNAL_GENITAL_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "PREMATURITY",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "LOW_BIRTH_WEIGHT",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "PROLONGED_RUPTURE_OF_MEMBRANES",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ORBITAL_CELLULITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_SWELLING",
+                          "condition":  "[LLM DRAFT] Swelling of the eye with or without pain, suggesting orbital cellulitis or dacryocystitis extension"
+                      },
+                      {
+                          "code":  "RF_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision in the affected eye, indicating severe corneal involvement or optic nerve compromise"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IS_THERE_A_THICK_YELLOW_OR_GREEN_DISCHA",
+                          "text":  "[LLM DRAFT] Is there a thick, yellow or green discharge from the eye?",
+                          "purpose":  "Purulent discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_SWELLING_OR_REDNESS_NEAR_THE_IN",
+                          "text":  "[LLM DRAFT] Is there swelling or redness near the inner corner of the eye?",
+                          "purpose":  "Lacrimal sac inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_DISCHARGE_CLEAR_OR_WATERY?",
+                          "text":  "[LLM DRAFT] Is the discharge clear or watery?",
+                          "purpose":  "Clear discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "206345004",
+    "snomed_verified_name":  "Neonatal dacryocystitis and conjunctivitis",
+    "icd10_code":  "P39.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal conjunctivitis and dacryocystitis",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

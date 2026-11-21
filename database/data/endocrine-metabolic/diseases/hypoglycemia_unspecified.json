@@ -1,0 +1,207 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_029",
+    "code":  "HYPOGLYCEMIA_UNSPECIFIED",
+    "name":  "Hypoglycemia, unspecified",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypoglycemia, also spelled hypoglycaemia or hypoglycæmia, sometimes called low blood sugar, is a fall in blood sugar to levels below normal, typically below 70 mg/dL (3.9 mmol/L). Whipple\u0027s triad is used to properly identify hypoglycemic episodes.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SHAKINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CLAMMINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEART_RATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ANXIETY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HUNGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "MEDICATIONS_(INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "GLINIDES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AND_SULFONYLUREAS)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SEPSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "KIDNEY_FAILURE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CERTAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LIVER_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RED_FLAG_NAME",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe hypoglycemia resulting in altered mental status, confusion, seizures, or loss of consciousness requiring immediate parenteral glucose or glucagon."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_FEELING_SHAKY_DIZZY",
+                          "text":  "[LLM DRAFT] Are you currently feeling shaky, dizzy, or excessively sweaty?",
+                          "purpose":  "screens for autonomic symptoms of hypoglycemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_EXPERIENCED_SUDDEN_CON",
+                          "text":  "[LLM DRAFT] Have you recently experienced sudden confusion, blurry vision, or difficulty speaking?",
+                          "purpose":  "screens for neuroglycopenic symptoms requiring urgent care",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPOGLYCEMIA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA",
+                              "distinguishing_feature":  "[LLM DRAFT] History of recent administration of glucose-lowering medications or exogenous chemicals"
+                          },
+                          {
+                              "disease_code":  "IATROGENIC_NEONATAL_HYPOGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] History of clinical interventions or maternal factors immediately following birth in a newborn"
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_LEVEL_3",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of severe cognitive impairment or physical assistance required from another person due to neuroglycopenia"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E16.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypoglycemia, unspecified",
+    "evidence_ids":  [
+                         "EVID_HYPOGLYCEMIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

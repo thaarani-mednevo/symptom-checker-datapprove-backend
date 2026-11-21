@@ -1,0 +1,97 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_014",
+  "code": "APHASIA_FOLLOWING_CEREBRAL_INFARCTION",
+  "name": "Aphasia following cerebral infarction",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Aphasia, also known as dysphasia, is an impairment in a person's ability to comprehend or formulate language because of dysfunction in specific brain regions. The major causes are stroke and head trauma; prevalence is hard to determine, but aphasia due to stroke is estimated to be 0.1–0.4% in developed countries.",
+  "complaints": [
+    {
+      "code": "APHASIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EXPRESSIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "RECEPTIVE_APHASIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "GLOBAL_APHASIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "CONTRALATERAL_FACIAL_DROOP",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "HYPERTENSION",
+      "strength": "strong"
+    },
+    {
+      "code": "DIABETES_MELLITUS",
+      "strength": "strong"
+    },
+    {
+      "code": "ATRIAL_FIBRILLATION",
+      "strength": "strong"
+    },
+    {
+      "code": "CIGARETTE_SMOKING",
+      "strength": "strong"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SUDDEN_ONSET_APHASIA",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "APHASIA",
+      "condition": "[LLM DRAFT] Sudden onset or rapid worsening of aphasia, especially with facial droop or limb weakness"
+    },
+    {
+      "code": "RF_NEW_ONSET_SEIZURE",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] New-onset seizures in a patient with recent cerebral infarction and aphasia"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.320",
+  "icd10_validated": true,
+  "icd10_official_description": "Aphasia following cerebral infarction",
+  "evidence_ids": [
+    "EVID_APHASIA_FOLLOWING_CEREBRAL_INFARCTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

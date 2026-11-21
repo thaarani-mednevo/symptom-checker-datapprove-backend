@@ -1,0 +1,127 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_017",
+    "code":  "POSTINFECTIOUS_HYPOTHYROIDISM",
+    "name":  "Postinfectious hypothyroidism",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Postinfectious hypothyroidism is a delayed onset of hypothyroid symptoms following an acute viral or bacterial infection.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DIARRHEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABDOMINAL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FLATULENCE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FREQUENT_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOTHYROIDISM",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe myxedema coma characterized by hypothermia, altered mental status, and hypoventilation following a postinfectious thyroiditis event."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_RECOVERED_FROM_A_VIRAL",
+                          "text":  "[LLM DRAFT] Have you recently recovered from a viral illness or upper respiratory infection before developing fatigue, weight gain, or feeling constantly cold?",
+                          "purpose":  "screens for preceding infection and hypothyroid symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POSTINFECTIOUS_HYPOTHYROIDISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_SEVERE_SWELLING_OF",
+                          "text":  "[LLM DRAFT] Are you experiencing severe swelling of your face or neck, extreme lethargy, or confusion following a recent infection?",
+                          "purpose":  "screens for severe myxedema complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POSTINFECTIOUS_HYPOTHYROIDISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with an initial phase of excess thyroid hormone release before eventual normalization or hypothyroidism."
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] History of exposure to specific drugs or exogenous agents known to impair thyroid function."
+                          },
+                          {
+                              "disease_code":  "POSTPROCEDURAL_HYPOTHYROIDISM",
+                              "distinguishing_feature":  "[LLM DRAFT] History of surgical thyroidectomy, radioactive iodine ablation, or external neck radiation therapy."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E03.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Postinfectious hypothyroidism",
+    "evidence_ids":  [
+                         "EVID_POSTINFECTIOUS_HYPOTHYROIDISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

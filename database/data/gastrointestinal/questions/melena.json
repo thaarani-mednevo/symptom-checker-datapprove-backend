@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "MELENA",
+    "complaint_name":  "Melena",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_MEL_001",
+                          "text":  "Are you passing black, tarry stools?",
+                          "purpose":  "confirm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MELENA_CONFIRMED",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_MEL_002",
+                          "text":  "Do you feel dizzy, faint, or have a fast heart rate?",
+                          "purpose":  "shock",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GI_BLEED_SHOCK",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_MEL_003",
+                          "text":  "Do you take NSAIDs, aspirin, or anticoagulants?",
+                          "purpose":  "drug_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANTICOAGULANT_BLEED_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_MEL_004",
+                          "text":  "Have you had abdominal pain or weight loss?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "MELAENA_ASSOCIATED",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

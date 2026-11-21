@@ -1,0 +1,68 @@
+﻿{
+    "complaint_code":  "SKIN_PEELING",
+    "complaint_name":  "Skin peeling",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_SP_001",
+                                       "Is the peeling widespread or in specific areas (palms, soles, face)?",
+                                       "distribution",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "PEELING_DISTRIBUTION",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_SP_002",
+                          "text":  "Did the peeling follow a rash, fever, or infection?",
+                          "purpose":  "precipitant",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POST_INFECTIVE_PEELING",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SP_003",
+                          "text":  "Is there redness underneath or any blistering?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SJS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ERYTHEMA_WITH_PEELING",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SP_004",
+                          "text":  "Have you started any new medication recently?",
+                          "purpose":  "drug_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SJS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DRUG_INDUCED_PEELING",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

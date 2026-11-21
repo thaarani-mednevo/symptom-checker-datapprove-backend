@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "ANURIA",
+    "complaint_name":  "Anuria",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ANU_001",
+                          "text":  "Have you passed any urine at all in the last 12 hours?",
+                          "purpose":  "confirm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANURIA_CONFIRM",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ANU_002",
+                          "text":  "Do you have severe abdominal or flank pain?",
+                          "purpose":  "obstruction",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OBSTRUCTIVE_ANURIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ANU_003",
+                          "text":  "Have you had recent surgery, severe bleeding, or kidney disease?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANURIA_CAUSE",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ANU_004",
+                          "text":  "Are you confused, drowsy, or breathless?",
+                          "purpose":  "uraemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "URAEMIA_SYMPTOMS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      }
+                  ]
+}

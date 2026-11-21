@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "BLEEDING",
+    "complaint_name":  "Bleeding",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BLEED_001",
+                          "text":  "Where is the bleeding — gums, nose, skin, GI, urinary, or menstrual?",
+                          "purpose":  "location",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BLEEDING_SITE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLEED_002",
+                          "text":  "How long has it been going on and how heavy is it?",
+                          "purpose":  "severity",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BLEEDING_SEVERITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLEED_003",
+                          "text":  "Are you taking anticoagulants, aspirin, or NSAIDs?",
+                          "purpose":  "drug_risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANTICOAGULANT_USE",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BLEED_004",
+                          "text":  "Is there uncontrolled, heavy, or ongoing bleeding right now?",
+                          "purpose":  "severe",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ACTIVE_HEAVY_BLEEDING",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BLEED_005",
+                          "text":  "Do you bruise easily or have a family history of bleeding disorders?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "BLEEDING_DIATHESIS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_002",
+  "code": "THYROTOXICOSIS",
+  "name": "Thyrotoxicosis",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Hyperthyroidism is a endocrine disease in which the thyroid gland produces excessive amounts of thyroid hormones. Thyrotoxicosis is a condition that occurs due to elevated levels of thyroid hormones of any cause and therefore includes hyperthyroidism.",
+  "hpo_codes": [],
+  "snomed_code": "90739004",
+  "snomed_verified_name": "Thyrotoxicosis",
+  "icd10_code": "E05.9",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

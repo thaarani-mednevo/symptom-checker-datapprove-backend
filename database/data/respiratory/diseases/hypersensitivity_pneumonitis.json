@@ -1,0 +1,165 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_013",
+    "code":  "HYPERSENSITIVITY_PNEUMONITIS",
+    "name":  "Hypersensitivity pneumonitis",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Hypersensitivity pneumonitis (HP), also known as extrinsic allergic alveolitis, is an immune-mediated inflammatory lung disease caused by repeated inhalation of antigenic organic particles. Common antigens include thermophilic actinomycetes in mouldy hay (farmer\u0027s lung), bird proteins (bird fancier\u0027s lung), and fungal antigens in hot tubs or humidifiers. Acute HP presents with flu-like symptoms and breathlessness 4–8 hours after exposure. Chronic HP develops with ongoing exposure and resembles usual interstitial pneumonia on HRCT, with progressive breathlessness and fibrosis. Diagnosis requires the clinical triad of exposure, radiology, and either BAL lymphocytosis or specific IgG antibodies. Avoidance of the antigen is the primary treatment.",
+    "complaints":  [
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "FEVER_WITH_COUGH",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "DYSPNOEA_ON_EXERTION",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "DRY_COUGH",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER_AND_MALAISE_AFTER_EXPOSURE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "highly_specific",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FINE_INSPIRATORY_CRACKLES",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WEIGHT_LOSS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OCCUPATIONAL_ORGANIC_DUST_EXPOSURE",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "BIRD_OR_PET_OWNERSHIP",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HOT_TUB_OR_HUMIDIFIER_USE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "FARMING_OR_AGRICULTURAL_WORK",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NON_SMOKING_STATUS",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "SHORTNESS_OF_BREATH",
+                          "condition":  "Progressive breathlessness with fibrotic change on HRCT — chronic HP with fibrosis, urgent respiratory referral"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_HP_001",
+                          "text":  "Are you exposed to birds, hay, mould, or dusty organic materials in your home or workplace?",
+                          "purpose":  "exposure_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(HYPERSENSITIVITY_PNEUMONITIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HYPERSENSITIVITY_PNEUMONITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RESP_HP_002",
+                          "text":  "Do your breathing symptoms worsen specifically on days when you are exposed to these environments, then improve when you are away?",
+                          "purpose":  "temporal_exposure_link",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(HYPERSENSITIVITY_PNEUMONITIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HYPERSENSITIVITY_PNEUMONITIS_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_RESP_HP_003",
+                          "text":  "Have your breathing symptoms been getting progressively worse over months despite avoiding the suspected exposure?",
+                          "purpose":  "chronicity_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(HYPERSENSITIVITY_PNEUMONITIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPERSENSITIVITY_PNEUMONITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "INTERSTITIAL_LUNG_DISEASE",
+                              "distinguishing_feature":  "HP requires a documented antigen exposure history; IPF (the most common ILD) has no specific exposure and shows usual interstitial pneumonia pattern. BAL lymphocytosis and specific IgG antibodies support HP."
+                          },
+                          {
+                              "disease_code":  "PNEUMONIA",
+                              "distinguishing_feature":  "Acute HP mimics pneumonia with fever and bilateral infiltrates; absence of purulent sputum, failure to improve with antibiotics, and temporal exposure link suggest HP."
+                          },
+                          {
+                              "disease_code":  "ASTHMA",
+                              "distinguishing_feature":  "Asthma causes reversible airflow obstruction with wheeze; HP causes restrictive pattern on spirometry with diffuse ground-glass opacities on HRCT and exposure history."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+                      "HP:0006517"
+                  ],
+    "snomed_code":  "40122008",
+    "snomed_verified_name":  "Pneumonitis",
+    "icd10_code":  "J67.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hypersensitivity pneumonitis due to unspecified organic dust",
+    "evidence_ids":  [
+                         "EVD_RESP_013"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

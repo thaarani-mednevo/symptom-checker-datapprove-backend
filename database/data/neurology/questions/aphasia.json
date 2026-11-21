@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "APHASIA",
+    "complaint_name":  "Aphasia",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_APH_001",
+                          "text":  "Is it difficulty speaking, understanding, reading, or writing?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "APHASIA_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_APH_002",
+                          "text":  "Did it come on suddenly?",
+                          "purpose":  "sudden",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUDDEN_APHASIA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_APH_003",
+                          "text":  "Is there associated weakness, facial droop, or visual change?",
+                          "purpose":  "stroke",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "STROKE_WITH_APHASIA",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_APH_004",
+                          "text":  "Has it been gradually progressing?",
+                          "purpose":  "progressive",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PROGRESSIVE_APHASIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

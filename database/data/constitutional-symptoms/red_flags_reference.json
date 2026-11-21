@@ -1,0 +1,205 @@
+{
+  "module": "constitutional-symptoms",
+  "red_flags": [
+    {
+      "code": "RF_SEVERE_CHEST_PAIN_OR_SHORTNESS_OF_BREATH",
+      "name": "Severe chest pain or shortness of breath",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_PERSISTENT_HIGH_FEVER_WITH_SEVERE_HEADACHE_AND_CONFUSION",
+      "name": "Persistent high fever with severe headache and confusion",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_CARDIAC_SYMPTOMS",
+      "name": "Severe Cardiac Symptoms",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_SEPSIS",
+      "name": "Severe Sepsis",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SIGNS_OF_MENINGOENCEPHALITIS",
+      "name": "Signs of meningoencephalitis",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_HEMORRHAGIC_MANIFESTATIONS",
+      "name": "Hemorrhagic manifestations",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_NEUROLOGICAL_DETERIORATION",
+      "name": "Neurological deterioration",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_ABDOMINAL_PAIN_OR_SIGNS_OF_PERITONITIS",
+      "name": "Severe abdominal pain or signs of peritonitis",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_ALTERED_MENTAL_STATUS_OR_ENCEPHALOPATHY",
+      "name": "Altered mental status or encephalopathy",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_ABDOMINAL_PAIN",
+      "name": "Severe abdominal pain",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_ALTERED_MENTAL_STATUS",
+      "name": "Altered mental status",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SIGNS_OF_SHOCK_OR_ALTERED_MENTAL_STATUS",
+      "name": "Signs of shock or altered mental status",
+      "action": "Call for emergency medical assistance"
+    },
+    {
+      "code": "RF_ACUTE_RESPIRATORY_COMPROMISE",
+      "name": "Acute respiratory compromise",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SUDDEN_ONSET_FOCAL_NEUROLOGICAL_DEFICITS",
+      "name": "Sudden onset focal neurological deficits",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_RECURRENCE",
+      "name": "Acute stroke recurrence",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SUDDEN_SEVERE_HEADACHE_OR_ALTERED_MENTAL_STATUS",
+      "name": "Sudden severe headache or altered mental status",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SUDDEN_NEUROLOGICAL_DETERIORATION",
+      "name": "Sudden Neurological Deterioration",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_ACUTE_STROKE_SYMPTOMS",
+      "name": "Acute Stroke Symptoms",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_PROGRESSIVE_NEUROLOGICAL_DEFICITS",
+      "name": "Severe progressive neurological deficits",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_HIGH_BODY_TEMPERATURE",
+      "name": "High body temperature",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SUICIDAL_IDEATION",
+      "name": "Suicidal ideation",
+      "action": "Provide immediate crisis support and urgent psychiatric evaluation"
+    },
+    {
+      "code": "RF_HIGH_CORE_BODY_TEMPERATURE",
+      "name": "High Core Body Temperature",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_HEAT_STROKE",
+      "name": "Heat Stroke",
+      "action": "Call 911 and seek emergency medical care immediately"
+    },
+    {
+      "code": "RF_SEVERE_DEHYDRATION",
+      "name": "Severe Dehydration",
+      "action": "Seek urgent medical evaluation"
+    },
+    {
+      "code": "RF_SEVERE_NEUROLOGICAL_DEFICITS",
+      "name": "Severe neurological deficits",
+      "action": "Seek emergency evaluation immediately"
+    },
+    {
+      "code": "RF_PROGRESSIVE_CARDIOPULMONARY_SYMPTOMS",
+      "name": "Progressive cardiopulmonary symptoms",
+      "action": "Seek urgent medical care"
+    },
+    {
+      "code": "RF_SEVERE_VAGINAL_BLEEDING",
+      "name": "Severe vaginal bleeding",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_INABILITY_TO_KEEP_FLUIDS_DOWN",
+      "name": "Inability to keep fluids down",
+      "action": "Seek prompt medical evaluation"
+    },
+    {
+      "code": "RF_SEVERE_SHORTNESS_OF_BREATH",
+      "name": "Severe shortness of breath",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_CHEST_PAIN_OR_PALPITATIONS",
+      "name": "Chest pain or palpitations",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY",
+      "name": "Severe bradycardia or hemodynamic instability",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_ELECTROLYTE_IMBALANCE",
+      "name": "Severe electrolyte imbalance",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SUICIDAL_IDEATION_OR_INTENT",
+      "name": "Suicidal ideation or intent",
+      "action": "Proceed to the nearest emergency room or contact crisis services immediately"
+    },
+    {
+      "code": "RF_SEVERE_ELECTROLYTE_DERANGEMENT",
+      "name": "Severe electrolyte derangement",
+      "action": "Seek emergency medical care immediately"
+    },
+    {
+      "code": "RF_ACUTE_SUICIDAL_IDEATION",
+      "name": "Acute suicidal ideation",
+      "action": "Seek emergency psychiatric evaluation immediately"
+    },
+    {
+      "code": "RF_SEVERE_ELECTROLYTE_ABNORMALITY",
+      "name": "Severe Electrolyte Abnormality",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_LETHARGY_OR_UNRESPONSIVENESS",
+      "name": "Lethargy or Unresponsiveness",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_OLIGURIA_ANURIA",
+      "name": "Severe Oliguria/Anuria",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_SEVERE_HYPOTENSION_OR_SHOCK",
+      "name": "Severe Hypotension or Shock",
+      "action": "Seek emergency care immediately"
+    },
+    {
+      "code": "RF_ANURIA",
+      "name": "Anuria",
+      "action": "Seek emergency care immediately"
+    }
+  ]
+}

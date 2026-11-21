@@ -1,0 +1,103 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_012",
+    "code":  "POLYCYTHEMIA_VERA",
+    "name":  "Polycythemia vera",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "In oncology, polycythemia vera (PV) is an uncommon myeloproliferative neoplasm in which the bone marrow makes too many red blood cells. Approximately 98% of PV patients have a JAK2 gene mutation in their blood-forming cells.",
+    "complaints":  [
+                       {
+                           "code":  "POLYCYTHEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ARTERIAL_OR_VENOUS_THROMBOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THROMBOSIS",
+                          "condition":  "[LLM DRAFT] New or worsening stroke, myocardial infarction, deep vein thrombosis, or pulmonary embolism associated with elevated hematocrit and hyperviscosity."
+                      },
+                      {
+                          "code":  "RF_MAJOR_BLEEDING_MANIFESTATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Significant gastrointestinal bleeding, severe epistaxis, or abnormal hemorrhage secondary to acquired von Willebrand syndrome or platelet dysfunction."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_SEVERE_ITCHING_ESP",
+                          "text":  "[LLM DRAFT] Have you experienced severe itching, especially after taking a warm bath or shower?",
+                          "purpose":  "screens for aquagenic pruritus",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "POLYCYTHEMIA_VERA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FREQUENTLY_EXPERIENCE_SUDDEN_VISU",
+                          "text":  "[LLM DRAFT] Do you frequently experience sudden visual disturbances like blind spots, blurred vision, or double vision?",
+                          "purpose":  "screens for hyperviscosity-related neurological symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "POLYCYTHEMIA_VERA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_UNEXPLAINED_REDNESS_IN",
+                          "text":  "[LLM DRAFT] Have you noticed unexplained redness in your face, hands, or feet, often accompanied by a burning sensation?",
+                          "purpose":  "screens for erythromelalgia and plethora",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "POLYCYTHEMIA_VERA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SECONDARY_POLYCYTHEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Normal or elevated erythropoietin levels due to hypoxia or tumors, unlike the low levels typically seen in polycythemia vera."
+                          },
+                          {
+                              "disease_code":  "FAMILIAL_ERYTHROCYTOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Autosomal dominant inheritance pattern with isolated erythrocytosis and normal white blood cell and platelet counts."
+                          },
+                          {
+                              "disease_code":  "PORTAL_VEIN_THROMBOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Can present with splanchnic vein thrombosis secondary to myeloproliferative disorders like polycythemia vera, requiring evaluation of JAK2 mutation status."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "109992005",
+    "snomed_verified_name":  "Polycythemia vera (clinical)",
+    "icd10_code":  "D45",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Polycythemia vera",
+    "evidence_ids":  [
+                         "EVID_POLYCYTHEMIA_VERA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

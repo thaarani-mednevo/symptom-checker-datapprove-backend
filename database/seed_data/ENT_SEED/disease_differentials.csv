@@ -1,0 +1,58 @@
+disease_code,differential_disease_code,distinguishing_feature,source_status
+ACUTE_OTITIS_MEDIA,OTITIS_EXTERNA,"[LLM DRAFT] Pain with manipulation of the pinna or tragus, unlike acute otitis media where the pain is internal.",ai_drafted_unverified
+ACUTE_OTITIS_MEDIA,CHRONIC_SUPPURATIVE_OTITIS_MEDIA,[LLM DRAFT] Long-standing tympanic membrane perforation with persistent purulent discharge rather than acute fluid accumulation.,ai_drafted_unverified
+ACUTE_OTITIS_MEDIA,VIRAL_UPPER_RESPIRATORY_INFECTION,"[LLM DRAFT] Generalized upper respiratory symptoms without the acute, prominent middle ear inflammation and bulging tympanic membrane.",ai_drafted_unverified
+ACUTE_PHARYNGITIS,ACUTE_TONSILLITIS,[LLM DRAFT] Prominent tonsillar exudates and marked enlargement compared to diffuse pharyngeal inflammation,ai_drafted_unverified
+ACUTE_PHARYNGITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,"[LLM DRAFT] Concurrent prominent sneezing, nasal congestion, and cough rather than isolated sore throat",ai_drafted_unverified
+ACUTE_PHARYNGITIS,APHTHOUS_STOMATITIS,"[LLM DRAFT] Presence of painful, discrete oral ulcers with erythematous halos rather than generalized pharyngeal erythema",ai_drafted_unverified
+ACUTE_SINUSITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,"[LLM DRAFT] Symptoms typically resolve within 7 to 10 days without worsening, unlike acute bacterial sinusitis which often shows a 'double sickening'.",ai_drafted_unverified
+ACUTE_SINUSITIS,ALLERGIC_RHINITIS,"[LLM DRAFT] Prominent nasal pruritus, sneezing, and clear rhinorrhea with associated allergic triggers, typically lacking purulent discharge and facial pain.",ai_drafted_unverified
+ACUTE_SINUSITIS,ACUTE_PHARYNGITIS,[LLM DRAFT] Characterized predominantly by sore throat and pharyngeal inflammation rather than facial pressure or nasal congestion.,ai_drafted_unverified
+ACUTE_TONSILLITIS,ACUTE_PHARYNGITIS,[LLM DRAFT] Diffuse pharyngeal mucosal inflammation and lack of prominent localized tonsillar enlargement or exudates.,ai_drafted_unverified
+ACUTE_TONSILLITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,[LLM DRAFT] Predominance of generalized cold symptoms like sneezing and rhinorrhea with minimal throat pain.,ai_drafted_unverified
+ACUTE_TONSILLITIS,APHTHOUS_STOMATITIS,[LLM DRAFT] Presence of painful oral ulcers on non-tonsillar mucosal surfaces rather than inflamed tonsils.,ai_drafted_unverified
+ALLERGIC_RHINITIS,ACUTE_SINUSITIS,[LLM DRAFT] Presence of purulent nasal discharge and facial pain or pressure rather than clear rhinorrhea and itching.,ai_drafted_unverified
+ALLERGIC_RHINITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,"[LLM DRAFT] Self-limiting course lasting less than 10-14 days, often accompanied by systemic symptoms like fever and myalgias.",ai_drafted_unverified
+ALLERGIC_RHINITIS,ACUTE_PHARYNGITIS,[LLM DRAFT] Dominant symptom of a painful throat with pharyngeal erythema or exudates rather than prominent nasal symptoms.,ai_drafted_unverified
+APHTHOUS_STOMATITIS,ACUTE_PHARYNGITIS,"[LLM DRAFT] Diffuse pharyngeal erythema and exudates rather than discrete, painful oral ulcers.",ai_drafted_unverified
+APHTHOUS_STOMATITIS,ACUTE_TONSILLITIS,"[LLM DRAFT] Inflamed, enlarged tonsils frequently covered with purulent exudate, unlike localized canker sores.",ai_drafted_unverified
+APHTHOUS_STOMATITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,[LLM DRAFT] Accompanied by generalized upper respiratory symptoms such as rhinorrhea and sneezing without primary painful oral ulcerations.,ai_drafted_unverified
+CHRONIC_SUPPURATIVE_OTITIS_MEDIA,OTITIS_EXTERNA,"[LLM DRAFT] Inflammation of the external ear canal often presenting with pain upon manipulation of the pinna, whereas chronic suppurative otitis media primarily features a persistent tympanic membrane perforation and middle ear discharge.",ai_drafted_unverified
+CHRONIC_SUPPURATIVE_OTITIS_MEDIA,ACUTE_OTITIS_MEDIA,[LLM DRAFT] Presents with rapid-onset signs of middle ear inflammation and acute pain rather than a long-standing chronic tympanic membrane perforation with persistent otorrhea.,ai_drafted_unverified
+CHRONIC_SUPPURATIVE_OTITIS_MEDIA,PULSATILE_TINNITUS_UNSPECIFIED_EAR,"[LLM DRAFT] Characterized by a rhythmic, pulsing sound in the ear rather than the chronic purulent ear discharge and conductive hearing loss typical of chronic suppurative otitis media.",ai_drafted_unverified
+HYPOXIA,VIRAL_UPPER_RESPIRATORY_INFECTION,[LLM DRAFT] Presents with rhinorrhea and sore throat rather than systemic cyanosis or severe oxygen desaturation.,ai_drafted_unverified
+OTITIS_EXTERNA,ACUTE_OTITIS_MEDIA,[LLM DRAFT] Tympanic membrane is bulging and inflamed with normal external auditory canal.,ai_drafted_unverified
+OTITIS_EXTERNA,CHRONIC_SUPPURATIVE_OTITIS_MEDIA,[LLM DRAFT] Presence of a tympanic membrane perforation with persistent otorrhea.,ai_drafted_unverified
+PULSATILE_TINNITUS_BILATERAL,TINNITUS_BILATERAL,[LLM DRAFT] Perceived as a continuous ringing or buzzing rather than a synchronized heartbeat sound,ai_drafted_unverified
+PULSATILE_TINNITUS_BILATERAL,PULSATILE_TINNITUS_LEFT_EAR,[LLM DRAFT] Pulsatile noise is restricted to the left side rather than present bilaterally,ai_drafted_unverified
+PULSATILE_TINNITUS_BILATERAL,PULSATILE_TINNITUS_RIGHT_EAR,[LLM DRAFT] Pulsatile noise is restricted to the right side rather than present bilaterally,ai_drafted_unverified
+PULSATILE_TINNITUS_LEFT_EAR,PULSATILE_TINNITUS_RIGHT_EAR,[LLM DRAFT] Pulsatile sound perceived exclusively in the contralateral (right) ear rather than the left.,ai_drafted_unverified
+PULSATILE_TINNITUS_LEFT_EAR,PULSATILE_TINNITUS_BILATERAL,[LLM DRAFT] Pulsatile sound perceived synchronously in both ears rather than localized solely to the left ear.,ai_drafted_unverified
+PULSATILE_TINNITUS_LEFT_EAR,PULSATILE_TINNITUS_UNSPECIFIED_EAR,"[LLM DRAFT] Pulsatile tinnitus described without lateralization to a specific ear, requiring clinical determination of left-sided involvement.",ai_drafted_unverified
+PULSATILE_TINNITUS_RIGHT_EAR,PULSATILE_TINNITUS_BILATERAL,[LLM DRAFT] Presents with a synchronized whooshing sound in both ears rather than being localized exclusively to the right side.,ai_drafted_unverified
+PULSATILE_TINNITUS_RIGHT_EAR,PULSATILE_TINNITUS_LEFT_EAR,[LLM DRAFT] Presents with a vascular or rhythmic sound localized specifically to the left ear instead of the right.,ai_drafted_unverified
+PULSATILE_TINNITUS_RIGHT_EAR,PULSATILE_TINNITUS_UNSPECIFIED_EAR,[LLM DRAFT] Lacks the specific lateralization to the right ear noted in the primary presentation.,ai_drafted_unverified
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,PULSATILE_TINNITUS_BILATERAL,"[LLM DRAFT] Presents with synchronized rhythmic ringing perceived in both ears simultaneously, often prompting evaluation for systemic or intracranial vascular causes.",ai_drafted_unverified
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,PULSATILE_TINNITUS_LEFT_EAR,"[LLM DRAFT] Characterized by a rhythmic, pulse-synchronous sound localized specifically to the left ear, requiring exclusion of left-sided carotid or jugular pathology.",ai_drafted_unverified
+PULSATILE_TINNITUS_UNSPECIFIED_EAR,PULSATILE_TINNITUS_RIGHT_EAR,"[LLM DRAFT] Presents with a heartbeat-synchronous sound restricted to the right ear, necessitating targeted imaging of the right temporal bone and associated vasculature.",ai_drafted_unverified
+SORE_THROAT,ACUTE_PHARYNGITIS,[LLM DRAFT] Erythema and exudates on the posterior pharynx without prominent tonsillar enlargement,ai_drafted_unverified
+SORE_THROAT,ACUTE_TONSILLITIS,[LLM DRAFT] Inflammation primarily localized to the palatine tonsils often with visible purulent exudate,ai_drafted_unverified
+SORE_THROAT,VIRAL_UPPER_RESPIRATORY_INFECTION,[LLM DRAFT] Concurrent prominent nasal congestion and sneezing preceding or accompanying the throat discomfort,ai_drafted_unverified
+TINNITUS_BILATERAL,PULSATILE_TINNITUS_BILATERAL,"[LLM DRAFT] Presence of a rhythmic, heartbeat-synchronized sound rather than a continuous tone.",ai_drafted_unverified
+TINNITUS_BILATERAL,TINNITUS_LEFT_EAR,[LLM DRAFT] Localization of the ringing to a single ear rather than affecting both symmetrically.,ai_drafted_unverified
+TINNITUS_BILATERAL,CHRONIC_SUPPURATIVE_OTITIS_MEDIA,"[LLM DRAFT] Associated chronic otorrhea, tympanic membrane perforation, and persistent purulent drainage.",ai_drafted_unverified
+TINNITUS_LEFT_EAR,TINNITUS_RIGHT_EAR,[LLM DRAFT] Right-sided ringing or hissing noise instead of left-sided perception.,ai_drafted_unverified
+TINNITUS_LEFT_EAR,TINNITUS_BILATERAL,[LLM DRAFT] Ringing or hissing noise perceived in both ears simultaneously.,ai_drafted_unverified
+TINNITUS_LEFT_EAR,PULSATILE_TINNITUS_LEFT_EAR,"[LLM DRAFT] The ringing sound in the left ear has a rhythmic, beating quality synchronized with the heartbeat.",ai_drafted_unverified
+TINNITUS_RIGHT_EAR,TINNITUS_LEFT_EAR,[LLM DRAFT] Tinnitus is localized to the contralateral ear rather than the right ear.,ai_drafted_unverified
+TINNITUS_RIGHT_EAR,TINNITUS_BILATERAL,[LLM DRAFT] Tinnitus is perceived bilaterally rather than exclusively in the right ear.,ai_drafted_unverified
+TINNITUS_RIGHT_EAR,PULSATILE_TINNITUS_RIGHT_EAR,"[LLM DRAFT] Tinnitus has a rhythmic, pulse-synchronous quality rather than a steady tone in the right ear.",ai_drafted_unverified
+TINNITUS_UNSPECIFIED_EAR,TINNITUS_BILATERAL,[LLM DRAFT] Perceived ringing or buzzing sound reported in both ears simultaneously.,ai_drafted_unverified
+TINNITUS_UNSPECIFIED_EAR,PULSATILE_TINNITUS_UNSPECIFIED_EAR,[LLM DRAFT] Auditory sensation of a rhythmic pulsing or throbbing synchronous with the heartbeat.,ai_drafted_unverified
+TINNITUS_UNSPECIFIED_EAR,CHRONIC_SUPPURATIVE_OTITIS_MEDIA,[LLM DRAFT] Associated with persistent purulent otorrhea and tympanic membrane perforation.,ai_drafted_unverified
+TONSILLITIS,ACUTE_TONSILLITIS,[LLM DRAFT] Presence of prominent tonsillar exudates and marked inflammation focused primarily on the palatine tonsils.,ai_drafted_unverified
+TONSILLITIS,ACUTE_PHARYNGITIS,[LLM DRAFT] More diffuse inflammation of the posterior pharynx without prominent localized tonsillar enlargement or exudate.,ai_drafted_unverified
+TONSILLITIS,VIRAL_UPPER_RESPIRATORY_INFECTION,"[LLM DRAFT] Symptom profile dominated by prominent rhinorrhea, nasal congestion, and sneezing rather than severe isolated throat pain.",ai_drafted_unverified
+VIRAL_UPPER_RESPIRATORY_INFECTION,ACUTE_PHARYNGITIS,[LLM DRAFT] Prominent pharyngeal inflammation and pain rather than generalized upper respiratory congestion.,ai_drafted_unverified
+VIRAL_UPPER_RESPIRATORY_INFECTION,ACUTE_SINUSITIS,[LLM DRAFT] Facial pain and pressure lasting beyond 10 days or worsening after initial improvement.,ai_drafted_unverified
+VIRAL_UPPER_RESPIRATORY_INFECTION,ALLERGIC_RHINITIS,"[LLM DRAFT] Presence of prominent pruritus, sneezing, and clear rhinorrhea without systemic symptoms like fever.",ai_drafted_unverified

@@ -1,0 +1,96 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_HB_006",
+    "code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS",
+    "name":  "Other specified nonscarring hair loss",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "Non scarring hair loss, also known as noncicatricial alopecia, is the loss of hair without any scarring being present. There is typically little inflammation and irritation, but hair loss is significant.",
+    "complaints":  [
+                       {
+                           "code":  "HAIR_LOSS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_PATTERN",
+                          "text":  "Is the hair loss diffuse, patchy, or mainly along the hairline/central scalp?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "single_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_SCALP",
+                          "text":  "Is there scalp redness, scaling, pain, itching, or scarring?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HAIR_TRIGGER",
+                          "text":  "Did the hair loss follow a major illness, fever, surgery, severe stress, rapid weight change, or childbirth?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NONSCARRING_HAIR_LOSS_UNSPECIFIED",
+                              "distinguishing_feature":  "Unspecified nonscarring hair loss remains a fallback when the documented cause/pattern cannot be specified."
+                          }
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "all_sexes",
+    "acute_chronic":  "variable",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "L65.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified nonscarring hair loss",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

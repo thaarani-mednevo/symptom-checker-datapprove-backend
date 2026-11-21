@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_008",
+  "code": "SKIN_DISCOLORATION",
+  "name": "Skin discoloration",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "Skin discoloration can be a side effect of certain medical therapies, for instance minocycline treatment and radiotherapy.",
+  "hpo_codes": [],
+  "snomed_code": "3253007",
+  "snomed_verified_name": "Discoloration of skin",
+  "icd10_code": "L81.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Disorder of pigmentation, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

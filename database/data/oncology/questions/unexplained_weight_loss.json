@@ -1,0 +1,101 @@
+{
+  "complaint_code": "UNEXPLAINED_WEIGHT_LOSS",
+  "complaint_name": "Unexplained Weight Loss",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_UWL_001",
+      "text": "Approximately how much weight have you lost, and over what time period did this occur?",
+      "purpose": "Quantify the weight loss to distinguish clinically significant loss (>5% in 3 months or >10% in 6 months)",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 3 kg over 3 months",
+        "3–5 kg over 3 months",
+        "More than 5 kg over 3 months",
+        "More than 10% of body weight over 6 months",
+        "Unsure of exact amount"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "WEIGHT_LOSS_QUANTITY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UWL_002",
+      "text": "Has your appetite decreased significantly, or are you eating the same amount as before the weight loss?",
+      "purpose": "Distinguish anorexia-driven loss (more sinister) from weight loss despite normal intake (cachexia)",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "GOTO_PATHWAY(MALABSORPTION_PATHWAY)",
+      "sequence_order": 2,
+      "tests_symptom_code": "ASSOCIATED_ANOREXIA",
+      "yes_weight": 2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_UWL_003",
+      "text": "Do you have any new lumps, swellings, or enlarged lymph nodes anywhere on your body?",
+      "purpose": "Identify possible tumour mass or lymphadenopathy pointing to malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ONCOLOGY_MASS_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "ASSOCIATED_MASS_LYMPHADENOPATHY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UWL_004",
+      "text": "Have you had persistent night sweats or unexplained fevers during this period?",
+      "purpose": "Identify B-symptoms of lymphoma or other haematological malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "B_SYMPTOMS_FEVER_SWEATS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UWL_005",
+      "text": "Have you noticed any change in your bowel habits, rectal bleeding, or difficulty swallowing?",
+      "purpose": "Screen for GI malignancy as cause of weight loss",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GI_MALIGNANCY_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "GI_SYMPTOMS_ASSOCIATED",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UWL_006",
+      "text": "Have you had any persistent cough, coughing up blood, or new breathing difficulties?",
+      "purpose": "Screen for lung malignancy contributing to constitutional weight loss",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "RESPIRATORY_SYMPTOMS_ASSOCIATED",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UWL_007",
+      "text": "Are you experiencing any fatigue, pallor, or easy bruising that is new or worsening?",
+      "purpose": "Identify features suggesting bone marrow involvement or haematological malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "HAEMATOLOGICAL_FEATURES",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

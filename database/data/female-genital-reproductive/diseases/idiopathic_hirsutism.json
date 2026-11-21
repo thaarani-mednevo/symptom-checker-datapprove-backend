@@ -1,0 +1,77 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_055",
+    "code":  "IDIOPATHIC_HIRSUTISM",
+    "name":  "Idiopathic hirsutism",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Hirsutism is excessive body hair on parts of the body where hair is normally absent or minimal. The word is from the early 17th century: from Latin hirsutus meaning \"hairy\".",
+    "complaints":  [
+                       {
+                           "code":  "HIRSUTISM",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPID_VIRILIZATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HIRSUTISM",
+                          "condition":  "Rapid-onset hirsutism/virilization is not consistent with idiopathic hirsutism and needs urgent work-up"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Confirm cycles are regular (supports idiopathic diagnosis)",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_HIRSUTISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VOICE_CLITOROMEGALY_RAPID",
+                          "text":  "Has there been rapid deepening of the voice or rapid new hair growth over weeks?",
+                          "purpose":  "Exclude rapid-onset virilization",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_RAPID_VIRILIZATION)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_HIRSUTISM_SYMPTOM_2",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CUSHING_SYNDROME_UNSPECIFIED",
+                              "distinguishing_feature":  "Idiopathic hirsutism has normal cortisol/androgen work-up; Cushing\u0027s syndrome shows biochemical cortisol excess plus systemic features"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "201159000",
+    "snomed_verified_name":  "Idiopathic hirsutism",
+    "icd10_code":  "L68.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Hirsutism",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_HIRSUTISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

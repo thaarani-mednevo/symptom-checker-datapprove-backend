@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_016",
+  "code": "IRREGULAR_VAGINAL_BLEEDING",
+  "name": "Irregular vaginal bleeding",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Intermenstrual bleeding (IMB), or metrorrhagia, is abnormal vaginal bleeding at irregular intervals between expected menstrual periods. It may be associated with bleeding with sexual intercourse.",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "N93.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Abnormal uterine and vaginal bleeding, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,97 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_001",
+    "code":  "DYSHORMOGENETIC_GOITER",
+    "name":  "Dyshormogenetic goiter",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A goiter caused by impaired synthesis or action of thyroid hormones, leading to compensatory thyroid enlargement.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROTOXIC_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Severe thyrotoxicosis or thyroid storm presenting with fever, altered mental status, and hemodynamic instability in the context of dyshormogenetic goiter."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_NEW_OR_GROWING_SWELLI",
+                          "text":  "[LLM DRAFT] Have you noticed a new or growing swelling in the front of your neck?",
+                          "purpose":  "Screens for goiter presence",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSHORMOGENETIC_GOITER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_UNUSUALLY_FATIGUED_SLUGGISH",
+                          "text":  "[LLM DRAFT] Do you feel unusually fatigued, sluggish, or sensitive to cold?",
+                          "purpose":  "Screens for hypothyroidism symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DYSHORMOGENETIC_GOITER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_ANY_DIFFICULTY_WITH",
+                          "text":  "[LLM DRAFT] Are you experiencing any difficulty with breathing or swallowing due to neck pressure?",
+                          "purpose":  "Screens for compressive airway symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DYSHORMOGENETIC_GOITER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITH_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents at birth with a diffuse thyroid enlargement due to inherited enzymatic defects in thyroid hormone synthesis, similar to dyshormogenetic goiter but typically recognized earlier via newborn screening."
+                          },
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents an enlargement of the thyroid gland due to iodine deficiency or other non-genetic factors rather than an intrinsic inborn error of thyroid hormoneogenesis."
+                          },
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by exogenous goitrogens, drugs, or environmental agents inhibiting thyroid function rather than an inherited genetic defect in hormone synthesis."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E07.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Dyshormogenetic goiter",
+    "evidence_ids":  [
+                         "EVID_DYSHORMOGENETIC_GOITER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_011",
+  "code": "INFERTILITY",
+  "name": "Infertility",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "In biology, infertility is the inability of a male and female organism to reproduce. It is usually not the natural state of a healthy organism that has reached sexual maturity.",
+  "hpo_codes": [],
+  "snomed_code": "6738008",
+  "snomed_verified_name": "Female infertility",
+  "icd10_code": "N97.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Female infertility, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

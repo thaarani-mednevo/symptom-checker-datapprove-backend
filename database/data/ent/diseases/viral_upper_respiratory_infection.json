@@ -1,0 +1,81 @@
+﻿{
+  "id": "ENT_DIS_ENT_016",
+  "code": "VIRAL_UPPER_RESPIRATORY_INFECTION",
+  "name": "Viral upper respiratory infection",
+  "module": "ent",
+  "category": "disease",
+  "description": "An upper respiratory tract infection (URTI) is an illness caused by an acute infection, which involves the upper respiratory tract, including the nose, sinuses, pharynx, larynx or trachea. This commonly includes nasal obstruction, sore throat, tonsillitis, pharyngitis, laryngitis, sinusitis, otitis media, and the common cold.",
+  "complaints": [
+    {
+      "code": "RHINORRHOEA",
+      "relationship": "common",
+      "priority": ""
+    },
+    {
+      "code": "NASAL_CONGESTION",
+      "relationship": "common",
+      "priority": ""
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "RHINORRHOEA",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "NASAL_CONGESTION",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "very_common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "SORE_THROAT",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "COUGH",
+      "relationship": "ai_drafted_unverified",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "IMMUNOCOMPROMISED",
+      "strength": "ai_drafted_unverified"
+    },
+    {
+      "code": "CLOSE_CONTACT_WITH_INFECTED",
+      "strength": "ai_drafted_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "54150009",
+  "snomed_verified_name": "Upper respiratory infection",
+  "icd10_code": "J06.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Acute upper respiratory infection, unspecified",
+  "evidence_ids": [
+    "EVID_VIRAL_UPPER_RESPIRATORY_INFECTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

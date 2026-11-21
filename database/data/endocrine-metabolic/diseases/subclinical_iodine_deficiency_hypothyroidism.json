@@ -1,0 +1,138 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_021",
+    "code":  "SUBCLINICAL_IODINE_DEFICIENCY_HYPOTHYROIDISM",
+    "name":  "Subclinical iodine-deficiency hypothyroidism",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A mild form of hypothyroidism caused by insufficient iodine intake, presenting with subtle biochemical changes but minimal clinical symptoms.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "POOR_ABILITY_TO_TOLERATE_COLD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "MUSCLE_ACHES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CONSTIPATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEIGHT_GAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HASHIMOTOS_THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "THYROIDITIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SURGICAL_REMOVAL_OF_THYROID_GLAND",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "IODINE_DEFICIENCY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LITHIUM_TREATMENT",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_LIVE_IN_AN_AREA_WITH_LOW_SOIL_IOD",
+                          "text":  "[LLM DRAFT] Do you live in an area with low soil iodine or rarely consume iodized salt or seafood?",
+                          "purpose":  "dietary iodine intake",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SUBCLINICAL_IODINE_DEFICIENCY_HYPOTHYROIDISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_MILD_VAGUE_SYMPTOMS_LI",
+                          "text":  "[LLM DRAFT] Have you noticed mild, vague symptoms like slight fatigue, dry skin, or feeling a bit colder than usual without a clear reason?",
+                          "purpose":  "subclinical hypothyroid symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SUBCLINICAL_IODINE_DEFICIENCY_HYPOTHYROIDISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Normal free T4 with a mildly elevated TSH can confirm subclinical disease versus overt hypothyroidism where free T4 is low."
+                          },
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with initial hyperthyroidism symptoms and suppressed TSH rather than mildly elevated TSH typical of subclinical hypothyroidism."
+                          },
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Features normal thyroid function tests (normal TSH and free T4) in contrast to the elevated TSH seen in subclinical hypothyroidism."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "237567008",
+    "snomed_verified_name":  "Subclinical iodine deficiency hypothyroidism",
+    "icd10_code":  "E02",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Subclinical iodine-deficiency hypothyroidism",
+    "evidence_ids":  [
+                         "EVID_SUBCLINICAL_IODINE_DEFICIENCY_HYPOTHYROIDISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

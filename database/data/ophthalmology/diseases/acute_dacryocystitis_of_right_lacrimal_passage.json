@@ -1,0 +1,149 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_018",
+    "code":  "ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE",
+    "name":  "Acute dacryocystitis of right lacrimal passage",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Acute inflammation of the lacrimal sac due to obstruction of the right nasolacrimal duct.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAINFUL_SWELLING_OVER_LACRIMAL_SAC_AREA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "REDNESS_OF_MEDIAL_CANTHUS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PURULENT_LACRIMAL_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "CONGENITAL_NASOLACRIMAL_DUCT_OBSTRUCTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "TRAUMA_TO_LACRIMAL_SYSTEM",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES_MELLITUS",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ORBITAL_CELLULITIS_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_SWELLING",
+                          "condition":  "[LLM DRAFT] Swelling of the eye with redness, pain, and signs of infection indicating possible orbital cellulitis"
+                      },
+                      {
+                          "code":  "RF_VISION_LOSS_RISK",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden loss of vision or significant visual impairment due to potential spread of infection"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_PAIN_OR_SWELLING_NEAR_THE_IN",
+                          "text":  "[LLM DRAFT] Do you have pain or swelling near the inner corner of your right eye?",
+                          "purpose":  "pain/swelling detection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_REDNESS_OR_DISCHARGE_COMING_FRO",
+                          "text":  "[LLM DRAFT] Is there redness or discharge coming from your right eye?",
+                          "purpose":  "redness/discharge detection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_FEVER_OR_CHILLS?",
+                          "text":  "[LLM DRAFT] Do you feel fever or chills?",
+                          "purpose":  "fever detection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Sudden severe eye pain with halos around lights and mid-dilated pupil"
+                          },
+                          {
+                              "disease_code":  "ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL",
+                              "distinguishing_feature":  "[LLM DRAFT] Follicles on conjunctiva, no lacrimal sac swelling"
+                          },
+                          {
+                              "disease_code":  "VIRAL_CONJUNCTIVITIS_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Watery discharge, no purulent discharge, no lacrimal sac swelling"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H04.321",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute dacryocystitis of right lacrimal passage",
+    "evidence_ids":  [
+                         "EVID_ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

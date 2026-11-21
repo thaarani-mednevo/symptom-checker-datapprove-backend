@@ -1,0 +1,159 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_001",
+    "code":  "NEONATAL_JAUNDICE_UNSPECIFIED",
+    "name":  "Neonatal jaundice, unspecified",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Neonatal jaundice (neonatal hyperbilirubinaemia) is the most common condition requiring medical assessment in newborns, affecting approximately 60% of term and 80% of preterm infants within the first week of life. It results from an imbalance between bilirubin production (from haem catabolism of fetal haemoglobin) and hepatic conjugation and excretion capacity. Physiological jaundice appears after 24 hours, peaks at day 3–5, and resolves by day 14 in term infants. Pathological jaundice (onset \u003c24h, bilirubin rising rapidly, or persisting beyond 2 weeks) requires urgent investigation to exclude haemolytic disease, infection, metabolic disorders, or biliary atresia.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "YELLOW_SKIN_AND_SCLERAL_ICTERUS",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POOR_FEEDING",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LETHARGY",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREMATURITY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BREASTFEEDING_JAUNDICE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SIBLING_WITH_NEONATAL_JAUNDICE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "EAST_ASIAN_ETHNICITY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Jaundice appearing within first 24 hours of life — pathological jaundice, requires urgent investigation for haemolytic disease of the newborn"
+                      },
+                      {
+                          "code":  "RED_HB_007",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Jaundice persisting beyond 14 days in a term infant or 21 days in a preterm infant — prolonged neonatal jaundice, exclude biliary atresia and hypothyroidism"
+                      },
+                      {
+                          "code":  "RED_HB_008",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Jaundice with high-pitched cry, opisthotonus, or seizures — acute bilirubin encephalopathy (kernicterus), emergency exchange transfusion pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_NJ_001",
+                          "text":  "How old is the baby, and when did the yellow skin or eyes first appear?",
+                          "purpose":  "onset_timing_check",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_NJ_002",
+                          "text":  "Was the baby born before 37 weeks of pregnancy (premature)?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(NEONATAL_JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_NJ_003",
+                          "text":  "Is the baby feeding poorly, unusually sleepy, or difficult to wake?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HB_NJ_004",
+                          "text":  "Is the baby\u0027s urine dark or stools pale or white coloured?",
+                          "purpose":  "cholestasis_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CONJUGATED_JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_UNSPECIFIED_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_DUE_TO_INFECTION",
+                              "distinguishing_feature":  "Infection-associated jaundice presents with fever, poor feeding, and signs of sepsis; blood cultures and septic screen confirm the cause."
+                          },
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_DUE_TO_BLEEDING",
+                              "distinguishing_feature":  "Bleeding-related jaundice (cephalhaematoma, internal bleed) presents with identifiable haemorrhage on examination or imaging; bilirubin rise is due to haem catabolism from the haematoma."
+                          },
+                          {
+                              "disease_code":  "BILIARY_ATRESIA",
+                              "distinguishing_feature":  "Biliary atresia presents with conjugated jaundice (dark urine, pale stools) persisting beyond 2 weeks; it is excluded by urgent hepatobiliary workup and is a surgical emergency."
+                          }
+                      ],
+    "age_relevance":  "neonatal",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0006579"
+                  ],
+    "snomed_code":  "387712008",
+    "snomed_verified_name":  "Neonatal jaundice",
+    "icd10_code":  "P59.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal jaundice, unspecified",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_JAUNDICE_UNSPECIFIED"
+                     ],
+    "version":  "1.1",
+    "status":  "doctor_not_reviewed"
+}

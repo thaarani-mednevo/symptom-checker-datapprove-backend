@@ -1,0 +1,124 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_041",
+    "code":  "IDIOPATHIC_GOUT_RIGHT_SHOULDER",
+    "name":  "Idiopathic gout, right shoulder",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Idiopathic gout of the right shoulder is an acute inflammatory arthritis characterized by sudden, severe pain, swelling, and warmth in the shoulder joint without an identifiable precipitating factor.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "ACUTE_SHOULDER_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "LIMITED_RANGE_OF_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ERYTHEMA_AND_WARMTH_OF_SHOULDER",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERURICEMIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "MALE_SEX",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ADVANCED_AGE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "ALCOHOL_CONSUMPTION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_IS_YOUR_RIGHT_SHOULDER_SUDDENLY_VERY_PAI",
+                          "text":  "[LLM DRAFT] Is your right shoulder suddenly very painful and swollen?",
+                          "purpose":  "acute pain and swelling",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_RIGHT_SHOULDER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_HISTORY_OF_GOUT_ATTACKS_IN_IDIOPATHIC_GOUT_RIGHT_SHOULDER",
+                          "text":  "[LLM DRAFT] Do you have a history of gout attacks in other joints?",
+                          "purpose":  "gout history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_RIGHT_SHOULDER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_IS_THERE_REDNESS_AND_WARMTH_OVER_YOUR_RI",
+                          "text":  "[LLM DRAFT] Is there redness and warmth over your right shoulder?",
+                          "purpose":  "inflammation signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_RIGHT_SHOULDER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.011",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, right shoulder",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_RIGHT_SHOULDER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

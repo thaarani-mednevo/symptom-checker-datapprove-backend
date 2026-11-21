@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_032",
+  "code": "VERTIGO",
+  "name": "Vertigo",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Vertigo is a condition in which a person has the sensation that they are moving, or that objects around them are moving, when that is not the case. Often it feels like a spinning or swaying movement.",
+  "hpo_codes": [],
+  "snomed_code": "399153001",
+  "snomed_verified_name": "Vertigo",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

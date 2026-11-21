@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "LEG_ULCERS",
+    "complaint_name":  "Leg ulcers",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_LU_001",
+                                       "Where on the leg is the ulcer — above the ankle, on the shin, or around the ankle?",
+                                       "location",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "ULCER_LOCATION",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_LU_002",
+                          "text":  "Is there varicose veins, swelling, or brown discolouration of the skin around it?",
+                          "purpose":  "venous_signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VENOUS_ULCER_SIGNS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LU_003",
+                          "text":  "Do you have pain in the calf when walking that stops with rest (claudication)?",
+                          "purpose":  "arterial_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_ARTERIAL_INSUFFICIENCY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ARTERIAL_DISEASE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LU_004",
+                          "text":  "Do you have diabetes?",
+                          "purpose":  "diabetes_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_DIABETIC_FOOT)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DIABETES_WITH_ULCER",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_LU_005",
+                          "text":  "Is the ulcer red, warm, spreading, or surrounded by cellulitis?",
+                          "purpose":  "infection_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_CELLULITIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "INFECTED_ULCER",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

@@ -1,0 +1,103 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_003",
+    "code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR",
+    "name":  "Unspecified lump in left breast, subareolar",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A non‑specific, palpable mass located beneath the nipple in the left breast, often benign but requiring evaluation.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden onset of severe pain, redness, warmth, fever indicating possible abscess"
+                      },
+                      {
+                          "code":  "RF_INFLAMMATORY_BREAST_CANCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Rapidly enlarging lump with skin changes (redness, thickening, peau d\u0027orange) and nipple retraction or ulceration"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_HARD_MASS_OR_LUMP",
+                          "text":  "Do you feel a distinct hard mass or lump directly beneath or behind your left nipple?",
+                          "purpose":  "detects subareolar mass location",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THERE_ANY_VISIBLE_SKIN_DIMPLING_PUCK",
+                          "text":  "Is there any visible skin dimpling, puckering, or retraction of the nipple in your left breast?",
+                          "purpose":  "screens for malignant signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_SPONTANEOUS_BLOODY",
+                          "text":  "Have you noticed any spontaneous bloody discharge coming from the left nipple?",
+                          "purpose":  "screens for high-risk warning signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT",
+                              "distinguishing_feature":  "Localized to a distinct quadrant rather than the central retroareolar/subareolar tissue space."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Contralateral location, situated beneath the right nipple-areolar complex instead of the left."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS",
+                              "distinguishing_feature":  "Spans across multiple quadrants rather than being strictly localized to the subareolar region."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.42",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in left breast, subareolar",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

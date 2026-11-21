@@ -1,0 +1,207 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_033",
+    "code":  "IATROGENIC_NEONATAL_HYPOGLYCEMIA",
+    "name":  "Iatrogenic neonatal hypoglycemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Iatrogenic neonatal hypoglycemia is a transient low blood glucose condition in newborns caused by medical interventions such as excessive glucose infusion or delayed feeding.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SHAKINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WEAKNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "CLAMMINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEART_RATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ANXIETY",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HUNGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "MEDICATIONS_(INSULIN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "GLINIDES",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "AND_SULFONYLUREAS)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SEPSIS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "KIDNEY_FAILURE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CERTAIN_TUMORS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LIVER_DISEASE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOGLYCEMIA_CRISIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe symptomatic iatrogenic neonatal hypoglycemia presenting with seizures, apnea, cyanosis, or lethargy unresponsive to feeding."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_YOUR_NEWBORN_BABY_RECEIVE_INSULIN_I",
+                          "text":  "[LLM DRAFT] Did your newborn baby receive insulin, intravenous glucose too quickly, or other medications in the hospital that might have caused their blood sugar to drop?",
+                          "purpose":  "Recent medical interventions causing hypoglycemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IATROGENIC_NEONATAL_HYPOGLYCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_EXPERIENCING_JITTER",
+                          "text":  "[LLM DRAFT] Is your newborn baby experiencing jitteriness, tremors, poor feeding, or lethargy shortly after medical treatment in the hospital?",
+                          "purpose":  "Acute symptoms of neonatal hypoglycemia after intervention",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IATROGENIC_NEONATAL_HYPOGLYCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "OTHER_NEONATAL_HYPOGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with low blood glucose due to intrinsic factors (e.g., prematurity, intrauterine growth restriction) rather than exogenous medical intervention."
+                          },
+                          {
+                              "disease_code":  "DRUG_INDUCED_HYPOGLYCEMIA_WITHOUT_COMA",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs in older children or adults rather than the neonatal period, typically related to medications like insulin or sulfonylureas."
+                          },
+                          {
+                              "disease_code":  "HYPOGLYCEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] General diagnostic category used when the exact etiology (such as iatrogenic causes or specific metabolic disorders) has not yet been determined."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "276562001",
+    "snomed_verified_name":  "Iatrogenic neonatal hypoglycemia",
+    "icd10_code":  "P70.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Iatrogenic neonatal hypoglycemia",
+    "evidence_ids":  [
+                         "EVID_IATROGENIC_NEONATAL_HYPOGLYCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,94 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_012",
+    "code":  "PERICARDITIS",
+    "name":  "Pericarditis",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Pericarditis is inflammation of the pericardium, the fibrous sac surrounding the heart. Symptoms typically include sudden onset of sharp chest pain, which may also be felt in the shoulders, neck, or back.",
+    "complaints":  [
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "POSITIONAL_CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden_to_subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PLEURITIC_CHEST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "RECENT_VIRAL_INFECTION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "AUTOIMMUNE_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RECENT_MI_OR_CARDIAC_SURGERY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_008",
+                          "text":  "Do you have chest discomfort or pressure, especially with exertion?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ISCHEMIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PERICARDITIS_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ACUTE_CORONARY_SYNDROME",
+                              "distinguishing_feature":  "Pericarditis pain worsens lying flat and improves leaning forward; ACS pain is typically pressure-like unaffected by position."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0001701"
+                  ],
+    "snomed_code":  "3238004",
+    "snomed_verified_name":  "Pericarditis",
+    "icd10_code":  "I30.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute pericarditis, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_012"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

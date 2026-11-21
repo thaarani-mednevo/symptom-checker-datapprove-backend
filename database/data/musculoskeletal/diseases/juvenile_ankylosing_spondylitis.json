@@ -1,0 +1,115 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_009",
+    "code":  "JUVENILE_ANKYLOSING_SPONDYLITIS",
+    "name":  "Juvenile ankylosing spondylitis",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "Juvenile ankylosing spondylitis is a chronic inflammatory disease of the axial skeleton that presents in children and adolescents with back pain, stiffness, and potential systemic features.",
+    "complaints":  [
+                       {
+                           "code":  "STIFFNESS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "POLYARTHRITIS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BACK_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "JOINT_STIFFNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SPINAL_FRACTURE_OR_CORD_COMPRESSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] New or acute severe bone pain and spinal tenderness following minor trauma in a patient with advanced ankylosing spondylitis, suggesting vertebral fracture."
+                      },
+                      {
+                          "code":  "RF_ACUTE_SEPTIC_ARTHRITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ACUTE_MONOARTHRITIS",
+                          "condition":  "[LLM DRAFT] Sudden, severe pain, swelling, and redness in a single joint accompanied by high fever and systemic toxicity."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_STIFFNESS_IN_YOUR_LOWER_BACK",
+                          "text":  "[LLM DRAFT] Do you have stiffness in your lower back that lasts more than 30 minutes after waking up?",
+                          "purpose":  "Morning stiffness duration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "JUVENILE_ANKYLOSING_SPONDYLITIS_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_IN_YOUR_HIPS_OR_BUTTOCK",
+                          "text":  "[LLM DRAFT] Do you feel pain in your hips or buttocks that gets worse at night or improves when you move?",
+                          "purpose":  "Night pain and exercise relief",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "JUVENILE_ANKYLOSING_SPONDYLITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_SWELLING_OR_REDNESS_IN",
+                          "text":  "[LLM DRAFT] Have you noticed swelling or redness in any of your joints?",
+                          "purpose":  "Joint inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "JUVENILE_ANKYLOSING_SPONDYLITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "239805001",
+    "snomed_verified_name":  "Juvenile ankylosing spondylitis",
+    "icd10_code":  "M08.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Juvenile ankylosing spondylitis",
+    "evidence_ids":  [
+                         "EVID_JUVENILE_ANKYLOSING_SPONDYLITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,101 @@
+{
+  "complaint_code": "GENERALIZED_WEAKNESS",
+  "complaint_name": "Generalised Weakness",
+  "module": "constitutional-symptoms",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_GW_001",
+      "text": "How did the weakness come on — was it sudden or gradual, and is it confined to specific muscle groups or generalised throughout the body?",
+      "purpose": "Sudden focal weakness suggests neurological cause; gradual generalised weakness suggests systemic, metabolic, or myopathic aetiology",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Sudden onset, focal (one side, one limb, one area)",
+        "Sudden onset, generalised",
+        "Gradual onset, proximal muscles (hips, shoulders)",
+        "Gradual onset, distal muscles (hands, feet)",
+        "Gradual onset, generalised"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "WEAKNESS_ONSET_DISTRIBUTION",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_002",
+      "text": "Did the weakness start suddenly and is it associated with facial drooping, speech difficulty, or vision changes?",
+      "purpose": "Sudden focal weakness with these features is a stroke presentation requiring immediate emergency assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "STROKE_RED_FLAGS",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_003",
+      "text": "Have you also experienced shortness of breath, chest pain, or palpitations alongside the weakness?",
+      "purpose": "Cardiorespiratory compromise presenting as weakness requires urgent cardiac and respiratory assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "CARDIORESPIRATORY_WEAKNESS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_004",
+      "text": "Have you had any recent viral illness, diarrhoea, or infection before the weakness developed?",
+      "purpose": "Post-infectious ascending weakness following GI illness may suggest Guillain-Barré syndrome",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GUILLAIN_BARRE_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "POST_INFECTIOUS_WEAKNESS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_005",
+      "text": "Do you have known diabetes, kidney disease, or take medications that affect electrolytes?",
+      "purpose": "Metabolic causes such as hypokalaemia, hyponatraemia, or uraemia commonly cause generalised weakness",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(METABOLIC_WEAKNESS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "METABOLIC_WEAKNESS",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_006",
+      "text": "Have you noticed difficulty swallowing, double vision, drooping eyelids, or slurred speech?",
+      "purpose": "Bulbar and ocular features alongside weakness suggest myasthenia gravis or other neuromuscular junction disease",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "NEUROMUSCULAR_JUNCTION_FEATURES",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GW_007",
+      "text": "Have you had unexplained weight loss, fatigue, or night sweats — which could indicate an underlying malignancy?",
+      "purpose": "Constitutional symptoms with weakness may indicate paraneoplastic syndrome or cancer-related weakness",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(ONCOLOGY_SYSTEMIC_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "MALIGNANCY_RELATED_WEAKNESS",
+      "yes_weight": 3,
+      "no_weight": -1
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_004",
+  "code": "HYPERGLYCEMIA",
+  "name": "Hyperglycemia",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Hyperglycemia is an unusually high amount of glucose in the blood. It is defined as blood glucose level exceeding 6.9 mmol/L after fasting for 8 hours or 10 mmol/L (180 mg/dL) 2 hours after eating.",
+  "hpo_codes": [],
+  "snomed_code": "80394007",
+  "snomed_verified_name": "Hyperglycemia",
+  "icd10_code": "R73.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Hyperglycemia, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

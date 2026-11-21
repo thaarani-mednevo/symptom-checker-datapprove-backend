@@ -1,0 +1,17 @@
+{
+  "id": "DERMATOLOGY_COMP_DERM_003",
+  "code": "SKIN_LUMPS",
+  "name": "Skin lumps",
+  "module": "dermatology",
+  "body_system": "dermatology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by skin lumps.",
+  "hpo_codes": [],
+  "snomed_code": "297960002",
+  "snomed_verified_name": "Mass of skin",
+  "icd10_code": "R22.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Localized swelling, mass and lump, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

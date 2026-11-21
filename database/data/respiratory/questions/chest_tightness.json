@@ -1,0 +1,65 @@
+﻿{
+    "complaint_code":  "CHEST_TIGHTNESS",
+    "complaint_name":  "Chest tightness",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "options":  [
+                                          "During exercise",
+                                          "At rest",
+                                          "At night",
+                                          "On exposure to allergens or cold air",
+                                          "Constant"
+                                      ],
+                          "text":  "When does the chest tightness occur — during exercise, at rest, at night, or on exposure to triggers?",
+                          "purpose":  "pattern",
+                          "tests_symptom_code":  "CHEST_TIGHTNESS_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_CTIGHT_001",
+                          "answer_type":  "multiple_choice"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "no_weight":  -1,
+                          "text":  "Does the tightness come with wheeze or difficulty breathing?",
+                          "purpose":  "asthma_screen",
+                          "tests_symptom_code":  "WHEEZE_WITH_TIGHTNESS",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(ASTHMA)",
+                          "code":  "Q_CMP_CTIGHT_002",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  0,
+                          "text":  "Does a blue reliever inhaler improve the tightness?",
+                          "purpose":  "reversibility",
+                          "tests_symptom_code":  "BRONCHODILATOR_RESPONSE",
+                          "yes_weight":  4,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(ASTHMA)",
+                          "code":  "Q_CMP_CTIGHT_003",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  4,
+                          "no_weight":  -2,
+                          "text":  "Is the tightness severe right now making it hard to speak?",
+                          "purpose":  "red_flag_check",
+                          "tests_symptom_code":  "SEVERE_CHEST_TIGHTNESS",
+                          "yes_weight":  5,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "ESCALATE",
+                          "code":  "Q_CMP_CTIGHT_004",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

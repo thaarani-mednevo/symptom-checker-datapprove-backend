@@ -1,0 +1,84 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_007",
+  "code": "KLUMPKES_PARALYSIS_DUE_TO_BIRTH_INJURY",
+  "name": "Klumpke's paralysis due to birth injury",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Klumpke's paralysis is a variety of partial palsy of the lower roots of the brachial plexus. The brachial plexus is a network of spinal nerves that originates in the back of the neck, extends through the axilla (armpit), and gives rise to nerves to the upper limb.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "CLAW_HAND_DEFORMITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "HORNERS_SYNDROME",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "FOREARM_PRONATOR_WEAKNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "ABSENT_GRASP_REFLEX",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "MACROSOMIA",
+      "strength": "strong"
+    },
+    {
+      "code": "SHOULDER_DYSTOCIA",
+      "strength": "strong"
+    },
+    {
+      "code": "BREECH_PRESENTATION",
+      "strength": "strong"
+    },
+    {
+      "code": "PROLONGED_SECOND_STAGE_OF_LABOR",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "P14.1",
+  "icd10_validated": true,
+  "icd10_official_description": "Klumpke's paralysis due to birth injury",
+  "evidence_ids": [
+    "EVID_KLUMPKES_PARALYSIS_DUE_TO_BIRTH_INJURY"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

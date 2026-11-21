@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_007",
+  "code": "GENITAL_ITCHING",
+  "name": "Genital itching",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by genital itching.",
+  "hpo_codes": [],
+  "snomed_code": "95590003",
+  "snomed_verified_name": "Pruritus of male genital organs",
+  "icd10_code": "L29.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Anogenital pruritus, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

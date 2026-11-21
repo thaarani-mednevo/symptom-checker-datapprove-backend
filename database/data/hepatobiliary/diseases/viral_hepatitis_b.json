@@ -1,0 +1,177 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_013",
+    "code":  "VIRAL_HEPATITIS_B",
+    "name":  "Viral hepatitis B",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Hepatitis B is a viral infection caused by the hepatitis B virus (HBV), transmitted through blood, sexual contact, and vertical (mother-to-child) transmission. Acute HBV causes a self-limiting illness with jaundice, fatigue, right upper quadrant pain, and elevated transaminases in most adults; fewer than 1% develop acute liver failure. Chronic HBV (defined as HBsAg positivity \u003e6 months) develops in 90% of perinatally infected neonates and 5–10% of immunocompetent adults. Chronic infection carries significant risk of cirrhosis and hepatocellular carcinoma. Effective vaccines and antiviral therapy (tenofovir, entecavir) are available.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "HEPATOMEGALY",
+                           "relationship":  "common",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JAUNDICE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RIGHT_UPPER_QUADRANT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "NAUSEA_AND_VOMITING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "DARK_URINE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PALE_STOOLS",
+                         "relationship":  "occasional",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "subacute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNPROTECTED_SEXUAL_CONTACT",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "INTRAVENOUS_DRUG_USE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "VERTICAL_TRANSMISSION_FROM_INFECTED_MOTHER",
+                             "strength":  "very_strong"
+                         },
+                         {
+                             "code":  "HEALTHCARE_WORKER_NEEDLE_STICK",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "UNVACCINATED_STATUS",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "ENDEMIC_REGION_ORIGIN",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_HB_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "Deep jaundice with encephalopathy, prolonged INR, or rising creatinine — acute liver failure, emergency hepatology referral"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HB_HBV_001",
+                          "text":  "Have you ever been tested for hepatitis B or told you have hepatitis?",
+                          "purpose":  "diagnostic_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(HEPATITIS_B)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "VIRAL_HEPATITIS_B_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_HB_HBV_002",
+                          "text":  "Have you had unprotected sexual intercourse with a new partner, shared needles, or had a needle-stick injury in the past 6 months?",
+                          "purpose":  "risk_factor_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(HEPATITIS_B)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "VIRAL_HEPATITIS_B_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HB_HBV_003",
+                          "text":  "Have you noticed dark urine or pale stools along with the yellowing?",
+                          "purpose":  "symptom_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(CHOLESTATIC_JAUNDICE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "VIRAL_HEPATITIS_B_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VIRAL_HEPATITIS_C",
+                              "distinguishing_feature":  "Hepatitis C is typically asymptomatic in acute phase and confirmed by anti-HCV antibody and HCV RNA; hepatitis B is confirmed by HBsAg."
+                          },
+                          {
+                              "disease_code":  "ALCOHOLIC_HEPATITIS_WITHOUT_ASCITES",
+                              "distinguishing_feature":  "Alcoholic hepatitis has AST:ALT \u003e2:1 and clear alcohol history; hepatitis B shows elevated ALT\u003eAST and HBV serology."
+                          },
+                          {
+                              "disease_code":  "AUTOIMMUNE_HEPATITIS",
+                              "distinguishing_feature":  "Autoimmune hepatitis shows positive autoantibodies and elevated IgG; hepatitis B is confirmed serologically with HBsAg and HBV DNA."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+                      "HP:0012115"
+                  ],
+    "snomed_code":  "66071002",
+    "snomed_verified_name":  "Hepatitis B",
+    "icd10_code":  "B18.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Chronic viral hepatitis B without delta-agent",
+    "evidence_ids":  [
+                         "EVID_VIRAL_HEPATITIS_B"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

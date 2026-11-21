@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_003",
+  "code": "APHASIA",
+  "name": "Aphasia",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Aphasia, also known as dysphasia, is an impairment in a person's ability to comprehend or formulate language because of dysfunction in specific brain regions. The major causes are stroke and head trauma; prevalence is hard to determine, but aphasia due to stroke is estimated to be 0.1–0.4% in developed countries.",
+  "hpo_codes": [],
+  "snomed_code": "87486003",
+  "snomed_verified_name": "Aphasia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

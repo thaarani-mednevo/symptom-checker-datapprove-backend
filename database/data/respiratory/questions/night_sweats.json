@@ -1,0 +1,46 @@
+﻿{
+    "complaint_code":  "NIGHT_SWEATS",
+    "complaint_name":  "Night sweats",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "no_weight":  -1,
+                          "text":  "How severe are the night sweats — do they soak your clothes or sheets?",
+                          "purpose":  "severity",
+                          "tests_symptom_code":  "DRENCHING_NIGHT_SWEATS",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_NSWEAT_001",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "no_weight":  -1,
+                          "text":  "Do you also have a persistent cough or weight loss?",
+                          "purpose":  "tb_screen",
+                          "tests_symptom_code":  "TB_SYMPTOMS",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_NSWEAT_002",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  -1,
+                          "text":  "Have you travelled to a country where TB is common, or had close contact with someone who has TB?",
+                          "purpose":  "tb_exposure",
+                          "tests_symptom_code":  "TB_EXPOSURE",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_NSWEAT_003",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

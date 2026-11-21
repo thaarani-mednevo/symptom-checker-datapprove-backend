@@ -1,0 +1,9 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_HAVE_YOU_FALLEN_DOWN_WITHIN_THE_PAST_YEA,[LLM DRAFT] Have you fallen down within the past year?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_SUFFERED_ANY_INJURIES_AS_A_RESU,[LLM DRAFT] Have you suffered any injuries as a result of a fall recently?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_SUDDEN_SEVERE_DIZZINE,"[LLM DRAFT] Do you experience sudden, severe dizziness or fainting when standing up from a sitting or lying position?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_A_PERSISTENT_LOSS_O,[LLM DRAFT] Have you experienced a persistent loss of bladder control or sudden bowel incontinence?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_AN_UNEXPLAINED_SIGNIFI,"[LLM DRAFT] Have you noticed an unexplained, significant decrease in your ability to sweat when exercising or in hot weather?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOUR_PARKINSONS_SYMPTOMS_LIKE_SHAKI,"[LLM DRAFT] Do your Parkinson's symptoms, like shaking or stiffness, noticeably return or wear off before your next scheduled dose of medication?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_SUDDEN_UNPREDICTABLE,"[LLM DRAFT] Do you experience sudden, unpredictable periods during the day when your Parkinson's medication completely stops working and you freeze up?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_A_SUDDEN_SEVERE_IN,"[LLM DRAFT] Have you experienced a sudden, severe inability to move or speak that requires emergency medical attention?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

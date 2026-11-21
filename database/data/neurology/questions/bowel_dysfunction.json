@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "BOWEL_DYSFUNCTION",
+    "complaint_name":  "Bowel dysfunction",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_BO_001",
+                          "text":  "Is it constipation, incontinence, or a change in bowel habit?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "BOWEL_DYSFUNCTION_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_BO_002",
+                          "text":  "Did it come on with leg weakness, numbness in the groin, or back pain?",
+                          "purpose":  "cauda_equina",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "CAUDA_EQUINA_BOWEL",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BO_003",
+                          "text":  "Is there faecal incontinence?",
+                          "purpose":  "incontinence",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_Faecal_INCONTINENCE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FAECAL_INCONTINENCE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_BO_004",
+                          "text":  "Do you have a known neurological condition?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NEURO_BOWEL_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

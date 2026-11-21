@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "DYSPHAGIA",
+    "complaint_name":  "Dysphagia",
+    "module":  "gastrointestinal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DYS_001",
+                          "text":  "Is the difficulty with solids, liquids, or both?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DYSPHAGIA_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_002",
+                          "text":  "Is it getting progressively worse?",
+                          "purpose":  "progression",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_006)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PROGRESSIVE_DYSPHAGIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_003",
+                          "text":  "Is it painful to swallow?",
+                          "purpose":  "odynophagia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ODYNOPHAGIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_004",
+                          "text":  "Do you have weight loss?",
+                          "purpose":  "weight_loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GI_007)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "WEIGHT_LOSS_WITH_DYSPHAGIA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYS_005",
+                          "text":  "Have you had heartburn for a long time?",
+                          "purpose":  "reflux_history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "CHRONIC_REFLUX",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

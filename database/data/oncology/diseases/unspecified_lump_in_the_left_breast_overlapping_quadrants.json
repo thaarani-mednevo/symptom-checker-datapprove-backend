@@ -1,0 +1,118 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_007",
+    "code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS",
+    "name":  "Unspecified lump in the left breast, overlapping quadrants",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A palpable mass in the left breast involving multiple quadrants without a specific location.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BRCA12_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DENSE_BREAST_TISSUE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "HORMONE_REPLACEMENT_THERAPY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_RAPIDLY_ENLARGING_MASS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "mass enlarges rapidly within days"
+                      },
+                      {
+                          "code":  "RF_MASS_WITH_SKIN_ULCERATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "skin ulceration or nipple retraction present"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_NEW_LUMP_OR_HARD",
+                          "text":  "Do you feel a distinct new lump or hard area in your left breast?",
+                          "purpose":  "screen for breast lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_THE_SKIN_OVER_THE_LUMP_BECOME_PUCKER",
+                          "text":  "Has the skin over the lump become puckered, dimpled, or turned red and inflamed?",
+                          "purpose":  "screen for inflammatory or advanced signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_SPONTANEOUS_BLOODY_UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS",
+                          "text":  "Have you noticed any spontaneous bloody discharge from your left nipple?",
+                          "purpose":  "screen for malignant nipple discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_UNSPECIFIED_QUADRANT",
+                              "distinguishing_feature":  "Localized to a single unspecified quadrant rather than spanning across multiple adjacent breast quadrants."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Positioned directly beneath the nipple-areolar complex rather than involving overlapping parenchymal quadrants."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS",
+                              "distinguishing_feature":  "Located in the contralateral (right) breast rather than the left breast."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.25",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in the left breast, overlapping quadrants",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_THE_LEFT_BREAST_OVERLAPPING_QUADRANTS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

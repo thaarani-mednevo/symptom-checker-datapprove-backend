@@ -1,0 +1,126 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_014",
+    "code":  "OCULAR_PAIN_UNSPECIFIED_EYE",
+    "name":  "Ocular pain, unspecified eye",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "A nonspecific ocular pain affecting either eye without a clearly identified underlying cause.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_PAIN",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "BLURRED_VISION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "ELEVATED_INTRAOCULAR_PRESSURE",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe unilateral eye pain with blurred vision and halos, especially in older adults."
+                      },
+                      {
+                          "code":  "RF_CORNEAL_ULCER_PERFORATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden vision loss with pain and red eye, often in contact lens wearers."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DID_THE_EYE_PAIN_START_SUDDENLY_AND_FEEL",
+                          "text":  "[LLM DRAFT] Did the eye pain start suddenly and feel very sharp?",
+                          "purpose":  "sudden severe pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OCULAR_PAIN_UNSPECIFIED_EYE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_VISION_BLURRY_OR_DOES_IT_CHANGE",
+                          "text":  "[LLM DRAFT] Is your vision blurry or does it change when you look at the eye?",
+                          "purpose":  "vision changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OCULAR_PAIN_UNSPECIFIED_EYE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_EYE_PAIN_MILD_AND_NOT_AFFECTING_Y",
+                          "text":  "[LLM DRAFT] Is the eye pain mild and not affecting your vision?",
+                          "purpose":  "mild pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OCULAR_PAIN_UNSPECIFIED_EYE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H57.10",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Ocular pain, unspecified eye",
+    "evidence_ids":  [
+                         "EVID_OCULAR_PAIN_UNSPECIFIED_EYE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

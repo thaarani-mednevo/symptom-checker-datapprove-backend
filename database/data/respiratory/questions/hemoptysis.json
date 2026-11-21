@@ -1,0 +1,64 @@
+﻿{
+    "complaint_code":  "HEMOPTYSIS",
+    "complaint_name":  "Hemoptysis",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "options":  [
+                                          "Blood-streaked sputum",
+                                          "A teaspoon or less",
+                                          "More than a teaspoon",
+                                          "Large volume (more than a cup)"
+                                      ],
+                          "text":  "How much blood have you coughed up — a few streaks, a teaspoon, or more?",
+                          "purpose":  "severity",
+                          "tests_symptom_code":  "HAEMOPTYSIS_VOLUME",
+                          "yes_weight":  0,
+                          "no_weight":  0,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_HEM_001",
+                          "answer_type":  "multiple_choice"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "no_weight":  -1,
+                          "text":  "Have you had a fever, weight loss, or night sweats along with the blood in your sputum?",
+                          "purpose":  "tb_malignancy_screen",
+                          "tests_symptom_code":  "CONSTITUTIONAL_WITH_HAEMOPTYSIS",
+                          "yes_weight":  4,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "RED_FLAG(RF_HAEMOPTYSIS)",
+                          "code":  "Q_CMP_HEM_002",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  -1,
+                          "text":  "Do you smoke or have you smoked for many years?",
+                          "purpose":  "risk_factor",
+                          "tests_symptom_code":  "SMOKING_HISTORY",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(LUNG_CANCER)",
+                          "code":  "Q_CMP_HEM_003",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  4,
+                          "no_weight":  -2,
+                          "text":  "Are you coughing up large amounts of blood right now?",
+                          "purpose":  "emergency_check",
+                          "tests_symptom_code":  "MASSIVE_HAEMOPTYSIS",
+                          "yes_weight":  5,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "ESCALATE",
+                          "code":  "Q_CMP_HEM_004",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

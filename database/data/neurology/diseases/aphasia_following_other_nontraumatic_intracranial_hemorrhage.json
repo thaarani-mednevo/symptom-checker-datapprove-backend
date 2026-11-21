@@ -1,0 +1,85 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_019",
+  "code": "APHASIA_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE",
+  "name": "Aphasia following other nontraumatic intracranial hemorrhage",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Aphasia, also known as dysphasia, is an impairment in a person's ability to comprehend or formulate language because of dysfunction in specific brain regions. The major causes are stroke and head trauma; prevalence is hard to determine, but aphasia due to stroke is estimated to be 0.1–0.4% in developed countries.",
+  "complaints": [
+    {
+      "code": "APHASIA",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "EXPRESSIVE_LANGUAGE_IMPAIRMENT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "RECEPTIVE_LANGUAGE_DEFICIT",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "GLOBAL_COMMUNICATION_FAILURE",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    },
+    {
+      "code": "NAMING_DIFFICULTY_ANOMIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of new or worsening hemiplegia or severe motor deficit indicating acute stroke expansion or rebleeding."
+    },
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] New-onset acute seizure activity or status epilepticus resulting from secondary brain irritation or hemorrhage extension."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.220",
+  "icd10_validated": true,
+  "icd10_official_description": "Aphasia following other nontraumatic intracranial hemorrhage",
+  "evidence_ids": [
+    "EVID_APHASIA_FOLLOWING_OTHER_NONTRAUMATIC_INTRACRANIAL_HEMORRHAGE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

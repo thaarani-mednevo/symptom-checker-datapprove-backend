@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_026",
+  "code": "SENSORY_DISTURBANCE",
+  "name": "Sensory disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Paresthesia is a sensation of the skin that may feel like numbness (hypoesthesia), tingling, pricking, chilling, or burning. It can be temporary or chronic and has many possible underlying causes.",
+  "hpo_codes": [],
+  "snomed_code": "85972008",
+  "snomed_verified_name": "Sensory disorder",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,136 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_007",
+    "code":  "PARATYPHOID_FEVER_B",
+    "name":  "Paratyphoid fever B",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Paratyphoid fever B is an acute systemic infection caused by Salmonella Paratyphi B, presenting with fever, abdominal pain, and diarrhea, often following ingestion of contaminated food or water.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RASH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_ABDOMINAL_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Sudden, severe, or worsening abdominal pain potentially indicating intestinal perforation or peritonitis."
+                      },
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Confusion, delirium, or lethargy associated with high persistent fever (typhoidal state)."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_B_1",
+                          "text":  "Have you experienced a prolonged, step-wise rising fever over the past several days?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_B_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_B_2",
+                          "text":  "Have you recently traveled to an area where paratyphoid fever is endemic, or consumed food and water from potentially contaminated sources?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_B_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PARATYPHOID_FEVER_B_3",
+                          "text":  "Are you experiencing severe dizziness, fainting, or signs of significant bleeding such as blood in your stool?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PARATYPHOID_FEVER_B_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_A",
+                              "distinguishing_feature":  "[LLM DRAFT] Clinically indistinguishable from paratyphoid B, differentiated solely by the specific causative subspecies of Salmonella (Salmonella Paratyphi A vs B)."
+                          },
+                          {
+                              "disease_code":  "PARATYPHOID_FEVER_C",
+                              "distinguishing_feature":  "[LLM DRAFT] Clinically very similar enteric fever syndrome, but caused specifically by Salmonella Paratyphi C and historically more commonly associated with septic complications or localized suppurative lesions."
+                          },
+                          {
+                              "disease_code":  "TYPHOID_FEVER_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Generally presents with a more insidious onset, sustained high fever, and higher rates of severe gastrointestinal complications (such as intestinal hemorrhage or perforation) compared to typical paratyphoid fevers."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "71085009",
+    "snomed_verified_name":  "Paratyphoid B fever",
+    "icd10_code":  "A01.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Paratyphoid fever B",
+    "evidence_ids":  [
+                         "EVID_PARATYPHOID_FEVER_B"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

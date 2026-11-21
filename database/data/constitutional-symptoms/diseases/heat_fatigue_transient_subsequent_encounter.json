@@ -1,0 +1,103 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_020",
+    "code":  "HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER",
+    "name":  "Heat fatigue, transient, subsequent encounter",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A temporary state of exhaustion and reduced physical performance following exposure to high temperatures.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HEAT_STROKE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Altered mental status, confusion, loss of consciousness, or a body temperature above 104°F (40°C)"
+                      },
+                      {
+                          "code":  "RF_SEVERE_DEHYDRATION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Inability to retain fluids, extreme dizziness, or absence of urination"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_1",
+                          "text":  "Are you currently experiencing confusion, dizziness, or loss of consciousness?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_2",
+                          "text":  "Did these symptoms recur after returning to a hot environment following a previous episode of heat fatigue?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_3",
+                          "text":  "Have you been continuously exposed to high ambient temperatures or strenuous physical activity over the past 24 hours?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents during the acute exposure episode rather than as a follow-up visit for a resolved or ongoing prior event."
+                          },
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_SEQUELA",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents a chronic, long-term residual complication rather than a routine subsequent clinical encounter for recent heat fatigue."
+                          },
+                          {
+                              "disease_code":  "HYPOVOLEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by objective signs of significant intravascular volume depletion and electrolyte imbalance rather than isolated heat-induced fatigue symptoms."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "T67.6XXD",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Heat fatigue, transient, subsequent encounter",
+    "evidence_ids":  [
+                         "EVID_HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,106 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_077",
+  "code": "FRIEDREICH_ATAXIA",
+  "name": "Friedreich ataxia",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Friedreich's ataxia (FRDA) is a rare, inherited, autosomal recessive neurodegenerative disorder that primarily affects the nervous system, causing progressive damage to the spinal cord, peripheral nerves, and cerebellum, leading to impaired muscle coordination (ataxia). The condition typically manifests in childhood or adolescence, with initial symptoms including difficulty walking, loss of balance, and poor coordination.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MUSCLE_WEAKNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FATIGUE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SPEECH_DIFFICULTIES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "SCOLIOSIS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "HEART_DISEASE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIABETES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "MUTATION_IN_FXN_GENE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "10394003",
+  "snomed_verified_name": "Friedreich ataxia",
+  "icd10_code": "G11.11",
+  "icd10_validated": true,
+  "icd10_official_description": "Friedreich ataxia",
+  "evidence_ids": [
+    "EVID_FRIEDREICH_ATAXIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

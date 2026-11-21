@@ -1,0 +1,96 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_018",
+    "code":  "FANCONI_ANEMIA",
+    "name":  "Fanconi anemia",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Fanconi anemia (FA), also known as Fanconi cancer, is a rare, autosomal recessive genetic disease characterized by aplastic anemia, congenital defects, endocrinological abnormalities, and an increased incidence of developing cancer. The study of Fanconi anemia has improved scientific understanding of the mechanisms of normal bone marrow function and the development of cancer.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECURRENT_INFECTIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_BONE_MARROW_FAILURE_AND_THROMBOCYTOPENIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Spontaneous or uncontrolled major bleeding (e.g., epistaxis, petechiae, GI bleeding) due to severe thrombocytopenia"
+                      },
+                      {
+                          "code":  "RF_SEVERE_NEUTROPENIA_WITH_SEPSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECURRENT_INFECTIONS",
+                          "condition":  "[LLM DRAFT] High fever and signs of severe infection in a patient with bone marrow failure"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_BRUISE_VERY_EASILY_OR_EXPERIENCE",
+                          "text":  "[LLM DRAFT] Do you bruise very easily or experience frequent, unexplained nosebleeds and bleeding gums?",
+                          "purpose":  "screens for bleeding signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FANCONI_ANEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNUSUALLY_FREQUENT",
+                          "text":  "[LLM DRAFT] Have you experienced unusually frequent or persistent infections along with extreme, ongoing tiredness and pale skin?",
+                          "purpose":  "screens for bone marrow failure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "FANCONI_ANEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with bone marrow failure similar to Fanconi anemia, but lacks the characteristic congenital physical malformations and chromosomal fragility testing abnormalities."
+                          },
+                          {
+                              "disease_code":  "IDIOPATHIC_APLASTIC_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Acquired form of marrow failure that typically occurs in older children or adults without the inherited genetic mutations or characteristic somatic stigmata (e.g., thumb/radial defects) seen in Fanconi anemia."
+                          },
+                          {
+                              "disease_code":  "REFRACTORY_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Features persistent cytopenias resembling early Fanconi anemia, but generally lacks the multi-system congenital anomalies and DNA cross-linking agent hypersensitivity definitive of the disorder."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "30575002",
+    "snomed_verified_name":  "Fanconi\u0027s anemia",
+    "icd10_code":  "D61.03",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Fanconi anemia",
+    "evidence_ids":  [
+                         "EVID_FANCONI_ANEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

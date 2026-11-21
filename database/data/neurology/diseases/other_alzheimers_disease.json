@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_036",
+  "code": "OTHER_ALZHEIMERS_DISEASE",
+  "name": "Other Alzheimer's disease",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Alzheimer's disease (AD) is a neurodegenerative disease and is the most common cause of dementia, accounting for around 60–70% of cases. The most common early symptom is difficulty in remembering recent events.",
+  "complaints": [
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MEMORY_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PROBLEMS_WITH_LANGUAGE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DISORIENTATION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MOOD_SWINGS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "POORLY_UNDERSTOOD",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G30.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other Alzheimer's disease",
+  "evidence_ids": [
+    "EVID_OTHER_ALZHEIMERS_DISEASE"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

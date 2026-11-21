@@ -1,0 +1,146 @@
+﻿{
+    "id":  "RESPIRATORY_DIS_RESP_003",
+    "code":  "PNEUMONIA",
+    "name":  "Pneumonia",
+    "module":  "respiratory",
+    "category":  "disease",
+    "description":  "Pneumonia is an inflammatory condition of the lung primarily affecting the small air sacs known as alveoli. Symptoms typically include some combination of productive or dry cough, chest pain, fever, and difficulty breathing.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER_WITH_COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRODUCTIVE_COUGH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "SHORTNESS_OF_BREATH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PLEURITIC_CHEST_PAIN",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RIGORS",
+                         "relationship":  "occasional",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MALAISE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "BRONCHIAL_BREATH_SOUNDS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OLDER_AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "IMMUNOCOMPROMISED",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "CHRONIC_LUNG_DISEASE",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "RECENT_VIRAL_INFECTION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_RESP_005",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FEVER_WITH_COUGH",
+                          "condition":  "Respiratory failure in severe pneumonia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RESP_006",
+                          "text":  "Do you have a fever along with your cough?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(INFECTIOUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PNEUMONIA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_RESP_007",
+                          "text":  "Are you breathing very fast or does your oxygen feel low?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PNEUMONIA_SYMPTOM_2",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PULMONARY_TUBERCULOSIS",
+                              "distinguishing_feature":  "TB has gradual onset with \u003e3 weeks of cough, night sweats, and upper lobe CXR changes; community pneumonia has acute onset with lobar consolidation and responds to standard antibiotics."
+                          },
+                          {
+                              "disease_code":  "ACUTE_BRONCHITIS",
+                              "distinguishing_feature":  "Acute bronchitis shows a clear CXR and milder systemic symptoms; pneumonia features focal consolidation on CXR, high fever \u003e38.5°C, and productive purulent sputum."
+                          }
+                      ],
+    "age_relevance":  "all",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0002090"
+                  ],
+    "snomed_code":  "233604007",
+    "snomed_verified_name":  "Pneumonia",
+    "icd10_code":  "J18.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pneumonia, unspecified organism",
+    "evidence_ids":  [
+                         "EVD_RESP_003"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

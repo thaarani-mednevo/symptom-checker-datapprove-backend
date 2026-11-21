@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "HEARING_DISTURBANCE",
+    "complaint_name":  "Hearing disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HD_001",
+                          "text":  "Is it loss of hearing, ringing, or a feeling of fullness?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HEARING_DISTURBANCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HD_002",
+                          "text":  "Is it one-sided or both?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEARING_LATERALITY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HD_003",
+                          "text":  "Did it come on suddenly in one ear?",
+                          "purpose":  "sudden",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUDDEN_HEARING_LOSS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HD_004",
+                          "text":  "Is there associated dizziness, vertigo, or tinnitus?",
+                          "purpose":  "vestibular",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "VESTIBULAR_WITH_HEARING",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HD_005",
+                          "text":  "Have you been exposed to loud noise or ototoxic drugs?",
+                          "purpose":  "exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "OTOTOXIC_EXPOSURE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

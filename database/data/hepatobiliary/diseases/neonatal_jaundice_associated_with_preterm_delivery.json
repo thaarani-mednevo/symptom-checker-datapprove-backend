@@ -1,0 +1,82 @@
+﻿{
+    "id":  "HEPATOBILIARY_DIS_HB_006",
+    "code":  "NEONATAL_JAUNDICE_ASSOCIATED_WITH_PRETERM_DELIVERY",
+    "name":  "Neonatal jaundice associated with preterm delivery",
+    "module":  "hepatobiliary",
+    "category":  "disease",
+    "description":  "Preterm infants have significantly higher risk of neonatal jaundice due to immature hepatic conjugation capacity (reduced UDP-glucuronosyltransferase activity), increased red blood cell turnover, and slower gut motility (reducing enteral bilirubin elimination). Jaundice in preterm infants appears earlier, rises higher, and persists longer than in term infants. The threshold for phototherapy is lower in preterm infants due to greater susceptibility of the immature brain to bilirubin neurotoxicity. Close monitoring with transcutaneous or serum bilirubin measurements is mandatory.",
+    "complaints":  [
+                       {
+                           "code":  "JAUNDICE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "YELLOWISH_COLORATION_OF_SKIN_AND_SCLERA",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "POOR_FEEDING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "PREMATURITY",
+                             "strength":  "strong"
+                         }
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_NEWBORN_AGE",
+                          "text":  "TBD - clinician to author",
+                          "purpose":  "Determine onset time",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NEONATAL_JAUNDICE_ASSOCIATED_WITH_PRETERM_DELIVERY_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NEONATAL_JAUNDICE_UNSPECIFIED",
+                              "distinguishing_feature":  "Unspecified neonatal jaundice is a default category when the specific cause has not been confirmed; a full workup is required to identify the aetiology."
+                          },
+                          {
+                              "disease_code":  "HAEMOLYTIC_DISEASE_OF_THE_NEWBORN",
+                              "distinguishing_feature":  "Haemolytic disease (ABO or Rh incompatibility) presents within 24 hours with rapidly rising bilirubin and positive direct Coombs test; the other neonatal jaundice subtypes do not show haemolysis on blood film."
+                          }
+                      ],
+    "age_relevance":  "neonatal",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0006579 | HP:0001622"
+                  ],
+    "snomed_code":  "73749009",
+    "snomed_verified_name":  "Neonatal jaundice after preterm delivery",
+    "icd10_code":  "P59.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Neonatal jaundice associated with preterm delivery",
+    "evidence_ids":  [
+                         "EVID_NEONATAL_JAUNDICE_ASSOCIATED_WITH_PRETERM_DELIVERY"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,102 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_110",
+  "code": "VERTIGO_OF_CENTRAL_ORIGIN",
+  "name": "Vertigo of central origin",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Vertigo of central origin.",
+  "complaints": [
+    {
+      "code": "VERTIGO",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "DIZZINESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FEELING_OF_SPINNING_OR_SWAYING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "VOMITING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIFFICULTY_WALKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "BENIGN_PAROXYSMAL_POSITIONAL_VERTIGO_(BPPV)",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MÉNIÈRES_DISEASE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "VESTIBULAR_NEURITIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "STROKE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MULTIPLE_SCLEROSIS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "MIGRAINE",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "38403006",
+  "snomed_verified_name": "Vertigo of central origin",
+  "icd10_code": "H81.4",
+  "icd10_validated": true,
+  "icd10_official_description": "Vertigo of central origin",
+  "evidence_ids": [
+    "EVID_VERTIGO_OF_CENTRAL_ORIGIN"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

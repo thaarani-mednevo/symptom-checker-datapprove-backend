@@ -1,0 +1,120 @@
+{
+  "complaint_code": "RECTAL_BLEEDING_ONCOLOGY",
+  "complaint_name": "Rectal Bleeding (Oncology)",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_RECTO_001",
+      "text": "How long have you been noticing rectal bleeding, and how would you describe the colour — bright red, dark red, or mixed with stool?",
+      "purpose": "Characterise duration and character; dark blood mixed with stool is more concerning for proximal malignancy than bright red blood on toilet paper",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Bright red, on toilet paper only, less than 4 weeks",
+        "Bright red, dripping into pan, less than 4 weeks",
+        "Bright red, more than 4 weeks",
+        "Dark red or mixed with stool, any duration",
+        "Black tarry stool (melaena)"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "RECTAL_BLEEDING_CHARACTER",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_002",
+      "text": "Have you noticed a persistent change in bowel habit — such as looser stools, increased frequency, or alternating constipation and diarrhoea — lasting more than 4 weeks?",
+      "purpose": "Persistent bowel habit change with rectal bleeding is a key combined red flag for colorectal cancer",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "BOWEL_HABIT_CHANGE",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_003",
+      "text": "Have you had significant unintentional weight loss or persistent fatigue alongside the rectal bleeding?",
+      "purpose": "Weight loss with rectal bleeding markedly increases colorectal cancer probability",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "CONSTITUTIONAL_WEIGHT_LOSS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_004",
+      "text": "Are you aged 50 or over, or do you have a family history of colorectal cancer or bowel polyps?",
+      "purpose": "Age and family history are major risk factors for colorectal malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(COLORECTAL_CANCER_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "COLORECTAL_CANCER_RISK_FACTORS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_005",
+      "text": "Do you have a sensation of incomplete bowel emptying (tenesmus) or feeling that your bowel never fully empties?",
+      "purpose": "Tenesmus can indicate a rectal mass obstructing complete emptying",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "TENESMUS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_006",
+      "text": "Do you have known haemorrhoids, anal fissure, or inflammatory bowel disease that could explain the bleeding?",
+      "purpose": "Identify common benign causes — but note these do not rule out concurrent malignancy in high-risk patients",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(BENIGN_ANORECTAL_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "BENIGN_CAUSE_RECTAL_BLEED",
+      "yes_weight": -2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_RECTO_007",
+      "text": "Have you had a previous colonoscopy or bowel cancer screening, and if so, when was it last performed?",
+      "purpose": "Establish screening history to guide urgency of investigation",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Never had colonoscopy or screening",
+        "Colonoscopy within last 3 years — normal",
+        "Colonoscopy within last 3 years — polyps found",
+        "Colonoscopy more than 3 years ago",
+        "Positive stool screening test, no follow-up colonoscopy"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "PRIOR_COLONOSCOPY_HISTORY",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_RECTO_008",
+      "text": "Have you noticed any abdominal mass, pain, or bloating alongside the rectal bleeding?",
+      "purpose": "Abdominal mass with rectal bleeding is a red flag for advanced colorectal malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 8,
+      "tests_symptom_code": "ABDOMINAL_MASS_ASSOCIATED",
+      "yes_weight": 4,
+      "no_weight": -1
+    }
+  ]
+}

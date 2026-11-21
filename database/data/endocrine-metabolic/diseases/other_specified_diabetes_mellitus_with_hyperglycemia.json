@@ -1,0 +1,117 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_025",
+    "code":  "OTHER_SPECIFIED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+    "name":  "Other specified diabetes mellitus with hyperglycemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Diabetes mellitus, commonly known as diabetes, is a group of common endocrine diseases characterized by sustained high blood sugar levels. Diabetes tends to progress in severity, and is due to either a reduced production of the hormone insulin by the pancreas or unresponsiveness of bodily cells to insulin\u0027s effects.",
+    "complaints":  [
+                       {
+                           "code":  "HYPERGLYCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FREQUENT_URINATION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INCREASED_THIRST",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "INCREASED_HUNGER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INSULIN_INSUFFICIENCY_OR_GRADUAL_RESISTANCE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPERGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPERGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe hyperglycemia accompanied by altered mental status, confusion, lethargy, or signs of diabetic ketoacidosis (such as Kussmaul breathing or fruity breath)."
+                      },
+                      {
+                          "code":  "RF_HYPOGLYCEMIA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOGLYCEMIA",
+                          "condition":  "[LLM DRAFT] Severe hypoglycemia presenting with loss of consciousness, seizures, or inability to safely ingest oral glucose."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_DIAGNOSED_WITH_AN_UNUSUAL",
+                          "text":  "[LLM DRAFT] Have you been diagnosed with an unusual or secondary type of diabetes that causes high blood sugar?",
+                          "purpose":  "Screens for specified diabetes diagnosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_HIGH_BLOOD_SUGAR_RE",
+                          "text":  "[LLM DRAFT] Are you experiencing high blood sugar readings along with sudden confusion, extreme drowsiness, or fruity-smelling breath?",
+                          "purpose":  "Screens for severe hyperglycemia complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "TYPE_1_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with absolute insulin deficiency, often requiring lifelong insulin therapy from onset."
+                          },
+                          {
+                              "disease_code":  "TYPE_2_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized predominantly by insulin resistance and relative insulin deficiency, typically associated with metabolic syndrome."
+                          },
+                          {
+                              "disease_code":  "DRUG_OR_CHEMICAL_INDUCED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Onset directly correlates with the initiation of a specific causative medication or chemical exposure."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E13.65",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified diabetes mellitus with hyperglycemia",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_DIABETES_MELLITUS_WITH_HYPERGLYCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

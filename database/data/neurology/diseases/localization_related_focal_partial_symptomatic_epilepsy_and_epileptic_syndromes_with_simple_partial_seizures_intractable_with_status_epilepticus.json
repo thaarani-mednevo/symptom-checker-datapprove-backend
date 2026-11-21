@@ -1,0 +1,110 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_099",
+  "code": "LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_SIMPLE_PARTIAL_SEIZURES_INTRACTABLE_WITH_STATUS_EPILEPTICUS",
+  "name": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, with status epilepticus",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, with status epilepticus.",
+  "complaints": [
+    {
+      "code": "SEIZURES",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "FUNNY_TURNS",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BLACKOUTS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "PERIODS_OF_LOSS_OF_CONSCIOUSNESS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ABNORMAL_SHAKING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "STARING",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CHANGE_IN_VISION",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "MOOD_CHANGES_AND/OR_OTHER_COGNITIVE_DISTURBANCES",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_INJURY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "STROKE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BRAIN_TUMORS",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "INFECTIONS_OF_THE_BRAIN",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "BIRTH_DEFECTS",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G40.111",
+  "icd10_validated": true,
+  "icd10_official_description": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, with status epilepticus",
+  "evidence_ids": [
+    "EVID_LOCALIZATION_RELATED_FOCAL_PARTIAL_SYMPTOMATIC_EPILEPSY_AND_EPILEPTIC_SYNDROMES_WITH_SIMPLE_PARTIAL_SEIZURES_INTRACTABLE_WITH_STATUS_EPILEPTICUS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

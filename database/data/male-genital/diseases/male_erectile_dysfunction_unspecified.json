@@ -1,0 +1,96 @@
+﻿{
+    "id":  "MALE-GENITAL_DIS_HB_006",
+    "code":  "MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED",
+    "name":  "Male erectile dysfunction, unspecified",
+    "module":  "male-genital",
+    "category":  "disease",
+    "description":  "Erectile dysfunction (ED), also referred to as impotence, is a form of sexual dysfunction in males characterized by the persistent or recurring inability to achieve or maintain a penile erection with sufficient rigidity and duration for satisfactory sexual activity. It is the most common sexual problem in males and can cause psychological distress due to its impact on self-image and sexual relationships.",
+    "complaints":  [
+                       {
+                           "code":  "ERECTILE_DYSFUNCTION",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "INABILITY_TO_GAIN_OR_MAINTAIN_AN_ERECTION",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LOW_TESTOSTERONE_LEVELS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_MG_001",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ERECTILE_DYSFUNCTION",
+                          "condition":  "Erection (painful or painless) lasting longer than 4 hours, with or without sexual stimulation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ERECTION_DURATION_OVER_4H",
+                          "text":  "Has an erection lasted longer than 4 hours, with or without sexual stimulation?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PRIAPISM)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_ED_NEW_MEDICATION_ONSET",
+                          "text":  "Did the erectile difficulty begin shortly after starting a new medication?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_ED_SITUATIONAL_PATTERN",
+                          "text":  "Does the erectile difficulty occur only in certain situations (for example, normal erections during sleep or masturbation but not with a partner)?",
+                          "purpose":  "differential",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "male_only",
+    "acute_chronic":  "chronic",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N52.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Male erectile dysfunction, unspecified",
+    "evidence_ids":  [
+                         "EVID_MALE_ERECTILE_DYSFUNCTION_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

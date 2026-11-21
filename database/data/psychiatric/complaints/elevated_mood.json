@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_003",
+  "code": "ELEVATED_MOOD",
+  "name": "Elevated mood",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "In psychology, a mood is an affective state. In contrast to emotions or feelings, moods are less specific, less intense and less likely to be provoked or instantiated by a particular stimulus or event.",
+  "hpo_codes": [
+    "HP:0000752"
+  ],
+  "snomed_code": "81548002",
+  "snomed_verified_name": "Elevated mood",
+  "icd10_code": "R45.86",
+  "icd10_validated": true,
+  "icd10_official_description": "Emotional lability",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

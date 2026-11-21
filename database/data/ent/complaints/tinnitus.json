@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_001",
+  "code": "TINNITUS",
+  "name": "Tinnitus",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "Tinnitus is a condition when a person hears a ringing sound or a different variety of sounds when no corresponding external sound is present and that other people cannot hear. The word tinnitus comes from the Latin tinnire, \"to ring\".",
+  "hpo_codes": [],
+  "snomed_code": "60862001",
+  "snomed_verified_name": "Tinnitus",
+  "icd10_code": "H93.19",
+  "icd10_validated": true,
+  "icd10_official_description": "Tinnitus, unspecified ear",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,151 @@
+﻿{
+    "id":  "CARDIOLOGY_DIS_CARD_002",
+    "code":  "ACUTE_CORONARY_SYNDROME",
+    "name":  "Acute Coronary Syndrome",
+    "module":  "cardiology",
+    "category":  "disease",
+    "description":  "Acute coronary syndrome (ACS) is a syndrome due to decreased blood flow in the coronary arteries such that part of the heart muscle is unable to function properly or dies. The most common symptom is centrally located pressure-like chest pain, often radiating to the left shoulder or angle of the jaw, and associated with nausea and sweating.",
+    "complaints":  [
+                       {
+                           "code":  "CHEST_DISCOMFORT",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "EXERTIONAL_DYSPNEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PRESYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       },
+                       {
+                           "code":  "SYNCOPE",
+                           "relationship":  "occasional",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "PALPITATIONS",
+                           "relationship":  "occasional",
+                           "priority":  "medium"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_DISCOMFORT",
+                         "relationship":  "common",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SWEATING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NAUSEA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "mild_to_moderate"
+                     },
+                     {
+                         "code":  "RADIATION_ARM_JAW",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "sudden",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HYPERTENSION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "DYSLIPIDEMIA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY_CAD",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RED_CARD_006",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EXERTIONAL_DYSPNEA",
+                          "condition":  "New severe chest discomfort with dyspnea — emergency pathway"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CARD_DYSP_008",
+                          "text":  "Do you have chest discomfort or pressure, especially with exertion?",
+                          "purpose":  "red_flag_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(ISCHEMIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_CORONARY_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_CARD_DYSP_010",
+                          "text":  "Have you almost fainted or completely fainted during this episode?",
+                          "purpose":  "screening",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_CORONARY_SYNDROME_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "STABLE_ISCHEMIC_HEART_DISEASE",
+                              "distinguishing_feature":  "SIHD chest discomfort is exertional and predictable; ACS is new worsening or occurs at rest."
+                          },
+                          {
+                              "disease_code":  "PERICARDITIS",
+                              "distinguishing_feature":  "Pericarditis pain is positional/pleuritic; ACS pain is typically pressure-like and exertion-related."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "acute",
+    "hpo_codes":  [
+                      "HP:0100749"
+                  ],
+    "snomed_code":  "394659003",
+    "snomed_verified_name":  "Acute coronary syndrome",
+    "icd10_code":  "I24.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute ischemic heart disease, unspecified",
+    "evidence_ids":  [
+                         "EVD_CARD_002"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

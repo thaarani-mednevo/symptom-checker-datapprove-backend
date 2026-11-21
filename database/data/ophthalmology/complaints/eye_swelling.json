@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_004",
+  "code": "EYE_SWELLING",
+  "name": "Eye swelling",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by eye swelling.",
+  "hpo_codes": [],
+  "snomed_code": "45177002",
+  "snomed_verified_name": "Swelling of structure of eye",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

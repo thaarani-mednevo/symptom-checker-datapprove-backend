@@ -1,0 +1,118 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_002",
+    "code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR",
+    "name":  "Unspecified lump in right breast, subareolar",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A non‑specific palpable mass located beneath the nipple in the right breast, often detected during self‑examination or clinical assessment.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "BRCA_MUTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "HORMONE_REPLACEMENT_THERAPY",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Rapidly enlarging, erythematous, warm mass with fever"
+                      },
+                      {
+                          "code":  "RF_INFLAMMATORY_BREAST_CANCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden severe pain with skin changes or bloody nipple discharge"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_A_DISTINCT_HARD_MASS_OR_LUMP_UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR",
+                          "text":  "Do you feel a distinct hard mass or lump directly behind your nipple in your right breast?",
+                          "purpose":  "Screen for subareolar breast lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_SKIN_OVER_THE_LUMP_IN_YOUR_RIGHT",
+                          "text":  "Is the skin over the lump in your right breast puckered, dimpled, or red?",
+                          "purpose":  "Screen for inflammatory breast cancer signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_BLOODY_OR_UNUSUAL_D",
+                          "text":  "Have you noticed any bloody or unusual discharge from your right nipple?",
+                          "purpose":  "Screen for malignant nipple discharge",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT",
+                              "distinguishing_feature":  "Located in the upper outer quadrant rather than the retroareolar space, altering the likelihood of specific regional lymphatic drainage patterns and quadrant-specific pathology."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_LEFT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Occurs in the contralateral breast, requiring bilateral comparison for symmetry and ruling out systemic or bilateral disease processes."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "Lacks laterality specification, necessitating immediate clinical verification of the affected side before imaging or biopsy planning."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.41",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in right breast, subareolar",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

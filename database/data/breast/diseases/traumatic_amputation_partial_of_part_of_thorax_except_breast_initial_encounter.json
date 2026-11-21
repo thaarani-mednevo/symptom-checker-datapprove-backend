@@ -1,0 +1,137 @@
+﻿{
+    "id":  "BREAST_DIS_CS_003",
+    "code":  "TRAUMATIC_AMPUTATION_PARTIAL_OF_PART_OF_THORAX_EXCEPT_BREAST_INITIAL_ENCOUNTER",
+    "name":  "Traumatic amputation (partial) of part of thorax, except breast, initial encounter",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "Partial amputation of thoracic structures (ribs, intercostal muscles, pleura) due to traumatic injury, excluding breast tissue, presenting at initial encounter.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHEST_WALL_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "HEMOTHORAX",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "RESPIRATORY_DISTRESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "HYPOTENSION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "HIGH_SPEED_MOTOR_VEHICLE_COLLISION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "FALLS_FROM_HEIGHT",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "WORKPLACE_INDUSTRIAL_ACCIDENTS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "GUNSHOT_WOUNDS_TO_THORAX",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_EXPANDING_AXILLARY_HEMATOMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "AXILLARY_LUMP",
+                          "condition":  "[LLM DRAFT] Expanding axillary swelling with hypotension or active bleeding"
+                      },
+                      {
+                          "code":  "RF_SEVERE_BREAST_PAIN_WITH_RESPIRATORY_DISTRESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Severe chest wall pain with dyspnea, tachypnea, or hypoxia"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_SEVERE_INJURY_WHERE_PART_O",
+                          "text":  "[LLM DRAFT] Do you have a severe injury where part of your chest wall, ribs, or back has been torn or cut off?",
+                          "purpose":  "Screens for traumatic amputation of the thorax",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TRAUMATIC_AMPUTATION_PARTIAL_OF_PART_OF_THORAX_EXCEPT_BREAST_INITIAL_ENCOUNTER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_WOUND_ON_YOUR_CHEST_ACTIVELY_BLEE",
+                          "text":  "[LLM DRAFT] Is the wound on your chest actively bleeding heavily or is there exposed bone or tissue?",
+                          "purpose":  "Screens for acute severity and tissue exposure",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "TRAUMATIC_AMPUTATION_PARTIAL_OF_PART_OF_THORAX_EXCEPT_BREAST_INITIAL_ENCOUNTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MERKEL_CELL_CARCINOMA_OF_SKIN_OF_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a painless, rapidly growing cutaneous nodule rather than an acute physical trauma."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with localized pain, erythema, and purulent discharge rather than acute structural tissue loss from trauma."
+                          },
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a fluid-filled, mobile breast mass rather than an acute open structural injury to the chest wall."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "S28.1XXA",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Traumatic amputation (partial) of part of thorax, except breast, initial encounter",
+    "evidence_ids":  [
+                         "EVID_TRAUMATIC_AMPUTATION_PARTIAL_OF_PART_OF_THORAX_EXCEPT_BREAST_INITIAL_ENCOUNTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

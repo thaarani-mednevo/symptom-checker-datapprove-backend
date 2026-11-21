@@ -1,0 +1,20 @@
+﻿{
+  "module": "geriatric",
+  "version": "1.1",
+  "complaint_count": 5,
+  "disease_count": 5,
+  "complaints": [
+    "CONFUSION",
+    "FALLS",
+    "FUNCTIONAL_DECLINE",
+    "MEMORY_LOSS_GERIATRIC",
+    "POLYPHARMACY_CONCERN"
+  ],
+  "diseases": [
+    "ADVERSE_DRUG_REACTION_ELDERLY",
+    "ALZHEIMERS_DEMENTIA",
+    "DELIRIUM",
+    "HISTORY_OF_FALLING",
+    "OTHER_IDIOPATHIC_PERIPHERAL_AUTONOMIC_NEUROPATHY"
+  ]
+}

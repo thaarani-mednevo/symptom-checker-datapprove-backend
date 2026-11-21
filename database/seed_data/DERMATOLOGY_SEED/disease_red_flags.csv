@@ -1,0 +1,28 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME,RF_BREATHING,symptom,DIFFICULTY_BREATHING,present,present == true,clinician_approved
+DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME,RF_JAUNDICE,symptom,JAUNDICE,present,present == true,clinician_approved
+DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME,RF_RAPID_SYSTEMIC_DETERIORATION,symptom,SYSTEMIC_ILLNESS,present,rapid_deterioration == true,clinician_approved
+UNSPECIFIED_VIRAL_INFECTION_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS,RF_BREATHING,symptom,DIFFICULTY_BREATHING,present,present == true,clinician_approved
+DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME,RF_DRESS_ORGAN_INVOLVEMENT,symptom,FACIAL_EDEMA,"Facial swelling with fever and widespread rash after a new medication — possible systemic organ involvement, treat as emergency",,clinician_approved
+NONSCARRING_HAIR_LOSS_UNSPECIFIED,RF_SUDDEN_PATCHY_HAIR_LOSS,symptom,SCALP_ITCHING,Sudden patchy (not diffuse) hair loss with scalp redness or scarring — refer to dermatologist to rule out scarring alopecia,,clinician_approved
+HERPES_ZOSTER,RF_ZOSTER_OPHTHALMIC,symptom,DERMATOMAL_VESICULAR_RASH,"Rash involves the eye, eyelid, or tip of the nose — risk of vision loss, needs same-day ophthalmology/medical review",,clinician_approved
+ONYCHOMYCOSIS,RF_NAIL_SECONDARY_INFECTION,symptom,NAIL_THICKENING,"Spreading redness, swelling, warmth, or pus around the nail — possible secondary bacterial infection",,clinician_approved
+DRUG_INDUCED_PHOTOSENSITIVITY,RF_SEVERE_PHOTOSENSITIVITY_REACTION,symptom,SUNBURN_LIKE_REACTION,Widespread blistering or skin peeling after sun exposure on a new medication,,clinician_approved
+LIPOMA,RF_RAPID_LUMP_CHANGE,symptom,SOFT_MOBILE_SKIN_LUMP,"Lump has grown quickly, become hard/fixed to underlying tissue, or painful — refer to rule out liposarcoma",,clinician_approved
+ATOPIC_DERMATITIS,RF_ECZEMA_HERPETICUM,complaint,BLISTERS,"[LLM DRAFT] Widespread painful blistering with punched-out erosions and fever, indicating secondary herpes simplex virus superinfection (Kaposi's varicelliform eruption).",,ai_drafted_unverified
+BULLOUS_PEMPHIGOID,RF_GENERALIZED_SEVERE_BLISTERING_OR_EXTENSIVE_SKIN_PEELING_INVOLVING_A_LARGE_BODY_SURFACE_AREA_WITH_SIGNS_OF_SECONDARY_INFECTION_OR_SYSTEMIC_COMPROMISE,complaint,BLISTERS,"[LLM DRAFT] Extensive bullous eruption covering a large body surface area with severe pain, fever, or signs of secondary infection.",,ai_drafted_unverified
+DIABETIC_FOOT_ULCER,RF_SKIN_LESIONS,complaint,SKIN_LESIONS,"[LLM DRAFT] Rapidly spreading erythema, crepitus, or foul-smelling drainage from a diabetic foot ulcer indicating necrotizing fasciitis or severe deep space infection requiring immediate surgical evaluation.",,ai_drafted_unverified
+DIABETIC_FOOT_ULCER,RF_SKIN_DISCOLORATION,complaint,SKIN_DISCOLORATION,"[LLM DRAFT] New-onset black discoloration, gangrene, or cold, pulseless extremities associated with a diabetic foot ulcer suggesting acute critical limb ischemia.",,ai_drafted_unverified
+EPIDERMOID_CYST,NONE_APPLICABLE,complaint,,,,clinician_approved
+EXFOLIATIVE_DERMATITIS,RF_BLISTERING_EXFOLIATION,complaint,BLISTERS,"[LLM DRAFT] Extensive blister formation and skin sloughing involving more than 30 percent of the body surface area, indicating toxic epidermal necrolysis or severe exfoliative dermatitis with risk of rapid fluid loss and sepsis.",,ai_drafted_unverified
+MELASMA,NONE_APPLICABLE,complaint,,,,clinician_approved
+NAIL_PSORIASIS,NONE_APPLICABLE,complaint,,,,clinician_approved
+OTHER_EARLY_SKIN_LESIONS_OF_YAWS,NONE_APPLICABLE,complaint,,,,clinician_approved
+OTHER_SPECIFIED_NONSCARRING_HAIR_LOSS,NONE_APPLICABLE,complaint,,,,clinician_approved
+OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS,NONE_APPLICABLE,complaint,,,,clinician_approved
+POLYMORPHIC_LIGHT_ERUPTION,NONE_APPLICABLE,complaint,,,,clinician_approved
+PSORIASIS_VULGARIS,RF_GENERALIZED_PUSTULAR_PSORIASIS,complaint,BLISTERS,"[LLM DRAFT] Widespread sterile pustules accompanied by high fever, chills, and severe systemic toxicity requiring immediate medical intervention.",,ai_drafted_unverified
+PSORIASIS_VULGARIS,RF_ERYTHRODERMIC_PSORIASIS,complaint,RASH,[LLM DRAFT] Exfoliative erythema covering over 90 percent of the body surface area with systemic symptoms such as hypothermia or high-output cardiac stress.,,ai_drafted_unverified
+SCABIES,NONE_APPLICABLE,complaint,,,,clinician_approved
+VENOUS_LEG_ULCER,NONE_APPLICABLE,complaint,,,,clinician_approved
+VITILIGO,NONE_APPLICABLE,complaint,,,,clinician_approved

@@ -1,0 +1,74 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_047",
+    "code":  "ENDOMETRIAL_POLYP",
+    "name":  "Endometrial polyp",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "An endometrial polyp or uterine polyp is a mass in the inner lining of the uterus. They may have a large flat base (sessile) or be attached to the uterus by an elongated pedicle (pedunculated).",
+    "complaints":  [
+                       {
+                           "code":  "INTERMENSTRUAL_BLEEDING",
+                           "relationship":  "hardcoded_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUSPECTED_GYNAE_MALIGNANCY",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "ENDOMETRIAL_POLYP",
+                          "condition":  "Postmenopausal woman with suspected endometrial polyp (bleeding source needs histology to exclude malignancy)"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MENOPAUSE_STATUS",
+                          "text":  "Have your periods stopped for 12 months or more (menopause)?",
+                          "purpose":  "Assess menopausal status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ENDOMETRIAL_POLYP_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_PAD_SOAK_RATE",
+                          "text":  "How many pads or tampons are you soaking through per hour at the heaviest point?",
+                          "purpose":  "Quantify bleeding severity",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "RED_FLAG(RF_HEMODYNAMIC_INSTABILITY)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ENDOMETRIAL_POLYP_SYMPTOM_2",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "1237359009",
+    "snomed_verified_name":  "Endometrial polyp",
+    "icd10_code":  "N84.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Polyp of corpus uteri",
+    "evidence_ids":  [
+                         "EVID_ENDOMETRIAL_POLYP"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

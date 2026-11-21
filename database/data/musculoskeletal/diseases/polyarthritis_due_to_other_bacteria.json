@@ -1,0 +1,79 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_021",
+  "code": "POLYARTHRITIS_DUE_TO_OTHER_BACTERIA",
+  "name": "Polyarthritis due to other bacteria",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Polyarthritis is any type of arthritis that involves five or more joints simultaneously. It can be associated with autoimmune conditions; it may be experienced at any age and is not sex specific.",
+  "complaints": [
+    {
+      "code": "POLYARTHRITIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "JOINT_PAIN",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "JOINT_SWELLING",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "FEVER",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "LIMITED_RANGE_OF_MOTION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_SEPTIC_ARTHRITIS_JOINT_DESTRUCTION",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Severe, acute single-joint inflammation with systemic signs of infection requiring urgent surgical washout and parenteral antibiotics."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M00.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Polyarthritis due to other bacteria",
+  "evidence_ids": [
+    "EVID_POLYARTHRITIS_DUE_TO_OTHER_BACTERIA"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

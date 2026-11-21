@@ -1,0 +1,135 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_042",
+    "code":  "ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_UNSPECIFIED",
+    "name":  "Abnormal uterine and vaginal bleeding, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Abnormal uterine and vaginal bleeding, unspecified.",
+    "complaints":  [
+                       {
+                           "code":  "IRREGULAR_VAGINAL_BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "IRREGULAR",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "ABNORMALLY_FREQUENT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PROLONGED",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "OR_EXCESSIVE_AMOUNTS_OF_UTERINE_BLEEDING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OVULATION_PROBLEMS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "FIBROIDS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "LINING_OF_THE_UTERUS_GROWING_INTO_THE_UTERINE_WALL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "UTERINE_POLYPS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "UNDERLYING_BLEEDING_PROBLEMS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SIDE_EFFECTS_FROM_BIRTH_CONTROL",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CANCER",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HEMODYNAMIC_INSTABILITY",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "PROLONGED",
+                          "condition":  "Prolonged or heavy bleeding with symptoms of hemodynamic compromise"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PAD_SOAK_RATE",
+                          "text":  "How many pads or tampons are you soaking through per hour at the heaviest point?",
+                          "purpose":  "Quantify bleeding severity",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "RED_FLAG(RF_HEMODYNAMIC_INSTABILITY)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_MENOPAUSE_STATUS",
+                          "text":  "Have your periods stopped for 12 months or more (menopause)?",
+                          "purpose":  "Assess menopausal status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "IRREGULAR_MENSTRUATION_UNSPECIFIED",
+                              "distinguishing_feature":  "Abnormal uterine/vaginal bleeding is the broader bleeding-pattern code; irregular menstruation unspecified emphasizes cycle-timing irregularity specifically"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N93.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abnormal uterine and vaginal bleeding, unspecified",
+    "evidence_ids":  [
+                         "EVID_ABNORMAL_UTERINE_AND_VAGINAL_BLEEDING_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

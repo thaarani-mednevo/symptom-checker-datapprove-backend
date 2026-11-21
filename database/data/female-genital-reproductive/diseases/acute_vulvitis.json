@@ -1,0 +1,77 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_016",
+    "code":  "ACUTE_VULVITIS",
+    "name":  "Acute vulvitis",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Acute vulvitis.",
+    "complaints":  [
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SAFEGUARDING_CONCERN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VULVAL_SORENESS",
+                          "condition":  "Genital soreness in a pre-pubertal child without a clear medical explanation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_VULVAL_SYMPTOM_TRIGGER",
+                          "text":  "Did the soreness start after using a new soap, product, or clothing?",
+                          "purpose":  "Identify irritant/contact trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_VULVITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_FOUL_SMELLING_DISCHARGE",
+                          "text":  "Is the discharge foul-smelling or an unusual color (green/grey)?",
+                          "purpose":  "Exclude infective cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ACUTE_VULVITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SUBACUTE_AND_CHRONIC_VULVITIS",
+                              "distinguishing_feature":  "Acute vulvitis has sudden onset; chronic vulvitis persists or recurs beyond the acute phase"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "33028007",
+    "snomed_verified_name":  "Acute vulvitis",
+    "icd10_code":  "N76.2",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Acute vulvitis",
+    "evidence_ids":  [
+                         "EVID_ACUTE_VULVITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

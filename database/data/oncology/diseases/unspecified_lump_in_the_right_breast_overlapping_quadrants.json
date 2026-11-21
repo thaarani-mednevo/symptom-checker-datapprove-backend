@@ -1,0 +1,134 @@
+﻿{
+    "id":  "ONCOLOGY_DIS_CS_005",
+    "code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS",
+    "name":  "Unspecified lump in the right breast, overlapping quadrants",
+    "module":  "oncology",
+    "category":  "disease",
+    "description":  "A palpable mass in the right breast that spans multiple quadrants without a clearly defined location.",
+    "complaints":  [
+                       {
+                           "code":  "PALPABLE_MASS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BREAST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SKIN_DIMPLING",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "NIPPLE_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Sudden severe pain, swelling, and redness around the palpable mass indicating possible abscess"
+                      },
+                      {
+                          "code":  "RF_BLEEDING_ULCER",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "PALPABLE_MASS",
+                          "condition":  "Visible ulceration or bloody nipple discharge from the palpable mass"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_NEW_LUMP_OR_THICKENIN",
+                          "text":  "Have you noticed a new lump or thickening in your right breast that seems to cover multiple areas?",
+                          "purpose":  "Screen for presence of an overlapping breast lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_THE_SKIN_OVER_THE_RIGHT_BREAST_LUMP_P",
+                          "text":  "Is the skin over the right breast lump puckered, dimpled, or showing changes like an orange peel texture?",
+                          "purpose":  "Screen for malignant skin changes associated with the lump",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_BLOODY_OR_UNUSUAL_D_UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS",
+                          "text":  "Have you noticed any bloody or unusual discharge from your right nipple?",
+                          "purpose":  "Screen for concerning associated nipple symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UPPER_OUTER_QUADRANT",
+                              "distinguishing_feature":  "Located specifically in the upper outer quadrant rather than extending across multiple quadrant boundaries."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_RIGHT_BREAST_SUBAREOLAR",
+                              "distinguishing_feature":  "Located directly beneath the nipple-areolar complex rather than spanning multiple quadrants."
+                          },
+                          {
+                              "disease_code":  "UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_UNSPECIFIED_QUADRANT",
+                              "distinguishing_feature":  "Lacks specific topographical localization within the right breast, whereas this lump involves overlapping quadrants."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "female_predominant",
+    "acute_chronic":  "subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N63.15",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Unspecified lump in the right breast, overlapping quadrants",
+    "evidence_ids":  [
+                         "EVID_UNSPECIFIED_LUMP_IN_THE_RIGHT_BREAST_OVERLAPPING_QUADRANTS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

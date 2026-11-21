@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_018",
+  "code": "VISUAL_DISTURBANCE",
+  "name": "Visual disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "A vision disorder is an impairment of the sense of vision.",
+  "hpo_codes": [],
+  "snomed_code": "63102001",
+  "snomed_verified_name": "Visual disturbance",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

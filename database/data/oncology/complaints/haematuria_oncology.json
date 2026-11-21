@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_006",
+  "code": "HAEMATURIA_ONCOLOGY",
+  "name": "Haematuria (oncology context)",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "Haematuria is the presence of blood in the urine, either visible (frank/gross haematuria) or detected on dipstick or microscopy (microscopic haematuria). In an oncology context, painless frank haematuria is the most common presenting symptom of bladder cancer and renal cell carcinoma. Any episode of unexplained frank haematuria in an adult requires urgent urological investigation including urine cytology, cystoscopy, and upper tract imaging. Painless haematuria is particularly concerning as it often reflects a malignant or significant structural cause rather than a benign or infective one.",
+  "hpo_codes": ["HP:0000790"],
+  "snomed_code": "53300006",
+  "snomed_verified_name": "Hematuria",
+  "icd10_code": "R31.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Hematuria, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

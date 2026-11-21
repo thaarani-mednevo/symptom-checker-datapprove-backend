@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_005",
+  "code": "HALLUCINATIONS",
+  "name": "Hallucinations",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "A hallucination is a perception in the absence of an external context stimulus that has the compelling sense of reality. They are distinguishable from several related phenomena, such as dreaming, which does not involve wakefulness; pseudohallucination, which does not mimic real perception, and is accurately perceived as unreal; illusion, which involves distorted or misinterpreted real perception; and mental imagery, which does not mimic real perception, and is under voluntary control.",
+  "hpo_codes": [
+    "HP:0000738"
+  ],
+  "snomed_code": "7011001",
+  "snomed_verified_name": "Hallucinations",
+  "icd10_code": "R44.3",
+  "icd10_validated": true,
+  "icd10_official_description": "Hallucinations, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

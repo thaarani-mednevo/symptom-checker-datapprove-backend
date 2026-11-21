@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_001",
+  "code": "EXERTIONAL_DYSPNEA",
+  "name": "Exertional dyspnea",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Shortness of breath (SOB), known as dyspnea or dyspnoea, is an uncomfortable feeling of not being able to breathe well enough. The American Thoracic Society defines it as \"a subjective experience of breathing discomfort that consists of qualitatively distinct sensations that vary in intensity\", and recommends evaluating dyspnea by assessing the intensity of its distinct sensations, the degree of distress and discomfort involved, and its burden or impact on the patient's activities of daily living.",
+  "hpo_codes": [
+    "HP:0002094"
+  ],
+  "snomed_code": "60845006",
+  "snomed_verified_name": "Dyspnea on exertion",
+  "icd10_code": "R06.09",
+  "icd10_validated": true,
+  "icd10_official_description": "Other forms of dyspnea",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

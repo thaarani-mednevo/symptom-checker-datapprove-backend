@@ -1,0 +1,19 @@
+{
+  "id": "CARDIOLOGY_CMP_CARD_009",
+  "code": "CHEST_DISCOMFORT",
+  "name": "Chest discomfort",
+  "module": "cardiology",
+  "body_system": "cardiovascular",
+  "category": "complaint",
+  "description": "Chest pain is pain or discomfort in the chest, typically the front of the chest. It may be described as sharp, dull, pressure, heaviness or squeezing.",
+  "hpo_codes": [
+    "HP:0001618"
+  ],
+  "snomed_code": "29857009",
+  "snomed_verified_name": "Chest pain",
+  "icd10_code": "R07.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Chest pain, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

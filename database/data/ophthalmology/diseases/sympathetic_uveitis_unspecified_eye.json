@@ -1,0 +1,122 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_009",
+    "code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE",
+    "name":  "Sympathetic uveitis, unspecified eye",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "In ophthalmology, sympathetic ophthalmia (SO), also called spared eye injury, is a granulomatous diffuse inflammation of the uveal layer (uveitis) of both eyes following trauma to one eye. It can leave the affected person completely blind.",
+    "complaints":  [
+                       {
+                           "code":  "RED_EYE",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FLOATERS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OCULAR_TRAUMA",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "OCULAR_SURGERY",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "INTRAOCULAR_INFLAMMATION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SYSTEMIC_INFLAMMATORY_DISEASE",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, profound vision loss in one eye"
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe eye pain indicating possible acute angle closure or severe inflammation"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_IN_YOUR_EYE_THAT_GETS_W",
+                          "text":  "[LLM DRAFT] Do you feel pain in your eye that gets worse when you look at bright lights?",
+                          "purpose":  "photophobia with pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_VISION_BLURRY_OR_DO_YOU_SEE_SPOT",
+                          "text":  "[LLM DRAFT] Is your vision blurry or do you see spots in your eye?",
+                          "purpose":  "visual disturbances",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_EYE_RED_OR_SWOLLEN?",
+                          "text":  "[LLM DRAFT] Is your eye red or swollen?",
+                          "purpose":  "eye redness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H44.139",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Sympathetic uveitis, unspecified eye",
+    "evidence_ids":  [
+                         "EVID_SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

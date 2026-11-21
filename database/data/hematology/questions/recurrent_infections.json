@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "RECURRENT_INFECTIONS",
+    "complaint_name":  "Recurrent infections",
+    "module":  "hematology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_RI_001",
+                          "text":  "How many infections have you had in the past year and what type?",
+                          "purpose":  "history",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "INFECTION_FREQUENCY",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RI_002",
+                          "text":  "Do the infections require antibiotics or hospital admission?",
+                          "purpose":  "severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SEVERE_INFECTIONS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_RI_003",
+                          "text":  "Is there a family history of immunodeficiency?",
+                          "purpose":  "family",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FAMILY_IMMUNODEFICIENCY",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_RI_004",
+                          "text":  "Do you have weight loss, night sweats, or fatigue?",
+                          "purpose":  "systemic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "SYSTEMIC_SYMPTOMS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

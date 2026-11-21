@@ -1,0 +1,134 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_025",
+    "code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD",
+    "name":  "Anorexia nervosa, restricting type, mild",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Anorexia nervosa (AN), commonly referred to as anorexia, is an eating disorder characterized by predominant food restriction, body image disturbance, fear of gaining weight, and an overwhelming desire to be thin. These characteristics often mean individuals undergo severe malnutrition as a result of the disorder.",
+    "complaints":  [
+                       {
+                           "code":  "LOSS_OF_APPETITE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEAR_OF_GAINING_WEIGHT",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "STRONG_DESIRE_TO_BE_THIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FOOD_RESTRICTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_BRADYCARDIA_OR_HEMODYNAMIC_INSTABILITY",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Resting heart rate below 40 beats per minute or orthostatic vital sign changes"
+                      },
+                      {
+                          "code":  "RF_SUICIDAL_IDEATION_OR_INTENT",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Active thoughts of self-harm or suicide related to distress over body image or food intake"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_1",
+                          "text":  "Have you intentionally restricted your food intake significantly over the past 3 months, leading to a body weight that is below minimally normal?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_2",
+                          "text":  "Do you experience an intense fear of gaining weight or becoming fat, even though your current weight is low?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "ESCALATE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_3",
+                          "text":  "Have you engaged in regular binge-eating or purging behaviors, such as self-induced vomiting or misuse of laxatives, over the past 3 months?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD_SYMPTOM_3",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_BINGE_EATINGPURGING_TYPE_MILD",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of recurrent episodes of binge eating or purging behaviors."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_SEVERE",
+                              "distinguishing_feature":  "[LLM DRAFT] Significantly lower body mass index corresponding to severe or extreme clinical severity thresholds."
+                          },
+                          {
+                              "disease_code":  "MUSCLE_WEAKNESS_GENERALIZED",
+                              "distinguishing_feature":  "[LLM DRAFT] Lack of core psychological features such as intense fear of gaining weight or distorted body image."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "F50.010",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Anorexia nervosa, restricting type, mild",
+    "evidence_ids":  [
+                         "EVID_ANOREXIA_NERVOSA_RESTRICTING_TYPE_MILD"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

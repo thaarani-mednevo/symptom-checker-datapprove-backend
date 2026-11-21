@@ -1,0 +1,95 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_082",
+  "code": "EARLY_ONSET_CEREBELLAR_ATAXIA_UNSPECIFIED",
+  "name": "Early-onset cerebellar ataxia, unspecified",
+  "module": "neurology",
+  "category": "disease",
+  "description": "A neurology condition known as Early-onset cerebellar ataxia, unspecified.",
+  "complaints": [
+    {
+      "code": "ATAXIA",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "ABNORMAL_GAIT",
+      "relationship": "common",
+      "priority": "high"
+    },
+    {
+      "code": "BALANCE_DISTURBANCE",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "GAIT_ATAXIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "DYSARTHRIA",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "LIMB_INCOORDINATION",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "NYSTAGMUS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "NONE_APPLICABLE",
+      "strength": "n/a"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] Sudden onset of profound limb or global paralysis indicating potential acute spinal cord compression or acute CNS event in a patient with early-onset ataxia."
+    },
+    {
+      "code": "RF_SEIZURES",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "SEIZURES",
+      "condition": "[LLM DRAFT] Acute onset of new generalized or status epilepticus seizures requiring immediate stabilization and neurological intervention."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G11.10",
+  "icd10_validated": true,
+  "icd10_official_description": "Early-onset cerebellar ataxia, unspecified",
+  "evidence_ids": [
+    "EVID_EARLY_ONSET_CEREBELLAR_ATAXIA_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

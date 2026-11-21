@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_001",
+  "code": "WATERY_EYES",
+  "name": "Watery eyes",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Tears are a transparent fluid secreted primarily by the lacrimal glands found in the eyes of all land mammals. According to the mode of production, tears are classified into four types: basal, closed eye, emotional, and reflex.",
+  "hpo_codes": [],
+  "snomed_code": "420103007",
+  "snomed_verified_name": "Watery eye",
+  "icd10_code": "H04.20",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

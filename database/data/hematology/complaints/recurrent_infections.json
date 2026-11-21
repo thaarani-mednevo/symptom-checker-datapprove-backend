@@ -1,0 +1,17 @@
+{
+  "id": "HEMATOLOGY_COMP_HEM_005",
+  "code": "RECURRENT_INFECTIONS",
+  "name": "Recurrent infections",
+  "module": "hematology",
+  "body_system": "hematology",
+  "category": "complaint",
+  "description": "A presenting complaint characterised by recurrent infections.",
+  "hpo_codes": [],
+  "snomed_code": "451991000124106",
+  "snomed_verified_name": "Recurrent infectious disease",
+  "icd10_code": "D84.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Immunodeficiency, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

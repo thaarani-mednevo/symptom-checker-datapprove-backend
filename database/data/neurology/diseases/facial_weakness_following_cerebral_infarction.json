@@ -1,0 +1,77 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_089",
+  "code": "FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION",
+  "name": "Facial weakness following cerebral infarction",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Facial weakness is a medical sign associated with a variety of medical conditions.",
+  "complaints": [
+    {
+      "code": "WEAKNESS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "INABILITY_TO_MOVE_THE_FACIAL_MUSCLES_ON_ONE_SIDE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "CHANGE_IN_TASTE",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "PAIN_AROUND_THE_EAR",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_RECURRENT_STROKE_PARALYSIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "PARALYSIS",
+      "condition": "[LLM DRAFT] New or worsening sudden-onset paralysis accompanying facial weakness indicating potential recurrent acute cerebral infarction."
+    },
+    {
+      "code": "RF_ACUTE_STROKE_APHASIA",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "APHASIA",
+      "condition": "[LLM DRAFT] Sudden onset of severe aphasia or language disturbance indicating an acute neurological deterioration or extension of the stroke."
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "I69.392",
+  "icd10_validated": true,
+  "icd10_official_description": "Facial weakness following cerebral infarction",
+  "evidence_ids": [
+    "EVID_FACIAL_WEAKNESS_FOLLOWING_CEREBRAL_INFARCTION"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

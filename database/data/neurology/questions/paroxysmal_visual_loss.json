@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "PAROXYSMAL_VISUAL_LOSS",
+    "complaint_name":  "Paroxysmal visual loss",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_PVL_001",
+                          "text":  "Is the visual loss transient (seconds to minutes) or persistent?",
+                          "purpose":  "duration",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "TRANSIENT_VISUAL_LOSS",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PVL_002",
+                          "text":  "Is it one eye or both, and is there a curtain coming down?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PAROXYSMAL_VISUAL_LOSS_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_PVL_003",
+                          "text":  "Is it associated with headache, weakness, or speech difficulty?",
+                          "purpose":  "TIA",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "TIA_WITH_VISUAL_LOSS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_PVL_004",
+                          "text":  "Does it happen on standing up or with bright light?",
+                          "purpose":  "postural",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "POSTURAL_VISUAL_LOSS",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

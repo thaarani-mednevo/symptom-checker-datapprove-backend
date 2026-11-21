@@ -1,0 +1,89 @@
+{
+  "complaint_code": "URETHRAL_DISCHARGE",
+  "complaint_name": "Urethral Discharge",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_UDIS_001",
+      "text": "How would you describe the discharge — colour, consistency, and when during urination or at other times does it appear?",
+      "purpose": "Characterise discharge to differentiate gonorrhoea (purulent yellow-green) from non-gonococcal urethritis (clear or white)",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Clear or white, watery — occurs mostly in the morning",
+        "Clear or white, mucoid — occurs throughout the day",
+        "Yellow or green, purulent",
+        "Blood-stained or brownish",
+        "Only visible when urethra is squeezed"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "URETHRAL_DISCHARGE_CHARACTER",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UDIS_002",
+      "text": "Have you had unprotected sexual contact with a new partner or a partner with a known STI in the past 3 months?",
+      "purpose": "STI exposure history is the key risk factor for urethral discharge from gonorrhoea or chlamydia",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "STI_EXPOSURE_HISTORY",
+      "yes_weight": 4,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_UDIS_003",
+      "text": "Do you have burning or pain when you urinate (dysuria)?",
+      "purpose": "Dysuria alongside discharge strongly suggests urethritis (gonococcal or non-gonococcal)",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(URETHRITIS_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "ASSOCIATED_DYSURIA",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UDIS_004",
+      "text": "Have you developed any genital sores, ulcers, or rash alongside the discharge?",
+      "purpose": "Co-existing ulcers or rash suggest a concurrent STI (syphilis, herpes) requiring broader STI workup",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "ASSOCIATED_GENITAL_LESIONS",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UDIS_005",
+      "text": "Do you have testicular or pelvic pain, or any swelling in the scrotum?",
+      "purpose": "Testicular pain with discharge may indicate epididymo-orchitis, a complication of ascending STI",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "EPIDIDYMO_ORCHITIS_COMPLICATION",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_UDIS_006",
+      "text": "Have you had any similar episodes before, and have you previously been treated for an STI?",
+      "purpose": "Recurrent episodes or prior STI history indicates ongoing risk behaviour and need for comprehensive STI screen",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "PRIOR_STI_HISTORY",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

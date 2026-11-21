@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "SENSORY_DISTURBANCE",
+    "complaint_name":  "Sensory disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SEN_001",
+                          "text":  "Is it numbness, tingling, pain, or a change in temperature sensation?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SENSORY_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SEN_002",
+                          "text":  "Is it one-sided, in both hands and feet, or in a specific nerve territory?",
+                          "purpose":  "distribution",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SENSORY_DISTRIBUTION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SEN_003",
+                          "text":  "Did it come on suddenly?",
+                          "purpose":  "sudden",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SUDDEN_SENSORY_DISTURBANCE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SEN_004",
+                          "text":  "Is there weakness, speech difficulty, or visual change?",
+                          "purpose":  "CNS",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "CNS_SENSORY",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SEN_005",
+                          "text":  "Do you have diabetes?",
+                          "purpose":  "cause",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DIABETIC_SENSORY",
+                          "yes_weight":  3,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "HAEMATURIA",
+    "complaint_name":  "Haematuria",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HAEM_001",
+                          "text":  "Is the blood visible (making the urine red or pink) or only found on a test?",
+                          "purpose":  "visible",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HAEMATURIA_VISIBLE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_002",
+                          "text":  "Is the blood throughout the stream or only at the start or end?",
+                          "purpose":  "timing",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HAEMATURIA_TIMING",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_003",
+                          "text":  "Is the haematuria painless?",
+                          "purpose":  "painless",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PAINLESS_HAEMATURIA",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_004",
+                          "text":  "Do you have pain in your back, side, or lower abdomen?",
+                          "purpose":  "pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "PAINFUL_HAEMATURIA",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HAEM_005",
+                          "text":  "Are you over 40 or a smoker?",
+                          "purpose":  "risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "BLADDER_CANCER_RISK",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

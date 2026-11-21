@@ -1,0 +1,85 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_037",
+    "code":  "OTHER_NEONATAL_HYPOCALCEMIA",
+    "name":  "Other neonatal hypocalcemia",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Neonatal hypocalcemia is an abnormal clinical and laboratory hypocalcemia condition that is frequently observed in infants. It is commonly presented within the first 72 hours of a newborn\u0027s life.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOCALCEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_HYPOCALCEMIA_SEIZURES",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOCALCEMIA",
+                          "condition":  "[LLM DRAFT] Severe neonatal hypocalcemia presenting with generalized seizures, apnea, or laryngospasm requiring immediate resuscitation and intravenous calcium administration."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DOES_YOUR_NEWBORN_BABY_HAVE_MUSCLE_TWITC",
+                          "text":  "[LLM DRAFT] Does your newborn baby have muscle twitching, jitteriness, or seizures?",
+                          "purpose":  "Screens for acute neuromuscular irritability and seizures caused by low calcium",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_NEONATAL_HYPOCALCEMIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_IS_YOUR_NEWBORN_BABY_UNUSUALLY_SLEEPY_L",
+                          "text":  "[LLM DRAFT] Is your newborn baby unusually sleepy, lethargic, or having trouble feeding?",
+                          "purpose":  "Screens for general lethargy and feeding difficulties associated with neonatal hypocalcemia",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_NEONATAL_HYPOCALCEMIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "COWS_MILK_HYPOCALCEMIA_IN_NEWBORN",
+                              "distinguishing_feature":  "[LLM DRAFT] History of high-phosphate cow\u0027s milk formula ingestion leading to secondary hypocalcemia"
+                          },
+                          {
+                              "disease_code":  "AUTOSOMAL_DOMINANT_HYPOCALCEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Activating mutations in the calcium-sensing receptor causing autosomal dominant inheritance and hypocalcemia with inappropriately normal or low PTH"
+                          },
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with prolonged jaundice, feeding difficulties, and hypotonia rather than primary neuromuscular irritability from hypocalcemia"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "P71.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other neonatal hypocalcemia",
+    "evidence_ids":  [
+                         "EVID_OTHER_NEONATAL_HYPOCALCEMIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

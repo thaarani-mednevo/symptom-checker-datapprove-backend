@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "SEIZURES",
+    "complaint_name":  "Seizures",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SEI_001",
+                          "text":  "Did you lose consciousness and have uncontrolled jerking movements?",
+                          "purpose":  "character",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SEIZURE_CHARACTER",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SEI_002",
+                          "text":  "Did it last more than 5 minutes or is it still going on?",
+                          "purpose":  "status",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "STATUS_EPILEPTICUS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SEI_003",
+                          "text":  "Did you bite your tongue, lose bladder control, or have confusion afterwards?",
+                          "purpose":  "epilepsy_features",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "POSTICTAL_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SEI_004",
+                          "text":  "Have you had seizures before, and do you take antiepileptic medication?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "EPILEPSY_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SEI_005",
+                          "text":  "Is this the first seizure you have ever had?",
+                          "purpose":  "first",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_FIRST_SEIZURE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "FIRST_SEIZURE",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

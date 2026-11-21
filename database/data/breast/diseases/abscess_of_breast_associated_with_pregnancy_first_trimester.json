@@ -1,0 +1,126 @@
+﻿{
+    "id":  "BREAST_DIS_CS_010",
+    "code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_FIRST_TRIMESTER",
+    "name":  "Abscess of breast associated with pregnancy, first trimester",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A localized collection of pus in breast tissue occurring during the first trimester of pregnancy, often presenting with pain, swelling, and erythema.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "AXILLARY_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "LOCALIZED_BREAST_PAIN_AND_REDNESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "LACTATION",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NIPPLE_TRAUMA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPSIS_SECONDARY_TO_BREAST_ABSCESS_INFECTION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Presents with severe localized breast pain accompanied by systemic signs of infection such as high fever, chills, tachycardia, or hypotension indicating potential progression to sepsis."
+                      },
+                      {
+                          "code":  "RF_RAPIDLY_PROGRESSIVE_CELLULITIS_WITH_SKIN_NECROSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_LUMP",
+                          "condition":  "[LLM DRAFT] Presents with a rapidly expanding, highly painful breast lump with surrounding skin breakdown, purplish discoloration, or signs of tissue necrosis requiring immediate surgical evaluation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_IN_YOUR_FIRST_TRIMESTE",
+                          "text":  "[LLM DRAFT] Are you currently in your first trimester of pregnancy and experiencing a painful, swollen lump in your breast?",
+                          "purpose":  "Screens for pregnancy-associated breast abscess symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_FIRST_TRIMESTER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_REDNESS_WARMTH_OR_PUS_DRAI",
+                          "text":  "[LLM DRAFT] Do you have redness, warmth, or pus draining from a painful area on your breast along with a fever?",
+                          "purpose":  "Screens for infection and inflammation signs of a breast abscess",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_FIRST_TRIMESTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_SECOND_TRIMESTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents later in gestation, typically with more pronounced physiologic breast enlargement and glandular development."
+                          },
+                          {
+                              "disease_code":  "ABSCESS_OF_BREAST_ASSOCIATED_WITH_LACTATION",
+                              "distinguishing_feature":  "[LLM DRAFT] Occurs exclusively post-delivery during breastfeeding rather than during early pregnancy."
+                          },
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a circumscribed, fluid-filled mass without localized signs of acute inflammation, erythema, or systemic infection."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O91.111",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abscess of breast associated with pregnancy, first trimester",
+    "evidence_ids":  [
+                         "EVID_ABSCESS_OF_BREAST_ASSOCIATED_WITH_PREGNANCY_FIRST_TRIMESTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

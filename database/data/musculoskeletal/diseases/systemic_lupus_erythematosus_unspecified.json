@@ -1,0 +1,93 @@
+﻿{
+  "id": "MUSCULOSKELETAL_DIS_CS_022",
+  "code": "SYSTEMIC_LUPUS_ERYTHEMATOSUS_UNSPECIFIED",
+  "name": "Systemic lupus erythematosus, unspecified",
+  "module": "musculoskeletal",
+  "category": "disease",
+  "description": "Lupus, formally called systemic lupus erythematosus (SLE), is an autoimmune disease in which the body's immune system mistakenly attacks healthy tissue in many parts of the body. Symptoms vary among people and may be mild to severe.",
+  "complaints": [
+    {
+      "code": "POLYARTHRITIS",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "MALAR_RASH",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "ARTHRALGIA_AND_ARTHRITIS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "PHOTOSENSITIVITY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "mild"
+    },
+    {
+      "code": "FATIGUE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "gradual",
+      "severity": "moderate"
+    },
+    {
+      "code": "PLEURITIS",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "severe"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FEMALE",
+      "strength": "wikidata_unverified"
+    }
+  ],
+  "red_flags": [
+    {
+      "code": "RF_ACUTE_RESPIRATORY_FAILURE_DUE_TO_MYOPATHY",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "MUSCLE_WEAKNESS",
+      "condition": "[LLM DRAFT] Rapidly progressive muscle weakness involving respiratory muscles, leading to breathing difficulty or inability to maintain airway"
+    },
+    {
+      "code": "RF_SEPTIC_ARTHRITIS",
+      "trigger_entity_type": "complaint",
+      "trigger_entity_code": "ACUTE_MONOARTHRITIS",
+      "condition": "[LLM DRAFT] Joint swelling, pain, fever, and systemic signs of infection"
+    }
+  ],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "M32.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Systemic lupus erythematosus, unspecified",
+  "evidence_ids": [
+    "EVID_SYSTEMIC_LUPUS_ERYTHEMATOSUS_UNSPECIFIED"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

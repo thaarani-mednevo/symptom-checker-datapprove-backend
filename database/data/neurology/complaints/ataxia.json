@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_022",
+  "code": "ATAXIA",
+  "name": "Ataxia",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Ataxia is a neurological sign consisting of lack of voluntary coordination of muscle movements that can include gait abnormality, speech changes, and abnormalities in eye movements, that indicates dysfunction of parts of the nervous system that coordinate movement, such as the cerebellum.",
+  "hpo_codes": [],
+  "snomed_code": "20262006",
+  "snomed_verified_name": "Ataxia",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

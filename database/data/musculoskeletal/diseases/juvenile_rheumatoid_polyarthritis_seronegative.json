@@ -1,0 +1,128 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_020",
+    "code":  "JUVENILE_RHEUMATOID_POLYARTHRITIS_SERONEGATIVE",
+    "name":  "Juvenile rheumatoid polyarthritis (seronegative)",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Juvenile rheumatoid polyarthritis (seronegative).",
+    "complaints":  [
+                       {
+                           "code":  "POLYARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "JOINT_SWELLING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "MORNING_STIFFNESS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "UVEITIS",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "GROWTH_RETARDATION",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_MORE_THA",
+                          "text":  "[LLM DRAFT] Do you have swelling or pain in more than one joint that has lasted for at least 2 weeks?",
+                          "purpose":  "persistent multi-joint inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "JUVENILE_RHEUMATOID_POLYARTHRITIS_SERONEGATIVE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_FEEL_STIFFNESS_IN_YOUR_JOINTS_FOR",
+                          "text":  "[LLM DRAFT] Do you feel stiffness in your joints for more than 30 minutes after waking up?",
+                          "purpose":  "morning stiffness",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "JUVENILE_RHEUMATOID_POLYARTHRITIS_SERONEGATIVE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_YOUR_KNE",
+                          "text":  "[LLM DRAFT] Do you have swelling or pain in your knees, ankles, or wrists?",
+                          "purpose":  "common affected joints",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "JUVENILE_RHEUMATOID_POLYARTHRITIS_SERONEGATIVE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M08.3",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Juvenile rheumatoid polyarthritis (seronegative)",
+    "evidence_ids":  [
+                         "EVID_JUVENILE_RHEUMATOID_POLYARTHRITIS_SERONEGATIVE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

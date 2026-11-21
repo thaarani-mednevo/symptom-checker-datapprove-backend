@@ -1,0 +1,17 @@
+{
+  "id": "ONCOLOGY_COMP_ONC_001",
+  "code": "PALPABLE_MASS",
+  "name": "Palpable mass",
+  "module": "oncology",
+  "body_system": "oncology",
+  "category": "complaint",
+  "description": "A palpable mass is an abnormal lump or swelling detected by touch during physical examination. It may arise in any body region including the neck, breast, abdomen, groin, or limbs. The clinical significance ranges from benign (lipoma, cyst, lymph node reactive hyperplasia) to malignant (lymphoma, carcinoma, sarcoma). Key discriminating features include size, consistency (soft, firm, hard, rubbery), mobility, surface characteristics, rate of growth, and associated symptoms such as pain, skin changes, or systemic features (fever, weight loss, night sweats). Any palpable mass that is hard, fixed, rapidly growing, or associated with constitutional symptoms requires urgent evaluation for malignancy.",
+  "hpo_codes": ["HP:0012664"],
+  "snomed_code": "443607001",
+  "snomed_verified_name": "Palpable mass",
+  "icd10_code": "R22.9",
+  "icd10_validated": true,
+  "icd10_official_description": "Localized swelling, mass and lump, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

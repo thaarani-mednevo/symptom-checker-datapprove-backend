@@ -1,0 +1,100 @@
+{
+  "complaint_code": "LOSS_OF_APPETITE",
+  "complaint_name": "Loss of Appetite",
+  "module": "constitutional-symptoms",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_LOA_001",
+      "text": "How long have you had a poor appetite, and are you eating significantly less than your normal intake?",
+      "purpose": "Characterise duration and severity of anorexia; >4 weeks requires systematic investigation",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 1 week — likely related to acute illness",
+        "1–4 weeks",
+        "More than 4 weeks — persistent",
+        "Complete loss of appetite (not eating at all)"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "ANOREXIA_DURATION",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_002",
+      "text": "Have you had significant unintentional weight loss alongside the reduced appetite?",
+      "purpose": "Weight loss with anorexia raises concern for underlying malignancy or serious systemic illness",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(UNEXPLAINED_WEIGHT_LOSS_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "WEIGHT_LOSS_WITH_ANOREXIA",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_003",
+      "text": "Do you have any abdominal pain, nausea, vomiting, or difficulty swallowing?",
+      "purpose": "GI symptoms with anorexia require GI investigation for peptic disease, obstruction, or malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GI_ANOREXIA_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "GI_SYMPTOMS_ANOREXIA",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_004",
+      "text": "Are you experiencing significant low mood, sadness, tearfulness, or loss of pleasure in life?",
+      "purpose": "Depression is one of the most common reversible causes of loss of appetite",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(DEPRESSION_ANOREXIA_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "DEPRESSION_ANOREXIA",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_005",
+      "text": "Do you have jaundice, right upper quadrant pain, or dark urine suggesting liver disease?",
+      "purpose": "Hepatic or biliary disease commonly causes anorexia and nausea",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "LIVER_DISEASE_ANOREXIA",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_006",
+      "text": "Have you had fever, night sweats, or other constitutional symptoms alongside the loss of appetite?",
+      "purpose": "Constitutional symptoms together with anorexia increase malignancy and serious infection likelihood",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "CONSTITUTIONAL_SYMPTOMS_ANOREXIA",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LOA_007",
+      "text": "Have you had any concerns about your body weight or image, or are you deliberately restricting food intake?",
+      "purpose": "Identify eating disorders such as anorexia nervosa which require specialist psychological assessment",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(EATING_DISORDER_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "EATING_DISORDER_FEATURES",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

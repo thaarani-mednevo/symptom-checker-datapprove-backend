@@ -1,0 +1,17 @@
+﻿{
+  "complaint_code": "JAUNDICE",
+  "complaint_name": "Jaundice",
+  "module": "hepatobiliary",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_JAUN_001", "text": "How long have you had the yellowing of your skin or eyes?", "purpose": "duration", "answer_type": "free_text", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "JAUNDICE_DURATION", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_JAUN_002", "text": "Is your urine dark (tea or cola coloured) and are your stools pale or white?", "purpose": "cholestasis_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(CHOLESTATIC_JAUNDICE)", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "DARK_URINE_PALE_STOOLS", "yes_weight": 4, "no_weight": -1 },
+    { "code": "Q_CMP_JAUN_003", "text": "Do you have pain in your right upper abdomen?", "purpose": "biliary_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(BILIARY)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "RUQ_PAIN_WITH_JAUNDICE", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_JAUN_004", "text": "Have you been confused, unusually drowsy, or had unusual behaviour?", "purpose": "encephalopathy_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "HEPATIC_ENCEPHALOPATHY", "yes_weight": 5, "no_weight": -1 },
+    { "code": "Q_CMP_JAUN_005", "text": "How much alcohol do you drink per day?", "purpose": "alcohol_history", "answer_type": "free_text", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "ALCOHOL_HISTORY", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_JAUN_006", "text": "Are you taking any new medications or herbal supplements?", "purpose": "drug_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(DRUG_INDUCED_LIVER_INJURY)", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "DRUG_EXPOSURE", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_JAUN_007", "text": "Have you had any recent needle sharing, unprotected sex, or blood transfusion?", "purpose": "hepatitis_exposure", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(HEPATITIS_B)", "if_no_action": "CONTINUE", "sequence_order": 7, "tests_symptom_code": "HEPATITIS_RISK", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

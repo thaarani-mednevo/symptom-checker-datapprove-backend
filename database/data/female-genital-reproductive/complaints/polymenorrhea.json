@@ -1,0 +1,17 @@
+{
+  "id": "FEMALE-GENITAL-REPRODUCTIVE_COMP_FGR_010",
+  "code": "POLYMENORRHEA",
+  "name": "Polymenorrhea",
+  "module": "female-genital-reproductive",
+  "body_system": "female-genital-reproductive",
+  "category": "complaint",
+  "description": "Polymenorrhea, also known as frequent periods, frequent menstruation, or frequent menstrual bleeding, is a menstrual disorder in which menstrual cycles are shorter than 21 days in length and hence where menstruation occurs more frequently than usual. Cycles are regular and menstrual flow is normal in the condition.",
+  "hpo_codes": [],
+  "snomed_code": "52754008",
+  "snomed_verified_name": "Polymenorrhea",
+  "icd10_code": "N92.0",
+  "icd10_validated": true,
+  "icd10_official_description": "Excessive and frequent menstruation with regular cycle",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

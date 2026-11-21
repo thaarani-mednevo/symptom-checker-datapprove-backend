@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "ACUTE_MONOARTHRITIS",
+    "complaint_name":  "Acute monoarthritis",
+    "module":  "musculoskeletal",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_AM_001",
+                          "text":  "Which joint is affected and how quickly did the pain and swelling develop?",
+                          "purpose":  "onset",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "MONOARTHRITIS_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AM_002",
+                          "text":  "Is the joint hot, red, and extremely tender to touch?",
+                          "purpose":  "septic",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SEPTIC_ARTHRITIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AM_003",
+                          "text":  "Do you have a fever or chills?",
+                          "purpose":  "infection",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(INFECTIOUS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "FEBRILE_ARTHRITIS",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_AM_004",
+                          "text":  "Have you had similar episodes before, or a diagnosis of gout?",
+                          "purpose":  "history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "GOUT_HISTORY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_AM_005",
+                          "text":  "Is it the big toe, and did it come on overnight?",
+                          "purpose":  "podagra",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PODAGRA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

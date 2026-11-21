@@ -1,0 +1,101 @@
+{
+  "complaint_code": "HAEMOPTYSIS_ONCOLOGY",
+  "complaint_name": "Haemoptysis (Oncology)",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_HAEMOPT_001",
+      "text": "How long have you been coughing up blood, and how would you describe the amount — streaks only, or frank blood?",
+      "purpose": "Characterise onset and volume; massive haemoptysis (>200 mL/24 h) requires immediate escalation",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Blood-streaked sputum, less than 1 week",
+        "Blood-streaked sputum, more than 1 week",
+        "Frank red blood, small volume (<50 mL/episode)",
+        "Frank red blood, large volume (>50 mL/episode)",
+        "Clots or tissue in sputum"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "HAEMOPTYSIS_CHARACTER_VOLUME",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_002",
+      "text": "Are you currently coughing up large amounts of blood (more than a few tablespoons)?",
+      "purpose": "Massive haemoptysis is a life-threatening emergency requiring immediate escalation",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "MASSIVE_HAEMOPTYSIS",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_003",
+      "text": "Do you have a history of significant smoking (more than 10 pack-years) or exposure to asbestos or radon?",
+      "purpose": "Smoking and asbestos are major risk factors for lung malignancy in the context of haemoptysis",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(LUNG_MALIGNANCY_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "LUNG_CANCER_RISK_FACTORS",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_004",
+      "text": "Have you experienced significant unintentional weight loss, fatigue, or decreased appetite over the past few months?",
+      "purpose": "Constitutional symptoms alongside haemoptysis increase likelihood of lung malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "CONSTITUTIONAL_SYMPTOMS_ASSOCIATED",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_005",
+      "text": "Do you have a persistent new cough or a change in your usual cough pattern lasting more than 3 weeks?",
+      "purpose": "Persistent cough change is a key lung cancer symptom alongside haemoptysis",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "PERSISTENT_COUGH_CHANGE",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_006",
+      "text": "Have you had any recent chest infections, confirmed tuberculosis exposure, or known bronchiectasis?",
+      "purpose": "Identify common benign causes of haemoptysis that can lower oncology suspicion",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(RESPIRATORY_INFECTION_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "RESPIRATORY_INFECTION_CAUSE",
+      "yes_weight": -2,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_HAEMOPT_007",
+      "text": "Have you noticed hoarseness of voice, difficulty swallowing, or new facial swelling?",
+      "purpose": "Hoarseness (recurrent laryngeal nerve) and SVC obstruction signs suggest mediastinal involvement",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "MEDIASTINAL_COMPRESSION_SIGNS",
+      "yes_weight": 4,
+      "no_weight": -1
+    }
+  ]
+}

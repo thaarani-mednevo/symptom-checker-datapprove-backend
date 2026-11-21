@@ -1,0 +1,103 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_019",
+    "code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER",
+    "name":  "Heat fatigue, transient, initial encounter",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A brief episode of fatigue and malaise precipitated by excessive heat exposure, resolving with rest and hydration.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ALTERED_MENTAL_STATUS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Confusion, lethargy, disorientation, or loss of consciousness suggesting progression to heat stroke."
+                      },
+                      {
+                          "code":  "RF_HIGH_CORE_BODY_TEMPERATURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Core body temperature exceeding 104°F (40°C) indicating severe heat illness."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_1",
+                          "text":  "Are you experiencing any confusion, dizziness, or fainting?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_2",
+                          "text":  "Have you been exposed to high environmental temperatures or strenuous physical activity recently?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_3",
+                          "text":  "Are you experiencing persistent vomiting that prevents you from keeping fluids down?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HEAT_FATIGUE_TRANSIENT_SUBSEQUENT_ENCOUNTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Represents a follow-up visit for previously diagnosed heat fatigue rather than a new initial presentation."
+                          },
+                          {
+                              "disease_code":  "HYPOVOLEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by significant intravascular volume depletion and hemodynamic instability independent of ambient temperature exposure."
+                          },
+                          {
+                              "disease_code":  "DEHYDRATION_OF_NEWBORN",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents specifically in neonates with inadequate fluid intake or excessive loss, unrelated to environmental heat stress."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "T67.6XXA",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Heat fatigue, transient, initial encounter",
+    "evidence_ids":  [
+                         "EVID_HEAT_FATIGUE_TRANSIENT_INITIAL_ENCOUNTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ENT_COMP_ENT_002",
+  "code": "EAR_PAIN",
+  "name": "Ear pain",
+  "module": "ent",
+  "body_system": "ent",
+  "category": "complaint",
+  "description": "Ear pain, also known as earache or otalgia, is pain in the ear. Primary ear pain is pain that originates from the ear.",
+  "hpo_codes": [],
+  "snomed_code": "301354004",
+  "snomed_verified_name": "Pain of ear",
+  "icd10_code": "H92.09",
+  "icd10_validated": true,
+  "icd10_official_description": "Otalgia, unspecified ear",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

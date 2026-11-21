@@ -1,0 +1,109 @@
+﻿{
+    "id":  "ENT_DIS_ENT_009",
+    "code":  "ACUTE_OTITIS_MEDIA",
+    "name":  "Acute otitis media",
+    "module":  "ent",
+    "category":  "disease",
+    "description":  "Otitis media is a group of inflammatory diseases of the middle ear. One of the two main types is acute otitis media (AOM), an infection of rapid onset that usually presents with ear pain.",
+    "complaints":  [
+                       {
+                           "code":  "EAR_PAIN",
+                           "relationship":  "common",
+                           "priority":  ""
+                       },
+                       {
+                           "code":  "EAR_DISCHARGE",
+                           "relationship":  "occasional",
+                           "priority":  ""
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "EAR_PAIN",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "HEARING_LOSS",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "EAR_FULLNESS",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "YOUNG_CHILDREN",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "DAYCARE_ATTENDANCE",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "BOTTLE_FEEDING",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_MASTOIDITIS",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "POSTAURICULAR_SWELLING",
+                          "condition":  "Swelling and redness behind the ear"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_POSTAURICULAR_SWELLING",
+                          "text":  "Do you have any swelling or redness directly behind your ear?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ACUTE_OTITIS_MEDIA_SYMPTOM_1",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "3110003",
+    "snomed_verified_name":  "Acute otitis media",
+    "icd10_code":  "H66.90",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Otitis media, unspecified, unspecified ear",
+    "evidence_ids":  [
+                         "EVID_ACUTE_OTITIS_MEDIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

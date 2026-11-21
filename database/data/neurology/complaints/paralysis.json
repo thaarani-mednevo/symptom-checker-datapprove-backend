@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_002",
+  "code": "PARALYSIS",
+  "name": "Paralysis",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Paralysis is a loss of motor function in one or more muscles. Paralysis can also be accompanied by a loss of feeling in the affected area if there is sensory damage.",
+  "hpo_codes": [],
+  "snomed_code": "44695005",
+  "snomed_verified_name": "Paralysis",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

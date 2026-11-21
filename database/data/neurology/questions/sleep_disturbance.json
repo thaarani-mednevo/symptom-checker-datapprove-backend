@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "SLEEP_DISTURBANCE",
+    "complaint_name":  "Sleep disturbance",
+    "module":  "neurology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_SLEEP_001",
+                          "text":  "Is it difficulty falling asleep, staying asleep, early waking, or excessive daytime sleepiness?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SLEEP_DISTURBANCE_TYPE",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SLEEP_002",
+                          "text":  "How long has it been present?",
+                          "purpose":  "duration",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SLEEP_DISTURBANCE_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_SLEEP_003",
+                          "text":  "Do you snore loudly, gasp, or stop breathing during sleep?",
+                          "purpose":  "osa",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(SLEEP_APNOEA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OSA_SYMPTOMS",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SLEEP_004",
+                          "text":  "Do you have cataplexy (sudden muscle weakness with emotion) or sleep paralysis?",
+                          "purpose":  "narcolepsy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "NARCOLEPSY_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SLEEP_005",
+                          "text":  "Is there low mood, anxiety, or stress?",
+                          "purpose":  "psychiatric",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PSYCHIATRIC_WITH_SLEEP",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ]
+}

@@ -1,0 +1,128 @@
+question_code,text,answer_type,if_yes_action,if_no_action,source_status
+Q_HAVE_YOU_NOTICED_ANY_MUSCLE_TWITCHING_OR,[LLM DRAFT] Have you noticed any muscle twitching or cramps in your arms or legs?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_DIFFICULTY_SPEAKING_OR_SLURR,[LLM DRAFT] Do you have difficulty speaking or slurring your words?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_EXPERIENCED_TROUBLE_SWALLOWING,[LLM DRAFT] Have you experienced trouble swallowing food or liquids?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_A_LARGE,"[LLM DRAFT] Do you have swelling or pain in a large joint (like knee, ankle, or wrist) that has lasted more than a week?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOU_NOTICE_A_RED_EXPANDING_RASH_LI,"[LLM DRAFT] Did you notice a red, expanding rash (like a bull's-eye) on your skin in the past month?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_BEEN_BITTEN_BY_A_TICK_OR_VISITE,[LLM DRAFT] Have you been bitten by a tick or visited a wooded area in the last 6 months?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_NUMBNESS_OR_TINGLING_IN_YOUR,"[LLM DRAFT] Do you feel numbness or tingling in your thumb, index, or middle finger?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_WEAKNESS_OR_TROUBLE_GRIPPING,[LLM DRAFT] Do you have weakness or trouble gripping objects?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_EXPERIENCE_PAIN_OR_NUMBNESS_THAT,[LLM DRAFT] Do you experience pain or numbness that wakes you up at night?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_YOU_ARE_URINATING_MORE_OFT,"[LLM DRAFT] Do you notice you are urinating more often than usual, especially at night?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_EXPERIENCE_MUSCLE_CRAMPS_OR_WEAKN,[LLM DRAFT] Do you experience muscle cramps or weakness that worsens after activity?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_DIZZY_OR_FAINT_WHEN_STANDING,[LLM DRAFT] Do you feel dizzy or faint when standing up quickly?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_BIG_TOE_SUDDENLY_VERY_PAINFUL_AN,[LLM DRAFT] Is your big toe suddenly very painful and swollen?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_A_FEVER_OR_CHILLS_ALONG_WITH,[LLM DRAFT] Do you have a fever or chills along with the joint pain?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAS_THE_PAIN_STARTED_WITHIN_THE_LAST_24,[LLM DRAFT] Has the pain started within the last 24 hours?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_LEFT_ELBOW_SUDDENLY_VERY_PAINFUL,[LLM DRAFT] Is your left elbow suddenly very painful and swollen?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_A_HISTORY_OF_GOUT_ATTACKS_IN,[LLM DRAFT] Do you have a history of gout attacks in other joints?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_LEFT_ELBOW_RED_AND_WARM_TO_THE_T,[LLM DRAFT] Is your left elbow red and warm to the touch?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOUR_LEFT_SHOULDER_PAIN_START_SUDDEN,[LLM DRAFT] Did your left shoulder pain start suddenly and feel very intense?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_LEFT_SHOULDER_SWOLLEN_RED_OR_W,"[LLM DRAFT] Is your left shoulder swollen, red, or warm to touch?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_EVER_HAD_GOUT_ATTACKS_IN_OTHER,[LLM DRAFT] Have you ever had gout attacks in other joints before?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DID_THE_PAIN_IN_YOUR_RIGHT_ELBOW_START_S,[LLM DRAFT] Did the pain in your right elbow start suddenly and become very severe overnight?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_RIGHT_ELBOW_SWOLLEN_RED_AND_WA,"[LLM DRAFT] Is your right elbow swollen, red, and warm to the touch?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_MOVING_YOUR_RIGHT_EL,[LLM DRAFT] Do you have trouble moving your right elbow because of pain?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_RIGHT_SHOULDER_SUDDENLY_VERY_PAI,[LLM DRAFT] Is your right shoulder suddenly very painful and swollen?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_A_HISTORY_OF_GOUT_ATTACKS_IN_IDIOPATHIC_GOUT_RIGHT_SHOULDER,[LLM DRAFT] Do you have a history of gout attacks in other joints?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_IS_THERE_REDNESS_AND_WARMTH_OVER_YOUR_RI,[LLM DRAFT] Is there redness and warmth over your right shoulder?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOUR_SHOULDER_PAIN_START_SUDDENLY_AN,[LLM DRAFT] Did your shoulder pain start suddenly and feel very intense within the last 24 hours?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_IS_YOUR_SHOULDER_SWOLLEN_RED_OR_WARM_T,"[LLM DRAFT] Is your shoulder swollen, red, or warm to the touch?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_MOVING_YOUR_SHOULDER,[LLM DRAFT] Do you have trouble moving your shoulder because of pain?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DID_THE_PAIN_IN_YOUR_JOINT_START_SUDDENL,"[LLM DRAFT] Did the pain in your joint start suddenly and feel like a throbbing, intense ache?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_IS_THE_AFFECTED_JOINT_SWOLLEN_RED_AND,"[LLM DRAFT] Is the affected joint swollen, red, and warm to the touch?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_EXPERIENCED_SIMILAR_JOINT_PAIN,[LLM DRAFT] Have you experienced similar joint pain episodes before?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_BACK_PAIN_THA,"[LLM DRAFT] Do you have sudden, severe back pain that started within the last 24 hours?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_SWELLING_OR_REDNESS_OVER_Y,[LLM DRAFT] Do you notice swelling or redness over your spine?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_HAD_GOUT_ATTACKS_IN_THE_PAST?,[LLM DRAFT] Have you had gout attacks in the past?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_STIFFNESS_IN_YOUR_LOWER_BACK,[LLM DRAFT] Do you have stiffness in your lower back that lasts more than 30 minutes after waking up?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_PAIN_IN_YOUR_HIPS_OR_BUTTOCK,[LLM DRAFT] Do you feel pain in your hips or buttocks that gets worse at night or improves when you move?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_NOTICED_SWELLING_OR_REDNESS_IN,[LLM DRAFT] Have you noticed swelling or redness in any of your joints?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_MORE_THA,[LLM DRAFT] Do you have swelling or pain in more than one joint that has lasted for at least 2 weeks?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_STIFFNESS_IN_YOUR_JOINTS_FOR,[LLM DRAFT] Do you feel stiffness in your joints for more than 30 minutes after waking up?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SWELLING_OR_PAIN_IN_YOUR_KNE,"[LLM DRAFT] Do you have swelling or pain in your knees, ankles, or wrists?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOU_BREAK_A_BONE_AFTER_A_MINOR_FALL,[LLM DRAFT] Did you break a bone after a minor fall or no injury?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_A_SUDDEN_SHARP_PAIN_IN_A_SI,"[LLM DRAFT] Do you feel a sudden, sharp pain in a single bone that feels like a fracture?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_A_BONE_THAT_FEELS_SOFTER_O,[LLM DRAFT] Do you notice a bone that feels softer or has a visible depression?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_SHARP_CHEST_PAIN_THAT_GETS_W,[LLM DRAFT] Do you feel sharp chest pain that gets worse when you take a deep breath or cough?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_PAIN_WHEN_YOU_PRESS_ON_THE_A,[LLM DRAFT] Do you have pain when you press on the area around your ribs?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_SHORTNESS_OF_BREATH_OR_TRO,[LLM DRAFT] Do you notice shortness of breath or trouble breathing?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_SHARP_CHEST_PAIN_THAT_GETS_W_MULTIPLE_FRACTURES_OF_RIBS_BILATERAL_SEQUELA,[LLM DRAFT] Do you feel sharp chest pain that gets worse when you breathe deeply or cough?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_BREATHING_OR_FEEL_SH,[LLM DRAFT] Do you have trouble breathing or feel short of breath?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_PAIN_WHEN_YOU_MOVE_YOUR_UPPE,[LLM DRAFT] Do you have pain when you move your upper body or twist your torso?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_STILL_FEEL_SHARP_PAIN_IN_YOUR_LEF,[LLM DRAFT] Do you still feel sharp pain in your left chest when you breathe deeply or cough?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_BREATHING_OR_FEEL_SH_MULTIPLE_FRACTURES_OF_RIBS_LEFT_SIDE_SEQUELA,[LLM DRAFT] Do you have trouble breathing or feel short of breath when you try to take a deep breath?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_ANY_SWELLING_OR_BRUISING_O,[LLM DRAFT] Do you notice any swelling or bruising on the left side of your chest?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_SHARP_PAIN_IN_YOUR_RIGHT_CHE,[LLM DRAFT] Do you feel sharp pain in your right chest when you take a deep breath or cough?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_BREATHING_OR_FEEL_SH_MULTIPLE_FRACTURES_OF_RIBS_RIGHT_SIDE_SEQUELA,[LLM DRAFT] Do you have trouble breathing or feel short of breath when lying flat?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOU_RECENTLY_FALL_OR_HAVE_A_CAR_ACCI,[LLM DRAFT] Did you recently fall or have a car accident that caused chest injury?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_STILL_FEEL_SHARP_OR_ACHING_PAIN_I,[LLM DRAFT] Do you still feel sharp or aching pain in your chest when you breathe deeply or cough?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_ANY_BULGING_OR_INDENTATION,[LLM DRAFT] Do you notice any bulging or indentation on your chest wall?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_SHORT_OF_BREATH_OR_HAVE_TROU,[LLM DRAFT] Do you feel short of breath or have trouble breathing when walking or climbing stairs?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_SUDDENLY_LOST_STRENGTH_IN_ALL_Y,[LLM DRAFT] Have you suddenly lost strength in all your limbs or felt very weak all over?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_BREATHING_OR_FEEL_SH_MUSCLE_WEAKNESS_GENERALIZED,[LLM DRAFT] Do you have trouble breathing or feel short of breath when you walk or climb stairs?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOUR_MUSCLES_FEEL_WEAK_AFTER_NORMAL_A,[LLM DRAFT] Do your muscles feel weak after normal activity like walking or climbing stairs?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_HAD_BONE_FRACTURES_THAT_HEALED,[LLM DRAFT] Have you had bone fractures that healed poorly or required medical attention?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_A_BLUISH_TINT_IN_YOUR_EYES,[LLM DRAFT] Do you notice a bluish tint in your eyes or have you had eye problems?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_A_HISTORY_OF_HEARING_LOSS_OR,[LLM DRAFT] Do you have a history of hearing loss or ear problems?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_URINATE_MORE_THAN_8_TIMES_A_DAY?,[LLM DRAFT] Do you urinate more than 8 times a day?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_FEEL_THIRSTY_ALL_THE_TIME?,[LLM DRAFT] Do you feel thirsty all the time?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_BONE_PAIN_OR_EASY_FRACTURES?,[LLM DRAFT] Do you have bone pain or easy fractures?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_NUMBNESS_OR_TINGLING_IN_YOUR,[LLM DRAFT] Do you have numbness or tingling in your left hand?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_NEW_OR_WORSENING_PAIN_OR_SWE,[LLM DRAFT] Do you have new or worsening pain or swelling in your left wrist?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_DIFFICULTY_GRIPPING_OBJECTS,[LLM DRAFT] Do you have difficulty gripping objects with your left hand?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SEVERE_PAIN_IN_YOUR_RIGHT_WR,[LLM DRAFT] Do you have severe pain in your right wrist that limits your ability to move it?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_SWELLING_OR_A_VISIBLE_DEFO,[LLM DRAFT] Do you notice swelling or a visible deformity in your right wrist?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_PERSISTENT_PAIN_IN_YOUR_RIGH,[LLM DRAFT] Do you have persistent pain in your right wrist when you use it?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_STILL_FEEL_PAIN_NEAR_THE_LOWER_PA,[LLM DRAFT] Do you still feel pain near the lower part of your radius?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_TROUBLE_BENDING_OR_STRAIGHTE,[LLM DRAFT] Do you have trouble bending or straightening your wrist?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_NOTICE_SWELLING_OR_A_VISIBLE_DEFO_OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA,[LLM DRAFT] Do you notice swelling or a visible deformity at the wrist?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_HAD_A_SORE_THROAT_OR_STREP_INFE,[LLM DRAFT] Have you had a sore throat or strep infection in the last 4 weeks?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_ARE_YOU_EXPERIENCING_SWELLING_OR_PAIN_IN,[LLM DRAFT] Are you experiencing swelling or pain in more than one joint at the same time?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_A_FEVER_HIGHER_THAN_101°F_3,[LLM DRAFT] Do you have a fever higher than 101°F (38.3°C) along with joint pain?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_PAIN_IN_MORE,"[LLM DRAFT] Do you have sudden, severe pain in more than one joint?",yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_HAD_A_FEVER_OR_CHILLS_IN_THE_LA,[LLM DRAFT] Have you had a fever or chills in the last few days?,yes_no,RED_FLAG,CONTINUE_PATHWAY,clinician_approved
+Q_DID_YOU_HAVE_A_CHEST_INFECTION_LIKE_PNE,[LLM DRAFT] Did you have a chest infection (like pneumonia) in the past month?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,clinician_approved
+Q_HAVE_YOU_RECENTLY_BEEN_DIAGNOSED_WITH_A,"[LLM DRAFT] Have you recently been diagnosed with a bacterial infection outside of your joints, such as a skin, gut, or urinary infection?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SEVERE_PAIN_SWELLING_AND_R,"[LLM DRAFT] Do you have severe pain, swelling, and redness in multiple joints that makes it impossible to move them?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_RECENTLY_HAD_A_FEVER_ALONG_WITH,[LLM DRAFT] Have you recently had a fever along with multiple painful or swollen joints?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_PAIN_SWELLING_OR,"[LLM DRAFT] Are you experiencing pain, swelling, or stiffness in multiple joints simultaneously?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_JOINT_PAIN_AND_SWELLING_COME_ON,[LLM DRAFT] Did your joint pain and swelling come on suddenly and is it accompanied by a high fever?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_NEW_SEVERE_PAIN_AND_STIFFNE,"[LLM DRAFT] Do you have new, severe pain and stiffness in your shoulders and hips that is worse in the morning?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THIS_SHOULDER_OR_HIP_PAIN_AND_STIFFN,[LLM DRAFT] Did this shoulder or hip pain and stiffness come on suddenly over a few days or weeks?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_ALSO_NOTICED_SUDDEN_SEVERE_NEW,"[LLM DRAFT] Have you also noticed sudden, severe new headaches, scalp tenderness, or any changes in your vision along with your stiffness?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_SUDDEN_OR_SEVERE_WEAKNE,"[LLM DRAFT] Have you noticed sudden or severe weakness in your upper arms or thighs that makes it difficult to stand up, climb stairs, or lift objects?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_RECENT_DIFFICULTY_S,"[LLM DRAFT] Have you experienced recent difficulty swallowing food or liquids, or noticed unexplained shortness of breath?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOUR_FINGERS_OR_TOES_SEVERELY_SHORTE,"[LLM DRAFT] Are your fingers or toes severely shortened, deformed, or telescoped due to bone collapse?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SEVERE_RAPIDLY_WORSENING_PA,"[LLM DRAFT] Do you have severe, rapidly worsening pain and visible shortening or severe deformity in multiple fingers or toes?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_PERSISTENT_PAIN_SW,"[LLM DRAFT] Are you experiencing persistent pain, swelling, or stiffness in multiple joints, especially in your hands or feet, that is worse in the morning?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_SUDDEN_SEVERE_JOINT_PAIN_AC,"[LLM DRAFT] Do you have sudden, severe joint pain accompanied by a high fever and chills?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_HAVE_LOWER_BACK_PAIN_THAT_DOES_NO,[LLM DRAFT] Do you have lower back pain that does not radiate down into your legs?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_NOTICED_ANY_SUDDEN_LOSS_OF_BOWE,[LLM DRAFT] Have you noticed any sudden loss of bowel or bladder control along with your back numbness or weakness?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SEVERE_PAIN_SWELLI,"[LLM DRAFT] Are you experiencing severe pain, swelling, and redness in more than one joint along with a high fever?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THESE_JOINT_SYMPTOMS_START_SUDDENLY,[LLM DRAFT] Did these joint symptoms start suddenly over the course of a few hours or days?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_DIFFICULTY_OR_LIMIT,[LLM DRAFT] Are you experiencing difficulty or limitation when trying to bend or straighten your left elbow?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THE_STIFFNESS_IN_YOUR_LEFT_ELBOW_STA,[LLM DRAFT] Did the stiffness in your left elbow start suddenly after a severe injury or trauma?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SUDDEN_SEVERE_PAIN,"[LLM DRAFT] Are you experiencing sudden, severe pain and a complete inability to move your left shoulder following a serious injury?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_LEFT_SHOULDER_STIFF_AND_DIFFICUL,"[LLM DRAFT] Is your left shoulder stiff and difficult to move, especially when trying to reach overhead or behind your back?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_PERSISTENT_STIFFNES,[LLM DRAFT] Are you experiencing persistent stiffness in your right elbow that makes it difficult to fully bend or straighten your arm?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THE_STIFFNESS_IN_YOUR_RIGHT_ELBOW_ST,"[LLM DRAFT] Did the stiffness in your right elbow start suddenly after a recent injury, fall, or trauma to the arm?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_THE_STIFFNESS_IN_YOUR_RIGHT_ELBOW_ACC,"[LLM DRAFT] Is the stiffness in your right elbow accompanied by severe, unrelenting pain, high fever, or significant redness and swelling?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SEVERE_CONSTANT_PA,"[LLM DRAFT] Are you experiencing severe, constant pain in your right shoulder that keeps you awake at night or does not improve with rest?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_RIGHT_SHOULDER_COMPLETELY_LOCKED,[LLM DRAFT] Is your right shoulder completely locked and unable to move in any direction?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_RIGHT_SHOULDER_STIFFNESS_START,[LLM DRAFT] Did your right shoulder stiffness start suddenly right after a severe injury or fall?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_RIGHT_WRIST_STIFF_MAKING_IT_DIF,"[LLM DRAFT] Is your right wrist stiff, making it difficult to move or bend normally?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_YOUR_RIGHT_WRIST_STIFFNESS_START_SUD,"[LLM DRAFT] Did your right wrist stiffness start suddenly after an injury, accident, or fall?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_RIGHT_WRIST_CURRENTLY_RED_HOT_T,"[LLM DRAFT] Is your right wrist currently red, hot to the touch, or severely swollen along with the stiffness?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_IS_YOUR_ELBOW_COMPLETELY_STUCK_OR_UNABLE,[LLM DRAFT] Is your elbow completely stuck or unable to bend and straighten normally?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THIS_ELBOW_STIFFNESS_START_SUDDENLY,"[LLM DRAFT] Did this elbow stiffness start suddenly after a severe injury, fall, or trauma?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_SUDDEN_JOINT_STIFFN,"[LLM DRAFT] Are you experiencing sudden joint stiffness accompanied by a high fever, chills, or redness around the joint?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_THE_STIFFNESS_IN_YOUR_JOINT_MAKE_IT,[LLM DRAFT] Does the stiffness in your joint make it difficult or impossible to move normally during your daily activities?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_ARE_YOU_EXPERIENCING_A_SIGNIFICANT_LOSS,[LLM DRAFT] Are you experiencing a significant loss of movement or tightness in one of your shoulders that makes it hard to lift your arm or reach behind your back?,yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DID_THIS_SHOULDER_STIFFNESS_AND_PAIN_STA,"[LLM DRAFT] Did this shoulder stiffness and pain start suddenly immediately after a severe shoulder injury, fall, or accident?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_DEVELOPED_A_NEW_UNEXPLAINED_RA,"[LLM DRAFT] Have you developed a new, unexplained rash on your cheeks and bridge of your nose that worsens in the sun?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DO_YOU_EXPERIENCE_PERSISTENT_PAIN_AND_SW,"[LLM DRAFT] Do you experience persistent pain and swelling in multiple joints, especially in your hands and wrists?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_HAVE_YOU_EXPERIENCED_SEVERE_UNEXPLAINED,"[LLM DRAFT] Have you experienced severe, unexplained fatigue along with ongoing low-grade fevers?",yes_no,CONTINUE_PATHWAY,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_WAS_THE_BABY_BORN_TO_A_MOTHER_WHO_HAS_MY,[LLM DRAFT] Was the baby born to a mother who has myasthenia gravis?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_THE_NEWBORN_HAVE_SIGNIFICANT_MUSCLE,[LLM DRAFT] Does the newborn have significant muscle weakness or a weak cry?,yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified
+Q_DOES_THE_BABY_HAVE_DIFFICULTY_FEEDING_S,"[LLM DRAFT] Does the baby have difficulty feeding, sucking, or swallowing?",yes_no,RED_FLAG,CONTINUE_PATHWAY,ai_drafted_unverified

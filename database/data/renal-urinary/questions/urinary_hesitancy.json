@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "URINARY_HESITANCY",
+    "complaint_name":  "Urinary hesitancy",
+    "module":  "renal-urinary",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_UH_001",
+                          "text":  "How long does it take to start urinating?",
+                          "purpose":  "severity",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HESITANCY_DURATION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_UH_002",
+                          "text":  "Are you male and over 50?",
+                          "purpose":  "bph",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "GOTO_PATHWAY(LOWER_URINARY_TRACT_SYMPTOMS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "BPH_WITH_HESITANCY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_UH_003",
+                          "text":  "Is there a weak stream, dribbling, or feeling of incomplete emptying?",
+                          "purpose":  "associated",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "LUTS_WITH_HESITANCY",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_UH_004",
+                          "text":  "Is there blood in the urine?",
+                          "purpose":  "haematuria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PAINLESS_HAEMATURIA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "HAEMATURIA_WITH_HESITANCY",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

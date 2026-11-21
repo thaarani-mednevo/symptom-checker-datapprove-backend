@@ -1,0 +1,222 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_024",
+    "code":  "APLASTIC_ANEMIA_UNSPECIFIED",
+    "name":  "Aplastic anemia, unspecified",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Aplastic anemia (AA) is a severe hematologic condition in which the body fails to make blood cells in sufficient numbers. Normally, blood cells are produced in the bone marrow by stem cells that reside there, but patients with aplastic anemia have a deficiency of all blood cell types: red blood cells, white blood cells, and platelets.",
+    "complaints":  [
+                       {
+                           "code":  "ANEMIA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "RECURRENT_INFECTIONS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PALE_SKIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FAST_HEART_RATE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "RASH",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "DIZZINESS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEADACHE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "FREQUENT_OR_PROLONGED_INFECTIONS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "NOSEBLEEDS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "BLEEDING_GUMS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PROLONGED_BLEEDING_FROM_CUTS",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "UNEXPLAINED_OR_EASY_BRUISING",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HEMATOMA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "SMOKING",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "IONIZING_RADIATION",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "SOME_CHEMICALS",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "PRIOR_CHEMOTHERAPY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "DOWN_SYNDROME",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_THROMBOCYTOPENIA_LEADING_TO_LIFE_THREATENING_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Spontaneous or uncontrolled bleeding such as intracranial hemorrhage, severe epistaxis, or massive gastrointestinal bleeding"
+                      },
+                      {
+                          "code":  "RF_SEVERE_NEUTROPENIA_COMPLICATED_BY_OVERWHELMING_SEPSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "RECURRENT_INFECTIONS",
+                          "condition":  "[LLM DRAFT] High fever, rigors, and signs of septic shock in a profoundly immunocompromised patient"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNUSUAL_OR_SPONTANE",
+                          "text":  "[LLM DRAFT] Have you experienced unusual or spontaneous bruising, tiny red dots on your skin, or bleeding gums and nosebleeds that are hard to stop?",
+                          "purpose":  "Screen for thrombocytopenia bleeding signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "APLASTIC_ANEMIA_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_FEELING_UNUSUALLY_WEAK_DI",
+                          "text":  "[LLM DRAFT] Have you been feeling unusually weak, dizzy, short of breath, or fatigued during your normal daily activities?",
+                          "purpose":  "Screen for anemia symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "APLASTIC_ANEMIA_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_REPEATED_OR_UNEXPLAINED_FEV",
+                          "text":  "[LLM DRAFT] Have you had repeated or unexplained fevers, infections, or sore throats recently?",
+                          "purpose":  "Screen for neutropenia infection risks",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "APLASTIC_ANEMIA_UNSPECIFIED_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "IDIOPATHIC_APLASTIC_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Confirmed absence of secondary causes such as toxins, drugs, or viral infections."
+                          },
+                          {
+                              "disease_code":  "FANCONI_ANEMIA",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of congenital physical anomalies and genetic mutation testing."
+                          },
+                          {
+                              "disease_code":  "REFRACTORY_ANEMIA_UNSPECIFIED",
+                              "distinguishing_feature":  "[LLM DRAFT] Bone marrow typically shows cellular dysplasia rather than profound hypocellularity."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D61.9",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Aplastic anemia, unspecified",
+    "evidence_ids":  [
+                         "EVID_APLASTIC_ANEMIA_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

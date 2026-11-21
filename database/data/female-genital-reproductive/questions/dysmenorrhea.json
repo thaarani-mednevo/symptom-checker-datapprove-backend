@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "DYSMENORRHEA",
+    "complaint_name":  "Dysmenorrhea",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_DYSM_001",
+                          "text":  "Has the pain been present since your periods started, or is it new?",
+                          "purpose":  "type",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_VS_SECONDARY_DYSMENORRHEA",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_DYSM_002",
+                          "text":  "Does it respond to NSAIDs or the combined pill?",
+                          "purpose":  "treatment_response",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DYSMENORRHEA_TREATMENT_RESPONSE",
+                          "yes_weight":  -1,
+                          "no_weight":  2
+                      },
+                      {
+                          "code":  "Q_CMP_DYSM_003",
+                          "text":  "Is the pain getting worse over months?",
+                          "purpose":  "progression",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SECONDARY_DYSMENORRHEA)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PROGRESSIVE_DYSMENORRHEA",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_DYSM_004",
+                          "text":  "Is there pain during sex or bleeding between periods?",
+                          "purpose":  "endometriosis",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_ENDOMETRIOSIS)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ENDOMETRIOSIS_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

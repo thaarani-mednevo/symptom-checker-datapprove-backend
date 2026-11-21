@@ -1,0 +1,14 @@
+{
+  "complaint_code": "PND",
+  "complaint_name": "Paroxysmal nocturnal dyspnea",
+  "module": "cardiology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_PND_001", "text": "How many hours after going to sleep does the breathlessness typically wake you?", "purpose": "timing", "answer_type": "multiple_choice", "options": ["Within 1 hour", "1–3 hours after falling asleep", "More than 3 hours after falling asleep"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "PND_TIMING", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_PND_002", "text": "Does it help to sit up or stand at the window for a few minutes?", "purpose": "positional_relief", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "PND_POSITIONAL_RELIEF", "yes_weight": 3, "no_weight": 0 },
+    { "code": "Q_CMP_PND_003", "text": "How often per week does this happen?", "purpose": "frequency", "answer_type": "multiple_choice", "options": ["Rarely (less than once a week)", "1–2 times per week", "3–5 times per week", "Every night"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "PND_FREQUENCY", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_PND_004", "text": "Do you also need extra pillows to sleep, or have ankle swelling?", "purpose": "associated_hf_features", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "HEART_FAILURE_FEATURES", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

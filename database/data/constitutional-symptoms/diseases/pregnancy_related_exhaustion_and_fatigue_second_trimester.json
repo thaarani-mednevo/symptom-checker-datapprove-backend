@@ -1,0 +1,101 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_023",
+    "code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER",
+    "name":  "Pregnancy related exhaustion and fatigue, second trimester",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "A persistent, generalized fatigue experienced during the second trimester of pregnancy, often accompanied by reduced energy and increased sleepiness.",
+    "complaints":  [
+                       {
+                           "code":  "FATIGUE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "CHRONIC_FATIGUE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "UNKNOWN",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEVERE_SHORTNESS_OF_BREATH",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Sudden onset of dyspnea at rest, potentially indicating pulmonary embolism or severe anemia"
+                      },
+                      {
+                          "code":  "RF_CHEST_PAIN_OR_PALPITATIONS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "New or worsening chest pain, severe palpitations, or dizziness associated with fatigue"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_1",
+                          "text":  "Are you experiencing severe shortness of breath or chest pain along with your fatigue?",
+                          "purpose":  "red_flag_screen",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_SYMPTOM_1",
+                          "yes_weight":  5,
+                          "no_weight":  -2
+                      },
+                      {
+                          "code":  "Q_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_2",
+                          "text":  "Have you noticed any signs of infection, such as fever, chills, or burning during urination?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_FIRST_TRIMESTER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of severe first-trimester nausea and vomiting (hyperemesis gravidarum) rather than the relative mid-pregnancy lull."
+                          },
+                          {
+                              "disease_code":  "MYALGIC_ENCEPHALOMYELITISCHRONIC_FATIGUE_SYNDROME",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of hallmark post-exertional malaise and unrefreshing sleep lasting six months or longer, independent of gestation."
+                          },
+                          {
+                              "disease_code":  "ANOREXIA_NERVOSA_RESTRICTING_TYPE_MODERATE",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of core psychopathology regarding body image distortion and significantly low BMI rather than normal gestational weight gain."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "O26.812",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Pregnancy related exhaustion and fatigue, second trimester",
+    "evidence_ids":  [
+                         "EVID_PREGNANCY_RELATED_EXHAUSTION_AND_FATIGUE_SECOND_TRIMESTER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

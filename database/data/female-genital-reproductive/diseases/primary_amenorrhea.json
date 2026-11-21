@@ -1,0 +1,76 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_026",
+    "code":  "PRIMARY_AMENORRHEA",
+    "name":  "Primary amenorrhea",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Amenorrhea or amenorrhoea is the absence of a menstrual period in a female organism which has reached reproductive age. Physiological states of amenorrhea are most commonly seen during pregnancy and lactation (breastfeeding).",
+    "complaints":  [
+                       {
+                           "code":  "AMENORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_MENARCHE_OCCURRED",
+                          "text":  "Have your periods started yet (menarche)?",
+                          "purpose":  "Confirm menarche has not occurred",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_AMENORRHEA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_BREAST_DEVELOPMENT_STARTED",
+                          "text":  "Has any breast development begun?",
+                          "purpose":  "Assess pubertal development",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "RED_FLAG(RF_NO_PUBERTY_BY_13_15)",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRIMARY_AMENORRHEA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "SECONDARY_AMENORRHEA",
+                              "distinguishing_feature":  "Primary amenorrhea = menstruation never started by age 15 (or 13 with no breast development); secondary amenorrhea = previously menstruating, now absent for 3+ cycles or 6 months"
+                          },
+                          {
+                              "disease_code":  "AMENORRHEA_UNSPECIFIED",
+                              "distinguishing_feature":  "Primary amenorrhea specifically confirms menstruation never occurred, unlike unspecified amenorrhea where primary vs secondary hasn\u0027t been established"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "156035004",
+    "snomed_verified_name":  "Primary amenorrhea",
+    "icd10_code":  "N91.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Primary amenorrhea",
+    "evidence_ids":  [
+                         "EVID_PRIMARY_AMENORRHEA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

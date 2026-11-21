@@ -1,0 +1,91 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_006",
+    "code":  "OTHER_SPECIFIED_NONTOXIC_GOITER",
+    "name":  "Other specified nontoxic goiter",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "A slowly enlarging thyroid gland without evidence of hyperthyroidism or iodine deficiency, often diagnosed after other causes are excluded.",
+    "complaints":  [
+                       {
+                           "code":  "THYROID_SWELLING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_THYROID_SWELLING",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROID_SWELLING",
+                          "condition":  "[LLM DRAFT] Acute, rapidly enlarging nontoxic goiter causing severe respiratory distress, stridor, or tracheal compression."
+                      },
+                      {
+                          "code":  "RF_THYROTOXICOSIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "THYROTOXICOSIS",
+                          "condition":  "[LLM DRAFT] Precipitation of severe thyrotoxic crisis (thyroid storm) with hyperthermia, tachycardia, and altered mental status."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_A_VISIBLE_SWELLING_OR_L",
+                          "text":  "[LLM DRAFT] Have you noticed a visible swelling or lump in the front of your neck?",
+                          "purpose":  "Screen for neck mass",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONTOXIC_GOITER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_ARE_YOU_EXPERIENCING_ANY_DIFFICULTY_WITH_OTHER_SPECIFIED_NONTOXIC_GOITER",
+                          "text":  "[LLM DRAFT] Are you experiencing any difficulty with breathing or swallowing?",
+                          "purpose":  "Screen for airway compromise",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_NONTOXIC_GOITER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "NONTOXIC_DIFFUSE_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Uniform thyroid enlargement without discrete nodularity or specific underlying metabolic defects."
+                          },
+                          {
+                              "disease_code":  "NONTOXIC_MULTINODULAR_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of multiple distinct nodules throughout an enlarged thyroid gland rather than a single or other atypical presentation."
+                          },
+                          {
+                              "disease_code":  "DYSHORMOGENETIC_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Caused by an intrinsic inborn error of thyroid hormone synthesis rather than other specified exogenous or rare nontoxic factors."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E04.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified nontoxic goiter",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_NONTOXIC_GOITER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

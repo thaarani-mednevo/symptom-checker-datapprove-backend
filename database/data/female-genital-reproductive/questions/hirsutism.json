@@ -1,0 +1,58 @@
+﻿{
+    "complaint_code":  "HIRSUTISM",
+    "complaint_name":  "Hirsutism",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_HIR_001",
+                          "text":  "Where is the excess hair — face, chest, abdomen, or thighs?",
+                          "purpose":  "distribution",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "HIRSUTISM_DISTRIBUTION",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HIR_002",
+                          "text":  "How quickly has it developed — over months or years?",
+                          "purpose":  "onset",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HIRSUTISM_ONSET",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HIR_003",
+                          "text":  "Do you have acne, irregular periods, or weight gain?",
+                          "purpose":  "pcos",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PCOS_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HIR_004",
+                          "text":  "Has it developed very rapidly over weeks?",
+                          "purpose":  "rapid",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_RAPID_VIRILIZATION)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "RAPID_VIRILIZATION",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      }
+                  ]
+}

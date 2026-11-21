@@ -1,0 +1,3 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description
+COMP_HB_001,JAUNDICE,Jaundice,hepatobiliary,hepatobiliary,complaint,,18165001,R17,1.0,true,,
+COMP_HB_002,ASCITES,Ascites,hepatobiliary,hepatobiliary,complaint,,389026000,R18.8,1.0,true,,

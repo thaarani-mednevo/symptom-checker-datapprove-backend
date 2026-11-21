@@ -1,0 +1,34 @@
+id,code,name,module,body_system,category,hpo_codes,snomed_code,icd10_code,version,snomed_needs_confirmation,icd10_validated,icd10_official_description,icd10_needs_confirmation
+COMP_NEU_001,NOCTURNAL_ENURESIS,Nocturnal enuresis,neurology,neurology,complaint,,8009008,,1.0,true,,,True
+COMP_NEU_002,PARALYSIS,Paralysis,neurology,neurology,complaint,,44695005,,1.0,true,,,True
+COMP_NEU_003,APHASIA,Aphasia,neurology,neurology,complaint,,87486003,,1.0,true,,,True
+COMP_NEU_004,TASTE_DISTURBANCE,Taste disturbance,neurology,neurology,complaint,,271801002,,1.0,true,,,True
+COMP_NEU_005,DAYTIME_SOMNOLENCE,Daytime somnolence,neurology,neurology,complaint,,141000119100,,1.0,true,,,True
+COMP_NEU_006,PAROXYSMAL_VISUAL_LOSS,Paroxysmal visual loss,neurology,neurology,complaint,,36994005,,1.0,true,,,True
+COMP_NEU_007,DRY_MOUTH,Dry mouth,neurology,neurology,complaint,,87715008,,1.0,true,,,True
+COMP_NEU_008,COGNITIVE_IMPAIRMENT,Cognitive impairment,neurology,neurology,complaint,,386806002,,1.0,true,,,True
+COMP_NEU_009,MEMORY_LOSS,Memory loss,neurology,neurology,complaint,,48167000,,1.0,true,,,True
+COMP_NEU_010,PERSONALITY_CHANGE,Personality change,neurology,neurology,complaint,,102943000,,1.0,true,,,True
+COMP_NEU_011,SLEEP_DISTURBANCE,Sleep disturbance,neurology,neurology,complaint,,44186003,,1.0,true,,,True
+COMP_NEU_012,BOWEL_DYSFUNCTION,Bowel dysfunction,neurology,neurology,complaint,,235594008,,1.0,true,,,True
+COMP_NEU_013,BLADDER_DYSFUNCTION,Bladder dysfunction,neurology,neurology,complaint,,40492006,,1.0,true,,,True
+COMP_NEU_014,NUMBNESS,Numbness,neurology,neurology,complaint,,44077006,,1.0,true,,,True
+COMP_NEU_015,SMELL_DISTURBANCE,Smell disturbance,neurology,neurology,complaint,,112105008,,1.0,true,,,True
+COMP_NEU_016,HEARING_DISTURBANCE,Hearing disturbance,neurology,neurology,complaint,,15188001,,1.0,true,,,True
+COMP_NEU_017,VISUAL_LOSS,Visual loss,neurology,neurology,complaint,,397540003,,1.0,true,,,True
+COMP_NEU_018,VISUAL_DISTURBANCE,Visual disturbance,neurology,neurology,complaint,,63102001,,1.0,true,,,True
+COMP_NEU_019,SPEECH_DISTURBANCE,Speech disturbance,neurology,neurology,complaint,,8011004,,1.0,true,,,True
+COMP_NEU_020,DYSARTHRIA,Dysarthria,neurology,neurology,complaint,,8011004,,1.0,true,,,True
+COMP_NEU_021,ABNORMAL_GAIT,Abnormal gait,neurology,neurology,complaint,,22325002,,1.0,true,,,True
+COMP_NEU_022,ATAXIA,Ataxia,neurology,neurology,complaint,,20262006,,1.0,true,,,True
+COMP_NEU_023,BALANCE_DISTURBANCE,Balance disturbance,neurology,neurology,complaint,,282299006,,1.0,true,,,True
+COMP_NEU_024,ABNORMAL_MOVEMENTS,Abnormal movements,neurology,neurology,complaint,,9748009,,1.0,true,,,True
+COMP_NEU_025,TREMOR,Tremor,neurology,neurology,complaint,,26079004,,1.0,true,,,True
+COMP_NEU_026,SENSORY_DISTURBANCE,Sensory disturbance,neurology,neurology,complaint,,85972008,,1.0,true,,,True
+COMP_NEU_027,TINGLING,Tingling,neurology,neurology,complaint,,62507009,,1.0,true,,,True
+COMP_NEU_028,WEAKNESS,Weakness,neurology,neurology,complaint,,13791008,,1.0,true,,,True
+COMP_NEU_029,SEIZURES,Seizures,neurology,neurology,complaint,,128613002,,1.0,true,,,True
+COMP_NEU_030,FUNNY_TURNS,Funny turns,neurology,neurology,complaint,,271594007,,1.0,true,,,True
+COMP_NEU_031,BLACKOUTS,Blackouts,neurology,neurology,complaint,,271594007,,1.0,true,,,True
+COMP_NEU_032,VERTIGO,Vertigo,neurology,neurology,complaint,,399153001,,1.0,true,,,True
+COMP_NEU_033,DIZZINESS,Dizziness,neurology,neurology,complaint,,404640003,,1.0,true,,,True

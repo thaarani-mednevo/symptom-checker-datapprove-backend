@@ -1,0 +1,74 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_007",
+    "code":  "GONOCOCCAL_CERVICITIS_UNSPECIFIED",
+    "name":  "Gonococcal cervicitis, unspecified",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Cervicitis is inflammation of the uterine cervix. Cervicitis in women has many features in common with urethritis in men and many cases are caused by sexually transmitted infections.",
+    "complaints":  [
+                       {
+                           "code":  "VAGINAL_DISCHARGE",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_PID_SEPSIS",
+                          "trigger_entity_type":  "disease",
+                          "trigger_entity_code":  "GONOCOCCAL_CERVICITIS_UNSPECIFIED",
+                          "condition":  "Fever and severe pelvic pain suggestive of ascending infection/PID"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_RECENT_NEW_PARTNER_STI_RISK",
+                          "text":  "Have you had a new sexual partner or unprotected sex recently?",
+                          "purpose":  "Assess STI risk",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "GONOCOCCAL_CERVICITIS_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_FEVER_PRESENT",
+                          "text":  "Do you currently have a fever or chills?",
+                          "purpose":  "Screen for PID/systemic spread",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_PID_SEPSIS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "GONOCOCCAL_CERVICITIS_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "A54.03",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Gonococcal cervicitis, unspecified",
+    "evidence_ids":  [
+                         "EVID_GONOCOCCAL_CERVICITIS_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

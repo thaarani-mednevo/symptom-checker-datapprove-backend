@@ -1,0 +1,71 @@
+disease_code,red_flag_code,trigger_entity_type,trigger_entity_code,condition,rule_expression,source_status
+ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL,RF_ACUTEANGLECLOSUREPAIN,complaint,EYE_PAIN,[LLM DRAFT] Sudden severe eye pain with halos and blurred vision.,,clinician_not_approved
+ACUTE_ANGLE_CLOSURE_GLAUCOMA_BILATERAL,RF_ACUTEANGLECLOSUREVISIONLOSS,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss or severe visual distortion.,,clinician_not_approved
+ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE,RF_ORBITAL_CELLULITIS_RISK,complaint,EYE_SWELLING,"[LLM DRAFT] Swelling of the eye with redness, pain, and signs of infection indicating possible orbital cellulitis",,clinician_not_approved
+ACUTE_DACRYOCYSTITIS_OF_RIGHT_LACRIMAL_PASSAGE,RF_VISION_LOSS_RISK,complaint,VISION_LOSS,[LLM DRAFT] Sudden loss of vision or significant visual impairment due to potential spread of infection,,clinician_not_approved
+ACUTE_FOLLICULAR_CONJUNCTIVITIS_BILATERAL,RF_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden loss of vision in either eye, suggesting corneal involvement or other serious ocular pathology.",,clinician_not_approved
+CYSTOID_MACULAR_EDEMA_FOLLOWING_CATARACT_SURGERY_BILATERAL,NONE_APPLICABLE,complaint,,,,clinician_not_approved
+DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,[LLM DRAFT] Sudden loss of vision in the right eye,,clinician_not_approved
+DRY_EYE_SYNDROME_OF_RIGHT_LACRIMAL_GLAND,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain in the right eye suggestive of acute inflammation,,clinician_not_approved
+GLARE_SENSITIVITY,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden loss of vision or partial vision loss with glare sensitivity indicating possible retinal detachment or ischemic optic neuropathy.,,clinician_not_approved
+GLARE_SENSITIVITY,RF_EYE_PAIN_EMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with glare sensitivity and vision changes suggestive of acute angle‑closure glaucoma.,,clinician_not_approved
+HYPERTENSIVE_RETINOPATHY_BILATERAL,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, profound vision loss in one or both eyes, suggestive of malignant hypertension or papilledema.",,ai_drafted_unverified
+MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID,RF_MGD_ACUTE_CORNEAL_ULCER,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss in right eye,,ai_drafted_unverified
+MEIBOMIAN_GLAND_DYSFUNCTION_RIGHT_UPPER_EYELID,RF_MGD_ACUTE_INFECTION,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with redness and swelling,,ai_drafted_unverified
+MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS,RF_SUDDENVISIONLOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, unilateral vision loss during migraine attack",,ai_drafted_unverified
+MIGRAINE_WITH_AURA_INTRACTABLE_WITH_STATUS_MIGRAINOSUS,RF_NEWDIPLOPIA,complaint,DIPLOPIA,[LLM DRAFT] New onset diplopia during migraine attack,,ai_drafted_unverified
+MULTIPLE_SCLEROSIS_UNSPECIFIED,RF_ACUTE_OPTIC_NEURITIS,complaint,VISION_LOSS,[LLM DRAFT] Sudden unilateral vision loss with pain on eye movement,,ai_drafted_unverified
+NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS,RF_ORBITAL_CELLULITIS,complaint,EYE_SWELLING,"[LLM DRAFT] Swelling of the eye with or without pain, suggesting orbital cellulitis or dacryocystitis extension",,ai_drafted_unverified
+NEONATAL_CONJUNCTIVITIS_AND_DACRYOCYSTITIS,RF_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden loss of vision in the affected eye, indicating severe corneal involvement or optic nerve compromise",,ai_drafted_unverified
+NONEXUDATIVE_AGE_RELATED_MACULAR_DEGENERATION_BILATERAL_STAGE_UNSPECIFIED,NONE_APPLICABLE,complaint,,,,clinician_not_approved
+OCULAR_PAIN_LEFT_EYE,RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA,complaint,BLURRED_VISION,[LLM DRAFT] Sudden severe eye pain with blurred vision and halos,,ai_drafted_unverified
+OCULAR_PAIN_LEFT_EYE,RF_CORNEAL_ULCER,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with redness and vision loss,,ai_drafted_unverified
+OCULAR_PAIN_RIGHT_EYE,RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA,complaint,BLURRED_VISION,[LLM DRAFT] Sudden severe eye pain with blurred vision and halos around lights,,ai_drafted_unverified
+OCULAR_PAIN_RIGHT_EYE,RF_CORNEAL_ULCER,complaint,RED_EYE,[LLM DRAFT] Severe eye pain with red eye and purulent discharge,,ai_drafted_unverified
+OCULAR_PAIN_UNSPECIFIED_EYE,RF_ACUTE_ANGLE_CLOSURE_GLAUCOMA,complaint,EYE_PAIN,"[LLM DRAFT] Severe unilateral eye pain with blurred vision and halos, especially in older adults.",,ai_drafted_unverified
+OCULAR_PAIN_UNSPECIFIED_EYE,RF_CORNEAL_ULCER_PERFORATION,complaint,VISION_LOSS,"[LLM DRAFT] Sudden vision loss with pain and red eye, often in contact lens wearers.",,ai_drafted_unverified
+OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS,RF_VISIONLOSSEMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss in one eye,,ai_drafted_unverified
+OTHER_CHRONIC_ALLERGIC_CONJUNCTIVITIS,RF_EYEPAINEMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with redness,,ai_drafted_unverified
+OTHER_GIANT_CELL_ARTERITIS,RF_VISIONLOSS_GCA,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, unilateral vision loss or partial loss, especially if associated with headache or jaw claudication, indicating possible ischemic optic neuropathy.",,ai_drafted_unverified
+OTHER_NON_DIABETIC_PROLIFERATIVE_RETINOPATHY_BILATERAL,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless loss of vision in one or both eyes, possibly due to vitreous hemorrhage or tractional retinal detachment.",,ai_drafted_unverified
+OTHER_NON_DIABETIC_PROLIFERATIVE_RETINOPATHY_BILATERAL,RF_SUDDEN_PHOTOPSIA,complaint,PHOTOPSIA,"[LLM DRAFT] Sudden onset of flashing lights or floaters in one or both eyes, indicating possible retinal detachment.",,ai_drafted_unverified
+OTHER_OPTIC_NEURITIS,RF_SUDDENVISIONLOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, profound vision loss in one eye",,ai_drafted_unverified
+OTHER_OPTIC_NEURITIS,RF_SEVEREEYEPAIN,complaint,EYE_PAIN,"[LLM DRAFT] Severe eye pain with movement, especially if vision loss present",,ai_drafted_unverified
+OTHER_VIRAL_CONJUNCTIVITIS,RF_VISIONLOSSEMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss,,ai_drafted_unverified
+OTHER_VIRAL_CONJUNCTIVITIS,RF_SEVEREPAINEMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain,,ai_drafted_unverified
+PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, severe loss of vision in one or both eyes, possibly with halos or pain",,ai_drafted_unverified
+PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,"[LLM DRAFT] Sudden, severe eye pain with possible vision loss or halos",,ai_drafted_unverified
+RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless loss of vision in one or both eyes, possibly with a curtain‑like shadow",,ai_drafted_unverified
+RETINAL_DETACHMENT_WITH_RETINAL_DIALYSIS_BILATERAL,RF_PHOTOPSIA_EMERGENCY,complaint,PHOTOPSIA,"[LLM DRAFT] Sudden onset of flashes of light, especially in peripheral vision, indicating possible retinal detachment",,ai_drafted_unverified
+RHEUMATOID_ARTHRITIS_UNSPECIFIED,RF_SCLERITIS_EMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with redness and vision loss in RA,,ai_drafted_unverified
+RHEUMATOID_ARTHRITIS_UNSPECIFIED,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss in one eye in RA,,ai_drafted_unverified
+SARCOIDOSIS_UNSPECIFIED,RF_ACUTE_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden vision loss, especially if painless or with eye pain/redness, indicating optic neuropathy or severe uveitis.",,ai_drafted_unverified
+SARCOIDOSIS_UNSPECIFIED,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,"[LLM DRAFT] Severe eye pain with redness and photophobia, suggestive of acute uveitis or angle‑closure glaucoma.",,ai_drafted_unverified
+SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE,RF_ACUTE_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, profound vision loss in one eye",,ai_drafted_unverified
+SYMPATHETIC_UVEITIS_UNSPECIFIED_EYE,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain indicating possible acute angle closure or severe inflammation,,ai_drafted_unverified
+SYSTEMIC_LUPUS_ERYTHEMATOSUS_UNSPECIFIED,RF_ACUTE_RETINAL_VASCULITIS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless vision loss or visual field defect in one eye.",,ai_drafted_unverified
+SYSTEMIC_LUPUS_ERYTHEMATOSUS_UNSPECIFIED,RF_ACUTE_ANGLE‑CLOSURE_GLAUCOMA,complaint,EYE_PAIN,"[LLM DRAFT] Severe eye pain, halos around lights, blurred vision, red eye.",,ai_drafted_unverified
+TRANSIENT_NEONATAL_MYASTHENIA_GRAVIS,NONE_APPLICABLE,complaint,,,,clinician_not_approved
+TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] sudden, profound loss of vision in one or both eyes",,ai_drafted_unverified
+TYPE_1_DIABETES_MELLITUS_WITH_PROLIFERATIVE_DIABETIC_RETINOPATHY_WITH_COMBINED_TRACTION_RETINAL_DETACHMENT_AND_RHEGMATOGENOUS_RETINAL_DETACHMENT_BILATERAL,RF_SUDDEN_PHOTOPSIA,complaint,PHOTOPSIA,[LLM DRAFT] sudden onset of flashes and floaters indicating retinal detachment,,ai_drafted_unverified
+UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE,RF_SUDDEN_PAINLESS_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless loss of vision in left eye with normal right eye",,ai_drafted_unverified
+UNQUALIFIED_VISUAL_LOSS_LEFT_EYE_NORMAL_VISION_RIGHT_EYE,RF_ACUTE_ANGLE_CLOSURE,complaint,RED_EYE,[LLM DRAFT] Sudden red eye with severe pain and vision loss in left eye (possible acute angle closure),,ai_drafted_unverified
+UNQUALIFIED_VISUAL_LOSS_RIGHT_EYE_NORMAL_VISION_LEFT_EYE,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless loss of vision in the right eye with normal left eye vision.",,ai_drafted_unverified
+UNQUALIFIED_VISUAL_LOSS_RIGHT_EYE_NORMAL_VISION_LEFT_EYE,RF_ACUTE_EYE_PAIN,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain in the right eye accompanied by a red eye and blurred vision.,,ai_drafted_unverified
+UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID,RF_VISION_LOSS,complaint,VISION_LOSS,[LLM DRAFT] Sudden loss of vision in the right eye.,,ai_drafted_unverified
+UNSPECIFIED_BLEPHARITIS_RIGHT_UPPER_EYELID,RF_EYE_PAIN,complaint,EYE_PAIN,[LLM DRAFT] Severe pain with swelling and redness of the right upper eyelid.,,ai_drafted_unverified
+UNSPECIFIED_CATARACT,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, painless loss of vision due to lens dislocation or traumatic cataract",,ai_drafted_unverified
+UNSPECIFIED_CATARACT,RF_ACUTE_EYE_PAIN,complaint,EYE_PAIN,"[LLM DRAFT] Severe eye pain with red eye, possible lens dislocation or acute glaucoma",,ai_drafted_unverified
+UNSPECIFIED_GLAUCOMA,RF_ACUTE_ANGLE_CLOSURE_EYE_PAIN,complaint,EYE_PAIN,"[LLM DRAFT] Sudden severe eye pain with halos, nausea, vomiting",,ai_drafted_unverified
+UNSPECIFIED_GLAUCOMA,RF_ACUTE_ANGLE_CLOSURE_BLURRING,complaint,BLURRED_VISION,"[LLM DRAFT] Sudden blurred vision with halos, eye pain, red eye, photophobia, nausea, vomiting",,ai_drafted_unverified
+UNSPECIFIED_PAPILLEDEMA,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, unilateral or bilateral vision loss within hours",,ai_drafted_unverified
+UNSPECIFIED_PAPILLEDEMA,RF_DIPLOPIA_EMERGENCY,complaint,DIPLOPIA,[LLM DRAFT] New onset diplopia suggestive of raised intracranial pressure,,ai_drafted_unverified
+UNSPECIFIED_SCLERITIS_BILATERAL,RF_SUDDEN_VISION_LOSS,complaint,VISION_LOSS,[LLM DRAFT] Sudden bilateral vision loss in the setting of scleritis,,ai_drafted_unverified
+UNSPECIFIED_SCLERITIS_BILATERAL,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,[LLM DRAFT] Severe bilateral eye pain with redness and possible vision compromise,,ai_drafted_unverified
+VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden loss of vision in one or both eyes due to corneal ulceration or perforation,,ai_drafted_unverified
+VERNAL_KERATOCONJUNCTIVITIS_WITH_LIMBAR_AND_CORNEAL_INVOLVEMENT_BILATERAL,RF_SEVERE_EYE_PAIN_EMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain with redness and photophobia indicating possible corneal ulceration or perforation,,ai_drafted_unverified
+VIRAL_CONJUNCTIVITIS_UNSPECIFIED,RF_VISION_LOSS_EMERGENCY,complaint,VISION_LOSS,[LLM DRAFT] Sudden vision loss,,ai_drafted_unverified
+VIRAL_CONJUNCTIVITIS_UNSPECIFIED,RF_SEVERE_EYE_PAIN_EMERGENCY,complaint,EYE_PAIN,[LLM DRAFT] Severe eye pain,,ai_drafted_unverified
+VITREOUS_HEMORRHAGE_BILATERAL,RF_BILATERAL_VITREOUS_HEMORRHAGE_SEVERE_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, profound vision loss in both eyes indicating extensive hemorrhage or retinal detachment",,ai_drafted_unverified
+ZOSTER_SCLERITIS,RF_ACUTE_VISION_LOSS,complaint,VISION_LOSS,"[LLM DRAFT] Sudden, profound vision loss in one eye, especially if accompanied by pain or redness, indicating possible optic nerve or retinal involvement.",,ai_drafted_unverified
+ZOSTER_SCLERITIS,RF_SEVERE_EYE_PAIN,complaint,EYE_PAIN,"[LLM DRAFT] Severe, worsening eye pain with photophobia or redness, suggesting acute scleritis or corneal involvement requiring urgent evaluation.",,ai_drafted_unverified

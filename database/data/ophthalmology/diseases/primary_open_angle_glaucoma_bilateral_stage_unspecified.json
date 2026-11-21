@@ -1,0 +1,122 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_034",
+    "code":  "PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED",
+    "name":  "Primary open-angle glaucoma, bilateral, stage unspecified",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Primary open-angle glaucoma is a chronic optic neuropathy characterized by progressive, painless loss of peripheral vision due to elevated intraocular pressure.",
+    "complaints":  [
+                       {
+                           "code":  "VISION_LOSS",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "VISUAL_FIELD_LOSS",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "OPTIC_DISC_CUPPING",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ELEVATED_INTRAOCULAR_PRESSURE",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "COLOR_VISION_CHANGES",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "INCREASED_PRESSURE_IN_THE_EYE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "FAMILY_HISTORY",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "HIGH_BLOOD_PRESSURE",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SUDDEN_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, severe loss of vision in one or both eyes, possibly with halos or pain"
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Sudden, severe eye pain with possible vision loss or halos"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_ANY_LOSS_OF_PERIPHERAL",
+                          "text":  "[LLM DRAFT] Have you noticed any loss of peripheral vision or blind spots?",
+                          "purpose":  "screen for visual field loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_ANY_SUDDEN_CHANGES_IN_YOUR",
+                          "text":  "[LLM DRAFT] Do you notice any sudden changes in your vision?",
+                          "purpose":  "screen for acute vision changes",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "H40.1130",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Primary open-angle glaucoma, bilateral, stage unspecified",
+    "evidence_ids":  [
+                         "EVID_PRIMARY_OPEN_ANGLE_GLAUCOMA_BILATERAL_STAGE_UNSPECIFIED"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

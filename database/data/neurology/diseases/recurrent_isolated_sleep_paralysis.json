@@ -1,0 +1,72 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_005",
+  "code": "RECURRENT_ISOLATED_SLEEP_PARALYSIS",
+  "name": "Recurrent isolated sleep paralysis",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Recurrent isolated sleep paralysis is a chronic condition characterized by repeated episodes of temporary inability to move or speak while falling asleep or upon awakening, often accompanied by vivid hallucinations.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "{{FLATLIST|",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "HALLUCINATIONS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "{{FLATLIST|",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "NARCOLEPSY",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "OBSTRUCTIVE_SLEEP_APNEA",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "ALCOHOL_USE",
+      "strength": "wikipedia_infobox_unverified"
+    },
+    {
+      "code": "SLEEP_DEPRIVATION",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "442120007",
+  "snomed_verified_name": "Recurrent isolated sleep paralysis",
+  "icd10_code": "G47.53",
+  "icd10_validated": true,
+  "icd10_official_description": "Recurrent isolated sleep paralysis",
+  "evidence_ids": [
+    "EVID_RECURRENT_ISOLATED_SLEEP_PARALYSIS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

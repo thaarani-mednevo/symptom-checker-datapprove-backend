@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "PLEURITIC_CHEST_PAIN",
+    "complaint_name":  "Pleuritic chest pain",
+    "module":  "respiratory",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "sequence_order":  1,
+                          "no_weight":  -2,
+                          "text":  "Is the chest pain sharp and worse when you breathe in deeply, cough, or move?",
+                          "purpose":  "character",
+                          "tests_symptom_code":  "PLEURITIC_PAIN_CONFIRM",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_PLEUR_001",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  2,
+                          "no_weight":  0,
+                          "text":  "Do you also have a fever or cough?",
+                          "purpose":  "pneumonia_screen",
+                          "tests_symptom_code":  "FEVER_WITH_PLEURISY",
+                          "yes_weight":  2,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "CONTINUE",
+                          "code":  "Q_CMP_PLEUR_002",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  3,
+                          "no_weight":  -1,
+                          "text":  "Did the pain start very suddenly while at rest?",
+                          "purpose":  "pneumothorax_screen",
+                          "tests_symptom_code":  "SUDDEN_PLEURITIC_PAIN",
+                          "yes_weight":  4,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "RED_FLAG(RF_PNEUMOTHORAX)",
+                          "code":  "Q_CMP_PLEUR_003",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  4,
+                          "no_weight":  -1,
+                          "text":  "Have you had a recent long flight, surgery, or period of immobility?",
+                          "purpose":  "pe_risk_screen",
+                          "tests_symptom_code":  "VTE_RISK",
+                          "yes_weight":  3,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "GOTO_PATHWAY(PE_DVT)",
+                          "code":  "Q_CMP_PLEUR_004",
+                          "answer_type":  "yes_no"
+                      },
+                      {
+                          "sequence_order":  5,
+                          "no_weight":  -1,
+                          "text":  "Is the pain severe and are you unable to breathe properly right now?",
+                          "purpose":  "emergency_check",
+                          "tests_symptom_code":  "SEVERE_PLEURITIC_PAIN",
+                          "yes_weight":  5,
+                          "if_no_action":  "CONTINUE",
+                          "if_yes_action":  "ESCALATE",
+                          "code":  "Q_CMP_PLEUR_005",
+                          "answer_type":  "yes_no"
+                      }
+                  ]
+}

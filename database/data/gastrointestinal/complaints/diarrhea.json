@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_007",
+  "code": "DIARRHEA",
+  "name": "Diarrhoea",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Diarrhea, also spelled diarrhoea, is the condition of having at least three loose, liquid, or watery bowel movements in a day. It often lasts for a few days and can result in dehydration due to fluid loss.",
+  "hpo_codes": [],
+  "snomed_code": "62315008",
+  "snomed_verified_name": "Diarrhea",
+  "icd10_code": "R19.7",
+  "icd10_validated": true,
+  "icd10_official_description": "Diarrhea, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

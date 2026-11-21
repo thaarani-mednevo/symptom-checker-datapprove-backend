@@ -1,0 +1,17 @@
+{
+  "id": "MUSCULOSKELETAL_COMP_MSK_005",
+  "code": "MUSCLE_WEAKNESS",
+  "name": "Muscle weakness",
+  "module": "musculoskeletal",
+  "body_system": "musculoskeletal",
+  "category": "complaint",
+  "description": "Muscle weakness is a lack of muscle strength. Its causes are numerous and can be divided into conditions associated with either true or perceived muscle weakness.",
+  "hpo_codes": [],
+  "snomed_code": "26544005",
+  "snomed_verified_name": "Muscle weakness",
+  "icd10_code": "M62.81",
+  "icd10_validated": true,
+  "icd10_official_description": "Muscle weakness (generalized)",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

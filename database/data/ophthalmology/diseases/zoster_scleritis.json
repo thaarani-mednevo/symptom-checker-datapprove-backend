@@ -1,0 +1,138 @@
+﻿{
+    "id":  "OPHTHALMOLOGY_DIS_CS_013",
+    "code":  "ZOSTER_SCLERITIS",
+    "name":  "Zoster scleritis",
+    "module":  "ophthalmology",
+    "category":  "disease",
+    "description":  "Zoster scleritis is an acute inflammatory condition of the sclera caused by reactivation of varicella‑zoster virus, often presenting with severe eye pain and vision loss.",
+    "complaints":  [
+                       {
+                           "code":  "EYE_SWELLING",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PHOTOPHOBIA",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "HOT/PRICKLY/GRITTY_SENSATION_IN_EYE",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "EYE_REDNESS_WITHOUT_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "WATERY_EYES",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "AGE_\u003e60",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "IMMUNOSUPPRESSION",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "PRIOR_HERPES_ZOSTER",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES",
+                             "strength":  "weak"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_ACUTE_VISION_LOSS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "VISION_LOSS",
+                          "condition":  "[LLM DRAFT] Sudden, profound vision loss in one eye, especially if accompanied by pain or redness, indicating possible optic nerve or retinal involvement."
+                      },
+                      {
+                          "code":  "RF_SEVERE_EYE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "EYE_PAIN",
+                          "condition":  "[LLM DRAFT] Severe, worsening eye pain with photophobia or redness, suggesting acute scleritis or corneal involvement requiring urgent evaluation."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_FEEL_PAIN_BEHIND_YOUR_EYE?",
+                          "text":  "[LLM DRAFT] Do you feel pain behind your eye?",
+                          "purpose":  "pain behind eye",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ZOSTER_SCLERITIS_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_RASH_OR_BLISTERS_AROUND_YO",
+                          "text":  "[LLM DRAFT] Do you have a rash or blisters around your eye or forehead?",
+                          "purpose":  "rash near eye",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ZOSTER_SCLERITIS_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAS_YOUR_VISION_SUDDENLY_BECOME_BLURRY_O",
+                          "text":  "[LLM DRAFT] Has your vision suddenly become blurry or dim?",
+                          "purpose":  "vision change",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ZOSTER_SCLERITIS_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "1087131000119102",
+    "snomed_verified_name":  "Herpes zoster scleritis",
+    "icd10_code":  "B02.34",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Zoster scleritis",
+    "evidence_ids":  [
+                         "EVID_ZOSTER_SCLERITIS"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

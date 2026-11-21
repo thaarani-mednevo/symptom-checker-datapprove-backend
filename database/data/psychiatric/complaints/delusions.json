@@ -1,0 +1,19 @@
+{
+  "id": "PSYCHIATRIC_COMP_PSYCH_004",
+  "code": "DELUSIONS",
+  "name": "Delusions",
+  "module": "psychiatric",
+  "body_system": "psychiatric",
+  "category": "complaint",
+  "description": "A delusion is a fixed belief that is not amenable to change in light of conflicting evidence. As a pathology, it is distinct from a belief based on false or incomplete information, confabulation, dogma, illusion, hallucination, or some other misleading effects of perception, as individuals with those beliefs are able to change or readjust their beliefs upon reviewing the evidence.",
+  "hpo_codes": [
+    "HP:0000738"
+  ],
+  "snomed_code": "247667002",
+  "snomed_verified_name": "Grandiose delusions",
+  "icd10_code": "R44.8",
+  "icd10_validated": true,
+  "icd10_official_description": "Other symptoms and signs involving general sensations and perceptions",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

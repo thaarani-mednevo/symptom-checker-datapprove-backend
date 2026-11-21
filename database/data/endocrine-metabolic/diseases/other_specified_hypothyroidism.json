@@ -1,0 +1,85 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_020",
+    "code":  "OTHER_SPECIFIED_HYPOTHYROIDISM",
+    "name":  "Other specified hypothyroidism",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Hypothyroidism is an endocrine disease in which the thyroid gland does not produce enough thyroid hormones. It can cause a number of symptoms, such as poor ability to tolerate cold, extreme fatigue, muscle aches, constipation, slow heart rate, depression, and weight gain.",
+    "complaints":  [
+                       {
+                           "code":  "HYPOTHYROIDISM",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_MYXEDEMA_COMA",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "HYPOTHYROIDISM",
+                          "condition":  "[LLM DRAFT] Severe altered mental status, hypothermia, hypoventilation, and hypotension indicative of decompensated hypothyroidism."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HAVE_YOU_BEEN_TOLD_BY_A_DOCTOR_THAT_YOUR",
+                          "text":  "[LLM DRAFT] Have you been told by a doctor that your thyroid hormone levels are low due to an uncommon or specific cause?",
+                          "purpose":  "Screens for specific diagnosed hypothyroidism",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_HYPOTHYROIDISM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_UNUSUALLY_SLOW_HEART_RA",
+                          "text":  "[LLM DRAFT] Have you noticed unusually slow heart rate, severe swelling, or extreme sluggishness recently?",
+                          "purpose":  "Screens for severe hypothyroid complications",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_SPECIFIED_HYPOTHYROIDISM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "HYPOTHYROIDISM_DUE_TO_MEDICAMENTS_AND_OTHER_EXOGENOUS_SUBSTANCES",
+                              "distinguishing_feature":  "[LLM DRAFT] History of exposure to goitrogens, lithium, amiodarone, or antithyroid medications rather than intrinsic primary thyroid pathology."
+                          },
+                          {
+                              "disease_code":  "POSTPROCEDURAL_HYPOTHYROIDISM",
+                              "distinguishing_feature":  "[LLM DRAFT] History of prior thyroidectomy, radioactive iodine ablation, or external neck radiation therapy."
+                          },
+                          {
+                              "disease_code":  "CONGENITAL_HYPOTHYROIDISM_WITHOUT_GOITER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents in the neonatal period with thyroid dysgenesis or absence rather than acquired specific etiologies in older individuals."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E03.8",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other specified hypothyroidism",
+    "evidence_ids":  [
+                         "EVID_OTHER_SPECIFIED_HYPOTHYROIDISM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

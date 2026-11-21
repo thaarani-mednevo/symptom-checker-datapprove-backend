@@ -1,0 +1,80 @@
+﻿{
+    "id":  "ENDOCRINE-METABOLIC_DIS_CS_010",
+    "code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+    "name":  "Thyrotoxicosis factitia without thyrotoxic crisis or storm",
+    "module":  "endocrine-metabolic",
+    "category":  "disease",
+    "description":  "Thyrotoxicosis factitia is a condition of thyrotoxicosis caused by the ingestion of exogenous thyroid hormone. It can be the result of mistaken ingestion of excess drugs, such as levothyroxine and triiodothyronine, or as a symptom of Munchausen syndrome.",
+    "complaints":  [
+                       {
+                           "code":  "THYROTOXICOSIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_TAKING_ANY_THYROID_HOR",
+                          "text":  "[LLM DRAFT] Are you currently taking any thyroid hormone medications or supplements?",
+                          "purpose":  "screens for exogenous thyroid hormone use",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_EXPERIENCED_UNEXPLAINED_RAPID_H",
+                          "text":  "[LLM DRAFT] Have you experienced unexplained rapid heartbeat, tremors, or significant weight loss recently?",
+                          "purpose":  "screens for thyrotoxicosis symptoms",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "CHRONIC_THYROIDITIS_WITH_TRANSIENT_THYROTOXICOSIS",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of painful or tender thyroid gland accompanied by elevated inflammatory markers (e.g., ESR) during the destructive phase."
+                          },
+                          {
+                              "disease_code":  "THYROTOXICOSIS_WITH_DIFFUSE_GOITER_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Presence of a diffuse goiter and signs of autoimmunity such as ophthalmopathy or positive TSH receptor antibodies (Graves\u0027 disease)."
+                          },
+                          {
+                              "disease_code":  "OTHER_THYROTOXICOSIS_WITHOUT_THYROTOXIC_CRISIS_OR_STORM",
+                              "distinguishing_feature":  "[LLM DRAFT] Endogenous hormone overproduction indicated by elevated radioactive iodine uptake, unlike the near-zero uptake seen in factitia."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "E05.40",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Thyrotoxicosis factitia without thyrotoxic crisis or storm",
+    "evidence_ids":  [
+                         "EVID_THYROTOXICOSIS_FACTITIA_WITHOUT_THYROTOXIC_CRISIS_OR_STORM"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

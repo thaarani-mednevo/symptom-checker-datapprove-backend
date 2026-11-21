@@ -1,0 +1,209 @@
+﻿{
+    "id":  "DERMATOLOGY_DIS_HB_001",
+    "code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME",
+    "name":  "Drug rash with eosinophilia and systemic symptoms syndrome",
+    "module":  "dermatology",
+    "category":  "disease",
+    "description":  "In medicine, a drug eruption is an adverse drug reaction of the skin. Most drug-induced cutaneous reactions are mild and disappear when the offending drug is withdrawn.",
+    "complaints":  [
+                       {
+                           "code":  "RASH",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "WIDESPREAD_RASH",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "very_common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "FACIAL_EDEMA",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LYMPHADENOPATHY",
+                         "relationship":  "ai_drafted_unverified",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NEW_MEDICATION_EXPOSURE",
+                             "strength":  "ai_drafted_unverified"
+                         },
+                         {
+                             "code":  "IMMUNOCOMPROMISED",
+                             "strength":  "ai_drafted_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_BREATHING",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "DIFFICULTY_BREATHING",
+                          "condition":  "present"
+                      },
+                      {
+                          "code":  "RF_JAUNDICE",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "JAUNDICE",
+                          "condition":  "present"
+                      },
+                      {
+                          "code":  "RF_RAPID_SYSTEMIC_DETERIORATION",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "SYSTEMIC_ILLNESS",
+                          "condition":  "present"
+                      },
+                      {
+                          "code":  "RF_DRESS_ORGAN_INVOLVEMENT",
+                          "trigger_entity_type":  "symptom",
+                          "trigger_entity_code":  "FACIAL_EDEMA",
+                          "condition":  "Facial swelling with fever and widespread rash after a new medication — possible systemic organ involvement, treat as emergency"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DERM_TIMING",
+                          "text":  "When did the skin/hair problem first start, and how has it changed?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_NEW_DRUG",
+                          "text":  "Did the problem begin after starting, stopping, or changing a medication or supplement?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_FEVER",
+                          "text":  "Do you have fever or feel significantly unwell along with the skin problem?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SYSTEMIC_ILLNESS)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_MUCOSA",
+                          "text":  "Are there sores or painful lesions in the mouth, eyes, or genital area?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MUCOSAL_INVOLVEMENT)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_4",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_BREATHING",
+                          "text":  "Are you having difficulty breathing or chest symptoms?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_5",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_DERM_JAUNDICE",
+                          "text":  "Have you developed yellow eyes/skin or dark urine?",
+                          "purpose":  "diagnostic_clarification",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "continue",
+                          "sequence_order":  6,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_6",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_NEW_MEDICATION",
+                          "text":  "Have you started any new medication in the past 2 to 8 weeks?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_7",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_FACIAL_SWELLING",
+                          "text":  "Do you have any swelling of your face along with the rash and fever?",
+                          "purpose":  "screening",
+                          "answer_type":  "boolean",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME_SYMPTOM_8",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "UNSPECIFIED_VIRAL_INFECTION_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS",
+                              "distinguishing_feature":  "Both can present with fever and rash; recent drug exposure plus eosinophilia/systemic organ involvement favors DRESS."
+                          },
+                          {
+                              "disease_code":  "OTHER_SPECIFIED_VIRAL_INFECTIONS_CHARACTERIZED_BY_SKIN_AND_MUCOUS_MEMBRANE_LESIONS",
+                              "distinguishing_feature":  "Viral exanthem can mimic drug eruption; medication timeline and systemic features help distinguish."
+                          }
+                      ],
+    "age_relevance":  "all_ages",
+    "sex_relevance":  "all_sexes",
+    "acute_chronic":  "acute_subacute",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "D72.12",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Drug rash with eosinophilia and systemic symptoms syndrome",
+    "evidence_ids":  [
+                         "EVID_DRUG_RASH_WITH_EOSINOPHILIA_AND_SYSTEMIC_SYMPTOMS_SYNDROME"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

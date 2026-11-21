@@ -1,0 +1,17 @@
+{
+  "id": "GASTROINTESTINAL_COMP_GI_008",
+  "code": "CONSTIPATION",
+  "name": "Constipation",
+  "module": "gastrointestinal",
+  "body_system": "gastrointestinal",
+  "category": "complaint",
+  "description": "Constipation is a bowel dysfunction that makes bowel movements infrequent or hard to pass. The stool is often hard and dry.",
+  "hpo_codes": [],
+  "snomed_code": "14760008",
+  "snomed_verified_name": "Constipation",
+  "icd10_code": "K59.00",
+  "icd10_validated": true,
+  "icd10_official_description": "Constipation, unspecified",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

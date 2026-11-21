@@ -1,0 +1,80 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_004",
+  "code": "TODDS_PARALYSIS_POSTEPILEPTIC",
+  "name": "Todd's paralysis (postepileptic)",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Todd's paresis is focal weakness in part of the body after a seizure. This weakness typically affects the limbs and is localized to either the left or right side of the body.",
+  "complaints": [
+    {
+      "code": "PARALYSIS",
+      "relationship": "common",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "FOCAL_MOTOR_WEAKNESS",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    },
+    {
+      "code": "POSTICTAL_STATE",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "acute",
+      "severity": "mild"
+    },
+    {
+      "code": "PARTIAL_SEIZURE_HISTORY",
+      "relationship": "common",
+      "frequency": "common",
+      "typicality": "typical",
+      "onset_pattern": "chronic",
+      "severity": "moderate"
+    },
+    {
+      "code": "APHASIA",
+      "relationship": "common",
+      "frequency": "occasional",
+      "typicality": "atypical",
+      "onset_pattern": "acute",
+      "severity": "moderate"
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "FOCAL_MOTOR_SEIZURES",
+      "strength": "strong"
+    },
+    {
+      "code": "EPILEPSY",
+      "strength": "strong"
+    },
+    {
+      "code": "STATUS_EPILEPTICUS",
+      "strength": "moderate"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "G83.84",
+  "icd10_validated": true,
+  "icd10_official_description": "Todd's paralysis (postepileptic)",
+  "evidence_ids": [
+    "EVID_TODDS_PARALYSIS_POSTEPILEPTIC"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

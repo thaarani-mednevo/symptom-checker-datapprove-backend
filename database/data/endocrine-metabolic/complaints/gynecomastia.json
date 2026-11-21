@@ -1,0 +1,17 @@
+{
+  "id": "ENDOCRINE-METABOLIC_COMP_EM_008",
+  "code": "GYNECOMASTIA",
+  "name": "Gynecomastia",
+  "module": "endocrine-metabolic",
+  "body_system": "endocrine-metabolic",
+  "category": "complaint",
+  "description": "Gynecomastia is the non-cancerous enlargement of one or both breasts in men due to the growth of breast tissue as a result of a hormone imbalance between estrogens and androgens. Physically speaking, gynecomastia is completely benign, but it is associated with significant psychological distress, social stigma, and dysphoria.",
+  "hpo_codes": [],
+  "snomed_code": "4754008",
+  "snomed_verified_name": "Gynecomastia",
+  "icd10_code": "N62",
+  "icd10_validated": true,
+  "icd10_official_description": "Hypertrophy of breast",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

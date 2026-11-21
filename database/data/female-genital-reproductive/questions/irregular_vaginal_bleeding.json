@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "IRREGULAR_VAGINAL_BLEEDING",
+    "complaint_name":  "Irregular vaginal bleeding",
+    "module":  "female-genital-reproductive",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_IVB_001",
+                          "text":  "Is the bleeding between periods, after sex, or unpredictable?",
+                          "purpose":  "pattern",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IRREGULAR_BLEEDING_PATTERN",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_IVB_002",
+                          "text":  "Are you on hormonal contraception or HRT?",
+                          "purpose":  "hormonal",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "HORMONAL_BLEEDING",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_IVB_003",
+                          "text":  "Could you be pregnant?",
+                          "purpose":  "pregnancy",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_ECTOPIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "PREGNANCY_WITH_IRREGULAR_BLEEDING",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_IVB_004",
+                          "text":  "Are you over 40 or postmenopausal?",
+                          "purpose":  "age",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_POSTMENOPAUSAL_BLEEDING)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "AGE_RELATED_BLEEDING",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_IVB_005",
+                          "text":  "Is there associated weight loss, pelvic pain, or fatigue?",
+                          "purpose":  "alarm",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SUSPECTED_GYNAE_MALIGNANCY)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "GYNAE_ALARM_FEATURES",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

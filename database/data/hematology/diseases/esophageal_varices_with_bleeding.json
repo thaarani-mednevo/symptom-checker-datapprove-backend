@@ -1,0 +1,113 @@
+﻿{
+    "id":  "HEMATOLOGY_DIS_CS_006",
+    "code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING",
+    "name":  "Esophageal varices with bleeding",
+    "module":  "hematology",
+    "category":  "disease",
+    "description":  "Esophageal varices are extremely dilated sub-mucosal veins in the lower third of the esophagus. They are most often a consequence of portal hypertension, commonly due to cirrhosis.",
+    "complaints":  [
+                       {
+                           "code":  "BLEEDING",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "VOMITING_BLOOD",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     },
+                     {
+                         "code":  "PASSING_BLACK_STOOL",
+                         "relationship":  "common",
+                         "frequency":  "",
+                         "typicality":  "",
+                         "onset_pattern":  "",
+                         "severity":  ""
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "OR_LIVER_BASED",
+                             "strength":  "wikipedia_infobox_unverified"
+                         },
+                         {
+                             "code":  "CIRCULATION)",
+                             "strength":  "wikipedia_infobox_unverified"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_MASSIVE_GASTROINTESTINAL_HEMORRHAGE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BLEEDING",
+                          "condition":  "[LLM DRAFT] Active, profuse hematemesis or melena accompanied by hemodynamic instability, hypotension, or altered mental status indicating acute massive blood loss from esophageal varices."
+                      },
+                      {
+                          "code":  "RF_SEVERE_ACUTE_ANEMIA_FROM_VARICEAL_BLEED",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "ANEMIA",
+                          "condition":  "[LLM DRAFT] Rapidly developing profound anemia due to acute variceal bleeding resulting in symptomatic tachycardia, dizziness, or syncope."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_ARE_YOU_CURRENTLY_VOMITING_BLOOD_OR_MATE",
+                          "text":  "[LLM DRAFT] Are you currently vomiting blood or material that looks like dark coffee grounds?",
+                          "purpose":  "Screens for acute upper gastrointestinal bleeding",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_RECENTLY_NOTICED_YOUR_STOOLS_TU",
+                          "text":  "[LLM DRAFT] Have you recently noticed your stools turning black, tarry, or sticky?",
+                          "purpose":  "Screens for gastrointestinal bleeding manifesting as melena",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ESOPHAGEAL_VARICES_WITH_BLEEDING_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "ESOPHAGEAL_VARICES_WITHOUT_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with similar portal hypertension risks and venous dilation on endoscopy, but lacks acute hemorrhage."
+                          },
+                          {
+                              "disease_code":  "DUODENITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with upper gastrointestinal bleeding originating from the proximal small bowel rather than dilated submucosal esophageal veins."
+                          },
+                          {
+                              "disease_code":  "OTHER_ESOPHAGITIS_WITH_BLEEDING",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with upper gastrointestinal bleeding due to mucosal inflammation and ulceration rather than ruptured portal-systemic collaterals."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "17709002",
+    "snomed_verified_name":  "Bleeding esophageal varices",
+    "icd10_code":  "I85.01",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Esophageal varices with bleeding",
+    "evidence_ids":  [
+                         "EVID_ESOPHAGEAL_VARICES_WITH_BLEEDING"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

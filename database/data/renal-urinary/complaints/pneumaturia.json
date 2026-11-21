@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_012",
+  "code": "PNEUMATURIA",
+  "name": "Pneumaturia",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Pneumaturia is the passage of gas or \"air\" in urine. This may be seen or described as \"bubbles in the urine\".",
+  "hpo_codes": [],
+  "snomed_code": "20154006",
+  "snomed_verified_name": "Pneumatouria",
+  "icd10_code": "R39.89",
+  "icd10_validated": true,
+  "icd10_official_description": "Other symptoms and signs involving the genitourinary system",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "OPHTHALMOLOGY_COMP_OPH_007",
+  "code": "PHOTOPHOBIA",
+  "name": "Photophobia",
+  "module": "ophthalmology",
+  "body_system": "ophthalmology",
+  "category": "complaint",
+  "description": "Photophobia is a medical symptom of abnormal intolerance to visual perception of light. As a medical symptom, photophobia is not a morbid fear or phobia, but an experience of discomfort or pain to the eyes due to light exposure or by presence of actual physical sensitivity of the eyes, though the term is sometimes additionally applied to abnormal or irrational fear of light, such as heliophobia.",
+  "hpo_codes": [],
+  "snomed_code": "409668002",
+  "snomed_verified_name": "Photophobia",
+  "icd10_code": "H53.16",
+  "icd10_validated": true,
+  "icd10_official_description": "Psychophysical visual disturbances",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

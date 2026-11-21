@@ -1,0 +1,68 @@
+﻿{
+    "complaint_code":  "SKIN_LUMPS",
+    "complaint_name":  "Skin lumps",
+    "module":  "dermatology",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_SLU_001",
+                                       "Is the lump soft and mobile under the skin, or firm and fixed?",
+                                       "character",
+                                       "multiple_choice",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "LUMP_CHARACTER",
+                                       0,
+                                       0
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_SLU_002",
+                          "text":  "Has it been growing quickly over weeks?",
+                          "purpose":  "growth",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "RAPID_GROWTH",
+                          "yes_weight":  4,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_SLU_003",
+                          "text":  "Is it painful, red, or warm?",
+                          "purpose":  "inflammation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "INFLAMED_LUMP",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      },
+                      {
+                          "code":  "Q_CMP_SLU_004",
+                          "text":  "Is there any skin breakdown or ulceration over the lump?",
+                          "purpose":  "ulceration",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "ULCERATED_LUMP",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      }
+                  ]
+}

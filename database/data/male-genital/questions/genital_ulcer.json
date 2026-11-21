@@ -1,0 +1,89 @@
+{
+  "complaint_code": "GENITAL_ULCER",
+  "complaint_name": "Genital Ulcer",
+  "module": "male-genital",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_GULCER_001",
+      "text": "Is the genital ulcer painful or painless, and how many ulcers do you have?",
+      "purpose": "Painless ulcers suggest primary syphilis (chancre); painful ulcers suggest herpes or chancroid",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Single, painless ulcer",
+        "Single, painful ulcer",
+        "Multiple, painful ulcers",
+        "Multiple, painless ulcers",
+        "Ulcer with raised indurated edges"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "GENITAL_ULCER_CHARACTER",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GULCER_002",
+      "text": "Have you had unprotected sex or sexual contact with a new or unknown partner recently?",
+      "purpose": "STI risk assessment — determines need for comprehensive STI screen",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "STI_SEXUAL_RISK",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GULCER_003",
+      "text": "Have you had a fever, generalised rash (particularly on palms and soles), or sore throat alongside the ulcer?",
+      "purpose": "Secondary syphilis presents with rash on palms/soles, fever, and lymphadenopathy — requires escalation",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "SECONDARY_SYPHILIS_FEATURES",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GULCER_004",
+      "text": "Have you had previous similar episodes of blistering or ulceration in the same area that resolved and recurred?",
+      "purpose": "Recurrent genital ulceration is characteristic of herpes simplex virus (HSV)",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(GENITAL_HERPES_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "RECURRENT_GENITAL_ULCERS",
+      "yes_weight": 2,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GULCER_005",
+      "text": "Are there any enlarged, tender lymph nodes in your groin alongside the ulcer?",
+      "purpose": "Inguinal lymphadenopathy with genital ulcer can indicate syphilis, chancroid, or LGV",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "INGUINAL_LYMPHADENOPATHY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_GULCER_006",
+      "text": "Are you aware of your HIV status, and have you been tested recently?",
+      "purpose": "HIV co-infection increases severity of STI-related ulcers and alters management",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(STI_SCREEN)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "HIV_STATUS_AWARENESS",
+      "yes_weight": 2,
+      "no_weight": 1
+    }
+  ]
+}

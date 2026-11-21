@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_004",
+  "code": "TASTE_DISTURBANCE",
+  "name": "Taste disturbance",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Dysgeusia, also known as parageusia, is a distortion of the sense of taste. Dysgeusia is also often associated with ageusia, which is the complete lack of taste, and hypogeusia, which is a decrease in taste sensitivity.",
+  "hpo_codes": [],
+  "snomed_code": "271801002",
+  "snomed_verified_name": "Taste sense altered",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,134 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_039",
+    "code":  "IDIOPATHIC_GOUT_VERTEBRAE",
+    "name":  "Idiopathic gout, vertebrae",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Idiopathic gout, vertebrae.",
+    "complaints":  [
+                       {
+                           "code":  "ACUTE_MONOARTHRITIS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BACK_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "RADICULAR_PAINNEUROLOGIC_DEFICIT",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "VERTEBRAL_SUBLUXATIONINSTABILITY",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SPINAL_TOPHI_FORMATION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "HYPERURICEMIA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SPINAL_CORD_COMPRESSION",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "MUSCLE_WEAKNESS",
+                          "condition":  "[LLM DRAFT] Acute spinal cord compression or cauda equina syndrome caused by tophaceous gout deposits in the vertebrae, presenting with progressive muscle weakness, motor deficits, or neurological impairment."
+                      },
+                      {
+                          "code":  "RF_PATHOLOGICAL_VERTEBRAL_FRACTURE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "FRACTURES",
+                          "condition":  "[LLM DRAFT] Acute pathological fracture of a gout-affected vertebra resulting from severe bone destruction and structural instability, presenting with sudden onset of excruciating axial back pain and functional impairment."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_SUDDEN_SEVERE_BACK_PAIN_THA",
+                          "text":  "[LLM DRAFT] Do you have sudden, severe back pain that started within the last 24 hours?",
+                          "purpose":  "acute spinal pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_VERTEBRAE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_SWELLING_OR_REDNESS_OVER_Y",
+                          "text":  "[LLM DRAFT] Do you notice swelling or redness over your spine?",
+                          "purpose":  "inflammatory signs",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_VERTEBRAE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_HAD_GOUT_ATTACKS_IN_THE_PAST?",
+                          "text":  "[LLM DRAFT] Have you had gout attacks in the past?",
+                          "purpose":  "gout history",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "IDIOPATHIC_GOUT_VERTEBRAE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "M10.08",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Idiopathic gout, vertebrae",
+    "evidence_ids":  [
+                         "EVID_IDIOPATHIC_GOUT_VERTEBRAE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

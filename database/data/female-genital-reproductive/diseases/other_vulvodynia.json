@@ -1,0 +1,76 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_014",
+    "code":  "OTHER_VULVODYNIA",
+    "name":  "Other vulvodynia",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Vulvodynia is a chronic pain condition that affects the vulvar area and occurs without an identifiable cause. Symptoms typically include a feeling of burning or irritation.",
+    "complaints":  [
+                       {
+                           "code":  "VULVAL_SORENESS",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SYMPTOM_DURATION_CHRONIC",
+                          "text":  "Have the symptoms been present for more than 3 months?",
+                          "purpose":  "Confirm chronic pain criteria",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_VULVODYNIA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_VULVAL_SYMPTOM_TRIGGER",
+                          "text":  "Did the soreness start after using a new soap, product, or clothing?",
+                          "purpose":  "Identify possible trigger",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_VULVODYNIA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "VULVODYNIA_UNSPECIFIED",
+                              "distinguishing_feature":  "Other vulvodynia has an identified subtype/pattern documented; unspecified vulvodynia lacks further characterization"
+                          },
+                          {
+                              "disease_code":  "PRURITUS_VULVAE",
+                              "distinguishing_feature":  "Vulvodynia is primarily a pain/burning syndrome; pruritus vulvae is primarily itch-driven"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N94.818",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other vulvodynia",
+    "evidence_ids":  [
+                         "EVID_OTHER_VULVODYNIA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_015",
+  "code": "URINARY_HESITANCY",
+  "name": "Urinary hesitancy",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Urinary retention is an inability to completely empty the bladder. Onset can be sudden or gradual.",
+  "hpo_codes": [],
+  "snomed_code": "5972002",
+  "snomed_verified_name": "Delay when starting to pass urine",
+  "icd10_code": "R39.11",
+  "icd10_validated": true,
+  "icd10_official_description": "Hesitancy of micturition",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

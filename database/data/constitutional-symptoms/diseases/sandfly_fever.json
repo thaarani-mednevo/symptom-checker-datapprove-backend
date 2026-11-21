@@ -1,0 +1,95 @@
+﻿{
+    "id":  "CONSTITUTIONAL-SYMPTOMS_DIS_CS_003",
+    "code":  "SANDFLY_FEVER",
+    "name":  "Sandfly fever",
+    "module":  "constitutional-symptoms",
+    "category":  "disease",
+    "description":  "Sandfly fever can refer to:Visceral leishmaniasis, or kala-azar\nPappataci fever, or Papatasi fever, an acute febrile arboviral infection.",
+    "complaints":  [
+                       {
+                           "code":  "FEVER",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "NIGHT_SWEATS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "WEIGHT_LOSS",
+                           "relationship":  "manual_clinical_addition",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SIGNS_OF_MENINGOENCEPHALITIS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  "Development of severe headache, altered mental status, or neck stiffness"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_SANDFLY_FEVER_1",
+                          "text":  "Have you recently traveled to a Mediterranean, Middle Eastern, or Central Asian region where sandflies are common?",
+                          "purpose":  "risk_assessment",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "SANDFLY_FEVER_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_SANDFLY_FEVER_2",
+                          "text":  "Did your sudden fever start with retro-orbital pain and severe myalgia?",
+                          "purpose":  "differentiation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "SANDFLY_FEVER_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "LASSA_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with prominent mucosal bleeding, pharyngitis with exudates, and sensorineural hearing loss, unlike the typically self-limiting febrile nature of sandfly fever."
+                          },
+                          {
+                              "disease_code":  "Q_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Often features atypical pneumonia or granulomatous hepatitis with prominent occupational exposure to livestock, distinguishing it from the phlebotomine vector-borne presentation of sandfly fever."
+                          },
+                          {
+                              "disease_code":  "TRENCH_FEVER",
+                              "distinguishing_feature":  "[LLM DRAFT] Characterized by relapsing fever cycles lasting about 5 days associated with body lice infestation, whereas sandfly fever is transmitted by sandflies and follows a brief 3-day febrile course (three-day fever)."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "407476002",
+    "snomed_verified_name":  "Sandfly-borne phleboviral disease",
+    "icd10_code":  "A93.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Sandfly fever",
+    "evidence_ids":  [
+                         "EVID_SANDFLY_FEVER"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

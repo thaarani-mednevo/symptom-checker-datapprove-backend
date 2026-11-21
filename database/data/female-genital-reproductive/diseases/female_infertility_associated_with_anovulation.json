@@ -1,0 +1,65 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_035",
+    "code":  "FEMALE_INFERTILITY_ASSOCIATED_WITH_ANOVULATION",
+    "name":  "Female infertility associated with anovulation",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "A female-genital-reproductive condition known as Female infertility associated with anovulation.",
+    "complaints":  [
+                       {
+                           "code":  "INFERTILITY",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_INFERTILITY_ACUTE_PAIN",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "INFERTILITY",
+                          "condition":  "Acute pelvic pain during a fertility work-up"
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_CYCLE_LENGTH",
+                          "text":  "How many days between the start of one period and the start of the next?",
+                          "purpose":  "Screen for anovulatory pattern",
+                          "answer_type":  "numeric",
+                          "if_yes_action":  "continue",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "FEMALE_INFERTILITY_ASSOCIATED_WITH_ANOVULATION_SYMPTOM_1",
+                          "yes_weight":  1,
+                          "no_weight":  0
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "FEMALE_INFERTILITY_OF_TUBAL_ORIGIN",
+                              "distinguishing_feature":  "Anovulation shows irregular/absent ovulation on cycle tracking; tubal origin shows normal ovulation but blocked/damaged tubes on imaging"
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N97.0",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Female infertility associated with anovulation",
+    "evidence_ids":  [
+                         "EVID_FEMALE_INFERTILITY_ASSOCIATED_WITH_ANOVULATION"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

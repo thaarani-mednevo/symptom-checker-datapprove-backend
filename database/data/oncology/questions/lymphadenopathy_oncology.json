@@ -1,0 +1,102 @@
+{
+  "complaint_code": "LYMPHADENOPATHY_ONCOLOGY",
+  "complaint_name": "Lymphadenopathy (Oncology)",
+  "module": "oncology",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    {
+      "code": "Q_CMP_LYMPHO_001",
+      "text": "How long have you had swollen lymph nodes, and in how many areas of your body are they enlarged?",
+      "purpose": "Characterise duration and distribution; persistent >6 weeks or generalised lymphadenopathy raises malignancy concern",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Less than 2 weeks, one region",
+        "Less than 2 weeks, multiple regions",
+        "2–6 weeks, one region",
+        "2–6 weeks, multiple regions",
+        "More than 6 weeks, one region",
+        "More than 6 weeks, multiple regions"
+      ],
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 1,
+      "tests_symptom_code": "LYMPHADENOPATHY_DURATION_DISTRIBUTION",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LYMPHO_002",
+      "text": "Are the lymph nodes painless, hard, and rubbery in texture?",
+      "purpose": "Painless, rubbery, hard nodes are characteristic of lymphoma; tender soft nodes suggest reactive/infectious cause",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 2,
+      "tests_symptom_code": "LYMPH_NODE_CHARACTER",
+      "yes_weight": 4,
+      "no_weight": -2
+    },
+    {
+      "code": "Q_CMP_LYMPHO_003",
+      "text": "Have you experienced fever, night sweats, or significant unintentional weight loss alongside the lymph node swelling?",
+      "purpose": "B-symptoms with lymphadenopathy strongly suggest lymphoma or haematological malignancy",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 3,
+      "tests_symptom_code": "B_SYMPTOM_TRIAD",
+      "yes_weight": 5,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LYMPHO_004",
+      "text": "Is there an obvious local infection or inflammatory source (e.g. throat infection, skin wound) near the enlarged nodes?",
+      "purpose": "Identify reactive lymphadenopathy from local infection to reduce unnecessary oncology workup",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(REACTIVE_LYMPHADENOPATHY_PATHWAY)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 4,
+      "tests_symptom_code": "LOCAL_INFECTION_SOURCE",
+      "yes_weight": -3,
+      "no_weight": 2
+    },
+    {
+      "code": "Q_CMP_LYMPHO_005",
+      "text": "Do you have a known or suspected history of cancer, or have you recently completed cancer treatment?",
+      "purpose": "Prior malignancy makes lymphadenopathy suspicious for recurrence or metastasis",
+      "answer_type": "yes_no",
+      "if_yes_action": "GOTO_PATHWAY(METASTATIC_WORKUP)",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 5,
+      "tests_symptom_code": "PRIOR_CANCER_HISTORY",
+      "yes_weight": 4,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LYMPHO_006",
+      "text": "Have you noticed an enlarged spleen or liver, or abdominal fullness?",
+      "purpose": "Hepatosplenomegaly with lymphadenopathy suggests lymphoma, leukaemia, or EBV",
+      "answer_type": "yes_no",
+      "if_yes_action": "ESCALATE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 6,
+      "tests_symptom_code": "HEPATOSPLENOMEGALY",
+      "yes_weight": 3,
+      "no_weight": -1
+    },
+    {
+      "code": "Q_CMP_LYMPHO_007",
+      "text": "Are you experiencing pruritus (generalised itching) without an obvious skin rash?",
+      "purpose": "Unexplained pruritus is an associated feature of Hodgkin lymphoma",
+      "answer_type": "yes_no",
+      "if_yes_action": "CONTINUE",
+      "if_no_action": "CONTINUE",
+      "sequence_order": 7,
+      "tests_symptom_code": "ASSOCIATED_PRURITUS",
+      "yes_weight": 2,
+      "no_weight": -1
+    }
+  ]
+}

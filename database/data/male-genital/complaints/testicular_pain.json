@@ -1,0 +1,17 @@
+{
+  "id": "MALE-GENITAL_COMP_MG_001",
+  "code": "TESTICULAR_PAIN",
+  "name": "Testicular pain",
+  "module": "male-genital",
+  "body_system": "male-genital",
+  "category": "complaint",
+  "description": "Testicular pain is pain perceived in one or both testicles. It may originate from the testis or other structures within the scrotum, and may be acute or chronic.",
+  "hpo_codes": [],
+  "snomed_code": "282360001",
+  "snomed_verified_name": "Persistent testicular pain",
+  "icd10_code": "N50.81",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

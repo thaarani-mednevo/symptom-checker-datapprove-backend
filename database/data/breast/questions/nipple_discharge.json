@@ -1,0 +1,70 @@
+﻿{
+    "complaint_code":  "NIPPLE_DISCHARGE",
+    "complaint_name":  "Nipple discharge",
+    "module":  "breast",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  "Q_CMP_ND_001",
+                          "text":  "Is the discharge bloody, clear, milky, or green?",
+                          "purpose":  "character",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NIPPLE_DISCHARGE_COLOUR",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_ND_002",
+                          "text":  "Is the discharge from one breast or both?",
+                          "purpose":  "laterality",
+                          "answer_type":  "multiple_choice",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNILATERAL_DISCHARGE",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ND_003",
+                          "text":  "Does the discharge come out on its own or only when you squeeze?",
+                          "purpose":  "spontaneity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_SPONTANEOUS_DISCHARGE)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "SPONTANEOUS_DISCHARGE",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ND_004",
+                          "text":  "Is there a lump you can feel near the nipple?",
+                          "purpose":  "lump_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_MASS_SUSPECTED)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DISCHARGE_WITH_LUMP",
+                          "yes_weight":  3,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_ND_005",
+                          "text":  "Are you pregnant, breastfeeding, or on any medications?",
+                          "purpose":  "context",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "PHYSIOLOGICAL_DISCHARGE",
+                          "yes_weight":  -1,
+                          "no_weight":  1
+                      }
+                  ]
+}

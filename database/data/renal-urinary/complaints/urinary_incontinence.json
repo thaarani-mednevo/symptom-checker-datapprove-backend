@@ -1,0 +1,17 @@
+{
+  "id": "RENAL-URINARY_COMP_RU_013",
+  "code": "URINARY_INCONTINENCE",
+  "name": "Urinary incontinence",
+  "module": "renal-urinary",
+  "body_system": "renal-urinary",
+  "category": "complaint",
+  "description": "Urinary incontinence (UI), also known as involuntary urination, is any uncontrolled leakage of urine. It is a common and distressing problem, which may have a significant effect on quality of life.",
+  "hpo_codes": [],
+  "snomed_code": "165232002",
+  "snomed_verified_name": "Urinary incontinence",
+  "icd10_code": "R32",
+  "icd10_validated": true,
+  "icd10_official_description": "Unspecified urinary incontinence",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

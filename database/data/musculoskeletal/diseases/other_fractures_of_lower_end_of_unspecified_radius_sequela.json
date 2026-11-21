@@ -1,0 +1,120 @@
+﻿{
+    "id":  "MUSCULOSKELETAL_DIS_CS_030",
+    "code":  "OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA",
+    "name":  "Other fractures of lower end of unspecified radius, sequela",
+    "module":  "musculoskeletal",
+    "category":  "disease",
+    "description":  "A musculoskeletal condition known as Other fractures of lower end of unspecified radius, sequela.",
+    "complaints":  [
+                       {
+                           "code":  "FRACTURES",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "PAIN_AT_WRIST",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "severe"
+                     },
+                     {
+                         "code":  "SWELLING_OF_WRIST",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "LIMITED_WRIST_MOTION",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "ULNAR_NERVE_PARESTHESIA",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "gradual",
+                         "severity":  "mild"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "NONE_APPLICABLE",
+                             "strength":  "n/a"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "NONE_APPLICABLE",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "",
+                          "condition":  ""
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_STILL_FEEL_PAIN_NEAR_THE_LOWER_PA",
+                          "text":  "[LLM DRAFT] Do you still feel pain near the lower part of your radius?",
+                          "purpose":  "persistent pain",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_TROUBLE_BENDING_OR_STRAIGHTE",
+                          "text":  "[LLM DRAFT] Do you have trouble bending or straightening your wrist?",
+                          "purpose":  "limited wrist motion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_NOTICE_SWELLING_OR_A_VISIBLE_DEFO_OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA",
+                          "text":  "[LLM DRAFT] Do you notice swelling or a visible deformity at the wrist?",
+                          "purpose":  "swelling or deformity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "S52.599S",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Other fractures of lower end of unspecified radius, sequela",
+    "evidence_ids":  [
+                         "EVID_OTHER_FRACTURES_OF_LOWER_END_OF_UNSPECIFIED_RADIUS_SEQUELA"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

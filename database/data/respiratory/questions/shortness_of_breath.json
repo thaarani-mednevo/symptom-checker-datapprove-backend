@@ -1,0 +1,17 @@
+{
+  "complaint_code": "SHORTNESS_OF_BREATH",
+  "complaint_name": "Shortness of breath",
+  "module": "respiratory",
+  "question_set_type": "complaint_shared",
+  "version": "1.0",
+  "status": "doctor_not_reviewed",
+  "questions": [
+    { "code": "Q_CMP_SOB_001", "text": "How quickly did the breathlessness come on — suddenly over minutes, or gradually over hours to weeks?", "purpose": "onset", "answer_type": "multiple_choice", "options": ["Sudden (minutes)", "Hours", "Days", "Weeks to months"], "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 1, "tests_symptom_code": "DYSPNOEA_ONSET", "yes_weight": 0, "no_weight": 0 },
+    { "code": "Q_CMP_SOB_002", "text": "Is the breathlessness severe at rest right now — unable to complete sentences?", "purpose": "red_flag_check", "answer_type": "yes_no", "if_yes_action": "ESCALATE", "if_no_action": "CONTINUE", "sequence_order": 2, "tests_symptom_code": "SEVERE_REST_DYSPNOEA", "yes_weight": 5, "no_weight": -2 },
+    { "code": "Q_CMP_SOB_003", "text": "Do you hear a wheeze when you breathe out?", "purpose": "wheeze_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(CHRONIC_AIRWAY)", "if_no_action": "CONTINUE", "sequence_order": 3, "tests_symptom_code": "EXPIRATORY_WHEEZE", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_SOB_004", "text": "Do you have a cough along with the breathlessness?", "purpose": "cough_association", "answer_type": "yes_no", "if_yes_action": "CONTINUE", "if_no_action": "CONTINUE", "sequence_order": 4, "tests_symptom_code": "ASSOCIATED_COUGH", "yes_weight": 1, "no_weight": 0 },
+    { "code": "Q_CMP_SOB_005", "text": "Do you have chest pain when you breathe in deeply?", "purpose": "pleuritic_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(PLEURITIC)", "if_no_action": "CONTINUE", "sequence_order": 5, "tests_symptom_code": "PLEURITIC_PAIN", "yes_weight": 3, "no_weight": -1 },
+    { "code": "Q_CMP_SOB_006", "text": "Have you coughed up any blood?", "purpose": "haemoptysis_check", "answer_type": "yes_no", "if_yes_action": "RED_FLAG(RF_HAEMOPTYSIS)", "if_no_action": "CONTINUE", "sequence_order": 6, "tests_symptom_code": "HAEMOPTYSIS", "yes_weight": 4, "no_weight": -1 },
+    { "code": "Q_CMP_SOB_007", "text": "Have you had any recent prolonged travel, surgery, or immobility?", "purpose": "pe_risk_check", "answer_type": "yes_no", "if_yes_action": "GOTO_PATHWAY(PE_DVT)", "if_no_action": "CONTINUE", "sequence_order": 7, "tests_symptom_code": "VTE_RISK", "yes_weight": 3, "no_weight": -1 }
+  ]
+}

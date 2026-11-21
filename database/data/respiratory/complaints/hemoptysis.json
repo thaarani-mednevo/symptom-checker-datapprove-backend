@@ -1,0 +1,19 @@
+{
+  "id": "RESPIRATORY_CMP_RESP_005",
+  "code": "HEMOPTYSIS",
+  "name": "Hemoptysis",
+  "module": "respiratory",
+  "body_system": "respiratory",
+  "category": "complaint",
+  "description": "Hemoptysis or haemoptysis is the discharge of blood or blood-stained mucus through the mouth coming from the bronchi, larynx, trachea, or lungs. In other words, it is the airway bleeding, and does not necessarily involve coughing.",
+  "hpo_codes": [
+    "HP:0002105"
+  ],
+  "snomed_code": "66857006",
+  "snomed_verified_name": "Hemoptysis",
+  "icd10_code": "R04.2",
+  "icd10_validated": true,
+  "icd10_official_description": "Hemoptysis",
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

@@ -1,0 +1,57 @@
+﻿{
+    "id":  "FEMALE-GENITAL-REPRODUCTIVE_DIS_HB_041",
+    "code":  "NIPPLE_DISCHARGE",
+    "name":  "Nipple discharge",
+    "module":  "female-genital-reproductive",
+    "category":  "disease",
+    "description":  "Nipple discharge is fluid from the nipple, with or without squeezing the breast. The discharge can be milky, clear, green, purulent, bloody, or faintly yellow.",
+    "complaints":  [
+                       {
+                           "code":  "GALACTORRHEA",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+
+                 ],
+    "risk_factors":  [
+
+                     ],
+    "red_flags":  [
+
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_HEADACHE_VISUAL_CHANGE",
+                          "text":  "Have you had headaches or any change in vision?",
+                          "purpose":  "Screen for pituitary lesion",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GALACTORRHEA_VISUAL_FIELD)",
+                          "if_no_action":  "continue",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "NIPPLE_DISCHARGE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "54302000",
+    "snomed_verified_name":  "Discharge from nipple",
+    "icd10_code":  "N64.52",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Nipple discharge",
+    "evidence_ids":  [
+                         "EVID_NIPPLE_DISCHARGE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

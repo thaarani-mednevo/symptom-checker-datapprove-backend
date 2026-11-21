@@ -1,0 +1,80 @@
+﻿{
+  "id": "NEUROLOGY_DIS_CS_045",
+  "code": "OTHER_ULCERATIVE_COLITIS_WITHOUT_COMPLICATIONS",
+  "name": "Other ulcerative colitis without complications",
+  "module": "neurology",
+  "category": "disease",
+  "description": "Ulcerative colitis (UC) is one of the two types of inflammatory bowel disease (IBD), with the other type being Crohn's disease. It is a long-term condition that results in inflammation and ulcers of the colon and rectum.",
+  "complaints": [
+    {
+      "code": "BOWEL_DYSFUNCTION",
+      "relationship": "llm_suggested_icd10_validated",
+      "priority": "high"
+    }
+  ],
+  "symptoms": [
+    {
+      "code": "ABDOMINAL_PAIN",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "DIARRHEA_MIXED_WITH_BLOOD",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "WEIGHT_LOSS",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "FEVER",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    },
+    {
+      "code": "ANEMIA",
+      "relationship": "common",
+      "frequency": "",
+      "typicality": "",
+      "onset_pattern": "",
+      "severity": ""
+    }
+  ],
+  "risk_factors": [
+    {
+      "code": "UNKNOWN",
+      "strength": "wikipedia_infobox_unverified"
+    }
+  ],
+  "red_flags": [],
+  "questions": [],
+  "differentials": [],
+  "age_relevance": "adult",
+  "sex_relevance": "both",
+  "acute_chronic": "both",
+  "hpo_codes": [],
+  "snomed_code": "",
+  "snomed_verified_name": null,
+  "icd10_code": "K51.80",
+  "icd10_validated": true,
+  "icd10_official_description": "Other ulcerative colitis without complications",
+  "evidence_ids": [
+    "EVID_OTHER_ULCERATIVE_COLITIS_WITHOUT_COMPLICATIONS"
+  ],
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

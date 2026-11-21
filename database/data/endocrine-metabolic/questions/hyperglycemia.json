@@ -1,0 +1,80 @@
+﻿{
+    "complaint_code":  "HYPERGLYCEMIA",
+    "complaint_name":  "Hyperglycemia",
+    "module":  "endocrine-metabolic",
+    "question_set_type":  "complaint_shared",
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed",
+    "questions":  [
+                      {
+                          "code":  [
+                                       "Q_CMP_HG_001",
+                                       "Are you unusually thirsty and passing more urine than usual, especially at night?",
+                                       "osmotic_symptoms",
+                                       "yes_no",
+                                       "CONTINUE",
+                                       "CONTINUE",
+                                       "POLYDIPSIA_POLYURIA",
+                                       3,
+                                       -1
+                                   ],
+                          "text":  null,
+                          "purpose":  null,
+                          "answer_type":  null,
+                          "if_yes_action":  null,
+                          "if_no_action":  null,
+                          "sequence_order":  1,
+                          "tests_symptom_code":  null,
+                          "yes_weight":  null,
+                          "no_weight":  null
+                      },
+                      {
+                          "code":  "Q_CMP_HG_002",
+                          "text":  "Have you lost weight without trying recently?",
+                          "purpose":  "weight_loss",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "UNEXPLAINED_WEIGHT_LOSS",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HG_003",
+                          "text":  "Do you feel very fatigued or drowsy?",
+                          "purpose":  "severity",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "HYPERGLYCEMIA_FATIGUE",
+                          "yes_weight":  2,
+                          "no_weight":  0
+                      },
+                      {
+                          "code":  "Q_CMP_HG_004",
+                          "text":  "Are you confused, breathing fast, or do you smell of acetone (pear drops)?",
+                          "purpose":  "dka_check",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "ESCALATE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  4,
+                          "tests_symptom_code":  "DIABETIC_KETOACIDOSIS",
+                          "yes_weight":  5,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_CMP_HG_005",
+                          "text":  "Do you have a diagnosis of diabetes, and if so what medications do you take?",
+                          "purpose":  "known_diabetes",
+                          "answer_type":  "free_text",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  5,
+                          "tests_symptom_code":  "DIABETES_MEDICATIONS",
+                          "yes_weight":  0,
+                          "no_weight":  0
+                      }
+                  ]
+}

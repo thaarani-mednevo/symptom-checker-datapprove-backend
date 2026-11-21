@@ -1,0 +1,167 @@
+﻿{
+    "id":  "BREAST_DIS_CS_002",
+    "code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE",
+    "name":  "Abscess of the breast and nipple",
+    "module":  "breast",
+    "category":  "disease",
+    "description":  "A localized collection of pus within breast tissue, often presenting with pain, swelling, redness, and fever.",
+    "complaints":  [
+                       {
+                           "code":  "BREAST_PAIN",
+                           "relationship":  "llm_suggested_icd10_validated",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "BREAST_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       },
+                       {
+                           "code":  "AXILLARY_LUMP",
+                           "relationship":  "common",
+                           "priority":  "high"
+                       }
+                   ],
+    "symptoms":  [
+                     {
+                         "code":  "BREAST_PAIN",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "SWELLING_AND_ERYTHEMA",
+                         "relationship":  "common",
+                         "frequency":  "common",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "PURULENT_NIPPLE_DISCHARGE",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "moderate"
+                     },
+                     {
+                         "code":  "FEVER",
+                         "relationship":  "common",
+                         "frequency":  "occasional",
+                         "typicality":  "typical",
+                         "onset_pattern":  "acute",
+                         "severity":  "mild"
+                     },
+                     {
+                         "code":  "NIPPLE_ULCERATION",
+                         "relationship":  "common",
+                         "frequency":  "rare",
+                         "typicality":  "atypical",
+                         "onset_pattern":  "chronic",
+                         "severity":  "moderate"
+                     }
+                 ],
+    "risk_factors":  [
+                         {
+                             "code":  "BREASTFEEDING",
+                             "strength":  "strong"
+                         },
+                         {
+                             "code":  "NIPPLE_TRAUMA",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "DIABETES_MELLITUS",
+                             "strength":  "moderate"
+                         },
+                         {
+                             "code":  "IMMUNOSUPPRESSION",
+                             "strength":  "moderate"
+                         }
+                     ],
+    "red_flags":  [
+                      {
+                          "code":  "RF_SEPSIS_OR_RAPIDLY_PROGRESSIVE_SYSTEMIC_INFECTION_SECONDARY_TO_BREAST_ABSCESS",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_PAIN",
+                          "condition":  "[LLM DRAFT] Presenting with signs of systemic toxicity, high fever, tachycardia, hypotension, or rapidly spreading erythema."
+                      },
+                      {
+                          "code":  "RF_NECROTIZING_SOFT_TISSUE_INFECTION_OF_THE_BREAST",
+                          "trigger_entity_type":  "complaint",
+                          "trigger_entity_code":  "BREAST_LUMP",
+                          "condition":  "[LLM DRAFT] Presenting with skin necrosis, crepitus, severe disproportionate pain, or rapidly advancing purple/black discoloration over the lump."
+                      }
+                  ],
+    "questions":  [
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_PAINFUL_SWOLLEN_LUMP_OR_A",
+                          "text":  "[LLM DRAFT] Do you have a painful, swollen lump or area on your breast that feels hot or looks red?",
+                          "purpose":  "Screens for localized breast inflammation and potential abscess formation",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  1,
+                          "tests_symptom_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE_SYMPTOM_1",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_HAVE_YOU_NOTICED_PUS_OR_UNUSUAL_DISCHARG",
+                          "text":  "[LLM DRAFT] Have you noticed pus or unusual discharge draining from your nipple or the skin of your breast?",
+                          "purpose":  "Screens for drainage associated with a breast abscess",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "CONTINUE",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  2,
+                          "tests_symptom_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE_SYMPTOM_2",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      },
+                      {
+                          "code":  "Q_DO_YOU_HAVE_A_HIGH_FEVER_OR_CHILLS_ALONG",
+                          "text":  "[LLM DRAFT] Do you have a high fever or chills along with your breast pain and swelling?",
+                          "purpose":  "Screens for systemic infection and potential sepsis from a severe abscess",
+                          "answer_type":  "yes_no",
+                          "if_yes_action":  "RED_FLAG(RF_GENERIC)",
+                          "if_no_action":  "CONTINUE",
+                          "sequence_order":  3,
+                          "tests_symptom_code":  "ABSCESS_OF_THE_BREAST_AND_NIPPLE_SYMPTOM_3",
+                          "yes_weight":  2,
+                          "no_weight":  -1
+                      }
+                  ],
+    "differentials":  [
+                          {
+                              "disease_code":  "MAMMARY_DUCT_ECTASIA_OF_RIGHT_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents with non-cyclic nipple discharge and subareolar inflammation without acute localized purulent collection."
+                          },
+                          {
+                              "disease_code":  "SOLITARY_CYST_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Presents as a smooth, mobile, fluid-filled mass lacking the acute local erythema, warmth, and tenderness of an infection."
+                          },
+                          {
+                              "disease_code":  "LOBULAR_CARCINOMA_IN_SITU_OF_UNSPECIFIED_BREAST",
+                              "distinguishing_feature":  "[LLM DRAFT] Typically asymptomatic and found incidentally on imaging, lacking the acute pain, inflammation, and fluctuance of an abscess."
+                          }
+                      ],
+    "age_relevance":  "adult",
+    "sex_relevance":  "both",
+    "acute_chronic":  "both",
+    "hpo_codes":  [
+
+                  ],
+    "snomed_code":  "",
+    "snomed_verified_name":  null,
+    "icd10_code":  "N61.1",
+    "icd10_validated":  true,
+    "icd10_official_description":  "Abscess of the breast and nipple",
+    "evidence_ids":  [
+                         "EVID_ABSCESS_OF_THE_BREAST_AND_NIPPLE"
+                     ],
+    "version":  "1.0",
+    "status":  "doctor_not_reviewed"
+}

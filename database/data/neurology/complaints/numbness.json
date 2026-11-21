@@ -1,0 +1,17 @@
+{
+  "id": "NEUROLOGY_COMP_NEU_014",
+  "code": "NUMBNESS",
+  "name": "Numbness",
+  "module": "neurology",
+  "body_system": "neurology",
+  "category": "complaint",
+  "description": "Hypoesthesia or numbness is a common side effect of various medical conditions that manifests as a reduced sense of touch or sensation, or a partial loss of sensitivity to sensory stimuli. In everyday speech this is generally referred to as numbness.",
+  "hpo_codes": [],
+  "snomed_code": "44077006",
+  "snomed_verified_name": "Numbness",
+  "icd10_code": "",
+  "icd10_validated": false,
+  "icd10_official_description": null,
+  "version": "1.0",
+  "status": "doctor_not_reviewed"
+}

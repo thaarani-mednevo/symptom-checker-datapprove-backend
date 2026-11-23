@@ -42,7 +42,7 @@ if not SECRET_KEY:
     SECRET_KEY = 'django-insecure-dev-only-key'
 
 ALLOWED_HOSTS = env_list('ALLOWED_HOSTS', 'localhost,127.0.0.1')
-CSRF_TRUSTED_ORIGINS = env_list('CSRF_TRUSTED_ORIGINS', 'https://data.api.mednevo.com')
+CSRF_TRUSTED_ORIGINS = env_list('CSRF_TRUSTED_ORIGINS', 'https://data.api.mednevo.com,https://data.mednevo.com')
 
 # Nginx terminates TLS and forwards the original scheme.
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

@@ -1,0 +1,33 @@
+# /etc/systemd/system/datapprove.service
+# Symptom-checker data-approve backend (Django + Gunicorn)
+#
+# IMPORTANT: keep --workers 1. knowledge/writeback.py serialises file writes with an
+# in-process threading.Lock and knowledge/catalog.py caches modules in memory;
+# several worker processes would race on the JSON/CSV files and serve stale data.
+# Concurrency comes from threads instead.
+
+[Unit]
+Description=Mednevo symptom-checker data-approve backend (gunicorn)
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/apps/mednevo/symptom_checker/backend
+EnvironmentFile=/home/ubuntu/apps/mednevo/symptom_checker/backend/shared/.env
+RuntimeDirectory=datapprove
+RuntimeDirectoryMode=0750
+UMask=0007
+ExecStart=/home/ubuntu/apps/mednevo/symptom_checker/backend/venv/bin/gunicorn config.wsgi:application \
+    --bind unix:/run/datapprove/gunicorn.sock \
+    --workers 1 --threads 4 --worker-class gthread \
+    --timeout 120 --graceful-timeout 30 \
+    --access-logfile - --error-logfile -
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,5 +1,21 @@
+# Python / virtualenvs
+env/
 venv/
+.venv/
 __pycache__/
 *.pyc
+
+# Secrets & local state
 .env
+db.sqlite3
+*.log
 *.tmp
+
+# Build output
+staticfiles/
+
+# VPS-only persistent data (doctor edits + .env live here on the server)
+shared/
+
+# VPS-only backups (deploy/backup.sh)
+backups/
